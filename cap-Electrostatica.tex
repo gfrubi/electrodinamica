@@ -95,7 +95,7 @@ es decir,
 \begin{equation}\marginnote{Fza. sobre carga puntual}
 F_i  =\frac{q}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(x_i-x_i'\right)
 }{\left\vert \vec x-\vec x'\right\vert
-^3}dV' .\label{leycoulomb-conti}%
+^3}dV' .\label{leycoulomb-conti}
 \end{equation}
 An'alogamente, podemos describir cargas distribuidas en (regiones que puedan
 aproximarse por) una superficie y/o curva usando la \textit{densidad superficial de
@@ -113,20 +113,20 @@ Con estas consideraciones, tenemos entonces que el campo el'ectrico generado por
 \begin{equation}\marginnote{C. el'ectrico, cargas puntuales}
 E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\sum_{\alpha=1
 }^{N}q^{(\alpha)}\frac{\left(  x_i-x^{(\alpha)}_i\right)  }{\left\vert
-\vec x-\vec x^{(\alpha)}\right\vert ^3}.\label{campelectr}%
+\vec x-\vec x^{(\alpha)}\right\vert ^3}.\label{campelectr}
 \end{equation}
 Similarmente, para una distribuci'on volum'etrica de cargas:
 \begin{equation}\marginnote{C. el'ectrico, distribuci'on}
 \boxed{E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(
 x_i-x_i'\right)  }{\left\vert \vec x-\vec x'\right\vert
-^3}dV'.} \label{cerho}%
+^3}dV'.} \label{cerho}
 \end{equation}
 En general, preferiremos la descripci'on de la distribuci'on de cargas en t'erminos de la densidad volum'etrica $\rho(\vec{x})$, ya que a partir de ella podemos recobrar r'apidamente los otros casos de inter'es. Por ejemplo, podemos recobrar el resultado para el conjunto de cargas puntuales \eqref{campelectr} a partir de 
 \eqref{cerho} si consideramos
 \begin{equation}
 \rho(\vec x)=\sum_{\alpha=1}^{N}q^{(\alpha)}\delta^{(3)}\left(\vec x-\vec
 x^{(\alpha)}\right).
-\label{conti-discre}%
+\label{conti-discre}
 \end{equation}
 
 \subsection{L'ineas de campo el'ectrico}
@@ -158,7 +158,7 @@ Usando el hecho que
 \begin{equation}
 \frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert ^3}\equiv
 -\partial_i\left( \frac{1}{\left\vert \vec x-\vec x'\right\vert
-}\right), \label{id01}%
+}\right), \label{id01}
 \end{equation}
 podemos escribir (\ref{cerho}) como
 \begin{align}
@@ -178,7 +178,7 @@ es decir,
 donde hemos definido el \textit{potencial el'ectrico}
 \begin{equation}\marginnote{Potencial electrost'atico}
 \boxed{\phi(\vec x):=\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec x')}{
-\left\vert \vec x-\vec x'\right\vert }dV' +\text{constante}.}\label{perho}%
+\left\vert \vec x-\vec x'\right\vert }dV' +\text{constante}.}\label{perho}
 \end{equation}
 Note que es posible agregar una constante arbitraria a la definici'on del
 potencial. Por otro lado, es directo verificar que, como consecuencia directa de
@@ -296,8 +296,8 @@ cada lado de la superficie son como se indica en la figura.
 
 Por tanto, obtenemos
 \begin{equation}\marginnote{Discontinuidad comp. normal}
-\boxed{\vec{E}_2\cdot\hat{n}-\vec{E}_1\cdot\hat{n}=\frac{\sigma}%
-{\varepsilon_0}.}\label{saltoEn}%
+\boxed{\vec{E}_2\cdot\hat{n}-\vec{E}_1\cdot\hat{n}=\frac{\sigma}
+{\varepsilon_0}.}\label{saltoEn}
 \end{equation}
 
 Por otro lado, aplicando (\ref{ointE0}) a la curva de la figura \ref{DSCE3} obtenemos:
@@ -1275,7 +1275,6 @@ Q\vec{E}(\vec{x})-\vec{\nabla}\left(-\vec{p}\cdot\vec{E}(\vec{x})\right)+\cdots.
 Note que el segundo t'ermino es el gradiente de la contribuci'on dipolar a la
 energ'ia potencial de la distribuci'on.
 
-% ............................................................................
 \subsubsection{Torque}  \label{ed3_3_3}
 
 An'alogamente al caso de la fuerza total, podemos calcular el \textit{torque
@@ -1392,7 +1391,7 @@ Usando la identidad (\ref{id01}) podemos escribir
 \end{align}
 De esta forma, considerando que la integral sobre los t'erminos que dependen de la polarizaci'on est'an confinados al volumen $V$ del material (lo que no necesariamente es as'i para el t'ermino conteniendo las cargas libres), podemos escribir
 \begin{align}
-\phi(x)& =\frac{1}{4\pi\varepsilon_0}\int\frac{\rho_{\rm ext}(x')}{|x_i-x_i'|}dV'-\frac{1}{4\pi\varepsilon_0}\int_V\frac{1}%
+\phi(x)& =\frac{1}{4\pi\varepsilon_0}\int\frac{\rho_{\rm ext}(x')}{|x_i-x_i'|}dV'-\frac{1}{4\pi\varepsilon_0}\int_V\frac{1}
 {|\vec{x}-\vec{x}'|}\partial_i'P_idV'+\frac{1}{4\pi\varepsilon_0}\int_{
 \partial V}\frac{P_i(x')}{|\vec{x}-\vec{x}'|}\,dS'_i \\
 & =\frac{1}{4\pi\varepsilon_0}\int\frac{\rho_{\rm ext}(x')}{|x_i-x_i'|}dV'+\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho_P(x')}{|x_i-x_i'|}dV'+\frac{1}{4\pi\varepsilon_0}\int_{
@@ -1857,7 +1856,7 @@ Por otro lado, lejos de la esfera ($r\gg R$) el campo el'ectrico debe tender al 
 \end{equation}
 donde $\alpha$ es una constante. Con esta condici'on, el potencial fuera de la esfera s'olo puede adoptar la forma
 \begin{equation}\label{phiext}
-\phi(r,\theta)=\alpha-E_0\,r\cos\theta+\sum_{l=0}^{\infty}B_l^{(2)}%
+\phi(r,\theta)=\alpha-E_0\,r\cos\theta+\sum_{l=0}^{\infty}B_l^{(2)}
  r^{-(l+1)}P_l(\cos\theta), \qquad r>R.
 \end{equation}
 El potencial es una funci'on continua. Por lo tanto, en $r=R$ las soluciones internas y externas deben adoptar el mismo valor. Usando (\ref{phiint}) y (\ref{phiext}) encontramos as'i la condici'on
