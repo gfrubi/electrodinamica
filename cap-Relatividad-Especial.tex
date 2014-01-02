@@ -603,8 +603,7 @@ La clasificaci'on de eventos asociada el cono de luz est'a relacionada con los v
 \subsection{Boost en una direcci'on arbitraria}
 En la secci'on \ref{secboostx} asumimos impl\'icitamente que las coordenadas asociadas a las direcciones normales ($y$ y $z$) a la velocidad relativa de los dos SRI's (eje $x$) no son alteradas por la transformaci'on (la contracci'on de Lorentz s'olo se produce en la direcci'on de movimiento). En otras palabras, las transformaciones \eqref{boost1} son complementadas con $y'=y$ y $z'=z$. Podemos generalizar este resultado al caso en que la velocidad relativa entre los SRI's $K$ y $K'$ est'a dirigida en una direcci'on arbitraria, separando los vectores $\vec{x}$ y $\vec{x}'$ en componentes paralelas y perpendicular a la velocidad relativa $\vec{V}=c\vec{\beta}$. Usando el hecho que la componente perpendicular es inalterada, y adem'as el boost unidimensional \eqref{boost1} para la componente paralela, es decir, $\vec{x}'_\perp=\vec{x}_\perp$ mientras que  $x'_\parallel=\gamma(x_\parallel-\beta ct)$, con $x_\parallel:=\hat{\beta}\cdot\vec{x}$, $\vec{x}_\perp=\vec{x}-x_\parallel\hat{\beta}$, $\hat{\beta}=\vec{V}/V=\vec{\beta}/\beta$, etc., es simple verificar que la TL correspondiente a un boost en una direcci'on arbitraria es de la forma
 \begin{equation}\label{bg1}\marginnote{Boost direcci'on arbitraria}
-\boxed{\vec{x}' =\vec{x}+\frac{\left(  \gamma-1\right)  }{\beta^2%
-}\left(  \vec{\beta}\cdot\vec{x}\right)  \vec{\beta}-\gamma ct\vec{\beta},}
+\boxed{\vec{x}' =\vec{x}+\frac{\left(  \gamma-1\right)  }{\beta^2}\left(  \vec{\beta}\cdot\vec{x}\right)  \vec{\beta}-\gamma ct\vec{\beta},}
 \end{equation}
 \begin{equation}\label{bg2}
 \boxed{ct' = \gamma\left( ct-\vec{\beta}\cdot\vec{x}\right).}
@@ -623,8 +622,7 @@ caso, para dos eventos infinitesimalmente pr'oximos con coordenadas
 $(ct,\vec{x})$ y $(ct+cdt,\vec{x}+d\vec{x})$ respecto a $K$, las diferencias
 $d\vec{x}'$ y $dt'$ asociadas a $K'$ est'an dadas por:
 \begin{eqnarray}
-d\vec{x}'  &  =&d\vec{x}+\frac{\left(  \gamma-1\right)  }{\beta^2%
-}\left(  \vec{\beta}\cdot d\vec{x}\right)  \vec{\beta}-\gamma
+d\vec{x}'  &  =&d\vec{x}+\frac{\left(  \gamma-1\right)  }{\beta^2}\left(  \vec{\beta}\cdot d\vec{x}\right)  \vec{\beta}-\gamma
 c\,dt\vec{\beta},\\
 cdt'  &  =&\gamma\left( cdt-\vec{\beta}\cdot d\vec{x}\right)  .
 \end{eqnarray}
@@ -791,7 +789,7 @@ Por ejemplo, la matriz $\Lambda^\mu_{\ \nu}$ correspondiente al boost (\ref{bg1}
 \begin{equation}
 \Lambda^\mu_{\ \nu}=\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 \gamma & -\gamma\beta^x & -\gamma\beta^y & -\gamma\beta^z\\
 -\gamma\beta^x & 1+\frac{(\beta^x)^2}{\beta^2}\left(\gamma-1\right)  &
 \frac{\beta^x\beta^y}{\beta^2}\left(\gamma-1\right)  & \frac{\beta^x\beta^z}{\beta^2}\left(\gamma-1\right) \\
@@ -860,7 +858,7 @@ T'^{\mu_1 \cdots\mu_p}_{\ \ \ \ \ \ \ \
 \nu_1\cdots\nu_q}={\Lambda^{\mu_1}}_{\lambda_1} \cdots
 {\Lambda^{\mu_p}}_{\lambda_p} \left( \Lambda^{-1}\right) ^{\rho_1}_{\
 \nu_1}\cdots\left( \Lambda^{-1}\right) ^{\rho_q}_{\ \nu_q} T^{\lambda_1
-\cdots\lambda_p}_{\ \ \ \ \ \ \ \rho_1\cdots\rho_q}. %aqui cambie
+\cdots\lambda_p}_{\ \ \ \ \ \ \ \rho_1\cdots\rho_q}. 
 \end{equation}
 
 \subsubsection{Multiplicaci'on de 4-tensores}
@@ -1106,7 +1104,7 @@ lineal de los siguientes \textit{generadores}
 \begin{equation}
 \left(J_1\right)^\mu_{\ \nu}     =\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & -i\\
@@ -1114,7 +1112,7 @@ lineal de los siguientes \textit{generadores}
 \end{array}
 \right), \qquad
 \left(J_2\right)^\mu_{\ \nu}=\left(\begin{array}
-[c]{cccc}%
+[c]{cccc}
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & +i\\
 0 & 0 & 0 & 0\\
@@ -1125,7 +1123,7 @@ lineal de los siguientes \textit{generadores}
 \begin{equation}
 \left(J_3\right)^\mu_{\ \nu}=\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 0 & 0 & 0 & 0\\
 0 & 0 & -i & 0\\
 0 & +i & 0 & 0\\
@@ -1134,7 +1132,7 @@ lineal de los siguientes \textit{generadores}
 \right), \qquad
 \left(K_1\right)^\mu_{\ \nu} =\left(
 \begin{array}
-[c]{rrrr}%
+[c]{rrrr}
 0 & +i & 0 & 0\\
 +i & 0 & 0 & 0\\
 0 & 0 & 0 & 0\\
@@ -1145,7 +1143,7 @@ lineal de los siguientes \textit{generadores}
 \begin{equation}
 \left(K_2\right)^\mu_{\ \nu}=\left(
 \begin{array}
-[c]{rrrr}%
+[c]{rrrr}
 0 & 0 & i & 0\\
 0 & 0 & 0 & 0\\
 i & 0 & 0 & 0\\
@@ -1154,7 +1152,7 @@ i & 0 & 0 & 0\\
 \right), \qquad
 \left(K_3\right)^\mu_{\ \nu}=\left(
 \begin{array}
-[c]{rrrr}%
+[c]{rrrr}
 0 & 0 & 0 & i\\
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & 0\\
@@ -1194,7 +1192,7 @@ con $M$, dado por
 \begin{equation}
 M=\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 0 & -\zeta_1 & -\zeta_2 & -\zeta_3\\
 -\zeta_1 & 0 & 0 & 0\\
 -\zeta_2 & 0 & 0 & 0\\
@@ -1206,11 +1204,11 @@ Entonces tenemos que
 \begin{equation}
 M^2=\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 \zeta_1^2+\zeta_2^2+\zeta_3^2 & 0 & 0 & 0\\
 0 & \zeta_1^2 & \zeta_1\zeta_2 & \zeta_1\zeta_3\\
 0 & \zeta_2\zeta_1 & \zeta_2^2 & \zeta_2\zeta_3\\
-0 & \zeta_3\zeta_1 & \zeta_3\zeta_2 & \zeta_3^2%
+0 & \zeta_3\zeta_1 & \zeta_3\zeta_2 & \zeta_3^2
 \end{array}
 \right).
 \end{equation}
@@ -1222,14 +1220,14 @@ entonces,
 \begin{equation}
 M^2=\zeta^2\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 1 & 0 & 0 & 0\\
 0 & \frac{\zeta_1^2}{\zeta^2} & \frac{\zeta_1\zeta_2}{\zeta^2} &
 \frac{\zeta_1\zeta_3}{\zeta^2}\\
 0 & \frac{\zeta_2\zeta_1}{\zeta^2} & \frac{\zeta_2^2}{\zeta^2} &
 \frac{\zeta_2\zeta_3}{\zeta^2}\\
 0 & \frac{\zeta_3\zeta_1}{\zeta^2} & \frac{\zeta_3\zeta_2}{\zeta
-^2} & \frac{\zeta_3^2}{\zeta^2}%
+^2} & \frac{\zeta_3^2}{\zeta^2}
 \end{array}
 \right).
 \end{equation}
@@ -1237,7 +1235,7 @@ Adem'as, se verifica directamente que
 \begin{equation}
 M^3=\zeta^2\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 0 & -\zeta_1 & -\zeta_2 & -\zeta_3\\
 -\zeta_1 & 0 & 0 & 0\\
 -\zeta_2 & 0 & 0 & 0\\
@@ -1258,11 +1256,11 @@ M^{2n+1}   =\zeta^{2n} M, \qquad M^{2n}    =\zeta^{2n-2} M^2.
 \end{equation}
 Con estas relaciones, podemos calcular $\Lambda$ de la forma siguiente:
 \begin{eqnarray}
-\Lambda &=& I+\sum_{m=0}^{\infty}\frac{M^{2m+1}}{\left(  2m+1\right)  !}%
+\Lambda &=& I+\sum_{m=0}^{\infty}\frac{M^{2m+1}}{\left(  2m+1\right)  !}
 +\sum_{m=1}^{\infty}\frac{M^{2m}}{\left(  2m\right)  !}\\
 &=& I+\sum_{m=0}^{\infty}\frac{\zeta^{2m}M}{\left(  2m+1\right)  !}+\sum
 _{m=1}^{\infty}\frac{\zeta^{2m-2}M^2}{\left(  2m\right)  !}\\
-&=& I+M\sum_{m=0}^{\infty}\frac{\zeta^{2m}}{\left(  2m+1\right)  !}+M^2%
+&=& I+M\sum_{m=0}^{\infty}\frac{\zeta^{2m}}{\left(  2m+1\right)  !}+M^2
 \sum_{m=1}^{\infty}\frac{\zeta^{2m-2}}{\left(  2m\right)  !}\\
 &=& I+\frac{1}{\zeta}M\sum_{m=0}^{\infty}\frac{\zeta^{2m+1}}{\left(
 2m+1\right)  !}+\frac{1}{\zeta^2}M^2\sum_{m=1}^{\infty}\frac{\zeta^{2m}}{\left(
@@ -1286,20 +1284,15 @@ Reemplazando, obtenemos:
 \begin{equation}
 \Lambda=\left(
 \begin{array}
-[c]{cccc}%
+[c]{cccc}
 \cosh\zeta & \frac{-\zeta_1}{\zeta}\senh\zeta & \frac
 {-\zeta_2}{\zeta}\senh\zeta & \frac{-\zeta_3}{\zeta
 }\senh\zeta\\
-\frac{-\zeta_1}{\zeta}\senh\zeta & 1+\frac{\zeta_1^2%
-}{\zeta^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_1\zeta_2}{\zeta
-^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_1\zeta_3}{\zeta^2%
-}\left(  \cosh\zeta-1\right) \\
-\frac{-\zeta_2}{\zeta}\senh\zeta & \frac{\zeta_2\zeta_1%
-}{\zeta^2}\left(  \cosh\zeta-1\right)  & 1+\frac{\zeta_2^2}{\zeta^2%
-}\left(  \cosh\zeta-1\right)  & \frac{\zeta_2\zeta_3}{\zeta^2}\left(
+\frac{-\zeta_1}{\zeta}\senh\zeta & 1+\frac{\zeta_1^2}{\zeta^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_1\zeta_2}{\zeta
+^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_1\zeta_3}{\zeta^2}\left(  \cosh\zeta-1\right) \\
+\frac{-\zeta_2}{\zeta}\senh\zeta & \frac{\zeta_2\zeta_1}{\zeta^2}\left(  \cosh\zeta-1\right)  & 1+\frac{\zeta_2^2}{\zeta^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_2\zeta_3}{\zeta^2}\left(
 \cosh\zeta-1\right) \\
-\frac{-\zeta_3}{\zeta}\senh\zeta & \frac{\zeta_3\zeta_1%
-}{\zeta^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_3\zeta_2}{\zeta
+\frac{-\zeta_3}{\zeta}\senh\zeta & \frac{\zeta_3\zeta_1}{\zeta^2}\left(  \cosh\zeta-1\right)  & \frac{\zeta_3\zeta_2}{\zeta
 ^2}\left(  \cosh\zeta-1\right)  & 1+\frac{\zeta_3^2}{\zeta^2}\left(
 \cosh\zeta-1\right) \label{genboost}
 \end{array}
@@ -1385,22 +1378,20 @@ $\mathsf{a}^\mu$ en t'erminos de la aceleraci'on (``ordinaria'') $\vec{a}:=d\vec
 & =&\frac{dt}{d\tau}\frac{d}{dt}\left(  \gamma c,\gamma\vec{v}\right)  \\
 & =&\gamma\frac{d}{dt}\left(  \gamma c,\gamma\vec{v}\right)  ,
 \end{eqnarray}
-pero%
+pero
 \begin{align}
 \frac{d}{dt}\gamma &
-=\frac{d}{dt}\frac{1}{\sqrt{1-\frac{\vec{v}\cdot\vec{v}}{c^2}}%
-}\\
+=\frac{d}{dt}\frac{1}{\sqrt{1-\frac{\vec{v}\cdot\vec{v}}{c^2}}}\\
 & =-\frac{1}{2}\frac{(-\frac{2}{c^2})\vec{v}\cdot\vec{a}}{\left(
 1-\frac{\vec{v}\cdot\vec{v}}{c^2}\right)  ^{\frac{3}{2}}}\\
 & =\frac{1}{c^2}\gamma^3\vec{v}\cdot\vec{a},
 \end{align}
-\newline luego%
+\newline luego
 \begin{align}
 \mathsf{a}^\mu  & =\left(
 c\gamma\frac{d}{dt}\gamma,\gamma\frac{d}{dt}\gamma\vec
 {v}+\gamma^2\vec{a}\right)  \\
-& =\left(  c\gamma\frac{1}{c^2}\gamma^3\vec{v}\cdot\vec{a},\gamma\frac{1}{c^2%
-}\gamma^3(\vec{v}\cdot\vec{a})\vec{v}+\gamma^2\vec{a}\right)  \\
+& =\left(  c\gamma\frac{1}{c^2}\gamma^3\vec{v}\cdot\vec{a},\gamma\frac{1}{c^2}\gamma^3(\vec{v}\cdot\vec{a})\vec{v}+\gamma^2\vec{a}\right)  \\
 &
 =\left(\frac{1}{c}\gamma^4\vec{v}\cdot\vec{a},\frac{1}{c^2}\gamma^4(\vec{v}
 \cdot\vec{a})\vec{v}+\gamma^2\vec{a}\right)  ,
@@ -1565,45 +1556,6 @@ E=pc.
 \end{equation}
 Sabemos que los \textit{fotones} (los cuantos de energ'ia electromagn'etica) satisfacen estas propiedades: tienen energ'ia $E=\hbar\omega$ y momentum $\vec{p}=\hbar\vec{k}$, donde $\omega$ es la frecuencia angular y $\vec{k}$ el vector de onda de la radiaci'on, que satisfacen la relaci'on de dispersi'on (en el vaci'o) $\omega=|\vec{k}|c$. De esta forma vemos que los fotones tambi'en pueden ser incorporados a la descripci'on que la teor'ia de RE suministra para la energ'ia y momentum de un cuerpo, siempre que se considere su masa nula. Las expresiones relativistas de energ'ia y momentum son en este sentido \textit{universales}, puesto que se aplican a todo tipo de part'icula o cuerpo conocido.
 
-%The first is that particle physicists universally work in units where
-%$c=1$.  As a consequence, mass, energy, and momentum all have the same
-%units.  For example, the equations for four-momenta are given by
-%$$p = (E, \vec p) = \gamma m (1, \vec \beta) \; .$$
-%We don't even use the symbol $\vec v$ for velocity, since it is the same as
-%$\vec \beta$.  The velocity can be obtained from the four momentum when
-%needed via the formula
-%$$\vec \beta = {\vec p \over E} \; .$$
-%Furthermore, the dot product between two momenta vectors is given by
-%$$p_1 \cdot p_2 = E_1 E_2 - \vec p_1 \cdot \vec p_2 \; .$$
-%In particular, the dot product of a particle's four momentum with itself is
-%$$p^2 = E^2 - \vec p^{\,2} = m^2 \; .$$
-%Conservation of momentum and energy is written as a single equation, which
-%looks like
-%$$\sum_i p_i = \sum_f p_f \; ,$$
-%where the sums run over the initial and final momenta.
-%
-%The second peculiarity of particle physics is the unit of energy, which is
-%called an electron volt.  The electron volt is the energy acquired by an
-%electron if it moves across an electric potential of one volt.  It is
-%written eV and has a value
-%$$\rm 1\,eV = 1.6{\times}10^{-13}\,J \; .$$
-%It is also used in metric multiples, such as
-%$$\rm 1\,keV = 10^3\,eV \; , \quad 1\,MeV = 10^6\,eV \; , \quad 1\,GeV =
-%10^9\,eV \; ,$$
-%Since we work with units where $c=1$, this is also the unit of mass and
-%momentum.  For example, the mass of the electron and proton are
-%$$m_e = 511\,{\rm keV} \qquad \hbox{and} \qquad m_p = 938\,{\rm MeV} \; .$$
-%
-%An electron at rest is accelerated in an electric field of one-thousand
-%volts per centimeter.  How far must the electron go to reach 98\% of the
-%speed of light?
-%
-%At $\beta=0.98$, we see that $\gamma = 5$, so the final energy of the
-%electron is $\gamma m_e c^2$.  Since the electron initially had a rest
-%energy of $m_e c^2$, the change in its energy is
-%$$\Delta E = (\gamma-1)m_e c^2 = 2050\,\rm keV\; .$$
-%For each centimeter travelled by the electron, it acquires 1000 eV = 1 keV,
-%so it must travel 2050 centimeters, or 20.5 meters.
 
 
 \subsection{Ejemplos}
