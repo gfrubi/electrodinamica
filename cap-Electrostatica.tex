@@ -1,0 +1,2176 @@
+\chapter{Electrost'atica}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introducci'on y conceptos fundamentales}
+
+Uno de los conceptos fundamentales para la descripci'on de los
+fen'omenos electromagn'eticos es el de \textit{carga el'ectrica}.
+La carga el'ectrica es una propiedad f'isica de los cuerpos,
+atribuida a ellos precisamente para diferenciar (o, en general,
+describir) su comportamiento en las interacciones
+electromagn'eticas. La experiencia ha mostrado que es posible
+describir las propiedades de la interacci'on
+electromagn'etica (por ejemplo, atracci'on, repulsi'on, o ausencia de fuerza) si
+se asume que la magnitud f'isica llamada carga el'ectrica puede
+adoptar valores positivos, negativos (o nulos), y que es una
+propiedad aditiva (es decir, que la carga el'ectrica total de un
+sistema formado por otras cargas es la suma algebraica de las
+cargas constituyentes).
+
+En general, la interacci'on electromagn'etica entre cargas puede ser bastante complicada. Por ejemplo, la fuerza que una carga ejerce sobre otra depende en general no s'olo de la distancia entre ellas, sino tambi'en de sus velocidades y aceleraciones relativas, y presenta adem'as efectos ``de retardo'' (esto quiere decir que la fuerza que una carga experimenta debido a la otra no depende de la posici'on, velocidad y aceleraci'on de la otra en el mismo instante, sino que en tiempos anteriores). Por esto, comenzaremos estudiando el caso m'as simple en que el sistema de cargas consideradas es \textit{estacionario}. En esta situaci'on los efectos de retardo y la dependencia con las velocidades y aceleraciones desaparecen, de modo que \textbf{las fuerzas electrost'aticas dependen s'olo de las distancias entre las cargas}.
+
+
+\subsection{Ley de Coulomb}
+
+En 1785 Coulomb\footnote{Charles Augustin de Coulomb: f'isico e ingeniero franc'es (1736-1806). Ver \url{http://es.wikipedia.org/wiki/Charles-Augustin_de_Coulomb}.} \textit{establece experimentalmente} que la fuerza entre dos cargas muy peque\~nas comparadas con la distancia que las separa (``puntuales'') es \textit{aproximadamente}  proporcional a la magnitud de las cargas, inversamente proporcional al cuadrado de la distancia entre ellas y en la direcci'on que las
+une. Finalmente el sentido de la fuerza es tal que dos cargas de igual signo se repelen y dos de signos opuestos se atraen. Este resultado experimental, y por consiguiente necesariamente aproximado, es la base de la teor'ia de la interacci'on electrost'atica. Esta teor'ia \textit{asume} entonces que la fuerza entre cargas ``puntuales'' es \textit{exactamente} inversamente proporcional al cuadrado de la distancia que las separa y en la direcci'on de la l'inea que los une, de modo que
+\begin{center}
+\begin{figure}[H]
+\centerline{\psfig{file=fig-Coulomb.pdf,height=4cm,angle=0}}
+\caption{Fuerza electrost'atica entre dos cargas puntuales.}
+\label{fig:Coulomb}
+\end{figure}
+\end{center}
+\begin{equation}
+F_i\propto \underbrace{\frac{qq'}{\left\vert \vec x-\vec
+x'\right\vert^2}}_\text{magnitud}\cdot
+\underbrace{\frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert }}_\text{vector unitario}.
+\end{equation}
+Podemos por tanto escribir
+\begin{equation}
+F_i=k\frac{qq'}{\left\vert \vec x-\vec x'\right\vert^2}
+\cdot\frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert }.
+\end{equation}
+El valor de la constante $k$ depende del sistema de unidades usado para medir
+magnitud de las cargas el'ectricas. Nosotros utilizaremos el sistema internacional SI (MKSA) donde la constante $k$ es denotada como\footnote{En el \textit{sistema gaussiano de unidades} (cgs) se
+define $k:=1$ de modo que la unidad de carga no es independiente:
+$[q]\stackrel{\text{cgs}}{=}cm^{3/2}g^{1/2}s^{-1}$. Esta unidad es llamada una
+\textit{unidad electrost'atica} (esu) o un \textit{statCoulomb}.}%
+\begin{equation}
+k:=\frac{1}{4\pi\varepsilon_0},
+\end{equation}
+y donde $\varepsilon_0$ se conoce como la \textit{permitividad del vac\'{\i}o}, y
+entonces
+\begin{equation}\marginnote{Ley de Coulomb}
+\boxed{F_i=\frac{qq'}{4\pi\varepsilon_0}\frac{\left(  x_i-x_i^{\prime
+}\right)  }{\left\vert \vec x-\vec x'\right\vert ^3}.}\label{leycoulomb}%
+\end{equation}
+En el sistema SI, la constante
+$k$ tiene el valor
+\begin{equation}
+k=c^2\times 10^{-7}\ Nm^2C^{-2},
+\end{equation}
+en que $c$ es la \textit{velocidad de la luz en el vac\'{\i}o}. Su valor es
+$c=2.99792458\times 10^{8}\,ms^{-1}$. Con esto $k\approx 9.0\times
+10^{9}\,Nm^2C^{-2}$, $\varepsilon _0\approx 8.854\times 10^{-12}
+\,C^2N^{-1}m^{-2}$.
+
+La expresi'on \eqref{leycoulomb} es conocida como \textit{ley de Coulomb}.
+Adicionalmente, se \textit{asume} que la fuerza que ejerce un conjunto de $N$
+cargas puntuales $q^{(\alpha)}$, $\alpha=1,\cdots N$, en posiciones $x^{(\alpha)}_i$ sobre una carga $q$ con posici'on $x_i$ es
+\begin{equation}
+F_i   =\sum_{\alpha=1}^{N}\frac{qq^{(\alpha)}}{4\pi\varepsilon_0}\frac{\left(
+x_i-x^{(\alpha)}_i\right)  }{\left\vert  \vec x-\vec x^{(\alpha)}\right\vert^3}
+=\frac{q}{4\pi\varepsilon_0}\sum_{\alpha=1}^{N}q^{(\alpha)}\frac{\left(
+x_i-x^{(\alpha)}_i\right) }{\left\vert  \vec x-\vec
+x^{(\alpha)}\right\vert^3}.\label{leycoulomb-discre}
+\end{equation}
+La suposici'on que esta fuerza sea la suma (vectorial) de las fuerzas individuales que
+actuar'ia sobre la carga $q$ debido a cada una de las cargas $q^{(\alpha)}$ es
+llamado \textit{principio de superposici'on}. Note que, como su nombre lo indica, este es un \textit{principio} en el que se basa la teor'ia electromagn'etica, ya que no es \textit{necesario a priori} que la interacci'on electrost'atica respete esta propiedad. En otras palabras, podr'ia ocurrir (o haber ocurrido) que la fuerza que dos cargas ejercen sobre una tercera no fuese \textit{exactamente} la suma vectorial de las fuerzas que cada una de ellas ejerce individualmente. Por ejemplo, hoy sabemos que esto 'ultimo es lo que efectivamente ocurre con la interacci'on gravitacional (!`\textit{no} satisface el principio de superposici'on!). En la teor'ia electromagn'etica se asume que la superposici'on es satisfecha en forma exacta. Como veremos, una consecuencia de este principio es que las ecuaciones que relacionan los campos el'ectricos (y sus respectivas fuerzas) con las distribuciones de carga que las producen est'an descritas por \textit{ecuaciones} (diferenciales y/o integrales) \textit{lineales}.
+
+
+Para una \textit{distribuci'on continua de cargas} podemos considerar un elemento de
+volumen $dV'$ conteniendo una carga $dq'=\rho(x')dV'$, donde $\rho(x')$ es
+la densidad (volum'etrica) de carga (carga por unidad de volumen). Usando el
+principio de superposici'on podemos escribir la fuerza total que esta
+distribuci'on ejerce sobre una carga (puntual) de prueba $q$ como
+\begin{align}
+F_i  &= \int_V dF_i \\
+& =\int_V\frac{q}{4\pi\varepsilon_0}\frac{\left(  x_i-x_i^{\prime
+}\right)  }{\left\vert \vec x-\vec x'\right\vert ^3}dq^{\prime},
+\end{align}
+es decir,
+\begin{equation}\marginnote{Fza. sobre carga puntual}
+F_i  =\frac{q}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(x_i-x_i'\right)
+}{\left\vert \vec x-\vec x'\right\vert
+^3}dV' .\label{leycoulomb-conti}%
+\end{equation}
+An'alogamente, podemos describir cargas distribuidas en (regiones que puedan
+aproximarse por) una superficie y/o curva usando la \textit{densidad superficial de
+carga} $\sigma(x')$ (carga por unidad de 'area) y/o la \textit{densidad lineal de carga} $\lambda(x')$ (carga por unidad de longitud), de modo que $dq'=\sigma(x')dS$
+y $dq'=\lambda(x')d\ell$, respectivamente.
+
+\subsection{Campo el'ectrico}
+El campo el'ectrico $E_i(\vec{x})$ en un punto $x_i$ es definido operacionalmente como la fuerza por unidad de carga \textit{sobre una carga muy peque\~na en tama\~no y magnitud} (``carga de prueba puntual'') $q$ situada en la posici'on $x_i$, es decir,
+\begin{equation}
+E_i(\vec x):=\lim_{q\rightarrow0}\frac{F_i}{q}.
+\end{equation}
+Note que el proceso l'imite ${q\rightarrow0}$ es necesario puesto que el uso de una carga $q$ de forma y magnitud arbitraria en general (mediante la fuerza de Coulomb) \textit{modificar'a la distribuci'on de cargas original}. Si la carga $q$ es cada vez m'as peque\~na en extensi'on y magnitud, entonces 'esta modificar'a cada vez menos la distribuci'on de carga original. En el l'imite ${q\rightarrow0}$, que ciertamente es una abstracci'on ya que en la pr'actica no existen cargas puntuales, ni tampoco cargas de magnitud arbitrariamente peque\~na, el cuociente $F_i/q$ ser'a independiente de la carga de prueba usada, y describir'a por lo tanto una cantidad dependiente s'olo de la distribuci'on de cargas considerada. Esto permite entonces considerar al campo el'ectrico como el campo \textit{generado por la distribuci'on de cargas}.
+
+Con estas consideraciones, tenemos entonces que el campo el'ectrico generado por un conjunto de cargas puntuales $q^{(\alpha)}$ es dado por
+\begin{equation}\marginnote{C. el'ectrico, cargas puntuales}
+E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\sum_{\alpha=1
+}^{N}q^{(\alpha)}\frac{\left(  x_i-x^{(\alpha)}_i\right)  }{\left\vert
+\vec x-\vec x^{(\alpha)}\right\vert ^3}.\label{campelectr}%
+\end{equation}
+Similarmente, para una distribuci'on volum'etrica de cargas:
+\begin{equation}\marginnote{C. el'ectrico, distribuci'on}
+\boxed{E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(
+x_i-x_i'\right)  }{\left\vert \vec x-\vec x'\right\vert
+^3}dV'.} \label{cerho}%
+\end{equation}
+En general, preferiremos la descripci'on de la distribuci'on de cargas en t'erminos de la densidad volum'etrica $\rho(\vec{x})$, ya que a partir de ella podemos recobrar r'apidamente los otros casos de inter'es. Por ejemplo, podemos recobrar el resultado para el conjunto de cargas puntuales \eqref{campelectr} a partir de 
+\eqref{cerho} si consideramos
+\begin{equation}
+\rho(\vec x)=\sum_{\alpha=1}^{N}q^{(\alpha)}\delta^{(3)}\left(\vec x-\vec
+x^{(\alpha)}\right).
+\label{conti-discre}%
+\end{equation}
+
+\subsection{L'ineas de campo el'ectrico}
+En electrodin'amica es 'util introducir el concepto de \textit{l'ineas de campo}. En el caso electrost'atico, asociado a cada configuraci'on de campo el'ectrico, descrito por el campo $E_i(\vec{x})$, es posible definir l'ineas de campo el'ectrico. Cada una de estas curvas, puede modelarse usando una parametrizaci'on de la forma $x_i=x_i(\lambda)$, donde $\lambda$ es un par'ametro real. Las l'ineas de campo son definidas como aquellas tales que sus vectores tangentes en cada punto son paralelos al vector campo el'ectrico. Esto es equivalente a la condici'on,
+\begin{equation}\marginnote{L'ineas de campo}
+\frac{dx_i}{d\lambda}(\lambda)=E_i(\vec{x}(\lambda)). \label{dlc}
+\end{equation}
+Note que, en general, es posible considerar un factor adicional al lado derecho de esta expresi'on (por ejemplo, $\alpha(\lambda)E_i(\vec{x}(\lambda))$ en lugar de $E_i(\vec{x}(\lambda))$), sin embargo la funci'on $\alpha(\lambda)$ puede siempre ser ``normalizada'' al valor $1$ redefiniendo convenientemente el par'ametro para describir la curva.
+
+M'as expl'icitamente, la condici'on (\ref{dlc}) adopta, en coordenadas cartesianas y en tres dimensiones, la forma 
+\begin{align}
+\frac{dx}{d\lambda}(\lambda) &= {E_x}(x(\lambda),y(\lambda),z(\lambda)), \\
+\frac{dy}{d\lambda}(\lambda) &= {E_y}(x(\lambda),y(\lambda),z(\lambda)),\\
+\frac{dz}{d\lambda}(\lambda) &= \vec{E_z}(x(\lambda),y(\lambda),z(\lambda)),
+\end{align}
+de modo que define, dadas las componentes del campo $E_x(x,y,z)$, $E_y(x,y,z)$ y $E_y(x,y,z)$, un sistema de 3 ecuaciones diferenciales ordinarias acopladas, de primer orden, para las inc'ognitas $x(\lambda),y(\lambda)$ y $z(\lambda)$.
+
+Una l'inea de campo particular queda determinada por la soluci'on del sistema de ecuaciones que satisface una determinada condici'on inicial, por ejemplo $\vec{x}(0)=\vec{x}_0$, donde $\vec{x}_0$ es un punto dado del espacio. La correspondiente soluci'on $\vec{x}(\lambda;\vec{x}_0)$ describir'a la l'inea de campo que pasa por el punto $\vec{x}_0$. Para algunos ejemplos, ver la figura\footnote{Figuras generadas usando \href{http://commons.wikimedia.org/wiki/User:Geek3/VectorFieldPlot}{VectorFieldPlot}, escrito por \href{http://commons.wikimedia.org/wiki/User:Geek3}{Geek3}. Archivos originales y otros ejemplos disponibles  \href{http://commons.wikimedia.org/wiki/Category:Created_with_VectorFieldPlot}{aqu\'i}.} \ref{fig-E}.
+
+\begin{center}
+\begin{figure}[H]
+\centerline{\psfig{file=fig-E-01.pdf,height=4cm,angle=0}\hfill\psfig{file=fig-E-02.pdf,height=4cm,angle=0}\hfill\psfig{file=fig-E-03.pdf,height=4cm,angle=0}}
+\caption{Ejemplos simples de l'ineas de campo el'ectrico.}
+\label{fig-E}
+\end{figure}
+\end{center}
+\subsection{Potencial el'ectrico}
+Usando el hecho que
+\begin{equation}
+\frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert ^3}\equiv
+-\partial_i\left( \frac{1}{\left\vert \vec x-\vec x'\right\vert
+}\right), \label{id01}%
+\end{equation}
+podemos escribir (\ref{cerho}) como
+\begin{align}
+E_i  & =\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(x_i-x_i'\right)
+}{\left\vert \vec x-\vec x'\right\vert^3} dV' \\
+&
+=-\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\partial_i\left(\frac{1}{\left\vert
+\vec x-\vec x'\right\vert }\right)  dV' \label{ein}\\
+& =-\partial_i\left[\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho
+(x')}{\left\vert \vec x-\vec x'\right\vert }dV'\right] \\
+& =-\partial_i\phi ,
+\end{align}
+es decir,
+\begin{equation}\marginnote{Campo a partir de potencial}
+\boxed{\vec{E}(x)=-\vec\nabla\phi (x),} \label{E=nablaphi}
+\end{equation}
+donde hemos definido el \textit{potencial el'ectrico}
+\begin{equation}\marginnote{Potencial electrost'atico}
+\boxed{\phi(\vec x):=\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec x')}{
+\left\vert \vec x-\vec x'\right\vert }dV' +\text{constante}.}\label{perho}%
+\end{equation}
+Note que es posible agregar una constante arbitraria a la definici'on del
+potencial. Por otro lado, es directo verificar que, como consecuencia directa de
+(\ref{E=nablaphi}), todo campo el'ectrost'atico es irrotacional, es decir, su
+rotor es nulo:
+\begin{equation}\marginnote{C. el'ectrico irrotacional}
+\boxed{\vec\nabla\times\vec{E}=\vec{0}.} \label{rotE0}
+\end{equation}
+Usando (\ref{E=nablaphi}), podemos expresar el potencial electrost'atico como
+una integral de l'inea del campo el'ectrico:
+\begin{equation}\marginnote{Potencial a partir de campo}
+ \boxed{\phi(\vec{x})=\phi(\vec{x}_0)-\int_{\vec{x}_0}^{\vec{x}} \vec{E}\cdot
+d\vec{x}.} \label{phiintE}
+\end{equation}
+Debido a (\ref{rotE0}) la integral (\ref{phiintE}) es independiente de la
+trayectoria que une los puntes $\vec{x}_0$ y $\vec{x}$, o equivalentemente,
+\begin{equation}\marginnote{C. el'ectrico sin circulaci'on}
+ \boxed{\oint_{\cal C}\vec{E}\cdot d\vec{x}=0,} \label{ointE0}
+\end{equation}
+para toda curva cerrada $\cal C$. Note adem'as que de esta propiedad se desprende que las l'ineas de campo electrost'atico no pueden ser cerradas. En efecto, si existiese una l'inea de campo el'ectrico cerrada ${\cal C}$, entonces podemos evaluar $\oint_{\cal C}\vec{E}\cdot d\vec{x}$ sobre esta curva. Pero sobre una l'inea de campo se satisface que (\ref{dlc}), de modo que
+\begin{align}
+\oint_{\cal C}\vec{E}\cdot d\vec{x} &= \oint_{\cal C}\frac{d\vec{x}}{d\lambda}\cdot d\vec{x} \\
+&= \oint_{\cal C}\frac{d\vec{x}}{d\lambda}\cdot \frac{d\vec{x}}{d\lambda}\,d\lambda \\
+&= \oint_{\cal C}\left|\frac{d\vec{x}}{d\lambda}\right|^2 d\lambda \\
+&>0 ,
+\end{align}
+en contradicci'on con (\ref{ointE0}).
+
+Note que como consecuencia de (\ref{E=nablaphi}) o, equivalentemente, de (\ref{phiintE}) el vector campo el'ectrico es siempre \textit{normal a las superficies equipotenciales} (definidas como aquellos puntos que satisfacen $\phi(\vec{x})=\text{cte.}$) y su \textit{sentido es siempre hacia regiones de menor potencial}.
+
+\section{Ley de Gauss}
+Usando (\ref{ein}) podemos calcular la divergencia del campo el'ectrico:
+\begin{eqnarray}
+\partial_iE_i &=&-\partial_i\left[
+\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\partial_i\left(\frac{1}{\left\vert
+\vec x-\vec x'\right\vert }\right)  dV'\right] \\
+&=&-
+\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\partial_i\partial_i\left(\frac{1}{
+\left\vert \vec x-\vec x'\right\vert }\right)  dV' \\
+&=&-
+\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\nabla^2\left(\frac{1}{\left\vert
+\vec x-\vec x'\right\vert }\right)  dV' \\
+&=&-
+\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\left[-4\pi\delta^{(3)}(x_i-x_i')\right]
+dV' \\
+&=& \frac{1}{\varepsilon_0}\int_V\rho(x')\delta^{(3)}(x_i-x_i')\, dV' \\
+&=& \frac{1}{\varepsilon_0}\rho(x).
+\end{eqnarray}
+Obtenemos as'i la \textit{forma diferencial de la ley de Gauss}\footnote{Carl Friedrich Gauss, (1777-1855): matem'atico, astr'onomo y f'isico alem'an, ver \url{http://es.wikipedia.org/wiki/Carl_Friedrich_Gauss}.}:
+\begin{equation}\marginnote{Ley de Gauss diferencial}
+\boxed{\partial_iE_i =\frac{1}{\varepsilon_0}\rho(x).} \label{leygauss-dif}
+\end{equation}
+Usando el teorema de la divergencia (de Gauss!) para un volumen $V$ arbitrario
+con borde $S=\partial V$, obtenemos
+\begin{eqnarray}
+\int_V\partial_iE_i\,dV'  &=&\frac{1}{\varepsilon_0}\int_V\rho(x')dV' ,\\
+\oint_S E_idS_i &=&\frac{1}{\varepsilon_0}q_V,
+\end{eqnarray}
+donde $q_V$ es la carga neta en el volumen $V$. En notaci'on vectorial:
+\begin{equation}\marginnote{Ley de Gauss integral}
+\boxed{\oint_S \vec{E}\cdot d\vec{S} =\frac{1}{\varepsilon_0}q_V .}
+\end{equation}
+Esta es la \textit{forma integral de la ley de Gauss}. Es importante recordar que la ley de Gauss en su forma integral es v'alida \textit{para todo volumen} $V$ y su correspondiente superficie ``gaussiana"\, $\partial V$. Debido a esta propiedad, la forma integral de la ley de Gauss resulta particularmente eficiente para determinar campos el'ectricos en situaciones altamente sim'etricas, donde es posible elegir el volumen de modo que $\vec{E}$ sea \textit{constante} sobre $\partial V$ (o al menos, sobre partes de $\partial V$).
+
+\subsection{Ejemplo}
+
+
+\subsection{Ecuaci'on de Poisson y Laplace}
+Usando (\ref{E=nablaphi}) y (\ref{leygauss-dif}) obtenemos
+\begin{equation}
+\partial_iE_i  =-\partial_i\partial_i\phi=\frac{\rho}{\varepsilon_0},
+\end{equation}
+es decir, el potencial el'ectrico satisface la \textit{ecuaci'on de
+Poisson}\footnote{Siméon Denis Poisson (1781-1840): matem'atico franc'es, ver \url{http://es.wikipedia.org/wiki/Sim\%C3\%A9on_Denis_Poisson}.}:
+\begin{equation}\marginnote{Ec. de Poisson}
+\boxed{\nabla^2\phi=-\frac{\rho}{\varepsilon_0}.}\label{poisson}
+\end{equation}
+Como consecuencia, el potencial electrost'atico en una regi'on libre de cargas
+satisface la \textit{ecuaci'on de Laplace}\footnote{Pierre Simon Laplace (1749-1827): matem'atico, f'isico y astr'onomo franc'es, \url{http://es.wikipedia.org/wiki/Laplace} .}:
+\begin{equation}\marginnote{Ec. de Laplace}
+\boxed{\nabla^2\phi=0.}\label{ecLap}
+\end{equation}
+
+
+
+\section{Condiciones de frontera para el campo el'ectrico en una
+interfase}\label{secCBE}
+
+La figura \ref{DSCE1} muestra la interfase entre dos regiones separadas por una
+superficie $S$ que posee una densidad superficial de carga $\sigma(x)$.
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-superficie-frontera.pdf,height=6cm,angle=0}}
+\caption{Condiciones de frontera para el campo el'ectrico.}
+\label{DSCE1}
+\end{figure}
+Para estudiar las condiciones que el campo el'ectrico satisface en esta
+interfase, aplicamos primero la ley de Gauss, a la superficie gaussiana de la
+figura \ref{DSCE2}:
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-condicion-borde-electrico-01.pdf,height=5cm,angle=0}}
+\caption{Condici'on de frontera para la componente normal del campo el'ectrico.}
+\label{DSCE2}
+\end{figure}
+\begin{eqnarray}
+\oint_{S} \vec{E}\cdot d\vec{S}&=&\int_{S_1}
+\vec{E}_1\cdot d\vec{S}+\int_{S_2} \vec{E}_2 \cdot d\vec{S}+\int_{S_3}
+\vec{E}\cdot d\vec{S}\\
+&=& -(\vec{E}_1\cdot\hat{n})\Delta S+(\vec{E}_2\cdot\hat{n})\Delta S+0\\
+&=& \frac{\sigma S}{\varepsilon_0},
+\end{eqnarray}
+donde $\Delta S$ es una superficie, cuyo \textit{vector unitario $\hat{n}$ est'a dirigido
+desde la cara $1$ a la cara $2$}, que contiene una densidad de carga
+$\sigma(\vec{x})$ $\left[ C/m^2\right]  $, y los campos el'ectricos a
+cada lado de la superficie son como se indica en la figura.
+
+Por tanto, obtenemos
+\begin{equation}\marginnote{Discontinuidad comp. normal}
+\boxed{\vec{E}_2\cdot\hat{n}-\vec{E}_1\cdot\hat{n}=\frac{\sigma}%
+{\varepsilon_0}.}\label{saltoEn}%
+\end{equation}
+
+Por otro lado, aplicando (\ref{ointE0}) a la curva de la figura \ref{DSCE3} obtenemos:
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-condicion-borde-electrico-02.pdf,height=5cm,angle=0}}
+\caption{Condici'on de frontera para la componente tangencial del campo el'ectrico.}
+\label{DSCE3}
+\end{figure}
+\begin{eqnarray}
+ \oint_{\cal C} \vec{E}\cdot d\vec{x}&=&\int_{{\cal C}_1} \vec{E}\cdot
+d\vec{x}+\int_{{\cal C}_2} \vec{E}\cdot d\vec{x}+\int_{{\cal C}_3}
+\vec{E}\cdot d\vec{x}+\int_{{\cal C}_4} \vec{E}\cdot d\vec{x} \\
+&=& -(\vec{E}_1\cdot\hat{t})\ell +(\vec{E}_2\cdot\hat{t})\ell +0+0 \\
+&=& 0.
+\end{eqnarray}
+De aqu'i encontramos que
+\begin{equation}\marginnote{Continuidad comp. tangencial}
+ \boxed{\vec{E}_2\cdot\hat{t}=\vec{E}_1\cdot\hat{t}.} \label{Etconst}
+\end{equation}
+Ya que la direcci'on del vector $\hat{t}$ es arbitraria (pero siempre
+tangencial a la superficie $S$), la condici'on (\ref{Etconst}) implica que
+ \textit{las componentes tangenciales (2 componentes linealmente idependientes) del campo el'ectrico permanecen inalteradas
+al cruzar la superficie} $S$.
+
+\subsection{Conductores}
+
+Los \textit{conductores} son cuerpos que, aunque est'en
+el'ectricamente neutros a nivel macros\-c'o\-pi\-co, poseen
+una enorme cantidad de electrones ``libres'' (es decir,  no ligados a
+los 'atomos, y que pueden moverse a trav'es del conductor tan pronto como
+existe un campo el'ectrico que induzca su movimiento)
+aptos para conducir la electricidad. La carga de estos electrones es
+neutralizada (a escala macrosc'opica) por la de los protones que est'an en los n\'{u}cleos, que pueden considerarse fijos. Como ejemplo de conductores podemos mencionar a los metales y a los electrolitos (cambi'en conocidos como \textit{soluciones i'onicas}).
+
+Si un conductor es cargado, o est'a en presencia de cargas externas, los electrones r'apidamente\footnote{Como veremos m'as adelante el \textit{tiempo de relajaci'on} es del orden de $\tau=\varepsilon/\sigma$ donde $\varepsilon$ es la \textit{constante diel'ectrica} del material y $\sigma$ su \textit{conductividad}. Por ejemplo, para el cobre $\tau\approx 10^{-19}$s.} se desplazan hasta una situaci'on de \textit{equilibrio}, es decir, un \textit{estado estacionario}. En este
+estado el campo el'ectrico (macrosc'opico) en el interior del conductor debe anularse ya que de otro modo la fuerza sobre ellos ser'ia no nula, induciendo
+movimiento. Por tanto, en situaci'on estacionaria $\vec{E}=\vec{0}$ en el
+\textit{interior} de los conductores. Como consecuencia de la ley de Gauss, la
+densidad de carga en el interior del conductor se anula cuando 'este
+alcanza su estado estacionario. En otras palabras, \textit{un conductor en estado estacionario distribuye su carga neta sobre su superficie}.
+
+Aplicando las condiciones de borde (\ref{saltoEn}) y (\ref{Etconst}) a la
+interfase del conductor, y tomando en cuenta que en este caso
+$\vec{E}_1=\vec{0}$, encontramos que \textit{en cada punto de la superficie (exterior) del conductor}
+\begin{equation}\marginnote{Campo fuera de conductor}
+ \vec{E}_2(x)=\frac{\sigma(x)}{\varepsilon_0}\hat{n}(x), \label{Econd}
+\end{equation}
+es decir, que el campo el'ectrico es normal a la superficie, y proporcional a la densidad de carga en cada punto de 'esta. El potencial el'ectrico, por otro lado, es necesariamente constante tanto dentro del conductor como sobre su superficie.
+
+\subsection{Sobre (dis)continuidad de los campos}
+ Idealmente, al menos cl'asica y macrosc'opicamente, la distribuci'on de carga descrita por la densidad volum'etrica $\rho(\vec{x})$ debiese ser una funci'on \textit{finita y continua} en todo punto. Como consecuencia, el campo el'ectrico y el potencial ser'ian, de acuerdo a (\ref{cerho}) y (\ref{perho}), tambi'en funciones finitas y cont'inuas. Sin embargo, com'unmente es \textit{conveniente} idealizar la distribuci'on de cargas, considerando que 'esta est'a limitada a una superficie bidimensional (es decir, de secci'on transversal despreciable). Este caso corresponde a considerar una densidad volum'etrica $\rho$ singular (discontinua y divergente)\footnote{Por ejemplo, la densidad volum'etrica correspondiente a una carga distribuida en todo el plano $xy$, con densidad superficial de carga $\sigma(x,y)$ puede escribirse como $\rho(x,y,z)=\sigma(x,y)\delta(z)$.}. En este caso, el campo el'ectrico poseer'a, en general, \textit{discontinuidades} en la superficie donde $\rho$ es singular, tal como analizamos en la secci'on \ref{secCBE}, pero ser'a \textit{finito en todo punto}. El potencial, por otro lado, ser'a una \textit{funci'on continua y diferenciable por tramos}. En resumen, para distribuciones de carga singulares que incluyan distribuciones superficiales de carga, el potencial puede siempre considerarse como una funci'on continua, el campo el'ectrico (proporcional a las derivadas del potencial) puede tener discontinuidades, mientras que las segundas derivadas del potencial (proporcionales a las primeras derivadas del campo el'ectrico y, a trav'es de la ecuaci'on de Poisson (\ref{poisson}), ligadas a la densidad volum'etrica de carga) pueden poseer regiones (superficies) singulares. En el caso de que la distribuci'on de carga se modele incluyendo cargas puntuales o l'ineas de carga, el potencial ya no finito en todo punto.
+
+
+\section{Soluci'on de la ecuaci'on de Laplace}
+\subsection{Coordenadas Esf'ericas}
+Una soluci'on general (finita sobre el eje $z$) de la ecuaci'on de Laplace en coordenadas esf'ericas puede escribirse como:
+\begin{equation}
+  \boxed{\phi(r,\theta,\varphi) = \sum_{l=0}^\infty\sum_{m=-l}^l\left[
+  A_{lm}  r^l + B_{lm}  r^{-(l+1)}\right]  Y_{lm}(\theta,\varphi),}
+  \label{est31b}
+\end{equation}
+donde $A_{lm}$ y $B_{lm}$ son coeficientes constantes. Note que estos
+coeficientes son en general complejos.
+
+Si, como caso particular, el potencial tiene simetr'ia axial, es decir no
+depende de la coordenada $\varphi$, entonces la expansi'on se reduce a
+\begin{eqnarray}
+  \phi(r,\theta) &=& \sum_{l=0}^\infty\left[
+  A_{l0}  r^l + B_{l0}  r^{-(l+1)}\right]  Y_{l0}(\theta,\varphi) \\
+&=&\sum_{l=0}^\infty\left[  A_{l0}  r^l + B_{l0}
+r^{-(l+1)}\right]\sqrt{\frac{2l+1}{4\pi}}\,P_l(\cos\theta) ,
+\end{eqnarray}
+o, equivalentemente,
+\begin{equation}\label{phiaxial}
+\boxed{\phi(r,\theta)=\sum_{l=0}^\infty\left[  a_l\,  r^l +
+\frac{b_l}{r^{l+1}}\right]\,P_l(\cos\theta),}
+\end{equation}
+donde $a_l$ y $b_l$ son nuevos coeficientes reales constantes.
+
+\subsubsection{Ejemplo: Esfera conductora en un campo el'ectrico externo}\label{sec:esfcond}
+
+Consideramos una esfera conductora de radio $R$ ubicada en un campo externo inicial homog'eneo $\vec{E}_0$. Elegimos los ejes coordenados de modo que el origen coincida con el centro de la esfera y el eje $z$ con la direcci'on del campo externo, es decir, $\vec{E}_0=E_0\hat{z}$.
+
+Luego de ubicar la esfera en el campo externo, las cargas libres en ella se reacomodan r'apidamente. En la situaci'on estacionaria final el campo el'ectrico en el interior de la esfera es nulo, es decir, $\vec{E}=0$ para $r<R$. Como consecuencia directa $\phi=\text{cte.}$ para $r<R$. Podemos elegir esta constante igual a cero, de modo que
+\begin{equation}
+\phi(r,\theta)=0, \qquad r<R.
+\end{equation}
+Por otro lado, de acuerdo a (\ref{Econd}) el campo el'ectrico en la superficie externa del conductor es radial, y proporcional a la densidad de carga $\sigma(\theta,\varphi)$. Debido que el sistema es sim'etrico bajo rotaciones en torno a la direcci'on de $\vec{E}$, tendremos que $\phi=\phi(r,\theta)$ y $\sigma=\sigma(\theta)$. Finalmente, fuera de la esfera el potencial satisface la ec. de Laplace, por lo que 'este debe tener la forma general (\ref{phiaxial}). Por lo tanto, para determinar el potencial en todo punto basta determinar los coeficientes (constantes) $a_l$ y $b_l$.
+
+Una condici'on necesaria es que asimpt'oticamente, es decir, para $r\to\infty$, el campo debe tender al campo externo inicial ya que los efectos de las cargas inducidas en la esfera ser'an cada vez menores en puntos cada vez m'as alejados, es decir, $\vec{E}\to\vec{E}_0 $. Esta condici'on es equivalente a 
+\begin{equation}
+\phi\to -E_0z+\alpha=-E_0r\cos\theta+\alpha .
+\end{equation}
+Aplicando esta condici'on a la expansi'on (\ref{phiaxial}) encontramos que necesariamente
+\begin{equation}
+a_0=\alpha, \qquad a_1=-E_0, \qquad a_2=a_3=\cdots =0,
+\end{equation}
+por lo que el potencial en todo punto se reduce a 
+\begin{equation}
+\phi(r,\theta)=\alpha -E_0 r\cos\theta +
+\sum_{l=0}^\infty\frac{b_l}{r^{l+1}}P_l(\cos\theta), \qquad r\ge R.
+\end{equation}
+Como el potencial es una funci'on cont'inua, debemos tener que
+\begin{equation}
+\phi(R,\theta)=\alpha -E_0 R\cos\theta +
+\sum_{l=0}^\infty\frac{b_l}{R^{l+1}}P_l(\cos\theta)=0, \qquad \forall \theta.
+\end{equation}
+De aqu'i, y ya que los polinomios de Legendre son funciones linealmente independientes, encontramos que necesariamente
+\begin{equation}
+\alpha+\frac{b_0}{R}=0, \qquad -E_0R+\frac{b_1}{R^2}=0, \qquad b_2=b_3=\cdots =0.
+\end{equation}
+Con esto, el potencial se reduce a
+\begin{equation}\label{phialpha}
+\phi(r,\theta)=\alpha -E_0 r\cos\theta -\alpha\frac{R}{r}+E_0 \frac{R^3}{r^2}\cos\theta. 
+\end{equation}
+La constante $\alpha$ es proporcional a la carga neta de la esfera. En efecto, usando (\ref{Econd}) podemos calcular la densidad superficial de carga en la esfera:
+\begin{align}
+\sigma(\theta) &= \varepsilon_0\, \vec{E}(R,\theta)\cdot\hat{r} \\
+&= -\varepsilon_0 \frac{\partial\phi}{\partial r}(R,\theta) \\
+&= -\varepsilon_0\left[-E_0\cos\theta+\frac{\alpha}{R}-2E_0\cos\theta\right]\\
+&= \varepsilon_0\left[3E_0\cos\theta-\frac{\alpha}{R}\right].
+\end{align}
+La carga neta de la esfera es entonces
+\begin{align}
+Q &= \int_S\sigma(\theta)\,dS \\
+&= 2\pi R^2 \int_0^\pi \sigma(\theta)\sen\theta\,d\theta \\
+&= 2\pi \varepsilon_0R^2 \int_0^\pi \left[3E_0\cos\theta-\frac{\alpha}{R}\right] \sen\theta\,d\theta \\
+&= 2\pi \varepsilon_0R^2 \left[ 0-\frac{2\alpha}{R}\right] \\
+&= -4\pi \varepsilon_0R \alpha .
+\end{align}
+En otras palabras, 
+\begin{equation}
+\alpha=-\frac{Q}{4\pi \varepsilon_0}\frac{1}{R}.
+\end{equation}
+Con este resultado, el potencial (\ref{phialpha}) puede escribirse como 
+\begin{equation}
+\phi(r,\theta)=-\frac{Q}{4\pi\varepsilon_0 R}+\frac{Q}{4\pi\varepsilon_0}\frac{1}{r} -E_0 \left(1-\frac{R^3}{r^3}\right)r\cos\theta.
+\end{equation}
+Como vemos, los primeros dos t'erminos son independientes del campo externo y representan el potencial de la carga neta de la esfera (que hemos supuesto aislada). El terc'er t'ermino es el campo externo inicial y por lo tanto el 'ultimo t'ermino describe el campo el'ectrico inducido producto de la polarizaci'on de la esfera conductora.
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-esfera-conductora-campo-externo.pdf,height=5.5cm,angle=0}
+\hspace{1cm}\psfig{file=fig-esfera-conductora-campo-externo-2.pdf,height=5.5cm,angle=0}}
+\caption{Campo el'ectrico de una esfera conductora neutra en un campo el'ectrico externo.}
+\label{fig:ecce}
+\end{figure}
+El campo el'ectrico es entonces dado por
+\begin{equation}
+\vec{E}(r,\theta)=E_r\hat{r}+E_\theta\hat{\theta},
+\end{equation}
+con 
+\begin{equation}
+E_r=\frac{Q}{4\pi\varepsilon_0}\frac{1}{r^2}+E_0 \left(1+2\frac{R^3}{r^3}\right)\cos\theta, \qquad E_\theta=-E_0 \left(1-\frac{R^3}{r^3}\right)\sen\theta .
+\end{equation}
+En la figura\footnote{La figura de la derecha fue generada usando \href{http://commons.wikimedia.org/wiki/User:Geek3/VectorFieldPlot}{VectorFieldPlot}, a partir de \href{http://commons.wikimedia.org/wiki/File:VFPt_superconductor_ball_E-field.svg}{este} archivo original.} \ref{fig:ecce} se muestra la forma de este campo, en el caso en que $Q=0$.
+
+
+%\subsection{Coordenadas Cil'indricas}
+
+%\subsection{Coordenadas Cartesianas}
+
+ \section{Soluci'on de la ecuaci'on de Poisson} 
+ \subsection{Soluci'on en t'erminos de Funciones de Green*}
+ La ecuaci'on de Poisson \eqref{poisson} para el potencial es una \textit{EDP lineal el'iptica inhomog'enea}. Una forma de encontrar soluciones de este tipo de ecuaciones es usando el m'etodo de las \textit{funciones de Green}. En nuestro caso, se dice que $G(\vec{x},\vec{x}')$ es una funci'on de Green del operador Laplaciano si satisface
+\begin{equation}\label{EDPG}
+\nabla^2G(\vec{x}',\vec{x})=\delta(\vec{x}-\vec{x}').
+\end{equation} 
+Si se conoce una funci'on de Green entonces la soluci'on de la ecuaci'on de Poisson para el potencial en una regi'on $V$ puede expresarse de la forma siguiente:
+\begin{align}
+\phi(\vec{x}) &= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}')\rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\vec\nabla' G(\vec{x},\vec{x}')-G(\vec{x},\vec{x}')\vec\nabla'\phi(\vec{x}')\right]\cdot d\vec{S}' \\
+&=  -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')-G(\vec{x},\vec{x}')\frac{\partial\phi}{\partial n'}(\vec{x}')\right]dS'
+\end{align}
+Introduciendo el campo el'ectrico en el segundo t'ermino del lado derecho podemos escribir
+\begin{equation}\label{solPoisson}
+\phi(\vec{x})= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')+G(\vec{x},\vec{x}')E_n(\vec{x}')\right]dS',
+\end{equation}
+donde $E_n:=\vec{E}\cdot\hat{n}$ es la componente del campo el'ectrico normal a la superficie $\partial V$ (con $\hat{n}$ orientado hacia el exterior del volumen $V$).
+
+Por otro lado, la funci'on de Green no es 'unica. Si $G_1(\vec{x},\vec{x}')$ es una funci'on de Green entonces $G_2(\vec{x},\vec{x}')=G_1(\vec{x},\vec{x}')+H(\vec{x},\vec{x}')$ tambi'en lo ser'a si $H$ es una soluci'on del problema homog'eneo: en nuestro caso de la ecuaci'on de Laplace, $\nabla^2H(\vec{x},\vec{x}')=0$. Esta arbitrariedad en la definici'on de la funci'on de Green es de hecho una ventaja, puesto que en general no se tiene informaci'on \textit{simult'anea} del potencial y la componente normal del campo en la frontera $\partial V$. Por esto, es conveniente elegir una funci'on de Green de modo que los t'erminos del lado derecho de \eqref{solPoisson} puedan efectivamente ser evaluados. Por ejemplo, si se conoce el potencial\footnote{condici'on de borde tipo Dirichlet.} en $\partial V$ (t'ipicamente, en situaciones donde $\partial V$ coincide con la superfice de conductores conectados a bater'ias suministrando una diferencia de potencial conocida) entonces es conveniente usar una \textit{funci'on de Green que se anule en la frontera}, $G(\vec{x},\vec{x}')=0$, $\forall$ $\vec{x}'\in\partial V$. En este caso, la soluci'on se reduce a
+\begin{equation}\label{solPoissonDirichlet}
+\phi(\vec{x})= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')dS',
+\end{equation}
+ Por otro lado, si se conoce la componente normal del campo en la frontera\footnote{condici'on de borde tipo Neumann.} (por ejemplo, en situaciones donde se dispone de informaci'on sobre la densidad de carga superficial en $\partial V$) entonces parece conveniente usar una funci'on de Green tal que su derivada normal sobre la frontera sea nula. Lamentablemente, esta condici'on \textit{no es posible de implementar} ya que necesariamente\footnote{Use el teorema de Gauss sobre la integral de volumen de \eqref{EDPG} para verificar esto!.} debe cumplirse que
+\begin{equation}\label{intGn}
+\oint_{\partial V}\frac{\partial G}{\partial n'}dS'=1.
+\end{equation}
+Una condici'on un poco menos restrictiva, y factible de implementar consistentemente, es imponer que la derivada normal de la funci'on de Green sea \textit{constante en la frontera}. Entonces, \eqref{intGn} requiere que
+\begin{equation}
+\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')=\frac{1}{S}, \qquad \vec{x}'\in\partial V,
+\end{equation}
+donde $S$ es el 'area total de la frontera, $S:=\oint_{\partial V} dS$. En este caso, la soluci'on para el potencial adopta la forma
+\begin{equation}
+\phi(\vec{x})= \left\langle\phi\right\rangle_S-\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}G(\vec{x},\vec{x}')E_n(\vec{x}')dS',
+\end{equation}
+donde
+\begin{equation}
+\left\langle\phi\right\rangle_S:=\frac{1}{S}\oint_{\partial V}\phi(\vec{x}')\,dS'
+\end{equation}
+es el \textit{valor promedio del potencial sobre} $\partial V$.
+
+Finalmente, la funci'on de Green m'as conocida del operador Laplaciano es dada por
+\begin{equation}
+G(\vec{x}-\vec{x}')=-\frac{1}{4\pi}\frac{1}{|\vec{x}-\vec{x}'|}.
+\end{equation}
+Esta funci'on de Green particular posee las propiedades adicionales de ser sim'etrica bajo rotaciones respecto al punto $\vec{x}'$, depender s'olo de la diferencia $\vec{x}-\vec{x}'$ y de anularse en el infinito (para todo valor finito de $\vec{x}'$). Debido a estas propiedades est'a directamente relacionada con la soluci'on de la ecuaci'on de Poisson en el caso en que la regi'on $V$ cubre todo el espacio y se asume que el campo el'ectrico se anula en el infinito\footnote{m'as r'apido que $1/r$, es decir, tal que $\lim_{|x|\to\infty}|\vec{E}|r=0$.}, de modo que el potencial se reduce a
+\begin{equation}
+\phi(\vec{x})= \left\langle\phi\right\rangle_\infty+\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec{x}')}{|\vec{x}-\vec{x}'|}dV'.
+\end{equation}
+
+\subsection{Unicidad de la soluci'on}\label{sec:uniP}
+A continuaci'on probaremos que \textit{la soluci'on de la ecuaci'on de Poisson es 'unica} (salvo una constante aditiva), en una regi'on $V$, para valores dados del potencial \textit{o de la componente normal del campo} en la frontera\footnote{Condiciones de borde tipo Dirichlet o tipo Neumann, respectivamente.} $\partial V$. Para esto, asumimos que existen dos soluciones distintas de \eqref{poisson} en $V$, $\phi_1(\vec{x})$ y $\phi_1(\vec{x})$, que \textit{satisfacen las mismas condiciones de borde}, es decir, su valor es conocido en $\partial V$ o bien su derivada normal es conocida en esta frontera.
+
+Definimos la diferencia $U(\vec{x}):=\phi_1(\vec{x})-\phi_2(\vec{x})$ que ser'a entonces una soluci'on de la ecuaci'on de Laplace, $\nabla^2U=0$. En la frontera $\partial V$ esta funci'on satisface $U=0$ o bien ${\partial U}/{\partial n}=0$, ya que asumimos que $\phi_1$ y $\phi_2$ satisfacen las mismas condiciones de borde (tipo Dirichlet, o bien tipo Neumann). Usamos ahora la identidad\footnote{Esta identidad es un caso particular de la as'i llamada \textit{primera identidad de Green}.}
+\begin{equation}
+ \int_V\left[\left|\vec\nabla U\right|^2+U\nabla^2U\right]  \,dV
+ \equiv\oint_SU\frac{\partial U}{\partial n}\,dS,
+ \end{equation}
+que puede ser verificada f'acilmente usando el teorema de Gauss. En nuestro caso, dada la EDP y las condiciones de borde que $U$ satisface, la identidad implica que
+\begin{equation}
+ \int_V\left|\vec\nabla U\right|^2dV=0.
+\end{equation}
+Como consecuencia la funci'on $U$ debe ser \textit{constante}\footnote{En principio, esto ser'ia v'alido excepto (a lo sumo) en un conjunto de medida cero. Sin embargo, esta posibilidad queda descartada si el potencial es una funci'on continua.}, por lo que las dos soluciones $\phi_1$ y $\phi_2$ s'olo pueden diferir por una constante, representando la misma soluci'on f'isica\footnote{M'as a'un, para condiciones de borde tipo Dirichlet, esta constante es necesariamente nula.}.
+
+Es importante notar que este resultado implica que, en general, es inconsistente intentar encontrar una soluci'on de la ecuaci'on de Poisson \textit{imponiendo simult'aneamente el valor del potencial y de su derivada normal en la frontera}.
+
+Note que los teoremas anteriores implican que el campo el'ectrost'atico en una regi'on $V$ queda totalmente determinado por la densidad de carga en el interior del volumen $V$, y por las condiciones de borde en la frontera $\partial V$. Una de las m'ultiples consecuencias de este hecho es que el campo al interior de un volumen de forma arbitraria, cuya frontera es mantenida a un potencial fijo (por ejemplo, por medio de un conductor puesto ``a tierra'') es \textit{independiente de la distribuci'on de cargas en el exterior}. De esta forma, es posible aislar una regi'on de las influencias el'ectricas externas (``jaula de Faraday'').
+
+
+\section{M'etodo de las im'agenes}
+Como vimos la secci'on \ref{sec:uniP}, la soluci'on de la ecuaci'on de Poisson, que determina el potencial electrost'atico y por lo tanto tambi'en el campo el'ectrico, es 'unica dadas las condiciones de borde apropiadas. Debido a esto, si
+obtenemos, \textit{por cualquier m'etodo}, una soluci'on que respete las condiciones de
+borde dadas, 'esta es \textit{la} soluci'on del problema. El \textit{m'etodo de
+las im'agenes} suministra un procedimiento para encontrar una soluci'on en
+casos donde el sistema contiene conductores (perfectos) a potencial constante
+(t'ipicamente, ``puestos a tierra'') y la geometr'ia de los conductores y las
+cargas es simple. Para ello, se introducen \textit{cargas ficticias} en
+posiciones apropiadas tales que el campo creado por el sistema de cargas reales
++ ficticias satisface las condiciones de borde.
+
+En otras palabras, el m'etodo de las im'agenes se basa en el hecho que la
+soluci'on para el campo el'ectrico en una regi'on finita $V$ con una
+distribuci'on de carga conocida y potenciales dados en su superficie
+$\partial V$ pueden ser los mismos (\underline{en $V$}) que los campos generados por la
+misma distribuci'on de carga en $V$ \textit{y por otra distribuci'on de carga
+diferente fuera de $V$}. Por esto, para solucionar el problema ``real'', en el
+que la distribuci'on de carga en $V$ y los potenciales en $\partial V$ son conocidos, se
+puede considerar el problema ``ficticio'' de encontrar las cargas ``imagenes''
+fuera de $V$ tales que la distribuci'on de cargas total (reales e im'agenes)
+satisfaga las condiciones de contorno en $\partial V$. Los campos as'i encontrados son
+soluci'on del problema original, dentro (pero \underline{no} fuera) de $V$. Como veremos, el m'etodo de las im'agenes b'asicamente provee un m'etodo heur'istico para encontrar la funci'on de Green apropiada a las condiciones de borde de un cierto problema f'isico.
+
+
+
+\subsection{Conductor plano}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-carga-imagen-01.pdf,height=6cm,angle=0}}
+\caption{Conductor plano, carga real $q$ e imagen $q'$.}
+\label{ci01}
+\end{figure}
+Consideremos la situaci'on donde una carga puntual $q$ se encuentra a una distancia $d$ de un plano conductor (infinito) ``puesto a tierra'' (de modo que su potencial es igual al potencial en el infinito, elegido como $\phi_\infty=0$). Eligiendo los ejes coordenados como lo indica la figura \ref{ci01}, tendremos que en la situaci'on estacionaria $\phi=0$ para $x\le 0$. Usando el m'etodo de las im'agenes resolvemos el problema equivalente obtenido al reemplazar el plano conductor por una carga ficticia (imagen) $q'$ ubicada en la posici'on $x=-d'<0$. El potencial de la condiguraci'on de carga real m'as carga imagen es entonces
+\begin{equation}
+ \phi(x)=\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{\sqrt{(x-d)^2+y^2+z^2}}+\frac
+{q'}{\sqrt{(x+d')^2+y^2+z^2}}\right].
+\end{equation}
+La condici'on que $\phi=0$ sobre el plano, es decir, para todo punto con $x=0$,
+se satisface s'olo si
+\begin{equation}
+ d'=d, \qquad q'=-q.
+\end{equation}
+Por lo tanto, la soluci'on para el potencial en todo punto con $x\ge 0$ es dada por
+\begin{equation}
+ \phi(x)=\frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{(x-d)^2+y^2+z^2}}-\frac
+{1}{\sqrt{(x+d)^2+y^2+z^2}}\right], \qquad x\ge 0.
+\end{equation}
+\begin{center}
+\begin{figure}[H]
+\centerline{\psfig{file=fig-metodo-imagen-plano-01.pdf,height=4.5cm,angle=0}
+\hspace{2cm}\psfig{file=fig-metodo-imagen-plano-02.pdf,height=4.5cm,angle=0}}
+\caption{Campo el'ectrico de plano conductor (puesto a Tierra) y carga puntual. 
+Figuras adaptadas de  \href{http://commons.wikimedia.org/wiki/File:VFPt_image_charge_plane_horizontal.svg}{este} y \href{http://commons.wikimedia.org/wiki/File:VFPt_image_charge_plane.svg}{este} archivo original.}
+\label{fig:pyc}
+\end{figure}
+\end{center}
+La densidad de carga inducida en el conductor puede calcularse usando
+\begin{equation}
+ \sigma(y,z)=\varepsilon_0
+\vec{E}\cdot\hat{n}=-\varepsilon_0\left.(\partial_x\phi)\right|_{x=0}
+\end{equation}
+que, luego de algo de 'algebra, resultar ser
+\begin{equation}
+ \sigma(y,z)=-\frac{q}{2\pi}\frac{d}{(d^2+y^2+z^2)^{3/2}}.
+\end{equation}
+Por otro lado, la fuerza que ejerce el plano sobre la carga puede ser calculada usando
+\begin{equation}
+\vec{F}_q=q\vec{E}',
+\end{equation}
+donde $\vec{E}'$ es el campo \textit{externo} que act'ua sobre $q$, es decir, el campo
+determinado por el potencial
+\begin{equation}
+ \phi'(x)=-\frac{q}{4\pi\varepsilon_0}\frac{1}{\sqrt{(x+d)^2+y^2+z^2}},
+\qquad x>0,
+\end{equation}
+evaluado en la posici'on en que se ubica la carga $q$, es decir,
+\begin{eqnarray}
+ \vec{F}_q&=&-q(\vec{\nabla}\phi')|_{\vec{x}=d\hat{x}} \\
+&=&-\frac{q^2}{16\pi\varepsilon_0d^2}\,\hat{x}.
+\end{eqnarray}
+Note que esta fuerza es la misma que ejerce(r'ia) la carga imagen sobre la carga real.
+
+\subsection{Conductor esf'erico}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-carga-imagen-02.pdf,height=6cm,angle=0}}
+\caption{Conductor esf'erico, carga real $q$ e imagen $q'$.}
+\label{ci02}
+\end{figure}
+En este caso, consideramos el sistema formado por un conductor esf'erico, de radio $a$, ``puesto a tierra", de modo que su potencial $\phi=\phi_\infty=0$, y una carga puntual $q$ ubicada a una distancia $d$ del centro del conductor. El campo el'ectrico fuera del conductor es equivalente al campo producido por la carga real $q$ y una carga imagen de magnitud $q'$ ubicada dentro de la esfera, a una distancia $d'$ de su centro. 
+
+En efecto, el potencial de la carga real y la carga imagen, de acuerdo a las posiciones indicadas en la figura \ref{ci02}, es dado por
+\begin{equation}
+ \phi(r,\theta)=\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{\sqrt{
+r^2+d^2-2dr\cos\theta } } +\frac{q'}{\sqrt{r^2+d'^2-2d'r\cos\theta}}\right]
+\end{equation}
+Puede verificarse r'apidamente que la condici'on que $\phi=0$ sobre la esfera, para todo punto con $r=a$, se satisface s'olo si
+\begin{equation}
+ d'=\frac{a^2}{d}, \qquad q'=-q\frac{a}{d}.
+\end{equation}
+Por lo tanto, la soluci'on para el potencial en todo punto exterior a la
+esfera conductora es dada por
+\begin{equation}\label{phice}
+ \phi(r,\theta)=\frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{
+r^2+d^2-2dr\cos\theta}}
+-\frac{a}{\sqrt{a^4+r^2d^2-2a^2dr\cos\theta}}\right], \qquad r\ge a .
+\end{equation}
+\begin{center}
+\begin{figure}[H]
+\centerline{\psfig{file=fig-metodo-imagen-esfera-01.pdf,height=5cm,angle=0}
+\hspace{2cm}\psfig{file=fig-metodo-imagen-esfera-02.pdf,height=5cm,angle=0}}
+\caption{Campo el'ectrico de esfera conductora (puesta a Tierra) y carga puntual. 
+Figuras adaptadas de  \href{http://commons.wikimedia.org/wiki/File:VFPt_metal_ball_grounded.svg}{este} y \href{http://commons.wikimedia.org/wiki/File:VFPt_metal_ball_grounded_transparent.svg}{este} archivo original.}
+\label{fig:eyc}
+\end{figure}
+\end{center}
+La densidad de carga inducida en la esfera conductora puede calcularse usando
+\begin{equation}\label{sce}
+ \sigma(\theta)=\varepsilon_0\vec{E}\cdot\hat{n}
+=-\varepsilon_0\left.(\partial_r\phi)\right|_{r=a}.
+\end{equation}
+Reemplazando (\ref{phice}) en (\ref{sce}) encontramos que
+\begin{equation}
+ \sigma(\theta)=-\frac{q}{4\pi}\frac{1}{ad}\frac{1-\frac{a^2}{d^2
+}}{\left[1+\left(\frac{a}{d}\right)^2-2\left(\frac{a}{d}\right)\cos\theta\right]
+^{3/2}}.
+\end{equation}
+La carga total inducida en la esfera es entonces
+\begin{equation}
+ Q_{\rm ind}=\oint\sigma\,dS=2\pi
+a^2\int_0^\pi\sigma(\theta)\sin\theta\,d\theta=-q\frac{a}{d}.
+\end{equation}
+Note que necesariamente la esfera debe tener una carga neta (igual a la carga imagen) para que $\phi=0$ en su superficie.
+
+Finalmente, la fuerza que la esfera ejerce sobre la carga es dada por
+\begin{equation}
+\vec{F}_q=-\frac{q^2}{4\pi\varepsilon_0}\frac{a}{d}\frac{1}{(d'-d)^2}\,
+\hat{z}=-\frac { q^2 }{4\pi\varepsilon_0}\frac{ad}{(a^2-d^2)^2}\,\hat{z}.
+\end{equation}
+
+\subsection{Conductor Cil'indrico}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-carga-imagen-03.pdf,height=6cm,angle=0}}
+\caption{Conductor cil'indrico, l'ineas de densidad $\lambda$ y $-\lambda$.}
+\label{ci03}
+\end{figure}
+Consideremos ahora el campo generado por dos l'ineas (infinitas) de carga, con
+densidades lineales de carga $\lambda$ y $-\lambda$, situadas en $x=+d$ y
+$x=-d$, respectivamente. Ver figura \ref{ci03}.
+
+El potencial en un punto cualquiera fuera de las l'ineas de carga es dado por
+\begin{equation}
+ \phi(x,y)=\frac{\lambda}{2\pi\varepsilon_0}\ln\left(\frac{r_1}{r_2}
+\right)=\frac{\lambda}{4\pi\varepsilon_0}\ln\left(\frac{r_1^2}{r_2^2}
+\right)=\frac{\lambda}{4\pi\varepsilon_0}\ln\left(\frac{(x+d)^2+y^2}{
+(x-d)^2+y^2}\right).
+\end{equation}
+
+Estudiemos la ubicaci'on de las superficies equipotenciales de esta
+configuraci'on de cargas. Por simplicidad (de c'alculo), consideraremos las superficies con $\phi=\phi_0=\text{cte.}$, con
+\begin{equation}
+ \phi_0:=\frac{\lambda}{2\pi\varepsilon_0}\ln M, \label{phi0M}
+\end{equation}
+donde $M>0$ es una constante adimensional.  Con esto, las superficies $\phi=\phi_0$
+corresponden a los puntos que satisfacen
+\begin{equation}
+ \frac{(x+d)^2+y^2}{(x-d)^2+y^2}=M^2. \label{equip1}
+\end{equation}
+Luego de un poco de 'algebra encontramos que, si $M\neq 1$, (\ref{equip1}) es
+equivalente a
+\begin{equation}
+ \left[x-\frac{d(1+M^2)}{M^2-1}\right]^2+y^2=\frac{4M^2d^2}{(1-M^2)^2},
+\end{equation}
+que es la ecuaci'on de un cilindro (una circunsferencia en el plano $xy$),
+centrado en las coordenadas $(x_{\rm c},y_c)$ y con radio $R$, dados por
+\begin{equation}
+ x_{\rm c}=\frac{d(1+M^2)}{M^2-1}, \qquad y_c=0, \qquad R=\frac{2Md}{|1-M^2|}.
+\label{cilim}
+\end{equation}
+Vemos de aqu'i que (asumiendo $\lambda>0$) $x_{\rm c}<-d$ y $\phi_0<0$ si $M<1$,
+mientras que $x_{\rm c}>d$ y $\phi_0>0$ si $M>1$.
+
+Por otro lado, si $M=1$, entonces la superficie equipotencial es el plano
+definido por $x=0$, es decir, el plano $yz$.
+
+De estos resultados, vemos que las superficies equipotenciales del sistema de
+cargas analizado son cil'indros centrados sobre el eje $x$ (a ambos lados del
+plano $yz$ eje) y un plano a potencial nulo en $x=0$. Ver figura \ref{ci04}.
+%
+%Usando el m'etodo de las im'agenes podemos usar este resultado para encontrar el campo en el exterior de un cilindro conductor, en el caso en que fuera de 'este se ubica una  l'inea de carga paralela a su eje. Si 
+
+Esta informaci'on puede ser usada, por ejemplo, para encontrar el campo
+el'ectrost'atico entre un plano y un cilindro, a una diferencia de potencial
+dada $V$. Si el plano se encuentra en $x=0$, a potencial nulo y el cilindro, de
+radio $R$, se ubicado en $x_{\rm c}>R$, entonces el campo puede ser determinado
+considerando \textit{ambas l'ineas de carga como ficticias}. De las relaciones
+(\ref{phi0M}), con $\phi_0=V$, y (\ref{cilim}) podemos entonces encontrar la
+constante $M$, as'i como la posici'on, $d$, y magnitud $\lambda$ de las l'ineas
+de cargas ficticias del problema equivalente, en funci'on de los datos $V$,
+$x_0$ y $R$. Luego de algo de 'algebra, obtenemos
+\begin{equation}
+ M=\frac{x_{\rm c}}{R}+\sqrt{\left(\frac{x_{\rm c}}{R}\right)^2-1}, \qquad
+d=\frac{R(M^2-1)}{2M}, \qquad \lambda=\frac{2\pi\varepsilon_0V}{\ln M}.
+\end{equation}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-carga-imagen-04.pdf,height=6cm,angle=0}
+\hspace{1cm}
+\psfig{file=fig-carga-imagen-05.pdf,height=6cm,angle=0}}
+\caption{Superficies equipotenciales y l'ineas de campo}
+\label{ci04}
+\end{figure}
+
+\section{Energ'ia potencial el'ectrica de cargas en un campo externo}
+Como consecuencia de (\ref{E=nablaphi}), la fuerza electrost'atica es
+\textit{conservativa}, pues puede derivarse de una energ'ia potencial (o,
+equivalentemente, el trabajo es independiente de la trayectoria, ya que el campo
+el'ectrico es irrotacional):
+\begin{equation}
+\boxed{F_i=qE_i=-q\partial_i\phi .}
+\end{equation}
+Definimos la \textit{energ\'{\i}a potencial el'ectrica} de una carga $q$ ubicada en un punto $x$ con campo el'ectrico (externo) descrito por el potencial $\phi(x)$ por
+\begin{equation}
+\boxed{U(x):=q\phi(x),} \label{Uqphi}
+\end{equation}
+de modo
+que
+\begin{equation}
+\boxed{F_i(x)=-(\partial_iU)(x) .}
+\end{equation}
+Como toda energ'ia potencial, la energ'ia potencial el'ectrica es una
+cantidad bien definida salvo una constante aditiva arbitraria. Como
+consecuencia, \textit{s'olo las diferencias de energ'ia potencial tienen
+significado f'isico inambiguo} (pueden en principio ser medidas). Esta caracter'istica se
+ilustra m'as claramente si consideramos el trabajo realizado por un campo
+el'ectrico sobre una carga $q$ al desplazarse 'esta desde el punto $A$ hasta el
+punto $B$:
+\begin{equation}\label{WABDU}
+W_{A\rightarrow B}=\int_A^B F_i\, dx_i=-\int_A^B
+\partial_iU\,dx_i=-\left.U\right|_A^B=-\Delta U=-q\Delta\phi=-q(\phi_B-\phi_A).
+\end{equation}
+
+Como consecuencia, una part'icula cargada de masa $m$ y carga $q$ movi'endose en el campo el'ectrico externo descrito por el potencial $\phi$ tendr'a una energ'ia mec'anica $E=K+U=m\vec{v}^2/2+q\phi$, que ser'a constante si no existen otras fuerzas actuando, es decir,
+\begin{equation}
+E=\frac{1}{2}m\vec{v}^2+q\phi(x)=\text{cte.}
+\end{equation}
+
+Podemos generalizar la expresi'on \eqref{Uqphi} para el caso de una distribuci'on cont'inua de cargas \textit{de prueba}, en un campo \textit{externo}. En otras palabras, \textit{despreciamos el campo que las mismas cargas producen}. Por simple superposici'on encontramos que la energ'ia potencial de una distribuci'on de cargas descritas por la densidad $\rho(\vec{x})$ en un campo \textit{externo} $\phi(\vec{x})$ es dado por
+\begin{equation} \label{Urhophiext}
+U=\int \rho(\vec{x})\,\phi(\vec{x})\,dV.
+\end{equation}
+
+%\subsection{Ejemplo}
+\section{Energ'ia potencial de un sistema de cargas}  \label{ed3_1}
+
+\subsection{Energ'ia potencial de un conjunto de cargas puntuales}
+\label{ed3_1_1}
+
+Consideremos ahora el problema de determinar la \textit{energ'ia potencial total de un
+conjunto de $N$ cargas puntuales}, pero \textit{ahora tomando en cuenta el campo que ellas mismas generan}. Cada carga $q^{(\alpha)}$ posee una energ'ia
+potencial $U^{(\alpha\beta)}$ asociada al campo el'ectrico producido por cada una de las \textit{otras cargas}  $q^{(\beta)}$, con $\beta\ne \alpha$. Aqu'i $\alpha,\beta=1,\cdots, N$.
+
+Adem'as, el potencial el'ectrico en el punto $\vec{x}$, generado por la carga $q^{(\beta)}$
+ubicada en el punto $\vec{x}^{(\beta)}$, es dado por
+\begin{equation}
+\phi^{(\beta)}(\vec{x})=\frac{1}{4\pi\varepsilon_0}\,\frac{q^{(\beta)}}{|\vec{x}
+-\vec{x}^{(\beta)}|} ,
+\end{equation}
+de modo que
+\begin{equation} \label{eq3.1.3}
+U^{(\alpha\beta)}=q^{(\alpha)}\,\phi^{(\beta)}(\vec{x}^{(\beta)})=\frac{1}{4\pi\varepsilon_0}\,\frac{q^{(\alpha)}\,q^{(\beta)}}{|\vec{x}^{(\alpha)}-\vec{x}^{(\beta)}|}.
+\end{equation}
+Vemos de (\ref{eq3.1.3}) que $U^{(\alpha\beta)}=U^{(\beta\alpha)}$, es decir, la energ'ia potencial de la carga $\alpha$-'esima debido al campo producido por la carga
+$\beta$-'esima es igual a la energ'ia potencial de la $\beta$-'esima debido al campo
+de la $\alpha$-'esima.
+
+Adem'as,  $U^{(\alpha\beta)}\to 0$, cuando  $|\vec{x}^{(\alpha)}|\to\infty$
+'o $|\vec{x}^{(\beta)}|\to\infty$. Entonces, de acuerdo a \eqref{WABDU}, \textit{podemos interpretar $U^{(\alpha\beta)}$ como la energ'ia (trabajo) que se necesita para traer la carga
+$q^{(\alpha)}$ desde el infinito hasta la posici'on $\vec{x}^{(\alpha)}$, en el campo
+el'ectrico producido por la carga $q^{(\beta)}$, fija en $\vec{x}^{(\beta)}$}, o
+vicecersa.
+
+Para calcular la energ'ia potencial el'ectrica total de un sistema de muchas cargas
+puntuales, ``construimos'' el sistema, carga por carga, tray'endolas desde el
+infinito (donde la interacci'on mutua es despreciable): Primero consideramos que la carga $q^{(1)}$ es transportada desde
+el infinito hasta su posici'on final $\vec{x}^{(1)}$. Para esto no se requiere
+trabajo alguno ya que no existe campo el'ectrico preexistente que act'ue sobre
+esta carga. Como segundo paso, traemos la carga $q^{(2)}$ desde el infinito
+hasta su posici'on final $\vec{x}^{(2)}$. Este proceso requiere una energ'ia
+dada por $U^{(21)}$. En el siguiente paso, traemos $q^{(3)}$ desde el
+infinito hasta $\vec{x}^{(3)}$, manteniendo fijas las cargas $q^{(1)}$ y
+$q^{(2)}$. La energ'ia requerida para este paso es $U^{(31)}+U^{(32)}$. Hasta
+el momento la energ'ia total requerida para formar el sistema de 3 cargas es
+$U^{(21)}+U^{(31)}+U^{(32)}=U^{(12)}+U^{(13)}+U^{(23)}$. Continuando
+este proceso encontramos que \textit{la energ'ia potencial el'ectrica total de un
+sistema de $N$ cargas} $q^{(\alpha)}$, con posiciones $\vec{x}^{(\alpha)}$ es dado por
+\begin{equation} \label{eq3.1.4}
+U=\sum_{\alpha,\beta\,(\alpha>\beta)}^N U^{(\alpha\beta)}=\frac{1}{4\pi\varepsilon_0}\,
+\sum_{\alpha,\beta\,(\alpha>\beta)}^N \frac{q^{(\alpha)}\,q^{(\beta)}}{|\vec{x}^{(\alpha)}-\vec{x}^{(\beta)}|}.
+\end{equation}
+Alternativamente, ya que $U^{(\alpha\beta)}=U^{(\beta\alpha)}$, podemos escribir
+$U=({1}/{2})\sum_{\alpha,\beta\,(\alpha\ne \beta)}^N U^{(\alpha\beta)}$, de modo que
+\begin{equation} \label{eq3.1.5}\marginnote{Energ'ia sist. cargas puntuales}
+\boxed{U=\frac{1}{8\pi\varepsilon_0}\,
+\sum_{\alpha,\beta\,(\alpha\ne \beta)}^N \frac{q^{(\alpha)}\,q^{(\beta)}}{|\vec{x}^{(\alpha)}-\vec{x}^{(\beta)}|}.}
+\end{equation}
+En t'erminos del \textit{potencial el'ectrost'atico total en el punto $\vec{x}^{(\alpha)}$
+debido a todas las otras cargas} $q^{(\beta)}$ ($\beta\ne \alpha$),
+\begin{equation}
+\phi'(\vec{x}^{(\alpha)})=\frac{1}{4\pi\varepsilon_0}\,
+\sum_{\beta\,(\beta\ne \alpha)}^N \frac{q^{(\beta)}}{|\vec{x}^{(\alpha)}-\vec{x}^{(\beta)}|},
+\end{equation}
+tenemos que
+\begin{equation}\label{Wqphi}
+\boxed{U= \frac{1}{2}\,\sum_{\alpha=1}^N q^{(\alpha)}\,\phi'(\vec{x}^{(\alpha)}).}
+\end{equation}
+
+\subsection{Energ'ia potencial de una distribuci'on continua de cargas} \label{ed3_1_2}
+En el caso de una \textit{distribuci'on continua} de carga descrita por una densidad de carga $\rho(\vec{x})$, requerimos una expresi'on similar a la encontrada en la secci'on anterior para cargas puntuales. En el l'imite continuo, esperamos poder reemplazar $q^{(\alpha)}\to dq=\rho(\vec{x})\,dV$. Por otro lado, podr'iamos esperar que el potencial $\phi'(x^{(\alpha)})$ tienda simplemente al potencial de la distribuci'on continua de carga, evaluado en el punto $\vec{x}$, es decir, $\phi'(x^{(\alpha)})\to\phi(\vec{x})$, ya que no tiene sentido hacer distinci'on, en el caso de una distribuci'on continua, entre el campo $\phi'$ (es decir, el potencial producido por las cargas del sistema localizadas en puntos $\vec{x}'\neq\vec{x}$) y el simplemente el potencial $\phi(\vec{x})$. 
+
+De este modo, obtenemos
+\begin{equation}\marginnote{Energ'ia de dist. continua}
+\boxed{U= \frac{1}{2}\,\int\rho(\vec{x})\,\phi(\vec{x})\,dV.} \label{Urhophi}
+\end{equation}
+
+Es importante entender la diferencia entre \eqref{Urhophiext} y \eqref{Urhophi}. La primera expresi'on representa la energ'ia potencial de una distribuci'on de cargas \textit{en un campo externo}, \textit{despreciando el campo que ellas mismas producen} (cargas ``de prueba"), mientras que la segunda representa \textit{la energ'ia potencial total contenida en un sistema de cargas debido su propio campo}. En otras palabras, los potenciales involucrados en \eqref{Urhophiext} y \eqref{Urhophi} son de naturaleza distinta: en la primera expresi'on representa el potencial externo, y en la segunda el potencial generado por las propias cargas. \textit{S'olo en el segundo caso el potencial est'a relacionado con la densidad por medio de la ecuaci'on de Poisson}.
+
+Adem'as, si bien al aplicar la integral \eqref{Urhophi} al caso de distribuciones continuas y finitas de carga se obtienen resultados finitos, al intentar aplicarla al caso de una carga \textit{puntual} (o conjuntos de cargas puntuales) se encuentra un resultado \textit{divergente}. Esto, sin embargo, es usualmente interpretado asumiendo que  una carga puntual es una \textit{idealizaci'on}: el l'imite en que el tama\~no de la carga es nulo.
+En la pr'actica, consideraremos a \eqref{Urhophi} como la expresi'on general para la energ'ia de una distribuci'on general de cargas, mientras que para un conjunto de cargas puntuales usaremos (\ref{eq3.1.5}) o, alternativamente, (\ref{Wqphi}).
+
+\subsubsection{Derivaci'on alternativa}
+Podemos derivar la expresi'on \eqref{Urhophi} considerando el proceso de ``construcci'on'' del sistema en que la densidad es aumentada paulatinamente desde 0 hasta $\rho(\vec{x})$. Si en un instante dado la densidad es, en cada punto, una fracci'on $\lambda$ ($0\le\lambda\le 0$) de la densidad total, es decir, si la densidad es $\lambda\rho(\vec{x})$, entonces el potencial generado por esta densidad es $\phi_\lambda(\vec{x})=\lambda\phi(\vec{x})$, ya que las la ecuaci'on que determina el potencial a partir de la densidad de carga (la ec. de Poisson (\ref{poisson})) es lineal. Entonces el trabajo necesario para aumentar la fracci'on de carga desde $\lambda$ hasta $\lambda+d\lambda$ es el trabajo necesario para transportar las cargas $dq=d\lambda\,\rho(\vec{x})dV$ desde el infinito hasta sus posiciones finales, en el campo $\phi_\lambda(\vec{x})$. Por lo tanto, el trabajo total requerido para aumentar la densidad de carga en una fracci'on $d\lambda$ es dado por:
+\begin{align}
+dW &= \int_V dq\,\phi_\lambda(\vec{x}) \\
+&= \int_V \left[d\lambda\,\rho(\vec{x})\,dV\right]\left[\lambda\phi(\vec{x})\right] \\
+&= \lambda d\lambda\,\int_V \rho(\vec{x})\phi(\vec{x}) \,dV . \label{dWlambda}
+\end{align}
+La energ'ia requerida en el proceso completo de ``construcci'on'' del sistema de cargas es entonces la suma de los trabajos de la forma (\ref{dWlambda}) desde $\lambda=0$ hasta $\lambda=1$, es decir,
+\begin{equation}
+U=\int_0^1dW,
+\end{equation}
+que lleva nuevamente a la expresi'on \eqref{Urhophi}.
+
+\subsubsection{Energ'ia en funci'on del campo el'ectrico}
+
+Podemos expresar la energ'ia \eqref{Urhophi} en t'erminos del campo el'ectrico,
+usando la ley de Gauss (\ref{leygauss-dif}):
+\begin{eqnarray}
+U&=&\frac{1}{2}\,\int\rho(\vec{x})\,\phi(\vec{x})\,dV \\
+&=&\frac{\varepsilon_0}{2}\,\int(\partial_i E_i)\,\phi\,dV\\
+&=&\frac{\varepsilon_0}{2}\,\int\left[
+\partial_i(E_i\phi)-E_i\partial_i\phi\right] dV\\
+&=&\frac{\varepsilon_0}{2}\left[\oint
+E_i\phi\,dS_i-\int E_i\partial_i\phi\, dV\right]\\
+&=&\frac{\varepsilon_0}{2}\left[0+\int E_iE_i\, dV\right]\\
+&=&\frac{\varepsilon_0}{2}\int \vec{E}^2\, dV.
+\end{eqnarray}
+En este c'alculo, hemos considerado que la integral de volumen se extiende sobre
+todo el espacio, y que el campo el'ectrico se anula suficientemente r'apido en
+el infinito, de forma tal que la integral de superficie es nula\footnote{La integral tiende a cero si $\phi$ decae m'as r'apido que $1/\sqrt{r}$ para $r\to\infty$. Esta condici'on es siempre satisfecha para distribuciones compactas de carga, donde se tiene de hecho que $\phi$ decae al menos como $1/r$.}. Con esto,
+obtenemos
+\begin{equation} \label{UuE}
+\boxed{U=\int u_E(\vec{x})\,dV, \qquad u_E(\vec{x}):=\frac{\varepsilon_0}{2}\,
+\vec{E}^2(\vec{x}) .}
+\end{equation}
+De esta forma, podemos calcular la energ'ia (potencial) electrost'atica de una
+distribuci'on de carga como la integral de una \textit{densidad de energ'ia}
+$u_E(\vec{x})$. Comparando (\ref{UuE}) con (\ref{eq3.1.5}) vemos que la
+energ'ia potencial de un sistema de cargas puede interpretarse alternativamente
+como la \textit{energ'ia almacenada en el campo el'ectrico} del sistema de
+cargas, a trav'es de la densidad de energ'ia $u_E(\vec{x})$.
+
+\subsubsection{Ejemplo}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-condensador-01.pdf,height=4cm,
+angle=0 } }
+\caption{Energ'ia almacenada en un condensador de placas paralelas.}
+\label{fig:cpp}
+\end{figure}
+Considere un condensador de placas paralelas, como se muestra en la figura \ref{fig:cpp}. Despreciando efectos de borde, es decir, considerando que dentro de la regi'on limitada por las placas en campo el'ectrico es homog'eneo y fuera de ella es nulo, y adem'as despreciando el espesor de las placas, podemos modelar la densidad de carga como
+\begin{equation}
+\rho(\vec{x})=\sigma\delta(x)-\sigma\delta(x-d), 
+\end{equation}
+para todo $(y,z)$ en la regi'on delimitada por las placas. 
+
+El campo el'ectrico entre las placas (que puede obtenerse f'acilmente usando la ley de Gauss) es dado por
+\begin{equation}
+\vec{E}=\frac{\sigma}{\varepsilon_0}\hat{x}=E\hat{x}, \qquad 0<x<d,
+\end{equation}
+donde $\sigma$ es la densidad total de carga por unidad de superficie (en cada placa ubicada en $x=0$). Con esto, podemos evaluar la energ'ia \eqref{UuE} (el campo el'ectrico s'olo es no nulo entre las placas, que encierrar un volumen $V=Ad$):
+\begin{equation} 
+U=\int u_E(\vec{x})\,dV=\frac{\varepsilon_0}{2}\,
+\vec{E}^2 V=\frac{\varepsilon_0}{2}\,
+\vec{E}^2 Ad=\frac{\sigma^2}{2\varepsilon_0}Ad=\frac{Q^2}{2\varepsilon_0}\frac{d}{A} .
+\end{equation}
+
+Por otro lado, usando \eqref{phiintE} encontramos que el potencial entre las placas es de la forma
+\begin{equation}
+\phi(\vec{x})=\phi(0)-Ex=\phi(0)-\frac{\sigma}{\varepsilon_0}x, \qquad 0<x<d,
+\end{equation}
+con lo que podemos evaluar \eqref{Urhophi} (la densidad de carga s'olo es no nula sobre las placas), obteniendo
+\begin{equation}
+U=\frac{1}{2}\int\rho(x)\phi(x)\,dV=\frac{1}{2}\left[\sigma A\phi(0)-\sigma A\phi(d)\right]=\frac{\sigma^2 Ad}{2\varepsilon_0}=\frac{Q^2}{2\varepsilon_0}\frac{d}{A}.
+\end{equation}
+En t'erminos de la \textit{capacidad del condensador}, $C:=Q/\Delta V=\varepsilon_0 A/d$, tenemos
+\begin{equation}
+U=\frac{C(\Delta V)^2}{2}=\frac{Q^2}{2C}.
+\end{equation}
+
+
+
+
+
+\section{Expansi'on multipolar cartesiana}
+\subsection{Expansi'on Multipolar}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-expansion-multipolar-electrica-01.pdf,height=4cm,
+angle=0 } }
+\caption{Esquema de la expansi'on multipolar el'ectrica.}
+\label{fig:emc}
+\end{figure}
+El m'etodo de {\em expansi'on multipolar} permite calcular los campos (potencial y campo el'ectrico) de una
+\textit{distribuci'on compacta, pero arbitraria}, de carga en forma relativamente sencilla y general. Consideramos entonces una distribuci'on compacta de carga, situaremos (sin p'erdida de generalidad) el origen del sistema coordenado en un punto representativo de la distribuci'on (no necesariamente el centro de masa o el centro de carga), y consideraremos el problema de describir el
+campo generado por esta distribuci'on en puntos muy alejados de ella, de modo
+que $|\vec{x}|\gg|\vec{x}'|$, ver figura \ref{fig:emc}. Esto permite
+reescribir la expresi'on general (\ref{perho}) para el potencial
+el'ectrico, en forma de una expansi'on en serie, ya
+que el t'ermino $1/\left|\vec{x}-\vec{x}'\right|$ puede ser expandido\footnote{Para esto usamos la expresi'on general para una expansi'on en serie de Taylor de una funci'on de varias variables: $f(x_i+x'_i)=f(x_i)+x'_i\left.(\partial_if)\right|_x+(1/2!)\,x'_ix'_j\left.(\partial_i\partial_jf)\right|_x +(1/3!)\,x'_ix'_jx'_k\left.(\partial_i\partial_j\partial_kf)\right|_x+\dots$.}
+en potencias de las componentes del vector $\vec{x}'$:
+\begin{eqnarray}
+\frac{1}{\left|\vec{x}-\vec{x}'\right|}
+%&=&\frac{1}{\left|\vec{x}\right|}
+%+x'_i\partial'_i\left(\frac{1}{\left|\vec{x}-\vec{x}'\right|} \right)
+%_{x'_i=0}+\frac{1}{2!}x'_ix'_j\,\partial'_i\partial'_j\left(\frac{1}{\left|\vec{
+%x } -\vec{x}'\right|} \right) _{x'_i=0}+\dots \\
+&=&\frac{1}{\left|\vec{x}\right|}
+-x'_i\partial_i\left(\frac{1}{\left|\vec{x}-\vec{x}'\right|} \right)
+_{x'_i=0}+\dots+(-1)^2\frac{1}{2!}x'_ix'_j\,
+\partial_i\partial_j\left(\frac{1} { \left|\vec{x}-\vec{x}
+'\right|} \right) _{x'_i=0}+\dots \\
+&=&\frac{1}{\left|\vec{x}\right|}-x'_i\partial_i\frac{1}{\left|\vec{x}\right|}
+ +\frac{(-1)^2}{2!}x'_ix'_j\,\partial_i\partial_j\frac{1}{\left|\vec{x}\right|}
++\dots \\
+&=&\frac{1}{r}-x'_i\partial_i\frac{1}{r}+\frac{(-1)^2}{2!}x'_ix'_j\,
+\partial_i\partial_j\frac{1}{r} +\dots \\
+&=&\sum_{n=0}^\infty\frac{(-1)^n}{n!}x'_{i_1}\dots x'_{i_n}\partial_{i_1}\dots
+\partial_{i_n}\frac{1}{r} .\label{exp1or}
+\end{eqnarray}
+Note que los t'erminos con derivadas de la forma $\partial_{i_1}\cdots
+\partial_{i_n}r^{-1}$ son funciones (relativamente) simples y \textit{conocidas}.
+Por ejemplo:
+\begin{eqnarray}
+\partial_i\frac{1}{r}&=&-\frac{x_i}{r^3}, \\
+\partial_i\partial_j\frac{1}{r}
+&=& \frac{3x_ix_j}{r^5}-\frac{\delta_{ij}}{r^3} \\
+\partial_i\partial_j\partial_k\frac{1}{r}
+&=& \frac{3\left(x_i\delta_{jk}+x_j\delta_{ki}+x_k\delta_{ij}\right)}{r^5}
+-\frac{15x_ix_jx_k}{r^7},
+\end{eqnarray}
+etc. Con esto, podemos escribir
+\begin{equation} \label{eq3.2.3}
+\frac{1}{|\vec{x}-\vec{x}'|}=\frac{1}{r}+\frac{x_ix'_i}{r^3}
++\frac{1}{2}\,x'_ix'_j\,\left(\frac{3x_ix_j}{r^5}-\frac{\delta_{ij}}{
+r^3}\right)+O\left(x_i'^3\right).
+\end{equation}
+En general, el t'ermino de orden $n$, $\partial_{i_1}\cdots
+\partial_{i_n}r^{-1}$, decrecer'a con la distancia como $r^{-(n+1)}$.
+
+Con la expansi'on (\ref{exp1or}) podemos reescribir la expresi'on
+(\ref{perho}) para un potencial electrost'atico general (imponiendo $\phi=0$ en el infinito) como
+\begin{eqnarray}
+\phi(\vec x)&=&\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec x')}{
+\left\vert \vec x-\vec x'\right\vert }dV'\\
+&=&\frac{1}{4\pi\varepsilon_0}\int_V \rho(\vec
+x')\sum_{n=0}^\infty\frac{(-1)^n}{n!}x'_{i_1}\dots x'_{i_n}\partial_{i_1}\cdots
+\partial_{i_n}\frac{1}{r}dV'\\
+&=&\frac{1}{4\pi\varepsilon_0}\sum_{n=0}^\infty\frac{(-1)^n}{n!}\left[\int_V
+\rho(\vec x')\,x'_{i_1}\dots x'_{i_n}\,dV'\right]\partial_{i_1}\cdots
+\partial_{i_n}\frac{1}{r}. \label{phimult}
+\end{eqnarray}
+Definiendo el momento multipolar de orden $n$ como el tensor de rango $n$ dado
+por
+\begin{equation}
+\boxed{Q_{i_1\cdots i_n}:=\int_V \rho(\vec x)\,x_{i_1}\dots x_{i_n}\,dV,}
+\end{equation}
+podemos expresar un campo el'ectrost'atico general por medio de la
+\textit{expansi'on multipolar}
+\begin{equation}
+ \boxed{\phi(\vec
+x)=\frac{1}{4\pi\varepsilon_0}\sum_{n=0}^\infty\frac{(-1)^n}{n!}\,Q_{ i_1\cdots
+i_n}\,\partial_{i_1}\cdots\partial_{i_n}\frac{1}{r}.} \label{phimult2}
+\end{equation}
+En otras palabras, podemos descomponer el potencial electrost'atico en una suma
+de t'erminos de distinto orden en la expansi'on multipolar
+\begin{equation}
+ \boxed{\phi(\vec{x})=\sum_{n=0}^\infty\phi^{(n)}(\vec{x}),}
+\end{equation}
+donde $\phi^{(n)}(\vec{x})$ es la contribuci'on multipolar de orden $n$,
+definida por
+\begin{equation}
+\boxed{\phi^{(n)}(\vec{x}):=\frac{1}{4\pi\varepsilon_0}\,\frac{(-1)^n}{n!}\,Q_{
+i_1\cdots i_n}\,\partial_{i_1}\cdots\partial_{i_n}\frac{1}{r}.}
+\end{equation}
+Los primeros t'erminos de esta expansi'on general son de la forma:
+\begin{equation} \label{eq3.2.4}
+\phi(\vec{x})=\phi^0(\vec{x})+\phi^{(1)}(\vec{x})+\phi^{(2)}(\vec{x})+
+\ldots.
+\end{equation}
+El t'ermino {\em monopolar} es
+\begin{equation} \label{eq3.2.5}
+\phi^0(\vec{x})=\frac{1}{4\,\pi\varepsilon_0}\,\frac{Q}{r},
+\end{equation}
+donde $Q$, el \textit{momento monopolar}, es simplemente la carga total del sistema:
+\begin{equation} \label{eq3.2.6}
+Q=\int \rho(\vec{x})\,dV.
+\end{equation}
+El segundo t'ermino, el t'ermino {\em dipolar} es dado por
+\begin{equation}
+\phi^{(1)}(\vec{x}) =\frac{1}{4\,\pi\varepsilon_0}\,\frac{x_i\,p_i}{r^3},
+\end{equation}
+donde $p_i:=Q_i$ es el \textit{momento dipolar} del sistema:
+\begin{equation} \label{eq3.2.8}
+p_i:=\int x_i\,\rho(\vec{x})\,dV.
+\end{equation}
+La tercera contribuci'on viene dada por el t'ermino {\em cuadrupolar}:
+\begin{equation} \label{eq3.2.9}
+\phi^{(2)}(\vec{x})=\frac{1}{4\,\pi\varepsilon_0}\,\frac{1}{2}\,Q_{ij}
+\left(\frac{3\,x_i\,x_j}{r^5}-\frac{\delta_{ij}}{r^3}\right).
+\end{equation}
+El \textit{momento cuadrupolar} $Q_{ij}$ es dado por
+\begin{equation}
+Q_{ij}:=\int x_ix_j\,\rho(\vec{x})\,dV. \label{mom4}
+\end{equation}
+Con esto, la expansi'on multipolar del potencial es de la forma:
+\begin{equation} \label{eq3.2.12}
+\boxed{\phi(\vec{x})=\frac{1}{4\,\pi\varepsilon_0}\,\frac{Q}{r}+
+\frac{1}{4\pi\varepsilon_0}\,\frac{\vec{p}\cdot\vec{x}}{r^3}+
+\frac{1}{4\pi\varepsilon_0}\,\frac{1}{2}\,Q_{ij}\left(\frac{3\,x_i\,x_j}{
+r^5}-\frac{\delta_{ij}}{r^3}\right)+O(r^{-4})}
+\end{equation}
+Podemos tambi'en encontrar una expansi'on multipolar para el campo el'ectrico
+simplemente derivando el potencial. Con esto, obtenemos
+\begin{equation} \label{eq3.2.12.1}
+E_i(\vec{x})=\frac{Q}{4\pi\varepsilon_0}\,\frac{x_i}{r^3}+\frac{1}{
+4\pi\varepsilon_0}\,\frac{(3\,p_j\,x_j\,x_i-r^2\,p_i)}{r^5}+\cdots .
+\end{equation}
+
+Observaciones:
+
+\begin{itemize} 
+\item El momento multipolar de orden $n$, $Q_{i_1\dots i_n}$ es un tensor sim'etrico de rango $n$ respecto a transformaciones ortogonales de coordenadas. Por eso, $Q_{i_1\dots i_n}$ tiene $(n+1)(n+2)/2$ componentes linealmente independientes.
+
+\item Los momentos multipolares son cantidades \textit{aditivas} (o extensivas). Esto quiere decir que si se divide un sistema en dos partes (el volumen donde est'an contenidas las cargas, en dos volumenes m'as peque\~nos o, equivalentemente, la densidad de carga en la suma de dos densidades) entonces cada momento multipolar (de un orden dado) es la suma de los momentos multipolares de cada subsistema.
+
+\item Note que los momentos multipolares \textbf{dependen en general de la
+elecci'on del origen}. Si se desplaza el origen del sistema coordenado de modo que el origen $O$ original tenga coordenadas $\vec{d}$ respecto al nuevo origen $O'$ entonces
+$\vec{x}'=\vec{x}+\vec{d}$ y los nuevos momentos multipolares respecto al origen $O'$ est'an dados por:
+\begin{eqnarray}
+ Q'&=&Q,\\
+Q'_i&=&Q_i+Qd_i,\\
+Q'_{ij}&=&Q_{ij}+Q_id_j+Q_jd_i+Qd_id_j,
+\end{eqnarray}
+etc.
+\end{itemize}
+
+\subsubsection{Momento cuadrupolar sin traza}\label{MCSM}
+El momento cuadrupolar (\ref{mom4}) es un tensor \textit{sim'etrico}, por lo
+que tiene ${3\cdot (3+1)}/{2}=6$ componentes linealmente independientes (que
+hay que calcular!). Sin embargo, debido a que este tensor siempre est'a
+multiplicado en la expansi'on multipolar del potencial por
+$\left({3\,x_i\,x_j}/{r^5}-{\delta_{ij}}/{r^3}\right)$, puede
+verificarse que no todas las componentes de $Q_{ij}$ contribuyen a la
+expansi'on multipolar. En efecto, debido a que la cotracci'on
+$\delta_{ij}\left({3\,x_i\,x_j}/{r^5}-{\delta_{ij}}/{r^3}\right)$ se
+anula \textit{id'enticamente}, es posible sumar un t'ermino proporcional a
+$\delta_{ij}$ al momento cuadrupolar, sin por ello alterar la expansi'on
+multipolar. En otras palabras, existe una libertad para redefinir el momento
+cuadrupolar ya que $\tilde{Q}_{ij}:=Q_{ij}+\lambda\delta_{ij}$ puede ser
+considerado como un momento cuadrupolar 'util y leg'itimo. 
+
+Una posibilidad ser'ia elegir $\lambda\stackrel{!}{=}-Q_{ii}$, en cuyo caso obtendr'iamos
+\begin{equation}
+ \boxed{Q'_{ij}=\int
+(x_ix_j-x_kx_k\delta_{ij})\,\rho(\vec{x})\,dV,}
+\end{equation}
+que, salvo un signo global, tiene la misma forma que el conocido tensor momento de inercia asociado a un cuerpo en rotaci'on. En este sentido, el momento cuadrupolar el'ectrico es el an'alogo al tensor momento de inercia en mec'anica.
+
+Sin embargo, es m'as com'un explotar la libertad para elegir $\lambda$ para definir el  \textit{momento cuadrupolar libre de traza}, definido tal que $\tilde{Q}_{ii}\equiv 0$. Esto equivale a considerar $\lambda\stackrel{!}{=}-Q_{ii}/3$, es decir, $\tilde{Q}_{ij}=Q_{ij}-Q_{kk}\,\delta_{ij}/3$ o,
+m'as expl'icitamente:
+\begin{equation}
+ \boxed{\tilde{Q}_{ij}=\int
+(x_ix_j-\frac{1}{3}x_kx_k\delta_{ij})\,\rho(\vec{x})\,dV.} \label{mom4st}
+\end{equation}
+La ventaja de usar este tensor es que, por ser libre de traza, s'olo tiene 5
+componentes linealmente independientes (que calcular, por ejemplo:
+$\tilde{Q}_{11}$, $\tilde{Q}_{12}$, $\tilde{Q}_{13}$, $\tilde{Q}_{22}$,
+$\tilde{Q}_{23}$, ya que $\tilde{Q}_{21}=\tilde{Q}_{12}$,
+$\tilde{Q}_{31}=\tilde{Q}_{13}$, $\tilde{Q}_{32}=\tilde{Q}_{23}$ y
+$\tilde{Q}_{33}=-\tilde{Q}_{11}-\tilde{Q}_{22}$) (pero, por otro lado, la integral que se necesita calcular es algo m'as complicada).
+
+Por otro lado, el momento cuadrupolar (con o sin traza), por ser un tensor \textit{sim'etrico} de segundo rango, puede ser diagonalizado, es decir, es posible encontrar sus vectores (y valores) propios, que definen direcciones ``principales'', ortogonales entre si. En el sistema coordenado definido por estas tres direcciones principales el momento cuadrupolar adopta una forma diagonal.
+
+
+\subsubsection{Monopolo ideal}
+Una carga puntual es un ``monopolo ideal"\,, ya que (eligiendo el origen en la posici'on de la carga) el 'unico momento distinto de cero es el momento monopolar. 
+
+\subsubsection{Dipolo ideal}
+Un ``dipolo ideal"\,(tambi'en llamado ``dipolo puntual'') es un sistema idealizado cuyo 'unico momento multipolar el'ectrico no nulo es el momento dipolar.
+
+El sistema formado por una carga $q^{(1)}=-q$ y otra $q^{(2)}=+q$, separados una distancia $d$ tiene momento monopolar nulo, mientras que 
+\begin{equation}
+p_i=(-q)x^{(1)}_i+(+q)x^{(2)}_i=q(x^{(2)}_i-x^{(1)}_i)=qd_i,
+\end{equation}
+\begin{equation}
+Q_{ij}=(-q)x^{(1)}_i x^{(1)}_j +(q)x^{(2)}_i x^{(2)}_j,
+\end{equation}
+\begin{equation}
+Q_{ijk}=(-q)x^{(1)}_i x^{(1)}_jx^{(1)}_k +(q)x^{(2)}_i x^{(2)}_jx^{(2)}_k,
+\end{equation}
+etc.En el l'imite $\vec{d}\to\vec{0}$, pero tal que $\vec{p}\to\vec{p}$ (valor finito, esto por supuesto requiere $q\to\infty$), tendremos que $Q_{ij}\to 0$, $Q_{ijk}\to 0$, y lo mismo ocurrir'a para todo momento multipolar de orden superior  (las componentes del momento multipolar de orden $n$ son en este caso proporcionales a $qd^n=pd^{n-1}$).
+
+\begin{equation}\label{phip}
+\phi_{\vec{p}}(\vec{x})=\frac{1}{4\pi\varepsilon_0}\frac{(x_j-x_j')p_j}
+{|\vec{x}-\vec{x}'|^3},
+\end{equation}
+\subsubsection{Cuadrupolo ideal}
+$Q=0$ $p_i=0$, $Q_{ij}\neq 0$, $Q_{ijk}=0$, etc.
+
+\newpage
+
+
+\subsection{Distribuciones de carga en campos externos} \label{ed3_3}
+
+En las secciones anteriores hemos considerado la expansi'on multipolar
+\textit{generada} por una distribuci'on compacta de carga
+$\rho(\vec{x})$. Ahora discutiremos una situaci'on distinta: consideraremos
+una (peque\~na) distribuci'on de cargas en un campo el'ectrico
+\textit{externo} (es decir, generado por alguna \textit{otra} distribuci'on de
+carga). En particular, calcularemos la energ'ia potencial de la
+distribuci'on de carga en el campo externo dado, as'i como la fuerza y el
+torque que el campo externo ejerce.
+
+\subsubsection{Energ'ia Potencial} \label{ed3_3_1}
+
+
+Para evaluar esta integral, consideramos un \textit{punto representativo $P$ de la
+distribuci'on} con coordenadas $\vec{x}$ y un punto $P'$ cualquiera de la
+distribuci'on  (con coordenadas $\vec{x}+\vec{x}'$ respecto
+al origen, ver figura) determinado por el vector $\vec{x}'$ respecto al punto
+representativo $P$ de la distribuci'on, y expandiremos los valores $\phi(P')$ en
+una serie de Taylor en torno a $P$:
+\begin{align} \label{eq3.3.3}
+\phi(P') = &\ \phi(\vec{x}+\vec{x}')\\
+= & \sum_{n=0}^\infty\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}\left.(\partial_{i_1}\cdots\partial_{i_n}\phi)\right|_{\vec{x}'=\vec{0}} \\
+= &\ \left.\phi\right|_{\vec{x}'=\vec{0}}+x'_i\left.(\partial_i\phi)\right|_{\vec{
+x}'=\vec{0}}+\frac{1}{2}x'_ix'_j\left.(\partial_i\partial_j\phi)\right|_{\vec{x}
+'=\vec{0}}+\cdots \nonumber\\
+& +\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}\left.(\partial_{i_1}\cdots\partial_{i_n}\phi)\right|_{\vec{x}'=\vec{0}}
++\cdots\\
+= &\ \phi(\vec{x})-x'_iE_i(\vec{x})-\frac{1}{2}x'_ix'_j(\partial_iE_j)(\vec{x}
+) \nonumber \\
+& -\cdots-\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}(\partial_{i_1}\cdots\partial_{i_{n-1}}E_{i_n})(\vec{x})+\cdots .
+\end{align}
+
+Con esto, podemos escribir (\ref{Urhophiext}) como
+\begin{eqnarray}
+ U&=&\int\rho(P')\,\phi(P')\,dV'\\
+&=&\sum_{n=0}^\infty\frac{1}{n!}\left[\int\rho(P')x'_{i_1}\cdots
+x'_{i_n}\,dV'\right]\left.(\partial_{i_1}\cdots\partial_{i_n}\phi)\right|_{\vec{x}'=\vec{0}}\\
+%&=&\left[\int\rho(\vec{x}')
+%\phi(\vec{x})-\left[\int\rho(\vec{x}')\,
+%x'_i\,dV'\right] E_i(\vec{x})-\frac{1}{2}\left[ \int\rho(\vec{x}')\,
+%x'_ix'_j\,dV'\right](\partial_iE_j)(\vec{x})
+%\nonumber\\
+%&&-\cdots-\frac{1}{n!}\left[ \int\rho(\vec{x }')\, x'_{i_1}\cdots
+%x'_{i_n}\,dV'\right] (\partial_{i_1}
+%\cdots\partial_{i_{n-1}}E_{i_n})(\vec{x})+\cdots \\
+&=&\sum_{n=0}^\infty\frac{1}{n!}Q_{i_1\cdots i_n}(\partial_{i_1}\cdots\partial_{i_n}\phi)(\vec{x})\\
+&=&Q\phi(\vec{x})-Q_iE_i(\vec{x})-\frac{1}{2}
+Q_{ij}(\partial_iE_j)(\vec{x}) \nonumber \\
+&& -\cdots-\frac{1}{n!}Q_{i_1\cdots i_n}(\partial_{i_1}
+\cdots\partial_{i_{n-1}}E_{i_n})(\vec{x})+\cdots .
+\end{eqnarray}
+Por lo tanto, obtenemos que la energ'ia potencial de una distribuci'on de
+carga, caracterizada por sus momentos multipolares, en un \textit{campo externo}
+es dado por
+\begin{equation} \label{eq3.3.4}
+\boxed{U=Q\,\phi(\vec{x})-\vec{p}\cdot\vec{E}(\vec{x})-\frac{1}{2}\,Q_{ij}
+\,\partial_iE_j(\vec{x})+\cdots .}
+\end{equation}
+
+El primer t'ermino de esta expansi'on, la contribuci'on monopolar, es
+equivalente a la de una carga \textit{puntual} en un potencial externo. El
+t'ermino siguiente (dipolar) representa la energ'ia potencial de un dipolo
+ideal en un campo el'ectrico externo. Note que este t'ermino es m'inimo cuando
+el momento dipolar es paralelo al campo el'ectrico externo (y es, en general,
+proporcional al coseno del 'angulo entre $\vec{p}$ y $\vec{E}$). El t'ermino
+cuadrupolar es distinto de cero s'olo cuando el campo es inhomog'eneo. Note que
+en esta expresi'on tambi'en es posible usar un momento cuadrupolar redefinido
+como se discuti'o en la secci'on (\ref{MCSM}). En particular puede usarse el
+momento cuadrupolar sin traza. La energ'ia potencial calculada usando distintos
+momentos cuadrupolares equivalentes es la misma puesto que un t'ermino
+proporcional a $\delta_{ij}$ contribuira con un t'ermino proporcional a
+$\delta_{ij}(\partial_iE_j)=\partial_iE_i$, que es cero en virtud de la ley de
+Gauss y el hecho que $\vec{E}$ describe un \textit{campo el'ectrico externo},
+es decir, un campo generados por fuentes fuera de la regi'on bajo
+consideraci'on.
+
+
+\subsubsection{Fuerza}  \label{ed3_3_2}
+
+Una carga puntual $q$ experimenta una fuerza
+$\vec{F}(\vec{x})=q\,\vec{E}(\vec{x})$ cuando est'a situada en
+un punto donde existe un campo externo $\vec{E}(\vec{x})$. Como consecuencia,
+la fuerza total sobre una distribuci'on con densidad $\rho$ en un campo
+\textit{externo} puede escribirse como
+\begin{equation} \label{eq3.3.7}
+F_i=\int \rho(P')\,E_i(P')\,dV'.
+\end{equation}
+Expandimos $E_i(P')$ en serie de Taylor, de forma similar a como lo
+hicimos en la secci'on anterior con el potencial
+\begin{equation} \label{eq3.3.7.1}
+E_i(P')=E_i(\vec{x})+x'_j(\partial_jE_i)(\vec{x})+\frac{1}{
+2}x'_jx'_k(\partial_j\partial_kE_i)(\vec{x})
++\cdots+\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}(\partial_{i_1}\cdots\partial_{i_n}E_i)(\vec {x})+\cdots .
+\end{equation}
+Con esto, podemos reescribir (\ref{eq3.3.7}) como
+\begin{eqnarray}
+F_i&=& \int
+\rho(P')\,\left[E_i(\vec{x})+x'_j(\partial_jE_i)(\vec{x})+\frac{1}{
+2}x'_jx'_k(\partial_j\partial_kE_i)(\vec{x}) \right.\nonumber\\
+&& \quad\qquad\qquad \left. +\cdots+\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}(\partial_{i_1}\cdots\partial_{i_n}E_i)(\vec {x})+\cdots\right] dV' \\
+&=&
+Q\,E_i(\vec{x})+p_j(\partial_jE_i)(\vec{x})+\cdots+\frac{1}{n!}Q_{i_1\cdots i_n}
+(\partial_{i_1}\cdots\partial_{i_n}E_i)(\vec {x})+\cdots .\label{eq3.3.8}
+\end{eqnarray}
+El primer t'ermino, $Q\vec{E}(\vec{x})$, es nuevamente la contribuci'on monopolar correspondiente a la fuerza sobre una carga puntual. La contribuci'on
+dipolar es ahora proporcional al gradiente del campo el'ectrico. Usando el hecho que el campo electrost'atico satisface
+$\partial_iE_j=\partial_jE_i$ podemos expresar el t'ermino dipolar como $\partial_i(p_jE_j)$,
+es decir.
+\begin{equation} \label{eq3.3.12}
+\boxed{\vec{F}(\vec{x}) =
+Q\vec{E}(\vec{x})-\vec{\nabla}\left(-\vec{p}\cdot\vec{E}(\vec{x})\right)+\cdots.
+}
+\end{equation}
+Note que el segundo t'ermino es el gradiente de la contribuci'on dipolar a la
+energ'ia potencial de la distribuci'on.
+
+% ............................................................................
+\subsubsection{Torque}  \label{ed3_3_3}
+
+An'alogamente al caso de la fuerza total, podemos calcular el \textit{torque
+neto} ejercido por el campo externo sobre la distribuci'on, respecto del punto
+representativo que hemos considerado:
+\begin{equation}
+\vec{\tau} = \int \rho(P')\,\vec{x}'\times\vec{E}(P')\,dV' .
+\end{equation}
+En componentes, y usando la expansi'on (\ref{eq3.3.7.1}) obtenemos
+\begin{eqnarray}
+\tau_i &=& \varepsilon_{ijk}\int\rho(P')x'_jE_k(P')\,dV' \\
+&=&\varepsilon_{ijk}\int\rho(P')x'_j\left[
+E_k(\vec{x})+x'_l(\partial_lE_k)(\vec{x})+\frac{1}{2}
+x'_lx'_m(\partial_l\partial_mE_k)(\vec{x}) \right.\nonumber\\
+&&\quad\qquad\qquad\qquad\left.+\cdots+\frac{1}{n!}x'_{i_1}\cdots
+x'_{i_n}(\partial_{i_1}\cdots\partial_{i_n}E_k)(\vec
+{x})+\cdots\right] \,dV' \\
+&=&\varepsilon_{ijk}\left[p_j
+E_k(\vec{x})+Q_{jl}(\partial_lE_k)(\vec{x})+\frac{1}{2}
+Q_{jlm}(\partial_l\partial_mE_k)(\vec{x})\right.\nonumber\\
+&&\quad\qquad\qquad\qquad\left.+\cdots+\frac{1}{n!}Q_{ji_1\cdots i_n}(\partial_{i_1}\cdots\partial_{i_n}
+E_k)(\vec
+{x})+\cdots\right] .
+\end{eqnarray}
+Por lo tanto,
+\begin{equation}
+\label{eq3.3.14}
+\boxed{\vec{\tau}=\vec{p}\times\vec{E}(\vec{x})+\cdots. }
+\end{equation}
+Es posible expresar la primera contribuci'on (dipolar) al torque como un
+``gradiente'' del t'ermino dipolar de la energ'ia potencial
+$U_{\vec{p}}=-\vec{p}\cdot\vec{E}$, esta vez, sin embargo, no respecto a
+variaciones de la posici'on $\vec{x}$ de la distribuci'on, sino con respecto a
+cambios en la orientaci'on del momento dipolar respecto al campo
+externo. La magnitud del torque es dada por
+\begin{eqnarray}
+\tau &=& pE\sen\theta \nonumber \\
+&=& -\frac{d}{d\theta}\,\left(pE\cos\theta\right)\\
+&=&\frac{dU_{\vec{p}}}{d\theta}.  \label{eq3.3.15}
+\end{eqnarray}
+
+\newpage
+
+
+\newpage
+
+\section{Electrost'atica macrosc'opica}
+Hasta ahora hemos estudiado las propiedades de los campos
+electrost'aticos \textit{en el vac'io} y en el interior de \textit{condutores ideales}.
+Estamos ahora interesados en las propiedades el campo el'ectrico \textit{macrosc'opico} en el interior de un material \textit{aislante}. El t'ermino macrosc'opico se refiere al campo promedio en una peque\~na regi'on que, sin embargo, es grande comparada con el tama\~no de las mol'eculas que constituyen el material.
+
+Consideraremos entonces materiales aislantes, tambi'en llamados \textit{diel'ectricos}, en los que las cargas internas no tienen la
+libertad de desplazarse distancias macrosc'opicas (conducir) en presencia de un
+campo el'ectrico aplicado, sino que est'an confinadas por la estructura
+at'omica/molecular del material. La mayor'ia de los materiales son, en buena
+aproximaci'on, diel'ectricos.
+
+En presencia de un campo el'ectrico los diel'ectricos \textit{redistribuyen sus cargas} constituyentes. 'Estas no pueden desplazarse distancias macrosc'opicas,
+como ocurre en los conductores, sino s'olo distancias del orden de magnitud determinado por su estructura molecular.
+Estos peque\~nos desplazamientos de carga tienen, sin embargo, consecuencias
+que se acumulan hasta ser perceptibles a escalas macrosc'opicas.
+Concretamente, en presencia de un campo el'ectrico, el material
+se \textit{polariza}.
+El campo el'ectrico que causa (el cambio en) la polarizaci'on puede ser un campo ``externo'' (producido por ``cargas externas''\footnote{Tambi'en llamadas ``cargas libres'' o ``cargas no ligadas''.}, que no forman parte
+de la estructura at'omica/molecular caracter'istica del medio).
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-dielectrico-01.pdf,height=4cm,angle=0}}
+\caption{Un material diel'ectrico se polariza en presencia de un campo externo.}
+\label{diel01}
+\end{figure}
+
+El campo el'ectrico total (``EL''\, campo el'ectrico) es influenciado por
+la polarizaci'on del medio. Modelaremos este campo el'ectrico
+(macrosc'opico) $\vec{E}$ como la suma del campo
+producido por las cargas externas y el campo producido por la distribuci'on
+de \textit{cargas de polarizaci'on} (descrita por el vector de polarizaci'on $\vec{P}$) del medio.
+
+\subsection{Vector y cargas de Polarizaci'on}
+
+Se define el \textit{vector de polarizaci'on} como la \textit{densidad de
+momento dipolar} (momento dipolar por unidad de volumen),
+\begin{equation}\label{defP}
+\vec{P}(x):= ``\lim_{\Delta V\to 0}" \frac{\Delta\vec{p}}{\Delta V},
+\end{equation}
+donde $\Delta\vec{p}$ es el \textit{momento dipolar total de las cargas del material contenidas en el volumen} $\Delta V$. La regi'on con volumen $\Delta V$ se considera centrada en el punto $\vec{x}$, suficientemente peque\~na desde el punto de vista macrosc'opico, pero grande comparada con la escala  determinada por la estructura at'omica/molecular del material. Equivalentemente, el vector de polarizaci'on es definido tal que el momento dipolar $d\vec{p}$ en un elemento de volumen (macrosc'opico) $dV$ es dado por $d\vec{p}=\vec{P}(\vec{x})dV$.
+
+Como consecuencia de la definici'on anterior, el momento dipolar
+total de las cargas contenidas en un volumen finito $V$ es dado por
+\begin{equation}\label{pintPdV}
+ \vec{p}_V=\int_V \vec{P}(x)\,dV.
+\end{equation}
+Por otro lado, sabemos que el potencial generado por un dipolo ideal de momento dipolar $\vec{p}$ ubicado en un punto con coordenadas $\vec{x}'$ es de la forma \eqref{phip}. Luego, el potencial generado por una peque\~na regi'on de un medio polarizado con elemento de volumen $dV'$ y polarizaci'on $\vec{P}$ es dada por
+\begin{equation}
+d\phi(x)=\frac{1}{4\pi\varepsilon_0}\frac{(x_j-x_j')P_j(x')\,dV'}{|\vec{x}-\vec{
+x}'|^3}.
+\end{equation}
+De esta forma, si el sistema contiene adem'as cargas libres en $dV'$ entonces
+\begin{equation}
+d\phi(x)=\frac{1}{4\pi\varepsilon_0}\frac{\rho_{\rm
+ext}(x')}{|\vec{x}-\vec{x}'|}dV'+\frac {1}{
+4\pi\varepsilon_0}\frac{P_i(x')(x_i-x_i')}{|\vec{x}-\vec{x}'|^3}dV'.
+\end{equation}
+Por lo tanto, el potencial (macrosc'opico, total), de acuerdo a nuestro modelo, es dado por
+\begin{equation}
+\boxed{\phi(x)=\frac{1}{4\pi\varepsilon_0}\int\left[\frac{\rho_{\rm
+ext}(x')}{|\vec{x}-\vec{x}'|}+\frac{P_i(x')(x_i-x_i')}{|\vec{x}-\vec{x}'|^3}\right]dV'.}
+\end{equation}
+Usando la identidad (\ref{id01}) podemos escribir
+\begin{align}
+\frac{P_i(x')(x_i-x_i')}{|\vec{x}-\vec{x}'|^3}  &
+=P_i(x')\partial_i'\left(  \frac{1}{|\vec{x}-\vec{x}'|}\right)\\
+&=\partial_i'\left(\frac{P_i(x')}{|\vec{x}-\vec{x}'|}\right)-\frac{
+(\partial_i'P'_i)(x')} {|\vec{x}-\vec{ x}'|}.
+\end{align}
+De esta forma, considerando que la integral sobre los t'erminos que dependen de la polarizaci'on est'an confinados al volumen $V$ del material (lo que no necesariamente es as'i para el t'ermino conteniendo las cargas libres), podemos escribir
+\begin{align}
+\phi(x)& =\frac{1}{4\pi\varepsilon_0}\int\frac{\rho_{\rm ext}(x')}{|x_i-x_i'|}dV'-\frac{1}{4\pi\varepsilon_0}\int_V\frac{1}%
+{|\vec{x}-\vec{x}'|}\partial_i'P_idV'+\frac{1}{4\pi\varepsilon_0}\int_{
+\partial V}\frac{P_i(x')}{|\vec{x}-\vec{x}'|}\,dS'_i \\
+& =\frac{1}{4\pi\varepsilon_0}\int\frac{\rho_{\rm ext}(x')}{|x_i-x_i'|}dV'+\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho_P(x')}{|x_i-x_i'|}dV'+\frac{1}{4\pi\varepsilon_0}\int_{
+\partial V}\frac{\sigma_P(x')}{|\vec{x}-\vec{x}'|}\,dS' .
+\end{align}
+La expresi'on anterior muestra que el campo (macrosc'opico) total es
+\textit{equivalente} al campo producido por una densidad volum'etrica de carga total,
+\begin{equation}
+\rho_{\rm T}:=\rho_{\rm ext}+\rho_P, \label{rhotot}
+\end{equation}
+donde
+\begin{equation}
+\boxed{\rho_P:=-\vec{\nabla}\cdot\vec{P},}
+\end{equation}
+es la \textit{densidad (volum'etrica) de carga de polarizaci'on}, (definida en cada punto del material), m'as una
+\textit{densidad de carga de polarizaci'on de superficie},
+\begin{equation}
+\boxed{\sigma_P:=\vec{P}\cdot\hat{n},}
+\end{equation}
+distribuida en la superficie $S=\partial V$ del diel'ectrico.
+
+Note que la carga total de polarizaci'on, tal como se espera, es nula:
+\begin{equation}
+ Q_P=\int_V\rho_P\,dV+\oint_{\partial V} \sigma_P\,dS\equiv 0,
+\end{equation}
+en virtud del teorema de Gauss.
+
+\subsection{Desplazamiento el'ectrico}
+Usando (\ref{rhotot}) en la ley de Gauss, podemos escribir
+\begin{align*}
+\vec\nabla\cdot\vec{E} &=\frac{1}{\varepsilon_0}\rho_T \\
+&=\frac{1}{\varepsilon_0}\left( \rho_{\rm ext}-\vec\nabla\cdot\vec{P}\right).
+\end{align*}
+Luego,
+\begin{equation}
+ \vec\nabla\cdot\left(\vec{E}+\frac{1}{\varepsilon_0}\vec{P}\right)=\frac{\rho_{
+\rm ext}(x)}{\varepsilon_0}.
+\end{equation}
+Definimos el \textit{vector de desplazamiento el'ectrico} (tambi'en llamado
+\textit{excitaci'on el'ectrica} o \textit{inducci'on el'ectrica}) como
+\begin{equation}\marginnote{Vector Desplazamiento}
+ \boxed{\vec{D}(\vec{x}):=\varepsilon_0\vec{E}(\vec{x})+\vec{P}(\vec{x}),} \label{defD}
+\end{equation}
+de modo que
+\begin{equation}
+\boxed{\vec{\nabla}\cdot\vec{D}=\rho_{\rm ext}.} \label{divD}
+\end{equation}
+Las unidades del vector desplazamiento son de carga por unidad de 'area: 
+$[\vec{D}]=[\vec{P}]=[\sigma]\stackrel{\text{
+S.I.}}{=}{C}/{m^2}$.
+
+La utilidad de usar $\vec{D}$ en lugar de $\vec{E}$ en esta ``ley de Gauss"
+\,\eqref{divD} es que esta relaci'on \textit{s'olo involucra expl'icitamente a las cargas externas} (que son usualmente conocidas y/o controlables). Por ejemplo, como consecuencia de (\ref{divD}) tenemos que
+\begin{equation}
+ \boxed{\oint_S \vec{D}\cdot d\vec{S}=q_{\rm ext}.} \label{GaussD}
+\end{equation}
+
+\subsubsection{Ejemplo: Esfera diel'ectrica is'otropa y carga central}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-dielectrico-y-carga-01.pdf,height=4cm,angle=0}}
+\caption{Un material diel'ectrico is'otropo con una carga central.}
+\label{diel02}
+\end{figure}
+Consideremos una carga (externa) $Q$ situada en el centro de una
+esfera diel'ectrica \textit{is'otropa}, ver figura \ref{diel02}, podemos encontrar el vector de desplazamiento aplicando (\ref{GaussD}). Debido a la simetr'ia del sistema (ya que asumimos que el diel'ectrico es \textit{is'otropo}, ver secciones \ref{sec:aniso} y \ref{sec:iso}), tendremos que $\vec{D}(\vec{x})=D(r)\hat{r}$. Eligiendo una superficie Gaussiana esf'erica de radio $r$ centrada en la carga $Q$, encontramos entonces que
+\begin{equation}
+ D(r)\oint_S dS=D(r)4\pi r^2=Q,
+\end{equation}
+y por lo tanto
+\begin{equation}
+ \vec{D}(\vec{x})=\frac{Q}{4\pi}\frac{1}{r^2}\,\hat{r}.
+\end{equation}
+
+
+\subsection{Relaci'on Constitutiva, susceptibilidad, permeabilidad}
+
+Cada medio se caracteriza por la polarizaci'on $\vec{P}(\vec{x})$ que presenta,
+dados los campos/cargas externas. Esta polarizaci'on $\vec{P}(\vec{x})$ depende
+entonces de los campos/cargas externas y de la constituci'on at'omica/molecular
+del material (y en principio de otras propiedades, como la temperatura,
+presi'on, etc). 
+%Equivalentemente, esta informaci'on acerca de las propiedades
+%del material puede expresarse en la relaci'on entre el campo el'ectrico
+%$\vec{E}(\vec{x})$ y el vector desplazamiento el'ectrico $\vec{D}(\vec{x})$.
+
+En un elemento de volumen dado del medio 'este modificar'a su distribuci'on microsc'opica de cargas como respuesta al campo el'ectrico ``total"\,que act'ua sobre este elemento, hasta finalmente adoptar un cierta polarizaci'on. Podemos, por tanto, considerar que $\vec{P}=\vec{P}(\vec{E})$ o, equivalentemente
+$\vec{D}=\vec{D}(\vec{E})$. Esta 'ultima relaci'on es llamada
+\textit{relaci'on constitutiva} del medio. El problema es que el campo
+$\vec{E}(\vec{x})$ en un punto dado (con vector de polarizaci'on $\vec{P}(\vec{x})$ y
+por tanto desplazamiento $\vec{D}(\vec{x})$) depende tambi'en de c'omo se
+polariza el medio \textit{en otras regiones}, e.d., $\vec{E}(\vec{x})$ depende
+en general de\footnote{Matem'aticamente, esto significa que, en
+general, $\vec{E}$ es un \textit{funcional}, una ``funci'on de funciones''\, o
+una ``funci'on no-local''\, de $\vec{P}$.} $\vec{P}(\vec{x}')$.
+En otras palabras, en general la polarizaci'on que se presentar'a en un medio es fruto de la  \textit{respuesta colectiva} del material a los campos externos.
+
+ Vemos entonces que calcular $\vec{P}(\vec{x})$ desde ``primeros principios'' es en gerenal dif'icil y requiere conocer los detalles de la estructura del material en estudio.
+
+Existe una gran variedad de medios materiales con propiedades el'ectricas
+diferentes e interesantes. Existen por ejemplo medios que tienen \textit{polarizaci'on
+no nula a'un en ausencia de campos/cargas externas}. Estos medios son conocidos
+como \textit{electretos} (an'alogos el'ectricos de los im'anes permanentes), y 
+\textit{ferroel'ectricos} (que presentan polarizaci'on no nula bajo una cierta
+temperatura cr'itica, de Curie, an'alogamente a los ferromagnetos). Un ejemplo
+de material ferroel'ectrico es el $BaTiO_3$ (titanato de bario), que exhibe un
+momento dipolar el'ectrico no nulo a temperaturas bajo $120^{\rm o}\,C$. Un ejemplo de electreto es el cuarzo ($SiO_2$, di'oxido de Silicio), que presenta \textit{propiedades piezoel'ectricas}.
+
+Es 'util adem'as distinguir entre distintos tipos de polarizaci'on, dependiendo del mecanismo que gobierne dicha propiedad: \textit{polarizaci'on electr'onica}, p.ej. cuando un 'atomo se ``deforma"\,en presencia de un campo externo; \textit{polarizaci'on i'onica}, causada por arreglo de iones (p.ej. $NaCl$); \textit{polarizaci'on polar} que se manifiesta en los gases (cuando la
+temperatura aumenta, disminuye la polarizaci'on porque las mol'eculas se
+``desordenan").
+
+M'as a'un, en algunos materiales (``no-lineales''\,) la respuesta
+(polarizaci'on) del material puede depender no-linealmente del campo el'ectrico.
+
+Sin embargo, existe una gran variedad de materiales que, desde el punto de
+vista macrosc'opico, pueden ser modelados adecuadamente (es decir, con \textit{precisi'on suficiente} en la mayor'ia de las situaciones) por una relaci'on lineal entre $\vec{D}$ y $\vec{E}$. Un \textit{material lineal}, pero en general \textit{no-local}, puede describirse a
+trav'es de una relaci'on de la forma
+\begin{equation}
+D_i[\vec{E}](\vec{x},t)=\int
+f_{ij}(\vec{x},\vec{x}',t,t')\,{E}_j(\vec{x}',t')\,dV' dt',
+\end{equation}
+donde $f_{ij}(\vec{x},\vec{x}',t,t')$ es un cierto tensor que describe las
+propiedades del medio. Como la polarizaci'on y por tanto el vector
+desplazamiento en un punto $\vec{x}$ del medio est'an influenciadas en forma
+m'as determinante por lo que le ocurre al material en la inmediata vecindad de
+$\vec{x}$ es de esperar que la funci'on $f_{ij}(\vec{x},\vec{x}',t,t')$ sea
+concentrada en torno a $\vec{x}$, es decir, que decaiga r'apidamente para
+$|\vec{x}'-\vec{x}|\gg d$ donde $d$ es la escala caracter'istica de la
+estructura microsc'opica del medio.
+
+Por otro lado, existen muchos casos en que es \textit{suficiente} considerar una
+\textit{relaci'on constitutiva local} en la que el vector desplazamiento en un
+punto dado puede modelarse como dependiendo exclusivamente del valor del campo
+el'ectrico \textit{en el mismo punto} (macrosc'opico), es decir
+$\vec{D}(\vec{x})=\vec{D}(\vec{E}(\vec{x}))$ o, equivalentemente
+$\vec{P}(\vec{x})=\vec{P}(\vec{E}(\vec{x}))$.
+
+En un material descrito por una relaci'on constitutiva local podemos considerar
+la dependencia de $\vec{P}$ con $\vec{E}$ a trav'es de una expansi'on en serie
+de la forma:
+\begin{equation}\label{expP}
+P_i(x)=P_i(E_j(x))=(P_i)_{\vec{E}=\vec{0}}
++E_j(\partial_jP_i)_{\vec{E}=\vec{0}}+\frac{1}{2}
+E_jE_k(\partial_j\partial_k P_i)_{\vec{E}=\vec{0}}+\cdots,
+\end{equation}
+que esperamos sea 'util para campos el'ectricos suficientemente d'ebiles (en el
+presente contexto s'olo podemos saber \textit{a posteriori} qu'e tan d'ebil
+requiere ser el campo). Note que en el lado derecho de (\ref{expP}) las derivadas $\partial_i$ denotan derivadas respecto a la componente $i$-'esima del campo el'ectrico, es decir $\partial_iP_j={\partial P_j}/{\partial E_i}$, etc.. Las cantidades $(P_i)_{\vec{E}=\vec{0}}$,
+$(\partial_jP_i)_{\vec{E}=\vec{0}}$,
+$(\partial_j\partial_k P_i)_{\vec{E}=\vec{0}}$, etc. son
+tensores (cartesianos) que asumen diferentes valores para cada material y pueden ser
+considerados como par'ametros (a determinar). Con esto, podemos escribir
+\begin{equation}
+\boxed{P_i(x)={\cal A}_i+{\cal A}_{ij}E_j+{\cal A}_{ijk}
+E_jE_k+\cdots.}
+\end{equation}
+En general, si el material es \textit{inhomog'eneo} (por ejempo, si est'a formado por
+capas de distintos materiales), los tensores ${\cal A}_i$, ${\cal A}_{ij}$, ${\cal A}_{ijk}$, etc. depender'an de la posici'on. Para materiales no-ferroel'ectricos (la gran mayor'ia) tenemos que ${\cal A}_i=0$.
+
+
+
+\subsection{Medios lineales anis'otropos}\label{sec:aniso}
+
+Adicionalmente, si la polarizaci'on de un material es descrita apropiadamente
+por una relaci'on lineal, como ocurre en el caso de campos el'ectricos
+suficientemente d'ebiles, tendremos
+\begin{equation}
+\boxed{P_i(x)=\varepsilon_0\chi_{ij}(x)E_j(x),} \label{rcml}
+\end{equation}
+entonces decimos que el medio es \textit{lineal}. El tensor $\chi_{ij}$ es
+llamado \textit{tensor de susceptibilidad el'ectrica} del medio.  El factor $\varepsilon_0$ es incluido de modo que $\chi_{ij}$ es un tensor adimensional. En este caso,
+usando (\ref{defD}) y (\ref{rcml}), tenemos que
+\begin{equation}\label{rclai}
+\boxed{D_i(x)=\varepsilon_{ij}(x)E_j(x)=\varepsilon_0\,\kappa_{ij}(x)E_j(x),}
+\end{equation}
+donde hemos definido el \textit{tensor de permitividad} del medio
+$\varepsilon_{ij}$, por
+\begin{equation}
+\varepsilon_{ij}:=\varepsilon_0(\delta_{ij}+\chi_{ij})
+\end{equation}
+y, alternativamente,  el \textit{tensor diel'ectrico},
+\begin{equation}
+\kappa_{ij}:=\frac{1}{\varepsilon_0}\varepsilon_{ij}=\delta_{ij}+\chi_{ij},
+\end{equation}
+que tiene la ventaja de ser una cantidad adimensional.
+
+Es posible probar por
+argumentos energ'eticos que si el medio no es disipativo (no existen mecanismos
+de transferencia de energ'ia del campo el'ectrico a otras formas de energ'ia)
+entonces necesariamente $\chi_{ij}$ (y por tanto $\varepsilon_{ij}$ y
+$\kappa_{ij}$) es un tensor \textit{sim'etrico} y que posee, por lo
+tanto, 6 componentes independientes. La descripci'on de las
+propiedades de un medio lineal a trav'es de un tensor de susceptibilidad
+el'ectrica incluye el caso en que el medio sea \textit{anis'otropo}, es decir,
+que sus propiedades no sean invariantes bajo rotaciones o, en otras palabras,
+que posea ciertas \textit{direcciones preferentes}. En un medio anis'otropo, la
+polarizaci'on no ser'a en general paralela al campo el'ectrico (excepto para las
+direcciones preferentes dadas por las direcciones principales. Ver secci'on
+\ref{secDP}.), esto como
+resultado de la estructura microsc'opica del material (t'ipicamente, cristales),
+que tienen como consecuencia que el material se polarize en algunas direcciones
+m'as f'acilmente que en otras.
+
+
+Note que en el caso m'as general en que se consideran campos el'ectricos dependientes del tiempo (esto es necesario, por ejemplo, en el caso de propagaci'on de ondas electromagn'eticas), a'un cuando un medio pueda considerarse lineal y local respecto a su dependencia con la posici'on, la relaci'on constitutiva es de la forma
+\begin{equation}
+D_i(x,t)=\int f_{ij}(t,t')E_j(x,t')\,dt'.
+\end{equation}
+En estos casos es conveniente considerar las \textit{transformadas de Fourier temporal} de los campos, es decir $\tilde{D}_i(x,\omega)$, $\tilde{E}_i(x,\omega)$, etc., ya que permiten escribir la relaci'on constitutiva como
+\begin{equation}\label{RELtilde}
+\tilde{D}_i(x,\omega)=\tilde{\varepsilon}_{ij}(x,\omega)\tilde{E}_j(x,\omega). 
+\end{equation}
+Comparando \eqref{RELtilde} con \eqref{rclai} vemos que en el caso m'as general, el tensor $\tilde{\varepsilon}_{ij}(x,\omega)$ juega un rol an'alogo a $\varepsilon_{ij}$ en \eqref{rclai} y tambi'en es llamado, por esta raz'on, el tensor diel'ectrico del medio. Note, sin embargo, que este tensor \textit{asume valores complejos y depende en general de la frecuencia} $\omega$.
+
+
+\subsection{Medios lineales is'otropos}\label{sec:iso}
+Si el material es is'otropo, es decir, si 'este no posee ninguna direcci'on
+preferente, la polarizaci'on debe necesariamente ser paralela al campo
+el'ectrico, independientemente de la direcci'on de este 'ultimo. Esta condici'on requiere que el tensor de susceptibilidad sea proporcional al tensor identidad,
+\begin{equation}
+\chi_{ij}=\chi\,\delta_{ij},
+\end{equation}
+de modo que
+\begin{equation}
+\vec{P}=\varepsilon_0\chi\vec{E}.
+\end{equation}
+Muchos materiales presentan propiedades de polarizaci'on independientes de
+la direcci'on del campo el'ectrico, es decir, son is'otropos. Por ejemplo, los
+gases, l'iquidos (excepto los, as'i llamados, \textit{cristales liquidos}), s'olidos amorfos (pl'asticos, vidrio).
+Los medios no-lineales, pero is'otropos, pueden ser descritos usando
+$\vec{P}=\varepsilon_0\chi(|\vec{E}|)\vec{E}$.
+
+En este curso, a menos que se explicite lo contrario, consideramos siempre
+materiales lineales, is'otropos y homog'eneos. En este caso, es suficiente
+introducir la (``constante de''\,) permitividad y/o la constante diel'ectrica
+por
+\begin{equation}
+\varepsilon:=\varepsilon_0(1+\chi), \qquad
+\kappa:=\frac{\varepsilon}{\varepsilon_0}=1+\chi.
+\end{equation}
+Note que en un medio polarizable es de esperar que $\chi>0$, de modo que
+$\varepsilon>\varepsilon_0$ o, equivalentemente, $\kappa>1$. El vac'io puede ser
+considerado como un ``medio is'otropo''\, con $\chi=0$ y $\kappa=1$, es decir, no polarizable.
+Recuerde tambi'en que el 'indice de refracci'on de la mayor'ia de los medios
+(``no-magn'eticos''\,) es dado por $n\approx\sqrt{\kappa}$.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{c|c}
+Material &   $\kappa$ \\ \hline\hline
+Vac'io & 1 \\
+Aire (seco, $0^{\rm o}$C, 1 bar)  & 1,00059 \\
+Agua ($110^{\rm o}$C, 1 bar)  & 1,0126 \\
+Agua ($20^{\rm o}$C) &  80,0 \\
+Hielo ($-30^{\rm o}$C) &  99 \\
+$SrTiO_3$ (cristal, $10$K)  & 12.000 \\
+\end{tabular}
+\caption{Algunos materiales is'otropos y sus constantes diel'ectricas.}
+\end{center}
+\end{table}
+
+\subsection{Ecuaci'on de Poisson y su generalizaci'on}
+
+Usando (\ref{divD}) y (\ref{E=nablaphi}) encontramos la generalizaci'on de la
+ecuaci'on de Poisson para el potencial en un diel'ectrico lineal y local:
+\begin{equation}
+ \boxed{\partial_i\left(\kappa_{ij}\,\partial_j \phi\right)
+=-\frac{1}{\varepsilon_0}\rho_{\rm ext}.}
+\end{equation}
+Para un material homog'eneo e is'otropo, esta ecuaci'on se reduce a
+\begin{equation}\label{Poissond}
+ \boxed{\nabla^2\phi=-\frac{1}{\varepsilon}\rho_{\rm ext},}
+\end{equation}
+que tiene la misma forma (matem'aticamente, es la \textit{misma} ecuaci'on) que
+en caso del campo en el vac'io ($\varepsilon=\varepsilon_0$). Finalmente, en
+regiones fuera de cargas externas (!`\,pero \textit{no} de cargas de
+polarizaci'on!), el potencial satisface la ecuaci'on de Laplace. Como
+consecuencia, es posible usar las t'ecnicas conocidas para solucionar esta ecuaci'on, por ejemplo, expansi'on en funciones especiales, o funciones de Green, en el caso de los diel'ectricos.
+Como veremos a continuaci'on, una diferencia importante respecto al caso en el
+vac'io ser'a la implementaci'on de las condiciones de borde o frontera.
+
+
+\subsection{Direcciones principales de un medio anis'otropo}\label{secDP}
+
+Como vimos, en un medio anis'otropo, el campo el'ectrico no tiene en general
+la misma direcci'on que el vector desplazamiento.
+Existen, sin embargo, direcciones ``especiales''\, a lo largo de las cuales el
+campo el'ectrico s'i tiene la misma direcci'on que la polarizaci'on. Esto significa
+que, si $\hat{n}$ es una de estas direcciones, conocidas como \textit{direcciones
+principales} del material, entonces $\vec{E}=E\hat{n}$ y $\vec{D}=D\hat{n}$.
+Insertando estas condiciones en (\ref{rclai}) obtenemos que
+\begin{equation}
+\kappa_{ij}\,\hat{n}_j= \lambda\,\hat{n}_i, \qquad D=\varepsilon_0\lambda E.
+\end{equation}
+Vemos de aqu'i que las direcciones principales corresponden a los vectores
+propios de la matriz  $\kappa_{ij}$, mientras que el valor propio $\lambda$ es
+el valor de la constante diel'ectrica del material a lo largo de aquella
+direcci'on principal. Como la matriz $\kappa_{ij}$ es real y sim'etrica, es
+posible encontrar tres vectores propios ortonormales, es decir, una base
+ortonormal formada por las direcciones principales del material. Existen
+distintos casos particulares e interesantes de materiales anis'otropos
+correspondiendo a si los valores propios son todos diferentes o iguales. Si
+todos los valores propios son iguales, el material es is'otropo, puesto que en
+ese caso $\kappa_{ij}=\lambda\,\delta_{ij}$. Si dos valores propios son iguales
+y uno diferente, se dice que el material es \textit{uniaxial} (puesto que
+tienen una direcci'on distintiva, aquella descrita por el vector propio del
+valor propio distinto a los otros dos. Esta direcci'on es llamada \textit{eje
+'optico}). Un ejemplo de material uniaxial natural es la Calcita ($CaCO_3$). En
+materiales uniaxiales la propagaci'on de la luz presenta el fen'omeno llamado
+\textit{birefringencia}, en los que la luz en su interior se propaga, en
+general, por dos trayectorias diferentes (rayo ``ordinario''\, y
+``extraordinario'') correspondientes a dos 'indices de refracci'on diferentes.
+Adem'as, es posible inducir anisotrop'ia (y por tanto, en general,
+birefringencia), comprimiendo un material en una direcci'on dada, o
+con un campo el'ectrico intenso externo (\textit{efecto Kerr}). Finalmente, si
+los tres valores propios del tensor diel'ectrico son diferentes, entonces el
+material (t'ipicamente un cristal) es llamado \textit{biaxial}.
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{l c |c| c}
+Mineral 		& 	F'ormula qu'imica 	&	$n_{\rm o}=\sqrt{\kappa_\perp}$	& 	$n_{\rm e}=\sqrt{\kappa_\parallel}$
+%& 	 $\Delta n=n_e-n_o$
+\\
+\hline\hline
+Berilo 			& Be$_3$Al$_2$(Si6O18)	&	1.602	& 	1.557	
+%&	-0.045	
+\\
+Calcita 		&	CaCO$_3$  	&	1.658	& 	1.486	
+%& 	-0.172	
+\\
+%Calomelano 		&	Hg$_2$Cl$_2$	& 	1.973	& 	2.656	
+%& 	+0.683	
+%\\
+%cinnabar 		&	HgS    		&	2.905	& 	3.256	
+%& 	+0.351	
+%\\
+Hematita 		&	Fe$_2$O$_3$	&	2.940	& 	3.220	
+%& 	+0.287	
+\\
+Hielo 			&	H$_2$O 		&	1.309	&	1.313	
+%& 	+0.014	
+\\
+Niobiato de litio 	&	LiNbO$_3$	&	2.272	& 	2.187	
+%& 	-0.085	
+\\
+Fluoruro de magnesio 	&	MgF$_2$		&	1.380	& 	1.385	
+%& 	+0.006	
+\\
+Quarzo 			&	SiO$_2$		&	1.544	& 	1.553	
+%& 	+0.009	
+\\
+Rub'i 			& Al$_2$O$_3$:Cr	&	1.770 	&	1.762	
+%& 	-0.008	
+\\
+%Rutilo 			&	TiO$_2$ 		&	2.616	& 	2.903	
+%& 	+0.287	
+%\\
+%Peridot 		&	  		&	1.690	& 	1.654	
+%& 	-0.036	
+%\\
+Zafiro	 		&	Al$_2$O$_3$	&	1.768	& 	1.760	
+%& 	-0.008	
+\\
+Nitrato de sodio	&	NaNO$_3$	&	1.587	& 	1.336	
+%& 	-0.251	
+%\\
+%Turmalina 		&	  		&	1.669	& 	1.638	
+%& 	-0.031	
+\\
+Circ'on, high 		&	ZrSiO$_4$	&	1.920 -1.960	&  1.967-2.015	
+%& +0.047; +0.055	
+\end{tabular}
+\caption{Algunos cristales uniaxiales y sus 'indices de refracci'on. Datos tabulados para $\lambda\sim 590\,{\rm [nm]}$ \cite{hyper}.}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{l c |c|c|c}
+Mineral			& F'ormula qu'imica		& $\sqrt{\kappa_x}$	&	$\sqrt{\kappa_y}$	&  $\sqrt{\kappa_z}$	\\
+\hline\hline
+B'orax 	 		&Na$_2$B$_4$O$_7$·10H$_2$O& 	1.447	& 	1.469	& 	1.472	\\
+Sulfato de magnesio		&  MgSO$_4$·7(H$_2$O)	& 	1.433	& 	1.455	& 	1.461	\\
+%Biotita		&			&  	1.595	& 	1.640	& 	1.640	\\
+%Moscovita		&			&  	1.563	& 	1.596	& 	1.601	\\
+Olivina			& 	(Mg,Fe)2SiO	& 	1.640	& 	1.660	& 	1.680	\\
+Perovskita		& 	CaTiO$_3$	& 	2.300	& 	2.340	& 	2.380	%\\
+%Topacio			&			&  	1.618	& 	1.620	& 	1.627	\\
+%Ulexita			&			&  	1.490	& 	1.510	& 	1.520	
+\end{tabular}
+\caption{Algunos cristales biaxiales. Datos tabulados para $\lambda\sim 590\,{\rm [nm]}$ \cite{hyper}.}
+\end{center}
+\end{table}
+\subsection{Condiciones de frontera para $\vec{D}$}
+
+El vector desplazamiento el'ectrico satisface la ecuaci'on (\ref{divD}), que es
+de la misma forma que la ley de Gauss (\ref{leygauss-dif}), con la diferencia
+que en (\ref{divD}) el factor $\varepsilon_0$ est'a ausente y que la densidad de carga en el lado derecho es s'olo la densidad de cargas externas (\underline{no} las de polarizaci'on). Como consecuencia, podemos aplicar el mismo procedimiento discutido en la secci'on \ref{secCBE} para derivar las condiciones que el vector desplazamiento debe satisfacer en la frontera de dos materiales. Consideramos una superficie que divide dos diel'ectricos de propiedades diferentes, en la que, eventualmente, existe una densidad de carga externa $\sigma_{\rm ext}$. Si $\hat{n}$ es el vector unitario normal a la superficie en un punto dado, que apunta desde el material 1 hasta el 2, entonces
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-dielectrico-condicion-borde-01.pdf,height=5cm,
+angle=0}}
+\caption{La componente normal del vector desplazamiento puede ser discontinua
+si existen cargas externas en el la interfase entre dos diel'ectrico.}
+\label{CF1}
+\end{figure}
+\begin{equation}\label{saltoDn}
+\boxed{\vec{D_2}\cdot\hat{n}-\vec{D_1}\cdot\hat{n}=\sigma_{\rm
+ext}.}
+\end{equation}
+
+Por otro lado, el campo el'ectrico $\vec{E}$ sigue satisfaciendo (\ref{rotE0}),
+de modo que, como consecuencia, su componente tangencial es continua a trav'es
+de la superficie, tal como lo expresa la condici'on (\ref{Etconst}). Recuerde
+finalmente que el potencial el'ectrico siempre es una funci'on continua, de
+modo que el campo el'ectrico, aunque eventualmente discontinuo, es finito en
+todo punto.
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-dielectrico-condicion-borde-02.pdf,height=5cm,
+angle=0}}
+\caption{La componente tangencial del campo el'ectrico es siempre continua
+en una interfase.}
+\label{CF2}
+\end{figure}
+
+\subsection{Caso de un medio lineal e is'otropo}
+
+Consideramos aqu'i el caso particular de medios lineales e is'otropos caracterizados por las constantes diel'ectricas $\kappa_1$ y $\kappa_2$ respectivamente. Consideramos adem'as el 'angulo entre los vectores campo el'ectrico a cada lado de la superficie y el vector normal. Ver figura \ref{CF3}. 
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-dielectrico-condicion-borde-03.pdf,height=5cm,
+angle=0}}
+\caption{Refracci'on de las l'ineas de campo.}
+\label{CF3}
+\end{figure}
+Aqu'i tendremos que, en ausencia de cargas externas, la componente normal del vector desplazamiento es continua a trav'es de la superficie,  $\vec{D}_1\cdot\hat{n}=\vec{D}_2\cdot\hat{n}$, que puede escribirse m'as expl'icitamente como:
+\begin{equation}\label{Enid}
+\kappa_1 E_1\cos\alpha_1=\kappa_2E_2\cos\alpha_2.
+\end{equation}
+Por otro lado, la condici'on sobre la componente tangencial a la superficie implica que
+\begin{equation} \label{Etid}
+ E_1\sin\alpha_1=E_2\sin\alpha_2.
+\end{equation}
+Dividiendo (\ref{Etid}) por (\ref{Enid}) (asumiendo naturalmente que $E_1$ y $E_2$ son no nulos), obtenemos una simple relaci'on entre los 'angulos $\alpha_1$ y $\alpha_2$:
+\begin{equation}
+ \frac{\tan\alpha_1}{\kappa_1}=\frac{\tan\alpha_2}{\kappa_2}.
+\end{equation}
+
+\subsubsection{Ejemplo: Esf'era diel'ectrica en un campo el'ectrico externo uniforme}
+Aqu'i consideraremos el ejemplo de una esfera diel'ectrica (lineal e is'otropa) de radio $R$ y constante diel'ectrica $\kappa_1$ sumergida en un medio de constante diel'ectrica $\kappa_2$ y en presencia de un campo externo constante $\vec{E}_0$.
+
+En este caso no existen cargas externas en el dominio considerado (las 'unicas cargas externas del problema ser'ian aquellas que generan el campo externo, que consideraremos est'an ubicadas muy lejos de la esfera). Entonces el potencial el'ectrico, de acuerdo a (\ref{Poissond}), satisface la ecuaci'on de Laplace tando dentro ($r\le R$) como fuera ($r\ge R$) de la esfera. Resolveremos el problema en coordenadas esf'ericas orientando el eje $z$ en la direcci'on de $\vec{E}_0$. Entonces, debido a la simetr'ia del problema (recuerde que los medios son is'otropos) los campos tendr'an simetr'ia axial. En particular $\phi=\phi(r,\theta)$. Por esto, la forma general del campo en cada regi'on es
+ \begin{equation}
+ \phi(r,\theta)=\sum_{l=0}^{\infty}\left[  A_lr^{l}+B_lr^{-(l+1)}\right]
+ P_l(\cos\theta).
+ \end{equation}
+En el interior de la esfera el potencial debe ser finito en todo punto y, en particular, en el origen $r=0$. Esta condici'on, junto con la elecci'on $\phi (r=0,\theta)\stackrel{!}{=}0$, reduce la forma posible del potencial a 
+ \begin{equation}\label{phiint}
+ \phi(r,\theta)=\sum_{l=1}^{\infty}A_l^{(1)}r^{l}P_l(\cos\theta), \qquad r\le R.
+ \end{equation}
+Por otro lado, lejos de la esfera ($r\gg R$) el campo el'ectrico debe tender al campo el'ectrico externo $\vec{E}_0=E_0\hat{z}$. Esto es equivalente a que el potencial satisfaga
+\begin{equation}
+ \phi(r,\theta)\to -E_0z+\alpha = -E_0\,r\cos\theta+\alpha, \qquad r\gg R,
+\end{equation}
+donde $\alpha$ es una constante. Con esta condici'on, el potencial fuera de la esfera s'olo puede adoptar la forma
+\begin{equation}\label{phiext}
+\phi(r,\theta)=\alpha-E_0\,r\cos\theta+\sum_{l=0}^{\infty}B_l^{(2)}%
+ r^{-(l+1)}P_l(\cos\theta), \qquad r>R.
+\end{equation}
+El potencial es una funci'on continua. Por lo tanto, en $r=R$ las soluciones internas y externas deben adoptar el mismo valor. Usando (\ref{phiint}) y (\ref{phiext}) encontramos as'i la condici'on
+ \begin{equation}
+ \sum_{l=1}^{\infty}A_l^{(1)}R^{l}P_l(\cos\theta)  
+ =\alpha-E_0\,R\cos\theta+\sum_{l=0}^{\infty}B_l^{(2)}R^{-(l+1)} P_l(\cos\theta)
+ \end{equation}
+ que implica, para $l=0$, que
+\begin{equation}\label{ecl0a}
+\alpha-B_0^{(2)}R^{-1}=0.
+\end{equation}
+Adem'as, para $l=1$, obtenemos
+\begin{equation}\label{ecl1a}
+ A_1^{(1)}R =-E_0R+B_1^{(2)}R^{-2}.
+\end{equation}
+Finalmente, para $l\geq2$, encontramos
+\begin{equation}\label{eclla}
+ A_l^{(1)}R^{l} =B_l^{(2)}R^{-(l+1)}.
+\end{equation}
+Por otro lado, la condici'on (\ref{saltoDn}) se reduce, ya que $\sigma_{\rm ext}=0$, a $\vec{D}_1\cdot\hat{n}=\vec{D}_2\cdot\hat{n}$. Adem'as en este caso $\hat{n}=\hat{r}$, por lo que la condici'on es equivalente a
+\begin{equation}
+\kappa_1\left.\frac{\partial\phi}{\partial r}\right|_{r=R^-}
+=\kappa_2\left.\frac{\partial\phi}{\partial r}\right|_{r=R^+}.
+\end{equation}
+Reemplazano nuevamente (\ref{phiint}) y (\ref{phiext}) en esta condici'on obtenemos
+\begin{equation}\label{condD}
+ k\sum_{l=1}^{\infty}A_l^{(1)}lR^{l-1}P_l(\cos\theta) =-E_0P_1(\cos\theta)  -\sum_{l=0}^{\infty}(l+1)B_l^{(2)}R^{-(l+2)}P_l(\cos\theta),
+\end{equation}
+donde hemos definido $k:=\kappa_1/\kappa_2$. Para $l=0$ esta condici'on implica que
+\begin{equation}\label{ecl0b}
+B_0^{(2)}=0.
+\end{equation}
+Para el caso $l=1$, obtenemos
+\begin{equation}\label{ecl1b}
+kA_1^{(1)}  =-E_0-2B_1^{(2)}R^{-3}.
+\end{equation}
+Finalmente, para $l\geq2$, encontramos la condici'on
+\begin{equation}\label{ecllb}
+klA_l^{(1)} =-(l+1)B_l^{(2)}R^{-(2l+1)}.
+\end{equation}
+Al reemplazar el resultado (\ref{ecl0b}) en (\ref{ecl0a}) obtenemos $\alpha=0$. Similarmente, las ecuaciones (\ref{ecl1a}) y (\ref{ecl1b}) permiten encontrar las constantes $A_1^{(1)}$ y $B_1^{(2)}$. Simple 'algebra muestra que la soluci'on en este caso es dada por
+\begin{equation}
+ A_1^{(1)}=\frac{-3}{k+2}E_0, \qquad, B_1^{(2)}=\frac{k-1}{k+2}R^3E_0.
+ \end{equation}
+Finalmente, las ecuaciones (\ref{eclla}) y (\ref{ecllb}) determinan $A_l^{(1)}$ y $B_l^{(2)}$ para $l\ge 2$. En este caso, sin embargo, la 'unica soluci'on posible es la nula, es decir,
+\begin{equation}
+A_l^{(1)}=0, \qquad B_l^{(2)}=0, \qquad l\ge 2.
+\end{equation}
+Con esto, la soluci'on para el potencial queda totalmente determinado tanto dentro como fuera de la esfera:
+\begin{equation}
+\phi(r,\theta)=\frac{-3\kappa_2}{\kappa_1+2\kappa_2}E_0\,r\cos\theta, \qquad r\le R
+\end{equation}
+y
+\begin{equation}
+\phi(r,\theta)=-E_0\,r\cos\theta +\frac{\kappa_1-\kappa_2}{\kappa_1+2\kappa_2}R^3E_0 \frac{\cos\theta}{r^2}, \qquad r\ge R.
+\end{equation}
+ 
+ Ahora estudiaremos algunas caracter'isticas de la soluci'on obtenida, en el caso particular en que fuera de la esfera hay s'olo vac'io, es decir, $\kappa_2=1$. Primero, el potencial en el interior de la esfera puede escribirse, en coordenadas cartesianas como
+ \begin{equation}
+\phi(r,\theta)=\frac{-3}{\kappa_1+2}E_0\,z, \qquad r\le R,
+\end{equation}
+lo que implica que el campo el'ectrico en el interior de la esfera es homog'eneo y dado por
+\begin{equation}
+\vec{E}=\frac{3}{\kappa_1+2}\,\vec{E}_0, \qquad r\le R.
+\end{equation}
+% Adem'as,%
+% \begin{equation}
+% E_{r}^{(2)}=-\frac{\partial\phi^{(2)}}{\partial r}=E^0r\cos\theta
+% +2\frac{k_1-k_2}{k_1+2k_2}a^3E^0r^{-2}\cos\theta
+% \end{equation}%
+% \begin{equation}
+% E_{\theta}^{(2)}=-\frac{1}{r}\frac{\partial\phi^{(2)}}{\partial\theta
+% }=-E^0r\sen\theta+\frac{k_1-k_2}{k_1+2k_2}a^3E^0r^{-2}%
+% \sen\theta
+% \end{equation}%
+% \begin{equation}
+% E_{\varphi}^{(2)}=0
+% \end{equation}
+
+Por otro lado, fuera de la esfera, el potencial consta de dos t'erminos: uno que corresponde al campo homog'eneo externo y otro con la forma (es decir, dependencia espacial) de un \textit{campo dipolar}. En efecto, el campo de un dipolo el'ectrico con momento dipolar $\vec{p}=p\hat{z}$ orientado a lo largo del eje $z$ es
+ \begin{equation}
+ \phi_{\rm dip}=\frac{p}{4\pi\varepsilon_0}\frac{\cos\theta}{r^2}.
+ \end{equation}
+Por lo tanto, el campo en el exterior de la esfera diel'ectrica es dado por la suma del campo externo$\vec{E}_0$ y el campo de un dipolo con momento dipolar
+ \begin{equation}
+\vec{p}=4\pi\varepsilon_0\frac{\kappa_1-1}{\kappa_1+2}R^3\,\vec{E}_0.
+ \end{equation}
+Puede verficarse que esta identificaci'on es correcta recordando que el vector de polarizaci'on es definido como la densidad de momento dipolar del medio. Como consecuencia, la relaci'on (\ref{pintPdV}) permite calcular el momento dipolar total de la esfera como una integral de volumen de su vector de polarizaci'on. En el caso estudiado, el vector de polarizaci'on es proporcional al campo el'ectrico y por lo tanto tambi'en homog'eneo al interior de la esfera:
+\begin{align}
+\vec{P} &= \varepsilon_0(\kappa_1-1)\vec{E} \\
+&= \frac{3\varepsilon_0(\kappa_1-1)}{\kappa_1+2}\,\vec{E}_0.
+\end{align}
+Con esto, el momento dipolar de la esfera puede ser calculado f'acilmente:
+\begin{align}
+\vec{p} &= \int_V \vec{P}\,dV \\
+&= \vec{P}\,V \\
+&= \frac{3\varepsilon_0(\kappa_1-1)}{\kappa_1+2}\,\vec{E}_0\cdot \frac{4\pi}{3}R^3.
+\end{align}
+Finalmente, podemos calcular las densidades de carga de polarizaci'on en la esfera. Ya que el vector de polarizaci'on es homog'eneo, la densidad $\rho_P=0$. La densidad superficial de carga de polarizaci'on $\sigma_P$ es no nula:
+\begin{align}
+\sigma_P &= \vec{P}\cdot\hat{r}\\
+&= \frac{3\varepsilon_0(\kappa_1-1)}{\kappa_1+2}\,E_0\,\cos\theta.
+\end{align}
+
+Finalmente, es interesante notar que el caso de un \textit{conductor} esf'erico de carga total nula, en un campo externo homog'eneo, ver secci'on \ref{sec:esfcond}, puede ser recobrado en el l'imite $\kappa_1\to\infty$.
+
+\subsection{Modelos microsc'opicos simples de polarizaci'on}
+\subsubsection{Polarizalibidad}
+En muchos casos, los 'atomos que constituyen un diel'ectrico no est'an polarizados...
+
+\subsection{Energ'ia electrost'atica en un diel'ectrico}
+
+En la secci'on \ref{ed3_1_2} vimos una expresi'on para la energ'ia almacenada
+en un campo dado o, equivalentemente la energ'ia necesaria para formar el
+sistema de cargas correspondientes a un campo. Ahora calcularemos algo
+an'alogo, pero diferente: la energ'ia almacenada en una configuraci'on de campo
+en un sistema que consta de cargas externas y un diel'ectrico \underline{dado}.
+En otras palabras, \textit{no incluiremos la energ'ia necesaria para formar el
+diel'ectrico}, sino s'olo la energ'ia necesaria para montar una cierta
+distribuci'on de cargas externas en un diel'ectrico preexistente.
+
+El trabajo necesario para aumentar (en general, para cambiar) la densidad de
+cargas externas en $\delta\rho_{\rm ext}(x)$ en un medio con potencial
+$\phi(x)$ es dado por
+\begin{equation}\label{Wdiel1}
+ \boxed{\delta U=\int_{R^3}\phi(x)\delta\rho_{\rm ext}(x)\,dV.} 
+\end{equation}
+Usando (\ref{divD}) encontramos que el cambio en densidad de cargas externas
+est'a relacionado con el cambio en el vector desplazamiento por medio de
+$\vec\nabla\cdot(\delta\vec{D})=\delta\rho_{\rm ext}$. Usando esto, e integrando
+por partes, podemos reescribir (\ref{Wdiel1}) como:
+\begin{equation}
+ \delta U=\oint_{\infty}\phi (x)\delta\vec{D}(x)\cdot
+d\vec{S}+\int_{R^3}\vec{E}\cdot\delta\vec{D}\,dV.
+\end{equation}
+Asumiendo, como es usual, que los campos se anulan suficientemente r'apido en
+el infinito, llegamos a
+\begin{equation}
+ \boxed{\delta U=\int_{R^3}\vec{E}(x)\cdot\delta\vec{D}(x)\,dV.} \label{dUE}
+\end{equation}
+Si las cargas externas est'an posicionadas de forma tal que (en cada punto) su
+densidad es una fracci'on $\lambda$ de la densidad final, es decir, si es
+$\lambda\rho_{\rm ext}(x)$, entonces el vector desplazamiento correspondiente
+ser'a $\lambda\vec{D}(x)$ (como consecuencia de (\ref{divD})) y el campo
+el'ectrico correspondiente lo denotaremos $\vec{E}_\lambda(x)$. Al incrementar
+ahora la densidad en $\delta\rho_{\rm ext}(x)=\rho_{\rm ext}(x)\,d\lambda$ el cambio respectivo del vector desplazamiento es $\delta\vec{D}(x)=\vec{D}(x)\,d\lambda$. Entonces, la energ'ia total requerida para ``montar'' una distribuci'on de carga (final)
+$\rho_{\rm ext}(x)$ o, equivalentemente, la energ'ia necesaria para que el campo
+el'ectrico sea $\vec{E}(x)$ y el vector desplazamiento $\vec{D}(x)$ puede
+calcularse ``sumando''\, las energ'ias necesarias en cada incremento, desde la
+situaci'on inicial donde no hay cargas externas ($\lambda=0$) hasta alcanzar el
+100\% de las cargas y campos ($\lambda=1$):
+\begin{equation}
+U=\int_0^1 d\lambda\int_{R^3}\vec{E}_\lambda\cdot \vec{D}\,dV .
+\end{equation}
+Esta expresi'on es v'alida en general, para cualquier tipo de diel'ectrico.
+
+Para \textit{medios lineales} las componentes del vector desplazamiento son directamente proporcionales a las componentes del campo el'ectrico, luego $\vec{E}_\lambda(x)=\lambda\vec{E}(x)$.
+En este caso, la energ'ia necesaria para obtener, en un medio diel'ectrico lineal preexistente, una cierta configuraci'on de campos y cargas es 
+\begin{equation}\marginnote{Energ'ia medios lineales}
+\boxed{U=\frac{1}{2}\int_{R^3}\vec{E}\cdot\vec{D}\,dV.} \label{UED}
+\end{equation}
+La respectiva \textit{densidad de energ'ia} electrost'atica asociada es, entonces,
+\begin{equation}
+\boxed{u(x)=\frac{1}{2}\,\vec{E}(x)\cdot\vec{D}(x).}
+\end{equation}
+En general, para un medio anis'otropo tendremos
+\begin{equation}
+u(x)=\frac{\varepsilon_0}{2}\,\kappa_{ij}(x)E_i(x)E_j(x).
+\end{equation}
+Finalmente, para un medio is'otropo
+\begin{equation}\marginnote{Energ'ia medios is'otropos}
+\boxed{u=\frac{\varepsilon_0}{2}\,\kappa\,\vec{E}^2.}
+\end{equation}
+
+Note finalmente que, en t'erminos del potencial y la densidad de carga externa, la energ'ia (\ref{UED}) puede escribirse como:
+\begin{equation}
+U=\frac{1}{2}\int_{R^3}\phi(x)\rho_{\rm ext}(x)\,dV.
+\end{equation}
+
+\subsection{Fuerzas y torques}
+El conocimiento de la energ'ia electrost'atica de sistemas que constan de
+cargas, conductores y diel'ectricos puede ser usada para calcular
+(generalmente en forma simple) fuerzas y torques actu'ando sobre una parte del
+sistema. Para esto, deben considerarse dos subcasos: a) aquellos sistemas que
+est'an aislados y, por lo tanto, la carga y la energ'ia total del sistema son
+constantes, y b) sistemas que no est'an aislados, pero en los que, fuentes
+(bater'ias) externas mantienen constante las diferencias de potencial entre los conductores
+presentes.
+
+\subsubsection{Sistema aislado}
+
+En este caso, el trabajo $\delta W$ realizado por las fuerzas que act'uan sobre una de
+las \textit{partes m'oviles} del sistema debe producirse a costa de la
+variaci'on de la energ'ia electrost'atica del mismo sistema, $\delta U$, es decir,
+\begin{equation}
+ \delta W + \delta U=0. \label{dW+dU=0}
+\end{equation}
+Si la parte m'ovil realiza un desplazamiento (real o virtual) $\delta x_i$ a
+partir de su posici'on inicial $x_i$, y la fuerza sobre ella es $F_i$ entonces
+\begin{equation}
+ \delta W=F_i\,\delta x_i. \label{trab}
+\end{equation}
+Usando (\ref{dW+dU=0}) y (\ref{trab}) podemos entonces escribir
+\begin{equation}\marginnote{Fuerza Sistema Aislado}
+\boxed{F_i=-\left(\frac{\partial U}{\partial x_i}\right)_Q ,} \label{FQ}
+\end{equation}
+donde el sub'indice $Q$ indica que al efectuar las derivadas parciales debe
+tenerse en cuenta que la carga del sistema se mantiene constante, y la energ'ia
+electrost'atica debe ser escrita en funci'on de la posici'on de la parte
+m'ovil, $U=U(x_i)$.
+
+En el caso que la parte m'ovil \textit{rota en un 'angulo $\delta\theta$ respecto a un eje determinado por el vector $\hat{n}$}, tenemos que $\delta W=\hat{\tau}\cdot\hat{n}\delta\theta$, de modo que \textit{el torque
+sobre la parte m'ovil} puede ser calculado usando
+\begin{equation}\label{torqueU}\marginnote{Torque Sistema Aislado}
+ \boxed{\vec{\tau}\cdot\hat{n}=-\left(\frac{\partial U}{\partial\theta}\right)_Q
+.}
+\end{equation}
+An'alogamente al caso ``traslacional'' de la fuerza, la expresi'on \eqref{torqueU} asume que se ha determinado la dependencia de la energ'ia electrost'atica del sistema en funci'on del la posici'on angular de la parte m'ovil, es decir, que se conoce la funci'on $U(\theta)$.
+
+
+\subsubsection{Sistema con conductores a potencial constante}
+
+En este caso, el trabajo realizado por las fuerzas que act'uan sobre una de
+las partes m'oviles del sistema, m'as la variaci'on de la energ'ia
+electrost'atica del sistema, debe ser igual a la energ'ia suministrada por las
+bater'ias que mantienen los conductores a potenciales constantes, $\delta
+W_{\rm b}$, de modo que
+\begin{equation}
+ \delta W + \delta U=\delta W_{\rm b}. \label{dW+dU=dWb}
+\end{equation}
+Ahora, la variaci'on de la energ'ia electrost'atica de los conductores con
+potenciales fijos es dada, ver \eqref{Wdiel1}, por
+\begin{equation}
+ \delta U=\frac{1}{2}\sum_{(\alpha)}\phi^{(\alpha)}\delta Q^{(\alpha)},
+\end{equation}
+donde $\delta Q^{(\alpha)}$ es el cambio de las cargas en el conductor $\alpha$-'esimo,
+necesaria para mantener su potencial $\phi^{(\alpha)}$ constante. Por otro lado, 
+la energ'ia suministrada por las bater'ias es igual al trabajo necesario para
+transportar las cargas $\delta Q^{(\alpha)}$ hasta cada conductor, es decir,
+\begin{equation}
+ \delta W_{\rm b}=\sum_{(\alpha)}\phi^{(\alpha)}\delta Q^{(\alpha)}.
+\end{equation}
+De esta forma encontramos que
+\begin{equation}
+ \delta W_{\rm b}=2\delta U.
+\end{equation}
+Con este resultado y (\ref{dW+dU=dWb}) llegamos a
+\begin{equation}
+ \delta U=\delta W,
+\end{equation}
+que, en los casos de desplazamientos y rotaciones, implica
+\begin{equation}
+\boxed{F_i=\left(\frac{\partial U}{\partial x_i}\right)_\phi ,}
+\end{equation}
+y, para el torque,
+\begin{equation}
+ \boxed{\vec{\tau}\cdot\hat{n}=\left(\frac{\partial
+U}{\partial\theta}\right)_\phi
+.}
+\end{equation}
+
+\subsubsection{Ejemplo: Fuerza sobre un condensador semi-lleno con un
+diel'ectrico}
+\begin{figure}[!h]
+\centerline{\psfig{file=fig-condensador-semi-lleno-01.pdf , height=4cm ,
+angle=0}}
+\caption{Condensador parcialmente lleno con diel'ectrico.}
+\label{fig:fccd}
+\end{figure}
+Consideremos el caso en que el sistema est'a cargado, con cargas $+Q$ y $-Q$
+respectivamente, y aislado. Debemos determinar los campos en la regi'on con
+diel'ectrico (regi'on 1) y sin 'el (regi'on 2). Despreciando efectos de borde,
+podemos aproximar que todos los campos son verticales, con sus sentidos hacia
+abajo en la figura. Ya que la componente tangencial del campo el'ectrico es
+continua en una interfase entre dos diel'ectricos, encontramos que el campo
+el'ectrico $\vec{E}$ es igual en todo punto entre las placas del condensador,
+es decir,
+\begin{equation}
+ E_1=E_2.
+\end{equation}
+Usando (\ref{GaussD}) encontramos directamente que
+\begin{equation}
+ D_1=\varepsilon_0\kappa E=\sigma_1, \qquad D_2=\varepsilon_0 E=\sigma_2,
+\end{equation}
+donde $\sigma_1$ y $\sigma_2$ son las densidades de carga en las placas en la
+regi'on correspondiente. La carga total en cada placa es entonces dada por
+\begin{eqnarray}
+ Q&=&\sigma_1A_1+\sigma_2A_2 \\
+&=& \varepsilon_0\kappa E w x+\varepsilon_0E w (l-x) \\
+&=& \varepsilon_0Ew\left(\kappa x+l-x\right), \label{Qej}
+\end{eqnarray}
+donde $w$ es la longitud de la otra arista del rect'angulo que define cada placa (es decir, en la direcci'on perpendicular a la figura \ref{fig:fccd}).
+
+La energ'ia electrost'atica del sistema puede ser calculada evaluando
+(\ref{UED}):
+\begin{eqnarray}
+ U&=&\frac{1}{2}\int\vec{D}\cdot\vec{E}\,dV \\
+&=&\frac{1}{2}\left(D_1EV_1+D_2EV_2\right) \\
+&=&\frac{1}{2}\left[\varepsilon_0\kappa
+xwd+\varepsilon_0(l-x)wd\right]E^2 \\
+&=&\frac{1}{2}\varepsilon_0\left(\kappa x+l-x\right)wdE^2 .
+\end{eqnarray}
+Usando (\ref{Qej}), podemos finalmente expresar la energ'ia electrost'atica
+del sistema como
+\begin{equation}
+U(x)=\frac{Q^2d}{2\varepsilon_0 w}\frac{1}{(\kappa x+l-x)}.
+\end{equation}
+Ya que el sistema est'a aislado y $Q$ es constante, la fuerza sobre el
+diel'ectrico puede ser calculada a partir de (\ref{FQ}). As'i obtenemos
+\begin{equation}
+ F(x)=\frac{Q^2d}{2\varepsilon_0 w}\frac{(\kappa-1)}{(\kappa x+l-x)^2},
+\end{equation}
+que es una fuerza que \textit{atrae al diel'ectrico hacia el interior de las
+placas}.
+
+\subsubsection{Ejemplo: Electr'ometro}

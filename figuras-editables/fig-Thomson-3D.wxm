@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.6 ] */
+
+/* [wxMaxima: input   start ] */
+f(theta,phi):=((sin(phi))^2+(cos(theta)*cos(phi))^2)/2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Grafico 3D  */
+plot3d(f(theta,phi),[theta,0,%pi],[phi,0,2*%pi], 
+[transform_xy, spherical_to_xyz],[grid,50,50],[elevation,0],[azimuth,90],[plot_format,xmaxima]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Grafico 3D  */
+plot3d(f(theta,phi),[theta,0,%pi],[phi,0,2*%pi], 
+[transform_xy, spherical_to_xyz],[grid,50,50],[elevation,0],[azimuth,90],[plot_format,xmaxima]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

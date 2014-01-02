@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created on 2009-05-03 by Jorge Stolfi with the script make-coord-system-figure -->
+
+<!-- This file is declared PUBLIC DOMAIN by its creator -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="fig"
+   fill="none"
+   fill-opacity="1"
+   fill-rule="evenodd"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-dasharray="none"
+   stroke-opacity="1"
+   stroke-width="1.5px"
+   font-style="normal"
+   font-weight="normal"
+   font-size="30px"
+   font-family="Bitstream Vera"
+   width="620.0"
+   height="600.0"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Coord_system_CA_0.svg"
+   inkscape:export-filename="/home/gr/Dropbox/charlita/tmp/flat-spacetime.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata201">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs199">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="620 : 300 : 1"
+       inkscape:persp3d-origin="310 : 200 : 1"
+       id="perspective203" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="850"
+     id="namedview197"
+     showgrid="false"
+     inkscape:zoom="0.99666667"
+     inkscape:cx="473.06646"
+     inkscape:cy="340.13378"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3" />
+  <g
+     transform="scale(1.0)"
+     id="g3"><defs
+   id="defs5" />
+<!-- The reference planes: -->
+<g
+   id="g7"
+   stroke="rgb(185, 205, 170)"
+   fill-opacity="0.5"
+   fill="rgb(215, 235, 200)">
+  <polygon
+     points="+421.4,+222.7 +320.0,+300.0 +320.0,+482.9 +415.4,+392.2"
+     id="polygon9" />
+  <polygon
+     points="+143.7,+251.6 +320.0,+300.0 +320.0,+482.9 +154.5,+426.2"
+     id="polygon11" />
+  <polygon
+     points="+191.9,+397.7 +320.0,+300.0 +320.0,+482.9 +201.3,+595.7"
+     id="polygon13" />
+  <polygon
+     points="+522.8,+355.7 +320.0,+300.0 +320.0,+482.9 +508.6,+547.4"
+     id="polygon15" />
+  <polygon
+     points="+003.4,+336.2 +412.7,+469.7 +608.4,+267.0 +256.4,+183.6"
+     id="polygon17" />
+  <polygon
+     points="+421.4,+222.7 +320.0,+300.0 +320.0,+089.7 +428.2,+030.6"
+     id="polygon19" />
+  <polygon
+     points="+143.7,+251.6 +320.0,+300.0 +320.0,+089.7 +131.4,+052.6"
+     id="polygon21" />
+  <polygon
+     points="+191.9,+397.7 +320.0,+300.0 +320.0,+089.7 +180.9,+165.7"
+     id="polygon23" />
+  <polygon
+     points="+522.8,+355.7 +320.0,+300.0 +320.0,+089.7 +539.2,+132.8"
+     id="polygon25" />
+</g>
+<!-- The X axis: -->
+<path
+   d="M +320.0,+300.0 L +162.1,+420.4"
+   stroke="rgb(0,0,0)"
+   id="path27" />
+<g
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="g29">
+  <circle
+     cx="+296.8"
+     cy="+317.7"
+     r="1px"
+     id="circle31" />
+  <circle
+     cx="+272.5"
+     cy="+336.2"
+     r="1px"
+     id="circle33" />
+  <circle
+     cx="+247.0"
+     cy="+355.7"
+     r="1px"
+     id="circle35" />
+  <circle
+     cx="+220.2"
+     cy="+376.1"
+     r="1px"
+     id="circle37" />
+  <circle
+     cx="+191.9"
+     cy="+397.7"
+     r="1px"
+     id="circle39" />
+</g>
+<path
+   d="M +174.5,+415.4 L +170.1,+409.8 L +174.0,+406.8 L +178.4,+412.5"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path41" />
+<path
+   d="M +162.1,+420.4 L +170.1,+409.8 L +178.4,+412.5"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path43" />
+<path
+   d="M +162.1,+420.4 L +174.5,+415.4 L +174.0,+406.8"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path45" />
+<text
+   x="+152.1"
+   y="+443.4"
+   stroke="rgb(255,255,255)"
+   stroke-width="3px"
+   fill="none"
+   text-anchor="end"
+   id="text47">
+  <tspan
+     font-style="italic"
+     id="tspan49">X</tspan>
+</text>
+<text
+   x="+152.1"
+   y="+443.4"
+   stroke="none"
+   fill="rgb(0,0,0)"
+   text-anchor="end"
+   id="text51">
+  <tspan
+     font-style="italic"
+     id="tspan53">X</tspan>
+</text>
+<!-- The Y axis: -->
+<path
+   d="M +320.0,+300.0 L +567.1,+367.8"
+   stroke="rgb(0,0,0)"
+   id="path55" />
+<g
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="g57">
+  <circle
+     cx="+358.3"
+     cy="+310.5"
+     r="1px"
+     id="circle59" />
+  <circle
+     cx="+397.6"
+     cy="+321.3"
+     r="1px"
+     id="circle61" />
+  <circle
+     cx="+438.1"
+     cy="+332.4"
+     r="1px"
+     id="circle63" />
+  <circle
+     cx="+479.8"
+     cy="+343.9"
+     r="1px"
+     id="circle65" />
+  <circle
+     cx="+522.8"
+     cy="+355.7"
+     r="1px"
+     id="circle67" />
+</g>
+<path
+   d="M +551.1,+360.9 L +548.8,+367.1 L +547.3,+364.9 L +549.5,+358.8"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path69" />
+<path
+   d="M +567.1,+367.8 L +548.8,+367.1 L +549.5,+358.8"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path71" />
+<path
+   d="M +567.1,+367.8 L +551.1,+360.9 L +547.3,+364.9"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path73" />
+<text
+   x="+572.1"
+   y="+362.8"
+   stroke="rgb(255,255,255)"
+   stroke-width="3px"
+   fill="none"
+   text-anchor="start"
+   id="text75">
+  <tspan
+     font-style="italic"
+     id="tspan77">Y</tspan>
+</text>
+<text
+   x="+572.1"
+   y="+362.8"
+   stroke="none"
+   fill="rgb(0,0,0)"
+   text-anchor="start"
+   id="text79">
+  <tspan
+     font-style="italic"
+     id="tspan81">Y</tspan>
+</text>
+<!-- The Z axis: -->
+<path
+   d="M +320.0,+300.0 L +320.0,+043.8"
+   stroke="rgb(0,0,0)"
+   id="path83" />
+<g
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="g85">
+  <circle
+     cx="+320.0"
+     cy="+260.3"
+     r="1px"
+     id="circle87" />
+  <circle
+     cx="+320.0"
+     cy="+219.5"
+     r="1px"
+     id="circle89" />
+  <circle
+     cx="+320.0"
+     cy="+177.5"
+     r="1px"
+     id="circle91" />
+  <circle
+     cx="+320.0"
+     cy="+134.2"
+     r="1px"
+     id="circle93" />
+  <circle
+     cx="+320.0"
+     cy="+089.7"
+     r="1px"
+     id="circle95" />
+</g>
+<path
+   d="M +315.9,+061.6 L +322.4,+061.1 L +324.1,+063.1 L +317.5,+063.6"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path97" />
+<path
+   d="M +320.0,+043.8 L +322.4,+061.1 L +317.5,+063.6"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path99" />
+<path
+   d="M +320.0,+043.8 L +315.9,+061.6 L +324.1,+063.1"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="path101" />
+<text
+   x="311"
+   y="66.800003"
+   id="text103"
+   style="text-anchor:end;fill:none;stroke:#ffffff;stroke-width:3px">
+  <tspan
+     font-style="italic"
+     id="tspan105"
+     style="font-style:italic">t</tspan>
+</text>
+<text
+   x="311"
+   y="66.800003"
+   id="text107"
+   style="text-anchor:end;fill:#000000;stroke:none">
+  <tspan
+     font-style="italic"
+     id="tspan109"
+     style="font-style:italic">t</tspan>
+</text>
+<text
+   x="+315.0"
+   y="+295.0"
+   stroke="rgb(255,255,255)"
+   stroke-width="3px"
+   fill="none"
+   text-anchor="end"
+   id="text111">
+  <tspan
+     font-style="italic"
+     id="tspan113">O</tspan>
+</text>
+<text
+   x="+315.0"
+   y="+295.0"
+   stroke="none"
+   fill="rgb(0,0,0)"
+   text-anchor="end"
+   id="text115">
+  <tspan
+     font-style="italic"
+     id="tspan117">O</tspan>
+</text>
+<path
+   d="M +320.0,+300.0 L +272.5,+336.2"
+   stroke="rgb(200,0,100)"
+   id="path119" />
+ --&gt;
+    <text
+   x="+299.3"
+   y="+340.1"
+   stroke="rgb(255,255,255)"
+   stroke-width="3px"
+   fill="none"
+   text-anchor="start"
+   id="text121">
+  <tspan
+     font-style="italic"
+     id="tspan123">x</tspan>
+</text>
+<text
+   x="+299.3"
+   y="+340.1"
+   stroke="none"
+   fill="rgb(0,0,0)"
+   text-anchor="start"
+   id="text125">
+  <tspan
+     font-style="italic"
+     id="tspan127">x</tspan>
+</text>
+<path
+   d="M +272.5,+336.2 L +394.5,+372.0"
+   stroke="rgb(200,0,100)"
+   id="path129" />
+ --&gt;
+    <text
+   x="+332.1"
+   y="+376.9"
+   stroke="rgb(255,255,255)"
+   stroke-width="3px"
+   fill="none"
+   text-anchor="end"
+   id="text131">
+  <tspan
+     font-style="italic"
+     id="tspan133">y</tspan>
+</text>
+<text
+   x="+332.1"
+   y="+376.9"
+   stroke="none"
+   fill="rgb(0,0,0)"
+   text-anchor="end"
+   id="text135">
+  <tspan
+     font-style="italic"
+     id="tspan137">y</tspan>
+</text>
+<path
+   d="M +272.5,+336.2 L +269.6,+164.1"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path139" />
+ --&gt;
+    <path
+   d="M +438.1,+332.4 L +394.5,+372.0"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path141" />
+ --&gt;
+    <path
+   d="M +438.1,+332.4 L +445.4,+161.0"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path143" />
+ --&gt;
+    <path
+   d="M +320.0,+134.2 L +269.6,+164.1"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path145" />
+ --&gt;
+    <path
+   d="M +320.0,+134.2 L +445.4,+161.0"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path147" />
+ --&gt;
+    <path
+   d="M +445.4,+161.0 L +399.4,+193.8"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path149" />
+ --&gt;
+    <path
+   d="M +269.6,+164.1 L +399.4,+193.8"
+   stroke="rgb(0,0,0)"
+   stroke-dasharray="3,4"
+   stroke-dashoffset="9"
+   id="path151" />
+ --&gt;
+    <path
+   d="M +394.5,+372.0 L +399.4,+193.8"
+   stroke="rgb(200,0,100)"
+   id="path153" />
+ --&gt;
+    <text
+   x="401.89999"
+   y="301"
+   id="text155"
+   style="text-anchor:start;fill:none;stroke:#ffffff;stroke-width:3px">
+  <tspan
+     font-style="italic"
+     id="tspan157"
+     style="font-style:italic">t</tspan>
+</text>
+<text
+   x="403.90002"
+   y="301"
+   id="text159"
+   style="text-anchor:start;fill:#000000;stroke:none">
+  <tspan
+     font-style="italic"
+     id="tspan161"
+     style="font-style:italic">t</tspan>
+</text>
+<circle
+   cx="+399.4"
+   cy="+193.8"
+   r="5.2662678914698109"
+   stroke="rgb(0,0,0)"
+   fill="rgb(0,0,0)"
+   id="circle163" />
+ --&gt;
+    <text
+   x="419.40002"
+   y="202.8"
+   id="text165"
+   style="text-anchor:start;fill:none;stroke:#ffffff;stroke-width:3px"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   inkscape:export-filename="/home/gr/Dropbox/charlita/tmp/flat-spacetime.png">(t,<tspan
+   font-style="italic"
+   id="tspan169"
+   style="font-style:italic">x</tspan>
+,<tspan
+   font-style="italic"
+   id="tspan173"
+   style="font-style:italic">y</tspan>
+)</text>
+<text
+   x="419.39999"
+   y="202.8"
+   id="text181"
+   style="text-anchor:start;fill:#000000;stroke:none">(t,<tspan
+   font-style="italic"
+   id="tspan185"
+   style="font-style:italic">x</tspan>
+,<tspan
+   font-style="italic"
+   id="tspan189"
+   style="font-style:italic">y</tspan>
+)</text>
+</g>
+</svg>

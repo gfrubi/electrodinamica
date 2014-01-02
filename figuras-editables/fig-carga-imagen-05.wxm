@@ -1,0 +1,60 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.6 ] */
+
+/* [wxMaxima: input   start ] */
+/* Ejemplo sencillo de gráfico de un campo vectorial 2D */;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* básicamente, sólo hay que indicar las componentes x-y del vector 
+ y el rango en el que queremos graficar */;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+phi(x,y):=log(((x+1)^2+y^2)/((x-1)^2+y^2));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+load(implicit_plot);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+implicit_plot([phi(x,y)=0,phi(x,y)=-2,phi(x,y)=2],[x,-3,3],[y,-3,3],
+[legend,false],[gnuplot_preamble,"set size ratio 1"]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+implicit_plot([phi(x,y)=0,phi(x,y)=-2,phi(x,y)=2],[x,-3,3],[y,-3,3],
+[legend,false],[gnuplot_preamble,"set size ratio 1"],
+[gnuplot_term, svg], [gnuplot_out_file, "lineas-equipotenciales.svg"]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Ex(x,y):=-factor(diff(phi(x,y),x)); Ey(x,y):=-factor(diff(phi(x,y),y));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Ex(x,y); Ey(x,y);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plotdf([Ex(x,y),Ey(x,y)],[x,-3,3],[y,-3,3]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Agregando [trajectory_at,1.6,-1.5] se agrega la línea de campo que pasa 
+   por las coordenadas (1.6,-1,5). Ver más posibilidades en Manual */
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plotdf([Ex(x,y),Ey(x,y)],[x,-3,3],[y,-3,3],[trajectory_at,1.6,-1.5]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Luego se puede exportar el gráfico a formato .ps. Posteriormente se puede 
+   convertir a .svg usando pstoedit (que debe estar instalado) y 
+   post-editarlo usando inkscape */
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

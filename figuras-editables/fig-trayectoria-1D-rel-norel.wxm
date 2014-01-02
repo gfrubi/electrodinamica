@@ -1,0 +1,22 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.6 ] */
+
+/* [wxMaxima: input   start ] */
+v1(t):=t/sqrt(1+t^2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+v2(t):=t;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plot2d([v2(t),v1(t)],[t,0,3],[y,0,2],[legend,false]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+plot2d([v2(t),v1(t)],[t,0,3],[y,0,2],[legend,false],
+[gnuplot_term, svg], [gnuplot_out_file, "trayectoria-1D-rel-norel.svg"]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,12 @@
+  set polar 
+  set size ratio 1
+  f(t,beta)=(sin(t))**2/(1-beta*cos(t))**5
+  set term post enh color
+  set out 'lobulo02.eps'
+  #set out 'veloc.tex'
+  #set term latex
+  #set xrange [-1:1]
+  #set yrange [-1:1]
+  set grid
+  plot f(t,0) title "beta=0", f(t,0.3) title "beta=0.3" , f(t,0.5) title "beta=0.5"
+  

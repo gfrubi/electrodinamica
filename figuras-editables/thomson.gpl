@@ -1,0 +1,14 @@
+  thclass(x)=(0.5)*(1+((x))**2)
+  thcuan1(x,E)=thclass(x)/(1+E*(1-(x)))**2
+  set term post enh color
+  set out 'figura_thomson.eps'
+  # set out 'veloc.tex'
+  # set term latex
+  #set xrange [0:3.5]
+  set xrange [1:-1]
+  # set xlabel '$\frac{qE}{mc}t$'
+   set yrange [0:1]
+  #set ylabel '$\frac{v}{c}$'
+  #set grid
+  plot thclass(x) title 'Thompson', thcuan1(x,0.1) title 'Thompson+Compton x=0.1', thcuan1(x,0.25) title 'Thompson+Compton x=0.25', thcuan1(x,1.0) title 'Thompson+Compton x=1.0'
+  

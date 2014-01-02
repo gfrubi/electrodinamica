@@ -1,0 +1,12 @@
+  set polar 
+  set size ratio 1
+  f(t)=(sin(t))**2
+  set term post enh color
+  set out 'lobulo01.eps'
+  #set out 'veloc.tex'
+  #set term latex
+  set xrange [-1:1]
+  set yrange [-1:1]
+  set grid
+  plot f(t) notitle
+  
