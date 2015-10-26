@@ -869,6 +869,28 @@ U=\int_0^1dW,
 \end{equation}
 que lleva nuevamente a la expresi'on \eqref{Urhophi}.
 
+\subsubsection{Energ'ia de un sistema de cargas formado por dos subsistemas}
+Si tenemos un sistema de cargas que pueda ser separado en dos subsistemas, el primero con densidad de carga $\rho_1(x)$ que genera un potencial $\phi_1(x)$, y el segundo con densidad $\rho_2(x)$ y potencial $\phi_1(x)$, entonces 
+\begin{equation}
+\rho(x)=\rho_1(x)+\rho_2(x),
+\end{equation}
+ya suponemos que las regiones donde $\rho_2(x)$ y $\rho_2(x)$ son no nulas son disjuntas. Adem'as, en un punto cualquiera el potencial es dado por
+\begin{equation}
+\phi(x)=\phi_1(x)+\phi_2(x).
+\end{equation}
+Reemplazando estas expresiones en nuestro resultado general \eqref{Urhophi} encontramos que  la energ'ia del sistema completo puede ser escrita como
+\begin{equation}
+U=U_1+U_2+U_{\rm int}
+\end{equation}
+\begin{equation}
+U_1= \frac{1}{2}\,\int\rho_1(\vec{x})\,\phi_1(\vec{x})\,dV ,\qquad U_2= \frac{1}{2}\,\int\rho_2(\vec{x})\,\phi_2(\vec{x})\,dV,
+\end{equation}
+\begin{align}
+U_{\rm int} =& \int \rho_1(x)\phi_2(x)\,dV = \int \rho_2(x)\phi_1(x)\,dV.
+\end{align}
+La energ'ia $U_{\rm int}$ puede ser interpretada, de acuerdo a nuestro resultado \eqref{Urhophiext}, como la \textbf{energ'ia potencial de las cargas en el subsistema 1 debido al campo (externo) generado por el subsistema 2}, o bien como la \textbf{energ'ia potencial de las cargas en el subsistema 2 debido al campo (externo) generado por el subsistema 1}, o simplemente como la \textbf{energ'ia de interacci'on}.
+
+
 \subsubsection{Energ'ia en funci'on del campo el'ectrico}
 
 Podemos expresar la energ'ia \eqref{Urhophi} en t'erminos del campo el'ectrico,
@@ -1068,10 +1090,14 @@ r^5}-\frac{\delta_{ij}}{r^3}\right)+O(r^{-4})}
 \end{equation}
 Podemos tambi'en encontrar una expansi'on multipolar para el campo el'ectrico
 simplemente derivando el potencial. Con esto, obtenemos
-\begin{equation} \label{eq3.2.12.1}
-E_i(\vec{x})=\frac{Q}{4\pi\varepsilon_0}\,\frac{x_i}{r^3}+\frac{1}{
-4\pi\varepsilon_0}\,\frac{(3\,p_j\,x_j\,x_i-r^2\,p_i)}{r^5}+\cdots .
-\end{equation}
+\begin{align} \label{eq3.2.12.1}
+E_i(\vec{x}) =& \frac{Q}{4\pi\varepsilon_0}\,\frac{x_i}{r^3}+\frac{1}{
+4\pi\varepsilon_0}\,\frac{(3\,p_j\,x_j\,x_i-r^2\,p_i)}{r^5} \nonumber\\
+& - \frac{1}{4\pi\varepsilon_0}\frac{1}{2}Q_{jk}\left[
+\frac{3\left(x_i\delta_{jk}+x_j\delta_{ki}+x_k\delta_{ij}\right)}{r^5}
+-\frac{15x_ix_jx_k}{r^7}\right]
++O(r^{-5}) .
+\end{align}
 
 Observaciones:
 
