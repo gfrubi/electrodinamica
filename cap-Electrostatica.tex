@@ -719,14 +719,14 @@ plano $yz$ eje) y un plano a potencial nulo en $x=0$. Ver figura \ref{ci04}.
 %Usando el m'etodo de las im'agenes podemos usar este resultado para encontrar el campo en el exterior de un cilindro conductor, en el caso en que fuera de 'este se ubica una  l'inea de carga paralela a su eje. Si 
 
 Esta informaci'on puede ser usada, por ejemplo, para encontrar el campo
-el'ectrost'atico entre un plano y un cilindro, a una diferencia de potencial
+electrost'atico entre un plano y un cilindro, a una diferencia de potencial
 dada $V$. Si el plano se encuentra en $x=0$, a potencial nulo y el cilindro, de
 radio $R$, se ubicado en $x_{\rm c}>R$, entonces el campo puede ser determinado
 considerando \textit{ambas l'ineas de carga como ficticias}. De las relaciones
 (\ref{phi0M}), con $\phi_0=V$, y (\ref{cilim}) podemos entonces encontrar la
 constante $M$, as'i como la posici'on, $d$, y magnitud $\lambda$ de las l'ineas
 de cargas ficticias del problema equivalente, en funci'on de los datos $V$,
-$x_0$ y $R$. Luego de algo de 'algebra, obtenemos
+$x_0$ y $R$. Considerando que $V>0$, es decir, el potencial sobre el cilindro es mayor que sobre el plano y, de acuerdo a la figura \ref{ci04} el cil'indro est'a a la derecha del plano\footnote{Si $V<0$ la situaci'on es similar, luego de una reflexi'on respecto al plano $x=0$.} ($x_{\rm x}>0$). Luego de algo de 'algebra, obtenemos
 \begin{equation}
  M=\frac{x_{\rm c}}{R}+\sqrt{\left(\frac{x_{\rm c}}{R}\right)^2-1}, \qquad
 d=\frac{R(M^2-1)}{2M}, \qquad \lambda=\frac{2\pi\varepsilon_0V}{\ln M}.
@@ -747,7 +747,7 @@ el'ectrico es irrotacional):
 \begin{equation}
 \boxed{F_i=qE_i=-q\partial_i\phi .}
 \end{equation}
-Definimos la \textit{energ\'{\i}a potencial el'ectrica} de una carga $q$ ubicada en un punto $x$ con campo el'ectrico (externo) descrito por el potencial $\phi(x)$ por
+Definimos la \textbf{energ\'{\i}a potencial el'ectrica} de una carga $q$ ubicada en un punto $x$ con campo el'ectrico (externo) descrito por el potencial $\phi(x)$ por
 \begin{equation}
 \boxed{U(x):=q\phi(x),} \label{Uqphi}
 \end{equation}
@@ -1098,7 +1098,7 @@ hay que calcular!). Sin embargo, debido a que este tensor siempre est'a
 multiplicado en la expansi'on multipolar del potencial por
 $\left({3\,x_i\,x_j}/{r^5}-{\delta_{ij}}/{r^3}\right)$, puede
 verificarse que no todas las componentes de $Q_{ij}$ contribuyen a la
-expansi'on multipolar. En efecto, debido a que la cotracci'on
+expansi'on multipolar. En efecto, debido a que la contracci'on
 $\delta_{ij}\left({3\,x_i\,x_j}/{r^5}-{\delta_{ij}}/{r^3}\right)$ se
 anula \textit{id'enticamente}, es posible sumar un t'ermino proporcional a
 $\delta_{ij}$ al momento cuadrupolar, sin por ello alterar la expansi'on
@@ -1126,7 +1126,7 @@ $\tilde{Q}_{23}$, ya que $\tilde{Q}_{21}=\tilde{Q}_{12}$,
 $\tilde{Q}_{31}=\tilde{Q}_{13}$, $\tilde{Q}_{32}=\tilde{Q}_{23}$ y
 $\tilde{Q}_{33}=-\tilde{Q}_{11}-\tilde{Q}_{22}$) (pero, por otro lado, la integral que se necesita calcular es algo m'as complicada).
 
-Por otro lado, el momento cuadrupolar (con o sin traza), por ser un tensor \textit{sim'etrico} de segundo rango, puede ser diagonalizado, es decir, es posible encontrar sus vectores (y valores) propios, que definen direcciones ``principales'', ortogonales entre si. En el sistema coordenado definido por estas tres direcciones principales el momento cuadrupolar adopta una forma diagonal.
+Adem'as, el momento cuadrupolar (con o sin traza), por ser un tensor \textit{sim'etrico} de segundo rango, puede ser diagonalizado, es decir, es posible encontrar sus vectores (y valores) propios, que definen direcciones ``principales'', ortogonales entre si. En el sistema coordenado definido por estas tres direcciones principales el momento cuadrupolar adopta una forma diagonal.
 
 
 \subsubsection{Monopolo ideal}
@@ -1145,15 +1145,29 @@ Q_{ij}=(-q)x^{(1)}_i x^{(1)}_j +(q)x^{(2)}_i x^{(2)}_j,
 \begin{equation}
 Q_{ijk}=(-q)x^{(1)}_i x^{(1)}_jx^{(1)}_k +(q)x^{(2)}_i x^{(2)}_jx^{(2)}_k,
 \end{equation}
-etc.En el l'imite $\vec{d}\to\vec{0}$, pero tal que $\vec{p}\to\vec{p}$ (valor finito, esto por supuesto requiere $q\to\infty$), tendremos que $Q_{ij}\to 0$, $Q_{ijk}\to 0$, y lo mismo ocurrir'a para todo momento multipolar de orden superior  (las componentes del momento multipolar de orden $n$ son en este caso proporcionales a $qd^n=pd^{n-1}$).
+etc. En el l'imite $\vec{d}\to\vec{0}$, pero tal que $\vec{p}$ sea finito (esto, por supuesto, requiere $q\to\infty$), tendremos que $Q_{ij}\to 0$, $Q_{ijk}\to 0$, y lo mismo ocurrir'a para todo momento multipolar de orden superior  (las componentes del momento multipolar de orden $n$ son en este caso proporcionales a $qd^n=pd^{n-1}$).
 
 \begin{equation}\label{phip}
 \phi_{\vec{p}}(\vec{x})=\frac{1}{4\pi\varepsilon_0}\frac{(x_j-x_j')p_j}
 {|\vec{x}-\vec{x}'|^3},
 \end{equation}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=4cm]{fig/fig-E-02.pdf}\hspace{1cm}\includegraphics[height=4cm]{fig/fig-campo-dipolo-electrico.pdf} 
+\caption{Dipolo (dos cargas opuestas) versus dipolo ideal.}
+\label{fig-dipolos}
+\end{center}
+\end{figure}
 \subsubsection{Cuadrupolo ideal}
 $Q=0$ $p_i=0$, $Q_{ij}\neq 0$, $Q_{ijk}=0$, etc.
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=4cm]{fig/fig-E-03.pdf}\hspace{1cm}\includegraphics[height=4cm]{fig/fig-campo-cuadrupolo-electrico-ideal.pdf} 
+\caption{Cuadrupolo versus cuadrupolo ideal.}
+\label{fig-dipolos}
+\end{center}
+\end{figure}
 \newpage
 
 
