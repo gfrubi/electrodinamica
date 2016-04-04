@@ -12,7 +12,7 @@ de modo que la carga neta que atraviesa entre los tiempos $t_1$ y $t_2$ una supe
 \begin{equation}
 Q=\int_{t_1}^{t_2}I(t)\,dt.
 \end{equation}
-La unidad S.I. para la corriente es el \textit{Amp\`ere}: $1A:=1C/1s$.
+La unidad S.I. para la corriente es el \textbf{Amp\`ere}: $1A:=1C/1s$.
 
 \subsection{Densidad de Corriente}
 
@@ -32,7 +32,7 @@ Esto permite escribir:
 \begin{equation}
 dQ=\rho\, dV=\rho\, dS\,(v\,dt)\cos\theta=\rho\,\vec{v}\cdot d\vec{S}\,dt.
 \end{equation}
-Definimos la \textit{densidad de corriente}
+Definimos la \textbf{densidad de corriente}
 \begin{equation}\marginnote{Densidad de Corriente}
 \boxed{\vec{J}(x):=\rho(x)\vec{v}(x),}
 \end{equation}
@@ -53,12 +53,12 @@ sentidos opuestos.
 
 \section{Conservaci'on de la carga el'ectrica}
 
-La ley (experimental) de conservaci'on de la carga el'ectrica puede ser escrita
+La ley (experimental) de conservaci'on (local) de la carga el'ectrica puede ser escrita
 en general, como
 \begin{equation}
 \frac{d{\ }}{dt}\int_V \rho\,dV=-\int_{\partial V}\vec{J}\cdot d\vec{S},
 \end{equation}
-que expresa el hecho que si en un volumen $V$ dado (pero arbitrario) cambia la carga total en 'el, es debido al flujo neto de carga por la superficie ${\partial V}$ que lo encierra. Usando el teorema de Gauss, podemos transformar la integral de superficie a una integral de volumen, obteniendo
+que expresa el hecho que todo cambio en la carga neta contenida en un volumen $V$ dado (pero arbitrario) es debido al flujo neto de carga por la superficie ${\partial V}$ que lo encierra. Usando el teorema de Gauss, podemos transformar la integral de superficie a una integral de volumen, obteniendo
 \begin{equation}
 \int_V\left(\frac{\partial\rho}{\partial t}+\vec{\nabla}\cdot\vec{J}\right)\,dV
  =0.
@@ -73,8 +73,7 @@ Esta relaci'on es conocida como la \textit{ecuaci'on de continuidad}.
 \subsection{Corrientes Estacionarias}
 
 Un caso de particular inter'es es aquel en que las corrientes son
-\textit{estacionarias}, es decir, en las que $\rho$ y $\vec{J}$ \textit{no dependen del
-tiempo}. Bajo estas condiciones, la ecuaci'on de continuidad requiere que la
+\textit{estacionarias}, es decir, en las que tanto $\rho$ como $\vec{J}$ \textit{no dependen del tiempo}. Bajo estas condiciones, la ecuaci'on de continuidad requiere que la
 divergencia de la densidad de corriente sea nula:
 \begin{equation}\marginnote{Caso estacionario}
  \vec{\nabla}\cdot\vec{J}=0. \label{divJ0}
@@ -137,7 +136,7 @@ divergencia de la densidad de corriente sea nula:
 % tiempo para un volumen dado.
 
 \section{Campo magn'etico y fuerza magn'etica}
-Se ha encontrado \textit{experimentalmente} que la fuerza que act'ua sobre una peque\~na carga $q$, movi'endose con velocidad $\vec{v}$ en un campo magn'etico dado es proporcional a $q$, a la rapidez $v$, y que tiene direcci'on perpendicular a $\vec{v}$. Esto permite \textit{definir}, en el sistema internacional de unidades, la \textit{intensidad de campo magn'etico} $\vec{B}$ como un (pseudo-)vector  tal que
+Se ha encontrado \textit{experimentalmente} que la fuerza que act'ua sobre una peque\~na carga $q$, movi'endose con velocidad $\vec{v}$ en un campo magn'etico dado es proporcional a $q$, a la rapidez $v$, y que tiene direcci'on perpendicular a $\vec{v}$. Esto permite \textit{definir}  la \textit{intensidad de campo magn'etico} $\vec{B}$ como un (pseudo-)vector tal que (en el sistema internacional de unidades)
 \begin{equation}
  \vec{F}_{\rm m}=q\,\vec{v}\times\vec{B}.
 \end{equation}
@@ -149,7 +148,7 @@ La unidad de medida de la intensidad de campo magn'etico $\vec{B}$ es entonces  
 \textit{Gauss} como $1G:=10^{-4}T$. \footnote{Por ejemplo, la magnitud campo
 magn'etico interestelar oscila entre $0,1$ and $10$ $nT$, el campo magn'etico
 de la Tierra es de orden $\approx 0,5 G$, mientras que un im'an
-de Neodimio ($Nd_2Fe_{14}B$) produce un campo del orden de $1.25\, T$.
+de Neodimio (Nd${}_2$Fe${}_{14}$B) produce un campo del orden de $1.25\, T$.
 Un magneto de un sistema de resonancia magn'etica produce campos entre $1,5\,T$
 y $3\,T$. Los campos magn'eticos m'as intensos producidos en un laboratorio son
 del orden de $100\,T$ \cite{MagLab2012,HZDR2011}. El campo magn'etico en una estrella de neutrones puede oscilar entre 1 y 100 MT.}
@@ -164,7 +163,7 @@ Si las cargas est'an distribuidas continuamente, entonces la fuerza magn'etica t
  \vec{F}_{\rm m}=\int_V
 \rho\vec{v}\times\vec{B}\,dV=\int_V\vec{J}\times\vec{B}\,dV. \label{fm1}
 \end{equation}
-Podemos describir esta situaci'on usando la \textit{densidad de fuerza
+Podemos describir esta situaci'on usando la \textbf{densidad de fuerza
 magn'etica} $\vec{f}_{\rm m}$, definida como la fuerza por unidad de volumen,
 dada por
 \begin{equation}
@@ -203,7 +202,7 @@ de modo que
 
 
 \section{Ley de Biot-Savart}
-Biot\footnote{Jean Baptiste Biot: F'isico, Astr'onomo y Matem'atico franc'es (1774-1862). Ver \url{http://es.wikipedia.org/wiki/Jean_Baptiste_Biot}.} y Savart\footnote{F'elix Savart: F'isico, M'edico y Profesor franc'es (1791-1841). Ver \url{http://es.wikipedia.org/wiki/F\%C3\%A9lix_Savart}.} encontraron ($\sim$ 1820) que el campo magn'etico $d\vec{B}$ que un peque\~no segmento $dx'$ orientado en la direcci'on de flujo de la corriente $I$ y ubicado en la posici'on $\vec{x}'$ produce en un punto de posici'on $\vec{x}$ es proporcional a la intensidad de corriente, al largo del
+Biot\footnote{Jean Baptiste Biot: F'isico, Astr'onomo y Matem'atico franc'es (1774-1862). Ver \url{http://es.wikipedia.org/wiki/Jean_Baptiste_Biot}.} y Savart\footnote{F'elix Savart: F'isico, M'edico y Profesor franc'es (1791-1841). Ver \url{http://es.wikipedia.org/wiki/F\%C3\%A9lix_Savart}.} encontraron ($\sim$\,1820) que el campo magn'etico $d\vec{B}$ que un peque\~no segmento $dx'$ orientado en la direcci'on de flujo de la corriente $I$ y ubicado en la posici'on $\vec{x}'$ produce en un punto de posici'on $\vec{x}$ es proporcional a la intensidad de corriente, al largo del
 peque\~no segmento, e inversamente proporcional al cuadrado de la distancia
 entre el segmento y el punto de observaci'on, es decir,
 \begin{equation}
@@ -232,14 +231,14 @@ en el Sistema Internacional, \textit{se define} como
 \begin{equation}
 k=\frac{\mu_0}{4\pi}=10^{-7}~\left[  \frac{V\,s}{A\,m}\right],
 \end{equation}
-y donde $\mu_0$ es llamada la constante de \textit{permeabilidad magn'etica del vac'io}.
+y donde $\mu_0$ es llamada la constante de \textbf{permeabilidad magn'etica del vac'io}.
 
-Con esto, escribimos la \textit{ley de Biot-Savart} como
+Con esto, escribimos la \textbf{ley de Biot-Savart} como
 \begin{equation}
 dB_i=\frac{\mu_0}{4\pi}I\,\varepsilon_{ijk}dx'_j\frac{\left(x_k-x'_k\right)}
 {\left\vert \vec{x}-\vec{x}'\right\vert ^3}.
 \end{equation}
-Usando el \textit{principio de superposici'on} obtenemos una expresi'on para el campo producido por un cable de longitud finita, pero muy delgado:
+Usando el \textbf{principio de superposici'on} obtenemos una expresi'on para el campo producido por un cable de longitud finita, pero muy delgado:
 \begin{equation}
 \boxed{B_i(x)=\frac{\mu_0}{4\pi}\int_{\cal C}\varepsilon_{ijk}Idx'_j
 \frac{\left(x_k-x'_k\right)}{\left\vert\vec{x}-\vec{x}'\right\vert^3}.}
@@ -261,11 +260,11 @@ Con esto podemos encontrar la forma general que usaremos para la ley de Biot-Sav
 \frac{\left(x_k-x'_k\right)}{\left\vert\vec{x}-\vec{x}'\right\vert^3}dV'. }
 \label{BS2}
 \end{equation}
-Tambi'en podemos considerar una \textit{distribuci'on superficial de corriente}, es decir una situaci'on donde puede \textit{aproximarse} que la corriente est'a confinada sobre una superficie (de ancho nulo). Para describir esta distribuci'on usamos la \textit{densidad superficial de corriente}, que denotaremos como $\vec{j}$. Esta densidad superficial es definida tal que
+Tambi'en podemos considerar una \textit{distribuci'on superficial de corriente}, es decir una situaci'on donde puede \textit{aproximarse} que la corriente est'a confinada sobre una superficie (de ancho nulo). Para describir esta distribuci'on usamos la \textbf{densidad superficial de corriente}, que denotaremos como $\vec{j}$. Esta densidad superficial es definida tal que
 \begin{equation}
 \vec{J}\,dV=\vec{j}\,dS,
 \end{equation}
-donde $dS$ denota el elemento de superficie \textit{sobre} (y no \textit{a trav'es}) la que fluye la corriente. El campo magn'etico generado por este tipo de distribuciones adopta entonces la forma siguiente:
+donde $dS$ denota el elemento de superficie \textit{sobre} (y no \textit{a trav'es} de) la que fluye la corriente. El campo magn'etico generado por este tipo de distribuciones adopta entonces la forma siguiente:
 \begin{equation}
  \boxed{B_i(x)=\frac{\mu_0}{4\pi}\int_S\varepsilon_{ijk}\,j_j(x')
 \frac{\left(x_k-x'_k\right)}{\left\vert\vec{x}-\vec{x}'\right\vert^3}dS'. }
@@ -302,7 +301,7 @@ Por lo tanto, siempre es posible escribir el campo magnetost'atico como el rotor
 \begin{equation}\marginnote{Potencial Vectorial}
 \boxed{B_i(x)=\varepsilon_{ijk}\,\partial_jA_k(x),}\label{rot-A}
 \end{equation}
-donde hemos introducido el \textit{potencial vectorial},
+donde hemos introducido el \textbf{potencial vectorial},
 \begin{equation}\marginnote{Pot. Vectorial particular}
 \boxed{A_k(x):=\frac{\mu_0}{4\pi}\int_V\frac{J_k(x')}{\left\vert\vec{x}-\vec{x}
 '\right\vert }\,dV'.}
@@ -313,7 +312,7 @@ An'alogamente al caso electrost'atico, el \textit{potencial vectorial no es \'{u
 A'_i:=A_i+\partial_i\Psi(x), \label{gauge01}
 \end{equation}
 donde $\Psi(x)$ es una \textit{funci'on arbitraria}, y el campo magn'etico
-permanecer'a inalterado, ya que $B'_i(x)=\varepsilon_{ijk}\,\partial_jA'_k(x)=B_i(x)$. La transformaci'on (\ref{gauge01}) es llamada una \textit{transformaci'on de gauge}
+permanecer'a inalterado, ya que $B'_i(x)=\varepsilon_{ijk}\,\partial_jA'_k(x)=B_i(x)$. La transformaci'on (\ref{gauge01}) es llamada una \textbf{transformaci'on de gauge}
 del potencial vectorial. Como consecuencia, el potencial vectorial $\vec{A}(x)$
 \textit{no es una cantidad medible}, sino m'as bien un campo auxiliar (muy)
 'util en muchos c'alculos. En general, a menos que se explicite lo contrario,
@@ -323,7 +322,7 @@ dada por (\ref{defA}).
 
 \section{Divergencia del Campo Magn'etico}
 
-Como consecuencia directa de (\ref{rot-A}), vemos que \textbf{el campo magnetost'atico
+Como consecuencia directa de (\ref{rot-A}), vemos que \textit{el campo magnetost'atico
 es siempre libre de divergencia}:
 \begin{equation}
  \boxed{\vec{\nabla}\cdot\vec{B}=0.} \label{divB}
@@ -332,7 +331,7 @@ Equivalentemente,
 \begin{equation}
  \oint_S\vec{B}\cdot d\vec{S}=0,
 \end{equation}
-es decir, que el \textit{flujo magn'etico} a trav'es de cualquier superficie cerrada es nulo.
+es decir, que el \textbf{flujo magn'etico} a trav'es de cualquier superficie cerrada es nulo.
 
 Recordemos que el flujo magn'etico a trav'es de una superficie $S$ es definido
 como
@@ -349,9 +348,9 @@ Puede verificarse adem'as que, si bien la expresi'on anterior involucra el
 potencial vectorial, \textit{el valor del flujo $\Phi_S$ es independiente de la
 elecci'on particular de $\vec{A}$} dentro de la familia de potenciales
 vectoriales asociados a un campo $\vec B$ dado. En otras palabras el flujo es
-``invariante'' bajo transformaciones de gauge. Note adem'as que, debido a la
+\textbf{invariante} bajo transformaciones de gauge. Note adem'as que, debido a la
 relaci'on entre $\Phi_S$ y $\vec{B}$ este 'ultimo vector es tambi'en llamado
-\textit{densidad de flujo magn'etico}. En el sistema internacional de unidades, se define el \textit{Weber}\footnote{En honor a Wilhelm Weber, f'isico alem'an (1804-1891). Ver \url{http://es.wikipedia.org/wiki/Wilhelm_Weber}.} como unidad de flujo magn'etico: $1Wb=1T\cdot 1m^2=1V\cdot 1s$.
+\textbf{densidad de flujo magn'etico}. En el sistema internacional de unidades, se define el \textit{Weber}\footnote{En honor a Wilhelm Weber, f'isico alem'an (1804-1891). Ver \url{http://es.wikipedia.org/wiki/Wilhelm_Weber}.} como unidad de flujo magn'etico: $1Wb=1T\cdot 1m^2=1V\cdot 1s$.
 
 \section{Ley de Amp\`ere}
 
@@ -382,10 +381,8 @@ x } -\vec{x}'\right\vert }\,dV' \\
 &=&0. \label{divA0}
 \end{eqnarray}
 El primer t'ermino del lado derecho de (\ref{divA}) se anula cuando cuando $V$
-se extiende a todo el espacio, puesto que asumimos que la densidad de corriente
-se anula suficientemente r'apido en el infinito. Adem'as, el segundo t'ermino es nulo
-\textit{para corrientes estacionarias}, ver (\ref{divJ0}). Por lo tanto, hemos probado
-que el potencial (\ref{defA}) tiene divergencia nula en el caso de corrientes
+se extiende a todo el espacio, puesto que suponemos que la densidad de corriente
+se anula suficientemente r'apido en el infinito (m'as r'apido que $1/r$). Adem'as, el segundo t'ermino es nulo \textit{para corrientes estacionarias}, ver (\ref{divJ0}). Por lo tanto, hemos probado que el potencial (\ref{defA}) tiene divergencia nula en el caso de corrientes
 estacionarias confinadas a regiones compactas del espacio.
 
 Debemos ahora calcular el laplaciano (de cada una de las componentes) de
@@ -398,7 +395,7 @@ x } -\vec{x}'\right\vert }\,dV'\\
 &=&-\mu_0J_i(x). \label{lapAj}
 \end{eqnarray}
 Reemplazando (\ref{divA0}) y (\ref{lapAj}) en (\ref{rotB1}) encontramos la
-\textit{ley de Amp\`ere}\footnote{\href{http://es.wikipedia.org/wiki/Andr\%C3\%A9-Marie_Amp\%C3\%A8re}{Andr'e-Marie Amp\`ere} (1775-1836): matem'atico y f'isico franc'es.}:
+\textbf{ley de Amp\`ere}\footnote{\href{http://es.wikipedia.org/wiki/Andr\%C3\%A9-Marie_Amp\%C3\%A8re}{Andr'e-Marie Amp\`ere} (1775-1836): matem'atico y f'isico franc'es.}:
 \begin{equation}
 \boxed{\varepsilon_{ijk}\partial_jB_k=\mu_0J_i,}
 \end{equation}
@@ -418,13 +415,13 @@ donde $I_S=\int_S\vec{J}\cdot d\vec{S}$ es la corriente neta que fluye por $S$.
 corriente}
 \begin{figure}[!h]
 \centerline{\psfig{file=fig/fig-B-conductor-recto-01.pdf,height=5cm,angle=0}}
-\caption{Campo magn'etico producido por un conductor recto. Figura original  \href{http://en.wikipedia.org/wiki/File:Electromagnetism.svg}{aqu'i}.}
+\caption{Campo magn'etico producido por un conductor recto. Figura original  \href{http://en.wikipedia.org/wiki/File:Electromagnetism.svg}{aqu\'i}.}
 \label{cmcr}
 \end{figure}
 Aplicando la ley de Amp\`ere a la circunsferencia de radio $\rho$ indicada en la figura
 (\ref{cmcr}) encontramos que
 \begin{equation}
- \oint_{\cal C}\vec{B}\cdot d\vec{x}=B(r)(2\pi \rho)=\mu_0 I,
+ \oint_{\cal C}\vec{B}\cdot d\vec{x}=(2\pi \rho)B=\mu_0 I,
 \end{equation}
 de modo que
 \begin{equation}
@@ -442,12 +439,12 @@ Sin embargo, otro potencial posible es
 
 \section{Potencial escalar magn'etico}\label{secpem}
 En regiones en las que no existen corrientes, $\vec{J}=\vec{0}$, el
-rotor del campo magn'etico es nulo, $\vec{\nabla}\times\vec{B}=\vec{0}$ \textit{en
-este caso es posible escribir $\vec{B}$ como el gradiente de un campo escalar},
+rotor del campo magn'etico es nulo, $\vec{\nabla}\times\vec{B}=\vec{0}$. En
+este caso es \textit{posible escribir $\vec{B}$ como el gradiente de un campo escalar},
 \begin{equation}\marginnote{Potencial Escalar Magn'etico}
  \vec{B}=-\mu_0\vec\nabla\phi^*, \label{Bgradphi}
 \end{equation}
-donde $\phi^*$ es llamado \textit{potencial escalar magn'etico}. Ya que adem'as
+donde $\phi^*$ es llamado \textbf{potencial escalar magn'etico}. Ya que adem'as
 el campo magn'etico es (siempre) libre de divergencias, tenemos que
 \begin{equation}
  \boxed{\nabla^2\phi^*=0,}
@@ -479,7 +476,7 @@ expansi'on multipolar magn'etica:
  A_i(x)=\frac{\mu_0}{4\pi}\sum_{n=0}^\infty \frac{(-1)^n}{n!}M_{i_1\cdots
 i_ni}\partial_{i_1}\cdots \partial_{i_n}\frac{1}{r},
 \end{equation}
-donde hemos definidos los \textit{momentos multipolares magn'eticos} como
+donde hemos definidos los \textbf{momentos multipolares magn'eticos} como
 \begin{equation}
 \boxed{ M_{i_1\cdots i_ni}:=\int_V x_{i_1}\cdots x_{i_n}\,J_i(x)\,dV.}
 \end{equation}
@@ -527,7 +524,7 @@ an'aloga a lo discutido anteriormente, es decir, aplicando el teorema de Gauss y
 condici'on de divergencia nula de la densidad de corriente. Ya que $M_{ij}$ es
 antisim'etrico, \textit{la informaci'on que este tensor contiene puede ser
 equivalentemente descrita en t'erminos de un (pseudo-) vector} $\vec{\mu}$,
-llamado \textit{momento (dipolar) magn'etico}, y definido por
+llamado \textbf{momento (dipolar) magn'etico}, y definido por
 \begin{equation}
  \mu_i:=\frac{1}{2}\varepsilon_{ijk}M_{jk}, \qquad
 M_{ij}=\varepsilon_{ijk}\mu_k, \label{vmdm}
@@ -620,7 +617,7 @@ y entonces el momento magn'etico puede escribirse como
 \vec{x}\times\rho_{\rm m}(x)\vec{v}(x)\,dV=\frac{Q}{2M}\int_V
 \vec{x}\times d\vec{p},
 \end{equation}
-donde $d\vec{p}:=\rho_{\rm m}(x)\vec{v}(x)\,dV$ denota el \textit{momentum lineal} de la masa en el elemento de volumen $dV$. De esta forma $d\vec{L}:=\vec{x}\times d\vec{p}$ es el \textit{momento angular} del peque\~no elemento de masa (respecto al origen elegido) y, finalmente,
+donde $d\vec{p}:=\rho_{\rm m}(x)\vec{v}(x)\,dV$ denota el \textbf{momentum lineal} de la masa en el elemento de volumen $dV$. De esta forma $d\vec{L}:=\vec{x}\times d\vec{p}$ es el \textbf{momento angular} del peque\~no elemento de masa (respecto al origen elegido) y, finalmente,
 \begin{equation}
  \boxed{\vec{\mu}=\frac{Q}{2M}\vec{L}.}
 \end{equation}
@@ -662,7 +659,7 @@ con
 \begin{equation}
  \boxed{F_i^{\rm m,(1)}=-\partial_i U_{\rm m}, }
 \end{equation}
-donde hemos introducido la \textit{energ'ia de interacci'on entre un dipolo magn'etico
+donde hemos introducido la \textbf{energ'ia de interacci'on entre un dipolo magn'etico
 y un campo externo}
 \begin{equation}
  \boxed{U_{\rm m}(x)=-\vec{\mu}\cdot\vec{B}(x).} \label{Umagdip}
@@ -695,7 +692,7 @@ que tender'a a \textit{alinear} el momento magn'etico de la distribuci'on con el
 del campo externo. La posici'on de equilibrio corresponde al caso en que
 $\vec{\mu}$ es paralelo a $\vec{B}$, que es adem'as un equilibrio estable ya
 que la energ'ia de interacci'on es m'inima. M'as generalmente, el momento
-magn'etico puede realizar un \textit{movimiento de precesi'on} en torno al campo
+magn'etico puede realizar un \textbf{movimiento de precesi'on} en torno al campo
 magn'etico.
 
 %\subsection{Ejemplo: Precesi'on de Larmor}
@@ -707,7 +704,7 @@ significa que en cada peque\~no elemento de volumen (macrosc'opico) puede existi
 los peque\~nos ``loops''\, de corrientes inducidas por el campo aplicado sobre los
 electrones at'omicos. Este tipo de dipolos se inducen en \textit{direcci'on contraria}
 al campo aplicado, por lo que tienden a \textit{reducir} el valor de la inducci'on
-magn'etica al interior del material. Los materiales \textit{diamagn'eticos} son aquellos en que este tipo de magnetizaci'on es dominante. El hecho que las
+magn'etica al interior del material. Los materiales \textbf{diamagn'eticos} son aquellos en que este tipo de magnetizaci'on es dominante. El hecho que las
 part'iculas subat'omicas, y en particular los electrones, posean \textit{momentos
 magn'eticos intr'insecos} (permanentes), hace posible que un material presente
 magnetizaci'on no nula, de origen distinto a la generada por las corrientes
@@ -721,7 +718,7 @@ momento magn'etico total es no nulo en ausencia de un campo aplicado, y puede as
 \subsection{Magnetizaci'on}
 En resumen, consideraremos que en el interior de un medio, existen momentos
 magn'eticos distribuidos en su interior. Modelaremos esta distribuci'on
-definiendo el \textit{(pseudo-)vector de magnetizaci'on} como la densidad de momento
+definiendo el \textbf{(pseudo-)vector de magnetizaci'on} como la densidad de momento
 magn'etico, es decir, como el momento magn'etico por unidad de volumen en una
 peque\~na regi'on ($\Delta V\to 0$, desde el punto de vista macrosc'opico) del
 material:
@@ -776,8 +773,8 @@ En resumen
 V}\frac{\vec{j}^{\rm M}(x')}{\left\vert\vec{x}-\vec{x}'\right\vert}dS',}
 \label{AM01}
 \end{equation}
-donde hemos definido la \textit{densidad de corriente de magnetizaci'on}
-$\vec{J}^{\rm M}$ y la \textit{densidad de corriente superficial de
+donde hemos definido la \textbf{densidad de corriente de magnetizaci'on}
+$\vec{J}^{\rm M}$ y la \textbf{densidad de corriente superficial de
 magnetizaci'on} $\vec{j}^{\rm M}$ por
 \begin{equation}\marginnote{corrientes de magnetizaci'on}
 \boxed{\vec{J}^{\rm M}(x):=\vec\nabla\times\vec{M}(x), \qquad \vec{j}^{\rm
@@ -820,7 +817,7 @@ de donde obtenemos:
  \boxed{\vec{B}^{\rm M}(x)=\mu_0\vec{M}(x)-\mu_0\vec\nabla\phi^*_{\rm M}(x),}
 \label{BM}
 \end{equation}
-donde hemos definido el \textit{potencial escalar de magnetizaci'on}\footnote{Note que 'este es un campo \textit{distinto} al potencial escalar magn'etico definido en la secci'on \ref{secpem}.}
+donde hemos definido el \textbf{potencial escalar de magnetizaci'on}\footnote{Note que 'este es un campo \textit{distinto} al potencial escalar magn'etico definido en la secci'on \ref{secpem}.}
 \begin{equation}\marginnote{Potencial escalar de magnetizaci'on}
  \boxed{\phi^*_{\rm M}(x):=\frac{1}{4\pi}\int_VM_j(x')\partial'_j\frac{1}{
 \left\vert\vec{x}-\vec{x}'\right\vert}dV'=\frac{1}{4\pi}
@@ -855,8 +852,8 @@ De aqu'i, podemos escribir
  \vec\nabla\times\left(\frac{1}{\mu_0}\vec{B}-\vec{M}\right)=\vec{J}_{
 \rm ext}.
 \end{equation}
-Esto motiva definir la \textit{excitaci'on magn'etica} (tambi'en llamada
-\textit{intensidad de campo magn'etico}):
+Esto motiva definir la \textbf{excitaci'on magn'etica} (tambi'en llamada
+\textbf{intensidad de campo magn'etico}):
 \begin{equation}\marginnote{Excitaci'on magn'etica}\label{defH}
 \boxed{\vec{H}(x):=\frac{1}{\mu_0}\vec{B}(x)-\vec{M}(x),}
 \end{equation}
@@ -909,7 +906,7 @@ o, equivalentemente
 \boxed{\hat{n}\times\left(\vec{H}_2-\vec{H}_1\right)=\vec{j}_{\rm
 ext}.}
 \end{equation}
-Note que en (\ref{IextjS}) el lado derecho contiene a la \textit{densidad de corriente superficial externa} $\vec{j}_{\rm ext}$. En este caso puede considerarse que $\vec{J}_{\rm ext}=\vec{j}_{\rm ext}\delta(z)$, donde la superficie que limita las dos regiones est'a determinada por la condici'on $z=0$, siendo $z$ una coordenada normal a la superficie.
+Note que en (\ref{IextjS}) el lado derecho contiene a la \textbf{densidad de corriente superficial externa} $\vec{j}_{\rm ext}$. En este caso puede considerarse que $\vec{J}_{\rm ext}=\vec{j}_{\rm ext}\delta(z)$, donde la superficie que limita las dos regiones est'a determinada por la condici'on $z=0$, siendo $z$ una coordenada normal a la superficie.
 
 \textbf{Si no hay corrientes externas de superficie, entonces la componente \textit{tangencial} de la excitaci'on magn'etica cruza continuamente la interface}. En general, si
 existen corrientes externas de superficie, la componente de la intensidad de
@@ -956,13 +953,13 @@ Para medios locales, \textit{lineales} y \textit{sin magnetizaci'on permanente}
 \begin{equation}
  \boxed{M_i(x)=\chi^{\rm m}_{ij}(x)H_j(x),}
 \end{equation}
-donde $\chi^{\rm m}_{ij}$ es el \textit{tensor de susceptibilidad magn'etica} del
+donde $\chi^{\rm m}_{ij}$ es el \textbf{tensor de susceptibilidad magn'etica} del
 material. En este caso, la inducci'on magn'etica adopta la forma
 \begin{equation}
  \boxed{B_i(x)=\mu_{ij}(x)H_j(x)=\mu_0\,\kappa^{\rm m}_{ij}(x)H_j(x),}
 \end{equation}
-con el tensor de \textit{permeabilidad magn'etica} $\mu_{ij}$ y el
-tensor de \textit{permeabilidad relativa} $\kappa^{\rm m}_{ij}$, definidos por
+con el tensor de \textbf{permeabilidad magn'etica} $\mu_{ij}$ y el
+tensor de \textbf{permeabilidad relativa} $\kappa^{\rm m}_{ij}$, definidos por
 \begin{equation}
  \boxed{\mu_{ij}:=\mu_0\left(\delta_{ij}+\chi^{\rm
 m}_{ij}\right)=\mu_0\kappa^{\rm m}_{ij}.}
@@ -990,7 +987,7 @@ Como vimos en la secci'on \ref{sec:defH}, \textit{en regiones libres de corrient
 \subsection{Paramagnetismo, diamagnetismo, ferromagnetismo}
 
 \subsubsection{Diamagnetismo}
-En este tipo de materiales $\vec{M}$ \textbf{tiene direcci'on opuesta a}  $\vec{H}$, por lo que $\chi_{\rm m}<0$ y $\kappa_{\rm m}<1$ y la inducci'on magn'etica $\vec{B}$ es \textbf{debilidata} (respecto al valor que asumir'ia en el vac'io, dada la misma distribuci'on de corrientes externas). Este tipo de materiales requiere que no existan \textit{momentos magn'eticos permanentes} significativos, de modo que la magnetizaci'on se deba principalmente a \textit{corrientes inducidas}. Estas \textbf{corrientes inducidas generan momentos dipolares en sentido contrario al campo que las induce}, por lo que \textbf{la inducci'on magn'etica disminuye en el interior de un diamagneto}. En la mayor'ia de los casos de diamagnetismo la susceptibilidad magn'etica es independiente de la
+En este tipo de materiales $\vec{M}$ \textbf{tiene direcci'on opuesta a}  $\vec{H}$, por lo que $\chi_{\rm m}<0$ y $\kappa_{\rm m}<1$ y la inducci'on magn'etica $\vec{B}$ es \textbf{debilidata} (respecto al valor que asumir'ia en el vac'io, dada la misma distribuci'on de corrientes externas). Este tipo de materiales requiere que no existan \textit{momentos magn'eticos permanentes} significativos, de modo que la magnetizaci'on se deba principalmente a \textbf{corrientes inducidas}. Estas \textbf{corrientes inducidas generan momentos dipolares en sentido contrario al campo que las induce}, por lo que \textbf{la inducci'on magn'etica disminuye en el interior de un diamagneto}. En la mayor'ia de los casos de diamagnetismo la susceptibilidad magn'etica es independiente de la
 temperatura y posee un valor muy peque\~no: $|\chi_{\rm m}|\lesssim 10^{-5}$. El
 diamagnetismo es una propiedad general, es decir, que se presenta en todos los
 materiales (siempre se producen peque\~nas corrientes inducidas), pero se dice
@@ -998,7 +995,7 @@ que un material es diamagn'etico si este efecto es el dominante, es decir,
 cuando no existen otras fuentes de magnetizaci'on que reviertan la contribuci'on diamagn'etica.
 Ejemplos de materiales diamagn'eticos: casi todas las substancias org'anicas,
 metales nobles (oro, plata, cobre, mercurio, ...). Un caso extremo de
-diamagnetismo es un \textit{superconductor}, en el que la inducci'on magn'etica
+diamagnetismo es un \textbf{superconductor}, en el que la inducci'on magn'etica
 es \textbf{anulada en su interior}, $\chi_{\rm m}=-1$ y $\kappa_{\rm m}=0$ (``diamagneto ideal'').
 
 \subsubsection{Paramagnetismo}
@@ -1010,7 +1007,7 @@ A la tendencia de los momentos magn'eticos a alinearse se
 contrapone el ``desorden'' relacionado con las agitaciones t'ermicas del
 material. Por esto, \textbf{en un material paramagn'etico $\chi_{\rm}$ disminuye a
 medida que la temperatura aumenta}. Muchos materiales paramagn'eticos satisfacen
-la \textit{ley de Curie}: $\chi_{\rm}\propto 1/T$.
+la \textbf{ley de Curie}: $\chi_{\rm}\propto 1/T$.
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{c|c}
@@ -1037,7 +1034,7 @@ Ox'igeno (1 atm) & $193,5\times 10^{-8}$
  En este tipo de materiales (t'ipicamente materiales que
 contienen Fierro, Cobalto o N'iquel) \textbf{la magnetizaci'on no es
 proporcional a la excitaci'on magn'etica}. Esto es algunas veces expresado
-diciendo que la \textit{susceptibilidad magn'etica efectiva} $\chi_{\rm m}:=M/H$ depende del valor del campo (y de otras variables, como por ejemplo de la temperatura), $\chi_{\rm m}=\chi_{\rm m}(T,\vec{H})$. El ferromagnetismo
+diciendo que la \textbf{susceptibilidad magn'etica efectiva} $\chi_{\rm m}:=M/H$ depende del valor del campo (y de otras variables, como por ejemplo de la temperatura), $\chi_{\rm m}=\chi_{\rm m}(T,\vec{H})$. El ferromagnetismo
 requiere tambi'en que el material posea dipolos magn'eticos permanentes. Debido
 a interacciones cu'anticas, los momentos magn'eticos de un ferromagneto se
 ordenan \textit{espont'aneamente} (es decir, sin necesidad de campo magn'etico
@@ -1055,8 +1052,8 @@ momento se comporta como un paramagneto usual.
 Material & Fe & Co & Ni & Gd & EuO & CrBr${}_3$  \\ \hline
 $T_{\rm C}$ [K] & 1043 & 1393 & 631 & 290 & 69 & 37
 \end{tabular}
-\caption{Algunos materiales ferromagn'eticos y sus temperaturas de Curie
-(Nolting).}
+\caption{Algunos materiales ferromagn'eticos y sus temperaturas de Curie 
+\cite{Nolting}.}
 \end{center}
 \end{table}
 
@@ -1065,7 +1062,7 @@ magn'eticas muy altas y \textbf{la magnetizaci'on que presentan depende de
 su historia}, es decir, de c'omo hayan sido expuestos a campos externos. En
 otras palabras, \textbf{dado un valor de la excitaci'on $\vec{H}$ el valor de $\vec{M}$
 no es 'unico, sino que depende de c'omo se haya alcanzado el valor $\vec{H}$}.
-Este fen'omeno es conocido como \textit{hist'eresis}. El comportamiento de
+Este fen'omeno es conocido como \textbf{hist'eresis}. El comportamiento de
 hist'eresis t'ipico de un ferromagneto es ilustrado en la figura
 \ref{fig-histeresis}.
 \begin{figure}[!h]
@@ -1081,9 +1078,9 @@ campo $H$ es cero, el material conserva una magnetizaci'on no nula (magneto
 permanente), llamada ``magnetizaci'on remanente''. Esta magnetizaci'on puede
 ser anulada aplicando un campo en sentido inverso (intensidad de campo
 ``coercitivo''). La propiedad de hist'eresis est'a relacionada con la existencia
-de \textit{dominios magn'eticos}, que poseen un momento magn'etico macrosc'opico
+de \textbf{dominios magn'eticos}, que poseen un momento magn'etico macrosc'opico
 no nulo y que requieren de energ'ia para reorientarse. La hist'eresis de los
-ferromagnetos es usada en la fabricaci'on de \textit{dispositivos de memoria}, en los
+ferromagnetos es usada en la fabricaci'on de \textbf{dispositivos de memoria}, en los
 que la informaci'on es codificada en la orientaci'on del momento magn'etico de
 los dominios, que permanece indefinidamente hasta que campos externos sean
 usados para cambiar su estado.
