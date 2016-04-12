@@ -2,15 +2,13 @@
 
 \section{Ley de inducci'on de Faraday}
 
-Faraday\footnote{Michael Faraday (1791-1867): f'isico y qu'imico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Michael_Faraday}.} encontr'o experimentalmente (1831) que \textbf{si el flujo magn'etico a trav'es de una espira cerrada var'ia en el tiempo, se induce una corriente sobre una espira}. Si el flujo es constante, se observa que la corriente desaparece. La \textit{ley de
-Faraday} se escribe como
+Faraday\footnote{Michael Faraday (1791-1867): f'isico y qu'imico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Michael_Faraday}.} encontr'o experimentalmente (1831) que \textit{si el flujo magn'etico a trav'es de una espira cerrada var'ia en el tiempo, se induce una corriente sobre una espira}. Si el flujo es constante, se observa que la corriente desaparece. La \textbf{ley de Faraday} se escribe como
 \begin{equation}\label{faraday}
 \varepsilon_{\rm ind}=-K\frac{d\phi}{dt},
 \end{equation}
-donde $\varepsilon_{\rm ind}$ es la fuerza electromotriz (f.e.m.) \textit{inducida} en la espira. El signo menos describe la direcci'on de la corriente inducida, dada por la \textit{ley de Lenz}. Aqu'i $K$ es una constante que depende del sistema de unidades usado. En el Sistema Internacional es una cantidad adimensional, que determinaremos m'as adelante.
+donde $\varepsilon_{\rm ind}$ es la fuerza electromotriz (f.e.m.) \textit{inducida} en la espira. El signo menos describe la direcci'on de la corriente inducida, dada por la \textbf{ley de Lenz}. Aqu'i $K$ es una constante que depende del sistema de unidades usado. En el Sistema Internacional es una cantidad adimensional, que determinaremos m'as adelante.
 
-En t'erminos de campos, se genera un campo el'ectrico $\vec{E}$ que es el que
-hace mover las cargas en la espira, es decir,
+En t'erminos de campos, se genera un campo el'ectrico $\vec{E}$ que es el que hace mover las cargas en la espira, es decir,
 \begin{equation}
 \oint_{\cal\partial S}\vec{E}\cdot d\vec{\ell}=\varepsilon_{\rm ind}.
 \end{equation}
@@ -47,7 +45,7 @@ Usamos ahora la identidad
 \varepsilon_{ijk}\partial_j(\varepsilon_{klm}B_lv_m)\equiv
 v_j(\partial_jB_i)-v_i(\partial_jB_j),
 \end{equation}
-y la ley (\ref{divB}) (que asumimos v'alida incluso en el caso din'amico) para reescribir (\ref{dPhidt0}) como
+y la ley (\ref{divB}) (que suponemos v'alida incluso en el caso din'amico) para reescribir (\ref{dPhidt0}) como
 \begin{eqnarray}
  \frac{d\Phi}{dt}&=&\int_S\left[\partial_tB_i+\varepsilon_{ijk}
 \partial_j(\varepsilon_{klm} B_lv_k)\right] dS_i \\
@@ -104,7 +102,7 @@ o, en forma diferencial:
 
 \subsection{Energ'ia del campo magn'etico}
 
-Consideremos ahora una espira por la que circula una corriente $I$ y el campo magn'etico \textit{que ella misma produce}. Si $I$ no var'ia en el tiempo, no existe fem inducida ya que el flujo magn'etico por la espira permanece constante (asumimos una espira fija, en reposo). Calcularemos la energ'ia necesaria para cambiar la corriente $I$ y el correspondiente campo magn'etico $\vec{B}$ en una peque\~na cantidad. Durante el intervalo de tiempo $dt$ en que la corriente cambia en $dI$ y el campo magn'etico en $d\vec{B}$, se genera un campo el'ectrico inducido y su correspondiente fem $\varepsilon$ (que en general se superponen al campo y fem que mantien'ian la corriente $I$ fluyendo originalmente). Este campo inducido ``intenta reducir'' el cambio de la corriente. Para esto, el campo realiza trabajo sobre las cargas en movimiento en la espira. 
+Consideremos ahora una espira por la que circula una corriente $I$ y el campo magn'etico \textit{que ella misma produce}. Si $I$ no var'ia en el tiempo, no existe fem inducida ya que el flujo magn'etico por la espira permanece constante (suponemos una espira fija, en reposo). Calcularemos la energ'ia necesaria para cambiar la corriente $I$ y el correspondiente campo magn'etico $\vec{B}$ en una peque\~na cantidad. Durante el intervalo de tiempo $dt$ en que la corriente cambia en $dI$ y el campo magn'etico en $d\vec{B}$, se genera un campo el'ectrico inducido y su correspondiente fem $\varepsilon$ (que en general se superponen al campo y fem que mantien'ian la corriente $I$ fluyendo originalmente). Este campo inducido ``intenta reducir'' el cambio de la corriente. Para esto, el campo realiza trabajo sobre las cargas en movimiento en la espira. 
 %Calcularemos la energ'ia transferida a las cargas que se ponen en movimiento para formar la corriente inducida en una espira, debido a la inducci'on de Faraday. Para esto, consideraremos una espira que forma una curva cerrada $\cal C$ por la que circula una corriente inducida $I$. 
 
 Dividiremos la curva en elementos de longitud $d\vec{\ell}=d\ell \,\hat{t}$, en los que existe una carga $dq=\lambda d\ell$. El vector unitario $\hat{t}$ est'a definido de modo que $d\vec{\ell}$ tiene la orientaci'on standard respecto al vector normal $\hat{n}$ a la superficie que encierra la espira. El campo el'ectrico $\vec{E}$ ejerce trabajo sobre las cargas $dq$. En un intervalo de tiempo $dt$ el trabajo realizado sobre las cargas $dq$ es entonces 
@@ -127,8 +125,8 @@ A partir de este resultado vemos que la energ'ia (proveniente de fuentes externa
 \begin{equation}\label{dWIdP}
  \boxed{dU=I\,d\Phi.}
 \end{equation}
-En otras palabras, \textbf{un cambio en el valor de la intensidad de campo $\vec{B}$ requiere invertir energ'ia}. En cierto sentido, la ley de Faraday establece una cierta ``inercia'' en el campo magn'etico, ya que un sistema de cargas y campos tiende a ``resistirse'' al cambio del valor del campo (y su flujo). 
-Esto implica adem'as que \textbf{es necesario asociar una energ'ia a una cierta configuraci'on de campos y corrientes}, puesto que es necesario invertir energ'ia para establecer estas corrientes y sus campos asociados. Para evaluar esta energ'ia, reescribiremos (\ref{dWIdP}) usando (\ref{PAdx}): la energ'ia $\delta U$ necesaria para variar el potencial vectorial $\vec{A}(x)$ de un sistema de corrientes y campo magn'etico en $\delta\vec{A}(x)$ es dada por
+En otras palabras, \textit{un cambio en el valor de la intensidad de campo $\vec{B}$ requiere invertir energ'ia}. En cierto sentido, la ley de Faraday establece una cierta ``inercia'' en el campo magn'etico, ya que un sistema de cargas y campos tiende a ``resistirse'' al cambio del valor del campo (y su flujo). 
+Esto implica adem'as que \textit{es necesario asociar una energ'ia a una cierta configuraci'on de campos y corrientes}, puesto que es necesario invertir energ'ia para establecer estas corrientes y sus campos asociados. Para evaluar esta energ'ia, reescribiremos (\ref{dWIdP}) usando (\ref{PAdx}): la energ'ia $\delta U$ necesaria para variar el potencial vectorial $\vec{A}(x)$ de un sistema de corrientes y campo magn'etico en $\delta\vec{A}(x)$ es dada por
 \begin{align}
  \delta U &= I\oint_{\cal C}\delta\vec{A}\cdot d\vec{\ell} \\
  &= \oint_{\cal C}\delta\vec{A}\cdot Id\vec{\ell} \\
@@ -144,7 +142,7 @@ A_i\,dS_j-\varepsilon_{ijk}\int_{V'}H_k(\partial_j\delta A_i)\,dV\\
 &= 0+\int_{V'} H_k\,\varepsilon_{kji}(\partial_j\delta A_i)\,dV\\
 &= \int_{V'} H_k\,\delta B_k\,dV.
 \end{align}
-Aqu'i hemos extendido el dominio de integraci'on a un volumen $V'\to R_3$, es decir, a  todo el espacio, usado el teorema de Gauss y considerado que la integral de superficie se anula en el infinito. Con esto, obtenemos la siguiente expresi'on para la \textit{energ'ia requerida para cambiar la inducci'on magn'etica de un sistema en $\delta{\vec B}(x)$}:
+Aqu'i hemos extendido el dominio de integraci'on a un volumen $V'\to R_3$, es decir, a todo el espacio, usado el teorema de Gauss y considerado que la integral de superficie se anula en el infinito. Con esto, obtenemos la siguiente expresi'on para la \textit{energ'ia requerida para cambiar la inducci'on magn'etica de un sistema en $\delta{\vec B}(x)$}:
 \begin{equation}
  \boxed{\delta U=\int_{R^3} \vec{H}(x)\cdot \delta\vec{B}(x)\,dV.}\label{dUB}
 \end{equation}
@@ -168,7 +166,7 @@ o, alternativamente,
  \boxed{U=\frac{1}{2}\int_{R^3} \vec{A}\cdot \vec{J}\,dV.}
 \end{equation}
 
-Usando (\ref{UHB}) podemos escribir la energ'ia almacenada en un sistema de campo magn'etico (y corrientes) como la integral de una \textit{densidad de energ'ia magn'etica}
+Usando (\ref{UHB}) podemos escribir la energ'ia almacenada en un sistema de campo magn'etico (y corrientes) como la integral de una \textbf{densidad de energ'ia magn'etica}
 \begin{equation}
  \boxed{U=\int_{R^3} u_B(x)\,dV, \qquad u_B(x):=\frac{1}{2}\vec{H}(x)\cdot\vec{B}(x).}
 \end{equation}
@@ -197,11 +195,10 @@ Hasta el momento,
 \end{align}
 Note que aqu'i hemos suprimido, para no recargar la notaci'on, la designaci'on ``${\rm ext}$'' en la densidad de carga y corriente externa.
 
-Vemos que (\ref{cmax3}) implica $\vec\nabla\cdot\vec{J}=0$, que es una condici'on que \textit{no es v'alida en general}, sino que s'olo en los casos, de acuerdo a (\ref{eccont}), en que ${\partial\rho}/{\partial t}=0$. Esto lleva a pensar que (al menos) la ecuaci'on (\ref{cmax3}) no es v'alida en el caso din'amico m'as general en el que las densidades de carga y corriente, y por lo tanto los campos el'ectricos y magn'eticos var'ian en el tiempo.
+Vemos que (\ref{cmax3}) implica $\vec\nabla\cdot\vec{J}=0$, que es una condici'on que \textit{no es v'alida en general}, sino que s'olo en los casos, de acuerdo a (\ref{eccont}), en que ${\partial\rho}/{\partial t}=0$. Esto lleva a pensar que (al menos) la ecuaci'on (\ref{cmax3}) no es v'alida en el caso din'amico m'as general en el que las densidades de carga y corriente, y por lo tanto los campos el'ectricos y magn'eticos, var'ian en el tiempo.
 
-Maxwell\footnote{James Clerk Maxwell (1831-1879): F'isico escoc'es. Ver \url{http://es.wikipedia.org/wiki/James_Clerk_Maxwell}.} (1861) generaliz'o la ecuaci'on (\ref{cmax3}) de modo que sea
-compatible con (\ref{cmax1}) y la ley de conservaci'on de la carga el'ectrica,
-es decir, con la ecuaci'on de continuidad (\ref{eccont}). Usando (\ref{cmax1}), que asumimos por tanto v'alida en el caso general, podemos escribir (\ref{eccont}) como
+Maxwell\footnote{James Clerk Maxwell (1831-1879): F'isico escoc'es. Ver \url{http://es.wikipedia.org/wiki/James_Clerk_Maxwell}.} (1861) generaliz'o la ecuaci'on (\ref{cmax3}) de modo que sea compatible con (\ref{cmax1}) y la ley de conservaci'on de la carga el'ectrica,
+es decir, con la ecuaci'on de continuidad (\ref{eccont}). Usando (\ref{cmax1}), que suponemos por tanto v'alida en el caso general, podemos escribir (\ref{eccont}) como
 \begin{eqnarray}
  0&=&\frac{\partial\rho}{\partial t}+\vec{\nabla}\cdot\vec{J}\\
 &=& \frac{\partial\ }{\partial
@@ -209,15 +206,7 @@ t}\left(\vec\nabla\cdot\vec{D}\right)+\vec{\nabla}\cdot\vec{J}\\
 &=& \vec\nabla\cdot\left[\frac{\partial\vec{D}}{\partial t}
 +\vec{J}\right].
 \end{eqnarray}
-De aqu'i vemos que en el caso de corrientes generales (no-est'aticas),
-$\vec{J}$ tiene divergencia no nula, pero la combinaci'on
-$\vec{J}+{\partial\vec{D}}/{\partial t}$ \textit{siempre tiene divergencia nula}.
-A partir de esta observaci'on, Maxwell \textit{postul'o} que el lado derecho de la
-ecuaci'on (\ref{cmax3}) deb'ia ser reemplazada por la combinaci'on
-$\vec{J}+{\partial\vec{D}}/{\partial t}$. En otras palabras, Maxwell
-postul'o que a la densidad de corriente deber'ia agregarse el t'ermino
-${\partial\vec{D}}/{\partial t}$, llamado \textit{corriente de
-desplazamiento}.
+De aqu'i vemos que en el caso de corrientes generales (no-est'aticas), $\vec{J}$ tiene divergencia no nula, pero la combinaci'on $\vec{J}+{\partial\vec{D}}/{\partial t}$ \textit{siempre tiene divergencia nula}. A partir de esta observaci'on, Maxwell \textit{postul'o} que el lado derecho de la ecuaci'on (\ref{cmax3}) deb'ia ser reemplazada por la combinaci'on $\vec{J}+{\partial\vec{D}}/{\partial t}$. En otras palabras, Maxwell postul'o que a la densidad de corriente deber'ia agregarse el t'ermino ${\partial\vec{D}}/{\partial t}$, llamado \textit{corriente de desplazamiento}.
 
 Con esto, las ecuaciones de Maxwell adoptan la forma:
 \begin{align}
@@ -320,14 +309,14 @@ donde
 \begin{equation}
 E_{\rm em}=\int_V u\,dV
 \end{equation}
-es la \textit{energ'ia electromagn'etica} y, de acuerdo al \textit{teorema de trabajo-energ'ia} \textbf{en el caso que no existan otras fuerzas que realicen trabajo sobre las cargas},
+es la \textbf{energ'ia electromagn'etica} y, de acuerdo al \textit{teorema de trabajo-energ'ia} \textit{en el caso que no existan otras fuerzas que realicen trabajo sobre las cargas},
 \begin{equation}
  \frac{dE_{\rm mec}}{dt}=\int_V\vec{E}\cdot\vec{J}\,dV
 \end{equation}
 es la variaci'on de energ'ia mec'anica total de las cargas contenidas en $V$.
 
 \section{Conservaci'on del momentum lineal}\label{sec:momentum}
-La \textit{fuerza total que el campo electromagn'etico ejerce sobre las cargas} contenidas en un volumen $V$ es dada por la fuerza de Lorentz:
+La \textbf{fuerza total que el campo electromagn'etico ejerce sobre las cargas} contenidas en un volumen $V$ es dada por la fuerza de Lorentz:
 \begin{equation}
 \vec{F}_{\rm em}=\int_V\left(\rho\vec{E}+\vec{J}\times\vec{B}\right)dV .
 \end{equation}
@@ -384,7 +373,7 @@ Reemplazando (\ref{idl1}) y (\ref{idl2}) en los 'ultimos dos t'erminos de
 =\partial_j\left[E_iD_j+H_iB_j-\frac{1}{2}\delta_{ij}\left(
 E_kD_k+H_kB_k\right)\right]-\partial_t(\varepsilon_{ijk}D_jB_k).
 \end{equation}
-Definimos la \textit{densidad de momentum} del campo, $\pi_i$, y el \textit{tensor de tensiones de Maxwell}, $T_{ij}$, por
+Definimos la \textbf{densidad de momentum} del campo, $\pi_i$, y el \textbf{tensor de tensiones de Maxwell}, $T_{ij}$, por
 \begin{equation}
 \boxed{\pi_i:=\varepsilon_{ijk}D_jB_k,}
 \end{equation}
@@ -406,16 +395,16 @@ donde $F^{\rm em}_i$ es la fuerza electromagn'etica total actuando sobre las car
  \boxed{P_i^{\rm em}:=\int_V \pi_i\,dV.} \label{defpem}
 \end{equation}
 
-Si $\vec{F}_{\rm em}$ coincide con la \textit{fuerza total} sobre las cargas (por ejemplo, si las 'unicas fuerzas involucradas son electromagn'eticas, o si la fuerza neta de origen no electromagn'etico se anula) entonces, usando la \textit{segunda ley de Newton}, tenemos que $\vec{F}_{\rm em}=d\vec{P}_{\rm mec}/dt$, donde $\vec{P}_{\rm mec}$ es el \textit{momentum lineal total de las cargas} en $V$ (mec'anico). Bajo estas condiciones, podemos escribir
+Si $\vec{F}_{\rm em}$ coincide con la \textit{fuerza total} sobre las cargas (por ejemplo, si las 'unicas fuerzas involucradas son electromagn'eticas, o si la fuerza neta de origen no electromagn'etico se anula) entonces, usando la \textit{segunda ley de Newton}, tenemos que $\vec{F}_{\rm em}=d\vec{P}_{\rm mec}/dt$, donde $\vec{P}_{\rm mec}$ es el \textbf{momentum lineal total de las cargas} en $V$ (mec'anico). Bajo estas condiciones, podemos escribir
 \begin{equation}
 \boxed{\frac{d\ }{dt}\left(P_i^{\rm mec}+P_i^{\rm em}\right)+\oint_{\partial
 V}T_{ij}\,dS_j =0.} \label{licml}
 \end{equation}
 En casos en que los campos se anulan en $\partial V$, la relaci'on
 (\ref{licml}) expresa que $P_i^{\rm mec}+P_i^{\rm em}$ es conservado. Esto
-permite interpretar (\ref{defpem}) como el \textit{momentum lineal total del
+permite interpretar (\ref{defpem}) como el \textbf{momentum lineal total del
 campo electromagn'etico en el volumen} $V$. En el caso general $\oint_{\partial
-V}T_{ij}\,dS_j $ representa entonces el \textit{flujo de momentum por unidad de tiempo
+V}T_{ij}\,dS_j $ representa entonces el \textbf{flujo de momentum por unidad de tiempo
 a trav'es de} $\partial S$. Consecuentemente, el tensor de Maxwell $T_{ij}$
 representa el momentum en la direcci'on $i$ que se transfiere en la direcci'on
 $j$, por unidad de tiempo y 'area. Equivalentemente, $-T_{ij}n_j$ ($dS_j=n_jdS$)
@@ -462,7 +451,7 @@ Similarmente, calculando la derivada con respecto al tiempo de la ley de Faraday
 \boxed{\nabla^2\vec{B}-\varepsilon\mu\frac{\partial^2\vec{B}}{\partial t^2}=-\mu\vec\nabla\times\vec{J}.}
 \end{equation}
 
-De esta forma encontramos que \textbf{las ecuaciones de Maxwell implican que los
+De esta forma encontramos que \textit{las ecuaciones de Maxwell implican que los
 campos el'ectrico y magn'etico satisfacen la ecuaci'on de onda inhomog'enea}. Es importante notar que \textit{no todas} las soluciones de la ecuaci'on de onda son necesariamente soluciones de las ecuaciones de Maxwell. En otras palabras, \eqref{EcOihE} y \eqref{EcOihB} son \textit{condiciones necesarias, pero no suficientes} para que los campos satisfagan las ecuaciones de Maxwell.
 
 \textbf{En regiones en libres de cargas y corrientes} \eqref{EcOihE} y \eqref{EcOihB} se reducen a la ecuaci'on de onda homog'enea para cada componente (cartesiana) de los campos el'ectrico y magn'etico:
