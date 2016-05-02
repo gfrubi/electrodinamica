@@ -23,7 +23,7 @@ con una funci'on ``fuente'' $g(\vec{x},t)$ dada.
 
 \subsection{Ecuaci'on de Helmholtz inhomog'enea y funci'on de Green independiente del tiempo}
 \subsubsection{Transformada de Fourier}
-Primero introduciremos la \textit{transformada de Fourier temporal} de los campos involucrados (asumimos que estos campos son cuadrado-integrables),
+Primero introduciremos la \textbf{transformada de Fourier temporal} de los campos involucrados (suponemos que estos campos son cuadrado-integrables),
 \begin{equation}
 \bar{\Psi}(\vec{x},\omega):=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty
 \Psi(\vec{x},t)e^{-i\omega t}\,dt,
@@ -60,11 +60,11 @@ Si logramos resolver (\ref{ecGreen}) y encontrar una soluci'on $G(\vec{x},\vec{x
 \begin{equation}
 \bar{\Psi}(\vec{x},\omega)=-\int G(\vec{x},\vec{x}')\bar{g}(\vec{x}',\omega)\,dV'.
 \end{equation}
-La funci'on de Green $G(\vec{x},\vec{x}')$ puede considerarse como un caso particular de soluci'on de (\ref{Hih}) correspondiente a una funci'on fuente $\bar{g}=\delta^{(3)}(\vec{x}-\vec{x}')$. En t'erminos m'as f'isicos, la funci'on de Green $G(\vec{x},\vec{x}')$ es proporcional al campo producido por una \textit{fuente puntual}. En efecto, si $g(\vec{x},t)=f(t)\delta^{(3)}(\vec{x}-\vec{x}')$, entonces $\bar{g}(\vec{x},\omega)=\bar{f}(\omega)\delta^{(3)}(\vec{x}-\vec{x}')$, donde $\bar{f}(\omega)$ es la transformada de Fourier de $f(t)$. De lo anterior, vemos que en este caso la soluci'on de (\ref{Hih}) es de la forma $-\bar{f}(\omega)G(\vec{x},\vec{x}')$.
+La funci'on de Green $G(\vec{x},\vec{x}')$ puede considerarse como un caso particular de soluci'on de (\ref{Hih}) correspondiente a una funci'on fuente $\bar{g}=\delta^{(3)}(\vec{x}-\vec{x}')$. En t'erminos m'as f'isicos, la funci'on de Green $G(\vec{x},\vec{x}')$ es proporcional al campo producido por una \textbf{fuente puntual}. En efecto, si $g(\vec{x},t)=f(t)\delta^{(3)}(\vec{x}-\vec{x}')$, entonces $\bar{g}(\vec{x},\omega)=\bar{f}(\omega)\delta^{(3)}(\vec{x}-\vec{x}')$, donde $\bar{f}(\omega)$ es la transformada de Fourier de $f(t)$. De lo anterior, vemos que en este caso la soluci'on de (\ref{Hih}) es de la forma $-\bar{f}(\omega)G(\vec{x},\vec{x}')$.
 
 La funci'on de Green que satisface (\ref{ecGreen}) \textit{no es 'unica}, siempre es posible sumar una soluci'on de la ecuaci'on de Helmholtz homog'enea. De entre las posibles soluciones, encontraremos aquella que satisfaga \textit{condiciones de simetr'ia apropiadas a nuestro problema}. En particular, deseamos encontrar las soluciones particulares que describan los campos \textit{generados por una distribuci'on de cargas y corrientes dada}, sin incluir los campos generados por \textit{fuentes externas al sistema} (y que satisfacen la ecuaci'on homog'enea en el dominio bajo consideraci'on).
 
-Ya que $G(\vec{x},\vec{x}')$ determina la dependencia espacial de la soluci'on correspondiente a una carga puntual situada en $\vec{x}'$, esperamos que 'esta sea esf'ericamente sim'etrica en torno a este punto (``isotrop'ia del espacio''), y s'olo dependiente de la diferencia entre $\vec{x}$ y $\vec{x}'$ (``homogeneidad del espacio''). Entonces, asumiremos que $G$ depende de $\vec{x}$ y $\vec{x}'$ s'olo a trav'es de la combinaci'on $|\vec{x}-\vec{x}'|$. Si
+Ya que $G(\vec{x},\vec{x}')$ determina la dependencia espacial de la soluci'on correspondiente a una carga puntual situada en $\vec{x}'$, esperamos que 'esta sea esf'ericamente sim'etrica en torno a este punto (``isotrop'ia del espacio''), y s'olo dependiente de la diferencia entre $\vec{x}$ y $\vec{x}'$ (``homogeneidad del espacio''). Entonces, supondremos que $G$ depende de $\vec{x}$ y $\vec{x}'$ s'olo a trav'es de la combinaci'on $|\vec{x}-\vec{x}'|$. Si
 \begin{equation}
 G(\vec{x},\vec{x}')=G(|\vec{x}-\vec{x}'|),
 \end{equation}
@@ -147,11 +147,11 @@ En la expresi'on anterior hemos denotado
 \begin{equation}
 t_{\pm}:=t\pm \frac{|\vec{x}-\vec{x}'|}{c}.
 \end{equation}
-Los \textit{potenciales retardados} corresponden a la soluci'on con
+Los \textbf{potenciales retardados} corresponden a la soluci'on con
 \begin{equation}
 \boxed{t_{\rm ret}:=t-\frac{|\vec{x}-\vec{x}'|}{c},} \label{deftret}
 \end{equation}
-que es llamado el \textit{tiempo retardado} (puesto que $t_{\rm ret}\le t$), de modo que
+que es llamado el \textbf{tiempo retardado} (puesto que $t_{\rm ret}\le t$), de modo que
 \begin{equation}
 \boxed{\phi_{\rm ret}(\vec{x},t)=\frac{1}{4\pi\varepsilon}\int_{V'}
 \frac{\rho(\vec{x}',t_{\rm ret})}{|\vec{x}-\vec{x}'|}\,dV',} \qquad \boxed{\vec{A}_{\rm
@@ -159,20 +159,20 @@ ret}(\vec{x},t)=\frac{\mu}{4\pi}\int_{V'}
 \frac{\vec{J}(\vec{x}',t_{\rm ret})}{|\vec{x}-\vec{x}'|}\,dV' ,} \label{potret}
 \end{equation}
 suministran expresiones para los potenciales electromagn'eticos en un punto
-$\vec{x}$ y en un instante $t$ dado \textit{en t'erminos de la distribuci'on de cargas y corrientes en tiempos anteriores a} $t$ (``soluci'on causal''). En otras palabras, los potenciales (\ref{potret}) permiten \textit{pre}decir los campos producidos por un sistema de cargas dado. La soluci'on correspondiente al \textit{tiempo avanzado} $t_{\rm av}:=t+{|\vec{x}-\vec{x}'|}/{c}\ge t$ no ser'a usada puesto que conduce, en cada instante $t$, a campos determinados por la distribuci'on de cargas en \textit{tiempos posteriores a }$t$ (``soluci'on acausal'').
+$\vec{x}$ y en un instante $t$ dado \textit{en t'erminos de la distribuci'on de cargas y corrientes en tiempos anteriores a} $t$ (``soluci'on causal''). En otras palabras, los potenciales (\ref{potret}) permiten \textit{pre}decir los campos producidos por un sistema de cargas dado. La soluci'on correspondiente al \textbf{tiempo avanzado} $t_{\rm av}:=t+{|\vec{x}-\vec{x}'|}/{c}\ge t$ no ser'a usada puesto que conduce, en cada instante $t$, a campos determinados por la distribuci'on de cargas en \textit{tiempos posteriores a }$t$ (``soluci'on acausal'').
 
-Las expresiones para los potenciales retardados son similares a aquellas v'alidas los casos electrost'atico y magnetost'atico, ver \eqref{perho} y \eqref{defA} respectivamente, salvo que las fuentes dentro de la integral est'an evaluadas en el tiempo retardado, que depende tanto del tiempo como de la posici'on\footnote{Esta propiedad no es en general v'alida si los potenciales satisfacen gauges distintos al de Lorenz.}. Esta soluci'on muestra que los campos en un punto $\vec{x}$ y tiempo $t$ dado son una  \textit{superposici'on de t'erminos proporcionales a las fuentes ubicadas en \textit{cada punto} $\vec{x}'$,pero en tiempos anteriores} $t_{\rm ret}$, de forma tal que el \textit{evento}\footnote{es decir, un punto determinado del espacio y del tiempo.} $(ct_{\rm ret},\vec{x}')$ tiene una \textit{relaci'on tipo luz} con el evento $(ct,\vec{x})$. Esto 'ultimo significa, como se desprende de (\ref{deftret}), que
+Las expresiones para los potenciales retardados son similares a aquellas v'alidas los casos electrost'atico y magnetost'atico, ver \eqref{perho} y \eqref{defA} respectivamente, salvo que las fuentes dentro de la integral est'an evaluadas en el tiempo retardado, que depende tanto del tiempo como de la posici'on\footnote{Esta propiedad no es en general v'alida si los potenciales satisfacen gauges distintos al de Lorenz.}. Esta soluci'on muestra que los campos en un punto $\vec{x}$ y tiempo $t$ dado son una  \textit{superposici'on de t'erminos proporcionales a las fuentes ubicadas en \textit{cada punto} $\vec{x}'$, pero en tiempos anteriores} $t_{\rm ret}$, de forma tal que el \textit{evento}\footnote{es decir, un punto determinado del espacio y del tiempo.} definido por $(ct_{\rm ret},\vec{x}')$ tiene una \textit{relaci'on tipo luz} con el evento $(ct,\vec{x})$. Esto 'ultimo significa, como se desprende de (\ref{deftret}), que
 \begin{equation}\marginnote{relaci'on tipo luz}
  c^2(t-t_{\rm ret})^2-|\vec{x}-\vec{x}'|^2=0.
 \end{equation}
-En otras palabras, los valores del campo en un evento dado est'an determinados por los valores de las fuentes en los puntos del \textit{cono de luz pasado} asociado a tal evento. Ver figura \ref{fig:cdl2}.
+En otras palabras, los valores del campo en un evento dado est'an determinados por los valores de las fuentes en los puntos del \textbf{cono de luz pasado} asociado a tal evento. Ver figura \ref{fig:cdl2}.
 \begin{figure}[!h]
 \centerline{\psfig{file=fig/fig-cono-de-luz-01.pdf,height=5.5cm,angle=0}}
 \caption{Cono de luz}
 \label{fig:cdl2}
 \end{figure}
 
-Otra consecuencia directa es que cualquier \textit{cambio} en la configuraci'on de las fuentes en un punto afectar'a a los campos en otro punto s'olo en tiempos posteriores, luego de un intervalo de tiempo igual al tiempo de vuelo de una se\~nal luminosa que los conecte. En otras palabras: \textbf{los cambios de los campos producidos por cambios de las fuentes se propagan con rapidez $c=1/\sqrt{\varepsilon\mu}$}. Equivalentemente, el valor de las fuentes en un determinado evento contribuye a los valores de los campos s'olo en eventos situados sobre el \textit{cono de luz futuro} del evento fuente.
+Otra consecuencia directa es que cualquier \textit{cambio} en la configuraci'on de las fuentes en un punto afectar'a a los campos en otro punto s'olo en tiempos posteriores, luego de un intervalo de tiempo igual al tiempo de vuelo de una se\~nal luminosa que los conecte. En otras palabras: \textit{los cambios de los campos producidos por cambios de las fuentes se propagan con rapidez $c=1/\sqrt{\varepsilon\mu}$}. Equivalentemente, el valor de las fuentes en un determinado evento contribuye a los valores de los campos s'olo en eventos situados sobre el \textit{cono de luz futuro} del evento fuente.
 
 \section{Ecuaciones de Jefimenko}
 A partir de las expresiones para los potenciales retardados en el gauge de Lorenz, es decir las ecuaciones \eqref{potret}, podemos calcular los campos el'ectrico y magn'etico producidos por una distribuci'on (arbitraria, pero compacta) de cargas y corrientes:
@@ -183,12 +183,12 @@ A partir de las expresiones para los potenciales retardados en el gauge de Loren
 \vec{B}(\vec{x},t)=\frac{\mu}{4\pi} \int_V\left[
 \frac{\vec{J}(\vec{x}',t_{\rm ret})\times(\vec{x}-\vec{x}')}{\vert \vec{x}-\vec{x}'\vert^3}+ \frac{1}{c}\frac{ \dot{\vec{J}}(\vec{x}',t_{\rm ret})\times(\vec{x}-\vec{x}')}{\vert\vec{x}-\vec{x}' \vert^2} \right]dV', \label{b3}
 \end{equation}
-donde $\dot{f}(\vec{x},t)$ denota la derivada partial respecto a la variable temporal de la que depende la funci'on $f(\vec{x},t)$, es decir $\dot{f}(\vec{x},t):=(\partial_t f)(\vec{x},t)$. Las relaciones anteriores son conocidas como \textit{ecuaciones de Jefimenko}\footnote{Oleg Jefimenko (1922-2009), f'isico estadounidense. Ver \url{http://en.wikipedia.org/wiki/Jefimenko}.}. Note que estas expresiones para los campos eléctrico y magnético difieren de aquellas que se encontrar'ian directamente la soluci'on de las ecuaciones inhomogéneas \eqref{EcOihE} y \eqref{EcOihB}. ?`Puede explicar por qu'e ocurre esto?.
+donde $\dot{f}(\vec{x},t)$ denota la derivada partial respecto a la variable temporal de la que depende la funci'on $f(\vec{x},t)$, es decir $\dot{f}(\vec{x},t):=(\partial_t f)(\vec{x},t)$. Las relaciones anteriores son conocidas como \textbf{ecuaciones de Jefimenko}\footnote{Oleg Jefimenko (1922-2009), f'isico estadounidense. Ver \url{http://en.wikipedia.org/wiki/Jefimenko}.}. Note que estas expresiones para los campos el'ectrico y magn'etico difieren de aquellas que se encontrar'ian directamente la soluci'on de las ecuaciones inhomog'eneas \eqref{EcOihE} y \eqref{EcOihB}. ?`Puede explicar por qu'e ocurre esto?.
 
 
 \section{Potenciales de Li'enard-Wiechert}
 
-Se conoce como \textit{potenciales de Li'enard}\footnote{Alfred Marie Li'enard: (1869-1958) f'isico franc'es.}\textit{-Wiechert}\footnote{Johann Emil Wiechert: (1861-1928) (geo)f'isico alem'an.} a los potenciales retardados generados por una \textit{carga puntual} $q$ \textit{que se mueve en forma conocida, pero arbitraria, con trayectoria} $\vec{z}(t)$. Ver figura (\ref{fig:LW}).
+Se conoce como \textbf{potenciales de Li'enard}\footnote{Alfred Marie Li'enard: (1869-1958) f'isico franc'es.}\textbf{-Wiechert}\footnote{Johann Emil Wiechert: (1861-1928) (geo)f'isico alem'an.} a los potenciales retardados generados por una \textit{carga puntual} $q$ \textit{que se mueve en forma conocida, pero arbitraria, con trayectoria} $\vec{z}(t)$. Ver figura (\ref{fig:LW}).
 \begin{figure}[ht]
 \centerline{\psfig{file=fig/fig-cono-de-luz-02.pdf,height=5.5cm,angle=0}}
 \caption{Trayectoria de una carga puntual y cono de luz asociado al evento $(ct,\vec{x})$.}
@@ -251,7 +251,7 @@ Esta relaci'on define una ecuaci'on algebraica para $t'$ cuya soluci'on define, 
 \begin{equation}
  g'(t')=1-\frac{1}{c}\frac{\vec{v}(t')\cdot\left(\vec{x}-\vec{z}'(t')\right)}{\left|\vec{x}-\vec{z}(t')\right|}=1-\vec{\beta}(t')\cdot\hat{n}(t')>0 \label{gp},
 \end{equation}
-para $|\vec\beta|<1$, con $\vec\beta:=\vec{v}/c$. Por ahora, asumiremos que siempre la velocidad de la part'icula es menor que la velocidad de la luz en el medio. Entonces, reemplazando (\ref{gp}) en (\ref{Ir}), se encuentra que
+para $|\vec\beta|<1$, con $\vec\beta:=\vec{v}/c$. Por ahora, supondremos que siempre la velocidad de la part'icula es menor que la velocidad de la luz en el medio. Entonces, reemplazando (\ref{gp}) en (\ref{Ir}), se encuentra que
 \begin{equation}
  I(\vec{x},t)=\frac{f(\vec{x},\vec{z}(t'),t)}{1-\vec{\beta}(t')\cdot\hat{n}(t')}. \label{Ir2}
 \end{equation}
@@ -502,7 +502,7 @@ ret}\times\vec{E}(\vec{x},t) .}
 Este resultado muestra, por lo tanto, que \textbf{el campo magn'etico producido por una carga puntual es, en cada punto del espacio, perpendicular al campo el'ectrico y al vector que une la posici'on \underline{retardada} de la carga con el punto de observaci'on}.
 
 Note que para distancias $r$ muy grandes (comparadas con las dimensiones de la
-regi'on donde se encuentran las fuentes, que asumimos es una regi'on compacta) $R\approx r$ y entonces
+regi'on donde se encuentran las fuentes, que consideramos una regi'on compacta) $R\approx r$ y entonces
 $\vec{E}_{(1)}\propto r^{-2}$ mientras que $\vec{E}_{(2)}\propto
 r^{-1}$.
 
@@ -726,7 +726,7 @@ Reemplazando esto en \eqref{dP'} encontramos que
 \begin{figure}[H]
 % \centerline{\psfig{file=fig/fig-lobulo-rel-01.pdf,height=8cm,angle=-90}}
 \centerline{\psfig{file=fig/fig-carga-relativista.pdf,height=5cm}}
-\caption{L'obulo de radiaci'on para una carga relativista acelerada. Asumimos
+\caption{L'obulo de radiaci'on para una carga relativista acelerada. Suponemos
 iguales aceleraciones y normalizamos con respecto a ${q^2\mu}/{16\pi^2 c}$.}
 \label{lobulo02}
 \end{figure}
@@ -764,14 +764,14 @@ En este caso, la aceleraci'on es producida por la fuerza que la onda incidente e
 \vec{E}_0(\vec{x},t)=\operatorname{Re}\left[
 \vec{\epsilon}_0E_0e^{i(\vec{k}_0\cdot\vec{x}-\omega t)}\right] .
 \end{equation}
-Asumiendo que la velocidad de la carga es en todo momento mucho menor que la de la
+Suponiendo que la velocidad de la carga es en todo momento mucho menor que la de la
 luz, podemos despreciar el t'ermino dependiente del campo magn'etico en la fuerza de Lorentz. Entonces, la aceleraci'on de la carga es proporcional al campo el'ectrico de la onda incidente:
 \begin{equation}
 \frac{d^2\vec{x}}{dt^2}
 =\operatorname{Re}\left[\frac{qE_0}{m}\vec{\epsilon}_0e^{i(\vec{k}_0\cdot\vec{x}(t)
 -\omega t)}\right] .
 \end{equation}
-Asumiendo como condiciones iniciales $\vec{x}(0)=\vec{0}$ y $\vec{v}(0)=\vec{0}$, integramos esta ecuaci'on y obtenemos que la posici'on y velocidad de la carga tienen la forma
+Considerando las condiciones iniciales $\vec{x}(0)=\vec{0}$ y $\vec{v}(0)=\vec{0}$, integramos esta ecuaci'on y obtenemos que la posici'on y velocidad de la carga tienen la forma
 \begin{equation}
 \vec{x}(t)
 =\operatorname{Re}\left[-\frac{qE_0}{m\omega^2}\vec{\epsilon}_0(e^{-i\omega t}-1)\right] ,
@@ -1677,7 +1677,7 @@ R_{\rm rad}=\frac{\mu}{6\pi c}{\omega^2d^2}
 donde hemos introducido la constante $Z:=\mu c=1/\varepsilon c=\sqrt{\mu/\varepsilon}$, que en el vac'io asume el valor $Z_0=119,9169832\pi\,[\Omega]\approx 377\,[\Omega]$. En este caso, $Z_0$ es llamada la \textit{impedancia del vac'io}, o \textit{impedancia del espacio libre}.
 
 \subsection{Resistencia de radiaci'on de una peque\~na espira}
-Consideramos una peque\~na espira circular, de radio $a$, que es alimentada por una fuente que suministra una diferencia de potencial variable, de modo que la corriente que circula por la espira es dada por $I(t)$. En este caso, el momento magn'etico del sistema tiene m'odulo $\mu(t)=\pi a^2I(t)$. Asumiendo que la corriente que circula por la espira var'ia arm'onicamente en el tiempo, con frecuencia angular $\omega$, y que $a\ll c/\omega$, podemos modelar la radiaci'on emitida como aquella producida por un dipolo magn'etico ideal. Bajo estas condiciones, la expresi'on (\ref{Pdipmag}) nos permite escribir
+Consideramos una peque\~na espira circular, de radio $a$, que es alimentada por una fuente que suministra una diferencia de potencial variable, de modo que la corriente que circula por la espira es dada por $I(t)$. En este caso, el momento magn'etico del sistema tiene m'odulo $\mu(t)=\pi a^2I(t)$. Suponiendo que la corriente que circula por la espira var'ia arm'onicamente en el tiempo, con frecuencia angular $\omega$, y que $a\ll c/\omega$, podemos modelar la radiaci'on emitida como aquella producida por un dipolo magn'etico ideal. Bajo estas condiciones, la expresi'on (\ref{Pdipmag}) nos permite escribir
 \begin{equation}
 \left\langle P_{\rm rad}\right\rangle=\frac{\mu}{6\pi c^3}{\left\langle \ddot{\mu}^2\right\rangle}=\frac{\pi\mu}{6c^3}{a^4}\left\langle \ddot{I}^ 2\right\rangle .
 \end{equation}
@@ -1685,7 +1685,7 @@ Consideramos una peque\~na espira circular, de radio $a$, que es alimentada por 
 %\begin{equation}
 %\left\langle P_{\rm rad}\right\rangle=\frac{\pi}{6\varepsilon_0}\frac{a^4}{c^5}\left\langle \ddot{I}^ 2\right\rangle.
 %\end{equation}
-Como asumimos que la corriente var'ia arm'onicamente en el tiempo, tendremos que $\langle\ddot{I}^ 2\rangle=\omega^4\langle I^ 2\rangle$ y, por lo tanto, la resistencia de radiaci'on resulta ser
+Como suponemos que la corriente var'ia arm'onicamente en el tiempo, tendremos que $\langle\ddot{I}^ 2\rangle=\omega^4\langle I^ 2\rangle$ y, por lo tanto, la resistencia de radiaci'on resulta ser
 \begin{equation}
 R_{\rm rad}=\frac{\pi\mu}{6c^3}{a^4\omega^4}
 =\frac{8\pi^5}{3}Z\left(\frac{a}{\lambda}\right)^4.
@@ -1699,7 +1699,7 @@ Consideremos finalmente que con una misma corriente se alimenta el condensador d
 \begin{equation}
 \frac{R_{\rm rad}^{\vec\mu}}{R_{\rm rad}^{\vec{p}}}\approx 4\pi^4\left(\frac{a}{\lambda}\right)^2=\pi^2\left(\frac{2\pi a}{\lambda}\right)^2\approx 10\left(\frac{2\pi a}{\lambda}\right)^2.
 \end{equation}
-Por lo tanto, como hemos asumido que $a\ll\lambda/2\pi$, encontramos que  $R_{\rm rad}^{\vec\mu}\ll R_{\rm rad}^{\vec{p}}$. En este sentido un peque\~no condensador rad'ia m'as ``eficientemente'' que una espira de similar tama\~no, alimentada con la misma corriente alterna.
+Por lo tanto, como hemos supuesto que $a\ll\lambda/2\pi$, encontramos que  $R_{\rm rad}^{\vec\mu}\ll R_{\rm rad}^{\vec{p}}$. En este sentido un peque\~no condensador rad'ia m'as ``eficientemente'' que una espira de similar tama\~no, alimentada con la misma corriente alterna.
 
 
 \section{Campos radiativos de una distribuci'on general de carga y corriente}
@@ -1771,7 +1771,7 @@ d\ll\frac{c}{\omega}=\frac{\lambda}{2\pi},
 \end{equation}
 es decir, a que \textbf{el tama\~no (lineal) de la fuente sea mucho menor que la longitud de onda asociada a la frecuencia $\omega$}. Recuerde que siempre es posible \textit{descomponer $\rho$ en una superposici'on de oscilaciones arm'onicas}, v'ia an'alisis de Fourier.
 
-Asumiendo que las condiciones anteriores se satisfacen, podemos escribir:
+Suponiendo que las condiciones anteriores se satisfacen, podemos escribir:
 \begin{align}
 \phi_{\rm rad}(\vec{x},t)
  &= \frac{1}{4\pi\varepsilon}\frac{1}{r}\left[  \int\rho\,dV'+\frac{\hat{r}_i}{c}\int\dot{\rho}x'_i\,dV'+\frac{1}{2}\frac{\hat{r}_i}{c}\frac{\hat{r}_j}{c}\int\ddot{\rho}x'_ix'_j\,dV'\right. \nonumber \\
@@ -1856,7 +1856,7 @@ como es usual para un campo de radiaci'on. De aqu'i obtenemos, finalmente, una e
 
 \section{Antenas lineales}
 
-Consideremos una \textit{antena lineal} de largo $d$, alimentada en su punto medio por una fuente alterna de frecuencia angular $\omega$, orientada a lo largo del eje $z$. Asumiremos que el perfil de corriente en la antena es de la forma
+Consideremos una \textit{antena lineal} de largo $d$, alimentada en su punto medio por una fuente alterna de frecuencia angular $\omega$, orientada a lo largo del eje $z$. Supondremos que el perfil de corriente en la antena es de la forma
 \begin{equation}
  I(z,t)=I_0\sen\left(\frac{kd}{2}-k|z|\right)\cos(\omega t),
 \end{equation}
