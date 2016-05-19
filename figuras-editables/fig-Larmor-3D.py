@@ -4,7 +4,6 @@ from matplotlib.pyplot import *
 from numpy import *
 
 fig = figure()
-#ax = fig.add_subplot(111, projection='3d')
 ax = Axes3D(fig)
 ax.set_axis_off() # desactiva ejes
 
