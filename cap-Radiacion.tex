@@ -724,7 +724,7 @@ Reemplazando esto en \eqref{dP'} encontramos que
 \theta}{\left(1-\beta\cos\theta\right)^5}. \label{dppdO}
 \end{equation}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-carga-relativista.pdf,height=7cm}}
+\centerline{\psfig{file=fig/fig-carga-relativista.pdf,height=6cm}}
 \caption{L'obulos de radiaci'on para una carga relativista acelerada. Suponemos
 iguales aceleraciones y normalizamos con respecto a ${q^2\mu}/{16\pi^2 c}$. C'odigo Python \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-carga-relativista.py}{aqu\'i}.}
 \label{lobulo02}
@@ -751,10 +751,10 @@ Esto indica que, para la misma aceleraci'on, la radiaci'on emitida por una carga
 Si una onda electromagn'etica monocrom'atica incide
 sobre una part'icula libre de carga $q$ y masa $m$, la carga acelera y
 entonces emite radiaci'on. Esta radiaci'on ser'a emitida en otras
-direcciones respecto de la direcci'on de la onda incidente. Adem'as, si la carga se mueve a velocidades no-relativistas la radiaci'on emitida por esta carga tendr'a \textit{casi exclusivamente} la misma frecuencia que la radiaci'on incidente (ver secci'on \ref{sec:rfp} para mayores detalles). El proceso completo puede ser descrito como \textit{scattering} (dispersi'on) \textit{esl'astico} de la radiaci'on incidente, que llamamos scattering de Thomson\footnote{Joseph John Thomson (1856-1940): f'isico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Joseph_John_Thomson}.}.
+direcciones respecto de la direcci'on de la onda incidente. Adem'as, si la carga se mueve a velocidades no-relativistas la radiaci'on emitida por esta carga tendr'a \textit{casi exclusivamente} la misma frecuencia que la radiaci'on incidente (ver secci'on \ref{sec:rfp} para mayores detalles). El proceso completo puede ser descrito como \textit{scattering} (dispersi'on) \textit{esl'astico} de la radiaci'on incidente, que llamamos \textbf{scattering de Thomson}\footnote{Joseph John Thomson (1856-1940): f'isico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Joseph_John_Thomson}.}.
 
 La potencia instant'anea radiada es dada por (\ref{Lardif}) o, introduciendo el
-\textit{vector de polarizaci'on $\vec{\epsilon}$ de la onda emitida} (que es, por definici'on el vector paralelo a la direcci'on del campo el'ectrico radiado, ver figura \ref{fig:natheta}):
+\textbf{vector de polarizaci'on $\vec{\epsilon}$ de la onda emitida} (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo el'ectrico radiado, ver figura \ref{fig:natheta}):
 \begin{equation}
 \frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2 c}|\vec{\epsilon}\cdot\vec{a}|^2.
 \end{equation}
@@ -763,14 +763,13 @@ En este caso, la aceleraci'on es producida por la fuerza que la onda incidente e
 \vec{E}_0(\vec{x},t)=\operatorname{Re}\left[
 \vec{\epsilon}_0E_0e^{i(\vec{k}_0\cdot\vec{x}-\omega t)}\right] .
 \end{equation}
-Suponiendo que la velocidad de la carga es en todo momento mucho menor que la de la
-luz, podemos despreciar el t'ermino dependiente del campo magn'etico en la fuerza de Lorentz. Entonces, la aceleraci'on de la carga es proporcional al campo el'ectrico de la onda incidente:
-\begin{equation}
+\textit{Suponiendo que la velocidad de la carga es en todo momento mucho menor que la de la luz}, podemos despreciar el t'ermino dependiente del campo magn'etico en la fuerza de Lorentz. Entonces, la aceleraci'on de la carga es proporcional al campo el'ectrico de la onda incidente:
+\begin{equation}\label{ecd2x}
 \frac{d^2\vec{x}}{dt^2}
 =\operatorname{Re}\left[\frac{qE_0}{m}\vec{\epsilon}_0e^{i(\vec{k}_0\cdot\vec{x}(t)
 -\omega t)}\right] .
 \end{equation}
-Considerando las condiciones iniciales $\vec{x}(0)=\vec{0}$ y $\vec{v}(0)=\vec{0}$, integramos esta ecuaci'on y obtenemos que la posici'on y velocidad de la carga tienen la forma
+Considerando las condiciones iniciales $\vec{x}(0)=\vec{0}$ y $\vec{v}(0)=\vec{0}$, integramos esta ecuaci'on diferencial\footnote{Note que la inc'ognita, $\vec{x}(t)$, aparece en el t'ermino exponencial al lado derecho de \eqref{ecd2x}, por lo que la solci'on es, para condiciones iniciales generales, bastante no-trivial.} y obtenemos que la posici'on y velocidad de la carga tienen la forma
 \begin{equation}
 \vec{x}(t)
 =\operatorname{Re}\left[-\frac{qE_0}{m\omega^2}\vec{\epsilon}_0(e^{-i\omega t}-1)\right] ,
@@ -800,7 +799,7 @@ para lo cual requerimos el promedio $\left\langle
 \vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2.
 \end{eqnarray}
 En la pr'actica es conveniente describir este proceso de scattering por medio de
-la correspondiente  \textit{secci'on diferencial de scattering}:
+la correspondiente  \textbf{secci'on diferencial de scattering}:
 \begin{equation}
 \frac{d\sigma}{d\Omega}:=\frac{\left( \text{Energ'ia promedio radiada por unidad
 de tiempo y de 'angulo s'olido}\right) }{\left( \text{Energ'ia promedio
@@ -819,7 +818,7 @@ Obtenemos entonces que la secci'on diferencial de scattering es dada por
 \boxed{\frac{d\sigma}{d\Omega}  =\left(\frac{q^2\mu}{4\pi m}\right)^2\left|
 \vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2 .}\label{seeT}
 \end{equation}
-La cantidad $r_q:={q^2\mu}/{4\pi m}=(1/{4\pi\varepsilon})({q^2}/{mc^2})$ tiene dimensiones de longitud, y juega el rol de ``\textit{tama\~no efectivo}'' de la carga para el proceso de scattering considerado\footnote{Compare, por ejemplo, con la secci'on diferencial de scaterring de una esfera de radio $R$ impactada por peque\~nas part'iculas de prueba (de masa despreciable): $d\sigma/d\Omega=R^2/4$, $\sigma=\pi R^2$.}. Por ejemplo, para el electr'on en el vac'io $r_{\rm e}=(1/{4\pi\varepsilon_0})({e^2}/{m_{\rm e}c^2})\approx 2,8\times 10^{-15}m$. Esta distancia caracter'istica (de la interacci'on electromagn'etica) del electr'on es llamada \textit{radio cl'asico del electr'on}.
+La cantidad $r_q:={q^2\mu}/{4\pi m}=(1/{4\pi\varepsilon})({q^2}/{mc^2})$ tiene dimensiones de longitud, y juega el rol de ``\textit{tama\~no efectivo}'' de la carga para el proceso de scattering considerado\footnote{Compare, por ejemplo, con la secci'on diferencial de scaterring de una esfera de radio $R$ impactada por peque\~nas part'iculas de prueba (de masa despreciable): $d\sigma/d\Omega=R^2/4$, $\sigma=\pi R^2$.}. Por ejemplo, para el electr'on en el vac'io $r_{\rm e}=(1/{4\pi\varepsilon_0})({e^2}/{m_{\rm e}c^2})\approx 2,8\times 10^{-15}m$. Esta distancia caracter'istica (de la interacci'on electromagn'etica) del electr'on es llamada \textbf{radio cl'asico del electr'on}.
 
 Para evaluar (\ref{seeT}) requerimos de una expresi'on expl'icita para
 $\vec{\epsilon}$. El c'alculo es m'as sencillo si elegimos los ejes coordenados de modo que el vector de onda inicial $\vec{k}_0$ sea paralelo al eje $z$ y el vector $\epsilon_0$ paralelo al eje $x$. Ver figura \ref{fig:thomson}. En este caso, podemos escribir, $\vec{k}_0=k_0\hat{z}$, 
@@ -831,10 +830,10 @@ y
 \hat{n}=\hat{x}\sen\theta\cos\varphi + \hat{y}\sen\theta\sen\varphi +\hat{z}\cos\theta, \label{ene}
 \end{equation}
 de modo que $\theta$ es el 'angulo entre $\hat{n}$ y $\vec{k}_0$, es decir, el
-\textit{'angulo de scattering} entre la radiaci'on incidente y la emitida, y $\varphi$ es el 'angulo azimutal entre $\vec{\epsilon}_0$ y
+\textbf{'angulo de scattering} entre la radiaci'on incidente y la emitida, y $\varphi$ es el 'angulo azimutal entre $\vec{\epsilon}_0$ y
 $\hat{n}$.
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-thomson-esquema.pdf,height=5cm}}
+\centerline{\psfig{file=fig/fig-Thomson-esquema.pdf,height=5cm}}
  \caption{Esquema para el scattering Thomson.}
 \label{fig:thomson}
 \end{figure}
@@ -885,25 +884,24 @@ correspondiente a cambiar el 'angulo $\varphi$ por ${\pi}/{2}-\varphi$, ver figu
 \end{align}
 Como era de esperar, en este caso obtenemos una secci'on diferencial de scattering independiente de $\varphi$:
 \begin{equation}
-\boxed{\frac{d\sigma}{d\Omega}=\left(\frac{q^2\mu}{4\pi m}\right)^2\frac{1}
+\boxed{\left.\frac{d\sigma}{d\Omega}\right|_{\rm no-pol}=\left(\frac{q^2\mu}{4\pi m}\right)^2\frac{1}
 {2}\left(  1+\cos^2\theta\right) .}
 \end{equation}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-thomson2d.pdf,height=5cm}}
+\centerline{\psfig{file=fig/fig-Thomson.pdf,height=6cm}}
  \caption{Secci\'on diferencial de scattering $d\sigma/d\Omega$ en funci'on de $\theta$ en el plano $z-x$.}
 \label{fig:thomson_2d}
 \end{figure}
-'Esta es la llamada \textit{f'ormula de Thomson} para scattering de radiaci'on
-por cargas libres, y es apropiada para describir muchas situaciones f'isicas, com por ejemplo \textit{scattering de rayos X
-no-polarizados por electrones}, o \textit{rayos gamma por protones}. 
+'Esta es la llamada \textbf{f'ormula de Thomson} para scattering de radiaci'on
+por cargas libres, y es apropiada para describir muchas situaciones f'isicas, com por ejemplo \textit{scattering de rayos X no-polarizados por electrones}, o \textit{rayos gamma por protones}. 
 La distribuci'on angular se muestra en la figura \ref{fig:thomson_2d}. 
 
-La \textit{secci'on total de scattering}, definida en general como la integral sobre el 'angulo s'olido de la secci'on diferencial, es llamada en este caso \textit{secci'on tranversal de Thomson}, y es dada por
+La \textbf{secci'on total de scattering}, definida en general como la integral sobre el 'angulo s'olido de la secci'on diferencial, es llamada en este caso \textbf{secci'on tranversal de Thomson}, y es dada por
 \begin{equation}
-\boxed{\sigma_{T}=\frac{8\pi}{3}\left(\frac{q^2\mu}{4\pi m}\right)^2=\frac{8\pi}{3} r_q^2.}
+\boxed{\sigma_{\rm T}=\frac{8\pi}{3}\left(\frac{q^2\mu}{4\pi m}\right)^2=\frac{8\pi}{3} r_q^2.}
 \end{equation}
 
-Para el caso de electrones, la secci'on tranversal total de Thomson tiene el valor $\sigma_{T}\approx 6.65\times 10^{-29}$ m$^2$ y $r_q\approx 2.82\times 10^{-15}$ m es el llamado \textit{radio cl'asico del electr'on}.
+Para el caso de electrones, la secci'on tranversal total de Thomson tiene el valor $\sigma_{\rm T}\approx 6.65\times 10^{-29}$ m$^2$ y $r_q\approx 2.82\times 10^{-15}$ m es el llamado \textit{radio cl'asico del electr'on}.
 
 \subsection{Correcciones a la f'ormula de Thomson*}
 La f'ormula cl'asica de Thomson se ajusta a las observaciones s'olo para frecuencias bajas, donde el momentum del fot'on incidente puede ser ignorado. Cuando los momenta $\hbar\omega/c$ de los fotones son comparables o mayores que $mc$, es necesario incluir algunas modificaciones al modelo sencillo aqu'i expuesto. Uno de estos efectos a tomar en cuenta es el efecto Compton, por el que la frecuencia (energ'ia) de un fot'on dispersado es menor que la frecuencia (energ'ia) del incidente, ya que la carga necesariamente sufre de un ``recoil'' durante el proceso. La cinem'atica (relativista) predice que el cambio de vector de onda de la radiaci'on es de la forma
@@ -930,7 +928,7 @@ sin spin, pero las secciones son un poco mayores para 'angulos grandes debido a
 la contribuci'on del momento magn'etico del electr'on.
 
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-thomson.pdf,height=5cm}}
+\centerline{\psfig{file=fig/fig-Thomson-modelos.pdf,height=5cm}}
  \caption{Secci'on diferencial de scattering Thomson (\ref{Thomson}) y
 correcciones cu'antico-relativistas (\ref{Thomson-corr}). El gr'afico muestra
 ${d\sigma}/{d\Omega}$ en unidades de $r_q^2$ en funci'on de
