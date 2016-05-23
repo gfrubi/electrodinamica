@@ -2,7 +2,6 @@
 
 from matplotlib.pyplot import *
 from numpy import *
-from scipy.special import *
 
 theta = linspace(0, 2*pi, 200)
 fig=figure()
