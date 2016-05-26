@@ -756,7 +756,7 @@ direcciones respecto de la direcci'on de la onda incidente. Adem'as, si la carga
 La potencia instant'anea radiada es dada por (\ref{Lardif}) o, introduciendo el
 \textbf{vector de polarizaci'on $\vec{\epsilon}$ de la onda emitida} (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo el'ectrico radiado, ver figura \ref{fig:natheta}):
 \begin{equation}
-\frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2 c}|\vec{\epsilon}\cdot\vec{a}|^2.
+\frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2 c}|\hat{n}\times\vec{a}|^2.
 \end{equation}
 En este caso, la aceleraci'on es producida por la fuerza que la onda incidente ejerce sobre la carga. Si la onda incidente es \textit{plana y polarizada linealmente}, con vector de onda $\vec{k}_0$ y vector de polarizaci'on $\vec{\epsilon}_0$, su campo el'ectrico puede ser descrito usando
 \begin{equation}
@@ -789,14 +789,14 @@ para lo cual requerimos el promedio $\left\langle
 {dP}/{d\Omega}\right\rangle$ en un periodo:
 \begin{eqnarray}
 \left\langle\frac{dP}{d\Omega}\right\rangle  &=&
-\frac{q^2\mu}{16\pi^2 c}\left\langle |\vec{\epsilon}\cdot\vec{a}|^2\right\rangle \\
+\frac{q^2\mu}{16\pi^2 c}\left\langle |\hat{n}\times\vec{a}|^2\right\rangle \\
 &=&\left(\frac{q^2\mu}{16\pi^2 c}\right)\left(\frac{qE_0}{m}\right)^2\left|
-\vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2\left\langle
+\hat{n}\times\vec{\epsilon}_0\right|^2\left\langle
 \cos^2(\omega t)\right\rangle \\
 &=&\left(\frac{q^4\mu E_0^2}{32\pi^2 c m^2}\right)\left|
-\vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2\\
+\hat{n}\times\vec{\epsilon}_0\right|^2\\
 &=&\left(\frac{q^2\mu}{4\pi m}\right)^2\left(\frac{E_0^2}{2\mu c}\right) \left|
-\vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2.
+\hat{n}\times\vec{\epsilon}_0\right|^2.
 \end{eqnarray}
 En la pr'actica es conveniente describir este proceso de scattering por medio de
 la correspondiente  \textbf{secci'on diferencial de scattering}:
@@ -816,12 +816,12 @@ del campo incidente, promediado en un periodo, y est'a dado por la expresi'on \e
 Obtenemos entonces que la secci'on diferencial de scattering es dada por
 \begin{equation}
 \boxed{\frac{d\sigma}{d\Omega}  =\left(\frac{q^2\mu}{4\pi m}\right)^2\left|
-\vec{\epsilon}\cdot\vec{\epsilon}_0\right|^2 .}\label{seeT}
+\hat{n}\times\vec{\epsilon}_0\right|^2 .}\label{seeT}
 \end{equation}
 La cantidad $r_q:={q^2\mu}/{4\pi m}=(1/{4\pi\varepsilon})({q^2}/{mc^2})$ tiene dimensiones de longitud, y juega el rol de ``\textit{tama\~no efectivo}'' de la carga para el proceso de scattering considerado\footnote{Compare, por ejemplo, con la secci'on diferencial de scaterring de una esfera de radio $R$ impactada por peque\~nas part'iculas de prueba (de masa despreciable): $d\sigma/d\Omega=R^2/4$, $\sigma=\pi R^2$.}. Por ejemplo, para el electr'on en el vac'io $r_{\rm e}=(1/{4\pi\varepsilon_0})({e^2}/{m_{\rm e}c^2})\approx 2,8\times 10^{-15}m$. Esta distancia caracter'istica (de la interacci'on electromagn'etica) del electr'on es llamada \textbf{radio cl'asico del electr'on}.
 
 Para evaluar (\ref{seeT}) requerimos de una expresi'on expl'icita para
-$\vec{\epsilon}$. El c'alculo es m'as sencillo si elegimos los ejes coordenados de modo que el vector de onda inicial $\vec{k}_0$ sea paralelo al eje $z$ y el vector $\epsilon_0$ paralelo al eje $x$. Ver figura \ref{fig:thomson}. En este caso, podemos escribir, $\vec{k}_0=k_0\hat{z}$, 
+$\left|\hat{n}\times\vec{\epsilon}_0\right|^2$. El c'alculo es m'as sencillo si elegimos los ejes coordenados de modo que el vector de onda inicial $\vec{k}_0$ sea paralelo al eje $z$ y el vector $\epsilon_0$ paralelo al eje $x$. Ver figura \ref{fig:thomson}. En este caso, podemos escribir, $\vec{k}_0=k_0\hat{z}$, 
 \begin{equation}\label{epsilon0}
 \vec\epsilon_0=\hat{x},
 \end{equation}
@@ -837,33 +837,40 @@ $\hat{n}$.
  \caption{Esquema para el scattering Thomson.}
 \label{fig:thomson}
 \end{figure}
-Sabemos que (la componente radiativa d)el campo el'ectrico producido por la carga es paralelo a
-$\hat{n}\times(\hat{n}\times\vec{a})\propto
-\hat{n}\times(\hat{n}\times\vec{\epsilon}_0)$, por lo que podemos escribir
-\begin{equation}
-\vec{\epsilon}:=\frac{\vec{V}}{|\vec{V}|}, \qquad
-\vec{V}:=\hat{n}\times(\hat{n}\times\vec{\epsilon}_0).
-\end{equation}
-Al calcular $\vec{V}$ usando de \eqref{epsilon0} y \eqref{ene} encontramos que
-\begin{equation}
-\vec{V}=-\hat{x}(\cos^2\theta+\sen^2\theta\sen^2\varphi)+\hat{y}\sen^2\theta\sen\varphi\cos\varphi
-+\hat{z}\sen\theta\cos\theta\cos\varphi,
-\end{equation}
-y por lo tanto
-\begin{equation}
-|\vec{V}|=\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi}.
-\end{equation}
-As'i, obtenemos
-\begin{eqnarray}
- \vec{\epsilon}\cdot\vec{\epsilon}_0&=&\frac{1}{|\vec{V}|}
-\vec{V}\cdot\vec{\epsilon}_0 \\
- &=& -\frac{1}{|\vec{V}|}\left(\sen^2\varphi+\cos^2\theta\cos^2\varphi \right) \\
-  &=&-\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi} .
-\end{eqnarray}
+%Sabemos que (la componente radiativa d)el campo el'ectrico producido por la carga es paralelo a
+%$\hat{n}\times(\hat{n}\times\vec{a})\propto
+%\hat{n}\times(\hat{n}\times\vec{\epsilon}_0)$, por lo que podemos escribir
+%\begin{equation}
+%\vec{\epsilon}:=\frac{\vec{V}}{|\vec{V}|}, \qquad
+%\vec{V}:=\hat{n}\times(\hat{n}\times\vec{\epsilon}_0).
+%\end{equation}
+%Al calcular $\vec{V}$ usando de \eqref{epsilon0} y \eqref{ene} encontramos que
+%\begin{equation}
+%\vec{V}=-\hat{x}(\cos^2\theta+\sen^2\theta\sen^2\varphi)+\hat{y}\sen^2\theta\sen\varphi\cos\varphi
+%+\hat{z}\sen\theta\cos\theta\cos\varphi,
+%\end{equation}
+%y por lo tanto
+%\begin{equation}
+%|\vec{V}|=\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi}.
+%\end{equation}
+%As'i, obtenemos
+%\begin{eqnarray}
+% \vec{\epsilon}\cdot\vec{\epsilon}_0&=&\frac{1}{|\vec{V}|}
+%\vec{V}\cdot\vec{\epsilon}_0 \\
+% &=& -\frac{1}{|\vec{V}|}\left(\sen^2\varphi+\cos^2\theta\cos^2\varphi \right) \\
+%  &=&-\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi} .
+%\end{eqnarray}
+De este modo, tenemos que
+\begin{align}
+\hat{n}\times\vec{\epsilon}_0 = -\hat{z}\sen\theta\sen\varphi +\hat{y}\cos\theta,
+\end{align}
+\begin{align}
+\left|\hat{n}\times\vec{\epsilon}_0\right|^2 = \sen^2\theta\sen^2\varphi +\cos^2\theta,
+\end{align}
 Por lo tanto,
 \begin{equation}
 \frac{d\sigma}{d\Omega}=\left(\frac{q^2\mu}{4\pi m}\right)^2
-\left(\sen^2\varphi+\cos^2\theta\cos^2\varphi \right).
+\left( \sen^2\theta\sen^2\varphi +\cos^2\theta \right).
 \end{equation}
 Recuerde que $\theta$ es el 'angulo de scattering y $\varphi$ es el 'angulo
 azimutal entre la polarizaci'on inicial y la direcci'on de la radiaci'on
@@ -877,15 +884,14 @@ correspondiente a cambiar el 'angulo $\varphi$ por ${\pi}/{2}-\varphi$, ver figu
 \left. \frac{d\sigma}{d\Omega}\right|_{\rm no-pol}&=\frac{1}{2}\left[\left.
 \frac{d\sigma}{d\Omega}\right|_\varphi+\left.
 \frac{d\sigma}{d\Omega}\right|_{\frac{\pi}{2}-\varphi}\right] \\
-&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left[\sen^2\varphi+\cos^2\theta\cos^2\varphi
-+\sen^2\left(\frac{\pi}{2}-\varphi\right)+\cos^2\theta\cos^2\left(\frac{\pi}{2}-\varphi\right)\right] \\
-&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left[\sen^2\varphi+\cos^2\theta\cos^2\varphi
-+\cos^2\varphi+\cos^2\theta\sen^2\varphi\right].
+&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left[\sen^2\theta\sen^2\varphi +\cos^2\theta +\sen^2\theta\sen^2\left(\frac{\pi}{2}-\varphi\right) +\cos^2\theta\right]\\
+&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left(\sen^2\theta\sen^2\varphi +\cos^2\theta +\sen^2\theta\cos^2\varphi +\cos^2\theta\right)\\
+&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left(1+\cos^2\theta\right).
 \end{align}
 Como era de esperar, en este caso obtenemos una secci'on diferencial de scattering independiente de $\varphi$:
 \begin{equation}
 \boxed{\left.\frac{d\sigma}{d\Omega}\right|_{\rm no-pol}=\left(\frac{q^2\mu}{4\pi m}\right)^2\frac{1}
-{2}\left(  1+\cos^2\theta\right) .}
+{2}\left(1+\cos^2\theta\right) .}
 \end{equation}
 \begin{figure}[H]
 \centerline{\psfig{file=fig/fig-Thomson.pdf,height=6cm}}
@@ -901,7 +907,7 @@ La \textbf{secci'on total de scattering}, definida en general como la integral s
 \boxed{\sigma_{\rm T}=\frac{8\pi}{3}\left(\frac{q^2\mu}{4\pi m}\right)^2=\frac{8\pi}{3} r_q^2.}
 \end{equation}
 
-Para el caso de electrones, la secci'on tranversal total de Thomson tiene el valor $\sigma_{\rm T}\approx 6.65\times 10^{-29}$ m$^2$ y $r_q\approx 2.82\times 10^{-15}$ m es el llamado \textit{radio cl'asico del electr'on}.
+Para el caso de electrones, la secci'on tranversal total de Thomson tiene el valor $\sigma_{\rm T}\approx 6.65\times 10^{-29}$ m$^2$.
 
 \subsection{Correcciones a la f'ormula de Thomson*}
 La f'ormula cl'asica de Thomson se ajusta a las observaciones s'olo para frecuencias bajas, donde el momentum del fot'on incidente puede ser ignorado. Cuando los momenta $\hbar\omega/c$ de los fotones son comparables o mayores que $mc$, es necesario incluir algunas modificaciones al modelo sencillo aqu'i expuesto. Uno de estos efectos a tomar en cuenta es el efecto Compton, por el que la frecuencia (energ'ia) de un fot'on dispersado es menor que la frecuencia (energ'ia) del incidente, ya que la carga necesariamente sufre de un ``recoil'' durante el proceso. La cinem'atica (relativista) predice que el cambio de vector de onda de la radiaci'on es de la forma
