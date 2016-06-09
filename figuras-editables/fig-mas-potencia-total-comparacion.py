@@ -6,17 +6,16 @@ Created on Wed May 22 11:04:20 2013
 """
 
 
-import numpy
+from numpy import *
 from scipy import integrate
-from scipy.special import *
-from pylab import *
+from scipy.special import jv
 from matplotlib.pyplot import *
 
-m=numpy.array(range(1,6))
-graficos=2
-betas=[0.5,0.1]
-colores=['ro','bs']
-plt.figure()
+m = array(range(1,6))
+graficos = 2
+betas = [0.5,0.1]
+colores = ['ro','bs']
+figure()
 for i in range(graficos):
     b=betas[i]
 # se define el resultado de la integral, para cada m como una función
@@ -25,17 +24,16 @@ for i in range(graficos):
             # calcula la integral, usando el método de cuadraturas
             return integrate.quad(f, 0, pi)[0]
     # calcula la integral para toda la lista de valores de m
-    y=numpy.array(map(f,m))
+    y = array(map(f,m))
     # normaliza la integral, dividiendo por la suma sobre todos los m's
-    ynorm=y/numpy.sum(y)
+    ynorm = y/sum(y)
     #grafica 
     plot(m,ynorm,colores[i],label='$\\beta= $'+str(betas[i])) 
 legend()
-axis([0.8,5.2,0,1])
+xlim(0.8,5.2)
+ylim(0,1.2)
 grid(True)
 minorticks_on()
-xlabel('$m$')
-ylabel('$\left\langle {P_m}\\right\\rangle $')
-
-
-savefig("fig-mas-potencia-total-comparacion.svg")
+xlabel('$m$', fontsize=15)
+ylabel('$\left\langle {P_m}\\right\\rangle $',  fontsize=15)
+savefig("fig-mas-potencia-total-comparacion.pdf")
