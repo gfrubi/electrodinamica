@@ -2,7 +2,7 @@
 
 from matplotlib.pyplot import *
 from numpy import *
-from scipy.special import *
+from scipy.special import jv
 
 b=0.5
 theta = linspace(0, 2*pi, 200)
