@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu May 16 18:41:43 2013
 
-@author: gr
-"""
 from matplotlib.pyplot import *
 from numpy import *
 from scipy.special import *

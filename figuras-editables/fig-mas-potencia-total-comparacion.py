@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed May 22 11:04:20 2013
-
-@author: gr
-"""
-
 
 from numpy import *
 from scipy import integrate
