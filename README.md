@@ -8,4 +8,4 @@ Puede descargar el archivo pdf compilado directamente desde [aquí](https://gith
 Esta obra ha sido publicada bajo una [licencia GPL v3](https://github.com/gfrubi/electrodinamica/blob/master/LICENSE). 
 
 Otros apuntes en https://sites.google.com/site/apuntesdecienciasfisicas
-
+popopopo
