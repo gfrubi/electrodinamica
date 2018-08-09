@@ -27,7 +27,7 @@ En 1785 Coulomb\footnote{Charles Augustin de Coulomb: f'isico e ingeniero franc'
 une. Finalmente el sentido de la fuerza es tal que dos cargas de igual signo se repelen y dos de signos opuestos se atraen. Este resultado experimental, y por consiguiente necesariamente aproximado, es la base de la teor'ia de la interacci'on electrost'atica. Esta teor'ia \textit{asume} entonces que la fuerza entre cargas ``puntuales'' es \textit{exactamente} inversamente proporcional al cuadrado de la distancia que las separa y en la direcci'on de la l'inea que los une, de modo que
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-Coulomb.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-Coulomb.pdf}}
 \caption{Fuerza electrost'atica entre dos cargas puntuales.}
 \label{fig:Coulomb}
 \end{figure}
@@ -148,7 +148,9 @@ Una l'inea de campo particular queda determinada por la soluci'on del sistema de
 
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-E-01.pdf,height=4cm,angle=0}\hfill\psfig{file=fig/fig-E-02.pdf,height=4cm,angle=0}\hfill\psfig{file=fig/fig-E-03.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-E-01.pdf}\hfill 
+\includegraphics[height=4cm]{fig/fig-E-02.pdf}\hfill
+\includegraphics[height=4cm]{fig/fig-E-03.pdf}}
 \caption{Ejemplos simples de l'ineas de campo el'ectrico.}
 \label{fig-E}
 \end{figure}
@@ -274,7 +276,7 @@ interfase}\label{secCBE}
 La figura \ref{DSCE1} muestra la interfase entre dos regiones separadas por una
 superficie $S$ que posee una densidad superficial de carga $\sigma(x)$.
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-superficie-frontera.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-superficie-frontera.pdf}}
 \caption{Condiciones de frontera para el campo el'ectrico.}
 \label{DSCE1}
 \end{figure}
@@ -282,7 +284,7 @@ Para estudiar las condiciones que el campo el'ectrico satisface en esta
 interfase, aplicamos primero la ley de Gauss, a la superficie gaussiana de la
 figura \ref{DSCE2}:
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-condicion-borde-electrico-01.pdf,height=5cm,angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-condicion-borde-electrico-01.pdf}}
 \caption{Condici'on de frontera para la componente normal del campo el'ectrico.}
 \label{DSCE2}
 \end{figure}
@@ -306,7 +308,7 @@ Por tanto, obtenemos
 
 Por otro lado, aplicando (\ref{ointE0}) a la curva de la figura \ref{DSCE3} obtenemos:
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-condicion-borde-electrico-02.pdf,height=5cm,angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-condicion-borde-electrico-02.pdf}}
 \caption{Condici'on de frontera para la componente tangencial del campo el'ectrico.}
 \label{DSCE3}
 \end{figure}
@@ -442,8 +444,9 @@ Con este resultado, el potencial (\ref{phialpha}) puede escribirse como
 \end{equation}
 Como vemos, los primeros dos t'erminos son independientes del campo externo y representan el potencial de la carga neta de la esfera (que hemos supuesto aislada). El tercer t'ermino es el campo externo inicial y por lo tanto el 'ultimo t'ermino describe el campo el'ectrico inducido producto de la polarizaci'on de la esfera conductora.
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-esfera-conductora-campo-externo.pdf,height=5.5cm,angle=0}
-\hspace{1cm}\psfig{file=fig/fig-esfera-conductora-campo-externo-2.pdf,height=5.5cm,angle=0}}
+\centerline{\includegraphics[height=5.5cm]{fig/fig-esfera-conductora-campo-externo.pdf}
+\hspace{1cm}
+\includegraphics[height=5.5cm]{fig/fig-esfera-conductora-campo-externo-2.pdf}}
 \caption{Campo el'ectrico de una esfera conductora neutra en un campo el'ectrico externo. El gr'afico de la izquierda (normalizado) fue creado usando \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-esfera-conductora-campo-externo-raw.py}{este script} Python. La figura de la derecha fue generada usando \href{http://commons.wikimedia.org/wiki/User:Geek3/VectorFieldPlot}{VectorFieldPlot}, a partir de \href{http://commons.wikimedia.org/wiki/File:VFPt_superconductor_ball_E-field.svg}{este} archivo original.}
 \label{fig:ecce}
 \end{figure}
@@ -556,7 +559,7 @@ soluci'on del problema original, dentro (pero \underline{no} fuera) de $V$. Como
 
 \subsection{Conductor plano}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-carga-imagen-01.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-carga-imagen-01.pdf}}
 \caption{Conductor plano, carga real $q$ e imagen $q'$.}
 \label{ci01}
 \end{figure}
@@ -577,8 +580,9 @@ Por lo tanto, la soluci'on para el potencial en todo punto con $x\ge 0$ es dada 
 \end{equation}
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-metodo-imagen-plano-01.pdf,height=4.5cm,angle=0}
-\hspace{2cm}\psfig{file=fig/fig-metodo-imagen-plano-02.pdf,height=4.5cm,angle=0}}
+\centerline{\includegraphics[height=4.5cm]{fig/fig-metodo-imagen-plano-01.pdf}
+\hspace{2cm}
+\includegraphics[height=4.5cm]{fig/fig-metodo-imagen-plano-02.pdf}}
 \caption{Campo el'ectrico de plano conductor (puesto a Tierra) y carga puntual. 
 Figuras adaptadas de  \href{http://commons.wikimedia.org/wiki/File:VFPt_image_charge_plane_horizontal.svg}{este} y \href{http://commons.wikimedia.org/wiki/File:VFPt_image_charge_plane.svg}{este} archivo original.}
 \label{fig:pyc}
@@ -612,7 +616,7 @@ Note que esta fuerza es la misma que ejerce(r'ia) la carga imagen sobre la carga
 
 \subsection{Conductor esf'erico}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-carga-imagen-02.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-carga-imagen-02.pdf}}
 \caption{Conductor esf'erico, carga real $q$ e imagen $q'$.}
 \label{ci02}
 \end{figure}
@@ -636,8 +640,8 @@ r^2+d^2-2dr\cos\theta}}
 \end{equation}
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-metodo-imagen-esfera-01.pdf,height=5cm,angle=0}
-\hspace{2cm}\psfig{file=fig/fig-metodo-imagen-esfera-02.pdf,height=5cm,angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-metodo-imagen-esfera-01.pdf}
+\hspace{2cm}\includegraphics[height=5cm]{fig/fig-metodo-imagen-esfera-02.pdf}}
 \caption{Campo el'ectrico de esfera conductora (puesta a Tierra) y carga puntual. 
 Figuras adaptadas a partir de  \href{http://commons.wikimedia.org/wiki/File:VFPt_metal_ball_grounded.svg}{este} y \href{http://commons.wikimedia.org/wiki/File:VFPt_metal_ball_grounded_transparent.svg}{este} archivo original.}
 \label{fig:eyc}
@@ -669,7 +673,7 @@ Finalmente, la fuerza que la esfera ejerce sobre la carga es dada por
 
 \subsection{Conductor Cil'indrico}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-metodo-imagenes-cilindros-01.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-01.pdf}}
 \caption{Conductor cil'indrico, l'ineas de densidad $\lambda$ y $-\lambda$.}
 \label{ci03}
 \end{figure}
@@ -732,9 +736,9 @@ $x_0$ y $R$. Considerando que $V>0$, es decir, el potencial sobre el cilindro es
 d=\frac{R(M^2-1)}{2M}, \qquad \lambda=\frac{2\pi\varepsilon_0V}{\ln M}.
 \end{equation}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-metodo-imagenes-cilindros-02.pdf,height=6cm,angle=0}
+\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-02.pdf}
 \hspace{1cm}
-\psfig{file=fig/fig-metodo-imagenes-cilindros-03.pdf,height=6cm,angle=0}}
+\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-03.pdf}}
 \caption{Superficies equipotenciales y l'ineas de campo. C'odigo Python de la figura de la derecha disponible \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-metodo-imagenes-cilindros-03.py}{aqu\'i}.}
 \label{ci04}
 \end{figure}
@@ -922,8 +926,7 @@ cargas, a trav'es de la densidad de energ'ia $u_E(\vec{x})$.
 
 \subsubsection{Ejemplo}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-condensador-01.pdf,height=4cm,
-angle=0 } }
+\centerline{\includegraphics[height=4cm]{fig/fig-condensador-01.pdf}}
 \caption{Energ'ia almacenada en un condensador de placas paralelas.}
 \label{fig:cpp}
 \end{figure}
@@ -964,8 +967,7 @@ U=\frac{C(\Delta V)^2}{2}=\frac{Q^2}{2C}.
 \section{Expansi'on multipolar cartesiana}
 \subsection{Expansi'on Multipolar}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-expansion-multipolar-electrica-01.pdf,height=4cm,
-angle=0 } }
+\centerline{\includegraphics[height=4cm]{fig/fig-expansion-multipolar-electrica-01.pdf}}
 \caption{Esquema de la expansi'on multipolar el'ectrica.}
 \label{fig:emc}
 \end{figure}
@@ -1385,7 +1387,7 @@ se \textit{polariza}.
 El campo el'ectrico que causa (el cambio en) la polarizaci'on puede ser un campo ``externo'' (producido por ``cargas externas''\footnote{Tambi'en llamadas ``cargas libres'' o ``cargas no ligadas''.}, que no forman parte
 de la estructura at'omica/molecular caracter'istica del medio).
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-dielectrico-01.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-dielectrico-01.pdf}}
 \caption{Un material diel'ectrico se polariza en presencia de un campo externo.}
 \label{diel01}
 \end{figure}
@@ -1495,7 +1497,7 @@ La utilidad de usar $\vec{D}$ en lugar de $\vec{E}$ en esta ``ley de Gauss"
 
 \subsubsection{Ejemplo: Esfera diel'ectrica is'otropa y carga central}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-dielectrico-y-carga-01.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-dielectrico-y-carga-01.pdf}}
 \caption{Un material diel'ectrico is'otropo con una carga central.}
 \label{diel02}
 \end{figure}
@@ -1835,8 +1837,7 @@ El vector desplazamiento el'ectrico satisface la ecuaci'on (\ref{divD}), que es
 de la misma forma que la ley de Gauss (\ref{leygauss-dif}), con la diferencia
 que en (\ref{divD}) el factor $\varepsilon_0$ est'a ausente y que la densidad de carga en el lado derecho es s'olo la densidad de cargas externas (\underline{no} las de polarizaci'on). Como consecuencia, podemos aplicar el mismo procedimiento discutido en la secci'on \ref{secCBE} para derivar las condiciones que el vector desplazamiento debe satisfacer en la frontera de dos materiales. Consideramos una superficie que divide dos diel'ectricos de propiedades diferentes, en la que, eventualmente, existe una densidad de carga externa $\sigma_{\rm ext}$. Si $\hat{n}$ es el vector unitario normal a la superficie en un punto dado, que apunta desde el material 1 hasta el 2, entonces
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-dielectrico-condicion-borde-01.pdf,height=5cm,
-angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-dielectrico-condicion-borde-01.pdf}}
 \caption{La componente normal del vector desplazamiento puede ser discontinua
 si existen cargas externas en el la interfase entre dos diel'ectrico.}
 \label{CF1}
@@ -1853,8 +1854,7 @@ finalmente que el potencial el'ectrico siempre es una funci'on continua, de
 modo que el campo el'ectrico, aunque eventualmente discontinuo, es finito en
 todo punto.
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-dielectrico-condicion-borde-02.pdf,height=5cm,
-angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-dielectrico-condicion-borde-02.pdf}}
 \caption{La componente tangencial del campo el'ectrico es siempre continua
 en una interfase.}
 \label{CF2}
@@ -1864,8 +1864,7 @@ en una interfase.}
 
 Consideramos aqu'i el caso particular de medios lineales e is'otropos caracterizados por las constantes diel'ectricas $\kappa_1$ y $\kappa_2$ respectivamente. Consideramos adem'as el 'angulo entre los vectores campo el'ectrico a cada lado de la superficie y el vector normal. Ver figura \ref{CF3}. 
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-dielectrico-condicion-borde-03.pdf,height=5cm,
-angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-dielectrico-condicion-borde-03.pdf}}
 \caption{Refracci'on de las l'ineas de campo.}
 \label{CF3}
 \end{figure}
@@ -2165,8 +2164,7 @@ U}{\partial\theta}\right)_\phi
 \subsubsection{Ejemplo: Fuerza sobre un condensador semi-lleno con un
 diel'ectrico}
 \begin{figure}[!h]
-\centerline{\psfig{file=fig/fig-condensador-semi-lleno-01.pdf , height=4cm ,
-angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-condensador-semi-lleno-01.pdf}}
 \caption{Condensador parcialmente lleno con diel'ectrico.}
 \label{fig:fccd}
 \end{figure}
