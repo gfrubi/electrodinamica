@@ -535,12 +535,12 @@ Note que los teoremas anteriores implican que el campo el'ectrost'atico en una r
 \section{M'etodo de las im'agenes}
 Como vimos la secci'on \ref{sec:uniP}, la soluci'on de la ecuaci'on de Poisson, que determina el potencial electrost'atico y por lo tanto tambi'en el campo el'ectrico, es 'unica dadas las condiciones de borde apropiadas. Debido a esto, si
 obtenemos, \textit{por cualquier m'etodo}, una soluci'on que respete las condiciones de
-borde dadas, 'esta es \textit{la} soluci'on del problema. El \textit{m'etodo de
+borde dadas, 'esta es \textit{la} soluci'on del problema en ese volumen. El \textit{m'etodo de
 las im'agenes} suministra un procedimiento para encontrar una soluci'on en
 casos donde el sistema contiene conductores (perfectos) a potencial constante
 (t'ipicamente, ``puestos a tierra'') y la geometr'ia de los conductores y las
 cargas es simple. Para ello, se introducen \textit{cargas ficticias} en
-posiciones apropiadas tales que el campo creado por el sistema de cargas reales
+posiciones apropiadas \textit{fuera de nuestro volumen $V$ de inter'es} tales que el campo creado por el sistema de cargas reales
 + ficticias satisface las condiciones de borde.
 
 En otras palabras, el m'etodo de las im'agenes se basa en el hecho que la
@@ -557,13 +557,17 @@ soluci'on del problema original, dentro (pero \underline{no} fuera) de $V$. Como
 
 
 
-\subsection{Conductor plano}
+\subsection{Conductor plano y carga puntual}
 \begin{figure}[!h]
 \centerline{\includegraphics[height=6cm]{fig/fig-carga-imagen-01.pdf}}
 \caption{Conductor plano, carga real $q$ e imagen $q'$.}
 \label{ci01}
 \end{figure}
-Consideremos la situaci'on donde una carga puntual $q$ se encuentra a una distancia $d$ de un plano conductor (infinito) ``puesto a tierra'' (de modo que su potencial es igual al potencial en el infinito, elegido como $\phi_\infty=0$). Eligiendo los ejes coordenados como lo indica la figura \ref{ci01}, tendremos que en la situaci'on estacionaria $\phi=0$ para $x\le 0$. Usando el m'etodo de las im'agenes resolvemos el problema equivalente obtenido al reemplazar el plano conductor por una carga ficticia (imagen) $q'$ ubicada en la posici'on $x=-d'<0$. El potencial de la condiguraci'on de carga real m'as carga imagen es entonces
+Consideremos la situaci'on donde una carga puntual $q$ se encuentra a una distancia $d$ de un plano conductor (infinito) ``puesto a tierra'' (de modo que su potencial es igual al potencial en el infinito, elegido como $\phi_\infty=0$). Eligiendo los ejes coordenados como lo indica la figura \ref{ci01}, tendremos que en la situaci'on estacionaria $\phi=0$ para $x\le 0$. 
+
+El potencial no es simplemente el de la carga puntual $\phi_{\rm puntual} = \dfrac{q}{4\pi\epsilon_0 r}$, puesto que la presencia de la carga $q$ induce una cierta cantidad de carga en la superficie del conductor. Luego, el potencial total es debido en parte a $q$ y en otra parte a la carga inducida $Q_{\rm ind}$. Pero, ¿c'omo calculamos el potencial si no conocemos cu'anta carga es inducida y c'omo esta se distribuye? 
+
+Desde un punto de vista matem'atico, nuestro problema es resolver la ecuación de Poisson en la región $x>0$, con una carga puntual $q$ situada en $ (0,0,d) $ sujeta a las condiciones de contorno (a) $\phi = 0 $ en $x=0$ (pues el conductor est'a puesto a tierra) y (b) $V \rightarrow 0$ lejos de la carga (cuando $x^2 + y^2 + z^2 >> d^2$). Usando el m'etodo de las im'agenes resolvemos el problema equivalente obtenido al reemplazar el plano conductor por una carga ficticia (imagen) $q'$ ubicada en la posici'on $x=-d'<0$. El potencial de la configuraci'on de carga real m'as carga imagen es entonces
 \begin{equation}
  \phi(x)=\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{\sqrt{(x-d)^2+y^2+z^2}}+\frac
 {q'}{\sqrt{(x+d')^2+y^2+z^2}}\right].
@@ -578,6 +582,7 @@ Por lo tanto, la soluci'on para el potencial en todo punto con $x\ge 0$ es dada 
  \phi(x)=\frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{(x-d)^2+y^2+z^2}}-\frac
 {1}{\sqrt{(x+d)^2+y^2+z^2}}\right], \qquad x\ge 0.
 \end{equation}
+Note que esta soluci'on un potencial distinto para la región $x < 0$. Sin embargo, esto no afecta la soluci'on del problema original, pues nuestra región de interés es la regi'on $x \ge 0$.
 \begin{center}
 \begin{figure}[H]
 \centerline{\includegraphics[height=4.5cm]{fig/fig-metodo-imagen-plano-01.pdf}
@@ -597,6 +602,16 @@ que, luego de algo de 'algebra, resultar ser
 \begin{equation}
  \sigma(y,z)=-\frac{q}{2\pi}\frac{d}{(d^2+y^2+z^2)^{3/2}}.
 \end{equation}
+Con esto, podemos calcular la carga total inducida sobre el conductor
+\begin{equation}
+Q_{\rm ind} = \int \sigma(y,z) da ,
+\end{equation}
+que es m'as simple de calcular en coordenadas polares, lo que nos da que
+\begin{equation}
+Q_{\rm ind} = \int_0^{2\pi} \int_0^\infty \dfrac{-qd}{2\pi (r^2 + d^2)^{3/2}} \ r  dr  d\phi = \left. \dfrac{qd}{\sqrt{r^2 + d^2}} \right|_{0}^{\infty} = -q,
+\end{equation}
+lo que es consistente con nuestra elecci'on inicial para el valor de la carga imagen $q'$.
+
 Por otro lado, la fuerza que ejerce el plano sobre la carga puede ser calculada usando
 \begin{equation}
 \vec{F}_q=q\vec{E}',
