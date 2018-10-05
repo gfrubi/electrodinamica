@@ -563,11 +563,11 @@ soluci'on del problema original, dentro (pero \underline{no} fuera) de $V$. Como
 \caption{Conductor plano, carga real $q$ e imagen $q'$.}
 \label{ci01}
 \end{figure}
-Consideremos la situaci'on donde una carga puntual $q$ se encuentra a una distancia $d$ de un plano conductor (infinito) ``puesto a tierra'' (de modo que su potencial es igual al potencial en el infinito, elegido como $\phi_\infty=0$). Eligiendo los ejes coordenados como lo indica la figura \ref{ci01}, tendremos que en la situaci'on estacionaria $\phi=0$ para $x\le 0$. 
+Consideremos la situaci'on donde una carga puntual $q$ se encuentra a una distancia $d$ de un plano conductor (infinito) ``puesto a tierra'' (de modo que su potencial es igual al potencial en el infinito, elegido como $\phi_\infty=0$). Eligiendo los ejes coordenados como lo indica la figura \ref{ci01}, tendremos que en la situaci'on estacionaria $\phi(x)=0$ para $x\le 0$. 
 
-El potencial no es simplemente el de la carga puntual $\phi_{\rm puntual} = \dfrac{q}{4\pi\epsilon_0 r}$, puesto que la presencia de la carga $q$ induce una cierta cantidad de carga en la superficie del conductor. Luego, el potencial total es debido en parte a $q$ y en otra parte a la carga inducida $Q_{\rm ind}$. Pero, ¿c'omo calculamos el potencial si no conocemos cu'anta carga es inducida y c'omo esta se distribuye? 
+El potencial no es simplemente el de la carga puntual $\phi_{\rm puntual} = {q}/{4\pi\epsilon_0 r}$, puesto que la presencia de la carga $q$ induce una cierta distribuci'on de carga en la superficie del conductor. Luego, el potencial total es debido en parte a $q$ y en otra parte a la distribuci'on de carga inducida. Pero, ¿c'omo calculamos el potencial si no conocemos cu'anta carga es inducida y c'omo esta se distribuye? 
 
-Desde un punto de vista matem'atico, nuestro problema es resolver la ecuación de Poisson en la región $x>0$, con una carga puntual $q$ situada en $ (0,0,d) $ sujeta a las condiciones de contorno (a) $\phi = 0 $ en $x=0$ (pues el conductor est'a puesto a tierra) y (b) $V \rightarrow 0$ lejos de la carga (cuando $x^2 + y^2 + z^2 >> d^2$). Usando el m'etodo de las im'agenes resolvemos el problema equivalente obtenido al reemplazar el plano conductor por una carga ficticia (imagen) $q'$ ubicada en la posici'on $x=-d'<0$. El potencial de la configuraci'on de carga real m'as carga imagen es entonces
+Desde un punto de vista matem'atico, nuestro problema es resolver la ecuación de Poisson en la región $x>0$, con una carga puntual $q$ situada en $\vec{x}_q=d\hat{x}$ sujeta a las condiciones de contorno: a) $\phi = 0 $ en $x=0$ (pues el conductor est'a puesto a tierra), y b) $\phi\rightarrow 0$ lejos de la carga (cuando $x^2 + y^2 + z^2 \gg d^2$). Usando el m'etodo de las im'agenes resolvemos el problema equivalente obtenido al reemplazar el plano conductor por una carga ficticia (imagen) $q'$ ubicada en la posici'on $x=-d'<0$. El potencial de la configuraci'on de carga real m'as carga imagen es entonces
 \begin{equation}
  \phi(x)=\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{\sqrt{(x-d)^2+y^2+z^2}}+\frac
 {q'}{\sqrt{(x+d')^2+y^2+z^2}}\right].
@@ -582,7 +582,7 @@ Por lo tanto, la soluci'on para el potencial en todo punto con $x\ge 0$ es dada 
  \phi(x)=\frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{(x-d)^2+y^2+z^2}}-\frac
 {1}{\sqrt{(x+d)^2+y^2+z^2}}\right], \qquad x\ge 0.
 \end{equation}
-Note que esta soluci'on un potencial distinto para la región $x < 0$. Sin embargo, esto no afecta la soluci'on del problema original, pues nuestra región de interés es la regi'on $x \ge 0$.
+Note que esta soluci'on define un potencial no nulo para la región $x < 0$. Sin embargo, esto no afecta la soluci'on del problema original, pues nuestra región de interés es la regi'on $x \ge 0$.
 \begin{center}
 \begin{figure}[H]
 \centerline{\includegraphics[height=4.5cm]{fig/fig-metodo-imagen-plano-01.pdf}
@@ -598,17 +598,17 @@ La densidad de carga inducida en el conductor puede calcularse usando
  \sigma(y,z)=\varepsilon_0
 \vec{E}\cdot\hat{n}=-\varepsilon_0\left.(\partial_x\phi)\right|_{x=0}
 \end{equation}
-que, luego de algo de 'algebra, resultar ser
+que, luego de algo de 'algebra, resulta ser
 \begin{equation}
  \sigma(y,z)=-\frac{q}{2\pi}\frac{d}{(d^2+y^2+z^2)^{3/2}}.
 \end{equation}
-Con esto, podemos calcular la carga total inducida sobre el conductor
+Con esto, podemos calcular la carga total inducida sobre el conductor,
 \begin{equation}
-Q_{\rm ind} = \int \sigma(y,z) da ,
+Q_{\rm ind} = \int \sigma(y,z) dS.
 \end{equation}
-que es m'as simple de calcular en coordenadas polares, lo que nos da que
+La integral resulta m'as simple de calcular en coordenadas polares, ya que
 \begin{equation}
-Q_{\rm ind} = \int_0^{2\pi} \int_0^\infty \dfrac{-qd}{2\pi (r^2 + d^2)^{3/2}} \ r  dr  d\phi = \left. \dfrac{qd}{\sqrt{r^2 + d^2}} \right|_{0}^{\infty} = -q,
+Q_{\rm ind} = \int_0^{2\pi} \int_0^\infty \dfrac{-qd}{2\pi (r^2 + d^2)^{3/2}} \ r  dr  d\varphi = \left. \dfrac{qd}{\sqrt{r^2 + d^2}} \right|_{0}^{\infty} = -q,
 \end{equation}
 lo que es consistente con nuestra elecci'on inicial para el valor de la carga imagen $q'$.
 
@@ -624,7 +624,7 @@ determinado por el potencial
 \end{equation}
 evaluado en la posici'on en que se ubica la carga $q$, es decir,
 \begin{eqnarray}
- \vec{F}_q&=&-q(\vec{\nabla}\phi')|_{\vec{x}=d\hat{x}} \\
+ \vec{F}_q&=&-q(\vec{\nabla}\phi')|_{\vec{x}_q} \\
 &=&-\frac{q^2}{16\pi\varepsilon_0d^2}\,\hat{x}.
 \end{eqnarray}
 Note que esta fuerza es la misma que ejerce(r'ia) la carga imagen sobre la carga real.
