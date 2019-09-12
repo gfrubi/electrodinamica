@@ -23,8 +23,8 @@ En general, la interacci'on electromagn'etica entre cargas puede ser bastante co
 
 \subsection{Ley de Coulomb}
 
-En 1785 Coulomb\footnote{Charles Augustin de Coulomb: f'isico e ingeniero franc'es (1736-1806). Ver \url{http://es.wikipedia.org/wiki/Charles-Augustin_de_Coulomb}.} \textit{establece experimentalmente} que la fuerza entre dos cargas muy peque\~nas comparadas con la distancia que las separa (``puntuales'') es \textit{aproximadamente}  proporcional a la magnitud de las cargas, inversamente proporcional al cuadrado de la distancia entre ellas y en la direcci'on que las
-une. Finalmente el sentido de la fuerza es tal que dos cargas de igual signo se repelen y dos de signos opuestos se atraen. Este resultado experimental, y por consiguiente necesariamente aproximado, es la base de la teor'ia de la interacci'on electrost'atica. Esta teor'ia \textit{asume} entonces que la fuerza entre cargas ``puntuales'' es \textit{exactamente} inversamente proporcional al cuadrado de la distancia que las separa y en la direcci'on de la l'inea que los une, de modo que
+En 1785 Coulomb\footnote{Charles Augustin de Coulomb: f'isico e ingeniero franc'es (1736-1806). Ver \url{http://es.wikipedia.org/wiki/Charles-Augustin_de_Coulomb}.} \textit{establece experimentalmente} que la fuerza entre dos cargas muy peque\~nas (comparadas con la distancia que las separa, ``puntuales'') es \textit{aproximadamente}  proporcional a la magnitud de las cargas, inversamente proporcional al cuadrado de la distancia entre ellas y en la direcci'on que las
+une. Finalmente el sentido de la fuerza es tal que dos cargas de igual signo se repelen y dos de signos opuestos se atraen. Este resultado experimental, y por consiguiente necesariamente aproximado, es la base de la teor'ia de la interacci'on electrost'atica. Esta teor'ia \textit{asume} entonces que la fuerza entre cargas muy pequeñas (``puntuales'') es \textit{exactamente} inversamente proporcional al cuadrado de la distancia que las separa y en la direcci'on de la l'inea que los une, de modo que
 \begin{center}
 \begin{figure}[H]
 \centerline{\includegraphics[height=4cm]{fig/fig-Coulomb.pdf}}
@@ -42,16 +42,11 @@ Podemos por tanto escribir
 F_i=k\frac{qq'}{\left\vert \vec x-\vec x'\right\vert^2}
 \cdot\frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert }.
 \end{equation}
-El valor de la constante $k$ depende del sistema de unidades usado para medir
-magnitud de las cargas el'ectricas. Nosotros utilizaremos el sistema internacional SI (MKSA) donde la constante $k$ es denotada como\footnote{En el \textit{sistema gaussiano de unidades} (cgs) se
-define $k:=1$ de modo que la unidad de carga no es independiente:
-$[q]\stackrel{\text{cgs}}{=}cm^{3/2}g^{1/2}s^{-1}$. Esta unidad es llamada una
-\textit{unidad electrost'atica} (esu) o un \textit{statCoulomb}.}%
+El valor de la constante $k$ depende del sistema de unidades usado para medir la magnitud de las cargas el'ectricas. Aquí utilizaremos el sistema internacional SI (MKSA) donde la constante $k$ es \textit{denotada} como\footnote{En el \textbf{sistema gaussiano de unidades} (cgs) se define $k:=1$ de modo que la unidad de carga no es independiente: $[q]\stackrel{\text{cgs}}{=}cm^{3/2}g^{1/2}s^{-1}$. Esta unidad es llamada una \textit{unidad electrost'atica} (esu) o un \textit{statCoulomb}.}%
 \begin{equation}
 k:=\frac{1}{4\pi\varepsilon_0},
 \end{equation}
-y donde $\varepsilon_0$ se conoce como la \textit{permitividad del vac\'{\i}o}, y
-entonces
+y donde $\varepsilon_0$ se conoce como la \textit{permitividad del vac\'{\i}o}, y entonces
 \begin{equation}\marginnote{Ley de Coulomb}
 \boxed{F_i=\frac{qq'}{4\pi\varepsilon_0}\frac{\left(  x_i-x_i^{\prime
 }\right)  }{\left\vert \vec x-\vec x'\right\vert ^3}.}\label{leycoulomb}%
@@ -61,14 +56,11 @@ $k$ tiene el valor
 \begin{equation}
 k=c^2\times 10^{-7}\ Nm^2C^{-2},
 \end{equation}
-en que $c$ es la \textit{velocidad de la luz en el vac\'{\i}o}. Su valor es
-$c=2.99792458\times 10^{8}\,ms^{-1}$. Con esto $k\approx 9.0\times
+en que $c$ es la \textit{velocidad de la luz en el vac\'{\i}o}. Su valor es $c=2.99792458\times 10^{8}\,ms^{-1}$. Con esto $k\approx 9.0\times
 10^{9}\,Nm^2C^{-2}$, $\varepsilon _0\approx 8.854\times 10^{-12}
-\,C^2N^{-1}m^{-2}$.
+\,C^2N^{-1}m^{-2}$. Para una discusión de los distintos sistemas de unidades usados en la teoría elecromagnética, ver el apéndice \ref{appuni}.
 
-La expresi'on \eqref{leycoulomb} es conocida como \textit{ley de Coulomb}.
-Adicionalmente, se \textit{asume} que la fuerza que ejerce un conjunto de $N$
-cargas puntuales $q^{(\alpha)}$, $\alpha=1,\cdots N$, en posiciones $x^{(\alpha)}_i$ sobre una carga $q$ con posici'on $x_i$ es
+La expresi'on \eqref{leycoulomb} es conocida como \textbf{ley de Coulomb}. Adicionalmente, se \textit{asume} que la fuerza que ejerce un conjunto de $N$ cargas puntuales $q^{(\alpha)}$, $\alpha=1,\cdots N$, en posiciones $x^{(\alpha)}_i$ sobre una carga $q$ con posici'on $x_i$ es
 \begin{equation}
 F_i   =\sum_{\alpha=1}^{N}\frac{qq^{(\alpha)}}{4\pi\varepsilon_0}\frac{\left(
 x_i-x^{(\alpha)}_i\right)  }{\left\vert  \vec x-\vec x^{(\alpha)}\right\vert^3}
@@ -76,9 +68,8 @@ x_i-x^{(\alpha)}_i\right)  }{\left\vert  \vec x-\vec x^{(\alpha)}\right\vert^3}
 x_i-x^{(\alpha)}_i\right) }{\left\vert  \vec x-\vec
 x^{(\alpha)}\right\vert^3}.\label{leycoulomb-discre}
 \end{equation}
-La suposici'on que esta fuerza sea la suma (vectorial) de las fuerzas individuales que
-actuar'ia sobre la carga $q$ debido a cada una de las cargas $q^{(\alpha)}$ es
-llamado \textit{principio de superposici'on}. Note que, como su nombre lo indica, este es un \textit{principio} en el que se basa la teor'ia electromagn'etica, ya que no es \textit{necesario a priori} que la interacci'on electrost'atica respete esta propiedad. En otras palabras, podr'ia ocurrir (o haber ocurrido) que la fuerza que dos cargas ejercen sobre una tercera no fuese \textit{exactamente} la suma vectorial de las fuerzas que cada una de ellas ejerce individualmente. Por ejemplo, hoy sabemos que esto 'ultimo es lo que efectivamente ocurre con la interacci'on gravitacional (!`\textit{no} satisface el principio de superposici'on!). En la teor'ia electromagn'etica se asume que la superposici'on es satisfecha en forma exacta. Como veremos, una consecuencia de este principio es que las ecuaciones que relacionan los campos el'ectricos (y sus respectivas fuerzas) con las distribuciones de carga que las producen est'an descritas por \textit{ecuaciones} (diferenciales y/o integrales) \textit{lineales}.
+
+El suponer que esta fuerza sea la suma (vectorial) de las fuerzas individuales que actuar'ia sobre la carga $q$ debido a cada una de las cargas $q^{(\alpha)}$ es llamado \textbf{principio de superposici'on}. Note que, como su nombre lo indica, este es un \textit{principio} en el que se basa la teor'ia electromagn'etica, ya que no es \textit{necesario a priori} que la interacci'on electrost'atica respete esta propiedad. En otras palabras, podr'ia ocurrir (o haber ocurrido) que la fuerza que dos cargas ejercen sobre una tercera no fuese \textit{exactamente} la suma vectorial de las fuerzas que cada una de ellas ejerce individualmente. Por ejemplo, hoy sabemos que esto 'ultimo es lo que efectivamente ocurre con la interacci'on gravitacional (!`\textit{no} satisface el principio de superposici'on!). En la teor'ia electromagn'etica se asume que la superposici'on es satisfecha en forma exacta. Como veremos, una consecuencia de este principio es que las ecuaciones que relacionan los campos el'ectricos (y sus respectivas fuerzas) con las distribuciones de carga que las producen est'an descritas por \textit{ecuaciones} (diferenciales y/o integrales) \textit{lineales}.
 
 
 Para una \textit{distribuci'on continua de cargas} podemos considerar un elemento de
@@ -107,20 +98,23 @@ El campo el'ectrico $E_i(\vec{x})$ en un punto $x_i$ es definido operacionalment
 \begin{equation}
 E_i(\vec x):=\lim_{q\rightarrow0}\frac{F_i}{q}.
 \end{equation}
-Note que el proceso l'imite ${q\rightarrow0}$ es necesario puesto que el uso de una carga $q$ de forma y magnitud arbitraria en general (mediante la fuerza de Coulomb) \textit{modificar'a la distribuci'on de cargas original}. Si la carga $q$ es cada vez m'as peque\~na en extensi'on y magnitud, entonces 'esta modificar'a cada vez menos la distribuci'on de carga original. En el l'imite ${q\rightarrow0}$, que ciertamente es una abstracci'on ya que en la pr'actica no existen cargas puntuales, ni tampoco cargas de magnitud arbitrariamente peque\~na, el cuociente $F_i/q$ ser'a independiente de la carga de prueba usada, y describir'a por lo tanto una cantidad dependiente s'olo de la distribuci'on de cargas considerada. Esto permite entonces considerar al campo el'ectrico como el campo \textit{generado por la distribuci'on de cargas}.
 
-Con estas consideraciones, tenemos entonces que el campo el'ectrico generado por un conjunto de cargas puntuales $q^{(\alpha)}$ es dado por
-\begin{equation}\marginnote{C. el'ectrico, cargas puntuales}
-E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\sum_{\alpha=1
-}^{N}q^{(\alpha)}\frac{\left(  x_i-x^{(\alpha)}_i\right)  }{\left\vert
-\vec x-\vec x^{(\alpha)}\right\vert ^3}.\label{campelectr}
-\end{equation}
-Similarmente, para una distribuci'on volum'etrica de cargas:
+Note que el proceso l'imite ${q\rightarrow0}$ es necesario puesto que el uso de una carga $q$ de forma y magnitud arbitraria en general (mediante la interacción coulombiana) \textit{modificar'a la distribuci'on de cargas original}. Si la carga $q$ es cada vez m'as peque\~na en extensi'on y magnitud, entonces 'esta modificar'a cada vez menos la distribuci'on de carga original. En el l'imite ${q\rightarrow0}$, que ciertamente es una abstracci'on ya que en la pr'actica no existen cargas puntuales, ni tampoco cargas de magnitud arbitrariamente peque\~na, el cuociente $F_i/q$ ser'a independiente de la carga de prueba usada, y describir'a por lo tanto una cantidad dependiente s'olo de la distribuci'on de cargas considerada como ``fuente". Esto permite entonces considerar al campo el'ectrico como el campo \textit{generado por la distribuci'on de cargas}.
+
+Con estas consideraciones, tenemos entonces que el campo el'ectrico generado por un una distribuci'on volum'etrica de cargas:
 \begin{equation}\marginnote{C. el'ectrico, distribuci'on}
 \boxed{E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\int_V\rho(x')\frac{\left(
 x_i-x_i'\right)  }{\left\vert \vec x-\vec x'\right\vert
 ^3}dV'.} \label{cerho}
 \end{equation}
+
+En el caso idealizado de un conjunto de cargas puntuales $q^{(\alpha)}$, tendremos
+\begin{equation}\marginnote{C. el'ectrico, cargas puntuales}
+E_i(\vec x)=\frac{1}{4\pi\varepsilon_0}\sum_{\alpha=1
+}^{N}q^{(\alpha)}\frac{\left(  x_i-x^{(\alpha)}_i\right)  }{\left\vert
+\vec x-\vec x^{(\alpha)}\right\vert ^3}.\label{campelectr}
+\end{equation}
+
 En general, preferiremos la descripci'on de la distribuci'on de cargas en t'erminos de la densidad volum'etrica $\rho(\vec{x})$, ya que a partir de ella podemos recobrar r'apidamente los otros casos de inter'es. Por ejemplo, podemos recobrar el resultado para el conjunto de cargas puntuales \eqref{campelectr} a partir de 
 \eqref{cerho} si consideramos
 \begin{equation}
@@ -130,10 +124,11 @@ x^{(\alpha)}\right).
 \end{equation}
 
 \subsection{L'ineas de campo el'ectrico}
-En electrodin'amica es 'util introducir el concepto de \textit{l'ineas de campo}. En el caso electrost'atico, asociado a cada configuraci'on de campo el'ectrico, descrito por el campo $E_i(\vec{x})$, es posible definir l'ineas de campo el'ectrico. Cada una de estas curvas, puede modelarse usando una parametrizaci'on de la forma $x_i=x_i(\lambda)$, donde $\lambda$ es un par'ametro real. Las l'ineas de campo son definidas como aquellas tales que sus vectores tangentes en cada punto son paralelos al vector campo el'ectrico. Esto es equivalente a la condici'on,
+En electrodin'amica es 'util introducir el concepto de \textit{l'ineas de campo}. En el caso electrost'atico, asociado a cada configuraci'on de campo el'ectrico, descrito por el campo $E_i(\vec{x})$, es posible definir \textbf{l'ineas de campo el'ectrico}. Cada una de estas curvas, puede modelarse usando una parametrizaci'on de la forma $x_i=x_i(\lambda)$, donde $\lambda$ es un par'ametro real. Las l'ineas de campo son definidas como aquellas tales que sus vectores tangentes en cada punto son paralelos al vector campo el'ectrico. Esto es equivalente a la condici'on,
 \begin{equation}\marginnote{L'ineas de campo}
 \frac{dx_i}{d\lambda}(\lambda)=E_i(\vec{x}(\lambda)). \label{dlc}
 \end{equation}
+
 Note que, en general, es posible considerar un factor adicional al lado derecho de esta expresi'on (por ejemplo, $\alpha(\lambda)E_i(\vec{x}(\lambda))$ en lugar de $E_i(\vec{x}(\lambda))$), sin embargo la funci'on $\alpha(\lambda)$ puede siempre ser ``normalizada'' al valor $1$ redefiniendo convenientemente el par'ametro para describir la curva.
 
 M'as expl'icitamente, la condici'on (\ref{dlc}) adopta, en coordenadas cartesianas y en tres dimensiones, la forma 
@@ -142,7 +137,7 @@ M'as expl'icitamente, la condici'on (\ref{dlc}) adopta, en coordenadas cartesian
 \frac{dy}{d\lambda}(\lambda) &= {E_y}(x(\lambda),y(\lambda),z(\lambda)),\\
 \frac{dz}{d\lambda}(\lambda) &= \vec{E_z}(x(\lambda),y(\lambda),z(\lambda)),
 \end{align}
-de modo que define, dadas las componentes del campo $E_x(x,y,z)$, $E_y(x,y,z)$ y $E_y(x,y,z)$, un sistema de 3 ecuaciones diferenciales ordinarias acopladas, de primer orden, para las inc'ognitas $x(\lambda),y(\lambda)$ y $z(\lambda)$.
+de modo que define, dadas las componentes del campo $E_x(x,y,z)$, $E_y(x,y,z)$ y $E_y(x,y,z)$, un sistema de 3 ecuaciones diferenciales ordinarias acopladas, de primer orden, y en genreal no-lineal, para las inc'ognitas $x(\lambda),y(\lambda)$ y $z(\lambda)$.
 
 Una l'inea de campo particular queda determinada por la soluci'on del sistema de ecuaciones que satisface una determinada condici'on inicial, por ejemplo $\vec{x}(0)=\vec{x}_0$, donde $\vec{x}_0$ es un punto dado del espacio. La correspondiente soluci'on $\vec{x}(\lambda;\vec{x}_0)$ describir'a la l'inea de campo que pasa por el punto $\vec{x}_0$. Para algunos ejemplos, ver la figura\footnote{Figuras generadas usando VectorFieldPlot \cite{VFP}.} \ref{fig-E}.
 
@@ -156,7 +151,7 @@ Una l'inea de campo particular queda determinada por la soluci'on del sistema de
 \end{figure}
 \end{center}
 \subsection{Potencial el'ectrico}
-Usando el hecho que
+Usando la identidad 
 \begin{equation}
 \frac{x_i-x_i'}{\left\vert \vec x-\vec x'\right\vert ^3}\equiv
 -\partial_i\left( \frac{1}{\left\vert \vec x-\vec x'\right\vert
@@ -177,30 +172,28 @@ es decir,
 \begin{equation}\marginnote{Campo a partir de potencial}
 \boxed{\vec{E}(x)=-\vec\nabla\phi (x),} \label{E=nablaphi}
 \end{equation}
-donde hemos definido el \textit{potencial el'ectrico}
+donde hemos definido el \textbf{potencial el'ectrico} $\phi(\vec x)$ por
 \begin{equation}\marginnote{Potencial electrost'atico}
 \boxed{\phi(\vec x):=\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec x')}{
 \left\vert \vec x-\vec x'\right\vert }dV' +\text{constante}.}\label{perho}
 \end{equation}
-Note que es posible agregar una constante arbitraria a la definici'on del
-potencial. Por otro lado, es directo verificar que, como consecuencia directa de
-(\ref{E=nablaphi}), todo campo el'ectrost'atico es irrotacional, es decir, su
-rotor es nulo:
+
+Note que es posible agregar una constante arbitraria a la definici'on del potencial. Por otro lado, es directo verificar que, como consecuencia directa de (\ref{E=nablaphi}), todo campo el'ectrost'atico es irrotacional, es decir, su rotor es nulo:
 \begin{equation}\marginnote{C. el'ectrico irrotacional}
 \boxed{\vec\nabla\times\vec{E}=\vec{0}.} \label{rotE0}
 \end{equation}
-Usando (\ref{E=nablaphi}), podemos expresar el potencial electrost'atico como
-una integral de l'inea del campo el'ectrico:
+
+Usando (\ref{E=nablaphi}), podemos expresar el potencial electrost'atico como una integral de l'inea del campo el'ectrico:
 \begin{equation}\marginnote{Potencial a partir de campo}
  \boxed{\phi(\vec{x})=\phi(\vec{x}_0)-\int_{\vec{x}_0}^{\vec{x}} \vec{E}\cdot
 d\vec{x}.} \label{phiintE}
 \end{equation}
-Debido a (\ref{rotE0}) la integral (\ref{phiintE}) es independiente de la
-trayectoria que une los puntes $\vec{x}_0$ y $\vec{x}$, o equivalentemente,
+
+Debido a (\ref{rotE0}) la integral (\ref{phiintE}) es independiente de la trayectoria que une los puntos $\vec{x}_0$ y $\vec{x}$, o equivalentemente,
 \begin{equation}\marginnote{C. el'ectrico sin circulaci'on}
  \boxed{\oint_{\cal C}\vec{E}\cdot d\vec{x}=0,} \label{ointE0}
 \end{equation}
-para toda curva cerrada $\cal C$. Note adem'as que de esta propiedad se desprende que las l'ineas de campo electrost'atico no pueden ser cerradas. En efecto, si existiese una l'inea de campo el'ectrico cerrada ${\cal C}$, entonces podemos evaluar $\oint_{\cal C}\vec{E}\cdot d\vec{x}$ sobre esta curva. Pero sobre una l'inea de campo se satisface que (\ref{dlc}), de modo que
+para toda curva cerrada $\cal C$. Note adem'as que de esta propiedad se desprende que las l'ineas de campo electrost'atico no pueden ser cerradas. En efecto, si existiese una l'inea de campo el'ectrico cerrada ${\cal C}$, entonces podemos evaluar $\oint_{\cal C}\vec{E}\cdot d\vec{x}$ (la ``circulación del campo $\vec{E}$") sobre esta curva. Pero sobre una l'inea de campo se satisface (\ref{dlc}), de modo que
 \begin{align}
 \oint_{\cal C}\vec{E}\cdot d\vec{x} &= \oint_{\cal C}\frac{d\vec{x}}{d\lambda}\cdot d\vec{x} \\
 &= \oint_{\cal C}\frac{d\vec{x}}{d\lambda}\cdot \frac{d\vec{x}}{d\lambda}\,d\lambda \\
@@ -243,6 +236,7 @@ donde $q_V$ es la carga neta en el volumen $V$. En notaci'on vectorial:
 \begin{equation}\marginnote{Ley de Gauss integral}
 \boxed{\oint_S \vec{E}\cdot d\vec{S} =\frac{1}{\varepsilon_0}q_V .}
 \end{equation}
+
 Esta es la \textbf{forma integral de la ley de Gauss}. Es importante recordar que la ley de Gauss en su forma integral es v'alida \textit{para todo volumen} $V$ y su correspondiente superficie ``gaussiana"\, $\partial V$. Debido a esta propiedad, la forma integral de la ley de Gauss resulta particularmente eficiente para determinar campos el'ectricos en situaciones altamente sim'etricas, donde es posible elegir el volumen de modo que $\vec{E}$ sea \textit{constante} sobre $\partial V$ (o al menos, sobre partes de $\partial V$).
 
 \subsection{Ejemplo}
@@ -262,6 +256,7 @@ Poisson}\footnote{Siméon Denis Poisson (1781-1840): matem'atico franc'es, ver \
 \begin{equation}\marginnote{Ec. de Poisson}
 \boxed{\nabla^2\phi=-\frac{\rho}{\varepsilon_0}.}\label{poisson}
 \end{equation}
+
 Como consecuencia, el potencial electrost'atico en una regi'on libre de cargas
 satisface la \textbf{ecuaci'on de Laplace}\footnote{Pierre Simon Laplace (1749-1827): matem'atico, f'isico y astr'onomo franc'es, \url{http://es.wikipedia.org/wiki/Laplace} .}:
 \begin{equation}\marginnote{Ec. de Laplace}
@@ -296,7 +291,7 @@ figura \ref{DSCE2}:
 &=& \frac{\sigma S}{\varepsilon_0},
 \end{eqnarray}
 donde $\Delta S$ es una superficie, cuyo \textit{vector unitario $\hat{n}$ est'a dirigido
-desde la cara $1$ a la cara $2$}, que contiene una densidad de carga
+desde la cara $1$ hacia la cara $2$}, que contiene una densidad de carga
 $\sigma(\vec{x})$ $\left[ C/m^2\right]  $, y los campos el'ectricos a
 cada lado de la superficie son como se indica en la figura.
 
