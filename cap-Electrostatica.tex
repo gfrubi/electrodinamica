@@ -239,13 +239,58 @@ donde $q_V$ es la carga neta en el volumen $V$. En notaci'on vectorial:
 
 Esta es la \textbf{forma integral de la ley de Gauss}. Es importante recordar que la ley de Gauss en su forma integral es v'alida \textit{para todo volumen} $V$ y su correspondiente superficie ``gaussiana"\, $\partial V$. Debido a esta propiedad, la forma integral de la ley de Gauss resulta particularmente eficiente para determinar campos el'ectricos en situaciones altamente sim'etricas, donde es posible elegir el volumen de modo que $\vec{E}$ sea \textit{constante} sobre $\partial V$ (o al menos, sobre partes de $\partial V$).
 
-\subsection{Ejemplo}
-Plano infinito de densidad de carga constante
+\subsection{Ejemplo: Plano infinito de densidad de carga constante}
 \begin{equation}
 \vec{E}(x)=\left\{\begin{array}{rl}\frac{\sigma}{2\varepsilon_0}\hat{x},& x>0 \\
 -\frac{\sigma}{2\varepsilon_0}\hat{x},& x<0 \end{array}\right. .
 \end{equation}
 
+\subsection{Ejemplo: Esfera cascarón esférico}
+Consideremos primero el caso en el que una carga total $Q$ está distribuida uniformemente ($\rho=\rho_{\rm i}=\text{ cte.}$) en el interior de un cascarón esférico, de radios interior $a$ y exterior $b$.
+La densidad interior $\rho_{\rm i}$ es dada por
+\begin{equation}
+\rho_{\rm i} = \frac{3Q}{4\pi(b^3-a^3)},
+\end{equation}
+por lo que la densidad, como función dependiente de la posición (o, en este caso el radio), es de la forma
+\begin{equation}
+\rho(r)=\left\{\begin{array}{cl}
+0, & r<a\\
+\rho_{\rm i}, & a\le r\le b,\\
+0, & r>b
+\end{array}\right.
+\end{equation}
+\begin{figure}[!h]
+\centerline{\includegraphics[height=6cm]{fig/fig-esfera-hueca-densidad.pdf}}
+\caption{Densidad volumétrica como función del radio.}
+\label{fig_ehd}
+\end{figure}
+El campo eléctrico puede calcularse fácilmente usando la ley de Gauss, obteniendo
+\begin{equation}
+E(r)=\frac{Q}{4\pi\varepsilon_0}\times\left\{\begin{array}{cl}
+0, & r<a\\
+\frac{(r^3-a^3)}{r^2(b^3-a^3)}, & a\le r\le b,\\
+\frac{1}{r^2}, & r>b
+\end{array}\right.
+\end{equation}
+\begin{figure}[!h]
+\centerline{\includegraphics[height=6cm]{fig/fig-esfera-hueca-campo.pdf}}
+\caption{Magnitud del campo eléctrico como función del radio.}
+\label{fig_ehc}
+\end{figure}
+
+El potencial, luego de imponer las condiciones de continuidad en $r=a$ y $r=b$ y elegir $\phi(r\to\infty)=0$ es dado por
+\begin{equation}
+\phi(r)=\frac{Q}{4\pi\varepsilon_0}\times\left\{\begin{array}{cl}
+\frac{3(b^2-a^2)}{2(b^3-a^3)}, & r<a\\
+-\frac{(2a^3+r^3)}{2r(b^3-a^3)}+\frac{3b^2}{2(b^3-a^3)}, & a\le r\le b,\\
+\frac{1}{r}, & r>b
+\end{array}\right.
+\end{equation}
+\begin{figure}[!h]
+\centerline{\includegraphics[height=6cm]{fig/fig-esfera-hueca-potencial.pdf}}
+\caption{Potencial eléctrico como función del radio.}
+\label{fig_ehp}
+\end{figure}
 \subsection{Ecuaci'on de Poisson y Laplace}
 Usando (\ref{E=nablaphi}) y (\ref{leygauss-dif}) obtenemos
 \begin{equation}
