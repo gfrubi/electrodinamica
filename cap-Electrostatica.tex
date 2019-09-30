@@ -426,57 +426,64 @@ o, equivalentemente,
 \end{equation}
 donde $a_l$ y $b_l$ son nuevos coeficientes reales constantes.
 
-\subsubsection{Ejemplo: Esfera conductora en un campo el'ectrico externo}\label{sec:esfcond}
+\subsubsection{Ejemplo: Esfera conductora en un campo el'ectrico externo homogéneo}\label{sec:esfcond}
 
 Consideramos una esfera conductora de radio $R$ ubicada en un campo externo inicial homog'eneo $\vec{E}_0$. Elegimos los ejes coordenados de modo que el origen coincida con el centro de la esfera y el eje $z$ con la direcci'on del campo externo, es decir, $\vec{E}_0=E_0\hat{z}$.
 
 Luego de ubicar la esfera en el campo externo, las cargas libres en ella se reacomodan r'apidamente. En la situaci'on estacionaria final el campo el'ectrico en el interior de la esfera es nulo, es decir, $\vec{E}=0$ para $r<R$. Como consecuencia directa $\phi=\text{cte.}$ para $r<R$. Podemos elegir esta constante igual a cero, de modo que
 \begin{equation}
-\phi(r,\theta)=0, \qquad r<R.
+\phi(r,\theta)\stackrel{!}{=}0, \qquad r<R.
 \end{equation}
-Por otro lado, de acuerdo a (\ref{Econd}) el campo el'ectrico en la superficie externa del conductor es radial, y proporcional a la densidad de carga $\sigma(\theta,\varphi)$. Debido que el sistema es sim'etrico bajo rotaciones en torno a la direcci'on de $\vec{E}$, tendremos que $\phi=\phi(r,\theta)$ y $\sigma=\sigma(\theta)$. Finalmente, fuera de la esfera el potencial satisface la ec. de Laplace, por lo que 'este debe tener la forma general (\ref{phiaxial}). Por lo tanto, para determinar el potencial en todo punto basta determinar los coeficientes (constantes) $a_l$ y $b_l$.
+
+Por otro lado, de acuerdo a (\ref{Econd}) el campo el'ectrico en la superficie externa del conductor es radial, y proporcional a la densidad de carga $\sigma$. Debido que el sistema es sim'etrico bajo rotaciones en torno a la direcci'on de $\vec{E}$, tendremos que $\phi=\phi(r,\theta)$ y $\sigma=\sigma(\theta)$. Finalmente, fuera de la esfera el potencial satisface la ec. de Laplace, por lo que 'este debe tener la forma general (\ref{phiaxial}). Por lo tanto, para determinar el potencial en todo punto basta determinar los coeficientes (constantes) $a_l$ y $b_l$.
 
 Una condici'on necesaria es que asimpt'oticamente, es decir, para $r\to\infty$, el campo debe tender al campo externo inicial ya que los efectos de las cargas inducidas en la esfera ser'an cada vez menores en puntos cada vez m'as alejados, es decir, $\vec{E}\to\vec{E}_0 $. Esta condici'on es equivalente a 
 \begin{equation}
-\phi\to -E_0z+\alpha=-E_0r\cos\theta+\alpha .
+\phi\to -E_0z+\alpha=-E_0r\cos\theta+\alpha,
 \end{equation}
-Aplicando esta condici'on a la expansi'on (\ref{phiaxial}) encontramos que necesariamente
+donde $\alpha$ es una constante a determinar. Aplicando esta condici'on a la expansi'on (\ref{phiaxial}) encontramos que necesariamente
 \begin{equation}
 a_0=\alpha, \qquad a_1=-E_0, \qquad a_2=a_3=\cdots =0,
 \end{equation}
-por lo que el potencial en todo punto se reduce a 
+por lo que el potencial en todo punto  fuera de la esfera se reduce a 
 \begin{equation}
 \phi(r,\theta)=\alpha -E_0 r\cos\theta +
 \sum_{l=0}^\infty\frac{b_l}{r^{l+1}}P_l(\cos\theta), \qquad r\ge R.
 \end{equation}
+
 Como el potencial es una funci'on cont'inua, debemos tener que
 \begin{equation}
 \phi(R,\theta)=\alpha -E_0 R\cos\theta +
 \sum_{l=0}^\infty\frac{b_l}{R^{l+1}}P_l(\cos\theta)=0, \qquad \forall \theta.
 \end{equation}
+
 De aqu'i, y ya que los polinomios de Legendre son funciones linealmente independientes, encontramos que necesariamente
 \begin{equation}
 \alpha+\frac{b_0}{R}=0, \qquad -E_0R+\frac{b_1}{R^2}=0, \qquad b_2=b_3=\cdots =0.
 \end{equation}
+
 Con esto, el potencial se reduce a
 \begin{equation}\label{phialpha}
 \phi(r,\theta)=\alpha -E_0 r\cos\theta -\alpha\frac{R}{r}+E_0 \frac{R^3}{r^2}\cos\theta. 
 \end{equation}
-La constante $\alpha$ es proporcional a la carga neta de la esfera. En efecto, usando (\ref{Econd}) podemos calcular la densidad superficial de carga en la esfera:
+
+Finalmente, debemos determinar la constante $\alpha$, que es proporcional a la carga neta de la esfera. En efecto, usando (\ref{Econd}) podemos calcular la densidad superficial de carga en la esfera:
 \begin{align}
 \sigma(\theta) &= \varepsilon_0\, \vec{E}(R,\theta)\cdot\hat{r} \\
 &= -\varepsilon_0 \frac{\partial\phi}{\partial r}(R,\theta) \\
 &= -\varepsilon_0\left[-E_0\cos\theta+\frac{\alpha}{R}-2E_0\cos\theta\right]\\
 &= \varepsilon_0\left[3E_0\cos\theta-\frac{\alpha}{R}\right].
 \end{align}
+
 La carga neta de la esfera es entonces
 \begin{align}
-Q &= \int_S\sigma(\theta)\,dS \\
-&= 2\pi R^2 \int_0^\pi \sigma(\theta)\sen\theta\,d\theta \\
-&= 2\pi \varepsilon_0R^2 \int_0^\pi \left[3E_0\cos\theta-\frac{\alpha}{R}\right] \sen\theta\,d\theta \\
+Q &= \oint_S\sigma(\theta)\,dS \\
+&= 2\pi R^2 \int_0^\pi \sigma(\theta)\sin\theta\,d\theta \\
+&= 2\pi \varepsilon_0R^2 \int_0^\pi \left[3E_0\cos\theta-\frac{\alpha}{R}\right] \sin\theta\,d\theta \\
 &= 2\pi \varepsilon_0R^2 \left[ 0-\frac{2\alpha}{R}\right] \\
 &= -4\pi \varepsilon_0R \alpha .
 \end{align}
+
 En otras palabras, 
 \begin{equation}
 \alpha=-\frac{Q}{4\pi \varepsilon_0}\frac{1}{R}.
@@ -485,6 +492,7 @@ Con este resultado, el potencial (\ref{phialpha}) puede escribirse como
 \begin{equation}
 \phi(r,\theta)=-\frac{Q}{4\pi\varepsilon_0 R}+\frac{Q}{4\pi\varepsilon_0}\frac{1}{r} -E_0 \left(1-\frac{R^3}{r^3}\right)r\cos\theta.
 \end{equation}
+
 Como vemos, los primeros dos t'erminos son independientes del campo externo y representan el potencial de la carga neta de la esfera (que hemos supuesto aislada). El tercer t'ermino es el campo externo inicial y por lo tanto el 'ultimo t'ermino describe el campo el'ectrico inducido producto de la polarizaci'on de la esfera conductora.
 \begin{figure}[!h]
 \centerline{\includegraphics[height=5.5cm]{fig/fig-esfera-conductora-campo-externo.pdf}
@@ -493,13 +501,14 @@ Como vemos, los primeros dos t'erminos son independientes del campo externo y re
 \caption{Campo el'ectrico de una esfera conductora neutra en un campo el'ectrico externo. El gr'afico de la izquierda (normalizado) fue creado usando \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-esfera-conductora-campo-externo-raw.py}{este script} Python. La figura de la derecha fue generada usando \href{http://commons.wikimedia.org/wiki/User:Geek3/VectorFieldPlot}{VectorFieldPlot}, a partir de \href{http://commons.wikimedia.org/wiki/File:VFPt_superconductor_ball_E-field.svg}{este} archivo original.}
 \label{fig:ecce}
 \end{figure}
+
 El campo el'ectrico es entonces dado por
 \begin{equation}
-\vec{E}(r,\theta)=E_r\hat{r}+E_\theta\hat{\theta},
+\vec{E}(r,\theta) = E_r\hat{r}+E_\theta\hat{\theta},
 \end{equation}
 con 
 \begin{equation}
-E_r=\frac{Q}{4\pi\varepsilon_0}\frac{1}{r^2}+E_0 \left(1+2\frac{R^3}{r^3}\right)\cos\theta, \qquad E_\theta=-E_0 \left(1-\frac{R^3}{r^3}\right)\sen\theta .
+E_r = -\frac{\partial\phi}{\partial r} = \frac{Q}{4\pi\varepsilon_0}\frac{1}{r^2}+E_0 \left(1+2\frac{R^3}{r^3}\right)\cos\theta, \quad E_\theta = -\frac{1}{r}\frac{\partial\phi}{\partial\theta} =-E_0 \left(1-\frac{R^3}{r^3}\right)\sin\theta .
 \end{equation}
 En la figura \ref{fig:ecce} se muestra la forma de este campo, en el caso en que $Q=0$.
 
@@ -510,15 +519,17 @@ En la figura \ref{fig:ecce} se muestra la forma de este campo, en el caso en que
 
  \section{Soluci'on de la ecuaci'on de Poisson} 
  \subsection{Soluci'on en t'erminos de Funciones de Green*}
- La ecuaci'on de Poisson \eqref{poisson} para el potencial es una \textit{EDP lineal el'iptica inhomog'enea}. Una forma de encontrar soluciones de este tipo de ecuaciones es usando el m'etodo de las \textit{funciones de Green}. En nuestro caso, se dice que $G(\vec{x},\vec{x}')$ es una funci'on de Green del operador Laplaciano si satisface
+ La ecuaci'on de Poisson \eqref{poisson} para el potencial es una \textit{EDP lineal el'iptica inhomog'enea}. Una forma de encontrar soluciones de este tipo de ecuaciones es usando el m'etodo de las \textbf{funciones de Green}. En nuestro caso, se dice que $G(\vec{x},\vec{x}')$ es una funci'on de Green del operador Laplaciano si satisface
 \begin{equation}\label{EDPG}
-\nabla^2G(\vec{x}',\vec{x})=\delta(\vec{x}-\vec{x}').
+\nabla^2G(\vec{x}',\vec{x})=\delta^{(3)}(\vec{x}-\vec{x}').
 \end{equation} 
+
 Si se conoce una funci'on de Green entonces la soluci'on de la ecuaci'on de Poisson para el potencial en una regi'on $V$ puede expresarse de la forma siguiente:
 \begin{align}
 \phi(\vec{x}) &= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}')\rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\vec\nabla' G(\vec{x},\vec{x}')-G(\vec{x},\vec{x}')\vec\nabla'\phi(\vec{x}')\right]\cdot d\vec{S}' \\
 &=  -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')-G(\vec{x},\vec{x}')\frac{\partial\phi}{\partial n'}(\vec{x}')\right]dS'
 \end{align}
+
 Introduciendo el campo el'ectrico en el segundo t'ermino del lado derecho podemos escribir
 \begin{equation}\label{solPoisson}
 \phi(\vec{x})= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\left[\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')+G(\vec{x},\vec{x}')E_n(\vec{x}')\right]dS',
@@ -529,10 +540,12 @@ Por otro lado, la funci'on de Green no es 'unica. Si $G_1(\vec{x},\vec{x}')$ es 
 \begin{equation}\label{solPoissonDirichlet}
 \phi(\vec{x})= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')dS',
 \end{equation}
+
  Por otro lado, si se conoce la componente normal del campo en la frontera\footnote{condici'on de borde tipo Neumann.} (por ejemplo, en situaciones donde se dispone de informaci'on sobre la densidad de carga superficial en $\partial V$) entonces parece conveniente usar una funci'on de Green tal que su derivada normal sobre la frontera sea nula. Lamentablemente, esta condici'on \textit{no es posible de implementar} ya que necesariamente\footnote{Use el teorema de Gauss sobre la integral de volumen de \eqref{EDPG} para verificar esto!.} debe cumplirse que
 \begin{equation}\label{intGn}
 \oint_{\partial V}\frac{\partial G}{\partial n'}dS'=1.
 \end{equation}
+
 Una condici'on un poco menos restrictiva, y factible de implementar consistentemente, es imponer que la derivada normal de la funci'on de Green sea \textit{constante en la frontera}. Entonces, \eqref{intGn} requiere que
 \begin{equation}
 \frac{\partial G}{\partial n'}(\vec{x},\vec{x}')=\frac{1}{S}, \qquad \vec{x}'\in\partial V,
@@ -551,13 +564,13 @@ Finalmente, la funci'on de Green m'as conocida del operador Laplaciano es dada p
 \begin{equation}
 G(\vec{x}-\vec{x}')=-\frac{1}{4\pi}\frac{1}{|\vec{x}-\vec{x}'|}.
 \end{equation}
-Esta funci'on de Green particular posee las propiedades adicionales de ser sim'etrica bajo rotaciones respecto al punto $\vec{x}'$, depender s'olo de la diferencia $\vec{x}-\vec{x}'$ y de anularse en el infinito (para todo valor finito de $\vec{x}'$). Debido a estas propiedades est'a directamente relacionada con la soluci'on de la ecuaci'on de Poisson en el caso en que la regi'on $V$ cubre todo el espacio y se asume que el campo el'ectrico se anula en el infinito\footnote{m'as r'apido que $1/r$, es decir, tal que $\lim_{|x|\to\infty}|\vec{E}|r=0$.}, de modo que el potencial se reduce a
+Esta funci'on de Green particular posee las propiedades adicionales de ser \textit{sim'etrica bajo rotaciones respecto al punto $\vec{x}'$}, \textit{depender s'olo de la diferencia $\vec{x}-\vec{x}'$} y de \textit{anularse en el infinito} (para todo valor finito de $\vec{x}'$). Debido a estas propiedades esta función de Green est'a directamente relacionada con la soluci'on de la ecuaci'on de Poisson en el caso en que la regi'on $V$ cubre todo el espacio y se asume que el campo el'ectrico se anula en el infinito\footnote{m'as r'apido que $1/r$, es decir, tal que $\lim_{|x|\to\infty}|\vec{E}|r=0$.}, de modo que el potencial se reduce a
 \begin{equation}
 \phi(\vec{x})= \left\langle\phi\right\rangle_\infty+\frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho(\vec{x}')}{|\vec{x}-\vec{x}'|}dV'.
 \end{equation}
 
 \subsection{Unicidad de la soluci'on}\label{sec:uniP}
-A continuaci'on probaremos que \textit{la soluci'on de la ecuaci'on de Poisson es 'unica} (salvo una constante aditiva), en una regi'on $V$, para valores dados del potencial \textit{o de la componente normal del campo} en la frontera\footnote{Condiciones de borde tipo Dirichlet o tipo Neumann, respectivamente.} $\partial V$. Para esto, asumimos que existen dos soluciones distintas de \eqref{poisson} en $V$, $\phi_1(\vec{x})$ y $\phi_1(\vec{x})$, que \textit{satisfacen las mismas condiciones de borde}, es decir, su valor es conocido en $\partial V$ o bien su derivada normal es conocida en esta frontera.
+A continuaci'on probaremos que \textit{la soluci'on de la ecuaci'on de Poisson es 'unica} (salvo una constante aditiva), en una regi'on $V$, para valores dados del potencial \textit{o de la componente normal del campo} en la frontera\footnote{Condiciones de borde tipo Dirichlet o tipo Neumann, respectivamente.} $\partial V$. Para esto, suponemos que existen dos soluciones distintas de \eqref{poisson} en $V$, $\phi_1(\vec{x})$ y $\phi_1(\vec{x})$, que \textit{satisfacen las mismas condiciones de borde}, es decir, su valor es conocido en $\partial V$, o bien su derivada normal es conocida en esta frontera.
 
 Definimos la diferencia $U(\vec{x}):=\phi_1(\vec{x})-\phi_2(\vec{x})$ que ser'a entonces una soluci'on de la ecuaci'on de Laplace, $\nabla^2U=0$. En la frontera $\partial V$ esta funci'on satisface $U=0$ o bien ${\partial U}/{\partial n}=0$, ya que asumimos que $\phi_1$ y $\phi_2$ satisfacen las mismas condiciones de borde (tipo Dirichlet, o bien tipo Neumann). Usamos ahora la identidad\footnote{Esta identidad es un caso particular de la as'i llamada \textit{primera identidad de Green}.}
 \begin{equation}
@@ -568,11 +581,12 @@ que puede ser verificada f'acilmente usando el teorema de Gauss. En nuestro caso
 \begin{equation}
  \int_V\left|\vec\nabla U\right|^2dV=0.
 \end{equation}
-Como consecuencia la funci'on $U$ debe ser \textit{constante}\footnote{En principio, esto ser'ia v'alido excepto (a lo sumo) en un conjunto de medida cero. Sin embargo, esta posibilidad queda descartada si el potencial es una funci'on continua.}, por lo que las dos soluciones $\phi_1$ y $\phi_2$ s'olo pueden diferir por una constante, representando la misma soluci'on f'isica\footnote{M'as a'un, para condiciones de borde tipo Dirichlet, esta constante es necesariamente nula.}.
+
+Como consecuencia, la funci'on $U$ debe ser \textit{constante}\footnote{En principio, esto ser'ia v'alido excepto (a lo sumo) en un conjunto de medida cero. Sin embargo, esta posibilidad queda descartada si el potencial es una funci'on continua.}, por lo que las dos soluciones $\phi_1$ y $\phi_2$ s'olo pueden diferir por una constante, representando la misma soluci'on f'isica\footnote{M'as a'un, para condiciones de borde tipo Dirichlet, esta constante es necesariamente nula.}.
 
 Es importante notar que este resultado implica que, en general, es inconsistente intentar encontrar una soluci'on de la ecuaci'on de Poisson \textit{imponiendo simult'aneamente el valor del potencial y de su derivada normal en la frontera}.
 
-Note que los teoremas anteriores implican que el campo el'ectrost'atico en una regi'on $V$ queda totalmente determinado por la densidad de carga en el interior del volumen $V$, y por las condiciones de borde en la frontera $\partial V$. Una de las m'ultiples consecuencias de este hecho es que el campo al interior de un volumen de forma arbitraria, cuya frontera es mantenida a un potencial fijo (por ejemplo, por medio de un conductor puesto ``a tierra'') es \textit{independiente de la distribuci'on de cargas en el exterior}. De esta forma, es posible aislar una regi'on de las influencias el'ectricas externas (``jaula de Faraday'').
+Note que los teoremas anteriores implican que el campo el'ectrost'atico en una regi'on $V$ queda totalmente determinado por la densidad de carga en el interior del volumen $V$, y por las condiciones de borde en la frontera $\partial V$. Una de las m'ultiples consecuencias de este hecho es que el campo al interior de un volumen de forma arbitraria, cuya frontera es mantenida a un potencial fijo (por ejemplo, por medio de un conductor puesto ``a tierra'') es \textit{independiente de la distribuci'on de cargas en el exterior}. De esta forma, es posible aislar una regi'on de las influencias el'ectricas externas (``\href{https://es.wikipedia.org/wiki/Jaula_de_Faraday}{jaula de Faraday}'').
 
 
 \section{M'etodo de las im'agenes}
@@ -1415,7 +1429,7 @@ variaciones de la posici'on $\vec{x}$ de la distribuci'on, sino con respecto a
 cambios en la orientaci'on del momento dipolar respecto al campo
 externo. La magnitud del torque es dada por
 \begin{eqnarray}
-\tau &=& pE\sen\theta \nonumber \\
+\tau &=& pE\sin\theta \nonumber \\
 &=& -\frac{d}{d\theta}\,\left(pE\cos\theta\right)\\
 &=&\frac{dU_{\vec{p}}}{d\theta}.  \label{eq3.3.15}
 \end{eqnarray}
@@ -2030,8 +2044,8 @@ lo que implica que el campo el'ectrico en el interior de la esfera es homog'eneo
 % \end{equation}%
 % \begin{equation}
 % E_{\theta}^{(2)}=-\frac{1}{r}\frac{\partial\phi^{(2)}}{\partial\theta
-% }=-E^0r\sen\theta+\frac{k_1-k_2}{k_1+2k_2}a^3E^0r^{-2}%
-% \sen\theta
+% }=-E^0r\sin\theta+\frac{k_1-k_2}{k_1+2k_2}a^3E^0r^{-2}%
+% \sin\theta
 % \end{equation}%
 % \begin{equation}
 % E_{\varphi}^{(2)}=0
