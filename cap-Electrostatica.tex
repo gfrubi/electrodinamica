@@ -518,7 +518,7 @@ En la figura \ref{fig:ecce} se muestra la forma de este campo, en el caso en que
 %\subsection{Coordenadas Cartesianas}
 
  \section{Soluci'on de la ecuaci'on de Poisson} 
- \subsection{Soluci'on en t'erminos de Funciones de Green*}
+ \subsection{Soluci'on en t'erminos de Funciones de Green*}\label{Green}
  La ecuaci'on de Poisson \eqref{poisson} para el potencial es una \textit{EDP lineal el'iptica inhomog'enea}. Una forma de encontrar soluciones de este tipo de ecuaciones es usando el m'etodo de las \textbf{funciones de Green}. En nuestro caso, se dice que $G(\vec{x},\vec{x}')$ es una funci'on de Green del operador Laplaciano si satisface
 \begin{equation}\label{EDPG}
 \nabla^2G(\vec{x}',\vec{x})=\delta^{(3)}(\vec{x}-\vec{x}').
@@ -635,7 +635,7 @@ se satisface s'olo si
  d'=d, \qquad q'=-q.
 \end{equation}
 Por lo tanto, la soluci'on para el potencial en todo punto con $x\ge 0$ es dada por
-\begin{equation}
+\begin{equation}\label{phicpplano}
  \phi(x)=\frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{(x-d)^2+y^2+z^2}}-\frac
 {1}{\sqrt{(x+d)^2+y^2+z^2}}\right], \qquad x\ge 0.
 \end{equation}
@@ -686,6 +686,34 @@ evaluado en la posici'on en que se ubica la carga $q$, es decir,
 \end{eqnarray}
 Note que esta fuerza es la misma que ejerce(r'ia) la carga imagen sobre la carga real.
 
+\subsubsection{Función de Green asociada}
+En la sección anterior hemos situado el sistema coordenado de modo que la carga tenía posicion $d\hat{x}$. Podemos reescribir el resultado para una carga puntual ubicada en una posición arbitraria $\vec{x}'$ en $V$. Manteniendo el origen del sistema de coordenadas en algún punto del plano, podemos entonces escribir la posición \textit{de la carga imágen} como
+\begin{equation}
+\vec{x}'_{\rm i} = \vec{x}'-2(\vec{x}'\cdot\hat{n})\hat{n},
+\end{equation}
+donde $\hat{n}$ es el vector unitario perpendicular a la superficie del conductor. Con esto, potencial \eqref{phicpplano} puede ser escrito en la forma siguiente:
+\begin{align}
+\phi(\vec{x}) &= \frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\left|\vec{x}-\vec{x}'\right|}-\frac{1}{\left|\vec{x}-\vec{x}'_{\rm i}\right|}\right] \\
+&= \frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\left|\vec{x}-\vec{x}'\right|}-\frac{1}{\left|\vec{x}-\vec{x}'+2(\vec{x}'\cdot\hat{n})\hat{n}\right|}\right]
+\end{align}
+
+Si ahora definimos
+\begin{align}
+G(\vec{x},\vec{x}') &:= -\frac{\varepsilon_0}{q}\phi(\vec{x}) \\
+&= -\frac{1}{4\pi}\left[\frac{1}{\left|\vec{x}-\vec{x}'\right|}-\frac{1}{\left|\vec{x}-\vec{x}'+2(\vec{x}'\cdot\hat{n})\hat{n}\right|}\right], \label{Greenplano}
+\end{align}
+entonces esta función satisface todas las propiedades de una función de Green en el dominio $V$, con condiciones de borde tipo Dirichlet nulas en su frontera::
+\begin{itemize}
+\item $\nabla^2G(\vec{x},\vec{x}')=\delta^{(3)}(\vec{x}-\vec{x}')$, $\forall \vec{x}\in V$.
+\item $G(\vec{x},\vec{x}')=0$, $\forall \vec{x}\in \partial V$.
+\item $G(\vec{x},\vec{x}')=G(\vec{x}',\vec{x})$.
+\end{itemize}
+
+Como consecuencia, podemos usar esta función para encontrar una forma analítica para el potencial \textit{en una situación física más general}: el campo fuera de un conductor plano muy grande puesto a tierra, con una districión de carga arbitraria de densidad $\rho(\vec{x})$, en el mismo dominio $V$ (es decir, fuera del conductor). La solución en este caso, ver la expresión \ref{solPoissonDirichlet} en la sección \ref{Green}, es de la forma
+\begin{equation}
+\phi(\vec{x}) = -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV',
+\end{equation}
+con la función de Green dada en \ref{Greenplano}.
 \subsection{Conductor esf'erico}
 \begin{figure}[!h]
 \centerline{\includegraphics[height=6cm]{fig/fig-carga-imagen-02.pdf}}
