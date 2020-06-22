@@ -583,7 +583,7 @@ Si $v\ll c$, es decir $\beta\ll1$, entonces el campo el'ectrico
 (\ref{Egen}) y la distribuci'on de potencia radiada (\ref{dPdO}) pueden
 aproximarse por:
 \begin{equation}
-\vec{E}(\vec{x},t)=\frac{q\mu}{4\pi}\left.\frac{\hat{n}}{R^2}\right|_{\rm ret}+\left.
+\vec{E}(\vec{x},t)=\frac{q}{4\pi\epsilon}\left.\frac{\hat{n}}{R^2}\right|_{\rm ret}+\left.
 \frac{q\mu}{4\pi c^2}\frac{\hat{n}\times(\hat{n}\times{\vec{a}})}{R}\right|_{\rm
 ret} +O(\beta),
 \end{equation}
@@ -638,7 +638,7 @@ Este importante resultado implica, en particular, que cargas de igual magnitud, 
 %\subsubsection{Ejemplo: Movimiento circular}
 
 \section{Distribuci'on de potencia (correcci'on relativista)}
-La energ'ia radiada (muy lejos de la regi'on donde se mueve la carga) es dada por 
+La energ'ia radiada (muy lejos de la regi'on donde se mueve la carga) es dada por una expresión de la forma
 \begin{equation}
  E=\int_t\oint_\Omega \frac{dP}{d\Omega}\,d\Omega\,dt=\frac{q^2\mu}{16\pi^2 c}\oint_\Omega\int_t\left.\frac{\left|\hat{n}\times
 \left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right]\right|^2}{\left(
@@ -739,14 +739,13 @@ Esto indica que, para la misma aceleraci'on, la radiaci'on emitida por una carga
 Si una onda electromagn'etica monocrom'atica incide
 sobre una part'icula libre de carga $q$ y masa $m$, la carga acelera y
 entonces emite radiaci'on. Esta radiaci'on ser'a emitida en otras
-direcciones respecto de la direcci'on de la onda incidente. Adem'as, si la carga se mueve a velocidades no-relativistas la radiaci'on emitida por esta carga tendr'a \textit{casi exclusivamente} la misma frecuencia que la radiaci'on incidente (ver secci'on \ref{sec:rfp} para mayores detalles). El proceso completo puede ser descrito como \textit{scattering} (dispersi'on) \textit{esl'astico} de la radiaci'on incidente, que llamamos \textbf{scattering de Thomson}\footnote{Joseph John Thomson (1856-1940): f'isico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Joseph_John_Thomson}.}.
+direcciones respecto de la direcci'on de la onda incidente. Adem'as, si la carga se mueve a velocidades no-relativistas la radiaci'on emitida por esta carga tendr'a \textit{casi exclusivamente} la misma frecuencia que la radiaci'on incidente (ver secci'on \ref{sec:rfp} para mayores detalles). El proceso completo puede ser descrito como \textit{scattering} (dispersi'on) \textit{el'astico}\footnote{En nuestro contexto de la teoría electromagnética clásica, esto significa que la frecuencia de la luz que deja el sistema es la misma que la de la luz incidente.} de la radiaci'on incidente, que llamamos \textbf{scattering de Thomson}\footnote{Joseph John Thomson (1856-1940): f'isico brit'anico. Ver \url{http://es.wikipedia.org/wiki/Joseph_John_Thomson}.}.
 
-La potencia instant'anea radiada es dada por (\ref{Lardif}) o, introduciendo el
-\textbf{vector de polarizaci'on $\vec{\epsilon}$ de la onda emitida} (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo el'ectrico radiado, ver figura \ref{fig:natheta}):
+La potencia instant'anea radiada es dada por (\ref{Lardif}), suponiendo velocidades no relativistas, es decir, 
 \begin{equation}
 \frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2 c}|\hat{n}\times\vec{a}|^2.
 \end{equation}
-En este caso, la aceleraci'on es producida por la fuerza que la onda incidente ejerce sobre la carga. Si la onda incidente es \textit{plana y polarizada linealmente}, con vector de onda $\vec{k}_0$ y vector de polarizaci'on $\vec{\epsilon}_0$, su campo el'ectrico puede ser descrito usando
+En este caso, la aceleraci'on es producida por la fuerza que la onda incidente ejerce sobre la carga. Si la onda incidente es \textit{plana y polarizada linealmente}, con vector de onda $\vec{k}_0$ y \textbf{vector de polarizaci'on} $\vec{\epsilon}_0$ (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo el'ectrico indicente), entonces su campo el'ectrico puede ser descrito usando
 \begin{equation}
 \vec{E}_0(\vec{x},t)=\operatorname{Re}\left[
 \vec{\epsilon}_0E_0e^{i(\vec{k}_0\cdot\vec{x}-\omega t)}\right] .
