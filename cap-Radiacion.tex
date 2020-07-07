@@ -595,12 +595,12 @@ ret} +O(\beta),
 Aqu'i $|_{\rm ret}$ denota evaluaci'on de las cantidades en el tiempo retardado, que muy lejos de la fuente adopta la forma $t'=t-r/c$.
 Introduciendo el 'angulo $\theta$ entre la aceleraci'on $\vec{a}$ y el vector
 normal $\hat{n}$, podemos escribir
-$\left|\hat{n}\times\left[\hat{n}\times{\vec{a}}\right]\right|^2=\vec{a}^2\sen^2\theta$ y entonces
+$\left|\hat{n}\times\left[\hat{n}\times{\vec{a}}\right]\right|^2=\vec{a}^2\sin^2\theta$ y entonces
 \begin{equation}
-\frac{dP}{d\Omega}(t)=\frac{q^2\mu}{16\pi^2 c}\left[ \vec{a}^2\sen^2\theta\right]_{\rm
+\frac{dP}{d\Omega}(t)=\frac{q^2\mu}{16\pi^2 c}\left[ \vec{a}^2\sin^2\theta\right]_{\rm
 ret} .\label{Lardif}
 \end{equation}
- Note que la dependencia $\sen^2\theta$ de ${dP}/{d\Omega}$ implica que \textit{la energ'ia radiada se dirige mayoritariamente en la direcci'on normal a la aceleraci'on}. Adem'as, como $\vec{E}_{(2)}\propto \hat{n}\times(\hat{n}\times{\vec{a}})$ entonces el campo el'ectrico de radiaci'on  es normal a $\hat{n}$ y est'a contenido en el plano definido por $\vec{a}$ y $\hat{n}$. Ver figura \ref{fig:natheta}. Decimos entonces que el campo de radiaci'on est'a
+ Note que la dependencia $\sin^2\theta$ de ${dP}/{d\Omega}$ implica que \textit{la energ'ia radiada se dirige mayoritariamente en la direcci'on normal a la aceleraci'on}. Adem'as, como $\vec{E}_{(2)}\propto \hat{n}\times(\hat{n}\times{\vec{a}})$ entonces el campo el'ectrico de radiaci'on  es normal a $\hat{n}$ y est'a contenido en el plano definido por $\vec{a}$ y $\hat{n}$. Ver figura \ref{fig:natheta}. Decimos entonces que el campo de radiaci'on est'a
 \textit{polarizado} en el plano definido por $\vec{a}$ y $\hat{n}$ y es normal a $\hat{n}$. Si $\vec{a}$ es constante, la radiaci'on emitida en una direcci'on $\hat{n}$ dada tiene polarizaci'on 100\% lineal.
 \begin{figure}[!h]
 \centerline{\includegraphics[height=5cm]{fig/fig-a-n-Erad.pdf}}
@@ -619,9 +619,9 @@ acelerado. C'odigos Python \href{https://github.com/gfrubi/electrodinamica/blob/
 La \textit{potencia total emitida} por la carga es entonces
 \begin{eqnarray}
 P(t)  & =&\int_{\Omega}\frac{dP}{d\Omega}(t)\,d\Omega\\
-& =&\frac{q^2\mu}{16\pi^2c}\int_{\Omega} [\vec{a}^2\sen^2\theta]_{\rm ret}\,d\Omega\\
+& =&\frac{q^2\mu}{16\pi^2c}\int_{\Omega} [\vec{a}^2\sin^2\theta]_{\rm ret}\,d\Omega\\
 & =&\frac{q^2\mu}{16\pi^2c}\int_0^{\pi}\int_0^{2\pi}\vec{a}^2_{\rm ret}
-\sen^2\theta\sen\theta\,d\theta d\varphi \\
+\sin^2\theta\sin\theta\,d\theta d\varphi \\
 & =&\frac{q^2\mu}{16\pi^2c}\,\vec{a}^2_{\rm ret}\, \frac{4}{3}\,2\pi \\
 & =&\frac{q^2\mu}{6\pi c}\,\vec{a}^2_{\rm ret}.
 \end{eqnarray}
@@ -708,7 +708,7 @@ En este caso de movimiento unidimensional acelerado tenemos que la velocidad es 
 $\hat{n}\cdot\vec{\beta}=\beta\cos\theta$.
 Reemplazando esto en \eqref{dP'} encontramos que 
 \begin{equation}
-\frac{dP'}{d\Omega}=\frac{\mu q^2}{16\pi^2 c}\frac{\vec{a}^2\sen^2
+\frac{dP'}{d\Omega}=\frac{\mu q^2}{16\pi^2 c}\frac{\vec{a}^2\sin^2
 \theta}{\left(1-\beta\cos\theta\right)^5}. \label{dppdO}
 \end{equation}
 \begin{figure}[H]
@@ -814,7 +814,7 @@ $\left|\hat{n}\times\vec{\epsilon}_0\right|^2$. El c'alculo es m'as sencillo si 
 \end{equation}
 y 
 \begin{equation}
-\hat{n}=\hat{x}\sen\theta\cos\varphi + \hat{y}\sen\theta\sen\varphi +\hat{z}\cos\theta, \label{ene}
+\hat{n}=\hat{x}\sin\theta\cos\varphi + \hat{y}\sin\theta\sin\varphi +\hat{z}\cos\theta, \label{ene}
 \end{equation}
 de modo que $\theta$ es el 'angulo entre $\hat{n}$ y $\vec{k}_0$, es decir, el
 \textbf{'angulo de scattering} entre la radiaci'on incidente y la emitida, y $\varphi$ es el 'angulo azimutal entre $\vec{\epsilon}_0$ y
@@ -833,31 +833,31 @@ $\hat{n}$.
 %\end{equation}
 %Al calcular $\vec{V}$ usando de \eqref{epsilon0} y \eqref{ene} encontramos que
 %\begin{equation}
-%\vec{V}=-\hat{x}(\cos^2\theta+\sen^2\theta\sen^2\varphi)+\hat{y}\sen^2\theta\sen\varphi\cos\varphi
-%+\hat{z}\sen\theta\cos\theta\cos\varphi,
+%\vec{V}=-\hat{x}(\cos^2\theta+\sin^2\theta\sin^2\varphi)+\hat{y}\sin^2\theta\sin\varphi\cos\varphi
+%+\hat{z}\sin\theta\cos\theta\cos\varphi,
 %\end{equation}
 %y por lo tanto
 %\begin{equation}
-%|\vec{V}|=\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi}.
+%|\vec{V}|=\sqrt{\sin^2\varphi+\cos^2\theta\cos^2\varphi}.
 %\end{equation}
 %As'i, obtenemos
 %\begin{eqnarray}
 % \vec{\epsilon}\cdot\vec{\epsilon}_0&=&\frac{1}{|\vec{V}|}
 %\vec{V}\cdot\vec{\epsilon}_0 \\
-% &=& -\frac{1}{|\vec{V}|}\left(\sen^2\varphi+\cos^2\theta\cos^2\varphi \right) \\
-%  &=&-\sqrt{\sen^2\varphi+\cos^2\theta\cos^2\varphi} .
+% &=& -\frac{1}{|\vec{V}|}\left(\sin^2\varphi+\cos^2\theta\cos^2\varphi \right) \\
+%  &=&-\sqrt{\sin^2\varphi+\cos^2\theta\cos^2\varphi} .
 %\end{eqnarray}
 De este modo, tenemos que
 \begin{align}
-\hat{n}\times\vec{\epsilon}_0 = -\hat{z}\sen\theta\sen\varphi +\hat{y}\cos\theta,
+\hat{n}\times\vec{\epsilon}_0 = -\hat{z}\sin\theta\sin\varphi +\hat{y}\cos\theta,
 \end{align}
 \begin{align}
-\left|\hat{n}\times\vec{\epsilon}_0\right|^2 = \sen^2\theta\sen^2\varphi +\cos^2\theta,
+\left|\hat{n}\times\vec{\epsilon}_0\right|^2 = \sin^2\theta\sin^2\varphi +\cos^2\theta,
 \end{align}
 Por lo tanto,
 \begin{equation}
 \frac{d\sigma}{d\Omega}=\left(\frac{q^2\mu}{4\pi m}\right)^2
-\left( \sen^2\theta\sen^2\varphi +\cos^2\theta \right).
+\left( \sin^2\theta\sin^2\varphi +\cos^2\theta \right).
 \end{equation}
 Recuerde que $\theta$ es el 'angulo de scattering y $\varphi$ es el 'angulo
 azimutal entre la polarizaci'on inicial y la direcci'on de la radiaci'on
@@ -871,8 +871,8 @@ correspondiente a cambiar el 'angulo $\varphi$ por ${\pi}/{2}-\varphi$, ver figu
 \left. \frac{d\sigma}{d\Omega}\right|_{\rm no-pol}&=\frac{1}{2}\left[\left.
 \frac{d\sigma}{d\Omega}\right|_\varphi+\left.
 \frac{d\sigma}{d\Omega}\right|_{\frac{\pi}{2}-\varphi}\right] \\
-&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left[\sen^2\theta\sen^2\varphi +\cos^2\theta +\sen^2\theta\sen^2\left(\frac{\pi}{2}-\varphi\right) +\cos^2\theta\right]\\
-&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left(\sen^2\theta\sen^2\varphi +\cos^2\theta +\sen^2\theta\cos^2\varphi +\cos^2\theta\right)\\
+&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left[\sin^2\theta\sin^2\varphi +\cos^2\theta +\sin^2\theta\sin^2\left(\frac{\pi}{2}-\varphi\right) +\cos^2\theta\right]\\
+&=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left(\sin^2\theta\sin^2\varphi +\cos^2\theta +\sin^2\theta\cos^2\varphi +\cos^2\theta\right)\\
 &=\frac{1}{2}\left(\frac{q^2\mu}{4\pi m}\right)^2\left(1+\cos^2\theta\right).
 \end{align}
 Como era de esperar, en este caso obtenemos una secci'on diferencial de scattering independiente de $\varphi$:
@@ -1148,8 +1148,8 @@ Si el movimiento es peri'odico, con periodo $T$, la velocidad y aceleraci'on de 
 \begin{equation}
 \vec{E}(\vec{x},t) =\sum_{m\,\in\, \mathbb{Z}} \vec{E}_{m}(\vec{x})e^{i\omega_{m}t},
 \end{equation}
-donde $\omega_{m}:=m\omega_0$ ser'an m'ultiplos de la frecuencia
-fundamental $\omega_0:={2\pi}/{T}$, y
+donde $\omega_{m}:=m\omega_1$ ser'an m'ultiplos de la frecuencia
+fundamental $\omega_1:={2\pi}/{T}$, y
 \begin{equation}
 \vec{E}_{m}(\vec{x}) =\frac{1}{T}\int_0^{T}\vec{E}(\vec{x},t) e^{-i\omega_{m}t}dt. \label{defAm}
 \end{equation}
@@ -1164,13 +1164,13 @@ Usando la expansi'on en serie de Fourier del vector $\vec{\cal A}$, tenemos que
 &  =\frac{1}{\mu c}\lim_{r\to\infty}\frac{r^2}{T}\int_0^{T}\sum_{m}\vec{E}_{m}^*e^{-i\omega_{m}t}\cdot\sum_{m'}\vec{E}_{m'}e^{i\omega_{m'}t}dt\\
 &  =\frac{1}{\mu c}\lim_{r\to\infty}\frac{r^2}{T}\sum_{m,m' }\vec{E}_{m}^*\cdot\vec{E}_{m'}e^{i\left(\omega_{m'}-\omega_{m}\right)  t}dt\\
 &  =\frac{1}{\mu c}\lim_{r\to\infty}r^2 \sum_{m,m'}\vec{E}_{m}^*\cdot\vec{E}_{m'}\frac{1}{T}
-\int_0^{T}e^{i\omega_0\left(m'-m\right)  t}dt\\
+\int_0^{T}e^{i\omega_1\left(m'-m\right)  t}dt\\
 &  =\frac{1}{\mu c}\lim_{r\to\infty}r^2\sum_{m,m' }\vec{E}_{m}^*\cdot\vec{E}_{m' }\delta_{m,m'}\\
 &  =\frac{1}{\mu c}\lim_{r\to\infty}r^2\sum_{m}\left|\vec{E}_{m}\right|^2,
 \end{align}
 donde hemos usado
 \begin{equation}
-\frac{1}{T}\int_0^{T}e^{i\omega_0\left(m'-m\right)t }dt\equiv\delta_{m,m' }.
+\frac{1}{T}\int_0^{T}e^{i\omega_1\left(m'-m\right)t }dt\equiv\delta_{m,m' }.
 \end{equation}
 Puesto que $\vec{E}(\hat{n},t)$ es real, tendremos que $\vec{E}_{m}^*=\vec{E}_{-m}$, y entonces podemos escribir:
 \begin{equation}
@@ -1232,24 +1232,24 @@ id'enticos valores tanto en $t=0$ como en $t=T$. Tomando en cuenta todos estos
 elementos llegamos a:
 \begin{align}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}) &
-=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}\left|\int_0^{2\pi/\omega_0}\hat{n}\times\left(\hat{n}\times\vec{v}\right)
+=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}\left|\int_0^{2\pi/\omega_1}\hat{n}\times\left(\hat{n}\times\vec{v}\right)
 e^{-i\omega_{m}\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)}dt \right|^2\\
-&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}\left|
-\hat{n}\times\int_0^{2\pi/\omega_0}\left(  \hat{n}\times\vec{v}\right)
+&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}\left|
+\hat{n}\times\int_0^{2\pi/\omega_1}\left(  \hat{n}\times\vec{v}\right)
 e^{-i\omega_{m}\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)  }dt \right|^2\\
-&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}\left|
-\int_0^{2\pi/\omega_0}\left(  \vec{v}\times\hat{n}\right)  e^{-i\omega
+&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}\left|
+\int_0^{2\pi/\omega_1}\left(  \vec{v}\times\hat{n}\right)  e^{-i\omega
 _{m}\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right) }dt \right|^2.
 \end{align}
 
 Nuestro resultado final es entonces una expresi'on anal'itica para la potencia promedio (en un periodo) radiada (al infinito) por unidad de 'angulo s'olido en el modo de frecuencia
-$\omega_m=m\omega_0=2\pi {m}/{T}$ por una carga $q$ que se mueve en una
+$\omega_m=m\omega_1=2\pi {m}/{T}$ por una carga $q$ que se mueve en una
 trayectoria peri'odica arbitraria (en general, relativista) $\vec{z}(t)$, de
 periodo $T$:
 \begin{equation}\marginnote{Distribuci'on discreta de potencia}
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})
-=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}\left|
-\int_0^{2\pi/\omega_0}\left(  \vec{v}\times\hat{n}\right)
+=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}\left|
+\int_0^{2\pi/\omega_1}\left(  \vec{v}\times\hat{n}\right)
 e^{-i\omega_{m}\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)}dt\right|^2.}
 \label{promradperi'odico}
 \end{equation}
@@ -1279,75 +1279,75 @@ e^{-i\omega\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)  }dt\right|^2 .} \label{
 
 Si la carga tiene un movimiento arm'onico simple de la forma
 \begin{equation}
-\vec{z}(t) =a\cos(\omega_0t)\hat{z},
+\vec{z}(t) =a\cos(\omega_1t)\hat{z},
 \end{equation}
 entonces
 \begin{equation}
-\vec{v}(t) =-a\omega_0\sen(\omega_0t)\hat{z}.
+\vec{v}(t) =-a\omega_1\sin(\omega_1t)\hat{z}.
 \end{equation}
 Claramente, el sistema tiene simetr'ia respecto a rotaciones en torno al eje
 $z$. Esto implica que podemos considerar el vector $\hat{n}$ como contenido en
 el plano $y-z$, sin perder generalidad, es decir,
 \begin{equation}
-\hat{n}=\hat{z}\cos\theta+\hat{y}\sen\theta,
+\hat{n}=\hat{z}\cos\theta+\hat{y}\sin\theta,
 \end{equation}
 donde $\theta$ es el 'angulo entre $\hat{n}$ y el eje $z$. Con esto tendremos
 que
 \begin{equation}
- \vec{z}\cdot\hat{n}=a\cos(\omega_0t)\cos\theta ,
+ \vec{z}\cdot\hat{n}=a\cos(\omega_1t)\cos\theta ,
 \end{equation}
 y
 \begin{equation}
-\vec{v}\times\hat{n}=a\omega_0\sen\theta\sen(\omega_0t)  \hat{x},
+\vec{v}\times\hat{n}=a\omega_1\sin\theta\sin(\omega_1t)  \hat{x},
 \end{equation}
 de modo que
 \begin{align}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle &=
-\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}
-\left| \int_0^{2\pi\omega_0}a\omega_0\sen\theta\sen\left(\omega_0t\right)
-\hat{x}e^{-i\omega_0m\left(t-\frac{a\cos\left(\omega_0t\right)\cos\theta}{c}\right)}dt\right|^2\\
-&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_0^4}{\left(2\pi\right)^3}
-a^2\omega_0^2\sen^2\theta\left| \int_0^{2\pi/\omega_0}\sen\left(
-\omega_0t\right) e^{-i\omega_0mt}e^{i\omega_0m\frac{a\cos\left(
-\omega_0t\right)  \cos\theta}{c}}dt\right|^2 .  \label{promedioantescvar}
+\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
+\left| \int_0^{2\pi\omega_1}a\omega_1\sin\theta\sin\left(\omega_1t\right)
+\hat{x}e^{-i\omega_1m\left(t-\frac{a\cos\left(\omega_1t\right)\cos\theta}{c}\right)}dt\right|^2\\
+&=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
+a^2\omega_1^2\sin^2\theta\left| \int_0^{2\pi/\omega_1}\sin\left(
+\omega_1t\right) e^{-i\omega_1mt}e^{i\omega_1m\frac{a\cos\left(
+\omega_1t\right)  \cos\theta}{c}}dt\right|^2 .  \label{promedioantescvar}
 \end{align}
 Calculemos primero la integral
 \begin{equation}
-I:=\int_0^{2\pi/\omega_0}\sen\left(\omega_0t\right)
-e^{-i\omega_0mt}e^{i\omega_0m\frac{a\cos\left(  \omega_0t\right)
+I:=\int_0^{2\pi/\omega_1}\sin\left(\omega_1t\right)
+e^{-i\omega_1mt}e^{i\omega_1m\frac{a\cos\left(  \omega_1t\right)
 \cos\theta}{c}}dt.
 \end{equation}
 Introduciendo la nueva variable de integraci'on adimensional
-$x:=\omega_0t-\frac{\pi}{2}$ se tiene que
+$x:=\omega_1t-\frac{\pi}{2}$ se tiene que
 \begin{eqnarray}
-I&=&\frac{1}{\omega_0}e^{-i\frac{\pi}{2}m}\int_{-\frac{\pi}{2}}^{\frac{3\pi}{2}}
-\sen\left(x+\frac{\pi}{2}\right)  e^{-ixm}e^{i\frac{\omega_0ma}{c}\cos\left(
+I&=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\frac{\pi}{2}}^{\frac{3\pi}{2}}
+\sin\left(x+\frac{\pi}{2}\right)  e^{-ixm}e^{i\frac{\omega_1ma}{c}\cos\left(
 x+\frac{\pi}{2}\right)  \cos\theta}dx \\
-&=&\frac{1}{\omega_0}e^{-i\frac{\pi}{2}m}\int_{-\pi+\frac{\pi}{2}}^{\pi+\frac{\pi
-}{2}}\cos(x)e^{-ixm}e^{-i\frac{\omega_0ma}{c}\sen x\cos\theta}dx\\
-&=&\frac{1}{\omega_0}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\cos(x)
-e^{-ixm}e^{-i\beta m\sen x\cos\theta}dx\\
-&=&\frac{1}{2\omega_0}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\left(
-e^{ix}+e^{-ix}\right)e^{-ixm}e^{-i\beta m\sen x\cos\theta}dx\\
-&=&\frac{e^{-i\frac{\pi}{2}m}}{2\omega_0}\left[\int_{-\pi}^{\pi}e^{-ix\left(
-m-1\right)}e^{-i\beta m\sen x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(
-1+m\right)}e^{-i\beta m\sen x\cos\theta}dx\right]  .
+&=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi+\frac{\pi}{2}}^{\pi+\frac{\pi
+}{2}}\cos(x)e^{-ixm}e^{-i\frac{\omega_1ma}{c}\sin x\cos\theta}dx\\
+&=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\cos(x)
+e^{-ixm}e^{-i\beta m\sin x\cos\theta}dx\\
+&=&\frac{1}{2\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\left(
+e^{ix}+e^{-ix}\right)e^{-ixm}e^{-i\beta m\sin x\cos\theta}dx\\
+&=&\frac{e^{-i\frac{\pi}{2}m}}{2\omega_1}\left[\int_{-\pi}^{\pi}e^{-ix\left(
+m-1\right)}e^{-i\beta m\sin x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(
+1+m\right)}e^{-i\beta m\sin x\cos\theta}dx\right]  .
 \end{eqnarray}
-Aqu'i hemos adem'as introducido la definici'on $\beta:={a\omega_0}/{c}$ que
+Aqu'i hemos adem'as introducido la definici'on $\beta:={a\omega_1}/{c}$ que
 corresponde a la amplitud de la velocidad del oscilador, respecto a la velocidad
 de la luz.
 
 %Finalmente, realizando el cambio de variable de integraci'on $x\rightarrow-x$ obtenemos:
 %\begin{equation}
-%I=\frac{e^{-i\frac{\pi}{2}m}}{2\omega_0}\left(  \int_{-\pi}^{\pi}e^{-ix\left(
-%m+1\right)}e^{-i\beta m\sen x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(  m-1\right)
-%}e^{-i\beta m\sen x\cos\theta}dx\right)  .
+%I=\frac{e^{-i\frac{\pi}{2}m}}{2\omega_1}\left(  \int_{-\pi}^{\pi}e^{-ix\left(
+%m+1\right)}e^{-i\beta m\sin x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(  m-1\right)
+%}e^{-i\beta m\sin x\cos\theta}dx\right)  .
 %\end{equation}
 Este resultado puede ser escrito en t'erminos de \textit{funciones de Bessel}
 $J_n(z)$, ya que\footnote{Ver, por ejemplo, la \cite{GR00}, p'agina
 902, expresi'on 8.411-1.}
 \begin{equation}
-J_{n}(z)  =\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{-inx}e^{iz\sen x}dx ,
+J_{n}(z)  =\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{-inx}e^{iz\sin x}dx ,
 \end{equation}
 y
 \begin{equation}
@@ -1356,7 +1356,7 @@ y
 
 Con esto, nuestra integral puede escribirse como
 \begin{equation}
-I=\frac{\pi}{\omega_0}(-1)^{m+1}e^{-i\frac{\pi}{2}m}\left[J_{m-1}\left(\beta
+I=\frac{\pi}{\omega_1}(-1)^{m+1}e^{-i\frac{\pi}{2}m}\left[J_{m-1}\left(\beta
 m\cos\theta\right)+J_{m+1}\left(\beta m\cos\theta\right)  \right]  .
 \end{equation}
 Recurrimos ahora a la siguiente identidad\footnote{Ver \cite{GR00}, p'agina 916, expresi'on 8.471-1, o \cite{AW01}, p'agina 672, expresi'on (11.10).}:
@@ -1366,7 +1366,7 @@ x\right)  ,
 \end{equation}
 y entonces
 \begin{equation}\label{Ifinal}
-I=(-1)^{m+1}e^{-i\frac{\pi}{2}m}\frac{2\pi}{\omega_0\beta\cos\theta}J_{m}\left(  \beta m\cos\theta\right).
+I=(-1)^{m+1}e^{-i\frac{\pi}{2}m}\frac{2\pi}{\omega_1\beta\cos\theta}J_{m}\left(  \beta m\cos\theta\right).
 \end{equation}
 Sustituyendo \eqref{Ifinal} en \eqref{promedioantescvar} llegamos a nuestro
 resultado final:
@@ -1378,7 +1378,7 @@ m\cos\theta\right)\right]^2,
 o bien,
 \begin{equation}
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle
-=\frac{q^2\mu c}{4\pi}\frac{\omega_0^2m^2}{2\pi}\tan^2\theta\left[ J_{m}\left(\frac{a\omega_0
+=\frac{q^2\mu c}{4\pi}\frac{\omega_1^2m^2}{2\pi}\tan^2\theta\left[ J_{m}\left(\frac{a\omega_1
 m}{c}\cos\theta\right)  \right]^2.}
 \end{equation}
 \begin{figure}[ht]
@@ -1392,7 +1392,7 @@ m}{c}\cos\theta\right)  \right]^2.}
 \label{TER3}
 \end{figure}
 Podemos comprobar que \textit{la mayor cantidad de energ'ia se irradia en la
-frecuencia fundamental} $\omega_0$ (es decir, para $m=1$), mientras que los
+frecuencia fundamental} $\omega_1$ (es decir, para $m=1$), mientras que los
 arm'onicos superiores son en general suprimidos. Para movimientos
 no-relativistas ($\beta\ll 1$) s'olo la frecuencia fundamental rad'ia
 significativamente.
@@ -1404,28 +1404,28 @@ J_{n}(x)\approx \frac{x^n}{2^nn!}, \qquad |x|\ll 1.
 Por lo tanto, en este l'imite
 \begin{equation}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle
-\approx  \frac{\mu c}{8\pi^2}\left[\frac{q\omega_0}{(m-1)!}\left(\frac{a\omega_0m}{2c}\cos\theta\right)^{m}\tan\theta\right]^2.
+\approx  \frac{\mu c}{8\pi^2}\left[\frac{q\omega_1}{(m-1)!}\left(\frac{a\omega_1m}{2c}\cos\theta\right)^{m}\tan\theta\right]^2.
 \end{equation}
 Adem'as, de aqu'i obtenemos
 \begin{equation}
-\frac{\left\langle \frac{dP_{m+1}}{d\Omega}\right\rangle}{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle}\approx \left[\frac{a\omega_0}{2c}\cos\theta\right]^2=O(\beta^2),
+\frac{\left\langle \frac{dP_{m+1}}{d\Omega}\right\rangle}{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle}\approx \left[\frac{a\omega_1}{2c}\cos\theta\right]^2=O(\beta^2),
 \end{equation}
 que muestra que la potencia radiada decrece en un factor del orden $\beta^2$ entre un arm'onico y el siguiente. Adem'as,
 \begin{equation}
 \left\langle \frac{dP_{1}}{d\Omega}\right\rangle
-\approx  \frac{q^2\mu a^2\omega_0^4}{32\pi^2 c}\sen^2\theta.
+\approx  \frac{q^2\mu a^2\omega_1^4}{32\pi^2 c}\sin^2\theta.
 \end{equation}
 
  Integrando con respecto al 'angulo s'olido obtenemos la potencia total promedio:
 \begin{eqnarray}
 \left\langle P_{1}\right\rangle&=& \int \left\langle\frac{dP_{1}}{d\Omega}\right\rangle\,d\Omega\\
-&\approx &\frac{q^2\mu a^2\omega_0^4}{32\pi^2c}\,2\pi\int_{0}^{\pi
+&\approx &\frac{q^2\mu a^2\omega_1^4}{32\pi^2c}\,2\pi\int_{0}^{\pi
 }\sin ^{3}\theta\, d\theta   \\
-&\approx &\frac{q^2\mu a^2\omega_0^4}{16\pi c}\,\frac{4}{3}  \\
-&\approx &\frac{q^2\mu a^2\omega_0^4}{12\pi c}.
+&\approx &\frac{q^2\mu a^2\omega_1^4}{16\pi c}\,\frac{4}{3}  \\
+&\approx &\frac{q^2\mu a^2\omega_1^4}{12\pi c}.
 \end{eqnarray}
 
-Note la consistencia de este resultado con la f'ormula de Larmor (\ref{R-larmor}), ya que en este caso $\left\langle\vec{a}^2\right\rangle=\left\langle a^2\omega_0^4\cos^2(\omega_0t)\right\rangle=a^2\omega_0^4/2$.
+Note la consistencia de este resultado con la f'ormula de Larmor (\ref{R-larmor}), ya que en este caso $\left\langle\vec{a}^2\right\rangle=\left\langle a^2\omega_1^4\cos^2(\omega_1t)\right\rangle=a^2\omega_1^4/2$.
 
 
 \section{Dipolo de Hertz (dipolo el'ectrico ideal)}
@@ -1524,12 +1524,12 @@ de modo que la parte radiativa del vector de Poynting es dada por
 \begin{equation}
 \vec{S}=\frac{1}{\mu c}\vec{E}\times(\hat{r}\times\vec{E}) 
 =\frac{1}{\mu c}\vec{E}^2\,\hat{r}= \frac{\mu}{16\pi^2 c}\left|\frac{(\ddot{\vec{p}}\times\hat{r})\times\hat{r}}{r}\right|^2\hat{r} 
-=\frac{\mu}{16\pi^2 c}\frac{\ddot{\vec{p}}{\,}^2}{r^2}\sen^2\theta\,\hat{r},
+=\frac{\mu}{16\pi^2 c}\frac{\ddot{\vec{p}}{\,}^2}{r^2}\sin^2\theta\,\hat{r},
 \end{equation}
 donde $\theta$ es el 'angulo entre $\ddot{\vec{p}}$ y $\hat{r}$ (que, en general, depende del tiempo). La potencia radiada por el dipolo por unidad de 'angulo s'olido es entonces 
 \begin{equation}
 \boxed{\frac{dP}{d\Omega}%=r^2\vec{S}\cdot \hat{r}
-=\frac{\mu}{16\pi^2 c}\left.{\ddot{\vec{p}}{\,}^2}\sen^2\theta\right|_{\rm ret}.}
+=\frac{\mu}{16\pi^2 c}\left.{\ddot{\vec{p}}{\,}^2}\sin^2\theta\right|_{\rm ret}.}
 \end{equation}
 \begin{figure}[H]
 \centerline{\includegraphics[height=5cm]{fig/fig-dipolo.pdf}}
@@ -1628,7 +1628,7 @@ Como es directo de verificar, estos campos satisfacen nuevamente las relaciones:
 \end{equation}
 tal como es t'ipico de un campo de radiaci'on. Como consecuencia, el vector de Poynting adopta la forma $\vec{S}=(1/\mu c)\vec{E}_{\rm rad}^2\hat{r}$, de modo que la energ'ia se propaga en la direcci'on del vector $\hat{r}$. La potencia por unidad de 'angulo s'olido radiada por la peque\~na espira de corriente es entonces
 \begin{equation}
-\boxed{\frac{dP}{d\Omega}(\hat{r},t)=\frac{\mu}{16\pi^2 c^3}\ddot{\vec{\mu}}{\,}^2\sen^2\theta ,}
+\boxed{\frac{dP}{d\Omega}(\hat{r},t)=\frac{\mu}{16\pi^2 c^3}\ddot{\vec{\mu}}{\,}^2\sin^2\theta ,}
 \end{equation}
 donde $\theta$ es ahora el 'angulo entre $\ddot{\vec{\mu}}$ y $\hat{r}$. La potencia total radiada es entonces
 
@@ -1847,7 +1847,7 @@ como es usual para un campo de radiaci'on. De aqu'i obtenemos, finalmente, una e
 
 Consideremos una \textit{antena lineal} de largo $d$, alimentada en su punto medio por una fuente alterna de frecuencia angular $\omega$, orientada a lo largo del eje $z$. Supondremos que el perfil de corriente en la antena es de la forma
 \begin{equation}
- I(z,t)=I_0\sen\left(\frac{kd}{2}-k|z|\right)\cos(\omega t),
+ I(z,t)=I_0\sin\left(\frac{kd}{2}-k|z|\right)\cos(\omega t),
 \end{equation}
 que satisface la condici'on de ser nula en los extremos, es decir,
 \begin{equation}
@@ -1855,7 +1855,7 @@ que satisface la condici'on de ser nula en los extremos, es decir,
 \end{equation}
 La corriente en el centro ($z=0$) es dada por
 \begin{equation}
- I(0,t)=I_0\sen\left(\frac{kd}{2}\right)\cos(\omega t).
+ I(0,t)=I_0\sin\left(\frac{kd}{2}\right)\cos(\omega t).
 \end{equation}
 % \begin{eqnarray}
 %  \vec{A}_{\rm rad}&=&\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
@@ -1877,52 +1877,52 @@ La corriente en el centro ($z=0$) es dada por
 Consideraremos el caso en que el largo $d$ de la antena \textit{no} es despreciable comparado con la longitud de onda $\lambda=2\pi c/\omega$ de la radiaci'on emitida. En este caso no es posible utilizar la expansi'on multipolar de la secci'on \ref{sec:emr}. Por lo tanto, para determinar los campos radiativos debemos utilizar la expresiones  (\ref{phirad}) y (\ref{Arad}). En nuestro caso, donde la corriente que circula por el sistema es conocida, basta determinar el potencial vectorial usando (\ref{Arad}), puesto que a partir de 'el podemos calcular el campo magn'etico por medio del rotor. La componente radiativa del campo el'ectrico puede luego determinarse usando $\vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r}$. Adem'as, como en nuestro caso la distribuci'on de corriente es lineal, (\ref{Arad}) se reduce a
 \begin{eqnarray}
  \vec{A}_{\rm rad}&=&\frac{\mu}{4\pi}\frac{\hat{z}}{r}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
-&=&\frac{\mu}{4\pi}\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sen\left(\frac{kd}{2}-k|z|\right)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
-&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sen\left(\frac{kd}{2}-k|z|\right)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
-&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\sen\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz \right] .
+&=&\frac{\mu}{4\pi}\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
+&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
+&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz \right] .
 \end{eqnarray}
 La integral involucrada puede ser calculada f'acilmente reduci'endola a integrales de exponenciales, obteniendo:
 \begin{equation}
- \int_{-d/2}^{d/2}\sen\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz=\frac{2}{k\sen^2\theta}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] .
+ \int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz=\frac{2}{k\sin^2\theta}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] .
 \end{equation}
 Con esto, el potencial vectorial puede escribirse como
 \begin{eqnarray}
  \vec{A}_{\rm rad}&=&
-\Re\left\lbrace\frac{\mu I_0}{2\pi rk\sen^2\theta}e^{i\omega(t-\frac{r}{c})}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] \right\rbrace\hat{z}\\
-&=&\frac{\mu cI_0}{2\pi r\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sen^2\theta}\hat{z} \\
+\Re\left\lbrace\frac{\mu I_0}{2\pi rk\sin^2\theta}e^{i\omega(t-\frac{r}{c})}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] \right\rbrace\hat{z}\\
+&=&\frac{\mu cI_0}{2\pi r\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin^2\theta}\hat{z} \\
 &=&A_z\hat{z}.
 \end{eqnarray}
-Determinaremos ahora el campo magn'etico radiativo. Es conveniente calcular el rotor de $\vec{A}$ en coordenadas esf'ericas. Usando $\hat{z}=\hat{r}\cos\theta-\hat{\theta}\sen\theta$
-tenemos que $\vec{A}=A_r\hat{r}+A_\theta\hat{\theta}$, con $A_r=A_z\cos\theta$ y $A_\theta=-A_z\sen\theta$. Ya que las componentes de $\vec{A}$ s'olo dependen de $r$ y $\theta$ y que adem'as $A_\varphi=0$ tenemos que el rotor se reduce a
+Determinaremos ahora el campo magn'etico radiativo. Es conveniente calcular el rotor de $\vec{A}$ en coordenadas esf'ericas. Usando $\hat{z}=\hat{r}\cos\theta-\hat{\theta}\sin\theta$
+tenemos que $\vec{A}=A_r\hat{r}+A_\theta\hat{\theta}$, con $A_r=A_z\cos\theta$ y $A_\theta=-A_z\sin\theta$. Ya que las componentes de $\vec{A}$ s'olo dependen de $r$ y $\theta$ y que adem'as $A_\varphi=0$ tenemos que el rotor se reduce a
 \begin{equation}
  \vec{\nabla}\times\vec{A}=\frac{\hat{\varphi}}{r}\left(\frac{\partial\ }{\partial r}\left(rA_\theta\right)-\frac{\partial A_r}{\partial\theta}\right). \label{rotaa}
 \end{equation}
 Adem'as, ya que $A_r$ es proporcional a $1/r$, verificamos que el segundo t'ermino de (\ref{rotaa}) aportar'a con un t'ermino proporcional a $1/r^2$ al rotor, que no corresponde a una contribuci'on radiativa al campo magn'etico. De esta forma, llegamos a que
 \begin{eqnarray}
  \vec{B}_{\rm rad}&=&\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(rA_\theta\right) \\
-&=&-\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(\frac{\mu cI_0}{2\pi\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sen\theta}\right) \\
-&=&-\frac{\mu I_0}{2\pi r}\sen\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sen\theta}\,\hat{\varphi}.
+&=&-\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(\frac{\mu cI_0}{2\pi\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\right) \\
+&=&-\frac{\mu I_0}{2\pi r}\sin\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\,\hat{\varphi}.
 \end{eqnarray}
 La potencia instant'anea radiada por unidad de 'angulo s'olido puede entonces calcularse como:
 \begin{eqnarray}
  \frac{dP}{d\Omega}&=&\frac{c}{\mu}\left|\vec{B}_{\rm rad}\right|^2 r^2\\
-&=&\frac{\mu c I_0^2}{4\pi^2}\sen^2\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]^2}{\sen^2\theta}.
+&=&\frac{\mu c I_0^2}{4\pi^2}\sin^2\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]^2}{\sin^2\theta}.
 \end{eqnarray}
 Ya que el movimiento es peri'odico es m'as 'util considerar la potencia promedio radiada:
 \begin{equation}
- \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu cI_0^2}{8\pi^2}\left[\frac{\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)}{\sen\theta}\right]^2.
+ \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu cI_0^2}{8\pi^2}\left[\frac{\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)}{\sin\theta}\right]^2.
 \end{equation}
 Para una \textit{antena de media onda}, es decir, tal que $d=\lambda/2$, tendremos que $kd=\pi$ y entonces
 \begin{equation}
- \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu c I_0^2}{8\pi^2}\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sen^2\theta}.
+ \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu c I_0^2}{8\pi^2}\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}.
 \end{equation}
 %
 % Para la antena de una onda $kd=2\pi$:
 % \begin{eqnarray}
 %  \left\langle\frac{dP}{d\Omega}\right\rangle
-% &=&\frac{I_0^2}{2\pi c}\left[\frac{\cos\left(\pi\cos\theta\right)+1}{\sen\theta}\right]^2 \\
-% &=&\frac{I_0^2}{2\pi c}\left[\frac{2\cos^2\left(\frac{1}{2}\pi\cos\theta\right)}{\sen\theta}\right]^2 \\
-% &=&\frac{2I_0^2}{\pi c}\frac{\cos^4\left(\frac{1}{2}\pi\cos\theta\right)}{\sen^2\theta}
+% &=&\frac{I_0^2}{2\pi c}\left[\frac{\cos\left(\pi\cos\theta\right)+1}{\sin\theta}\right]^2 \\
+% &=&\frac{I_0^2}{2\pi c}\left[\frac{2\cos^2\left(\frac{1}{2}\pi\cos\theta\right)}{\sin\theta}\right]^2 \\
+% &=&\frac{2I_0^2}{\pi c}\frac{\cos^4\left(\frac{1}{2}\pi\cos\theta\right)}{\sin^2\theta}
 % \end{eqnarray}
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.5\textwidth]{fig/fig-antena-media-onda.pdf}}
@@ -1934,8 +1934,8 @@ Para una \textit{antena de media onda}, es decir, tal que $d=\lambda/2$, tendrem
 En este caso, la potencia promedio total es dada por
 \begin{eqnarray}
  \left\langle P\right\rangle
-&=&\frac{\mu c I_0^2}{8\pi^2}\int\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sen^2\theta}\,d\Omega \\
-&=&\frac{\mu c I_0^2}{4\pi}\int_0^\pi\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sen\theta}\,d\theta\\
+&=&\frac{\mu c I_0^2}{8\pi^2}\int\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}\,d\Omega \\
+&=&\frac{\mu c I_0^2}{4\pi}\int_0^\pi\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin\theta}\,d\theta\\
 &=&\frac{\mu c I_0^2}{4\pi}\times 1.2188\cdots .
 \end{eqnarray}
 %En unidades S.I., este resultado se expresa como
