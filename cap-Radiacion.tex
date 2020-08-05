@@ -121,12 +121,12 @@ Comparando (\ref{lapG}) con (\ref{HelmG}) obtenemos $\alpha=-{1}/{4\pi}$, de
 modo que la funci'on de Green para nuestro problema es
 \begin{equation}
 \boxed{G(\vec{x},\vec{x}')=-\frac{1}{4\pi}\frac{e^{\pm
-ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}, \qquad k:=\frac{\omega}{c}.} \label{Green}
+ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}, \qquad k:=\frac{\omega}{c}.} \label{GreenH}
 \end{equation}
 
 
 \subsection{Potenciales retardados}
-Con la funci'on de Green (\ref{Green}) obtenemos la soluci'on particular para la
+Con la funci'on de Green (\ref{GreenH}) obtenemos la soluci'on particular para la
 transformada de Fourier $\bar{\Psi}(\vec{x},\omega)$:
 \begin{equation}
 \bar{\Psi}(\vec{x},\omega)=\frac{1}{4\pi}\int
@@ -172,10 +172,10 @@ En otras palabras, los valores del campo en un evento dado est'an determinados p
 \label{fig:cdl2}
 \end{figure}
 
-Otra consecuencia directa es que cualquier \textit{cambio} en la configuraci'on de las fuentes en un punto afectar'a a los campos en otro punto s'olo en tiempos posteriores, luego de un intervalo de tiempo igual al tiempo de vuelo de una se\~nal luminosa que los conecte. En otras palabras: \textit{los cambios de los campos producidos por cambios de las fuentes se propagan con rapidez $c=1/\sqrt{\varepsilon\mu}$}. Equivalentemente, el valor de las fuentes en un determinado evento contribuye a los valores de los campos s'olo en eventos situados sobre el \textit{cono de luz futuro} del evento fuente.
+Otra consecuencia directa es que cualquier \textit{cambio} en la configuraci'on de las fuentes en un punto afectar'a a los campos en otro punto s'olo en tiempos posteriores, luego de un intervalo de tiempo igual al tiempo de vuelo de una señal luminosa que los conecte. En otras palabras: \textit{los cambios de los campos producidos por cambios de las fuentes se propagan con rapidez $c=1/\sqrt{\varepsilon\mu}$}. Equivalentemente, el valor de las fuentes en un determinado evento contribuye a los valores de los campos s'olo en eventos situados sobre el \textit{cono de luz futuro} del evento fuente.
 
 \section{Ecuaciones de Jefimenko}
-A partir de las expresiones para los potenciales retardados en el gauge de Lorenz, es decir las ecuaciones \eqref{potret}, podemos calcular los campos el'ectrico y magn'etico producidos por una distribuci'on (arbitraria, pero compacta) de cargas y corrientes:
+A partir de las expresiones para los potenciales retardados en el gauge de Lorenz, es decir las ecuaciones \eqref{potret}, podemos calcular los campos eléctrico y magn'etico producidos por una distribuci'on (arbitraria, pero compacta) de cargas y corrientes:
 \begin{equation}
 \vec{E}(\vec{x},t)=\frac{1}{4\pi\varepsilon}\int_V \left[  \frac{\rho(\vec{x}',t_{\rm ret})(\vec{x}-\vec{x}')}{\vert \vec{x}-\vec{x}' \vert^3} + \frac{1}{c}\frac{ \dot\rho(\vec{x}',t_{\rm ret})(\vec{x}-\vec{x}')}{\vert\vec{x}-\vec{x}'\vert^2} -\frac{1}{c^2}\frac{\dot{\vec{J}} (\vec{x}',t_{\rm ret})}{\vert\vec{x}-\vec{x}' \vert} \right] dV',
 \end{equation}
@@ -183,7 +183,7 @@ A partir de las expresiones para los potenciales retardados en el gauge de Loren
 \vec{B}(\vec{x},t)=\frac{\mu}{4\pi} \int_V\left[
 \frac{\vec{J}(\vec{x}',t_{\rm ret})\times(\vec{x}-\vec{x}')}{\vert \vec{x}-\vec{x}'\vert^3}+ \frac{1}{c}\frac{ \dot{\vec{J}}(\vec{x}',t_{\rm ret})\times(\vec{x}-\vec{x}')}{\vert\vec{x}-\vec{x}' \vert^2} \right]dV', \label{b3}
 \end{equation}
-donde $\dot{f}(\vec{x},t)$ denota la derivada partial respecto a la variable temporal de la que depende la funci'on $f(\vec{x},t)$, es decir $\dot{f}(\vec{x},t):=(\partial_t f)(\vec{x},t)$. Las relaciones anteriores son conocidas como \textbf{ecuaciones de Jefimenko}\footnote{\href{http://en.wikipedia.org/wiki/Jefimenko}{Oleg Jefimenko} (1922-2009): f'isico estadounidense.}. Note que estas expresiones para los campos el'ectrico y magn'etico difieren de aquellas que se encontrar'ian directamente la soluci'on de las ecuaciones inhomog'eneas \eqref{EcOihE} y \eqref{EcOihB}. ?`Puede explicar por qu'e ocurre esto?.
+donde $\dot{f}(\vec{x},t)$ denota la derivada partial respecto a la variable temporal de la que depende la funci'on $f(\vec{x},t)$, es decir $\dot{f}(\vec{x},t):=(\partial_t f)(\vec{x},t)$. Las relaciones anteriores son conocidas como \textbf{ecuaciones de Jefimenko}\footnote{\href{http://en.wikipedia.org/wiki/Jefimenko}{Oleg Jefimenko} (1922-2009): f'isico estadounidense.}. Note que estas expresiones para los campos eléctrico y magn'etico difieren de aquellas que se encontrar'ian directamente la soluci'on de las ecuaciones inhomog'eneas \eqref{EcOihE} y \eqref{EcOihB}. ?`Puede explicar por qu'e ocurre esto?.
 
 
 \section{Potenciales de Li'enard-Wiechert}
@@ -360,7 +360,7 @@ Con esto, los potenciales adoptan la siguiente forma expl'icita:
 \vec{A}(\vec{x},t)&=&\frac{\mu c}{4\pi} \frac{q\beta\hat{x}}{\sqrt{(x-vt)^2+
 \gamma^{-2}(y^2+z^2)}}.
 \end{eqnarray}
-Derivando, encontramos las expresiones expl'icitas para los campos el'ectrico y magn'etico:
+Derivando, encontramos las expresiones expl'icitas para los campos eléctrico y magn'etico:
 \begin{eqnarray}
 B_x(\vec{x},t)&=&0, \\
 B_y(\vec{x},t)&=&-\frac{q\mu}{4\pi}\frac{v\gamma^{-2}z}{\left[ (x-vt)^2+
@@ -382,7 +382,7 @@ o, en forma un poco m'as compacta,
 \vec{E}(\vec{x},t)=\frac{q}{4\pi\varepsilon}\frac{\gamma^{-2}\left(\vec{x}-\vec{v}t\right)}{\left[(x-vt)^2+ (y^2+z^2)\gamma^{-2}\right] ^{3/2}},  \qquad
 \vec{B}(\vec{x},t)=\frac{q\mu}{4\pi}\frac{\gamma^{-2}(\vec{v}\times\vec{x})}{\left[(x-vt)^2+\gamma^{-2}(y^2+z^2)\right]^{3/2}}.
 \end{equation}
-En la secci'on \ref{secEjEBvc} recobraremos este resultado usando transformaciones de Lorentz. Animaciones de estos campos pueden ser encontrados \href{http://ocw.mit.edu/ans7870/8/8.02T/f04/visualizations/electrostatics/04-MovingChargePosElec/04-MovChrgPosElec_f223_320.html}{aqu\'i} para el campo el'ectrico y \href{http://ocw.mit.edu/ans7870/8/8.02T/f04/visualizations/magnetostatics/01-MovingChargePosMag/01-MovChrgMagPos_f223_320.html}{aqu\'i} para el campo magn'etico \cite{MIT}.
+En la secci'on \ref{secEjEBvc} recobraremos este resultado usando transformaciones de Lorentz. Animaciones de estos campos pueden ser encontrados \href{http://ocw.mit.edu/ans7870/8/8.02T/f04/visualizations/electrostatics/04-MovingChargePosElec/04-MovChrgPosElec_f223_320.html}{aqu\'i} para el campo eléctrico y \href{http://ocw.mit.edu/ans7870/8/8.02T/f04/visualizations/magnetostatics/01-MovingChargePosMag/01-MovChrgMagPos_f223_320.html}{aqu\'i} para el campo magn'etico \cite{MIT}.
 
 
 \section{Campo electromagn'etico generado por cargas con movimiento acelerado}
@@ -390,7 +390,7 @@ En la secci'on \ref{secEjEBvc} recobraremos este resultado usando transformacion
 \centerline{\includegraphics[height=5cm]{fig/fig-vectores.pdf}}
 \label{R7}
 \end{figure}
-Sabemos que los campos el'ectrico y magn'etico est'an dados en t'erminos de derivadas de los potenciales de acuerdo a las expresiones \eqref{defA2} y \eqref{defphi2}. Para evaluar las derivadas involucradas es necesario tener en cuenta que los potenciales retardados dependen de la posici'on $\vec{x}$ y el tiempo $t$ expl'icitamente a trav'es de $\vec{R}=\vec{x}-\vec{z}(t')$ y $\vec{n}$, \textit{pero adem'as impl'icitamente a trav'es del tiempo retardado} $t'=t'(\vec{x},t)$, que es soluci'on de \eqref{t'}.
+Sabemos que los campos eléctrico y magn'etico est'an dados en t'erminos de derivadas de los potenciales de acuerdo a las expresiones \eqref{defA2} y \eqref{defphi2}. Para evaluar las derivadas involucradas es necesario tener en cuenta que los potenciales retardados dependen de la posici'on $\vec{x}$ y el tiempo $t$ expl'icitamente a trav'es de $\vec{R}=\vec{x}-\vec{z}(t')$ y $\vec{n}$, \textit{pero adem'as impl'icitamente a trav'es del tiempo retardado} $t'=t'(\vec{x},t)$, que es soluci'on de \eqref{t'}.
 
 Tomando en cuenta esta doble dependencia, calculamos:
 \begin{eqnarray}
@@ -472,7 +472,7 @@ Sustituci'on en (\ref{dtA}) conduce entonces a
 \frac{\vec{\beta}(\vec{a}\cdot\vec{R})}{(1-\vec{\beta}\cdot\hat{n})}-c\vec\beta+\frac{c\vec\beta}{\gamma^2(1-\vec{\beta}\cdot\hat{n})}\right] \\
 &=&\frac{1}{4\pi\varepsilon}\frac{q}{(R-\vec{\beta}\cdot\vec{R})^2}\left[\frac{1}{c^2}\vec{a}R+\frac{1}{c^2}\frac{\vec{\beta}(\vec{a}\cdot\vec{R})}{(1-\vec{\beta}\cdot\hat{n})}-\vec\beta+\frac{\vec\beta}{\gamma^2(1-\vec{\beta}\cdot\hat{n})}\right] .
 \end{eqnarray}
-Tenemos ahora los ingredientes necesarios para calcular el campo el'ectrico:
+Tenemos ahora los ingredientes necesarios para calcular el campo eléctrico:
 \begin{eqnarray}
 4\pi\varepsilon\vec{E}&=&\frac{q}{(R-\vec{\beta}\cdot\vec{R})^2}\left[\frac{\hat{n}}{\gamma^2(1-\vec{\beta}\cdot\hat{n})}+\frac{1}{c^2}\frac{(\vec{a}\cdot\vec{R})\hat{n}}{(1-\vec{\beta}\cdot\hat{n})}-\vec\beta-\frac{1}{c^2}\vec{a}R-\frac{1}{c^2}\frac{\vec{\beta}(\vec{a}\cdot\vec{R})}{(1-\vec{\beta}\cdot\hat{n})}+\vec\beta-\frac{\vec\beta}{\gamma^2(1-\vec{\beta}\cdot\hat{n})}\right] \nonumber \\
 &=&\frac{q}{(R-\vec{\beta}\cdot\vec{R})^2}\left[\frac{\hat{n}-\vec\beta}{\gamma^2(1-\vec{\beta}\cdot\hat{n})}+\frac{1}{c^2}\frac{(\vec{a}\cdot\vec{R})\hat{n}}{(1-\vec{\beta}\cdot\hat{n})}-\frac{1}{c^2}\vec{a}R-\frac{1}{c^2}\frac{\vec{\beta}(\vec{a}\cdot\vec{R})}{(1-\vec{\beta}\cdot\hat{n})}\right] \\
@@ -485,7 +485,7 @@ Usando la identidad
 (\vec{a}\cdot\hat{n})(\hat{n}-\vec{\beta})-\vec{a}+\vec{a}\vec{\beta}\cdot\hat{n}\equiv (\vec{a}\cdot\hat{n})(\hat{n}-\vec{\beta})-\vec{a} (1-\hat{n}\cdot\vec\beta)\equiv \hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right],
 \end{equation}
-encontramos finalmente que\textit{ el campo el'ectrico generado por una carga $q$ en movimiento arbitrario} es de la forma
+encontramos finalmente que\textit{ el campo eléctrico generado por una carga $q$ en movimiento arbitrario} es de la forma
 \begin{equation}\marginnote{campo $\vec{E}$ carga $q$}
 \boxed{\vec{E}(\vec{x},t)=\vec{E}_{(1)}+\vec{E}_{(2)}=\frac{q}{4\pi\varepsilon}\left.\frac{\left(
 \hat{n}-\vec{\beta}\right)
@@ -494,12 +494,12 @@ encontramos finalmente que\textit{ el campo el'ectrico generado por una carga $q
 \times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
 ^3}\right|_{\rm ret} .} \label{Egen}
 \end{equation}
-El campo magn'etico puede calcularse de forma similar, encontr'andose que \textit{puede expresarse completamente en t'erminos del campo el'ectrico}:
+El campo magn'etico puede calcularse de forma similar, encontr'andose que \textit{puede expresarse completamente en t'erminos del campo eléctrico}:
 \begin{equation}\marginnote{campo $\vec{B}$ carga $q$}
 \boxed{\vec{B}(\vec{x},t)=\frac{1}{c}\left. \hat{n}\right|_{\rm
 ret}\times\vec{E}(\vec{x},t) .}
 \end{equation}
-Este resultado muestra, por lo tanto, que \textit{el campo magn'etico producido por una carga puntual es, en cada punto del espacio, perpendicular al campo el'ectrico y al vector que une la posici'on \underline{retardada} de la carga con el punto de observaci'on}.
+Este resultado muestra, por lo tanto, que \textit{el campo magn'etico producido por una carga puntual es, en cada punto del espacio, perpendicular al campo eléctrico y al vector que une la posici'on \underline{retardada} de la carga con el punto de observaci'on}.
 
 Note que para distancias $r$ muy grandes (comparadas con las dimensiones de la
 regi'on donde se encuentran las fuentes, que consideramos una regi'on compacta) $R\approx r$ y entonces
@@ -515,7 +515,7 @@ P(r,t)=\int_S \vec{S}\cdot d\vec{S}=\frac{1}{\mu}\int_S \left[ \left(
 \vec{E}\times\vec{B}\right) \cdot \hat{r}\right] \,r^2d\Omega.
 \end{equation}
 
-Llamamos \textbf{potencia radiada} a la energ'ia que es transportada \textit{muy lejos} de las fuentes, es decir $r\gg L$ donde $L$ es el tama\~no (lineal) caracter'istico del sistema, y que \textit{aproximamos} por el l'imite en que $r\rightarrow\infty$. En este l'imite, ubicando el centro de la esfera en un punto representativo de la distribuci'on de cargas y corrientes, podemos aproximar $\hat{n}\approx\hat{r}$ y $R\approx r$ de modo que,
+Llamamos \textbf{potencia radiada} a la energ'ia que es transportada \textit{muy lejos} de las fuentes, es decir $r\gg L$ donde $L$ es el tamaño (lineal) caracter'istico del sistema, y que \textit{aproximamos} por el l'imite en que $r\rightarrow\infty$. En este l'imite, ubicando el centro de la esfera en un punto representativo de la distribuci'on de cargas y corrientes, podemos aproximar $\hat{n}\approx\hat{r}$ y $R\approx r$ de modo que,
 \begin{equation}
 P_{\rm rad} (t)=\lim_{r\rightarrow\infty}\frac{1}{\mu}\int_S \left[ \left(
 \vec{E}\times\vec{B}\right) \cdot \hat{n}\right] \,r^2 d\Omega.
@@ -577,9 +577,9 @@ de modo que
 \end{equation}
 
 
-\section{F'ormula de Larmor (no-relativista)}\label{sec:Larmor-norel}
+\section{fórmula de Larmor (no-relativista)}\label{sec:Larmor-norel}
 
-Si $v\ll c$, es decir $\beta\ll1$, entonces el campo el'ectrico
+Si $v\ll c$, es decir $\beta\ll1$, entonces el campo eléctrico
 (\ref{Egen}) y la distribuci'on de potencia radiada (\ref{dPdO}) pueden
 aproximarse por:
 \begin{equation}
@@ -600,11 +600,11 @@ $\left|\hat{n}\times\left[\hat{n}\times{\vec{a}}\right]\right|^2=\vec{a}^2\sin^2
 \frac{dP}{d\Omega}(t)=\frac{q^2\mu}{16\pi^2 c}\left[ \vec{a}^2\sin^2\theta\right]_{\rm
 ret} .\label{Lardif}
 \end{equation}
- Note que la dependencia $\sin^2\theta$ de ${dP}/{d\Omega}$ implica que \textit{la energ'ia radiada se dirige mayoritariamente en la direcci'on normal a la aceleraci'on}. Adem'as, como $\vec{E}_{(2)}\propto \hat{n}\times(\hat{n}\times{\vec{a}})$ entonces el campo el'ectrico de radiaci'on  es normal a $\hat{n}$ y est'a contenido en el plano definido por $\vec{a}$ y $\hat{n}$. Ver figura \ref{fig:natheta}. Decimos entonces que el campo de radiaci'on est'a
+ Note que la dependencia $\sin^2\theta$ de ${dP}/{d\Omega}$ implica que \textit{la energ'ia radiada se dirige mayoritariamente en la direcci'on normal a la aceleraci'on}. Adem'as, como $\vec{E}_{(2)}\propto \hat{n}\times(\hat{n}\times{\vec{a}})$ entonces el campo eléctrico de radiaci'on  es normal a $\hat{n}$ y est'a contenido en el plano definido por $\vec{a}$ y $\hat{n}$. Ver figura \ref{fig:natheta}. Decimos entonces que el campo de radiaci'on est'a
 \textit{polarizado} en el plano definido por $\vec{a}$ y $\hat{n}$ y es normal a $\hat{n}$. Si $\vec{a}$ es constante, la radiaci'on emitida en una direcci'on $\hat{n}$ dada tiene polarizaci'on 100\% lineal.
 \begin{figure}[!h]
 \centerline{\includegraphics[height=5cm]{fig/fig-a-n-Erad.pdf}}
-\caption{Direcciones de la aceleraci'on $\vec{a}$, vector unitario $\hat{n}$ y campo el'ectrico $\vec{E}_{(2)}$.}
+\caption{Direcciones de la aceleraci'on $\vec{a}$, vector unitario $\hat{n}$ y campo eléctrico $\vec{E}_{(2)}$.}
 \label{fig:natheta}
 \end{figure}
 En un \textit{gr'afico de distribuci'on de potencia} (donde se usan coordenadas polares en las que el radio es identificado con ${dP}/{d\Omega}$, que es funci'on del 'angulo $\theta$) encontramos una distribuci'on como muestra la figura \ref{lobulo01}. Vemos entonces que en el l'imite no-relativista la mayor cantidad de la energ'ia es radiada en direcci'on normal a la aceleraci'on de la carga.
@@ -625,15 +625,15 @@ P(t)  & =&\int_{\Omega}\frac{dP}{d\Omega}(t)\,d\Omega\\
 & =&\frac{q^2\mu}{16\pi^2c}\,\vec{a}^2_{\rm ret}\, \frac{4}{3}\,2\pi \\
 & =&\frac{q^2\mu}{6\pi c}\,\vec{a}^2_{\rm ret}.
 \end{eqnarray}
-Este resultado es conocido como \emph{f'ormula de Larmor}\footnote{Joseph Larmor (1857-1942): f'isico y matem'atico irland'es. Ver \url{http://es.wikipedia.org/wiki/Joseph_Larmor}.}.
+Este resultado es conocido como \emph{fórmula de Larmor}\footnote{Joseph Larmor (1857-1942): f'isico y matem'atico irland'es. Ver \url{http://es.wikipedia.org/wiki/Joseph_Larmor}.}.
 %\begin{equation}
 %\boxed{P=\frac{2q^2}{3c^3}\,\vec{a}^2.}\label{R-larmor}
 %\end{equation}
-\begin{equation}\marginnote{F'ormula de Larmor}
+\begin{equation}\marginnote{fórmula de Larmor}
 \boxed{P(t)=\frac{q^2\mu}{6\pi c}\,\vec{a}^2_{\rm ret}.}\label{R-larmor}
 \end{equation}
 
-Este importante resultado implica, en particular, que cargas de igual magnitud, pero masas distintas sometidas a la acci'on de una misma fuerza (o fuerzas de igual magnitud) rad'ian con potencias distintas si sus masas son distintas. Por ejemplo, \textit{en un sistema formado por protones y electrones, acelerados bajo la acci'on de un mismo campo el'ectrico externo, ser'an los electrones quienes m'as energ'ia radiar'an} puesto que, si bien sus cargas son iguales en m'odulo, la masa de los electrones es mucho menor que la de los protones ($m_{\rm p}\approx 1836\,m_{\rm e}$, ver ap'endice \ref{app:constantes}. Por lo tanto, $P_{\rm e}\approx 3\times 10^6\, P_{\rm p}$). Como consecuencia, en \textit{primera aproximaci'on, son los electrones los principales responsables de la radiaci'on emitida por un sistema}.
+Este importante resultado implica, en particular, que cargas de igual magnitud, pero masas distintas sometidas a la acci'on de una misma fuerza (o fuerzas de igual magnitud) rad'ian con potencias distintas si sus masas son distintas. Por ejemplo, \textit{en un sistema formado por protones y electrones, acelerados bajo la acci'on de un mismo campo eléctrico externo, ser'an los electrones quienes m'as energ'ia radiar'an} puesto que, si bien sus cargas son iguales en m'odulo, la masa de los electrones es mucho menor que la de los protones ($m_{\rm p}\approx 1836\,m_{\rm e}$, ver ap'endice \ref{app:constantes}. Por lo tanto, $P_{\rm e}\approx 3\times 10^6\, P_{\rm p}$). Como consecuencia, en \textit{primera aproximaci'on, son los electrones los principales responsables de la radiaci'on emitida por un sistema}.
 
 %\subsubsection{Ejemplo: Movimiento circular}
 
@@ -644,7 +644,7 @@ La energ'ia radiada (muy lejos de la regi'on donde se mueve la carga) es dada po
 \left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right]\right|^2}{\left(
 1-\hat{n}\cdot\vec{\beta}\right) ^{6}}\right|_{\rm ret}\,dt\,d\Omega .
 \end{equation}
-Considere el caso particular en que \textit{la carga acelera s'olo en un cierto intervalo de tiempo}, por ejemplo, $\vec{a}(t)\neq\vec{0}$ s'olo entre $t=T_1$ y $t=T_2$. La radiaci'on emitida es entonces causada por la aceleraci'on de la carga en ese periodo de tiempo. Sin embargo, debido a que el integrando est'a evaluado en el tiempo retardado $t'(\vec{x},t)$, el intervalo de tiempo en que se realiza la integraci'on (\ref{Ecasi}) para calcular la energ'ia radiada  (``muy lejos'') difiere del intervalo de tiempo en que la carga aceler'o. 'Esta es una consecuencia de la velocidad finita ($c$) de propagaci'on de las se\~nales electromagn'eticas. En el ejemplo particular analizado, la contribuci'on a la integral s'olo ser'a no nula en un intervalo de tiempo entre $t=t_1$ y $t=t_2$, de modo que
+Considere el caso particular en que \textit{la carga acelera s'olo en un cierto intervalo de tiempo}, por ejemplo, $\vec{a}(t)\neq\vec{0}$ s'olo entre $t=T_1$ y $t=T_2$. La radiaci'on emitida es entonces causada por la aceleraci'on de la carga en ese periodo de tiempo. Sin embargo, debido a que el integrando est'a evaluado en el tiempo retardado $t'(\vec{x},t)$, el intervalo de tiempo en que se realiza la integraci'on (\ref{Ecasi}) para calcular la energ'ia radiada  (``muy lejos'') difiere del intervalo de tiempo en que la carga aceler'o. 'Esta es una consecuencia de la velocidad finita ($c$) de propagaci'on de las señales electromagn'eticas. En el ejemplo particular analizado, la contribuci'on a la integral s'olo ser'a no nula en un intervalo de tiempo entre $t=t_1$ y $t=t_2$, de modo que
 \begin{equation}
  E=\frac{q^2\mu}{16\pi^2 c}\oint_\Omega\int_{t_1}^{t_2}\left.\frac{\left|\hat{n}\times
 \left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right]\right|^2}{\left(
@@ -675,7 +675,7 @@ En el cambio de variable anterior las coordenadas espaciales no son variadas, de
 \frac{dt}{dt'}=\left[\left(\frac{\partial t'}{\partial t}\right)_{\vec{x}=\text{cte.}}\right]^{-1}
 =\left[\partial_t t'\right]^{-1}=1-\hat{n}\cdot\vec{\beta}. \label{dtdt'}
 \end{equation}
-En la 'ultima igualdad hemos usado nuestro resultado (\ref{dtt'2}). Note que esto implica que $dt<dt'$ \textit{si la velocidad de la carga est'a dirigida en la misma direcci'on que el vector} $\vec{n}$ (que apunta desde la carga hasta el punto lejano de observaci'on) y $dt>dt'$ \textit{en caso contrario}. Esta diferencia de intervalos de tiempo corresponde al simple efecto cinem'atico en virtud del cual  la duraci'on de una se\~nal emitida por una fuente luminosa en movimiento es percibida como menor si la fuente se mueve hacia el receptor, y viceversa (efecto Doppler).
+En la 'ultima igualdad hemos usado nuestro resultado (\ref{dtt'2}). Note que esto implica que $dt<dt'$ \textit{si la velocidad de la carga est'a dirigida en la misma direcci'on que el vector} $\vec{n}$ (que apunta desde la carga hasta el punto lejano de observaci'on) y $dt>dt'$ \textit{en caso contrario}. Esta diferencia de intervalos de tiempo corresponde al simple efecto cinem'atico en virtud del cual  la duraci'on de una señal emitida por una fuente luminosa en movimiento es percibida como menor si la fuente se mueve hacia el receptor, y viceversa (efecto Doppler).
 
 Reemplazando (\ref{dtdt'}) en (\ref{Edt'}) obtenemos
 \begin{equation}
@@ -745,12 +745,12 @@ La potencia instant'anea radiada es dada por (\ref{Lardif}), suponiendo velocida
 \begin{equation}
 \frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2 c}|\hat{n}\times\vec{a}|^2.
 \end{equation}
-En este caso, la aceleraci'on es producida por la fuerza que la onda incidente ejerce sobre la carga. Si la onda incidente es \textit{plana y polarizada linealmente}, con vector de onda $\vec{k}_0$ y \textbf{vector de polarizaci'on} $\vec{\epsilon}_0$ (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo el'ectrico indicente), entonces su campo el'ectrico puede ser descrito usando
+En este caso, la aceleraci'on es producida por la fuerza que la onda incidente ejerce sobre la carga. Si la onda incidente es \textit{plana y polarizada linealmente}, con vector de onda $\vec{k}_0$ y \textbf{vector de polarizaci'on} $\vec{\epsilon}_0$ (que es, por definici'on, el vector unitario paralelo a la direcci'on del campo eléctrico indicente), entonces su campo eléctrico puede ser descrito usando
 \begin{equation}
 \vec{E}_0(\vec{x},t)=\operatorname{Re}\left[
 \vec{\epsilon}_0E_0e^{i(\vec{k}_0\cdot\vec{x}-\omega t)}\right] .
 \end{equation}
-\textit{Suponiendo que la velocidad de la carga es en todo momento mucho menor que la de la luz}, podemos despreciar el t'ermino dependiente del campo magn'etico en la fuerza de Lorentz. Entonces, la aceleraci'on de la carga es proporcional al campo el'ectrico de la onda incidente:
+\textit{Suponiendo que la velocidad de la carga es en todo momento mucho menor que la de la luz}, podemos despreciar el t'ermino dependiente del campo magn'etico en la fuerza de Lorentz. Entonces, la aceleraci'on de la carga es proporcional al campo eléctrico de la onda incidente:
 \begin{equation}\label{ecd2x}
 \frac{d^2\vec{x}}{dt^2}
 =\operatorname{Re}\left[\frac{qE_0}{m}\vec{\epsilon}_0e^{i(\vec{k}_0\cdot\vec{x}(t)
@@ -805,7 +805,7 @@ Obtenemos entonces que la secci'on diferencial de scattering es dada por
 \boxed{\frac{d\sigma}{d\Omega}  =\left(\frac{q^2\mu}{4\pi m}\right)^2\left|
 \hat{n}\times\vec{\epsilon}_0\right|^2 .}\label{seeT}
 \end{equation}
-La cantidad $r_q:={q^2\mu}/{4\pi m}=(1/{4\pi\varepsilon})({q^2}/{mc^2})$ tiene dimensiones de longitud, y juega el rol de ``\textit{tama\~no efectivo}'' de la carga para el proceso de scattering considerado\footnote{Compare, por ejemplo, con la secci'on diferencial de scaterring de una esfera de radio $R$ impactada por peque\~nas part'iculas de prueba (de masa despreciable): $d\sigma/d\Omega=R^2/4$, $\sigma=\pi R^2$.}. Por ejemplo, para el electr'on en el vac'io $r_{\rm e}=(1/{4\pi\varepsilon_0})({e^2}/{m_{\rm e}c^2})\approx 2,8\times 10^{-15}m$. Esta distancia caracter'istica (de la interacci'on electromagn'etica) del electr'on es llamada \textbf{radio cl'asico del electr'on}.
+La cantidad $r_q:={q^2\mu}/{4\pi m}=(1/{4\pi\varepsilon})({q^2}/{mc^2})$ tiene dimensiones de longitud, y juega el rol de ``\textit{tamaño efectivo}'' de la carga para el proceso de scattering considerado\footnote{Compare, por ejemplo, con la secci'on diferencial de scaterring de una esfera de radio $R$ impactada por pequeñas part'iculas de prueba (de masa despreciable): $d\sigma/d\Omega=R^2/4$, $\sigma=\pi R^2$.}. Por ejemplo, para el electr'on en el vac'io $r_{\rm e}=(1/{4\pi\varepsilon_0})({e^2}/{m_{\rm e}c^2})\approx 2,8\times 10^{-15}m$. Esta distancia caracter'istica (de la interacci'on electromagn'etica) del electr'on es llamada \textbf{radio cl'asico del electr'on}.
 
 Para evaluar (\ref{seeT}) requerimos de una expresi'on expl'icita para
 $\left|\hat{n}\times\vec{\epsilon}_0\right|^2$. El c'alculo es m'as sencillo si elegimos los ejes coordenados de modo que el vector de onda inicial $\vec{k}_0$ sea paralelo al eje $z$ y el vector $\epsilon_0$ paralelo al eje $x$. Ver figura \ref{fig:thomson}. En este caso, podemos escribir, $\vec{k}_0=k_0\hat{z}$, 
@@ -824,7 +824,7 @@ $\hat{n}$.
  \caption{Esquema para el scattering Thomson.}
 \label{fig:thomson}
 \end{figure}
-%Sabemos que (la componente radiativa d)el campo el'ectrico producido por la carga es paralelo a
+%Sabemos que (la componente radiativa d)el campo eléctrico producido por la carga es paralelo a
 %$\hat{n}\times(\hat{n}\times\vec{a})\propto
 %\hat{n}\times(\hat{n}\times\vec{\epsilon}_0)$, por lo que podemos escribir
 %\begin{equation}
@@ -885,7 +885,7 @@ Como era de esperar, en este caso obtenemos una secci'on diferencial de scatteri
  \caption{Secci\'on diferencial de scattering de Thomson. C'odigo Python \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-Thomson.py}{aqu\'i}.}
 \label{fig:thomson_2d}
 \end{figure}
-'Esta es la llamada \textbf{f'ormula de Thomson} para scattering de radiaci'on
+'Esta es la llamada \textbf{fórmula de Thomson} para scattering de radiaci'on
 por cargas libres, y es apropiada para describir muchas situaciones f'isicas, com por ejemplo \textit{scattering de rayos X no-polarizados por electrones}, o \textit{rayos gamma por protones}. 
 La distribuci'on angular se muestra en la figura \ref{fig:thomson_2d}. 
 
@@ -896,8 +896,8 @@ La \textbf{secci'on total de scattering}, definida en general como la integral s
 
 Para el caso de electrones, la secci'on tranversal total de Thomson tiene el valor $\sigma_{\rm T}\approx 6.65\times 10^{-29}$ m$^2$.
 
-\subsection{Correcciones a la f'ormula de Thomson*}
-La f'ormula cl'asica de Thomson se ajusta a las observaciones s'olo para frecuencias bajas, donde el momentum del fot'on incidente puede ser ignorado. Cuando los momenta $\hbar\omega/c$ de los fotones son comparables o mayores que $mc$, es necesario incluir algunas modificaciones al modelo sencillo aqu'i expuesto. Uno de estos efectos a tomar en cuenta es el efecto Compton, por el que la frecuencia (energ'ia) de un fot'on dispersado es menor que la frecuencia (energ'ia) del incidente, ya que la carga necesariamente sufre de un ``recoil'' durante el proceso. La cinem'atica (relativista) predice que el cambio de vector de onda de la radiaci'on es de la forma
+\subsection{Correcciones a la fórmula de Thomson*}
+La fórmula cl'asica de Thomson se ajusta a las observaciones s'olo para frecuencias bajas, donde el momentum del fot'on incidente puede ser ignorado. Cuando los momenta $\hbar\omega/c$ de los fotones son comparables o mayores que $mc$, es necesario incluir algunas modificaciones al modelo sencillo aqu'i expuesto. Uno de estos efectos a tomar en cuenta es el efecto Compton, por el que la frecuencia (energ'ia) de un fot'on dispersado es menor que la frecuencia (energ'ia) del incidente, ya que la carga necesariamente sufre de un ``recoil'' durante el proceso. La cinem'atica (relativista) predice que el cambio de vector de onda de la radiaci'on es de la forma
 \begin{equation}
 \frac{k'}{k}=\frac{1}{1+\frac{\hbar\omega}{mc^2}\left(  1-\cos
 \theta\right)  }, \label{Thomson}
@@ -936,8 +936,8 @@ Nota: Adem'as existe una expresi'on que incluye correcciones relativistas y de l
 \theta\right)  }\right)  ^{2}\left(  1+\cos^{2}\theta+\frac{x^{2}\left(
 1-\cos\theta\right)  ^{2}}{1+x\left(  1-\cos\theta\right)  }\right),
 \end{equation}
-donde $x:={\hbar\omega}/{mc^{2}}$. La expresi'on anterior es la llamada \textit{f'ormula de Klein-Nishina}, que puede ser calculada en el contexto de la teor'ia Cu'antica de Campos del campo electromagn'etico interactuando con fermiones de spin 1/2 conocida como \textit{electrodin'amica cu'antica}.
-La secci'on eficaz total de scattering de acuerdo a la f'ormula de Klein-Nishina es
+donde $x:={\hbar\omega}/{mc^{2}}$. La expresi'on anterior es la llamada \textit{fórmula de Klein-Nishina}, que puede ser calculada en el contexto de la teor'ia Cu'antica de Campos del campo electromagn'etico interactuando con fermiones de spin 1/2 conocida como \textit{electrodin'amica cu'antica}.
+La secci'on eficaz total de scattering de acuerdo a la fórmula de Klein-Nishina es
 \begin{equation}
  \sigma(x)=\frac{3}{4}\sigma_T\left[\frac{(1+x)}{x^3}\left\lbrace\frac{2x(1+x)}{1+2x}-\ln(1+2x)\right\rbrace+\frac{1}{2x}\ln(1+2x)-\frac{1+3x}{(1+2x)^2}\right].
 \end{equation}
@@ -973,7 +973,7 @@ Hab'iamos obtenido, ver \eqref{Pinf1} y \eqref{S2E}, que la potencia irradiada p
 \begin{equation}\label{dp1}
 \frac{dP}{d\Omega}(\hat{n},t)=\lim_{r\to\infty}\frac{1}{\mu c}\left|r\vec{E}_{\rm{rad}}(\vec{x},t)\right|^2 , %=\left|  \vec{\cal A}(t,\hat{n})\right|  _{\rm ret}^2, 
 \end{equation}
-donde $\vec{E}_{\rm{rad}}$ es el campo el'ectrico radiativo.
+donde $\vec{E}_{\rm{rad}}$ es el campo eléctrico radiativo.
 %
 %Introduciremos el campo vectorial auxiliar $\vec{\cal A}(\hat{n},t)$, definido por
 %\begin{equation}
@@ -995,7 +995,7 @@ La energ'ia total irradiada por unidad de 'angulo s'olido es entonces
 %\frac{dE}{d\Omega}(\hat{n}) =\int_{-\infty}^{\infty}\frac{dP}{d\Omega}(\hat{n})\,dt
 %=\int_{-\infty}^{\infty}\left|  \vec{\cal A}(\hat{n},t)  \right|^2dt .
 %\end{equation}
-Queremos estudiar el \textit{espectro} de la radiaci'on emitida, es decir, \textit{la distribuci'on de potencia para distintas frecuencias}. Para ello, podemos \textit{expresar el campo radiado en t'erminos de oscilaciones peri'odicas}. Esto significa expresar el campo el'ectrico como una superposici'on de funciones arm'onicas, por medio de la transformada de Fourier $\tilde{\vec{E}}(\vec{x},\omega)$ del vector $\vec{E}(\vec{x},t)$, de modo que
+Queremos estudiar el \textit{espectro} de la radiaci'on emitida, es decir, \textit{la distribuci'on de potencia para distintas frecuencias}. Para ello, podemos \textit{expresar el campo radiado en t'erminos de oscilaciones periódicas}. Esto significa expresar el campo eléctrico como una superposici'on de funciones arm'onicas, por medio de la transformada de Fourier $\tilde{\vec{E}}(\vec{x},\omega)$ del vector $\vec{E}(\vec{x},t)$, de modo que
 \begin{equation}
  \vec{E}(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\tilde{\vec{E}}
 (\vec{x},\omega) e^{i\omega t}d\omega ,
@@ -1136,15 +1136,15 @@ e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c)} dt\right|^2 .} \label{dEdOdo}
 \end{equation}
 En general, \textit{una carga en un movimiento arbitrario irradiar'a en un continuo de frecuencias}. Esto se refleja en que ${d^2E}/{d\Omega d\omega}$ ser'a una cierta funci'on continua de la frecuencia $\omega$ de emisi'on.
 
-\subsection{Caso de movimiento peri'odico}\label{sec:rfp}
+\subsection{Caso de movimiento periódico}\label{sec:rfp}
 
 
-Si el movimiento de una carga es \textit{peri'odico}, entonces el
+Si el movimiento de una carga es \textit{periódico}, entonces el
 espectro continuo de frecuencias de la radiaci'on emitida se reduce a un
 \textit{espectro discreto} conteniendo frecuencias m\'{u}ltiples de la frecuencia
 fundamental.
 
-Si el movimiento es peri'odico, con periodo $T$, la velocidad y aceleraci'on de la carga ser'an funciones peri'odicas. Como consecuencia, tambi'en $\vec{E}(\vec{x},t)$ ser'a una funci'on peri'odica en $t$, y por lo tanto es posible expresarla en t'erminos de la siguiente \textit{serie de Fourier}
+Si el movimiento es periódico, con periodo $T$, la velocidad y aceleraci'on de la carga ser'an funciones periódicas. Como consecuencia, tambi'en $\vec{E}(\vec{x},t)$ ser'a una funci'on periódica en $t$, y por lo tanto es posible expresarla en t'erminos de la siguiente \textit{serie de Fourier}
 \begin{equation}
 \vec{E}(\vec{x},t) =\sum_{m\,\in\, \mathbb{Z}} \vec{E}_{m}(\vec{x})e^{i\omega_{m}t},
 \end{equation}
@@ -1173,7 +1173,7 @@ donde hemos usado
 \frac{1}{T}\int_0^{T}e^{i\omega_1\left(m'-m\right)t }dt\equiv\delta_{m,m' }.
 \end{equation}
 Puesto que $\vec{E}(\hat{n},t)$ es real, tendremos que $\vec{E}_{m}^*=\vec{E}_{-m}$, y entonces podemos escribir:
-\begin{equation}
+\begin{equation}\label{dPdOsumm}
 \left\langle\frac{dP}{d\Omega}\right\rangle (\hat{n}) =\frac{1}{\mu c}\lim_{r\to\infty}r^2\left[\left|\vec{E}_0\right|^2
 +2\sum_{m=1}^{\infty}\left|\vec{E}_{m}\right|^2\right].
 \end{equation}
@@ -1196,7 +1196,7 @@ Procedemos ahora en forma an'aloga al caso de espectro continuo, es decir, efect
 \int_{-{R}/{c}}^{T-{R}/{c}}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{
 \beta}\right)\times\vec{a}\right]}{\left(1-\vec{\beta}\cdot\hat{n}\right)^2} e^{-i\omega_{m}\left(t-\vec{z}\cdot\hat{n}/c\right)}dt \right|^2. \label{int2}
 \end{eqnarray}
-Adem'as, puesto que el integrando de (\ref{int2}) es peri'odico (asume los
+Adem'as, puesto que el integrando de (\ref{int2}) es periódico (asume los
 mismos valores para $t$ y $t+T$), entonces podemos escribir
 \begin{equation}
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})
@@ -1244,18 +1244,21 @@ _{m}\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right) }dt \right|^2.
 
 Nuestro resultado final es entonces una expresi'on anal'itica para la potencia promedio (en un periodo) radiada (al infinito) por unidad de 'angulo s'olido en el modo de frecuencia
 $\omega_m=m\omega_1=2\pi {m}/{T}$ por una carga $q$ que se mueve en una
-trayectoria peri'odica arbitraria (en general, relativista) $\vec{z}(t)$, de
+trayectoria periódica arbitraria (en general, relativista) $\vec{z}(t)$, de
 periodo $T$:
 \begin{equation}\marginnote{Distribuci'on discreta de potencia}
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})
 =\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}\left|
 \int_0^{2\pi/\omega_1}\left(  \vec{v}\times\hat{n}\right)
 e^{-i\omega_{m}\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)}dt\right|^2.}
-\label{promradperi'odico}
+\label{promradperiódico}
 \end{equation}
-Como consecuencia, encontramos que $\left\langle {dP_{m}}/{d\Omega}\right\rangle=0$ para $m=0$.
+Como consecuencia, encontramos que $\left\langle {dP_{m}}/{d\Omega}\right\rangle=0$ para $m=0$, por lo que \eqref{dPdOsumm} puede entonces ser reescrito como
+\begin{equation}
+\boxed{\left\langle \frac{dP}{d\Omega}\right\rangle (\hat{n}) = \sum_{m=1}^\infty\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}).}
+\end{equation}
 
-Note adem'as que es posible usar una expresi'on an'aloga a (\ref{promradperi'odico}) para el caso del espectro continuo, bajo ciertas condiciones adicionales. Usando la identidad (\ref{iddt1}) tenemos que
+Note adem'as que es posible usar una expresi'on an'aloga a (\ref{promradperiódico}) para el caso del espectro continuo, bajo ciertas condiciones adicionales. Usando la identidad (\ref{iddt1}) tenemos que
 \begin{align}
 \frac{1}{c}\int_{-\infty}^{+\infty}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right) \times\vec{a}\right]}{\left(
 1-\vec{\beta}\cdot\hat{n}\right)^2}e^{-i\omega\left(  t
@@ -1279,11 +1282,11 @@ e^{-i\omega\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)  }dt\right|^2 .} \label{
 
 Si la carga tiene un movimiento arm'onico simple de la forma
 \begin{equation}
-\vec{z}(t) =a\cos(\omega_1t)\hat{z},
+\vec{z}(t) =A\cos(\omega_1t)\hat{z},
 \end{equation}
 entonces
 \begin{equation}
-\vec{v}(t) =-a\omega_1\sin(\omega_1t)\hat{z}.
+\vec{v}(t) =-A\omega_1\sin(\omega_1t)\hat{z}.
 \end{equation}
 Claramente, el sistema tiene simetr'ia respecto a rotaciones en torno al eje
 $z$. Esto implica que podemos considerar el vector $\hat{n}$ como contenido en
@@ -1294,37 +1297,37 @@ el plano $y-z$, sin perder generalidad, es decir,
 donde $\theta$ es el 'angulo entre $\hat{n}$ y el eje $z$. Con esto tendremos
 que
 \begin{equation}
- \vec{z}\cdot\hat{n}=a\cos(\omega_1t)\cos\theta ,
+ \vec{z}\cdot\hat{n}=A\cos(\omega_1t)\cos\theta ,
 \end{equation}
 y
 \begin{equation}
-\vec{v}\times\hat{n}=a\omega_1\sin\theta\sin(\omega_1t)  \hat{x},
+\vec{v}\times\hat{n}=A\omega_1\sin\theta\sin(\omega_1t)  \hat{x},
 \end{equation}
 de modo que
 \begin{align}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle &=
 \frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
-\left| \int_0^{2\pi\omega_1}a\omega_1\sin\theta\sin\left(\omega_1t\right)
-\hat{x}e^{-i\omega_1m\left(t-\frac{a\cos\left(\omega_1t\right)\cos\theta}{c}\right)}dt\right|^2\\
+\left| \int_0^{2\pi\omega_1}A\omega_1\sin\theta\sin\left(\omega_1t\right)
+\hat{x}e^{-i\omega_1m\left(t-\frac{A\cos\left(\omega_1t\right)\cos\theta}{c}\right)}dt\right|^2\\
 &=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
-a^2\omega_1^2\sin^2\theta\left| \int_0^{2\pi/\omega_1}\sin\left(
+A^2\omega_1^2\sin^2\theta\left| \int_0^{2\pi/\omega_1}\sin\left(
 \omega_1t\right) e^{-i\omega_1mt}e^{i\omega_1m\frac{a\cos\left(
 \omega_1t\right)  \cos\theta}{c}}dt\right|^2 .  \label{promedioantescvar}
 \end{align}
 Calculemos primero la integral
 \begin{equation}
 I:=\int_0^{2\pi/\omega_1}\sin\left(\omega_1t\right)
-e^{-i\omega_1mt}e^{i\omega_1m\frac{a\cos\left(  \omega_1t\right)
+e^{-i\omega_1mt}e^{i\omega_1m\frac{A\cos\left(  \omega_1t\right)
 \cos\theta}{c}}dt.
 \end{equation}
 Introduciendo la nueva variable de integraci'on adimensional
 $x:=\omega_1t-\frac{\pi}{2}$ se tiene que
 \begin{eqnarray}
 I&=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\frac{\pi}{2}}^{\frac{3\pi}{2}}
-\sin\left(x+\frac{\pi}{2}\right)  e^{-ixm}e^{i\frac{\omega_1ma}{c}\cos\left(
+\sin\left(x+\frac{\pi}{2}\right)  e^{-ixm}e^{i\frac{\omega_1mA}{c}\cos\left(
 x+\frac{\pi}{2}\right)  \cos\theta}dx \\
 &=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi+\frac{\pi}{2}}^{\pi+\frac{\pi
-}{2}}\cos(x)e^{-ixm}e^{-i\frac{\omega_1ma}{c}\sin x\cos\theta}dx\\
+}{2}}\cos(x)e^{-ixm}e^{-i\frac{\omega_1mA}{c}\sin x\cos\theta}dx\\
 &=&\frac{1}{\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\cos(x)
 e^{-ixm}e^{-i\beta m\sin x\cos\theta}dx\\
 &=&\frac{1}{2\omega_1}e^{-i\frac{\pi}{2}m}\int_{-\pi}^{\pi}\left(
@@ -1333,16 +1336,10 @@ e^{ix}+e^{-ix}\right)e^{-ixm}e^{-i\beta m\sin x\cos\theta}dx\\
 m-1\right)}e^{-i\beta m\sin x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(
 1+m\right)}e^{-i\beta m\sin x\cos\theta}dx\right]  .
 \end{eqnarray}
-Aqu'i hemos adem'as introducido la definici'on $\beta:={a\omega_1}/{c}$ que
+Aqu'i hemos adem'as introducido la definici'on $\beta:={A\omega_1}/{c}$ que
 corresponde a la amplitud de la velocidad del oscilador, respecto a la velocidad
 de la luz.
 
-%Finalmente, realizando el cambio de variable de integraci'on $x\rightarrow-x$ obtenemos:
-%\begin{equation}
-%I=\frac{e^{-i\frac{\pi}{2}m}}{2\omega_1}\left(  \int_{-\pi}^{\pi}e^{-ix\left(
-%m+1\right)}e^{-i\beta m\sin x\cos\theta}dx+\int_{-\pi}^{\pi}e^{-ix\left(  m-1\right)
-%}e^{-i\beta m\sin x\cos\theta}dx\right)  .
-%\end{equation}
 Este resultado puede ser escrito en t'erminos de \textit{funciones de Bessel}
 $J_n(z)$, ya que\footnote{Ver, por ejemplo, la \cite{GR00}, p'agina
 902, expresi'on 8.411-1.}
@@ -1372,13 +1369,13 @@ Sustituyendo \eqref{Ifinal} en \eqref{promedioantescvar} llegamos a nuestro
 resultado final:
 \begin{equation}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle
-=\frac{q^2\mu c^3\beta^2m^2}{8\pi^2 a^2}\tan^2\theta\left[  J_{m}\left(\beta
+=\frac{q^2\mu c^3\beta^2m^2}{8\pi^2 A^2}\tan^2\theta\left[J_{m}\left(\beta
 m\cos\theta\right)\right]^2,
 \end{equation}
 o bien,
 \begin{equation}
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle
-=\frac{q^2\mu c}{4\pi}\frac{\omega_1^2m^2}{2\pi}\tan^2\theta\left[ J_{m}\left(\frac{a\omega_1
+=\frac{q^2\mu c}{4\pi}\frac{\omega_1^2m^2}{2\pi}\tan^2\theta\left[ J_{m}\left(\frac{A\omega_1
 m}{c}\cos\theta\right)  \right]^2.}
 \end{equation}
 \begin{figure}[ht]
@@ -1404,39 +1401,39 @@ J_{n}(x)\approx \frac{x^n}{2^nn!}, \qquad |x|\ll 1.
 Por lo tanto, en este l'imite
 \begin{equation}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle
-\approx  \frac{\mu c}{8\pi^2}\left[\frac{q\omega_1}{(m-1)!}\left(\frac{a\omega_1m}{2c}\cos\theta\right)^{m}\tan\theta\right]^2.
+\approx  \frac{\mu c}{8\pi^2}\left[\frac{q\omega_1}{(m-1)!}\left(\frac{A\omega_1m}{2c}\cos\theta\right)^{m}\tan\theta\right]^2.
 \end{equation}
 Adem'as, de aqu'i obtenemos
 \begin{equation}
-\frac{\left\langle \frac{dP_{m+1}}{d\Omega}\right\rangle}{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle}\approx \left[\frac{a\omega_1}{2c}\cos\theta\right]^2=O(\beta^2),
+\frac{\left\langle \frac{dP_{m+1}}{d\Omega}\right\rangle}{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle}\approx \left[\frac{A\omega_1}{2c}\cos\theta\right]^2=O(\beta^2),
 \end{equation}
 que muestra que la potencia radiada decrece en un factor del orden $\beta^2$ entre un arm'onico y el siguiente. Adem'as,
 \begin{equation}
 \left\langle \frac{dP_{1}}{d\Omega}\right\rangle
-\approx  \frac{q^2\mu a^2\omega_1^4}{32\pi^2 c}\sin^2\theta.
+\approx  \frac{q^2\mu A^2\omega_1^4}{32\pi^2 c}\sin^2\theta.
 \end{equation}
 
  Integrando con respecto al 'angulo s'olido obtenemos la potencia total promedio:
-\begin{eqnarray}
-\left\langle P_{1}\right\rangle&=& \int \left\langle\frac{dP_{1}}{d\Omega}\right\rangle\,d\Omega\\
-&\approx &\frac{q^2\mu a^2\omega_1^4}{32\pi^2c}\,2\pi\int_{0}^{\pi
+\begin{align}
+\left\langle P_{1}\right\rangle &= \int \left\langle\frac{dP_{1}}{d\Omega}\right\rangle\,d\Omega\\
+&\approx \frac{q^2\mu A^2\omega_1^4}{32\pi^2c}\,2\pi\int_{0}^{\pi
 }\sin ^{3}\theta\, d\theta   \\
-&\approx &\frac{q^2\mu a^2\omega_1^4}{16\pi c}\,\frac{4}{3}  \\
-&\approx &\frac{q^2\mu a^2\omega_1^4}{12\pi c}.
-\end{eqnarray}
+&\approx \frac{q^2\mu A^2\omega_1^4}{16\pi c}\,\frac{4}{3}  \\
+&\approx \frac{q^2\mu A^2\omega_1^4}{12\pi c}.
+\end{align}
 
-Note la consistencia de este resultado con la f'ormula de Larmor (\ref{R-larmor}), ya que en este caso $\left\langle\vec{a}^2\right\rangle=\left\langle a^2\omega_1^4\cos^2(\omega_1t)\right\rangle=a^2\omega_1^4/2$.
+Note la consistencia de este resultado con la fórmula de Larmor (\ref{R-larmor}), ya que en este caso $\left\langle\vec{a}^2\right\rangle=\left\langle A^2\omega_1^4\cos^2(\omega_1t)\right\rangle=A^2\omega_1^4/2$.
 
 
-\section{Dipolo de Hertz (dipolo el'ectrico ideal)}
+\section{Dipolo de Hertz (dipolo eléctrico ideal)}
 
-En 1886 Hertz\footnote{Heinrich Rudolf Hertz (1857-1894): f'isico alem'an. Ver \url{http://es.wikipedia.org/wiki/Heinrich_Rudolf_Hertz}.} desarroll'o la primera \textit{antena dipolar} con la que realiz'o experimentos de emisi'on y recepci'on de \textit{ondas de radio} (``ondas hertzianas''). El modelo m'as sencillo de una antena dipolar es el de un \textit{dipolo el'ectrico con momento dipolar que cambia en el tiempo}.
+En 1886 Hertz\footnote{Heinrich Rudolf Hertz (1857-1894): f'isico alem'an. Ver \url{http://es.wikipedia.org/wiki/Heinrich_Rudolf_Hertz}.} desarroll'o la primera \textit{antena dipolar} con la que realiz'o experimentos de emisi'on y recepci'on de \textit{ondas de radio} (``ondas hertzianas''). El modelo m'as sencillo de una antena dipolar es el de un \textit{dipolo eléctrico con momento dipolar que cambia en el tiempo}.
 
-Consideraremos entonces el modelo idealizado de un dipolo el'ectrico, formado por dos cargas $q_1=q$ y $q_2=-q$ situadas en las posiciones
+Consideraremos entonces el modelo idealizado de un dipolo eléctrico, formado por dos cargas $q_1=q$ y $q_2=-q$ situadas en las posiciones
 \begin{equation}
  \vec{z}_1(t)=\frac{1}{2}\vec{d}(t), \qquad \vec{z}_2(t)=-\frac{1}{2}\vec{d}(t).
 \end{equation}
-El momento dipolar el'ectrico del sistema es dado por
+El momento dipolar eléctrico del sistema es dado por
 \begin{equation}
  \vec{p}(t)=q\vec{d}(t).
 \end{equation}
@@ -1446,7 +1443,7 @@ En un instante y una posici'on dada, el campo producido por este dipolo es la \t
 \end{equation}
 Note que las contribuciones de cada carga est'an evaluadas en el tiempo retardado correspondiente que, en general, \textit{es diferente}: $t'_1\neq t'_2$, ya que $\vec{z}_1(t)\neq\vec{z}_2(t)$.
 
-Si las cargas se mueven a velocidades peque\~nas comparadas con la de la luz, $\beta_1\ll 1$, $\beta_2\ll 1$, podemos escribir
+Si las cargas se mueven a velocidades pequeñas comparadas con la de la luz, $\beta_1\ll 1$, $\beta_2\ll 1$, podemos escribir
 \begin{eqnarray}
 \vec{A}(\vec{x},t)&\approx&\frac{\mu c}{4\pi}\left[\left.\frac{q_1\vec{\beta}_1}{R_1}(1+\hat{n}_1\cdot\vec{\beta}_1)\right|_{{\rm ret}_1} +\left.\frac{q_2\vec{\beta}_2}{R_2}(1+\hat{n}_2\cdot\vec{\beta}_2)\right|_{{\rm ret}_2}\right] \\
 &=&\frac{q\mu c}{4\pi}\left[\left.\frac{\vec{\beta}_1}{R_1}\right|_{{\rm ret}_1} -\left.\frac{\vec{\beta}_2}{R_2}\right|_{{\rm ret}_2}\right] +O(\beta^2).
@@ -1459,7 +1456,7 @@ y por lo tanto,
 \begin{equation}
  \vec{A}(\vec{x},t)=\frac{q\mu c}{4\pi}\frac{1}{r}\left.(\vec{\beta}_1-\vec{\beta}_2)\right|_{t-\frac{r}{c}}.
 \end{equation}
-Podemos escribir este resultado en t'erminos de la variaci'on temporal del momento dipolar el'ectrico del sistema, ya que
+Podemos escribir este resultado en t'erminos de la variaci'on temporal del momento dipolar eléctrico del sistema, ya que
 \begin{equation}
 q\left[\vec{\beta}_1(t)-\vec{\beta}_2(t)\right]=\frac{q}{c}\left[\dot{\vec{z}}_1(t)-\dot{\vec{z}}_2(t)\right]=\frac{q}{c}\dot{\vec{d}}(t)=\frac{\dot{\vec{p}}(t)}{c}.
 \end{equation}
@@ -1482,7 +1479,7 @@ La funci'on $g(\vec{x},t)$ puede elegirse como nula imponiendo la condici'on que
 \end{equation}
 Vemos de este resultado que es posible diferenciar dos regiones del espacio, determinados por cu'al de los dos t'erminos que compone el potencial escalar ser'a predominante:
 
-\paragraph{La \textit{zona cercana}} (near zone) se define como la zona en que
+\paragraph{La \textbf{zona cercana}} (near zone) se define como la zona en que
 \begin{equation}
 \phi(\vec{x},t)\approx\frac{1}{4\pi\varepsilon}\left.\frac{\hat{r}\cdot\vec{p}}{r^2}\right|_{\rm ret},
 \end{equation}
@@ -1491,14 +1488,14 @@ es decir, en que \textit{el campo tiene la misma forma que en el caso est'atico}
 |\dot{p}|r\ll c|p|.
 \end{equation}
 
-\paragraph{La \textit{zona lejana o zona de radiaci'on}} (far zone), por otro lado, corresponde a distancias lejanas tales que $|\dot{p}|r\gg c|p|$, de modo que
+\paragraph{La \textbf{zona lejana o zona de radiaci'on}} (far zone), por otro lado, corresponde a distancias lejanas tales que $|\dot{p}|r\gg c|p|$, de modo que
 \begin{equation}
 \phi(\vec{x},t)\approx\frac{1}{4\pi\varepsilon}\left.\frac{\hat{r}\cdot\dot{\vec{p}}}{cr}\right|_{\rm ret}.
 \end{equation}
 
-Por ejemplo, para un dipolo variando arm'onicamente, $\vec{p}(t)=\vec{p}_0\cos(\omega t)$, tenemos que la zona cercana est'a definida por $r\ll c/\omega=1/k=\lambda/2\pi$. En otras palabras, \textbf{las zonas cercana y lejana est'an definidas respecto de la distancia determinada por la longitud de onda de la radiaci'on emitida}.
+Por ejemplo, para un dipolo variando arm'onicamente, $\vec{p}(t)=\vec{p}_0\cos(\omega t)$, tenemos que la zona cercana est'a definida por $r\ll c/\omega=1/k=\lambda/2\pi$. En otras palabras, \textit{las zonas cercana y lejana est'an definidas respecto de la distancia determinada por la longitud de onda de la radiaci'on emitida}.
 
-Derivando los potenciales (\ref{Adipid}) y (\ref{phidipid}) obtenemos los campos el'ectrico y magn'etico correspondientes:
+Derivando los potenciales (\ref{Adipid}) y (\ref{phidipid}) obtenemos los campos eléctrico y magn'etico correspondientes:
 \begin{equation}
  \boxed{\vec{E}=\frac{1}{4\pi\varepsilon}\left[\frac{(\ddot{\vec{p}}\cdot\hat{r})\hat{r}-\ddot{\vec{p}}}{c^2r}+\frac{3(\dot{\vec{p}}\cdot\hat{r})\hat{r}-\dot{\vec{p}}}{cr^2}+\frac{3(\vec{p}\cdot\hat{r})\hat{r}-\vec{p}}{r^3}\right]_{\rm ret},}
 \end{equation}
@@ -1522,8 +1519,8 @@ Notamos que estos campos satisfacen
 \end{equation}
 de modo que la parte radiativa del vector de Poynting es dada por
 \begin{equation}
-\vec{S}=\frac{1}{\mu c}\vec{E}\times(\hat{r}\times\vec{E}) 
-=\frac{1}{\mu c}\vec{E}^2\,\hat{r}= \frac{\mu}{16\pi^2 c}\left|\frac{(\ddot{\vec{p}}\times\hat{r})\times\hat{r}}{r}\right|^2\hat{r} 
+\vec{S}_{\rm rad}=\frac{1}{\mu c}\vec{E}_{\rm rad}\times(\hat{r}\times\vec{E}_{\rm rad}) 
+=\frac{1}{\mu c}\vec{E}_{\rm rad}^2\,\hat{r}= \frac{\mu}{16\pi^2 c}\left|\frac{(\ddot{\vec{p}}\times\hat{r})\times\hat{r}}{r}\right|^2\hat{r} 
 =\frac{\mu}{16\pi^2 c}\frac{\ddot{\vec{p}}{\,}^2}{r^2}\sin^2\theta\,\hat{r},
 \end{equation}
 donde $\theta$ es el 'angulo entre $\ddot{\vec{p}}$ y $\hat{r}$ (que, en general, depende del tiempo). La potencia radiada por el dipolo por unidad de 'angulo s'olido es entonces 
@@ -1536,7 +1533,7 @@ donde $\theta$ es el 'angulo entre $\ddot{\vec{p}}$ y $\hat{r}$ (que, en general
  \caption{L'obulo de radiaci'on de un dipolo ideal.}
 \label{fig-dipolo}
 \end{figure}
-Finalmente, la potencia (instant'anea) total radiada adopta una forma an'aloga a aquella dada por la f'ormula de Larmor, ver \eqref{R-larmor}:
+Finalmente, la potencia (instant'anea) total radiada adopta una forma an'aloga a aquella dada por la fórmula de Larmor, ver \eqref{R-larmor}:
 \begin{equation}\label{PotdH}
 \boxed{P=\frac{\mu}{6\pi c}\left.\ddot{\vec{p}}{\,}^2\right|_{\rm ret}.}
 \end{equation}
@@ -1552,9 +1549,9 @@ Para un dipolo variando \textit{arm'onicamente} en el tiempo con frecuencia angu
 con $p_0^2:=2\left\langle \vec{p}{\,}^2(t)\right\rangle$.
 
 
-\section{Radiaci'on de una peque\~na espira de corriente}
+\section{Radiaci'on de una pequeña espira de corriente}
 
-Consideremos un peque\~no circuito (una espira) circular, de radio $a$, por el cual fluye una corriente $I(t)$. Consideraremos adem'as que en todo momento  el cable es el'ectricamente neutro y que la corriente que circula por 'el es uniforme. Entonces, $\rho=0$ y por lo tanto podemos considerar que $\phi=0$.
+Consideremos un pequeño circuito (una espira) circular, de radio $a$, por el cual fluye una corriente $I(t)$. Consideraremos adem'as que en todo momento  el cable es eléctricamente neutro y que la corriente que circula por 'el es uniforme. Entonces, $\rho=0$ y por lo tanto podemos considerar que $\phi=0$.
 
 El potencial vectorial es dado por la expresi'on general (\ref{potret}b). Como en este caso la distribuci'on de corriente es unidimensional, podemos reemplazar $\vec{J}\,dV'$ por $I\,d\vec{\ell} '$, de modo que
 \begin{equation}
@@ -1608,7 +1605,7 @@ Con esto, e introduciendo el \textit{momento magn'etico} de la espira, $\vec{\mu
  \boxed{\vec{A}(\vec{x},t)=\frac{\mu}{4\pi}\left[\frac{\vec{\mu}\times\hat{r}}{r^2}+\frac{\dot{\vec{\mu}}\times\hat{r}}{cr}\right]_{\rm ret}.}
 \end{equation}
 
-Calculamos ahora los campos el'ectrico y magn'etico a partir de los potenciales. Obtenemos que
+Calculamos ahora los campos eléctrico y magn'etico a partir de los potenciales. Obtenemos que
 \begin{equation}
  \boxed{\vec{E}(\vec{x},t)=\frac{\mu}{4\pi}\left[\frac{\hat{r}\times\dot{\vec{\mu}}}{r^2}+\frac{\hat{r}\times\ddot{\vec{\mu}}}{cr}\right]_{\rm ret},}
 \end{equation}
@@ -1626,7 +1623,7 @@ Como es directo de verificar, estos campos satisfacen nuevamente las relaciones:
 \begin{equation}
 \vec{E}_{\rm rad}\cdot\hat{r}=0, \qquad \vec{B}_{\rm rad}\cdot\hat{r}=0, \qquad \vec{B}_{\rm rad}=\frac{1}{c}\hat{r}\times\vec{E}_{\rm rad}, \quad \vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r},
 \end{equation}
-tal como es t'ipico de un campo de radiaci'on. Como consecuencia, el vector de Poynting adopta la forma $\vec{S}=(1/\mu c)\vec{E}_{\rm rad}^2\hat{r}$, de modo que la energ'ia se propaga en la direcci'on del vector $\hat{r}$. La potencia por unidad de 'angulo s'olido radiada por la peque\~na espira de corriente es entonces
+tal como es t'ipico de un campo de radiaci'on. Como consecuencia, el vector de Poynting adopta la forma $\vec{S}=(1/\mu c)\vec{E}_{\rm rad}^2\hat{r}$, de modo que la energ'ia se propaga en la direcci'on del vector $\hat{r}$. La potencia por unidad de 'angulo s'olido radiada por la pequeña espira de corriente es entonces
 \begin{equation}
 \boxed{\frac{dP}{d\Omega}(\hat{r},t)=\frac{\mu}{16\pi^2 c^3}\ddot{\vec{\mu}}{\,}^2\sin^2\theta ,}
 \end{equation}
@@ -1638,14 +1635,14 @@ donde $\theta$ es ahora el 'angulo entre $\ddot{\vec{\mu}}$ y $\hat{r}$. La pote
 
 \section{Resistencia de radiaci'on}
 
-En un circuito el'ectrico con una fuente y una resistencia, la potencia instant'anea disipada (en calor) por la resistencia es dada por $P(t)=RI^2(t)$. Para el caso de corrientes peri'odicas, la potencia disipada promedio es entonces dada por $\left\langle P\right\rangle=R\left\langle I^2\right\rangle$.
+En un circuito eléctrico con una fuente y una resistencia, la potencia instant'anea disipada (en calor) por la resistencia es dada por $P(t)=RI^2(t)$. Para el caso de corrientes periódicas, la potencia disipada promedio es entonces dada por $\left\langle P\right\rangle=R\left\langle I^2\right\rangle$.
 An'alogamente, en el caso de un sistema de cargas y corrientes que rad'ia una potencia promedio $\left\langle P_{\rm rad}\right\rangle$ y es alimentada por una corriente $I(t)$, se define la \textit{resistencia de radiaci'on} $R_{\rm rad}$ por
 \begin{equation}
 R_{\rm rad}:=\frac{\left\langle P_{\rm rad}\right\rangle}{\left\langle I^2\right\rangle}.
 \end{equation}
 
 \subsection{Resistencia de radiaci'on de un dipolo de Hertz}\label{sec:RRdH}
-Consideremos el caso en que el dipolo est'a constituido por un (peque\~no) condensador de placas paralelas. Entonces el momento dipolar del sistema es dado por $p(t)=Q(t)d$, donde $Q(t)$ es la magnitud de la carga almacenada en las placas en el instante $t$ y $d$ es la distancia entre las placas. Entonces $\dot{p}(t)=\dot{Q}(t)d=I(t)d$, donde $I(t)$ es la corriente que alimenta al condensador. Usando esta expresi'on, podemos evaluar la potencia \eqref{PotdH} radiada por el dipolo, obteniendo
+Consideremos el caso en que el dipolo est'a constituido por un (pequeño) condensador de placas paralelas. Entonces el momento dipolar del sistema es dado por $p(t)=Q(t)d$, donde $Q(t)$ es la magnitud de la carga almacenada en las placas en el instante $t$ y $d$ es la distancia entre las placas. Entonces $\dot{p}(t)=\dot{Q}(t)d=I(t)d$, donde $I(t)$ es la corriente que alimenta al condensador. Usando esta expresi'on, podemos evaluar la potencia \eqref{PotdH} radiada por el dipolo, obteniendo
 %\begin{equation}
 %\left\langle P_{\rm rad}\right\rangle=\frac{2}{3}\frac{\langle \dot{I}^2\rangle d^2}{c^3}
 %\end{equation}
@@ -1653,7 +1650,7 @@ Consideremos el caso en que el dipolo est'a constituido por un (peque\~no) conde
 \begin{equation}
 \left\langle P_{\rm rad}\right\rangle=\frac{\mu}{6\pi c}{\langle\dot{I}^2\rangle d^2}.
 \end{equation}
-Si la corriente que alimenta el sistema es peri'odica con frecuencia angular $\omega$ entonces $\langle\dot{I}^2\rangle=\omega^2\langle I^2\rangle$ y por lo tanto
+Si la corriente que alimenta el sistema es periódica con frecuencia angular $\omega$ entonces $\langle\dot{I}^2\rangle=\omega^2\langle I^2\rangle$ y por lo tanto
 \begin{equation}
 \left\langle P_{\rm rad}\right\rangle=\frac{\mu}{6\pi c}{\langle I^2\rangle \omega^2d^2}.
 \end{equation}
@@ -1665,8 +1662,8 @@ R_{\rm rad}=\frac{\mu}{6\pi c}{\omega^2d^2}
 \end{equation}
 donde hemos introducido la constante $Z:=\mu c=1/\varepsilon c=\sqrt{\mu/\varepsilon}$, que en el vac'io asume el valor $Z_0=119,9169832\pi\,[\Omega]\approx 377\,[\Omega]$. En este caso, $Z_0$ es llamada la \textit{impedancia del vac'io}, o \textit{impedancia del espacio libre}.
 
-\subsection{Resistencia de radiaci'on de una peque\~na espira}
-Consideramos una peque\~na espira circular, de radio $a$, que es alimentada por una fuente que suministra una diferencia de potencial variable, de modo que la corriente que circula por la espira es dada por $I(t)$. En este caso, el momento magn'etico del sistema tiene m'odulo $\mu(t)=\pi a^2I(t)$. Suponiendo que la corriente que circula por la espira var'ia arm'onicamente en el tiempo, con frecuencia angular $\omega$, y que $a\ll c/\omega$, podemos modelar la radiaci'on emitida como aquella producida por un dipolo magn'etico ideal. Bajo estas condiciones, la expresi'on (\ref{Pdipmag}) nos permite escribir
+\subsection{Resistencia de radiaci'on de una pequeña espira}
+Consideramos una pequeña espira circular, de radio $a$, que es alimentada por una fuente que suministra una diferencia de potencial variable, de modo que la corriente que circula por la espira es dada por $I(t)$. En este caso, el momento magn'etico del sistema tiene m'odulo $\mu(t)=\pi a^2I(t)$. Suponiendo que la corriente que circula por la espira var'ia arm'onicamente en el tiempo, con frecuencia angular $\omega$, y que $a\ll c/\omega$, podemos modelar la radiaci'on emitida como aquella producida por un dipolo magn'etico ideal. Bajo estas condiciones, la expresi'on (\ref{Pdipmag}) nos permite escribir
 \begin{equation}
 \left\langle P_{\rm rad}\right\rangle=\frac{\mu}{6\pi c^3}{\left\langle \ddot{\mu}^2\right\rangle}=\frac{\pi\mu}{6c^3}{a^4}\left\langle \ddot{I}^ 2\right\rangle .
 \end{equation}
@@ -1684,11 +1681,11 @@ Evaluando esta expresi'on en el caso del vac'io, encontramos
 R_{\rm rad}\approx 6,4\times 10^{5}\left(\frac{a}{\lambda}\right)^4 [\Omega].
 \end{equation}
 
-Consideremos finalmente que con una misma corriente se alimenta el condensador discutido en la secci'on \ref{sec:RRdH} y, alternativamente, la espira que acabamos de analizar. Si ambos sistemas son \textit{aproximadamente del mismo tama\~no} ($d\approx a$) podemos escribir, usando los resultados (\ref{Rradp}) y (\ref{Rradmu}), 
+Consideremos finalmente que con una misma corriente se alimenta el condensador discutido en la secci'on \ref{sec:RRdH} y, alternativamente, la espira que acabamos de analizar. Si ambos sistemas son \textit{aproximadamente del mismo tamaño} ($d\approx a$) podemos escribir, usando los resultados (\ref{Rradp}) y (\ref{Rradmu}), 
 \begin{equation}
 \frac{R_{\rm rad}^{\vec\mu}}{R_{\rm rad}^{\vec{p}}}\approx 4\pi^4\left(\frac{a}{\lambda}\right)^2=\pi^2\left(\frac{2\pi a}{\lambda}\right)^2\approx 10\left(\frac{2\pi a}{\lambda}\right)^2.
 \end{equation}
-Por lo tanto, como hemos supuesto que $a\ll\lambda/2\pi$, encontramos que  $R_{\rm rad}^{\vec\mu}\ll R_{\rm rad}^{\vec{p}}$. En este sentido un peque\~no condensador rad'ia m'as ``eficientemente'' que una espira de similar tama\~no, alimentada con la misma corriente alterna.
+Por lo tanto, como hemos supuesto que $a\ll\lambda/2\pi$, encontramos que  $R_{\rm rad}^{\vec\mu}\ll R_{\rm rad}^{\vec{p}}$. En este sentido un pequeño condensador rad'ia m'as ``eficientemente'' que una espira de similar tamaño, alimentada con la misma corriente alterna.
 
 
 \section{Campos radiativos de una distribuci'on general de carga y corriente}
@@ -1720,7 +1717,7 @@ y, similarmente,
 \begin{equation}
  \frac{\vec{J}(\vec{x}',t_{\rm ret})}{R}=\frac{1}{r}\vec{J}(\vec{x}',t-\frac{r}{c}+\frac{\hat{r}\cdot\vec{x}'}{c})+O(r^{-2}).
 \end{equation}
-Estas expansiones son v'alidas para $r\gg d$, donde $d$ es el (orden de magnitud del) tama\~no (lineal) de la distribuci'on de cargas y corrientes. Con ellas, las integrales generales (\ref{potret}) se reducen a
+Estas expansiones son v'alidas para $r\gg d$, donde $d$ es el (orden de magnitud del) tamaño (lineal) de la distribuci'on de cargas y corrientes. Con ellas, las integrales generales (\ref{potret}) se reducen a
 \begin{equation}
  \phi(\vec{x},t)=\frac{1}{4\pi\varepsilon}\frac{1}{r}\int\rho(\vec{x}',t-\frac{r}{c}+\frac{\hat{r}\cdot\vec{x}'}{c})\,dV'+O(r^{-2}),
 \end{equation}
@@ -1739,14 +1736,14 @@ En otras palabras,
 
 \subsection{Expansi'on multipolar}\label{sec:emr}
 
-Podemos expresar \eqref{phirad} y \eqref{Arad} como una suma de t'erminos proporcionales a los \textit{momentos multipolares el'ectricos y magn'eticos de la distribuci'on de cargas y corrientes} que es fuente del campo. Para esto, expandimos los integrandos de \eqref{phirad} y \eqref{Arad} en potencias de $(\hat{r}\cdot\vec{x}')/c$. Por ejemplo,
+Podemos expresar \eqref{phirad} y \eqref{Arad} como una suma de t'erminos proporcionales a los \textit{momentos multipolares eléctricos y magn'eticos de la distribuci'on de cargas y corrientes} que es fuente del campo. Para esto, expandimos los integrandos de \eqref{phirad} y \eqref{Arad} en potencias de $(\hat{r}\cdot\vec{x}')/c$. Por ejemplo,
 \begin{eqnarray}
  \rho(\vec{x}',t'+\frac{\hat{r}\cdot\vec{x}'}{c})&=&\rho(\vec{x}',t')+\left(\frac{\hat{r}\cdot\vec{x}'}{c}\right)\dot\rho(\vec{x}',t')+\frac{1}{2}\left(\frac{\hat{r}\cdot\vec{x}'}{c}\right)^2\ddot\rho(\vec{x}',t') \nonumber\\
  &&+\cdots+\frac{1}{n!}\left(\frac{\hat{r}\cdot\vec{x}'}{c}\right)^n\stackrel{(n)}{\rho}\!\!\!(\vec{x}',t')+\cdots ,
 \end{eqnarray}
 donde hemos denotado $t':=t-r/c$ y $\stackrel{(n)}{\rho}:=\partial^n\rho/\partial t^n$ es la $n$-'esima derivada parcial de $\rho$ respecto al tiempo.
 
-Esta expansi'on tendr'a t'erminos cada vez m'as peque\~nos, y por lo tanto su \textit{truncamiento} a 'ordenes cada vez mayores suministrar'a \textit{mejores aproximaciones} al resultado exacto, si se satisface (en cada punto de la distribuci'on) que
+Esta expansi'on tendr'a t'erminos cada vez m'as pequeños, y por lo tanto su \textit{truncamiento} a 'ordenes cada vez mayores suministrar'a \textit{mejores aproximaciones} al resultado exacto, si se satisface (en cada punto de la distribuci'on) que
 \begin{equation}
  |\rho|\gg \frac{|\dot{\rho}|d}{c}, \qquad  |\dot{\rho}|\gg \frac{|\ddot{\rho}|d}{c},
 \end{equation}
@@ -1758,7 +1755,7 @@ Si la fuente \textit{var'ia temporalmente en forma arm'onica}, por ejemplo si $\
 \begin{equation}
 d\ll\frac{c}{\omega}=\frac{\lambda}{2\pi},
 \end{equation}
-es decir, a que \textbf{el tama\~no (lineal) de la fuente sea mucho menor que la longitud de onda asociada a la frecuencia $\omega$}. Recuerde que siempre es posible \textit{descomponer $\rho$ en una superposici'on de oscilaciones arm'onicas}, v'ia an'alisis de Fourier.
+es decir, a que \textbf{el tamaño (lineal) de la fuente sea mucho menor que la longitud de onda asociada a la frecuencia $\omega$}. Recuerde que siempre es posible \textit{descomponer $\rho$ en una superposici'on de oscilaciones arm'onicas}, v'ia an'alisis de Fourier.
 
 Suponiendo que las condiciones anteriores se satisfacen, podemos escribir:
 \begin{align}
@@ -1776,7 +1773,7 @@ donde
 \begin{equation}
  Q_{j_1\cdots j_n}(t):=\int\rho(\vec{x}',t)\, x'_{j_1}\cdots x'_{j_n}\,dV'
 \end{equation}
-es el \textit{momento multipolar el'ectrico de orden} $n$. En resumen,
+es el \textit{momento multipolar eléctrico de orden} $n$. En resumen,
 \begin{align}
  \phi_{\rm rad}(\vec{x},t) &= \frac{1}{4\pi\varepsilon}\frac{1}{r}\left[  Q(t')+\frac{\hat{r}_i}{c}\dot{Q}_i(t')+\frac{1}{2}\frac{\hat{r}_i}{c}\frac{\hat{r}_j}{c}\ddot{Q}_{ij}(t') \right.\nonumber\\
 & \qquad\qquad\ \left.+\cdots +\frac{1}{n!}\frac{\hat{r}_{j_1}}{c}\cdots\frac{\hat{r}_{j_n}}{c}\stackrel{(n)}{Q}\!\!{}_{j_1\cdots j_n}(t') +\cdots\right] .  \label{emprad}
@@ -1792,13 +1789,13 @@ donde
 \end{equation}
 denotan los \textit{momentos multipolares magn'eticos de orden} $n$ de la distribuci'on. Note que en (\ref{emprad}) y (\ref{emArad}) (las derivadas de) los momentos multipolares est'an evaluados en el tiempo retardado $t'=t-r/c$.
 
-Calculamos ahora la componente radiativa del campo el'ectrico, es decir, aquella que decae con $1/r$ a grandes distancias. A partir de (\ref{emprad}) y (\ref{emArad}) encontramos que
+Calculamos ahora la componente radiativa del campo eléctrico, es decir, aquella que decae con $1/r$ a grandes distancias. A partir de (\ref{emprad}) y (\ref{emArad}) encontramos que
 \begin{align}
 E_i^{\rm rad}(\vec{x},t) &= \frac{\mu c}{4\pi}\frac{1}{r}\left[\hat{r}_i\dot{Q}+\frac{1}{c}\left(\hat{r}_i\hat{r}_j\ddot{p}_j-\dot{M}_i\right)+\frac{1}{2c^2}\left(\hat{r}_i\hat{r}_j\hat{r}_k\dddot{Q}_{jk} -2\hat{r}_j\ddot{M}_{ji}\right)+\cdots\right.\nonumber\\
 & \qquad\qquad \left.+\frac{1}{n!c^n}\hat{r}_{j_1}\cdots\hat{r}_{j_{n-1}}\left(\!\stackrel{(n+1)}{Q}\!\!\!\!\!{}_{j_1\cdots j_n}\hat{r}_{j_n}\hat{r}_i- n\stackrel{(n)}{M}\!\!{}_{j_1\cdots j_{n-1}i}\right)+\cdots\right]_{\rm ret}. \label{emErad}
 \end{align}
 
-Para un sistema de cargas y corrientes que est'e \textit{aislado el'ectricamente} la carga total del sistema permanece constante, de modo que $\dot{Q}=0$. Por otro lado, \textit{el momento monopolar magn'etico $M_i$ es proporcional a la variaci'on temporal del momento dipolar el'ectrico $p_i$}. En efecto, en el caso magnetost'atico se tiene que $M_i=0$, lo que puede ser demostrado considerando la integral $\oint_Sx_iJ_j\, dS_j$ en una superficie $S$ que encierre la distribuci'on de cargas y corrientes, pero sobre la cual $\vec{J}=\vec{0}$. Ver secci'on \ref{sec:emm}. En el caso no estacionario que ahora consideramos, tenemos que
+Para un sistema de cargas y corrientes que est'e \textit{aislado eléctricamente} la carga total del sistema permanece constante, de modo que $\dot{Q}=0$. Por otro lado, \textit{el momento monopolar magn'etico $M_i$ es proporcional a la variaci'on temporal del momento dipolar eléctrico $p_i$}. En efecto, en el caso magnetost'atico se tiene que $M_i=0$, lo que puede ser demostrado considerando la integral $\oint_Sx_iJ_j\, dS_j$ en una superficie $S$ que encierre la distribuci'on de cargas y corrientes, pero sobre la cual $\vec{J}=\vec{0}$. Ver secci'on \ref{sec:emm}. En el caso no estacionario que ahora consideramos, tenemos que
 \begin{eqnarray}
  0&=&\oint_Sx_iJ_j\, dS_j\\
 &=&\int_V\partial_j(x_iJ_j)\,dV \\
@@ -1819,7 +1816,7 @@ An'alogamente, para el momento dipolar magn'etico podemos considerar la siguient
 &=&\int_V(x_jJ_i+x_iJ_j)\,dV-\int_Vx_ix_j(\partial_t\rho)\,dV \\
 &=&2M_{(ij)}-\dot{Q}_{ij}.
 \end{eqnarray}
-En otras palabras, \textit{la parte sim'etrica de $M_{ij}$ es igual a la variaci'on temporal del momento cuadrupolar el'ectrico}. Por otro lado, la parte antisim'etrica es, por definici'on, proporcional al \textit{(pesudo-)vector momento dipolar magn'etico} $\vec{\mu}$:
+En otras palabras, \textit{la parte sim'etrica de $M_{ij}$ es igual a la variaci'on temporal del momento cuadrupolar eléctrico}. Por otro lado, la parte antisim'etrica es, por definici'on, proporcional al \textit{(pesudo-)vector momento dipolar magn'etico} $\vec{\mu}$:
 \begin{equation}
  M_{[ij]}=\epsilon_{ijk}\mu_k, \qquad \mu_k:=\frac{1}{2}\epsilon_{ijk}\int_Vx_jJ_k\,dV.
 \end{equation}
@@ -1831,7 +1828,7 @@ Con esto, podemos reescribir \eqref{emErad} como
 \begin{equation}
 \boxed{E_i^{\rm rad}(\vec{x},t)=\frac{\mu}{4\pi}\frac{1}{r}\left[\left(\hat{r}_i\hat{r}_j\ddot{p}_j-\ddot{p}_i\right)+\frac{1}{c}\epsilon_{ijk}\hat{r}_j\ddot{\mu}_k+\frac{1}{2c}\left(\hat{r}_i\hat{r}_j\hat{r}_k\dddot{Q}_{jk} -\hat{r}_j\dddot{Q}_{ji}\right)+\cdots\right]_{\rm ret} .} \label{emErad2}
 \end{equation}
-Vemos entonces que el primer t'ermino corresponde al campo de radiaci'on de un \textit{dipolo el'ectrico} (ideal), el segundo al de un \textit{dipolo magn'etico} (ideal). El tercero es la \textit{contribuci'on cuadrupolar el'ectrica}, etc.
+Vemos entonces que el primer t'ermino corresponde al campo de radiaci'on de un \textit{dipolo eléctrico} (ideal), el segundo al de un \textit{dipolo magn'etico} (ideal). El tercero es la \textit{contribuci'on cuadrupolar eléctrica}, etc.
 
 Por otro lado, usando (\ref{emprad}) y (\ref{emArad}) puede verificarse que
 \begin{equation}
@@ -1874,7 +1871,7 @@ La corriente en el centro ($z=0$) es dada por
 \label{fig:antena}
 \end{figure}
 
-Consideraremos el caso en que el largo $d$ de la antena \textit{no} es despreciable comparado con la longitud de onda $\lambda=2\pi c/\omega$ de la radiaci'on emitida. En este caso no es posible utilizar la expansi'on multipolar de la secci'on \ref{sec:emr}. Por lo tanto, para determinar los campos radiativos debemos utilizar la expresiones  (\ref{phirad}) y (\ref{Arad}). En nuestro caso, donde la corriente que circula por el sistema es conocida, basta determinar el potencial vectorial usando (\ref{Arad}), puesto que a partir de 'el podemos calcular el campo magn'etico por medio del rotor. La componente radiativa del campo el'ectrico puede luego determinarse usando $\vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r}$. Adem'as, como en nuestro caso la distribuci'on de corriente es lineal, (\ref{Arad}) se reduce a
+Consideraremos el caso en que el largo $d$ de la antena \textit{no} es despreciable comparado con la longitud de onda $\lambda=2\pi c/\omega$ de la radiaci'on emitida. En este caso no es posible utilizar la expansi'on multipolar de la secci'on \ref{sec:emr}. Por lo tanto, para determinar los campos radiativos debemos utilizar la expresiones  (\ref{phirad}) y (\ref{Arad}). En nuestro caso, donde la corriente que circula por el sistema es conocida, basta determinar el potencial vectorial usando (\ref{Arad}), puesto que a partir de 'el podemos calcular el campo magn'etico por medio del rotor. La componente radiativa del campo eléctrico puede luego determinarse usando $\vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r}$. Adem'as, como en nuestro caso la distribuci'on de corriente es lineal, (\ref{Arad}) se reduce a
 \begin{eqnarray}
  \vec{A}_{\rm rad}&=&\frac{\mu}{4\pi}\frac{\hat{z}}{r}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
 &=&\frac{\mu}{4\pi}\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
@@ -1908,7 +1905,7 @@ La potencia instant'anea radiada por unidad de 'angulo s'olido puede entonces ca
  \frac{dP}{d\Omega}&=&\frac{c}{\mu}\left|\vec{B}_{\rm rad}\right|^2 r^2\\
 &=&\frac{\mu c I_0^2}{4\pi^2}\sin^2\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]^2}{\sin^2\theta}.
 \end{eqnarray}
-Ya que el movimiento es peri'odico es m'as 'util considerar la potencia promedio radiada:
+Ya que el movimiento es periódico es m'as 'util considerar la potencia promedio radiada:
 \begin{equation}
  \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu cI_0^2}{8\pi^2}\left[\frac{\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)}{\sin\theta}\right]^2.
 \end{equation}
