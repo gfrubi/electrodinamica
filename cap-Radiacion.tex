@@ -557,6 +557,10 @@ modo que lo anterior se reduce a
 \end{equation}
 y por lo tanto
 \begin{equation}
+P_{\rm rad} (t)=\lim_{r\rightarrow\infty}\oint \vec{S}_{(2)}\cdot\hat{n}\,r^2 d\Omega = \lim_{r\rightarrow\infty}\frac{1}{\mu c}\oint \left|\vec{E}_{(2)}\right|^2\,r^2 d\Omega,
+\end{equation}
+de modo que
+\begin{equation}
  \boxed{P_{\rm rad} (t)=\frac{q^2\mu}{16\pi^2c}\lim_{r\rightarrow\infty}\int_\Omega
 \left|\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)
@@ -588,16 +592,16 @@ aproximarse por:
 ret} +O(\beta),
 \end{equation}
 \begin{equation}
-\frac{dP}{d\Omega}=\frac{q^2\mu}{16\pi^2c}\lim_{r\rightarrow\infty}
+\frac{dP}{d\Omega}(\hat{n},t)=\frac{q^2\mu}{16\pi^2c}\lim_{r\rightarrow\infty}
 \left|\hat{n}\times\left[
 \hat{n}\times{\vec{a}}\right]\right|^2_{\rm ret}  +O(\beta).
 \end{equation}
-Aqu'i $|_{\rm ret}$ denota evaluaci'on de las cantidades en el tiempo retardado, que muy lejos de la fuente adopta la forma $t'=t-r/c$.
+Aqu'i $|_{\rm ret}$ denota evaluaci'on de las cantidades en el tiempo retardado, que muy lejos de la fuente adopta la forma $t'=t-r/c$. Además hemos eliminado ``rad"\, de la notación para la potencia.
 Introduciendo el 'angulo $\theta$ entre la aceleraci'on $\vec{a}$ y el vector
 normal $\hat{n}$, podemos escribir
 $\left|\hat{n}\times\left[\hat{n}\times{\vec{a}}\right]\right|^2=\vec{a}^2\sin^2\theta$ y entonces
 \begin{equation}
-\frac{dP}{d\Omega}(t)=\frac{q^2\mu}{16\pi^2 c}\left[ \vec{a}^2\sin^2\theta\right]_{\rm
+\frac{dP}{d\Omega}(\hat{n},t)=\frac{q^2\mu}{16\pi^2 c}\left[ \vec{a}^2\sin^2\theta\right]_{\rm
 ret} .\label{Lardif}
 \end{equation}
  Note que la dependencia $\sin^2\theta$ de ${dP}/{d\Omega}$ implica que \textit{la energ'ia radiada se dirige mayoritariamente en la direcci'on normal a la aceleraci'on}. Adem'as, como $\vec{E}_{(2)}\propto \hat{n}\times(\hat{n}\times{\vec{a}})$ entonces el campo eléctrico de radiaci'on  es normal a $\hat{n}$ y est'a contenido en el plano definido por $\vec{a}$ y $\hat{n}$. Ver figura \ref{fig:natheta}. Decimos entonces que el campo de radiaci'on est'a
