@@ -970,78 +970,42 @@ La secci'on eficaz total de scattering de acuerdo a la fórmula de Klein-Nishina
 
 
 
-\section{Distribuci'on de Energ'ia en 'Angulo y Frecuencia, radiada
+\section{Distribuci'on de Energ'ia en 'Angulo y Frecuencia radiada
 por cargas aceleradas}
 
 Hab'iamos obtenido, ver \eqref{Pinf1} y \eqref{S2E}, que la potencia irradiada por unidad de 'angulo s'olido es dada en general por
 \begin{equation}\label{dp1}
-\frac{dP}{d\Omega}(\hat{n},t)=\lim_{r\to\infty}\frac{1}{\mu c}\left|r\vec{E}_{\rm{rad}}(\vec{x},t)\right|^2 , %=\left|  \vec{\cal A}(t,\hat{n})\right|  _{\rm ret}^2, 
+\frac{dP}{d\Omega}(\hat{n},t)=\lim_{r\to\infty}\frac{1}{\mu c}\left|r\vec{E}(\vec{x},t)\right|^2 .
 \end{equation}
-donde $\vec{E}_{\rm{rad}}$ es el campo eléctrico radiativo.
-%
-%Introduciremos el campo vectorial auxiliar $\vec{\cal A}(\hat{n},t)$, definido por
-%\begin{equation}
-%\vec{\cal A}(\hat{n},t):=\frac{1}{\sqrt{\mu c}} \lim_{r\to\infty}\left(r\vec{E}_{\rm{rad}}(\vec{x},t)\right).
-%\label{dp2}
-%\end{equation}
-%\begin{equation}
-%\vec{\cal A}(\hat{n},t):=\frac{1}{\sqrt{\mu c}} \lim_{r\to\infty}\left(r\vec{E}_{\rm{rad}}\right)_{\rm ret}=\sqrt{\frac{q^2\mu}{16\pi^2
-%c}}\lim_{r\to\infty}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)
-%^3}\right|_{\rm ret}.
-%\label{dp2}
-%\end{equation}
+
 La energ'ia total irradiada por unidad de 'angulo s'olido es entonces
 \begin{equation}
-\frac{dE}{d\Omega}(\hat{n}) =\frac{1}{\mu c}\int_{-\infty}^{\infty}\lim_{r\to\infty}\left|r\vec{E}_{\rm{rad}}(\vec{x},t)\right|^2 dt .
+\frac{dE}{d\Omega}(\hat{n}) =\frac{1}{\mu c}\int_{-\infty}^{\infty}\lim_{r\to\infty}\left|r\vec{E}(\vec{x},t)\right|^2 dt .
 \end{equation}
-%\begin{equation}
-%\frac{dE}{d\Omega}(\hat{n}) =\int_{-\infty}^{\infty}\frac{dP}{d\Omega}(\hat{n})\,dt
-%=\int_{-\infty}^{\infty}\left|  \vec{\cal A}(\hat{n},t)  \right|^2dt .
-%\end{equation}
+
 Queremos estudiar el \textit{espectro} de la radiaci'on emitida, es decir, \textit{la distribuci'on de potencia para distintas frecuencias}. Para ello, podemos \textit{expresar el campo radiado en t'erminos de oscilaciones periódicas}. Esto significa expresar el campo eléctrico como una superposici'on de funciones arm'onicas, por medio de la transformada de Fourier $\tilde{\vec{E}}(\vec{x},\omega)$ del vector $\vec{E}(\vec{x},t)$, de modo que
 \begin{equation}
- \vec{E}(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\tilde{\vec{E}}
-(\vec{x},\omega) e^{i\omega t}d\omega ,
+ \vec{E}(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\tilde{\vec{E}}(\vec{x},\omega) e^{i\omega t}d\omega ,
 \end{equation}
-%\begin{equation}
-% \vec{\cal A}(\hat{n},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vec{\cal
-%A}(\omega) e^{i\omega t}d\omega ,
-%\end{equation}
 donde
 \begin{equation}
 \tilde{\vec{E}}(\vec{x},\omega) :=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vec{E}(\vec{x},t) e^{-i\omega t}dt .  \label{dp3}
 \end{equation}
-%\begin{equation}
-%\vec{E}(\hat{n},\omega) :=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vec{\cal
-%A}(t) e^{-i\omega t}dt .  \label{dp3}
-%\end{equation}
 
-El hecho que %$\vec{\cal A}(\hat{n},t)$ 
-$ \vec{E}(\vec{x},t)$ es real se traduce en que 
-%$\vec{\cal A}(\hat{n},-\omega)=\vec{\cal A}^*(\hat{n},\omega)$
-$\tilde{\vec{E}}^*(\vec{x},\omega)=\tilde{\vec{E}}(\vec{x},-\omega)$. En t'erminos de la transformada de 
-%$\vec{\cal A}(\hat{n},t)$
-$ \vec{E}(\vec{x},t)$, la energ'ia total radiada por unidad de 'angulo s'olido puede escribirse como:
+El hecho que $\vec{E}(\vec{x},t)$ es real se traduce en que 
+$\tilde{\vec{E}}^*(\vec{x},\omega)=\tilde{\vec{E}}(\vec{x},-\omega)$. En t'erminos de la transformada de $\vec{E}(\vec{x},t)$, la energ'ia total radiada por unidad de 'angulo s'olido puede escribirse como:
 \begin{eqnarray}
 \frac{dE}{d\Omega}(\hat{n}) &=&\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}r^2\left|\vec{E}(\vec{x},t)
 \right|^2dt \label{dEdO0}\\
 &=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\vec{E}(\vec{x},t)\cdot \vec{E}^*(\vec{x},t)dt\\
 &=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{
 \infty}r^2\tilde{\vec{E}}(\vec{x},\omega) \cdot e^{i\omega t}\tilde{\vec{E}}^\ast(\vec{x},\omega')e^{-i\omega' t}\,d\omega d\omega' dt\\
-&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}r^2\vec{E}(\vec{x},\omega)\cdot \vec{E}^*(\vec{x},\omega')\int_{-\infty}^{\infty} e^{i(\omega-\omega')t}\,dtd\omega d\omega' .
+&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot \tilde{\vec{E}}^*(\vec{x},\omega')\int_{-\infty}^{\infty} e^{i(\omega-\omega')t}\,dtd\omega d\omega' .
 \end{eqnarray}
-%\begin{eqnarray}
-%\frac{dE}{d\Omega}(\hat{n}) &=&\int_{-\infty}^{\infty}\left|\vec{\cal A}(t)
-%\right|^2dt \label{dEdO0}\\
-%&=&\int_{-\infty}^{\infty}\vec{\cal A}(\hat{n},t)\cdot \vec{\cal A}^*(\hat{n},t)dt\\
-%&=&\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{
-%\infty}\vec{\cal A}(\hat{n},\omega) \cdot e^{i\omega t}\vec{\cal A}^\ast\left(\hat{n},\omega'\right)e^{-i\omega' t}\,d\omega d\omega' dt\\
-%&=&\frac{1}{2\pi} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\vec{\cal A}(\hat{n},\omega)\cdot \vec{\cal A}^*(\hat{n},\omega')\int_{-\infty}^{\infty} e^{i(\omega-\omega')t}\,dtd\omega d\omega' .
-%\end{eqnarray}
+
 Recordando que
 \begin{equation}
-\frac{1}{2\pi}\int_{-\infty}^{\infty }e^{i\left((  k-k' \right)  x}dx=
+\frac{1}{2\pi}\int_{-\infty}^{\infty }e^{i\left( k-k' \right)  x}dx=
 \delta\left(  k-k' \right),
 \end{equation}
 llegamos a que
@@ -1050,12 +1014,7 @@ llegamos a que
 &=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot\tilde{\vec{E}}^\ast(\vec{x},\omega') \delta (\omega-\omega')  d\omega d\omega'\\
 &=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2 d\omega. \label{dedO1}
 \end{eqnarray}
-%\begin{eqnarray}
-%\frac{dE}{d\Omega}(\hat{n})
-%&=&\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\vec{\cal A}(\hat{n},\omega)\cdot
-%\vec{\cal A}^\ast(\hat{n},\omega') \delta (\omega-\omega')  d\omega d\omega'\\
-%&=&\int_{-\infty}^{\infty}\left|\vec{\cal A}(\hat{n},\omega)\right|^2 d\omega. \label{dedO1}
-%\end{eqnarray}
+
 Note que la igualdad entre las expresiones (\ref{dEdO0}) y (\ref{dedO1}) no es m'as que el resultado usualmente conocido como \textit{teorema de Parceval}.
 
 Definimos la\textit{ energ'ia radiada por unidad de 'angulo s'olido y por intervalo de frecuencia (angular)} ${d^2E}/{d\Omega d\omega}$, de modo que
@@ -1069,21 +1028,15 @@ Con esta definici'on y el resultado (\ref{dedO1}), encontramos
 \end{equation}
 En el caso de la radiaci'on de una carga acelerada, tenemos
 \begin{equation}
-\tilde{\vec{E}}(\vec{x},\omega)= \frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
-}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)= \frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
 ^3}\right|_{\rm ret}e^{-i\omega t}dt .
 \end{equation}
-%\begin{equation}
-%\vec{\cal A}(\hat{n},\omega)= \sqrt{\frac{q^2\mu}{32\pi^3c}}\int_{-\infty}^{\infty
-%}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)
-%^3}\right|_{\rm ret}e^{-i\omega t}dt .
-%\end{equation}
+
 Para simplificar la integral introducimos la nueva variable de integraci'on
 $t':=t_{\rm ret}(t)=t-{R}/{c}$ y usamos (\ref{dtt'2}), de modo que podemos escribir
 \begin{eqnarray}
-\tilde{\vec{E}}(\vec{x},\omega)&=&\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
+\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)&=&\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
 }\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
 ^3}\right|_{t'}e^{-i\omega (t'+R(t')/c)}\left(
@@ -1097,21 +1050,7 @@ $t':=t_{\rm ret}(t)=t-{R}/{c}$ y usamos (\ref{dtt'2}), de modo que podemos escri
 \times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
 e^{-i\omega (t+R(t)/c)} dt.
 \end{eqnarray}
-%\begin{eqnarray}
-%\vec{\cal A}(\hat{n},\omega)&=&\sqrt{\frac{q^2\mu}{32\pi^3c}}\int_{-\infty}^{\infty
-%}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)
-%^3}\right|_{t'}e^{-i\omega (t'+R(t')/c)}\left(
-%1-\vec{\beta}\cdot\hat{n}\right) dt' \\
-%&=&\sqrt{\frac{q^2\mu}{32\pi^3c}}\int_{-\infty}^{\infty
-%}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^2}
-%\right|_{t'}e^{-i\omega (t'+R(t')/c)} dt' \\
-%&=&\sqrt{\frac{q^2\mu}{32\pi^3c}}\int_{-\infty}^{\infty
-%}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
-%e^{-i\omega (t+R(t)/c)} dt.
-%\end{eqnarray}
+
 En el 'ultimo paso hemos renombrado la variable de integraci'on volviendo
 nuevamente a denotarla por $t$. Esta integral es evaluada en ``en el infinito'', es decir, a grandes distancias de la carga ($r\rightarrow\infty$). Tomando en cuenta esto, podemos expandir $R$ en potencias de ${\vec{z}}/{r}$, obteniendo
 \begin{equation}
@@ -1119,16 +1058,10 @@ R(t)  =r-\vec{z}(t) \cdot\hat{n}+O\left(\left[z/r\right]^2\right). \label{expR} 
 \end{equation}
 Usando esta expansi'on, podemos escribir:
 \begin{equation}
-\tilde{\vec{E}}(\vec{x},\omega)=\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\frac{e^{-i\frac{\omega r}{c}}}{r}\int_{-\infty}^{\infty}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)=\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\frac{e^{-i\frac{\omega r}{c}}}{r}\int_{-\infty}^{\infty}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
 e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c+O([z/r]^2))} dt,
 \end{equation}
-%\begin{equation}
-%\vec{\cal A}(\hat{n},\omega)=\sqrt{\frac{q^2\mu}{32\pi^3c}}e^{-i\frac{\omega
-%r}{c}}\int_{-\infty}^{\infty}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-%\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
-%e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c+O([z/r]^2))} dt,
-%\end{equation}
 y, por lo tanto, la energ'ia total irradiada por unidad de 'angulo s'olido e
 intervalo de frecuencia es (en el l'imite $r\to\infty$)
 \begin{equation}\marginnote{Distribuci'on de energ'ia en frecuencia}
