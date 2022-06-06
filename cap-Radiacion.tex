@@ -222,7 +222,7 @@ f(\vec{x},\vec{x}',t)\,\delta^{(3)}(\vec{x}'-\vec{z}(t-|\vec{x}-\vec{x}'|/c))\,d
 
 Para calcular este tipo de integrales, expresaremos la delta de Dirac 3-dimensional como una integral sobre la variable (temporal) auxiliar $T$:
 \begin{equation}
- \delta^{(3)}(\vec{x}'-\vec{z}(t-|\vec{x}-\vec{x}'|/c))=\int_T \delta^{(3)}(\vec{x}'-\vec{z}(T))\,\delta(T-t+|\vec{x}-\vec{x}'|/c)\, dT.
+ \delta^{(3)}(\vec{x}'-\vec{z}(t-|\vec{x}-\vec{x}'|/c))=\int_{-\infty}^\infty \delta^{(3)}(\vec{x}'-\vec{z}(T))\,\delta(T-t+|\vec{x}-\vec{x}'|/c)\, dT.
 \end{equation}
 Con esto,
 \begin{equation}
@@ -231,7 +231,7 @@ f(\vec{x},\vec{x}',t)\,\delta^{(3)}(\vec{x}'-\vec{z}(T))\,\delta(T-t+|\vec{x}-\v
 \end{equation}
 Expresada de esta forma, es sencillo realizar la integral espacial, puesto que la delta de Dirac 3-dimensional evaluar'a la coordenada $\vec{x}'$ en el punto $\vec{z}(T)$, es decir, en un punto sobre la trayectoria de la carga. As'i, obtenemos
 \begin{equation}
-I(\vec{x},t)=\int_{T}f(\vec{x},\vec{z}(T),t)\,\delta(T-t+|\vec{x}-\vec{z}(T)|/c)\, dT. \label{potretqgm12}
+I(\vec{x},t)=\int_{-\infty}^\infty f(\vec{x},\vec{z}(T),t)\,\delta(T-t+|\vec{x}-\vec{z}(T)|/c)\, dT. \label{potretqgm12}
 \end{equation}
 El argumento de la delta de Dirac es una funci'on no trivial $g$ de la variable auxiliar $T$. Denotamos
 \begin{equation}
@@ -239,8 +239,8 @@ El argumento de la delta de Dirac es una funci'on no trivial $g$ de la variable 
 \end{equation}
 de modo que
 \begin{eqnarray}
-I(\vec{x},t)&=&\int_{T}f(\vec{x},\vec{z}(T),t)\,\delta(g(T))\, dT \\
-&=&\int_{T}f(\vec{x},\vec{z}(T),t)\frac{\delta(T-t')}{|g'(t')|}\, dT \\
+I(\vec{x},t)&=&\int_{-\infty}^\infty f(\vec{x},\vec{z}(T),t)\,\delta(g(T))\, dT \\
+&=&\int_{-\infty}^\infty f(\vec{x},\vec{z}(T),t)\frac{\delta(T-t')}{|g'(t')|}\, dT \\
 &=&\frac{f(\vec{x},\vec{z}(t'),t)}{|g'(t')|}, \label{Ir}
 \end{eqnarray}
 donde $g'$ es la funci'on derivada de $g$ y $t'$ es la soluci'on de la ecuaci'on $g(t')=0$, es decir, de
