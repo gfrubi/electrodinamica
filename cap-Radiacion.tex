@@ -70,12 +70,12 @@ G(\vec{x},\vec{x}')=G(|\vec{x}-\vec{x}'|),
 \end{equation}
  la ecuaci'on (\ref{ecGreen}) se reduce a
 \begin{equation}
-\left[ \nabla^2+k^2\right] G(r)=\delta^{(3)}(r), \qquad r:=|\vec{r}|.
+\left[ \nabla^2+k^2\right] G(r)=\delta^{(3)}(\vec{r}), \qquad r:=|\vec{r}|.
 \end{equation}
 %ya que, sin perder generalidad, es posible elegir $\vec{x}'=\vec{0}$.
 En coordenadas esf'ericas, tendremos entonces que
 \begin{equation}
- \frac{1}{r^2}\frac{d}{dr}\left( r^2\frac{dG}{dr}\right) +k^2G(r)=\delta^{(3)}(r)
+ \frac{1}{r^2}\frac{d}{dr}\left( r^2\frac{dG}{dr}\right) +k^2G(r)=\delta^{(3)}(\vec{r})
 .\label{HelmG}
 \end{equation}
 Es directo resolver (\ref{HelmG}) para puntos $r\neq 0$. Obtenemos:
@@ -107,15 +107,15 @@ ikr}+\alpha e^{\pm ikr}\nabla^2\left( \frac{1}{r}\right) \\
 \frac{1}{r} \left|\vec{\nabla}r\right|^2  e^{\pm ikr}+\alpha e^{\pm
 ikr}\nabla^2\left( \frac{1}{r}\right).
 \end{eqnarray}
-Usando ahora $\nabla^2\left({1}/{r}\right) =-4\pi\delta^{(3)}(r)$,
-$f(r)\delta^{(3)}(r)=f(0)\delta^{(3)}(r)$ para una funci'on $f(r)$ arbitraria, y
+Usando ahora $\nabla^2\left({1}/{r}\right) =-4\pi\delta^{(3)}(\vec{r})$,
+$f(r)\delta^{(3)}(\vec{r})=f(0)\delta^{(3)}(\vec{r})$ para una funci'on $f(r)$ arbitraria, y
 $\vec{\nabla}r=\hat{r}$, de modo que $|\vec{\nabla}r|=1$,
 encontramos
 \begin{eqnarray}
-\nabla^2G&=&\pm 4\pi ik\alpha r  e^{\pm ikr}\delta^{(3)}(r) -k^2\alpha \frac{1}{r}
-e^{\pm ikr}-4\pi\alpha e^{\pm ikr}\delta^{(3)}(r) \\
-&=&0-k^2\alpha \frac{e^{\pm ikr}}{r}   -4\pi\alpha \delta^{(3)}(r) \\
-&=&-k^2G(r) -4\pi\alpha \delta^{(3)}(r) .\label{lapG}
+\nabla^2G&=&\pm 4\pi ik\alpha r  e^{\pm ikr}\delta^{(3)}(\vec{r}) -k^2\alpha \frac{1}{r}
+e^{\pm ikr}-4\pi\alpha e^{\pm ikr}\delta^{(3)}(\vec{r}) \\
+&=&0-k^2\alpha \frac{e^{\pm ikr}}{r}   -4\pi\alpha \delta^{(3)}(\vec{r}) \\
+&=&-k^2G(r) -4\pi\alpha \delta^{(3)}(\vec{r}) .\label{lapG}
 \end{eqnarray}
 Comparando (\ref{lapG}) con (\ref{HelmG}) obtenemos $\alpha=-{1}/{4\pi}$, de
 modo que la funci'on de Green para nuestro problema es
