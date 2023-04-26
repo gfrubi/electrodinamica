@@ -1,5 +1,5 @@
 \chapter{Campos vectoriales, rotores y divergencias}\label{Apcamps}
-Todo campo vectorial en 3 dimensiones, continuo y diferenciable (de clase $C^2$), y \textit{que se anula en el infinito m'as r'apidamente que} $r^{-3/2}$, est'a 'unicamente determinado por ``sus fuentes'': su rotor (``densidad de circulaci'on'') y por su divergencia (``densidad de fuente'').
+Todo campo vectorial en 3 dimensiones, continuo y diferenciable (de clase $C^2$), y \textit{que se anula en el infinito más rápidamente que} $r^{-3/2}$, está únicamente determinado por ``sus fuentes'': su rotor (``densidad de circulación'') y por su divergencia (``densidad de fuente'').
 
 Considere un campo vectorial $\vec V(\vec x)$, definimos su divergencia y su
 rotor, respectivamente, por
@@ -35,7 +35,7 @@ x')\left(-4\pi\delta^{(3)}(\vec x-\vec x')\right)\,dV'\\
 &=&\int_{R^3}D(\vec x')\delta^{(3)}(\vec x-\vec x')\,dV'\\
 &=&D(\vec x).
 \end{eqnarray}
-Adem'as
+Además
 \begin{eqnarray}
 \vec\nabla\times\vec
 V&=&\vec\nabla\times\left(-\vec\nabla\phi+\vec\nabla\times\vec
@@ -55,9 +55,9 @@ C(\vec x')\delta^{(3)}\left(\vec x-\vec x'\right)\,dV' \\
 C(\vec x')\cdot\vec\nabla)\vec\nabla\left(\frac{1}{\left|\vec
 x-\vec x'\right|}\right)\,dV' +\vec C(\vec x). \label{rotv}
 \end{eqnarray}
-Probaremos ahora que el primer t'ermino de (\ref{rotv}) es cero si $\vec C$ es
-un campo acotado. Usando notaci'on indicial, tenemos que la (componente
-$i$-'esima de la) expresi'on en el primer t'ermino de (\ref{rotv}), puede
+Probaremos ahora que el primer término de (\ref{rotv}) es cero si $\vec C$ es
+un campo acotado. Usando notación indicial, tenemos que la (componente
+$i$-ésima de la) expresión en el primer término de (\ref{rotv}), puede
 escribirse como
 \begin{eqnarray}
 \int_{R^3}C_j'\partial_j\partial_i\frac{1}{\left|\vec
@@ -74,32 +74,32 @@ x'\right|}\,dS'_j\\
 \end{eqnarray}
 En el infinito ($\partial R^3$), $|\vec x|\rightarrow \infty$, de modo que
 $\frac{1}{\left|\vec x-\vec x'\right|}\sim \frac{1}{r}$,
-$\partial_i'\frac{1}{\left|\vec x-\vec x'\right|}\sim \frac{1}{r^2}$. Adem'as
-$dS\sim r^2d\Omega$ en el mismo l'imite, de modo que
+$\partial_i'\frac{1}{\left|\vec x-\vec x'\right|}\sim \frac{1}{r^2}$. Además
+$dS\sim r^2d\Omega$ en el mismo límite, de modo que
 $\partial_i'\frac{1}{\left|\vec x-\vec x'\right|}dS_j\sim d\Omega$. En otras
-palabras, la contribuci'on de $\partial_i'\frac{1}{\left|\vec x-\vec
+palabras, la contribución de $\partial_i'\frac{1}{\left|\vec x-\vec
 x'\right|}dS_j$ es finita en el infinito espacial. Por lo tanto, la integral
-en (\ref{rotv}) se anular'a si $\vec C\rightarrow\vec 0$ en el infinito.
+en (\ref{rotv}) se anulará si $\vec C\rightarrow\vec 0$ en el infinito.
 
-Hemos as'i verificado que, dada la divergencia y el rotor de un campo vectorial
-tridimensional, es posible reconstruir el campo original. Adem'as,
-todo campo vectorial tridimensional puede ser descompuesto en un t'ermino
-derivado de un campo escalar (de rotor nulo) y un t'ermino derivado de un
+Hemos así verificado que, dada la divergencia y el rotor de un campo vectorial
+tridimensional, es posible reconstruir el campo original. Además,
+todo campo vectorial tridimensional puede ser descompuesto en un término
+derivado de un campo escalar (de rotor nulo) y un término derivado de un
 potencial vectorial (de divergencia nula). Note, sin embargo, que los campos
-``potenciales'' $\phi$ \textit{no son 'unicos} (siempre es posible sumar una
+``potenciales'' $\phi$ \textit{no son únicos} (siempre es posible sumar una
 constante al potencial escalar $\phi$ y un gradiente de otro campo escalar al
 potencial vectorial $\vec A$).
 
-Por otro lado, el vector $\vec V$ calculado usando (\ref{decomp1}) es el 'unico
+Por otro lado, el vector $\vec V$ calculado usando (\ref{decomp1}) es el único
 que tiene divergencia $D$ y rotor $\vec C$. En efecto, suponga que existen 2
 campos $\vec V_1$ y $\vec V_1$ que satisfacen (\ref{divrot}). Definiendo $\vec
 W:=\vec V_1-\vec V_2$ encontramos
 \begin{equation}
  \vec\nabla\cdot\vec W=0, \qquad \vec\nabla\times\vec W=\vec 0. \label{drW}
 \end{equation}
-La condici'on (\ref{drW}b) implica que es posible escribir $\vec
+La condición (\ref{drW}b) implica que es posible escribir $\vec
 W=-\vec\nabla\psi$ con una campo escalar $\psi$. Con esto, (\ref{drW}a) implica
-que $\psi$ debe satisfacer la ecuaci'on de Laplace $\nabla^2\psi=0$.
+que $\psi$ debe satisfacer la ecuación de Laplace $\nabla^2\psi=0$.
 
 Usando la identidad \textit{primera identidad de Green}:
 \begin{equation}
@@ -112,21 +112,21 @@ encontramos:
 (\vec\nabla\psi)^2\,dV . \label{iG2}
 \end{equation}
 La integral del lado izquierdo de (\ref{iG2}) se anula en el caso que $V=R^3$
-puesto que la familia de campos vectoriales $\vec V$ considerados decrece m'as
-r'apido que $r^{-3/2}$ en el infinito\footnote{Como consecuencia $\psi$
-decrece m'as r'apido que $r^{-3/2}$ y $\psi \vec\nabla\psi$ decrece m'as
-r'apido que $r^{-2}$, mientras que $d\vec S$ aumenta como $r^2$.}. Finalmente,
-la anulaci'on del lado derecho de  (\ref{iG2}) requiere que
+puesto que la familia de campos vectoriales $\vec V$ considerados decrece más
+rápido que $r^{-3/2}$ en el infinito\footnote{Como consecuencia $\psi$
+decrece más rápido que $r^{-3/2}$ y $\psi \vec\nabla\psi$ decrece más
+rápido que $r^{-2}$, mientras que $d\vec S$ aumenta como $r^2$.}. Finalmente,
+la anulación del lado derecho de  (\ref{iG2}) requiere que
 $\vec\nabla\psi=\vec 0$, de modo que $\psi$ puede a lo sumo ser una constante.
 En este caso, sin embargo, $\vec W=-\vec\nabla\psi=\vec 0$, es decir $\vec
 V_1=\vec V_2$.
 
 Como consecuencia de lo anterior, podemos establecer los siguientes resultados
-para un campo vectorial $\vec V$ que se anula en el infinito m'as
-r'apidamente que $r^{-3/2}$:
+para un campo vectorial $\vec V$ que se anula en el infinito más
+rápidamente que $r^{-3/2}$:
 \begin{itemize}
 \item Si la divergencia y el rotor de un campo vectorial son conocidos y si
-este campo no tiene fuentes en el infinito, entonces el campo est'a 'unicamente
+este campo no tiene fuentes en el infinito, entonces el campo está únicamente
 determinado
 \item Si $\vec\nabla\cdot\vec V\neq 0$ y $\vec\nabla\times\vec V=\vec 0$
 entonces $\vec V$ puede ser derivado de un campo escalar: $\vec
@@ -134,12 +134,12 @@ V=-\vec\nabla\phi$.
 \item Si $\vec\nabla\times\vec V\neq \vec 0$ y $\vec\nabla\cdot\vec V= 0$
 entonces $\vec V$ puede ser derivado de un campo vectorial: $\vec
 V=\vec\nabla\times\vec A$.
-\item $\vec{V}$ puede ser descompuesto como una superposici'on (suma) de un
-campo libre de rotaci'on y uno libre de fuentes.
+\item $\vec{V}$ puede ser descompuesto como una superposición (suma) de un
+campo libre de rotación y uno libre de fuentes.
 \item Si $\vec\nabla\times\vec V=\vec 0$ y $\vec\nabla\cdot\vec V= 0$ \textit{en
-una cierta regi'on}, entonces $\vec V$ puede ser derivado de un potencial $\phi$
-que satisface $\nabla^2\phi=0$. Decimos que $\vec V$ es \textit{arm'onico} en
-dicha regi'on.
+una cierta región}, entonces $\vec V$ puede ser derivado de un potencial $\phi$
+que satisface $\nabla^2\phi=0$. Decimos que $\vec V$ es \textit{armónico} en
+dicha región.
 \item Si $\vec\nabla\times\vec V=\vec 0$ y $\vec\nabla\cdot\vec V= 0$ \textit{en
 todo el espacio}, entonces $\vec V=\vec 0$.
 \end{itemize}
@@ -155,13 +155,13 @@ todo el espacio}, entonces $\vec V=\vec 0$.
 % Resistencia  & 1 statohm & $\approx$ & $9\times10^{11}$ ohm\\\hline
 % Resistividad & 1 segundo & $\approx$ & $9\times10^{9}$ ohm $\times$
 % metro\\\hline
-% Capacitancia  & 1 cent'imetro & $\approx$ & $\frac{1}{9\times10^{11}}$
+% Capacitancia  & 1 centímetro & $\approx$ & $\frac{1}{9\times10^{11}}$
 %farad\\\hline
-% Campo el'ectrico  & 1 $\frac{dina}{statcoulomb}$ & $\approx$ &
+% Campo eléctrico  & 1 $\frac{dina}{statcoulomb}$ & $\approx$ &
 % $3\times10^4\frac{newton}{coulomb}$\\\hline
 % Autoinductancia & 1 stathenry & $\approx$ & $9\times10^{11}$ henry\\\hline
-% Inducci'on magn'etica  & 1 gauss & $=$ & $10^{-4}$ tesla\\\hline
-% Flujo magn'etico  & 1 maxwell & $=$ & $10^{-8}$ tesla$\times$ m$^2$\\\hline
+% Inducción magnética  & 1 gauss & $=$ & $10^{-4}$ tesla\\\hline
+% Flujo magnético  & 1 maxwell & $=$ & $10^{-8}$ tesla$\times$ m$^2$\\\hline
 % Intensidad de campo  & 1 oersted & $=$ &
 %$\frac{10^3}{4\pi}\frac{ampere}{metro}$
 % \\\hline
@@ -169,13 +169,13 @@ todo el espacio}, entonces $\vec V=\vec 0$.
 % 
 % \begin{tabular}
 % [c]{|l|l|l|l|l|}\hline
-% Cantidad & S'imbolo & MKS &  & CGS\\\hline
+% Cantidad & Símbolo & MKS &  & CGS\\\hline
 % Longitud & $l$ & 1m & 10$^2$ & cm\\\hline
 % Masa & $m$ & 1kg & 10$^3$ & g\\\hline
 % Tiempo & $t$ & 1s & 1 & s\\\hline
 % Frecuencia & $\nu$ & 1Hz & 1 & Hz\\\hline
 % Fuerza & $F$ & 1N & 10$^{5}$ & dinas\\\hline
-% Energ'ia & $U,W$ & 1J & 10$^{7}$ & erg\\\hline
+% Energía & $U,W$ & 1J & 10$^{7}$ & erg\\\hline
 % Potencia & $P$ & 1W & 10$^{7}$ & $\frac{\text{erg}}{\text{s}}$\\\hline
 % Carga & $q$ & $1$coulomb & 3$\times10^{9}$ & statcoulombs\\\hline
 % Densidad de Carga & $\rho$ & 1$\frac{\text{coulomb}}{\text{m}^3}$ &
@@ -183,30 +183,30 @@ todo el espacio}, entonces $\vec V=\vec 0$.
 % Corriente & $I$ & 1amp & 3$\times10^{9}$ & statamperes\\\hline
 % Densidad de Corriente & $J$ & 1$\frac{\text{amp}}{^{\text{m}^2}}$ &
 % 3$\times10^{5}$ & $\frac{\text{statamperes}}{\text{cm}^2}$\\\hline
-% Campo El'ectrico & $E$ & 1$\frac{\text{volt}}{\text{m}}$ & $\frac{1}%
+% Campo Eléctrico & $E$ & 1$\frac{\text{volt}}{\text{m}}$ & $\frac{1}%
 % {3}\times10^{-4}$ & $\frac{\text{statvolt}}{\text{cm}}$\\\hline
 % Potencial & $\phi$ & 1volt & $\frac{1}{300}$ & statvolt\\\hline
-% Polarizaci'on & $P$ & 1$\frac{\text{coul}}{\text{m}^2}$ & 3$\times10^{5}$
+% Polarización & $P$ & 1$\frac{\text{coul}}{\text{m}^2}$ & 3$\times10^{5}$
 % & $\frac{\text{momento dipolar}}{\text{cm}^3}$\\\hline
 % Desplazamiento & $D$ & 1$\frac{\text{coul}}{\text{m}^2}$ & 12$\pi
-% \times10^{5}$ & $\frac{\text{statvolt}}{\text{cm}}$ 'o $\frac
+% \times10^{5}$ & $\frac{\text{statvolt}}{\text{cm}}$ ó $\frac
 % {\text{statcoulombs}}{\text{cm}^2}$\\\hline
 % Conductividad & $\sigma$ & 1$\frac{\text{mho}}{\text{m}}$ & 9$\times10^{9}$ &
 % $\frac{1}{\text{s}}$\\\hline
 % Resistencia & $R$ & 1ohm & $\frac{1}{9}10^{-11}$ & $\frac{\text{s}}{\text{cm}%
 % }$\\\hline
 % Capacitancia & $C$ & 1farad & 9$\times10^{11}$ & cm\\\hline
-% Inducci'on Magn'etica & $B$ & 1tesla & 10$^4$ & gauss\\\hline
-% Magnetizaci'on & $M$ & 1$\frac{\text{ampere}}{\text{m}}$ & 10$^{-3}$ &
-% $\frac{\text{momento magn'etico}}{\text{cm}^3}$\\\hline
+% Inducción Magnética & $B$ & 1tesla & 10$^4$ & gauss\\\hline
+% Magnetización & $M$ & 1$\frac{\text{ampere}}{\text{m}}$ & 10$^{-3}$ &
+% $\frac{\text{momento magnético}}{\text{cm}^3}$\\\hline
 % Inductancia & $L$ & 1henry & $\frac{1}{9}\times10^{-11}$ &
 % \textquestiondown ?\\\hline
-% Acci'on & $S$ & kg$\frac{\text{m}^2}{\text{s}}$ & $10^{7}$ &
+% Acción & $S$ & kg$\frac{\text{m}^2}{\text{s}}$ & $10^{7}$ &
 % g$\frac{\text{cm}^2}{\text{s}}$\\\hline
 % \end{tabular}
-Los diferentes sistemas de unidades usados en la teor'ia electromagn'etica pueden entenderse en funci'on de la libertad que existe para definir las unidades de carga y campo el'ectrico y magn'etico. Aqu'i discutiremos algunas posibilidades, que incluyen al sistema S.I. y al gaussiano. Discutiremos c'omo estos sistemas de unidades ``separan'' de forma diferente la magnitud de la carga el'ectrica de la de los campos electromagn'eticos. Las cantidades mec'anicas, sin embargo, no son alteradas por estas diferentes formas de separar cargas y campos.
+Los diferentes sistemas de unidades usados en la teoría electromagnética pueden entenderse en función de la libertad que existe para definir las unidades de carga y campo eléctrico y magnético. Aquí discutiremos algunas posibilidades, que incluyen al sistema S.I. y al gaussiano. Discutiremos cómo estos sistemas de unidades ``separan'' de forma diferente la magnitud de la carga eléctrica de la de los campos electromagnéticos. Las cantidades mecánicas, sin embargo, no son alteradas por estas diferentes formas de separar cargas y campos.
 
-Para esta discusi'on, es conveniente considerar las cantidades puramente mec'anicas relacionadas con las definiciones b'asicas de las cantidades electromagn'eticas. En particular, la ley de Coulomb establece que la fuerza entre dos cargas es proporcional al producto de cargas e inversamente proporcional al cuadrado de la distancia que las separa:
+Para esta discusión, es conveniente considerar las cantidades puramente mecánicas relacionadas con las definiciones básicas de las cantidades electromagnéticas. En particular, la ley de Coulomb establece que la fuerza entre dos cargas es proporcional al producto de cargas e inversamente proporcional al cuadrado de la distancia que las separa:
 \begin{equation}
  F_{\rm e}\propto\frac{q q'}{r^2}.
 \end{equation} 
@@ -214,30 +214,30 @@ Las unidades en que se miden las cargas depende del valor de la constante de pro
 \begin{equation}
  \vec{F}_{\rm e}=\alpha_1\,\frac{q q'}{r^2}\hat{r}.
 \end{equation} 
-Esto determina adem'as las unidades del campo el'ectrico que es dado, \textit{por definici'on}\footnote{En pricipio, es posible definir el campo el'ectrico y sus unidades asociadas introduciendo otra constante a elecci'on, por ejemplo, $\vec{E}:=8 \vec{F}_{\rm e}/q$. No exploraremos aqu'i esta posibilidad.}, por $\vec{E}:=\vec{F}_{\rm e}/q$. De esta forma:
+Esto determina además las unidades del campo eléctrico que es dado, \textit{por definición}\footnote{En pricipio, es posible definir el campo eléctrico y sus unidades asociadas introduciendo otra constante a elección, por ejemplo, $\vec{E}:=8 \vec{F}_{\rm e}/q$. No exploraremos aquí esta posibilidad.}, por $\vec{E}:=\vec{F}_{\rm e}/q$. De esta forma:
 \begin{equation}
  [q]=[\alpha_1]^{-1/2}[F]^{1/2}L =[\alpha_1]^{-1/2}M^{1/2}L^{3/2}T^{-1},
 \end{equation}
 \begin{equation}
  [E]=[\alpha_1]^{1/2}[F]^{1/2}L^{-1}=[\alpha_1]^{1/2}M^{1/2}L^{-1/2}T^{-1}.
 \end{equation}
-Por otro lado, la fuerza magn'etica entre cargas en movimiento (corrientes) est'an dadas, por ejemplo, por la ley de Biot-Savart:
+Por otro lado, la fuerza magnética entre cargas en movimiento (corrientes) están dadas, por ejemplo, por la ley de Biot-Savart:
 \begin{equation}
  dF_{\rm m}\propto II' dx \times dx' \frac{1}{r^2}.
 \end{equation}
-Aqu'i debemos introducir nuevamente una constante, tal que,
+Aquí debemos introducir nuevamente una constante, tal que,
 \begin{equation}
  dF_{\rm m}=\alpha_2\, II'dx \times dx' \frac{1}{r^2}. \label{dfe}
 \end{equation}
-El campo magn'etico, es \textit{definido} tal que
+El campo magnético, es \textit{definido} tal que
 \begin{equation}
  d\vec{F}_{\rm m}\propto I'd\vec{x}' \times d\vec{B}.
 \end{equation}
-En particular, existen sistemas de unidades que difieren en la constante de proporcionalidad de esta definici'on. Introducimos entonces otra constante de modo que
+En particular, existen sistemas de unidades que difieren en la constante de proporcionalidad de esta definición. Introducimos entonces otra constante de modo que
 \begin{equation}\label{dFa3}
  d\vec{F}_{\rm m}=\alpha_3\,I'd\vec{x}' \times d\vec{B},
 \end{equation}
-y as'i
+y así
 \begin{equation}
  d\vec{B}=\frac{\alpha_2}{\alpha_3} \frac{Id\vec{x}\times\hat{r}}{r^2}.
 \end{equation}
@@ -245,7 +245,7 @@ Esto implica que
 \begin{equation}
 [B]=[\alpha_1]^{-1/2}[\alpha_2][\alpha_3]^{-1}M^{1/2}L^{1/2}T^{-2}.
 \end{equation}
-De la expresi'on (\ref{dFa3}) encontramos, equivalentemente, que la fuerza que ejerce un campo magn'etico sobre cargas puntuales es dado por
+De la expresión (\ref{dFa3}) encontramos, equivalentemente, que la fuerza que ejerce un campo magnético sobre cargas puntuales es dado por
 \begin{equation}
 \vec{F}_{\rm m}=\alpha_3\, q\,\vec{v}\times\vec{B},
 \end{equation} 
@@ -253,11 +253,11 @@ de modo que la fuerza de Lorentz adopta la forma
 \begin{equation}
  \vec{F}=q\left(\vec{E}+\alpha_3\,\vec{v}\times\vec{B}\right).
 \end{equation} 
-Usando (\ref{dfe}) encontramos en particular que la fuerza entre dos l'ineas de corriente $I$ e $I'$, de largo $L$ y separadas una distancia $d$ es
+Usando (\ref{dfe}) encontramos en particular que la fuerza entre dos líneas de corriente $I$ e $I'$, de largo $L$ y separadas una distancia $d$ es
 \begin{equation}
  F=2\alpha_2\,II' \frac{L}{d}.
 \end{equation} 
-A partir de estas definiciones b'asicas es posible encontrar la forma de las ecuaciones de Maxwell correspondientes, de modo que se satisfaga la ley de Faraday y la ecuaci'on de continuidad. As'i obtenemos:
+A partir de estas definiciones básicas es posible encontrar la forma de las ecuaciones de Maxwell correspondientes, de modo que se satisfaga la ley de Faraday y la ecuación de continuidad. Así obtenemos:
 \begin{equation}
  \vec{\nabla}\cdot\vec{E}=4\pi\alpha_1\rho,
 \end{equation} 
@@ -271,26 +271,26 @@ A partir de estas definiciones b'asicas es posible encontrar la forma de las ecu
  \vec{\nabla}\times\vec{B}=4\pi\frac{\alpha_2}{\alpha_3}\vec{J}+\frac{\alpha_2}{\alpha_1\alpha_3}\frac{
 \partial\vec{E}}{\partial t}.
 \end{equation} 
-En una regi'on libre de fuentes podemos derivar la ecuaci'on de onda para las componentes del campo el'ectrico, obteniendo
+En una región libre de fuentes podemos derivar la ecuación de onda para las componentes del campo eléctrico, obteniendo
 \begin{equation}
  \left(\frac{\alpha_2}{\alpha_1}\frac{\partial^2\
 }{\partial t^2}-\nabla^2\right)\vec{E} =\vec {0},
 \end{equation}
-de donde encontramos que la velocidad de la luz es dada por la relaci'on
+de donde encontramos que la velocidad de la luz es dada por la relación
  \begin{equation}
 \frac{\alpha_2}{\alpha_1}=\frac{1}{c^2}.
  \end{equation} 
-Ya que $c$ es una cantidad mec'anica, su valor no debe depender del sistema de unidades usado para las cantidades electromagn'eticas. Esto significa que s'olo 2 de las 3 constantes pueden elegirse arbitrariamente, por ejemplo, $\alpha_2$ y $\alpha_3$, mientras que $\alpha_1=\alpha_2c^2$. A continuaci'on resumiremos los dos sistemas de unidades m'as com'unmente usados.
+Ya que $c$ es una cantidad mecánica, su valor no debe depender del sistema de unidades usado para las cantidades electromagnéticas. Esto significa que sólo 2 de las 3 constantes pueden elegirse arbitrariamente, por ejemplo, $\alpha_2$ y $\alpha_3$, mientras que $\alpha_1=\alpha_2c^2$. A continuación resumiremos los dos sistemas de unidades más comúnmente usados.
 
 \section{Sistema Internacional de unidades (S.I.)}
-En este sistema de unidades se define\footnote{Ver, por ejemplo, la p'agina correspondiente del Instituto Nacional de Est'andars y Tecnolog'ia de Estados Unidos (NIST): \url{http://physics.nist.gov/cuu/Units/ampere.html}.} un Ampere como ``la intensidad de una corriente constante que manteni'endose en dos conductores paralelos, rectil'ineos, de longitud infinita, de secci'on circular despreciable y situados a una distancia de un metro uno de otro en el vac'io, produce una fuerza igual a $2\times 10^{-7}$N por metro de longitud". Esto implica que
+En este sistema de unidades se define\footnote{Ver, por ejemplo, la página correspondiente del Instituto Nacional de Estándars y Tecnología de Estados Unidos (NIST): \url{http://physics.nist.gov/cuu/Units/ampere.html}.} un Ampere como ``la intensidad de una corriente constante que manteniéndose en dos conductores paralelos, rectilíneos, de longitud infinita, de sección circular despreciable y situados a una distancia de un metro uno de otro en el vacío, produce una fuerza igual a $2\times 10^{-7}$N por metro de longitud". Esto implica que
 \begin{equation}
 \alpha_2\stackrel{!}{=} 10^{-7}NA^{-2}=:\frac{\mu_0}{4\pi},
 \end{equation}
 \begin{equation}
 \alpha_3\stackrel{!}{=} 1,
 \end{equation}
-y adem'as se denota
+y además se denota
 \begin{equation}
 \alpha_1=:\frac{1}{4\pi\varepsilon_0}.
 \end{equation}
@@ -333,12 +333,12 @@ y como consecuencia
 \begin{equation}
 \alpha_2=\frac{1}{c^2}.
 \end{equation} 
-Como resultado, las cargas el'ectricas as'i como los campos electromagn'eticos necesariamente se miden en unidades con exponentes fraccionarios de las magnitudes b'asicas de longitud, tiempo y masa:
+Como resultado, las cargas eléctricas así como los campos electromagnéticos necesariamente se miden en unidades con exponentes fraccionarios de las magnitudes básicas de longitud, tiempo y masa:
 \begin{equation}
  \left[q\right]=M^{1/2}L^{3/2}T^{-1}, \qquad
 \left[E\right]=\left[B\right]=M^{1/2}L^{-1/2}T^{-1}.
 \end{equation} 
-Una ventaja relativa de este sistema es que los campos el'ectricos y magn'eticos tienen las mismas unidades. Otra es que en las ecuaciones de Maxwell s'olo aparece \textit{una constante fundamental}, la velocidad de la luz.
+Una ventaja relativa de este sistema es que los campos eléctricos y magnéticos tienen las mismas unidades. Otra es que en las ecuaciones de Maxwell sólo aparece \textit{una constante fundamental}, la velocidad de la luz.
 \begin{table}
 \begin{center}
 \begin{tabular}{|c|}\hline
@@ -358,7 +358,7 @@ $\vec{B}=\vec{\nabla}\times \vec{A}$\\\hline
 \end{center}
 \end{table}
 
-\section{Conversi'on de magnitudes S.I. a Gaussianas}
+\section{Conversión de magnitudes S.I. a Gaussianas}
 \begin{equation}
 \vec{E}_{\rm SI}=\frac{1}{\sqrt{4\pi\varepsilon_0}}\vec{E}_{\rm G}, \qquad 
 \vec{B}_{\rm SI}= \frac{1}{c\sqrt{4\pi\varepsilon_0}}\vec{B}_{\rm G}, \qquad 
@@ -381,55 +381,55 @@ q_{\rm SI}=\sqrt{4\pi\varepsilon_0}\,q_{\rm G}
 %\end{tabular}
 %\end{center}
 
-\chapter{Constantes F'isicas (S.I.)}\label{app:constantes}
+\chapter{Constantes Físicas (S.I.)}\label{app:constantes}
 \begin{center}
 \begin{tabular}{||l|lll||}
 \hline
-{\bf Nombre}&{\bf S'imbolo}&{\bf Valor}&{\bf Unidad}\\
+{\bf Nombre}&{\bf Símbolo}&{\bf Valor}&{\bf Unidad}\\
 \hline
 \hline
-N'umero $\pi$                 &$\pi$&3.1415926535\dots&\\
-N'umero e                     &e    &2.7182818284\dots&\\
+Número $\pi$                 &$\pi$&3.1415926535\dots&\\
+Número e                     &e    &2.7182818284\dots&\\
 \hline
 Carga elemental            &$e$&$1.60217733\cdot10^{-19}$&C\rule{0pt}{13pt}\\
 Constante gravitacional  &$G$&$6.67259\cdot10^{-11}$&m$^3$kg$^{-1}$s$^{-2}$\\
 Constante de Estructura fina &$\alpha=e^2/2hc\varepsilon_0$&$\approx1/137$&\\
-Rapidez de la luz en el vac'io    &$c$&$2.99792458\cdot10^8$&m/s (def)\\
-Permitividad del vac'io   &$\varepsilon_0$&$8.854187\cdot10^{-12}$&F/m\\
-Permeabilidad del vac'io &$\mu_0$&$4\pi\cdot10^{-7}$&H/m (def)\\
+Rapidez de la luz en el vacío    &$c$&$2.99792458\cdot10^8$&m/s (def)\\
+Permitividad del vacío   &$\varepsilon_0$&$8.854187\cdot10^{-12}$&F/m\\
+Permeabilidad del vacío &$\mu_0$&$4\pi\cdot10^{-7}$&H/m (def)\\
 $(4\pi\varepsilon_0)^{-1}$   &&$8.9876\cdot10^9$&Nm$^2$C$^{-2}$\\
 \hline
 Constante de Planck           &$h$&$6.6260755\cdot10^{-34}$&Js\rule{0pt}{13pt}\\
 Constante de Dirac             &$\hbar=h/2\pi$&$1.0545727\cdot10^{-34}$&Js\\
-Magnet'on de Bohr              &$\mu_{\rm B}=e\hbar/2m_{\rm e}$&$9.2741\cdot10^{-24}$&Am$^2$\\
+Magnetón de Bohr              &$\mu_{\rm B}=e\hbar/2m_{\rm e}$&$9.2741\cdot10^{-24}$&Am$^2$\\
 Radio de Bohr                 &$a_0$&$0.52918$&\AA\\
 Constante de Rydberg     &$Ry$&13.595&eV\\
-Longitud de Compton del electr'on  &$\lambda_{\rm Ce}=h/m_{\rm e} c$&$2.2463\cdot10^{-12}$&m\\
-Longitud de Compton del prot'on   &$\lambda_{\rm Cp}=h/m_{\rm p}c$&$1.3214\cdot10^{-15}$&m\\
-%Masa reducida del 'atomo de Hidr'ogeno &$\mu_{\rm H}$&$9.1045755\cdot10^{-31}$&kg\\
+Longitud de Compton del electrón  &$\lambda_{\rm Ce}=h/m_{\rm e} c$&$2.2463\cdot10^{-12}$&m\\
+Longitud de Compton del protón   &$\lambda_{\rm Cp}=h/m_{\rm p}c$&$1.3214\cdot10^{-15}$&m\\
+%Masa reducida del átomo de Hidrógeno &$\mu_{\rm H}$&$9.1045755\cdot10^{-31}$&kg\\
 %\hline
 %Constante de Stefan-Boltzmann &$\sigma$&$5.67032\cdot10^{-8}$&Wm$^{-2}$K$^{-4}$\rule{0pt}{13pt}\\
 %Constante de Wien   &$k_{\rm W}$&$2.8978\cdot10^{-3}$&mK\\
 %\hline
 %Constante molar de los gases         &$R$&8.31441&J/mol\\
-%N'umero de Avogadro          &$N_{\rm A}$&$6.0221367\cdot10^{23}$&mol$^{-1}$\\
+%Número de Avogadro          &$N_{\rm A}$&$6.0221367\cdot10^{23}$&mol$^{-1}$\\
 %Constante de Boltzmann         &$k=R/N_{\rm A}$&$1.380658\cdot10^{-23}$&J/K\\
 %\hline
-Masa del electr'on     &$m_{\rm e}$&$9.1093897\cdot10^{-31}$&kg\rule{0pt}{13pt}\\
-Masa de prot'on        &$m_{\rm p}$&$1.6726231\cdot10^{-27}$&kg\\
-Masa de neutr'on      &$m_{\rm n}$&$1.674954\cdot10^{-27}$&kg\\
+Masa del electrón     &$m_{\rm e}$&$9.1093897\cdot10^{-31}$&kg\rule{0pt}{13pt}\\
+Masa de protón        &$m_{\rm p}$&$1.6726231\cdot10^{-27}$&kg\\
+Masa de neutrón      &$m_{\rm n}$&$1.674954\cdot10^{-27}$&kg\\
 % Unidad elemental de masa     & $m_{\rm u}=\frac{1}{12}m(^{12}_{~6}$C)&$1.6605656\cdot10^{-27}$&kg\\
-% Magnet'on nuclear         &$\mu_{\rm N}$&$5.0508\cdot10^{-27}$&J/T\\
+% Magnetón nuclear         &$\mu_{\rm N}$&$5.0508\cdot10^{-27}$&J/T\\
 \hline
-Di'ametro del Sol       &$D_\odot$&$1392\cdot10^6$&m\rule{0pt}{13pt}\\
+Diámetro del Sol       &$D_\odot$&$1392\cdot10^6$&m\rule{0pt}{13pt}\\
 Masa del Sol             &$M_\odot$&$1.989\cdot10^{30}$&kg\\
-Periodo de rotaci'on del Sol &$T_\odot$&25.38&d'ias\\
+Periodo de rotación del Sol &$T_\odot$&25.38&días\\
 Radio de la Tierra     &$R_{\rm A}$&$6.378\cdot10^6$&m\\
 Masa de la Tierra     &$M_{\rm A}$&$5.976\cdot10^{24}$&kg\\
-Periodo de rotaci'on de la Tierra   &$T_{\rm A}$&23.96&hours\\
-Periodo orbital Terrestre        &A~no tropical&365.24219879&d'ias\\
-Unidad Astron'omica            &AU&$1.4959787066\cdot10^{11}$&m\\
-A~no Luz                   &ly&$9.4605\cdot10^{15}$&m\\
+Periodo de rotación de la Tierra   &$T_{\rm A}$&23.96&hours\\
+Periodo orbital Terrestre        &Año tropical&365.24219879&días\\
+Unidad Astronómica            &AU&$1.4959787066\cdot10^{11}$&m\\
+Año Luz                   &ly&$9.4605\cdot10^{15}$&m\\
 Parsec                       &pc&$3.0857\cdot10^{16}$&m\\
 % Constante de Hubble &$H$&$\approx(75\pm25)$&km$\cdot$s$^{-1}\cdot$Mpc$^{-1}$\\
 \hline

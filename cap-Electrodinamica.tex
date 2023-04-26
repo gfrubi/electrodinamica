@@ -2,13 +2,13 @@
 
 \section{Ley de inducción de Faraday}
 
-Faraday\footnote{Michael Faraday (1791-1867): físico y químico británico. Ver \url{http://es.wikipedia.org/wiki/Michael_Faraday}.} encontró experimentalmente (1831) que \textit{si el flujo magn'etico a trav'es de una espira cerrada varía en el tiempo, se induce una corriente sobre una espira}. Si el flujo es constante, se observa que la corriente desaparece. La \textbf{ley de Faraday} se escribe como
+Faraday\footnote{Michael Faraday (1791-1867): físico y químico británico. Ver \url{http://es.wikipedia.org/wiki/Michael_Faraday}.} encontró experimentalmente (1831) que \textit{si el flujo magnético a través de una espira cerrada varía en el tiempo, se induce una corriente sobre una espira}. Si el flujo es constante, se observa que la corriente desaparece. La \textbf{ley de Faraday} se escribe como
 \begin{equation}\label{faraday}
 \varepsilon_{\rm ind}=-K\frac{d\phi}{dt},
 \end{equation}
 donde $\varepsilon_{\rm ind}$ es la fuerza electromotriz (f.e.m.) \textit{inducida} en la espira. El signo menos describe la dirección de la corriente inducida, dada por la \textbf{ley de Lenz}. Aquí $K$ es una constante que depende del sistema de unidades usado. En el Sistema Internacional es una cantidad adimensional, que determinaremos más adelante.
 
-En t'erminos de campos, se genera un campo el'ectrico $\vec{E}$ que es el que hace mover las cargas en la espira, es decir,
+En términos de campos, se genera un campo eléctrico $\vec{E}$ que es el que hace mover las cargas en la espira, es decir,
 \begin{equation}
 \oint_{\cal\partial S}\vec{E}\cdot d\vec{\ell}=\varepsilon_{\rm ind}.
 \end{equation}
@@ -17,7 +17,7 @@ Con esto, podemos escribir (\ref{faraday}) como
 \oint_{\cal \partial S}\vec{E}\cdot d\vec{\ell}=-K\frac{d\ }{dt}\int_S\vec{B}\cdot
 d\vec{S}.
 \end{equation}
-En general, la superficie puede variar en el tiempo. Si 'este \textit{no} es el caso, y $S$
+En general, la superficie puede variar en el tiempo. Si éste \textit{no} es el caso, y $S$
 es constante, entonces podemos deducir que
 \begin{equation}\label{ley-faraday0}
 \vec\nabla\times\vec{E}=-K\frac{\partial\vec{B}}{\partial t}.
@@ -58,9 +58,9 @@ o, en notación vectorial,
 t}\cdot d\vec{S}-\oint_{\partial
 S}\left(\vec{v}\times\vec{B}\right)\cdot d\vec{\ell}.
 \end{equation}
-Apliquemos estos resultados para comparar la descripción, respecto a dos sistemas de referencia inerciales (SRI's), del fenómeno de inducción de corriente en una espira debido a la variación de flujo magn'etico. Primero, en el SRI $K$ en el que la espira está en reposo y el magneto se mueve tenemos que en cada punto del espacio el campo magn'etico $\vec{B}$ dependerá del tiempo, por lo que se inducirá un campo el'ectrico de acuerdo a (\ref{ley-faraday0}). Este campo el'ectrico ejercerá una fuerza $\vec{F}_q=q\vec{E}$ sobre una carga $q$ en la espira, que consideraremos inicialmente en reposo. 
+Apliquemos estos resultados para comparar la descripción, respecto a dos sistemas de referencia inerciales (SRI's), del fenómeno de inducción de corriente en una espira debido a la variación de flujo magnético. Primero, en el SRI $K$ en el que la espira está en reposo y el magneto se mueve tenemos que en cada punto del espacio el campo magnético $\vec{B}$ dependerá del tiempo, por lo que se inducirá un campo eléctrico de acuerdo a (\ref{ley-faraday0}). Este campo eléctrico ejercerá una fuerza $\vec{F}_q=q\vec{E}$ sobre una carga $q$ en la espira, que consideraremos inicialmente en reposo. 
 
-Por otro lado, en un SRI $K'$ con velocidad relativa $\vec{v}$ respecto a $K$ (de modo que en $K'$ el magneto está en reposo) la corriente inducida es debido al movimiento de la espira. Si en este SRI el campo magn'etico es $\vec{B}'(x)$, no existe campo el'ectrico inducido puesto que $\partial\vec{B}'/\partial t=\vec{0}$. En este SRI la corriente inducida se describe íntegramente debido a la fuerza de Lorentz ejercida por el campo magn'etico sobre las cargas en la espira, que ahora se mueven con velocidad $-\vec{v}$. La fuerza que actúa sobre la carga es ahora $\vec{F}'_q=-q\vec{v}\times\vec{B'}$. Además, la f.e.m. está dada, usando el resultado (\ref{dFlujodt}) aplicado a este caso, así como la ley de Faraday (\ref{ley-faraday0}), por 
+Por otro lado, en un SRI $K'$ con velocidad relativa $\vec{v}$ respecto a $K$ (de modo que en $K'$ el magneto está en reposo) la corriente inducida es debido al movimiento de la espira. Si en este SRI el campo magnético es $\vec{B}'(x)$, no existe campo eléctrico inducido puesto que $\partial\vec{B}'/\partial t=\vec{0}$. En este SRI la corriente inducida se describe íntegramente debido a la fuerza de Lorentz ejercida por el campo magnético sobre las cargas en la espira, que ahora se mueven con velocidad $-\vec{v}$. La fuerza que actúa sobre la carga es ahora $\vec{F}'_q=-q\vec{v}\times\vec{B'}$. Además, la f.e.m. está dada, usando el resultado (\ref{dFlujodt}) aplicado a este caso, así como la ley de Faraday (\ref{ley-faraday0}), por 
 \begin{equation}
 \varepsilon'_{\rm ind}=-K\oint_{\partial S}\left(\vec{v}\times\vec{B}'\right)\cdot d\vec{\ell}.
 \end{equation}
@@ -100,12 +100,12 @@ o, en forma diferencial:
 %\end{equation}
 
 
-\subsection{Energía del campo magn'etico}
+\subsection{Energía del campo magnético}
 
-Consideremos ahora una espira por la que circula una corriente $I$ y el campo magn'etico \textit{que ella misma produce}. Si $I$ no varía en el tiempo, no existe fem inducida ya que el flujo magn'etico por la espira permanece constante (suponemos una espira fija, en reposo). Calcularemos la energía necesaria para cambiar la corriente $I$ y el correspondiente campo magn'etico $\vec{B}$ en una pequeña cantidad. Durante el intervalo de tiempo $dt$ en que la corriente cambia en $dI$ y el campo magn'etico en $d\vec{B}$, se genera un campo el'ectrico inducido y su correspondiente fem $\varepsilon$ (que en general se superponen al campo y fem que mantenían la corriente $I$ fluyendo originalmente). Este campo inducido ``intenta reducir'' el cambio de la corriente (ley de Lenz) y el campo realiza trabajo sobre las cargas en movimiento en la espira. 
+Consideremos ahora una espira por la que circula una corriente $I$ y el campo magnético \textit{que ella misma produce}. Si $I$ no varía en el tiempo, no existe fem inducida ya que el flujo magnético por la espira permanece constante (suponemos una espira fija, en reposo). Calcularemos la energía necesaria para cambiar la corriente $I$ y el correspondiente campo magnético $\vec{B}$ en una pequeña cantidad. Durante el intervalo de tiempo $dt$ en que la corriente cambia en $dI$ y el campo magnético en $d\vec{B}$, se genera un campo eléctrico inducido y su correspondiente fem $\varepsilon$ (que en general se superponen al campo y fem que mantenían la corriente $I$ fluyendo originalmente). Este campo inducido ``intenta reducir'' el cambio de la corriente (ley de Lenz) y el campo realiza trabajo sobre las cargas en movimiento en la espira. 
 %Calcularemos la energía transferida a las cargas que se ponen en movimiento para formar la corriente inducida en una espira, debido a la inducción de Faraday. Para esto, consideraremos una espira que forma una curva cerrada $\cal C$ por la que circula una corriente inducida $I$. 
 
-Dividiremos la curva en elementos de longitud $d\vec{\ell}=d\ell \,\hat{t}$, en los que existe una carga $dq=\lambda d\ell$. El vector unitario $\hat{t}$ está definido de modo que $d\vec{\ell}$ tiene la orientación standard respecto al vector normal $\hat{n}$ a la superficie que encierra la espira. El campo el'ectrico $\vec{E}$ ejerce trabajo sobre las cargas $dq$. En un intervalo de tiempo $dt$ el trabajo realizado sobre las cargas $dq$ es entonces 
+Dividiremos la curva en elementos de longitud $d\vec{\ell}=d\ell \,\hat{t}$, en los que existe una carga $dq=\lambda d\ell$. El vector unitario $\hat{t}$ está definido de modo que $d\vec{\ell}$ tiene la orientación standard respecto al vector normal $\hat{n}$ a la superficie que encierra la espira. El campo eléctrico $\vec{E}$ ejerce trabajo sobre las cargas $dq$. En un intervalo de tiempo $dt$ el trabajo realizado sobre las cargas $dq$ es entonces 
 \begin{align}
 dq\,\vec{E}\cdot d\vec{\ell} &= (\lambda d\ell) \vec{E}\cdot (\vec{v}\,dt) \\
 &= (\lambda d\ell) \vec{E}\cdot (v\,\hat{t})\,dt \\
@@ -121,18 +121,18 @@ dW &= \oint_{\cal C}dq\,\vec{E}\cdot d\vec{\ell} \\
 &= -I\,d\Phi.
 \end{align}
 
-A partir de este resultado vemos que la energía (proveniente de fuentes externas) necesaria para cambiar el flujo magn'etico en una cantidad $d\Phi$, en un sistema con una corriente $I$ es dada por
+A partir de este resultado vemos que la energía (proveniente de fuentes externas) necesaria para cambiar el flujo magnético en una cantidad $d\Phi$, en un sistema con una corriente $I$ es dada por
 \begin{equation}\label{dWIdP}
  \boxed{dU=I\,d\Phi.}
 \end{equation}
-En otras palabras, \textit{un cambio en el valor de la intensidad de campo $\vec{B}$ requiere invertir energía}. En cierto sentido, la ley de Faraday establece una cierta ``inercia'' en el campo magn'etico, ya que un sistema de cargas y campos tiende a ``resistirse'' al cambio del valor del campo (y su flujo). 
-Esto implica además que \textit{es necesario asociar una energía a una cierta configuración de campos y corrientes}, puesto que es necesario invertir energía para establecer estas corrientes y sus campos asociados. Para evaluar esta energía, reescribiremos (\ref{dWIdP}) usando (\ref{PAdx}): la energía $\delta U$ necesaria para variar el potencial vectorial $\vec{A}(x)$ de un sistema de corrientes y campo magn'etico en $\delta\vec{A}(x)$ es dada por
+En otras palabras, \textit{un cambio en el valor de la intensidad de campo $\vec{B}$ requiere invertir energía}. En cierto sentido, la ley de Faraday establece una cierta ``inercia'' en el campo magnético, ya que un sistema de cargas y campos tiende a ``resistirse'' al cambio del valor del campo (y su flujo). 
+Esto implica además que \textit{es necesario asociar una energía a una cierta configuración de campos y corrientes}, puesto que es necesario invertir energía para establecer estas corrientes y sus campos asociados. Para evaluar esta energía, reescribiremos (\ref{dWIdP}) usando (\ref{PAdx}): la energía $\delta U$ necesaria para variar el potencial vectorial $\vec{A}(x)$ de un sistema de corrientes y campo magnético en $\delta\vec{A}(x)$ es dada por
 \begin{align}
  \delta U &= I\oint_{\cal C}\delta\vec{A}\cdot d\vec{\ell} \\
  &= \oint_{\cal C}\delta\vec{A}\cdot Id\vec{\ell} \\
  &= \int_V\delta\vec{A}\cdot \vec{J}_{\rm ext}\,dV. \label{WdAJ}
 \end{align}
-En el último paso hemos usado la relación (\ref{IdxJdV}) para reescribir la energía en t'erminos de una integral de volumen de la densidad de corriente. Note que la corriente inducida es en general corriente ``externa'' o de ``conducción'', por lo que hemos explicitado en el último t'ermino la densidad de corrientes externas $\vec{J}_{\rm ext}$. Además, usando la ley de Amp\`ere para la excitación magn'etica (\ref{rotHj}), podemos escribir
+En el último paso hemos usado la relación (\ref{IdxJdV}) para reescribir la energía en términos de una integral de volumen de la densidad de corriente. Note que la corriente inducida es en general corriente ``externa'' o de ``conducción'', por lo que hemos explicitado en el último término la densidad de corrientes externas $\vec{J}_{\rm ext}$. Además, usando la ley de Amp\`ere para la excitación magnética (\ref{rotHj}), podemos escribir
 \begin{align}
  \delta U 
 &= \int_{V'} \delta A_i\,\varepsilon_{ijk}\left(\partial_jH_k\right)\,dV \\
@@ -142,21 +142,21 @@ A_i\,dS_j-\varepsilon_{ijk}\int_{V'}H_k(\partial_j\delta A_i)\,dV\\
 &= 0+\int_{V'} H_k\,\varepsilon_{kji}(\partial_j\delta A_i)\,dV\\
 &= \int_{V'} H_k\,\delta B_k\,dV.
 \end{align}
-Aquí hemos extendido el dominio de integración a un volumen $V'\to R_3$, es decir, a todo el espacio, usado el teorema de Gauss y considerado que la integral de superficie se anula en el infinito. Con esto, obtenemos la siguiente expresión para la \textit{energía requerida para cambiar la inducción magn'etica de un sistema en $\delta{\vec B}(x)$}:
+Aquí hemos extendido el dominio de integración a un volumen $V'\to R_3$, es decir, a todo el espacio, usado el teorema de Gauss y considerado que la integral de superficie se anula en el infinito. Con esto, obtenemos la siguiente expresión para la \textit{energía requerida para cambiar la inducción magnética de un sistema en $\delta{\vec B}(x)$}:
 \begin{equation}
  \boxed{\delta U=\int_{R^3} \vec{H}(x)\cdot \delta\vec{B}(x)\,dV.}\label{dUB}
 \end{equation}
-Note la similitud entre las expresiones (\ref{WdAJ}) y (\ref{dUB}) con los resultados (\ref{Wdiel1}) y (\ref{dUE}) para la energía almacenada por un campo el'ectrico, respectivamente.
+Note la similitud entre las expresiones (\ref{WdAJ}) y (\ref{dUB}) con los resultados (\ref{Wdiel1}) y (\ref{dUE}) para la energía almacenada por un campo eléctrico, respectivamente.
 
 *** Agregar comentario energía y área bajo la curva de gráfico $H$ v/s $B$ ***
 
-Similarmente a lo discutido en el caso el'ectrico, la \textit{energía total requerida para aumentar el campo magn'etico de un sistema desde cero hasta un valor final $\vec{B}$} es 
+Similarmente a lo discutido en el caso eléctrico, la \textit{energía total requerida para aumentar el campo magnético de un sistema desde cero hasta un valor final $\vec{B}$} es 
 \begin{equation}
  U=\int_0^1\int_{R^3} \lambda \, \vec{H}(x)\cdot \delta\vec{B}_\lambda(x)\,dV,
 \end{equation}
-donde $\vec{B}_\lambda(x)$ es el valor de la inducción magn'etica correspondiente al caso en que la excitación magn'etica tiene un valor $\vec{H}_\lambda(x)$ igual a una fracción $\lambda$ de la excitación magn'etica final, es decir, $\vec{H}_\lambda (x)=\lambda\vec{H}_\lambda (x)$ .
+donde $\vec{B}_\lambda(x)$ es el valor de la inducción magnética correspondiente al caso en que la excitación magnética tiene un valor $\vec{H}_\lambda(x)$ igual a una fracción $\lambda$ de la excitación magnética final, es decir, $\vec{H}_\lambda (x)=\lambda\vec{H}_\lambda (x)$ .
 
-En el caso de un \textit{medio magn'etico lineal}, tendremos que $\vec{B}_\lambda (x)=\lambda\, \vec{B}(x)$ y por lo tanto $\delta\vec{B}_\lambda (x)=d\lambda\,
+En el caso de un \textit{medio magnético lineal}, tendremos que $\vec{B}_\lambda (x)=\lambda\, \vec{B}(x)$ y por lo tanto $\delta\vec{B}_\lambda (x)=d\lambda\,
 \vec{B}(x)$, y entonces
 \begin{equation}\label{UHB}
  \boxed{U=\frac{1}{2}\int_{R^3} \vec{H}(x)\cdot\vec{B}(x)\,dV }
@@ -166,17 +166,17 @@ o, alternativamente,
  \boxed{U=\frac{1}{2}\int_{R^3} \vec{A}\cdot \vec{J}\,dV.}
 \end{equation}
 
-Usando (\ref{UHB}) podemos escribir la energía almacenada en un sistema de campo magn'etico (y corrientes) como la integral de una \textbf{densidad de energía magn'etica}
+Usando (\ref{UHB}) podemos escribir la energía almacenada en un sistema de campo magnético (y corrientes) como la integral de una \textbf{densidad de energía magnética}
 \begin{equation}
  \boxed{U=\int_{R^3} u_B(x)\,dV, \qquad u_B(x):=\frac{1}{2}\vec{H}(x)\cdot\vec{B}(x).}
 \end{equation}
-En el caso particular de medio lineales e isótropos la densidad de energía magn'etica se reduce a
+En el caso particular de medio lineales e isótropos la densidad de energía magnética se reduce a
 \begin{equation}
  u_B(x)=\frac{\mu}{2}\vec{H}^2(x)=\frac{1}{2\mu}\vec{B}^2(x).
 \end{equation}
 
 
-\subsection{Fuerzas y torques sobre circuitos magn'eticos*}
+\subsection{Fuerzas y torques sobre circuitos magnéticos*}
 %\begin{equation}
 %\boxed{F_i=-\left(\frac{\partial U}{\partial x_i}\right) ,} \label{FQB}
 %\end{equation}
@@ -195,9 +195,9 @@ Hasta el momento,
 \end{align}
 Note que aquí hemos suprimido, para no recargar la notación, la designación ``${\rm ext}$'' en la densidad de carga y corriente externa.
 
-Vemos que (\ref{cmax3}) implica $\vec\nabla\cdot\vec{J}=0$, que es una condición que \textit{no es válida en general}, sino que sólo en los casos, de acuerdo a (\ref{eccont}), en que ${\partial\rho}/{\partial t}=0$. Esto lleva a pensar que (al menos) la ecuación (\ref{cmax3}) no es válida en el caso dinámico más general en el que las densidades de carga y corriente, y por lo tanto los campos el'ectricos y magn'eticos, varían en el tiempo.
+Vemos que (\ref{cmax3}) implica $\vec\nabla\cdot\vec{J}=0$, que es una condición que \textit{no es válida en general}, sino que sólo en los casos, de acuerdo a (\ref{eccont}), en que ${\partial\rho}/{\partial t}=0$. Esto lleva a pensar que (al menos) la ecuación (\ref{cmax3}) no es válida en el caso dinámico más general en el que las densidades de carga y corriente, y por lo tanto los campos eléctricos y magnéticos, varían en el tiempo.
 
-Maxwell\footnote{James Clerk Maxwell (1831-1879): Físico escoc'es. Ver \url{http://es.wikipedia.org/wiki/James_Clerk_Maxwell}.} (1861) generalizó la ecuación (\ref{cmax3}) de modo que sea compatible con (\ref{cmax1}) y la ley de conservación de la carga el'ectrica,
+Maxwell\footnote{James Clerk Maxwell (1831-1879): Físico escocés. Ver \url{http://es.wikipedia.org/wiki/James_Clerk_Maxwell}.} (1861) generalizó la ecuación (\ref{cmax3}) de modo que sea compatible con (\ref{cmax1}) y la ley de conservación de la carga eléctrica,
 es decir, con la ecuación de continuidad (\ref{eccont}). Usando (\ref{cmax1}), que suponemos por tanto válida en el caso general, podemos escribir (\ref{eccont}) como
 \begin{eqnarray}
  0&=&\frac{\partial\rho}{\partial t}+\vec{\nabla}\cdot\vec{J}\\
@@ -206,7 +206,7 @@ t}\left(\vec\nabla\cdot\vec{D}\right)+\vec{\nabla}\cdot\vec{J}\\
 &=& \vec\nabla\cdot\left[\frac{\partial\vec{D}}{\partial t}
 +\vec{J}\right].
 \end{eqnarray}
-De aquí vemos que en el caso de corrientes generales (no-estáticas), $\vec{J}$ tiene divergencia no nula, pero la combinación $\vec{J}+{\partial\vec{D}}/{\partial t}$ \textit{siempre tiene divergencia nula}. A partir de esta observación, Maxwell \textit{postuló} que el lado derecho de la ecuación (\ref{cmax3}) debía ser reemplazada por la combinación $\vec{J}+{\partial\vec{D}}/{\partial t}$. En otras palabras, Maxwell postuló que a la densidad de corriente debería agregarse el t'ermino ${\partial\vec{D}}/{\partial t}$, llamado \textit{corriente de desplazamiento}.
+De aquí vemos que en el caso de corrientes generales (no-estáticas), $\vec{J}$ tiene divergencia no nula, pero la combinación $\vec{J}+{\partial\vec{D}}/{\partial t}$ \textit{siempre tiene divergencia nula}. A partir de esta observación, Maxwell \textit{postuló} que el lado derecho de la ecuación (\ref{cmax3}) debía ser reemplazada por la combinación $\vec{J}+{\partial\vec{D}}/{\partial t}$. En otras palabras, Maxwell postuló que a la densidad de corriente debería agregarse el término ${\partial\vec{D}}/{\partial t}$, llamado \textit{corriente de desplazamiento}.
 
 Con esto, las ecuaciones de Maxwell adoptan la forma:
 \begin{align}
@@ -254,7 +254,7 @@ t}+\vec{H}\cdot\frac{\partial\vec{B}}{\partial t}+
 \vec\nabla\cdot(\vec{E}\times\vec{H})
 +\vec{E}\cdot\vec{J}=0.} \label{cEem0}
 \end{equation}
-Es útil definir el \textit{vector de Poynting}\footnote{John Henry Poynting (1852-1914): físico ingl'es. Ver \url{http://es.wikipedia.org/wiki/John_Henry_Poynting} $\leftarrow$ \textbf{Esta página podría ser mejorada considerablemente, traduciendo la correspondiente en ingl'es!. ?`voluntari@s?}} como
+Es útil definir el \textit{vector de Poynting}\footnote{John Henry Poynting (1852-1914): físico inglés. Ver \url{http://es.wikipedia.org/wiki/John_Henry_Poynting} $\leftarrow$ \textbf{Esta página podría ser mejorada considerablemente, traduciendo la correspondiente en inglés!. ?`voluntari@s?}} como
 \begin{equation}\label{defPoy}\marginnote{Vector de Poynting}
 \boxed{\vec{S}:=\vec{E}\times\vec{H}.}
 \end{equation}
@@ -272,7 +272,7 @@ d\vec{B}\right]dV+\oint_{\partial V}
 \vec{S}\cdot d\vec{S}\,dt+\int_V\vec{E}\cdot\vec{J}\,
 dVdt=0.} \label{cEem1}
 \end{equation}
-Identificamos el último t'ermino como el \textbf{trabajo realizado por el campo el'ectrico sobre las corrientes}, es decir, la energía transferida del campo a las cargas (o viceversa, dependiendo del signo). Además, de acuerdo a los resultados previos (\ref{dUE}) y (\ref{dUB}) la primera integral puede interpretarse como el \textbf{cambio total de la energía almacenada en forma de campo el'ectrico y magn'etico}, en el volumen $V$. Finalmente, interpretamos la integral de superficie como la \textbf{energía electromagn'etica neta que fluye a trav'es de la superficie $\partial V$}. En otras palabras, interpretamos el vector de Poynting como la \textit{densidad de flujo de energía} electromagn'etica (la energía electromagn'etica transportada por unidad de superficie y unidad de tiempo). De esta forma, (\ref{cEem1}) es una \textit{ecuación de balance (o conservación) de la energía}.
+Identificamos el último término como el \textbf{trabajo realizado por el campo eléctrico sobre las corrientes}, es decir, la energía transferida del campo a las cargas (o viceversa, dependiendo del signo). Además, de acuerdo a los resultados previos (\ref{dUE}) y (\ref{dUB}) la primera integral puede interpretarse como el \textbf{cambio total de la energía almacenada en forma de campo eléctrico y magnético}, en el volumen $V$. Finalmente, interpretamos la integral de superficie como la \textbf{energía electromagnética neta que fluye a través de la superficie $\partial V$}. En otras palabras, interpretamos el vector de Poynting como la \textit{densidad de flujo de energía} electromagnética (la energía electromagnética transportada por unidad de superficie y unidad de tiempo). De esta forma, (\ref{cEem1}) es una \textit{ecuación de balance (o conservación) de la energía}.
 
 En el caso particular de \textit{medios lineales, no disipativos, y con susceptibilidades
 independientes del tiempo}, es decir, tales que
@@ -296,7 +296,7 @@ Con esto, (\ref{cEem0}) es equivalente a
 t}+\vec\nabla\cdot\vec{S}+\vec{E}\cdot\vec{J}=0 ,} \label{econtEem}
 \end{equation}
 donde hemos definido la \textit{densidad de energía del campo
-electromagn'etico}:
+electromagnético}:
 \begin{equation}\label{uDEHB}
 \boxed{u:=\frac{1}{2}\left(\vec{D}\cdot\vec{E}+\vec{H}\cdot\vec{B}\right).}
 \end{equation}
@@ -309,18 +309,18 @@ donde
 \begin{equation}
 E_{\rm em}=\int_V u\,dV
 \end{equation}
-es la \textbf{energía electromagn'etica} y, de acuerdo al \textit{teorema de trabajo-energía} \textit{en el caso que no existan otras fuerzas que realicen trabajo sobre las cargas},
+es la \textbf{energía electromagnética} y, de acuerdo al \textit{teorema de trabajo-energía} \textit{en el caso que no existan otras fuerzas que realicen trabajo sobre las cargas},
 \begin{equation}
  \frac{dE_{\rm mec}}{dt}=\int_V\vec{E}\cdot\vec{J}\,dV
 \end{equation}
 es la variación de energía mecánica total de las cargas contenidas en $V$.
 
 \section{Conservación del momentum lineal}\label{sec:momentum}
-La \textbf{fuerza total que el campo electromagn'etico ejerce sobre las cargas} contenidas en un volumen $V$ es dada por la fuerza de Lorentz:
+La \textbf{fuerza total que el campo electromagnético ejerce sobre las cargas} contenidas en un volumen $V$ es dada por la fuerza de Lorentz:
 \begin{equation}
 \vec{F}_{\rm em}=\int_V\left(\rho\vec{E}+\vec{J}\times\vec{B}\right)dV .
 \end{equation}
-Consideremos el integrando de la expresión anterior (es decir, la densidad de fuerza) y reemplacemos las fuentes $\rho$ y $\vec{J}$ usando las ecuaciones de Maxwell inhomog'eneas (\ref{max1}) y (\ref{max3}). Con esto, tenemos que
+Consideremos el integrando de la expresión anterior (es decir, la densidad de fuerza) y reemplacemos las fuentes $\rho$ y $\vec{J}$ usando las ecuaciones de Maxwell inhomogéneas (\ref{max1}) y (\ref{max3}). Con esto, tenemos que
 \begin{eqnarray}
 f_i&=&\rho E_i+\varepsilon_{ijk}J_jB_k \\
 &=&(\partial_jD_j)E_i+\varepsilon_{ijk}(\varepsilon_{
@@ -346,7 +346,7 @@ D_jB_k)-\varepsilon_{ijk} D_j(\varepsilon_{klm}\partial_lE_m) \\
 &=&\partial_j(E_iD_j+H_iB_j-\delta_{ij}H_kB_k)-\partial_t(\varepsilon_{ijk}
 D_jB_k)+H_j(\partial_iB_j)- D_j(\partial_iE_j). \label{flc}
 \end{eqnarray}
-En el caso de medios \textit{lineales, homog'eneos y no disipativos}, es decir, para medios tales que
+En el caso de medios \textit{lineales, homogéneos y no disipativos}, es decir, para medios tales que
 \begin{equation}
  D_i=\varepsilon_{ij}E_j, \qquad \partial_k\varepsilon_{ij}=0, \qquad \varepsilon_{ij}=\varepsilon_{ji},
 \end{equation}
@@ -366,7 +366,7 @@ Análogamente,
 \begin{equation}
  H_j(\partial_i B_j)=\frac{1}{2}\partial_i(H_jB_j). \label{idl2}
 \end{equation}
-Reemplazando (\ref{idl1}) y (\ref{idl2}) en los últimos dos t'erminos de
+Reemplazando (\ref{idl1}) y (\ref{idl2}) en los últimos dos términos de
 (\ref{flc}), encontramos
 \begin{equation}
  \rho E_i+\varepsilon_{ijk}J_jB_k
@@ -390,12 +390,12 @@ encontramos
 \boxed{F^{\rm em}_i+\frac{d\ }{dt}P_i^{\rm em}+\oint_{\partial
 V}T_{ij}\,dS_j =0,} 
 \end{equation}
-donde $F^{\rm em}_i$ es la fuerza electromagn'etica total actuando sobre las cargas en $V$, y
+donde $F^{\rm em}_i$ es la fuerza electromagnética total actuando sobre las cargas en $V$, y
 \begin{equation}\marginnote{mom. lineal del campo}
  \boxed{P_i^{\rm em}:=\int_V \pi_i\,dV.} \label{defpem}
 \end{equation}
 
-Si $\vec{F}_{\rm em}$ coincide con la \textit{fuerza total} sobre las cargas (por ejemplo, si las únicas fuerzas involucradas son electromagn'eticas, o si la fuerza neta de origen no electromagn'etico se anula) entonces, usando la \textit{segunda ley de Newton}, tenemos que $\vec{F}_{\rm em}=d\vec{P}_{\rm mec}/dt$, donde $\vec{P}_{\rm mec}$ es el \textbf{momentum lineal total de las cargas} en $V$ (mecánico). Bajo estas condiciones, podemos escribir
+Si $\vec{F}_{\rm em}$ coincide con la \textit{fuerza total} sobre las cargas (por ejemplo, si las únicas fuerzas involucradas son electromagnéticas, o si la fuerza neta de origen no electromagnético se anula) entonces, usando la \textit{segunda ley de Newton}, tenemos que $\vec{F}_{\rm em}=d\vec{P}_{\rm mec}/dt$, donde $\vec{P}_{\rm mec}$ es el \textbf{momentum lineal total de las cargas} en $V$ (mecánico). Bajo estas condiciones, podemos escribir
 \begin{equation}
 \boxed{\frac{d\ }{dt}\left(P_i^{\rm mec}+P_i^{\rm em}\right)+\oint_{\partial
 V}T_{ij}\,dS_j =0.} \label{licml}
@@ -403,32 +403,32 @@ V}T_{ij}\,dS_j =0.} \label{licml}
 En casos en que los campos se anulan en $\partial V$, la relación
 (\ref{licml}) expresa que $P_i^{\rm mec}+P_i^{\rm em}$ es conservado. Esto
 permite interpretar (\ref{defpem}) como el \textbf{momentum lineal total del
-campo electromagn'etico en el volumen} $V$. En el caso general $\oint_{\partial
+campo electromagnético en el volumen} $V$. En el caso general $\oint_{\partial
 V}T_{ij}\,dS_j $ representa entonces el \textbf{flujo de momentum por unidad de tiempo
-a trav'es de} $\partial S$. Consecuentemente, el tensor de Maxwell $T_{ij}$
+a través de} $\partial S$. Consecuentemente, el tensor de Maxwell $T_{ij}$
 representa el momentum en la dirección $i$ que se transfiere en la dirección
 $j$, por unidad de tiempo y área. Equivalentemente, $-T_{ij}n_j$ ($dS_j=n_jdS$)
 representa la \textit{fuerza por unidad de área} (tensión) que actúa sobre el sistema
 de cargas y campos en $V$.
 
 La expresión (\ref{licml}) puede ser usada para calcular la fuerza que actúa
-sobre cargas en presencia de campos electromagn'eticos. Por ejemplo,
+sobre cargas en presencia de campos electromagnéticos. Por ejemplo,
 
 \begin{center}
 *** EJEMPLO CONDENSADOR PLACAS PARALELAS ***
 \end{center}
 
-\textbf{Para un medio lineal \textit{e isótropo}, el tensor de Maxwell es sim'etrico
+\textbf{Para un medio lineal \textit{e isótropo}, el tensor de Maxwell es simétrico
 $T_{ij}=T_{ji}$} y la densidad de momentum es proporcional al vector de
 Poynting, $\vec{\pi}=\varepsilon\mu\,\vec{S}$, de modo que la dirección del
 momentum de campo coincide con la del flujo de energía de
-'este.
+éste.
 
-\section{Ondas Electromagn'eticas}
+\section{Ondas Electromagnéticas}
 
-\subsection{Campos electromagn'eticos y ecuación de la onda}
+\subsection{Campos electromagnéticos y ecuación de la onda}
 
-Consideremos un \textit{medio lineal, isótropo y homog'eneo}. En este caso, a ley de Amp\`ere-Maxwell se reduce a
+Consideremos un \textit{medio lineal, isótropo y homogéneo}. En este caso, a ley de Amp\`ere-Maxwell se reduce a
 \begin{equation}
 \varepsilon_{ijk}\partial_jB_k=\mu\vec{J}+\varepsilon\mu\frac{\partial E_i}{\partial t}.
 \end{equation}
@@ -441,20 +441,20 @@ Derivando con respecto al tiempo y usando la ley de Faraday, podemos escribir
 \partial_j\partial_lE_m\\
 &=&\partial_j\partial_jE_i-\partial_j\partial_iE_j.
 \end{eqnarray}
-Usando la ley de Gauss, $\partial_jE_j=\rho/\varepsilon$ en el segundo t'ermino del lado derecho, obtenemos
+Usando la ley de Gauss, $\partial_jE_j=\rho/\varepsilon$ en el segundo término del lado derecho, obtenemos
 \begin{equation}\label{EcOihE}
 \boxed{\nabla^2\vec{E}-\varepsilon\mu\frac{\partial^2\vec{E}}{\partial t^2}=\frac{1}{\varepsilon}\vec\nabla\rho+\mu\frac{\partial\vec{J}}{\partial t}.}
 \end{equation}
 
-Similarmente, calculando la derivada con respecto al tiempo de la ley de Faraday y usando la ley de Amp\`ere-Maxwell, así como el hecho que el campo magn'etico siempre tiene divergencia nula, es decir \eqref{max2}, encontramos que
+Similarmente, calculando la derivada con respecto al tiempo de la ley de Faraday y usando la ley de Amp\`ere-Maxwell, así como el hecho que el campo magnético siempre tiene divergencia nula, es decir \eqref{max2}, encontramos que
 \begin{equation}\label{EcOihB}
 \boxed{\nabla^2\vec{B}-\varepsilon\mu\frac{\partial^2\vec{B}}{\partial t^2}=-\mu\vec\nabla\times\vec{J}.}
 \end{equation}
 
 De esta forma encontramos que \textit{las ecuaciones de Maxwell implican que los
-campos el'ectrico y magn'etico satisfacen la ecuación de onda inhomog'enea}. Es importante notar que \textit{no todas} las soluciones de la ecuación de onda son necesariamente soluciones de las ecuaciones de Maxwell. En otras palabras, \eqref{EcOihE} y \eqref{EcOihB} son \textit{condiciones necesarias, pero no suficientes} para que los campos satisfagan las ecuaciones de Maxwell.
+campos eléctrico y magnético satisfacen la ecuación de onda inhomogénea}. Es importante notar que \textit{no todas} las soluciones de la ecuación de onda son necesariamente soluciones de las ecuaciones de Maxwell. En otras palabras, \eqref{EcOihE} y \eqref{EcOihB} son \textit{condiciones necesarias, pero no suficientes} para que los campos satisfagan las ecuaciones de Maxwell.
 
-\textit{En regiones en libres de cargas y corrientes} \eqref{EcOihE} y \eqref{EcOihB} se reducen a la ecuación de onda homog'enea para cada componente (cartesiana) de los campos el'ectrico y magn'etico:
+\textit{En regiones en libres de cargas y corrientes} \eqref{EcOihE} y \eqref{EcOihB} se reducen a la ecuación de onda homogénea para cada componente (cartesiana) de los campos eléctrico y magnético:
 \begin{equation}\label{econdaE}
 \boxed{\nabla^2E_i-\varepsilon\mu\frac{\partial^2E_i}{\partial t^2}=0.}
 \end{equation}
@@ -465,7 +465,7 @@ campos el'ectrico y magn'etico satisfacen la ecuación de onda inhomog'enea}. Es
 
 
 
-\subsection{Ondas electromagn'eticas planas monocromáticas}
+\subsection{Ondas electromagnéticas planas monocromáticas}
 Consideremos una solución de \textbf{onda plana monocromática polarizada linealmente}:
 \begin{equation}
 E_i=E_i^0 \cos\left(\vec{k}\cdot\vec{x}-\omega t+\varphi_0\right)
@@ -489,9 +489,9 @@ que además, coincide con la \textbf{velocidad de grupo},
 \begin{equation}
 v_{\rm f}=v_{\rm g}=\frac{1}{\sqrt{\varepsilon\mu}}=:c,
 \end{equation}
-donde $v_{\rm g}:=\partial\omega/\partial k$. Esto implica que las ondas electromagn'eticas se propagan de forma \textit{no-dispersiva} (en medios lineales, isótropos y homog'eneos). 
+donde $v_{\rm g}:=\partial\omega/\partial k$. Esto implica que las ondas electromagnéticas se propagan de forma \textit{no-dispersiva} (en medios lineales, isótropos y homogéneos). 
 
-La \textbf{velocidad de la luz en el medio} ($c$) puede ser escrita en t'erminos de la \textbf{velocidad de la luz en el vacío} ($c_0=1/\sqrt{\varepsilon_0\mu_0}$), la susceptibilidad el'ectrica relativa ($\kappa$) y la permeabilidad magn'etica relativa ($\kappa_{\rm m}$), es decir, usando $\varepsilon=\kappa\varepsilon_0$ y $\mu=\kappa_{\rm m}\mu_0$:
+La \textbf{velocidad de la luz en el medio} ($c$) puede ser escrita en términos de la \textbf{velocidad de la luz en el vacío} ($c_0=1/\sqrt{\varepsilon_0\mu_0}$), la susceptibilidad eléctrica relativa ($\kappa$) y la permeabilidad magnética relativa ($\kappa_{\rm m}$), es decir, usando $\varepsilon=\kappa\varepsilon_0$ y $\mu=\kappa_{\rm m}\mu_0$:
 \begin{equation}
 c=\frac{c_0}{\sqrt{\kappa\kappa_{\rm m}}}=\frac{c_0}{n}.
 \end{equation}
@@ -507,18 +507,18 @@ Similarmente, usando (\ref{max3}) encontramos que
 \end{equation}
 
 Estas relaciones implican que $\vec{k}$, $\vec{E}$ y $\vec{B}$ son ortogonales
-entre sí y forman (en ese orden) un \textbf{sistema derecho}. Como consecuencia, \textit{una onda electromagn'etica plana es transversal}, ya que las oscilaciones (de los campos el'ectrico y magn'etico) se producen en el plano ortogonal a la dirección de propagación. Además, los módulos de los campos satisfacen
+entre sí y forman (en ese orden) un \textbf{sistema derecho}. Como consecuencia, \textit{una onda electromagnética plana es transversal}, ya que las oscilaciones (de los campos eléctrico y magnético) se producen en el plano ortogonal a la dirección de propagación. Además, los módulos de los campos satisfacen
 \begin{equation}
  | \vec{E}|=c\,| \vec{B}| .
 \end{equation}
 \begin{figure}[!h]
 \centerline{\includegraphics[height=3cm]{fig/fig-onda-electromagnetica.pdf}}
-\caption{Campos el'ectrico y magn'etico de una onda electromagn'etica plana monocromática. Adaptada a partir de \href{http://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}{esta} figura original.}
+\caption{Campos eléctrico y magnético de una onda electromagnética plana monocromática. Adaptada a partir de \href{http://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}{esta} figura original.}
 \label{ondaem}
 \end{figure}
 
 \subsubsection{Vector de Poynting}
-Evaluamos el vector de Poynting (\ref{defPoy}) para la solución de onda plana monocromática reci'en analizada. Usando (\ref{defPoy}), \eqref{BkE} y \eqref{rdoem} podemos escribir
+Evaluamos el vector de Poynting (\ref{defPoy}) para la solución de onda plana monocromática recién analizada. Usando (\ref{defPoy}), \eqref{BkE} y \eqref{rdoem} podemos escribir
 \begin{eqnarray}
  \vec{S}&=&\vec{E}\times\vec{H} \\
 &=&\frac{1}{\mu}\,\vec{E}\times\vec{B} \\
@@ -527,7 +527,7 @@ Evaluamos el vector de Poynting (\ref{defPoy}) para la solución de onda plana m
 &=&\frac{1}{\mu\omega}\,\vec{E}^2\,\vec{k}\\
 &=&\frac{1}{\mu c}\,\vec{E}^2\,\hat{k}. \label{Sop}
 \end{eqnarray}
-Encontramos de este modo que el campo electromagn'etico correspondiente a la onda plana estudiada \textit{transporta energía en la dirección del vector de onda $\vec{k}$}. Su magnitud, aunque siempre no-negativa, varía en el tiempo y con la posición, ya que $\vec{E}=\vec{E}(\vec{x},t)$. Como la onda considerada es periódica, de periodo $T=2\pi/\omega$, es usual considerar el \textbf{promedio del vector de Poynting en un periodo de oscilación}\footnote{Si $f(t)$ es una función del tiempo, entonces definimos su promedio entre $t=0$ y $t=T$ como 
+Encontramos de este modo que el campo electromagnético correspondiente a la onda plana estudiada \textit{transporta energía en la dirección del vector de onda $\vec{k}$}. Su magnitud, aunque siempre no-negativa, varía en el tiempo y con la posición, ya que $\vec{E}=\vec{E}(\vec{x},t)$. Como la onda considerada es periódica, de periodo $T=2\pi/\omega$, es usual considerar el \textbf{promedio del vector de Poynting en un periodo de oscilación}\footnote{Si $f(t)$ es una función del tiempo, entonces definimos su promedio entre $t=0$ y $t=T$ como 
 \begin{equation}
 \left<f\right>:=\frac{1}{T}\int_0^Tf(t)\,dt.
 \end{equation}}
@@ -535,13 +535,13 @@ Para la onda sinusoidal (\ref{ecuc-max-solu1}) encontramos entonces que
 \begin{equation}\label{Sprom}
 \langle\vec{S}\rangle=\frac{1}{2\mu c}\,\vec{E}_0^2\,\hat{k}.
 \end{equation}
-Esto implica que a trav'es de una superficie de área $A$ transversal al vector de onda $\vec{k}$, la onda transporta energía a una tasa (potencia) promedio (en una oscilación) de 
+Esto implica que a través de una superficie de área $A$ transversal al vector de onda $\vec{k}$, la onda transporta energía a una tasa (potencia) promedio (en una oscilación) de 
 \begin{equation}
  \left<P\right>=\frac{A}{2\mu c}\,\vec{E}_0^2.
 \end{equation}
 
 \subsubsection{Densidad de Energía}
-Análogamente, calculamos la densidad de energía electromagn'etica, usando la expresión (\ref{uDEHB}):
+Análogamente, calculamos la densidad de energía electromagnética, usando la expresión (\ref{uDEHB}):
 \begin{eqnarray}
  u&=&\frac{1}{2}\left(\varepsilon\vec{E}^2+\frac{1}{\mu}\vec{B}^2\right)\\
 &=&\frac{1}{2}\left(\varepsilon\vec{E}^2+\frac{1}{\mu c^2}\vec{E}^2\right)\\
@@ -562,11 +562,11 @@ Para la onda periódica considerada, podemos calcular la densidad de energía pr
 
 \begin{figure}[!h]
 \centerline{\includegraphics[height=7cm]{fig/fig-EM_spectrum_es.pdf}}
-\caption{Espectro electromagn'etico. Adaptada a partir de \href{http://commons.wikimedia.org/wiki/File:EM_spectrum_es.svg}{esta} figura original.}
+\caption{Espectro electromagnético. Adaptada a partir de \href{http://commons.wikimedia.org/wiki/File:EM_spectrum_es.svg}{esta} figura original.}
 \label{fig:EMS}
 \end{figure}
 
-\subsection{Ondas electromagn'eticas en la materia}
+\subsection{Ondas electromagnéticas en la materia}
 \subsection{índices de reflexión y refracción}
 \subsection{Guías de onda y cavidades resonantes}
 
@@ -574,13 +574,13 @@ Para la onda periódica considerada, podemos calcular la densidad de energía pr
 \section{Potenciales y transformaciones de gauge}
 
 Las ecuaciones de Maxwell conforman un conjunto de 8 ecuaciones diferenciales
-parciales para las 6 componentes del campo electromagn'etico. A menudo es
+parciales para las 6 componentes del campo electromagnético. A menudo es
 \textit{conveniente} reducir el número de variables. Esto puede ser conseguido
-expresando los campos en t'erminos de \textbf{potenciales electromagn'eticos},
-de modo que \textit{las ecuaciones homog'eneas de Maxwell sean satisfechas
+expresando los campos en términos de \textbf{potenciales electromagnéticos},
+de modo que \textit{las ecuaciones homogéneas de Maxwell sean satisfechas
 automáticamente} y el número de campos a determinar se reduce a 4. Estos
 potenciales se reducen en los casos estacionarios al conocido potencial
-electrostático y al potencial vectorial magn'etico.
+electrostático y al potencial vectorial magnético.
 
 En el caso dinámico general, de (\ref{max2}) podemos concluir que $\vec{B}$
 puede ser derivado de un \textbf{potencial vectorial}:
@@ -608,11 +608,11 @@ de donde
 \boxed{\vec{E} =   - \vec{\nabla}\phi - \frac{\partial \vec{A}}{\partial t}.}
 \end{equation}
 Las ecuaciones (\ref{defA2}) y (\ref{defphi2}) muestran que el campo
-electromagn\'etico puede ser escrito en t\'erminos de un potencial vectorial
+electromagnético puede ser escrito en términos de un potencial vectorial
 $\vec{A}$ y de un potencial escalar $\phi$. Sin embargo, estas funciones
 \textit{no son únicas} para $\vec{E}$ y $\vec{B}$ dados. Es fácil verificar
-que el campo electromagn\'etico (y consecuentemente todas las predicciones de la
-teoría electromag\'etica) permanece invariante (es decir, con igual valor) bajo las
+que el campo electromagnético (y consecuentemente todas las predicciones de la
+teoría electromagética) permanece invariante (es decir, con igual valor) bajo las
 siguientes transformaciones de los potenciales,
 \begin{equation}\marginnote{Transformaciones de gauge}\label{tgg}
 \boxed{{\vec{A}}' = \vec{A} - \vec{\nabla}{\chi}, \qquad \phi' =\phi +
@@ -620,24 +620,24 @@ siguientes transformaciones de los potenciales,
 \end{equation}
 conocidas como \textbf{transformaciones de gauge} y donde $\chi=\chi(\vec{x},t)$
 es una función escalar \textit{arbitraria} del espaciotiempo\footnote{La invariancia
-de la teoría electromagn\'etica bajo transformaciones de gauge
+de la teoría electromagnética bajo transformaciones de gauge
 desempeña un rol muy importante. La generalización de esta propiedad de
 invariancia a \textbf{grupos de simetría interna} permitió formular
-teorías consistentes para las \textbf{interacciones d\'ebiles} unificadas con la electromagn\'etica (\textbf{electrod\'ebil}) y para la \textbf{interacción fuerte}
-(\textit{cromodinámica cuántica}). La \textbf{interacción gravitacional} tambi\'en puede ser descrita, con algunas peculiaridades, como una \textit{teoría de gauge}.}.
+teorías consistentes para las \textbf{interacciones débiles} unificadas con la electromagnética (\textbf{electrodébil}) y para la \textbf{interacción fuerte}
+(\textit{cromodinámica cuántica}). La \textbf{interacción gravitacional} también puede ser descrita, con algunas peculiaridades, como una \textit{teoría de gauge}.}.
 
-\subsubsection{Ecuaciones de Maxwell inhomog'eneas en t'erminos de los
+\subsubsection{Ecuaciones de Maxwell inhomogéneas en términos de los
 potenciales}
-Consideremos el caso de un medio lineal, isótropo y homog'eneo. Usando (\ref{defA2}) y (\ref{defphi2}) en las ecuaciones inhomog'eneas (\ref{max1}) y (\ref{max3}) encontramos:
+Consideremos el caso de un medio lineal, isótropo y homogéneo. Usando (\ref{defA2}) y (\ref{defphi2}) en las ecuaciones inhomogéneas (\ref{max1}) y (\ref{max3}) encontramos:
 \begin{equation}\label{emiap1}
  \nabla^2\phi+\frac{\partial\ }{\partial t}\left(\vec{\nabla}\cdot\vec{A}\right)=-\frac{\rho}{\varepsilon},
 \end{equation}
 \begin{equation}\label{emiap2}
  \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}-\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}+\frac{1}{c^2}\frac{\partial\phi }{\partial t}\right)=-\mu\,\vec{J}.
 \end{equation}
-De esta forma, hemos reducido las ecuaciones de Maxwell a un conjunto de 4 ecuaciones diferenciales parciales para los 4 potenciales. Sin embargo, estas ecuaciones no determinan completamente los potenciales, puesto que las transformaciones de gauge \eqref{tgg} \textit{dejan invariantes} \eqref{emiap1} y \eqref{emiap1}. Esto es natural ya que estas ecuaciones dependen en realidad de los campos el'ectrico y magn'etico, y como vimos las transformaciones de gauge no cambian los valores de estos campos. Además, las ecuaciones \eqref{emiap1} y \eqref{emiap1} están \textit{acopladas}, en el sentido que cada una de estas ecuaciones involucra ambos potenciales electromagn'eticos.
+De esta forma, hemos reducido las ecuaciones de Maxwell a un conjunto de 4 ecuaciones diferenciales parciales para los 4 potenciales. Sin embargo, estas ecuaciones no determinan completamente los potenciales, puesto que las transformaciones de gauge \eqref{tgg} \textit{dejan invariantes} \eqref{emiap1} y \eqref{emiap1}. Esto es natural ya que estas ecuaciones dependen en realidad de los campos eléctrico y magnético, y como vimos las transformaciones de gauge no cambian los valores de estos campos. Además, las ecuaciones \eqref{emiap1} y \eqref{emiap1} están \textit{acopladas}, en el sentido que cada una de estas ecuaciones involucra ambos potenciales electromagnéticos.
 
-Es posible explotar la ``\textbf{libertad de gauge}'' de la electrodinámica (es decir, el hecho que los potenciales no son únicos) para \textit{simplificar algunos cálculos}. Una forma de hacer esto es trabajar con potenciales que satisfagan alguna condición extra o \textbf{gauge}. De hecho, el imponer condiciones extras a los potenciales no sólo es conveniente, sino tambi'en \textit{necesario}, ya que las ecuaciones \eqref{emiap1} y \eqref{emiap1} no determinan en forma única los campos $\phi$ y $\vec{A}$. Es posible imponer infinitos gauges diferentes para los potenciales (siempre que sean consistentes con las ecuaciones de Maxwell), pero existen algunos de especial utilidad y popularidad.
+Es posible explotar la ``\textbf{libertad de gauge}'' de la electrodinámica (es decir, el hecho que los potenciales no son únicos) para \textit{simplificar algunos cálculos}. Una forma de hacer esto es trabajar con potenciales que satisfagan alguna condición extra o \textbf{gauge}. De hecho, el imponer condiciones extras a los potenciales no sólo es conveniente, sino también \textit{necesario}, ya que las ecuaciones \eqref{emiap1} y \eqref{emiap1} no determinan en forma única los campos $\phi$ y $\vec{A}$. Es posible imponer infinitos gauges diferentes para los potenciales (siempre que sean consistentes con las ecuaciones de Maxwell), pero existen algunos de especial utilidad y popularidad.
 
 \subsubsection{Gauge de Coulomb}
 Si el potencial vectorial satisface
@@ -660,14 +660,14 @@ Esto implica, como condición necesaria y suficiente, que la función $\chi$ deb
 \begin{equation}\label{ePchi}
 \nabla^2\chi=\vec\nabla\cdot\vec{A}_0,
 \end{equation}
-es decir, la ecuación de Poisson con una ``fuente'' conocida ($\vec\nabla\cdot\vec{A}_0$, dados los potenciales originales). Ya que han sido demostrados \textbf{teoremas de existencia} para esta ecuación, es decir, que ella siempre tiene soluciones, queda demostrado que es \textit{posible} imponer el gauge de Coulomb. Note, sin embargo, que la función $\chi$ que determina los nuevos potenciales que satisfacen el gauge de Coulomb \textit{no es única}, ya que si $\chi_1$ es solución de (\ref{ePchi}) entonces $\chi_2=\chi_1+\tilde\chi$ tambi'en es solución, siempre que $\tilde\chi$ sea una solución de la ecuación de Laplace ($\nabla^2\tilde\chi=0$). Existe entonces una ``\textbf{libertad remanente}'' para seguir realizando transformaciones de gauge, generadas por funciones $\tilde\chi$ que satisfacen la ecuación de Laplace, y que permiten imponer algunas condiciones\footnote{Ojo: no \textit{cualquier} condición, sino aquellas que sean compatibles con el resto de las condiciones, y con las ecuaciones de Maxwell.} adicionales a los potenciales, siempre dentro de la ``familia de potenciales'' que satisface el gauge de Coulomb.
+es decir, la ecuación de Poisson con una ``fuente'' conocida ($\vec\nabla\cdot\vec{A}_0$, dados los potenciales originales). Ya que han sido demostrados \textbf{teoremas de existencia} para esta ecuación, es decir, que ella siempre tiene soluciones, queda demostrado que es \textit{posible} imponer el gauge de Coulomb. Note, sin embargo, que la función $\chi$ que determina los nuevos potenciales que satisfacen el gauge de Coulomb \textit{no es única}, ya que si $\chi_1$ es solución de (\ref{ePchi}) entonces $\chi_2=\chi_1+\tilde\chi$ también es solución, siempre que $\tilde\chi$ sea una solución de la ecuación de Laplace ($\nabla^2\tilde\chi=0$). Existe entonces una ``\textbf{libertad remanente}'' para seguir realizando transformaciones de gauge, generadas por funciones $\tilde\chi$ que satisfacen la ecuación de Laplace, y que permiten imponer algunas condiciones\footnote{Ojo: no \textit{cualquier} condición, sino aquellas que sean compatibles con el resto de las condiciones, y con las ecuaciones de Maxwell.} adicionales a los potenciales, siempre dentro de la ``familia de potenciales'' que satisface el gauge de Coulomb.
 
 Una de las conveniencias de este gauge es que \textit{la ecuación (\ref{emiap1GC}) tiene la misma forma que en el caso electrostático}\footnote{Se dice por esto que es ``\textit{coulombiano}'', de ahí uno de los nombres asociados a este gauge.}. Debido a esto, y usando la ``libertad remanente'' mencionada anteriormente, es posible elegir\footnote{!`Pruebe esta afirmación!.} el potencial escalar de la forma siguiente:
 \begin{equation}\label{phiGC}
 \boxed{ \phi(\vec{x},t)=\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'.}
 \end{equation}
 Esta solución para el potencial puede entonces ser reemplazada en el lado derecho de \eqref{emiap2GC}. 
-%Sin embargo, un cálculo sencillo muestra que este último t'ermino cancela la \textit{componente irrotacional} (``longitudinal'') de la corriente. En efecto, asumiendo que las fuentes son localizadas, podemos usar el resultado descrito en el ap'endice \ref{Apcamps} y separar la densidad de corriente en una componente longitudinal,  $\vec{J}_{\rm l}$, (o irrotacional, con $\vec\nabla\times\vec{J}_{\rm l}=0$) y una transversal,  $\vec{J}_{\rm t}$, (o solenoidal, con $\vec\nabla\cdot\vec{J}_{\rm t}=0$):
+%Sin embargo, un cálculo sencillo muestra que este último término cancela la \textit{componente irrotacional} (``longitudinal'') de la corriente. En efecto, asumiendo que las fuentes son localizadas, podemos usar el resultado descrito en el apéndice \ref{Apcamps} y separar la densidad de corriente en una componente longitudinal,  $\vec{J}_{\rm l}$, (o irrotacional, con $\vec\nabla\times\vec{J}_{\rm l}=0$) y una transversal,  $\vec{J}_{\rm t}$, (o solenoidal, con $\vec\nabla\cdot\vec{J}_{\rm t}=0$):
 %\begin{equation}
 % \vec{J}=\vec{J}_{\rm l}+\vec{J}_{\rm t},
 %\end{equation}
@@ -678,7 +678,7 @@ Esta solución para el potencial puede entonces ser reemplazada en el lado derec
 %\begin{equation}
 % \vec{J}_{\rm t} =\frac{1}{4\pi}\vec\nabla\times\int\frac{(\vec\nabla\times\vec{J})(\vec{x}')}{|\vec{x}-\vec{x}'|}dV'.
 %\end{equation}
-A partir de (\ref{phiGC}), y usando la ecuación de continuidad, podemos escribir el segundo t'ermino del lado derecho de \eqref{emiap2GC} sólo en t'erminos de la densidad de corriente, ya que
+A partir de (\ref{phiGC}), y usando la ecuación de continuidad, podemos escribir el segundo término del lado derecho de \eqref{emiap2GC} sólo en términos de la densidad de corriente, ya que
 \begin{eqnarray}
 \vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right)&=&  \vec{\nabla}\frac{\partial\ }{\partial t}\left(\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'\right) \\
 &=&  \frac{1}{4\pi\varepsilon}\vec{\nabla}\int\frac{\frac{\partial\rho }{\partial t}(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV' \\
@@ -699,13 +699,13 @@ Se dice que este campo es \textit{transversal} porque satisface
 \vec\nabla\cdot\vec{J}_{\rm T}\equiv 0.
 \end{equation}
 
-En resumen, \textit{en el gauge de Coulomb el potencial vectorial satisface la  \textit{ecuación de onda inhomog'enea}, con un t'ermino fuente determinado sólo por la componente transversal de la densidad de corriente}. Además, en este gauge  sólo el potencial vectorial contribuye a los \textbf{campos radiativos}\footnote{Como veremos en el capítulo \ref{caprad}, se dice que un campo electromagn'etico es radiativo si su contribución a la energía radiada muy lejos de las fuentes (``en el infinito'') es no nula.}. En cambio, el potencial escalar \eqref{phiGC} es no-radiativo como consecuencia de que su valor decae al menos tan rápido como $1/r$ a grandes distancias de la fuente.
+En resumen, \textit{en el gauge de Coulomb el potencial vectorial satisface la  \textit{ecuación de onda inhomogénea}, con un término fuente determinado sólo por la componente transversal de la densidad de corriente}. Además, en este gauge  sólo el potencial vectorial contribuye a los \textbf{campos radiativos}\footnote{Como veremos en el capítulo \ref{caprad}, se dice que un campo electromagnético es radiativo si su contribución a la energía radiada muy lejos de las fuentes (``en el infinito'') es no nula.}. En cambio, el potencial escalar \eqref{phiGC} es no-radiativo como consecuencia de que su valor decae al menos tan rápido como $1/r$ a grandes distancias de la fuente.
 
-El gauge de Coulomb es a menudo usado en regiones donde no hay fuentes presentes. En este caso es posible elegir $\phi=0$, ver \eqref{phiGC}, de modo que toda la información del campo electromagn'etico está contenida en el potencial vectorial $\vec{A}$.
+El gauge de Coulomb es a menudo usado en regiones donde no hay fuentes presentes. En este caso es posible elegir $\phi=0$, ver \eqref{phiGC}, de modo que toda la información del campo electromagnético está contenida en el potencial vectorial $\vec{A}$.
 
 
 \subsubsection{Gauge de Lorenz}
-Otro gauge común es el \textbf{gauge de Lorenz}\footnote{Nombrado en recuerdo de Ludvig Valentin Lorenz (1829-1891): Matemático y Físico Dan'es. Ver \url{http://es.wikipedia.org/wiki/Ludvig_Lorenz}, quien consideró esta elección en 1867.}, que usualmente es escrito como
+Otro gauge común es el \textbf{gauge de Lorenz}\footnote{Nombrado en recuerdo de Ludvig Valentin Lorenz (1829-1891): Matemático y Físico Danés. Ver \url{http://es.wikipedia.org/wiki/Ludvig_Lorenz}, quien consideró esta elección en 1867.}, que usualmente es escrito como
 \begin{equation}\marginnote{Gauge de Lorenz}\label{gLorenz}
 \boxed{\frac{1}{c^2}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}\stackrel{!}{=}0,}
 \end{equation}
@@ -717,7 +717,7 @@ En efecto, si (\ref{gLorenz}) es satisfecha entonces (\ref{emiap1}) y (\ref{emia
 \begin{equation}\label{emiap2gL}
  \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J},
 \end{equation}
-o, introduciendo el \textbf{operador de onda} (u operador de  d'\,Alembert\footnote{Jean Le Rond d'\,Alembert (1717-1783): matemático, filósofo y enciclopedista franc'es. Ver \url{http://es.wikipedia.org/wiki/Jean_le_Rond_d\%27Alembert}.}), 
+o, introduciendo el \textbf{operador de onda} (u operador de  d'\,Alembert\footnote{Jean Le Rond d'\,Alembert (1717-1783): matemático, filósofo y enciclopedista francés. Ver \url{http://es.wikipedia.org/wiki/Jean_le_Rond_d\%27Alembert}.}), 
 $\Box:= c^{-2}{\partial^2}/{\partial t^2}-\nabla^2$,
 \begin{equation}\label{emiap1gL2}
  \Box\phi=\frac{\rho}{\varepsilon},
@@ -732,10 +732,10 @@ Análogamente al caso del gauge de Coulomb, puede probarse que \textit{el gauge 
 &=&\frac{1}{c^2}\frac{\partial\ }{\partial t}\left(\phi_0+\frac{\partial\chi}{\partial t}\right)+\vec{\nabla}\cdot\left(\vec{A}_0-\vec\nabla\chi\right) \\
 &=&\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right) +\frac{1}{c^2}\frac{\partial^2\chi }{\partial t^2}-\nabla^2\chi,
 \end{eqnarray}
-es decir, que satisfaga la ecuación de onda inhomog'enea:
+es decir, que satisfaga la ecuación de onda inhomogénea:
 \begin{equation}
 \Box\chi=-\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right).
 \end{equation}
 La existencia de soluciones de esta ecuación está garantizada. Análogamente al caso del gauge de Coulomb, la función buscada no es única, sino que existe una libertad remanente para realizar transformaciones de gauge ``dentro del gauge de Lorenz'', generadas por funciones $\tilde\chi$ que satisfagan la ecuación de onda, $\Box\tilde\chi=0$. 
 
-El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromag'eticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
+El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
