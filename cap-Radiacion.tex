@@ -66,7 +66,7 @@ La función de Green que satisface (\ref{ecGreen}) \textit{no es única}, siempr
 
 Ya que $G(\vec{x},\vec{x}')$ determina la dependencia espacial de la solución correspondiente a una carga puntual situada en $\vec{x}'$, esperamos que ésta sea esféricamente simétrica en torno a este punto (``isotropía del espacio''), y sólo dependiente de la diferencia entre $\vec{x}$ y $\vec{x}'$ (``homogeneidad del espacio''). Entonces, supondremos que $G$ depende de $\vec{x}$ y $\vec{x}'$ sólo a través de la combinación $|\vec{x}-\vec{x}'|$. Si
 \begin{equation}
-G(\vec{x},\vec{x}')=G(|\vec{x}-\vec{x}'|),
+G(\vec{x},\vec{x}')\stackrel{!}{=}G(|\vec{x}-\vec{x}'|),
 \end{equation}
  la ecuación (\ref{ecGreen}) se reduce a
 \begin{equation}
@@ -145,11 +145,11 @@ ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}e^{i\omega t}\,d\omega\,dV'  \\
 \end{eqnarray}
 En la expresión anterior hemos denotado
 \begin{equation}
-t_{\pm}:=t\pm \frac{|\vec{x}-\vec{x}'|}{c}.
+t_{\pm}(\vec{x},\vec{x}',t):=t\pm \frac{|\vec{x}-\vec{x}'|}{c}.
 \end{equation}
 Los \textbf{potenciales retardados} corresponden a la solución con
 \begin{equation}
-\boxed{t_{\rm ret}:=t-\frac{|\vec{x}-\vec{x}'|}{c},} \label{deftret}
+\boxed{t_{\rm ret}(\vec{x},\vec{x}',t):=t-\frac{|\vec{x}-\vec{x}'|}{c},} \label{deftret}
 \end{equation}
 que es llamado el \textbf{tiempo retardado} (puesto que $t_{\rm ret}\le t$), de modo que
 \begin{equation}
