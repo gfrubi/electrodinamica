@@ -1261,6 +1261,36 @@ Q_{ijk}=(-q)x^{(1)}_i x^{(1)}_jx^{(1)}_k +(q)x^{(2)}_i x^{(2)}_jx^{(2)}_k,
 \end{equation}
 etc. En el límite $\vec{d}\to\vec{0}$, pero tal que $\vec{p}$ sea finito (esto, por supuesto, requiere $q\to\infty$), tendremos que $Q_{ij}\to 0$, $Q_{ijk}\to 0$, y lo mismo ocurrirá para todo momento multipolar de orden superior  (las componentes del momento multipolar de orden $n$ son en este caso proporcionales a $qd^n=pd^{n-1}$).
 
+\paragraph{Dipolo ideal}
+\begin{equation}
+\vec{x}_1=\frac{\vec{d}}{2}, \qquad \vec{x}_2=-\frac{\vec{d}}{2}, \qquad
+\vec{d}=\vec{x}_1-\vec{x}_2
+\end{equation}
+\begin{equation}
+\phi(\vec{x})=\frac{q}{4 \pi \varepsilon_0}\left[\frac{1}{\left|\vec{x}-\vec{x}_1\right|}-\frac{1}{\left|\vec{x}-\vec{x}_2\right|}\right]
+\end{equation}
+
+\begin{equation}
+\left|\vec{x}-\vec{x}_1\right|^2=r^2-2 \vec{x} \cdot \frac{\vec{d}}{2}+\frac{d^2}{4} = r^2-\vec{x} \cdot \vec{d}+ O\left(d^2\right)
+\end{equation}
+\begin{equation}
+\left|\vec{x}-\vec{x}_1\right|  = r \sqrt{1-\frac{\vec{x}\cdot\vec{d}}{r^2}+O\left(d^2\right)} = r\left(1-\frac{\vec{x}\cdot\vec{d}}{2r^2}+O\left(d^2\right)\right)
+\end{equation}
+\begin{align}
+\phi &=\frac{q}{4 \pi \varepsilon_0}\left[\frac{1}{r\left(1-\frac{\vec{x}\cdot\vec{d}}{2r^2}+ O\left(d^2\right)\right)}- \frac{1}{r\left(1+\frac{\vec{x}\cdot\vec{d}}{2r^2}+ O\left(d^2\right)\right)}\right] \\
+&= \frac{q}{4 \pi \varepsilon_0} \frac{1}{r}\left[1+\frac{\vec{x}\cdot\vec{d}}{2r^2}-\left(1-\frac{\vec{x}\cdot\vec{d}}{2r^2}\right)+ O\left(d^2\right)\right] \\
+ & =\frac{q}{4 \pi \varepsilon_0} \frac{\vec{x} \cdot \vec{d}}{r^3}+O\left(d^2\right)
+\end{align}
+En el límite de un dipolo ideal
+$\vec{d} \rightarrow \vec{0}$ y $q\rightarrow \infty$, pero $\vec{p}=q \vec{d}$ finito
+\begin{equation}
+\phi_{\vec{p}}(\vec{x})=\frac{1}{4\pi\epsilon_0}\frac{\vec{p}\cdot\vec{x}}{r^3}, \qquad r=|\vec{x}|
+\end{equation}
+\begin{equation}
+\vec{E}=-\vec{\nabla} \phi_{\vec{p}}=\frac{1}{4 \pi \varepsilon_\theta} \frac{\left.(3 \vec{p} \cdot \vec{x}) \vec{x}-r^2 \vec{p}\right)}{r^5}
+\end{equation}
+
+Para un dipolo ideal ubicado en la posición $\vec{x}'$, tenemos
 \begin{equation}\label{phip}
 \phi_{\vec{p}}(\vec{x})=\frac{1}{4\pi\varepsilon_0}\frac{(x_j-x_j')p_j}
 {|\vec{x}-\vec{x}'|^3},
