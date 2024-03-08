@@ -51,6 +51,25 @@ Es importante notar que si $\rho>0$, entonces $\vec{J}$ y $\vec{v}$ tienen igual
 sentido, mientras que si $\rho<0$, entonces $\vec{J}$ y $\vec{v}$ tienen
 sentidos opuestos.
 
+\subsection{Densidad de carga y corriente en sistemas con más de una especie}
+
+En muchas ocasiones, por ejemplo en un material conductor o en un plasma, existen distintos tipos de cargas con velocidades distintas. Por ejemplo, si en el sistema existen dos tipos de cargas, con densidades de carga y corriente $\rho_i$ y $\vec{J}_i$ ($i=1,2$) respectivamente entonces la densidad de carga neta es dada por la suma
+\begin{equation}
+\rho(\vec{x}) = \rho_1(\vec{x}) + \rho_2(\vec{x})
+\end{equation}
+y similarmente
+\begin{equation}
+\vec{J}(\vec{x}) = \vec{J}_1(\vec{x}) + \vec{J}_2(\vec{x}) 
+\end{equation}
+para la densidad de corriente. Si $\vec{v}_i$ son los respectivos campos de velocidad de cada especie, entonces
+\begin{equation}
+\vec{J}(\vec{x}) = \rho_1(\vec{x})\vec{v}_1(\vec{x}) + \rho_1(\vec{x})\vec{v}_2(\vec{x}) .
+\end{equation}
+Es importante notar que en general 
+\begin{equation}
+\vec{J}(\vec{x}) \neq  \rho(\vec{x})\vec{v}(\vec{x}),
+\end{equation}
+con $\vec{v}(\vec{x})=\vec{v}_1(\vec{x})+\vec{v}_2(\vec{x})$. Por ejemplo, en un metal conductor típicamente las densidades de cargas (macroscópicas) de los núcleos y los eléctrones son opuestas, de modo que y $\rho(\vec{x})\approx 0$, mientras que la velocidad de los núcleos es despreciable comparada con la de los electrones, de modo que en ese caso $\vec{J}_{\rm metal}(\vec{x})\approx  \rho_{\rm electrones}(\vec{x})\vec{v}_{\rm electrones}(\vec{x})$
 \section{Conservación de la carga eléctrica}
 
 La ley (experimental) de conservación (local) de la carga eléctrica puede ser escrita
