@@ -4,7 +4,7 @@
 
 Faraday\footnote{Michael Faraday (1791-1867): físico y químico británico. Ver \url{http://es.wikipedia.org/wiki/Michael_Faraday}.} encontró experimentalmente (1831) que \textit{si el flujo magnético a través de una espira cerrada varía en el tiempo, se induce una corriente sobre una espira}. Si el flujo es constante, se observa que la corriente desaparece. La \textbf{ley de Faraday} se escribe como
 \begin{equation}\label{faraday}
-\varepsilon_{\rm ind}=-K\frac{d\phi}{dt},
+\varepsilon_{\rm ind}=-K\frac{d\Phi}{dt},
 \end{equation}
 donde $\varepsilon_{\rm ind}$ es la fuerza electromotriz (f.e.m.) \textit{inducida} en la espira. El signo menos describe la dirección de la corriente inducida, dada por la \textbf{ley de Lenz}. Aquí $K$ es una constante que depende del sistema de unidades usado. En el Sistema Internacional es una cantidad adimensional, que determinaremos más adelante.
 
@@ -48,7 +48,7 @@ v_j(\partial_jB_i)-v_i(\partial_jB_j),
 y la ley (\ref{divB}) (que suponemos válida incluso en el caso dinámico) para reescribir (\ref{dPhidt0}) como
 \begin{eqnarray}
  \frac{d\Phi}{dt}&=&\int_S\left[\partial_tB_i+\varepsilon_{ijk}
-\partial_j(\varepsilon_{klm} B_lv_k)\right] dS_i \\
+\partial_j(\varepsilon_{klm} B_lv_m)\right] dS_i \\
 &=& \int_S\partial_tB_i\, dS_i +\oint_{\partial S}\varepsilon_{ijk}
 B_jv_k\,dx_i 
 \end{eqnarray}
