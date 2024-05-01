@@ -511,13 +511,13 @@ r^{-1}$.
 
 Consideramos un sistema de cargas y corrientes confinado a una región compacta del espacio (por ejemplo, la carga puntual analizada en la sección anterior). El campo electromagnético que este sistema produce tiene asociado un vector de flujo de energía, el vector de Poynting. La potencia (es decir, la energía por unidad de tiempo) total transferida por el campo electromagnético generado por las cargas y corrientes, a través de una superficie que encierra completamente al sistema, y elegida por conveniencia como una esfera de radio $r$, es dada por
 \begin{equation}
-P(r,t)=\int_S \vec{S}\cdot d\vec{S}=\frac{1}{\mu}\int_S \left[ \left(
+P(r,t)=\oint_S \vec{S}\cdot d\vec{S}=\frac{1}{\mu}\oint_S \left[ \left(
 \vec{E}\times\vec{B}\right) \cdot \hat{r}\right] \,r^2d\Omega.
 \end{equation}
 
 Llamamos \textbf{potencia radiada} a la energía que es transportada \textit{muy lejos} de las fuentes, es decir $r\gg L$ donde $L$ es el tamaño (lineal) característico del sistema, y que \textit{aproximamos} por el límite en que $r\rightarrow\infty$. En este límite, ubicando el centro de la esfera en un punto representativo de la distribución de cargas y corrientes, podemos aproximar $\hat{n}\approx\hat{r}$ y $R\approx r$ de modo que,
 \begin{equation}
-P_{\rm rad} (t)=\lim_{r\rightarrow\infty}\frac{1}{\mu}\int_S \left[ \left(
+P_{\rm rad} (t)=\lim_{r\rightarrow\infty}\frac{1}{\mu}\oint_S \left[ \left(
 \vec{E}\times\vec{B}\right) \cdot \hat{n}\right] \,r^2 d\Omega.
 \end{equation}
 
@@ -525,8 +525,8 @@ Tomando en cuenta la dependencia de $\vec{E}_{(1)}$ y $\vec{E}_{(2)}$ con $r$
 podemos ver que sólo los términos provenientes de $\vec{E}_{(2)}$
 contribuirán a $P_{\rm rad}(t)$ en el límite $r\rightarrow\infty$, es decir,
 \begin{equation}\label{Pinf1}
-P_{\rm rad}(t)=\lim_{r\rightarrow\infty}\int_S \vec{S}_{(2)}\cdot
-d\vec{S}=\frac{1}{\mu}\lim_{r\rightarrow\infty}\int_S \left[ \left(
+P_{\rm rad}(t)=\lim_{r\rightarrow\infty}\oint_S \vec{S}_{(2)}\cdot
+d\vec{S}=\frac{1}{\mu}\lim_{r\rightarrow\infty}\oint_S \left[ \left(
 \vec{E}_{(2)}\times\vec{B}_{(2)}\right) \cdot \hat{n}\right] \,r^2 d\Omega.
 \end{equation}
 En otras palabras, el sistema radía energía (``al infinito'') \textit{sólo si la
@@ -561,7 +561,7 @@ P_{\rm rad} (t)=\lim_{r\rightarrow\infty}\oint \vec{S}_{(2)}\cdot\hat{n}\,r^2 d\
 \end{equation}
 de modo que
 \begin{equation}
- \boxed{P_{\rm rad} (t)=\frac{q^2\mu}{16\pi^2c}\lim_{r\rightarrow\infty}\int_\Omega
+ \boxed{P_{\rm rad} (t)=\frac{q^2\mu}{16\pi^2c}\lim_{r\rightarrow\infty}\oint_\Omega
 \left|\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
 \times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)
 ^3}\right|_{\rm ret}\right|^2 d\Omega.}
@@ -577,7 +577,7 @@ por
 \end{equation}
 de modo que
 \begin{equation}
- \boxed{P_{\rm rad}(t)=\int_\Omega \frac{dP_{\rm rad}}{d\Omega}\,d\Omega.}
+ \boxed{P_{\rm rad}(t)=\oint_\Omega \frac{dP_{\rm rad}}{d\Omega}\,d\Omega.}
 \end{equation}
 
 
@@ -622,7 +622,7 @@ acelerado. Códigos Python \href{https://github.com/gfrubi/electrodinamica/blob/
 \end{figure}
 La \textit{potencia total emitida} por la carga es entonces
 \begin{eqnarray}
-P(t)  & =&\int_{\Omega}\frac{dP}{d\Omega}(t)\,d\Omega\\
+P(t)  & =&\oint_{\Omega}\frac{dP}{d\Omega}(t)\,d\Omega\\
 & =&\frac{q^2\mu}{16\pi^2c}\int_{\Omega} [\vec{a}^2\sin^2\theta]_{\rm ret}\,d\Omega\\
 & =&\frac{q^2\mu}{16\pi^2c}\int_0^{\pi}\int_0^{2\pi}\vec{a}^2_{\rm ret}
 \sin^2\theta\sin\theta\,d\theta d\varphi \\
@@ -696,7 +696,7 @@ Podemos consecuentemente definir una correspondiente potencia irradiada por unid
 \end{equation}
 de modo que
 \begin{equation}
- \boxed{E=\int_\Omega\int_{T_1}^{T_2}\frac{dP'}{d\Omega}(t)\,dt\,d\Omega}
+ \boxed{E=\oint_\Omega\int_{T_1}^{T_2}\frac{dP'}{d\Omega}(t)\,dt\,d\Omega}
 \end{equation}
 es la energía (\textit{que será}) radiada por la carga, debido a su movimiento entre los tiempos $T_1$ y $T_2$ (es decir, con posición inicial $\vec{z}(T_1)$ y final $\vec{z}(T_2)$, etc).
 
