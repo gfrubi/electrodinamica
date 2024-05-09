@@ -1,10 +1,9 @@
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 plt.style.use('classic')
 import numpy as np
 
 fig = plt.figure()
-ax = Axes3D(fig)
+ax = fig.add_subplot(projection='3d')
 ax.set_axis_off() # desactiva ejes
 
 t = np.linspace(0, np.pi, 100)
