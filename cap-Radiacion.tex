@@ -983,106 +983,18 @@ La energía total irradiada por unidad de ángulo sólido es entonces
 \frac{dE}{d\Omega}(\hat{n}) =\frac{1}{\mu c}\int_{-\infty}^{\infty}\lim_{r\to\infty}\left|r\vec{E}(\vec{x},t)\right|^2 dt .
 \end{equation}
 
-Queremos estudiar el \textit{espectro} de la radiación emitida, es decir, \textit{la distribución de potencia para distintas frecuencias}. Para ello, podemos \textit{expresar el campo radiado en términos de oscilaciones periódicas}. Esto significa expresar el campo eléctrico como una superposición de funciones armónicas, por medio de la transformada de Fourier $\tilde{\vec{E}}(\vec{x},\omega)$ del vector $\vec{E}(\vec{x},t)$, de modo que
-\begin{equation}
- \vec{E}(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\tilde{\vec{E}}(\vec{x},\omega) e^{i\omega t}d\omega ,
-\end{equation}
-donde
-\begin{equation}
-\tilde{\vec{E}}(\vec{x},\omega) :=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vec{E}(\vec{x},t) e^{-i\omega t}dt .  \label{dp3}
-\end{equation}
+Queremos estudiar el \textit{espectro} de la radiación emitida, es decir, \textit{la distribución de potencia para distintas frecuencias}. Para ello, podemos \textit{expresar el campo radiado en términos de oscilaciones periódicas}. Esto significa expresar el campo eléctrico como una superposición de funciones armónicas. Dividiremos el análisis en dos casos dependiendo de si los campos son funciones periódicas del tiempo o no. Esto queda determinado en general por la dependencia temporal de las fuentes del campo y, en el caso particular en que la fuente es una carga puntual, por la periodicidad de la función $\vec{z}(t)$ que modela su movimiento. En el caso en que la trayectoria sea periódica, los campos generados también lo serán y la descomposición de estos campos en oscilaciones armónicas se realiza por medio de \textit{series de Fourier}. Por otro lado, si el movimiento de la carga no es periódico corresponderá descomponer los campos por medio de \textit{integrales (transformada) de Fourier}.
 
-El hecho que $\vec{E}(\vec{x},t)$ es real se traduce en que 
-$\tilde{\vec{E}}^*(\vec{x},\omega)=\tilde{\vec{E}}(\vec{x},-\omega)$. En términos de la transformada de $\vec{E}(\vec{x},t)$, la energía total radiada por unidad de ángulo sólido puede escribirse como:
-\begin{eqnarray}
-\frac{dE}{d\Omega}(\hat{n}) &=&\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}r^2\left|\vec{E}(\vec{x},t)
-\right|^2dt \label{dEdO0}\\
-&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\vec{E}(\vec{x},t)\cdot \vec{E}^*(\vec{x},t)dt\\
-&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{
-\infty}r^2\tilde{\vec{E}}(\vec{x},\omega) \cdot e^{i\omega t}\tilde{\vec{E}}^\ast(\vec{x},\omega')e^{-i\omega' t}\,d\omega d\omega' dt\\
-&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot \tilde{\vec{E}}^*(\vec{x},\omega')\int_{-\infty}^{\infty} e^{i(\omega-\omega')t}\,dtd\omega d\omega' .
-\end{eqnarray}
-
-Recordando que
-\begin{equation}
-\frac{1}{2\pi}\int_{-\infty}^{\infty }e^{i\left( k-k' \right)  x}dx=
-\delta\left(  k-k' \right),
-\end{equation}
-llegamos a que
-\begin{eqnarray}
-\frac{dE}{d\Omega}(\hat{n})
-&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot\tilde{\vec{E}}^\ast(\vec{x},\omega') \delta (\omega-\omega')  d\omega d\omega'\\
-&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2 d\omega. \label{dedO1}
-\end{eqnarray}
-
-Note que la igualdad entre las expresiones (\ref{dEdO0}) y (\ref{dedO1}) no es más que el resultado usualmente conocido como \textit{teorema de Parceval}.
-
-Definimos la\textit{ energía radiada por unidad de ángulo sólido y por intervalo de frecuencia (angular)} ${d^2E}/{d\Omega d\omega}$, de modo que
-\begin{equation}
-\frac{dE}{d\Omega}(\hat{n})=\int_0^{\infty}\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)\,d\omega .
-\end{equation}
-Con esta definición y el resultado (\ref{dedO1}), encontramos
-\begin{equation}
-\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)=\frac{1}{\mu c}\lim_{r\to\infty}r^2\left[\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2 +\left|\tilde{\vec{E}}(\vec{x},-\omega)\right|^2\right]
-=\frac{2}{\mu c}\lim_{r\to\infty}r^2\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2.
-\end{equation}
-En el caso de la radiación de una carga acelerada, tenemos
-\begin{equation}
-\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)= \frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
-^3}\right|_{\rm ret}e^{-i\omega t}dt .
-\end{equation}
-
-Para simplificar la integral introducimos la nueva variable de integración
-$t':=t_{\rm ret}(t)=t-{R}/{c}$ y usamos (\ref{dtt'2}), de modo que podemos escribir
-\begin{eqnarray}
-\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)&=&\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
-}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
-^3}\right|_{t'}e^{-i\omega (t'+R(t')/c)}\left(
-1-\vec{\beta}\cdot\hat{n}\right) dt' \\
-&=&\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
-}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left(1-\vec{\beta}\cdot\hat{n}\right)^2}
-\right|_{t'}e^{-i\omega (t'+R(t')/c)} dt' \\
-&=&\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty
-}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
-e^{-i\omega (t+R(t)/c)} dt.
-\end{eqnarray}
-
-En el último paso hemos renombrado la variable de integración volviendo
-nuevamente a denotarla por $t$. Esta integral es evaluada en ``en el infinito'', es decir, a grandes distancias de la carga ($r\rightarrow\infty$). Tomando en cuenta esto, podemos expandir $R$ en potencias de ${\vec{z}}/{r}$, obteniendo
-\begin{equation}
-R(t)  =r-\vec{z}(t) \cdot\hat{n}+O\left(\left[z/r\right]^2\right). \label{expR} %aqui cambie
-\end{equation}
-Usando esta expansión, podemos escribir:
-\begin{equation}
-\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)=\frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\frac{e^{-i\frac{\omega r}{c}}}{r}\int_{-\infty}^{\infty}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
-e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c+O([z/r]^2))} dt,
-\end{equation}
-y, por lo tanto, la energía total irradiada por unidad de ángulo sólido e
-intervalo de frecuencia es (en el límite $r\to\infty$)
-\begin{equation}\marginnote{Distribución de energía en frecuencia}
-\boxed{\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)
-=\frac{q^2\mu}{16\pi^3c}\left|\int_{-\infty}^{\infty
-}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
-e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c)} dt\right|^2 .} \label{dEdOdo}
-\end{equation}
-En general, \textit{una carga en un movimiento arbitrario irradiará en un continuo de frecuencias}. Esto se refleja en que ${d^2E}/{d\Omega d\omega}$ será una cierta función continua de la frecuencia $\omega$ de emisión.
-
-\subsection{Caso de movimiento periódico}\label{sec:rfp}
+\subsection{Caso periódico}\label{sec:rfp}
 
 
-Si el movimiento de una carga es \textit{periódico}, entonces el
-espectro continuo de frecuencias de la radiación emitida se reduce a un
-\textit{espectro discreto} conteniendo frecuencias m\'{u}ltiples de la frecuencia
-fundamental.
+%Si el movimiento de una carga es \textit{periódico}, entonces el
+%espectro continuo de frecuencias de la radiación emitida se reduce a un
+%\textit{espectro discreto} conteniendo frecuencias m\'{u}ltiples de la frecuencia
+%fundamental.
 
-Si el movimiento es periódico, con periodo $T$, la velocidad y aceleración de la carga serán funciones periódicas. Como consecuencia, también $\vec{E}(\vec{x},t)$ será una función periódica en $t$, y por lo tanto es posible expresarla en términos de la siguiente \textit{serie de Fourier}
-\begin{equation}
+Si la dependencia temporal de las fuentes ($\rho$ y $\vec{J}$ en general, o bien $\vec{z}(t)$ para el caso de la carga puntual) es periódica, con periodo $T$, el campo $\vec{E}(\vec{x},t)$ (y también $\vec{B}(\vec{x},t)$) también será una función periódica en $t$, y por lo tanto es posible expresarlo en términos de la siguiente \textit{serie de Fourier}
+\begin{equation}\label{sFE}
 \vec{E}(\vec{x},t) =\sum_{m\,\in\, \mathbb{Z}} \vec{E}_{m}(\vec{x})e^{i\omega_{m}t},
 \end{equation}
 donde $\omega_{m}:=m\omega_1$ serán múltiplos de la frecuencia
@@ -1090,11 +1002,11 @@ fundamental $\omega_1:={2\pi}/{T}$, y
 \begin{equation}
 \vec{E}_{m}(\vec{x}) =\frac{1}{T}\int_0^{T}\vec{E}(\vec{x},t) e^{-i\omega_{m}t}dt. \label{defAm}
 \end{equation}
-Debido a la periodicidad del movimiento, la energía radiada entre $t=-\infty$ y $t=+\infty$ \textit{es infinita}. Esto motiva considerar, en lugar de la energía  total emitida (por unidad de ángulo sólido), la energía emitida sólo en un periodo de la oscilación o, equivalentemente, la \textit{potencia promedio} de la radiación emitida \textit{en un periodo} $T$ (por unidad de ángulo sólido), definida por
+Debido a la periodicidad de todo el proceso, la energía radiada entre $t=-\infty$ y $t=+\infty$ \textit{es infinita}. Esto motiva considerar, en lugar de la energía  total emitida (por unidad de ángulo sólido), la energía emitida sólo en un periodo (por unidad de ángulo sólido), $dE_T/d\Omega$ o, equivalentemente, la \textit{potencia promedio} de la radiación emitida \textit{en un periodo} $T$ (por unidad de ángulo sólido), definida por
 \begin{equation}
-\left\langle \frac{dP}{d\Omega}\right\rangle (\hat{n}) :=\frac{1}{T}\int_0^{T}\frac{dP}{d\Omega}(\hat{n},t)\,dt.
+\left\langle \frac{dP}{d\Omega}\right\rangle (\hat{n}) :=\frac{1}{T}\frac{dE_T}{d\Omega}(\hat{n})=\frac{1}{T}\int_0^{T}\frac{dP}{d\Omega}(\hat{n},t)\,dt.
 \end{equation}
-Usando la expansión en serie de Fourier del vector $\vec{\cal A}$, tenemos que
+Usando la expansión en serie de Fourier \eqref{sFE}, tenemos que
 \begin{align}
 \left\langle \frac{dP}{d\Omega}\right\rangle (\hat{n})&
 =\frac{1}{T}\int_0^{T}\lim_{r\to\infty}\frac{1}{\mu c}\left|r \vec{E}(\vec{x},t)\right|^2dt\\
@@ -1109,7 +1021,7 @@ donde hemos usado
 \begin{equation}
 \frac{1}{T}\int_0^{T}e^{i\omega_1\left(m'-m\right)t }dt\equiv\delta_{m,m' }.
 \end{equation}
-Puesto que $\vec{E}(\hat{n},t)$ es real, tendremos que $\vec{E}_{m}^*=\vec{E}_{-m}$, y entonces podemos escribir:
+Puesto que $\vec{E}(\vec{x},t)$ es real, tendremos que $\vec{E}_{m}^*=\vec{E}_{-m}$, y entonces podemos escribir:
 \begin{equation}\label{dPdOsumm}
 \left\langle\frac{dP}{d\Omega}\right\rangle (\hat{n}) =\frac{1}{\mu c}\lim_{r\to\infty}r^2\left[\left|\vec{E}_0\right|^2
 +2\sum_{m=1}^{\infty}\left|\vec{E}_{m}\right|^2\right].
@@ -1126,11 +1038,35 @@ La expresión (\ref{defAm}) nos permite entonces escribir, para el caso de el ca
 &=&\frac{q^2\mu}{8\pi^2T^2c}\left| \int_0^{T}\left.\frac{\hat{n}\times\left[  \left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(
 1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt\right|^2.
 \end{eqnarray}
-Procedemos ahora en forma análoga al caso de espectro continuo, es decir, efectuamos un cambio de variable de integración para expresar la integral en términos del tiempo retardado, y usamos la expansión (\ref{expR}). Con esto, obtenemos
+
+Para simplificar la integral introducimos la nueva variable de integración
+$t':=t_{\rm ret}(t)=t-{R}/{c}$ y usamos (\ref{dtt'2}), de modo que podemos escribir
+\begin{align}
+\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt &= \int_{-R/c}^{T-R/c}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{t'}e^{-i\omega_m (t'+R(t')/c)}\left(1-\vec{\beta}\cdot\hat{n}\right) dt' \\
+&= \int_{-R/c}^{T-R/c}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\times{\vec{a}}\right] }{R\left(1-\vec{\beta}\cdot\hat{n}\right)^2}
+\right|_{t'}e^{-i\omega_m (t'+R(t')/c)} dt' \\
+&= \int_{-R/c}^{T-R/c}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
+e^{-i\omega_m(t+R(t)/c)} dt.
+\end{align}
+
+En el último paso hemos renombrado la variable de integración volviendo
+nuevamente a denotarla por $t$. Esta integral es evaluada ``en el infinito'', es decir, a grandes distancias de la carga ($r\rightarrow\infty$). Tomando en cuenta esto, podemos expandir $R$ en potencias de ${\vec{z}}/{r}$, obteniendo
+\begin{equation}
+R(t)  =r-\vec{z}(t) \cdot\hat{n}+O\left(\left[z/r\right]^2\right). \label{expR} %aqui cambie
+\end{equation}
+Usando esta expansión, podemos escribir:
+\begin{equation}
+\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt =\frac{e^{-i\frac{\omega_m r}{c}}}{r}\int_{-r/c}^{T-r/c}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
+e^{-i\omega_m(t-\vec{z}(t)\cdot\hat{n}/c)} dt,
+\end{equation}
+
+Con esto, obtenemos
 \begin{eqnarray}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})
   &=&\frac{q^2\mu}{8\pi^2T^2c}\left|
-\int_{-{R}/{c}}^{T-{R}/{c}}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{
+\int_{-{r}/{c}}^{T-{r}/{c}}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{
 \beta}\right)\times\vec{a}\right]}{\left(1-\vec{\beta}\cdot\hat{n}\right)^2} e^{-i\omega_{m}\left(t-\vec{z}\cdot\hat{n}/c\right)}dt \right|^2. \label{int2}
 \end{eqnarray}
 Además, puesto que el integrando de (\ref{int2}) es periódico (asume los
@@ -1139,11 +1075,10 @@ mismos valores para $t$ y $t+T$), entonces podemos escribir
 \boxed{\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})
 =\frac{q^2\mu}{8\pi^2T^2c}\left|
 \int_0^{T}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)
-\times\vec{a}\right]}{\left(1-\vec{\beta}\cdot\hat{n}\right)^2} e^{-i\omega_{m}\left(t-\vec{z}\cdot\hat{n}/c\right)}dt \right|^2, }\label{int3}
+\times\vec{a}\right]}{\left(1-\vec{\beta}\cdot\hat{n}\right)^2} e^{-i\omega_{m}\left(t-\vec{z}\cdot\hat{n}/c\right)}dt \right|^2.}\label{int3}
 \end{equation}
-que es la expresión análoga a (\ref{dEdOdo}).
 
-Es posible reescribir (\ref{int3}) en forma más simple, usando la identidad
+Es posible simplificar aún más esta expresión usando la identidad
 \begin{equation}
 \frac{d}{dt}\left[ \frac{\hat{n}\times\left(  \hat{n}\times\vec{\beta}\right)
 }{\left(  1-\vec{\beta}\cdot\hat{n}\right)  }\right] \equiv\frac{1}{c}
@@ -1190,30 +1125,12 @@ periodo $T$:
 e^{-i\omega_{m}\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)}dt\right|^2.}
 \label{promradperiódico}
 \end{equation}
-Como consecuencia, encontramos que $\left\langle {dP_{m}}/{d\Omega}\right\rangle=0$ para $m=0$, por lo que \eqref{dPdOsumm} puede entonces ser reescrito como
+Como consecuencia, encontramos que $\left\langle {dP_{m}}/{d\Omega}\right\rangle=0$ para $m=0$, por lo que \eqref{dPdOsumm} puede entonces ser reescrita como
 \begin{equation}
 \boxed{\left\langle \frac{dP}{d\Omega}\right\rangle (\hat{n}) = \sum_{m=1}^\infty\left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}).}
 \end{equation}
 
-Note además que es posible usar una expresión análoga a (\ref{promradperiódico}) para el caso del espectro continuo, bajo ciertas condiciones adicionales. Usando la identidad (\ref{iddt1}) tenemos que
-\begin{align}
-\frac{1}{c}\int_{-\infty}^{+\infty}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right) \times\vec{a}\right]}{\left(
-1-\vec{\beta}\cdot\hat{n}\right)^2}e^{-i\omega\left(  t
--\frac{1}{c}\vec{z}\cdot\hat{n}\right)}dt
-&= \left.\frac{\hat{n}\times\left(  \hat{n}\times\vec{\beta}\right)
-}{\left(1-\vec{\beta}\cdot\hat{n}\right)}
-e^{-i\omega\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)}\right|^{+\infty}_{-\infty}
-\nonumber\\
-&\quad +i\omega \int_{-\infty}^{+\infty}\hat{n}\times\left(\hat{n}\times\vec{\beta}\right)
-e^{-i\omega\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)  }dt.
-\end{align}
-En general, el primer término del lado derecho de esta expresión puede no ser nulo. Sin embargo, \textit{si la velocidad de la carga tiende a cero para} $t\to\pm\infty$, entonces podemos escribir
-\begin{equation}
-\boxed{\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)
-=\frac{q^2\mu\omega^2}{16\pi^3c}\left|\int_{-\infty}^{+\infty}
-\left(  \vec{v}\times\hat{n}\right)
-e^{-i\omega\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)  }dt\right|^2 .} \label{dEdOdo2}
-\end{equation}
+
 
 \subsubsection{Ejemplo: Radiación de una carga en M.A.S.}
 
@@ -1361,6 +1278,88 @@ que muestra que la potencia radiada decrece en un factor del orden $\beta^2$ ent
 
 Note la consistencia de este resultado con la fórmula de Larmor (\ref{R-larmor}), ya que en este caso $\left\langle\vec{a}^2\right\rangle=\left\langle A^2\omega_1^4\cos^2(\omega_1t)\right\rangle=A^2\omega_1^4/2$.
 
+
+\subsection{Caso no periódico}
+
+Si la fuente (por ejemplo, la trayectoria $\vec{z}(t)$ en el caso de una carga puntual) no es periódica, los campos tampoco lo serán y en este caso la descomposición en oscilaciones armónicas del campo elécrtico toma la forma de una integral (o transformada) de Fourier $\tilde{\vec{E}}(\vec{x},\omega)$ del vector $\vec{E}(\vec{x},t)$, de modo que
+\begin{equation}
+ \vec{E}(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\tilde{\vec{E}}(\vec{x},\omega) e^{i\omega t}d\omega ,
+\end{equation}
+donde
+\begin{equation}
+\tilde{\vec{E}}(\vec{x},\omega) :=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vec{E}(\vec{x},t) e^{-i\omega t}dt .  \label{dp3}
+\end{equation}
+
+El hecho que $\vec{E}(\vec{x},t)$ es real se traduce en que 
+$\tilde{\vec{E}}^*(\vec{x},\omega)=\tilde{\vec{E}}(\vec{x},-\omega)$. En términos de la transformada de $\vec{E}(\vec{x},t)$, la energía total radiada por unidad de ángulo sólido puede escribirse como:
+\begin{eqnarray}
+\frac{dE}{d\Omega}(\hat{n}) &=&\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}r^2\left|\vec{E}(\vec{x},t)
+\right|^2dt \label{dEdO0}\\
+&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\vec{E}(\vec{x},t)\cdot \vec{E}^*(\vec{x},t)dt\\
+&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{
+\infty}r^2\tilde{\vec{E}}(\vec{x},\omega) \cdot e^{i\omega t}\tilde{\vec{E}}^\ast(\vec{x},\omega')e^{-i\omega' t}\,d\omega d\omega' dt\\
+&=&\frac{1}{2\pi}\frac{1}{\mu c}\lim_{r\to\infty} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot \tilde{\vec{E}}^*(\vec{x},\omega')\int_{-\infty}^{\infty} e^{i(\omega-\omega')t}\,dtd\omega d\omega' .
+\end{eqnarray}
+
+Recordando que
+\begin{equation}
+\frac{1}{2\pi}\int_{-\infty}^{\infty }e^{i\left( k-k' \right)  x}dx=
+\delta\left(  k-k' \right),
+\end{equation}
+llegamos a 
+\begin{eqnarray}
+\frac{dE}{d\Omega}(\hat{n})
+&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} r^2\tilde{\vec{E}}(\vec{x},\omega)\cdot\tilde{\vec{E}}^\ast(\vec{x},\omega') \delta (\omega-\omega')  d\omega d\omega'\\
+&=&\frac{1}{\mu c}\lim_{r\to\infty}\int_{-\infty}^{\infty}r^2\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2 d\omega. \label{dedO1}
+\end{eqnarray}
+
+Note que la igualdad entre las expresiones (\ref{dEdO0}) y (\ref{dedO1}) no es más que el resultado usualmente conocido como \textit{teorema de Parceval}.
+
+Definimos la\textit{ energía radiada por unidad de ángulo sólido y por intervalo de frecuencia (angular)} ${d^2E}/{d\Omega d\omega}$, de modo que
+\begin{equation}
+\frac{dE}{d\Omega}(\hat{n})=\int_0^{\infty}\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)\,d\omega .
+\end{equation}
+Con esta definición y el resultado (\ref{dedO1}), encontramos
+\begin{equation}
+\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)=\frac{1}{\mu c}\lim_{r\to\infty}r^2\left[\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2 +\left|\tilde{\vec{E}}(\vec{x},-\omega)\right|^2\right]
+=\frac{2}{\mu c}\lim_{r\to\infty}r^2\left|\tilde{\vec{E}}(\vec{x},\omega)\right|^2.
+\end{equation}
+En el caso de la radiación de una carga acelerada, tenemos
+\begin{equation}
+\tilde{\vec{E}}_{\rm{rad}}(\vec{x},\omega)= \frac{1}{\sqrt{2\pi}}\frac{q\mu}{4\pi}\int_{-\infty}^{\infty}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)
+^3}\right|_{\rm ret}e^{-i\omega t}dt .
+\end{equation}
+
+Ahora usamos la misma técnica usada en el caso periódico, consistente en cambiar variable de integración desde $t$ hasta $t'=t_{\rm ret}$. De forma análoga, encontramos entonces que la energía total irradiada por unidad de ángulo sólido e intervalo de frecuencia es (en el límite $r\to\infty$)
+\begin{equation}\marginnote{Distribución de energía en frecuencia}
+\boxed{\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)
+=\frac{q^2\mu}{16\pi^3c}\left|\int_{-\infty}^{\infty
+}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
+\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
+e^{-i\omega (t-\vec{z}(t)\cdot\hat{n}/c)} dt\right|^2 .} \label{dEdOdo}
+\end{equation}
+En general, \textit{una carga en un movimiento arbitrario irradiará en un continuo de frecuencias}. Esto se refleja en que ${d^2E}/{d\Omega d\omega}$ será una cierta función continua de la frecuencia $\omega$ de emisión.
+
+Note además que es posible usar una expresión análoga a (\ref{promradperiódico}) para el caso del espectro continuo, bajo ciertas condiciones adicionales. Usando la identidad (\ref{iddt1}) tenemos que
+\begin{align}
+\frac{1}{c}\int_{-\infty}^{+\infty}\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right) \times\vec{a}\right]}{\left(
+1-\vec{\beta}\cdot\hat{n}\right)^2}e^{-i\omega\left(  t
+-\frac{1}{c}\vec{z}\cdot\hat{n}\right)}dt
+&= \left.\frac{\hat{n}\times\left(  \hat{n}\times\vec{\beta}\right)
+}{\left(1-\vec{\beta}\cdot\hat{n}\right)}
+e^{-i\omega\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)}\right|^{+\infty}_{-\infty}
+\nonumber\\
+&\quad +i\omega \int_{-\infty}^{+\infty}\hat{n}\times\left(\hat{n}\times\vec{\beta}\right)
+e^{-i\omega\left(t-\frac{1}{c}\vec{z}\cdot\hat{n}\right)  }dt. \label{intpartes2}
+\end{align}
+En general, el primer término del lado derecho de esta expresión puede no ser nulo. Sin embargo, \textit{si la velocidad de la carga tiende a cero para} $t\to\pm\infty$, entonces el primer término del lado derecho de \eqref{intpartes2} se anula y podemos escribir
+\begin{equation}
+\boxed{\frac{d^2E}{d\Omega d\omega}(\hat{n},\omega)
+=\frac{q^2\mu\omega^2}{16\pi^3c}\left|\int_{-\infty}^{+\infty}
+\left(  \vec{v}\times\hat{n}\right)
+e^{-i\omega\left(t-\frac{\vec{z}\cdot\hat{n}}{c}\right)  }dt\right|^2 .} \label{dEdOdo2} \marginnote{Si $\vec{v}\to\vec{0}$ para $t\to\pm\infty$}
+\end{equation}
 
 \section{Dipolo de Hertz (dipolo eléctrico ideal)}
 
