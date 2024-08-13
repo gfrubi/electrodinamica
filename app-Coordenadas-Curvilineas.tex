@@ -1,7 +1,11 @@
 \chapter{Coordenadas curvilíneas}
 
 \section{Coordenadas Cartesianas}
-\noindent Vector
+\noindent Posición:
+\begin{eqnarray}
+\vec{x} &=& x {\hat x} + y {\hat y} + z {\hat z}
+\end{eqnarray}
+Vector:
 \begin{eqnarray}
 \vec{A}
 &=& A_x{\hat x} + A_y {\hat y} + A_z {\hat z}
@@ -46,8 +50,16 @@ Elemento de volumen:
  dV &=& dx\,dy\,dz
 \end{eqnarray}
 
+
 \section{Coordenadas Cilíndricas}
-Definición:
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.6]{fig/Coordenadas-Cilindricas.pdf}
+    \caption{Coordenadas cilíndricas $(\rho,\varphi, z)$ y sus vectores unitarios.}
+    \label{fig:Coordenadas-Cilindricas}
+\end{figure}
+
+\noindent Definición:
 \begin{equation}
     x  =  \rho\cos\varphi , \qquad
     y  =  \rho\sin\varphi , \qquad
@@ -57,6 +69,23 @@ Definición:
     \rho  =  \sqrt{x^2 + y^2} , \qquad
     \varphi  = \arctan{(y/x)}, \qquad
      z=  z
+\end{equation}
+Vectores unitarios:
+\begin{align}
+    \hat{\rho} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial \rho}}}\frac{\partial \Vec{x}}{\partial \rho} =
+    				 \cos \varphi \,\hat{x} + \sin \varphi \,\hat{y}, \\
+    \hat{\varphi} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial \varphi}}}\frac{\partial \Vec{x}}{\partial \varphi} = 
+    				- \sin \varphi \,\hat{x} + \cos \varphi \, \hat{y},  \\
+    \hat{z} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial z}}}\frac{\partial \Vec{x}}{\partial z} = 
+    			\hat{z} .
+\end{align}
+\begin{align}
+    \hat{x} &= \cos \varphi \,\hat{\rho} - \sin \varphi \, \hat{\varphi}, \\
+    \hat{y} &= \sin\varphi \, \hat{\rho} + \cos \varphi \,\hat{\varphi}.
+\end{align}
+Posición:
+\begin{equation}
+\vec{x} = \rho \hat{\rho} + z \hat{z}.
 \end{equation}
 Vector
 \begin{equation}
@@ -110,9 +139,20 @@ Elemento de volumen:
  dV
  &=& \rho\, d\rho\, d\varphi\, dz
 \end{eqnarray}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{fig/volumen-cilindricas.pdf}
+    \caption{Elementos infinitesimales en coordenadas cilíndricas. Adaptado a partir de versión de A. Tsagkaropoulos, disponible en \href{https://tikz.net/cylindrical_volume/}{esta página}.}
+    \label{fig:Vol-Cilindricas}
+\end{figure}
 \section{Coordenadas Esféricas}
-Definición:
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.5]{fig/Coordenadas-Esfericas.pdf}
+    \caption{Coordenadas esféricas $(r,\theta,\varphi)$ en conjunto con sus vectores unitarios.}
+    \label{fig:Coordenadas-Esfericas}
+\end{figure}
+\noindent Definición:
 \begin{equation}
     x  =  r\sin\theta\cos\varphi, \qquad
     y  =  r\sin\theta\sin\varphi , \qquad
@@ -123,7 +163,25 @@ Definición:
     \theta  =  \arccos(\frac{z}{r}) = \arctan{\frac{\sqrt{x^2+y^2}}{z}}, \quad
     \varphi  =  \arctan{(y/x)}
 \end{equation}
-Vector
+Vectores unitarios:
+\begin{align}
+    \hat{r} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial r}}}\frac{\partial \Vec{x}}{\partial r} 
+    			\sin \theta \cos \varphi \,\hat{x} + \sin \theta \sin \varphi \,\hat{y} + \cos \theta \,\hat{z}, \label{rxyz} \\
+    \hat{\theta} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial \theta}}}\frac{\partial \Vec{x}}{\partial \theta} 
+    			\cos \theta \cos \varphi \,\hat{x} + \cos \theta \sin \varphi \,\hat{y} - \sin \theta   \,\hat{z},  \\
+    \hat{\varphi} &= %\frac{1}{\norm{\frac{\partial \Vec{x}}{\partial \varphi}}}\frac{\partial \Vec{x}}{\partial \varphi} 
+    			- \sin \varphi \,\hat{x} + \cos \varphi \,\hat{y} . \label{varphixyz}
+\end{align}
+\begin{align}
+    \hat{x} &= \sin \theta \cos \varphi \,\hat{r} + \cos \theta \cos \varphi \,\hat{\theta} - \sin \varphi \,\hat{\varphi},\\
+    \hat{y} &= \sin \theta \sin\varphi \,\hat{r} + \cos \theta \sin \varphi \,\hat{\theta} + \cos \varphi \,\hat{\varphi}, \\
+    \hat{z} &= \cos \theta \,\hat{r} - \sin \theta \,\hat{\theta}.
+\end{align}
+Posición:
+\begin{equation}
+\vec{x} = r \hat{r}
+\end{equation}
+Vector:
 \begin{eqnarray}
 \vec{A}
 &=& A_r {\hat r} + A_\theta {\hat \theta} +
@@ -180,3 +238,9 @@ Elemento de volumen:
  dV
 &=& r^2\sin\theta \,dr\,d\theta\, d\varphi
 \end{eqnarray}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{fig/volumen-esfericas.pdf}
+    \caption{Elementos infinitesimales en coordenadas esféricas. Adaptado a partir de versión de A. Tsagkaropoulos, disponible en \href{https://tikz.net/spherical_volume/}{esta página}.}
+    \label{fig:Vol-Esfericas}
+\end{figure}
