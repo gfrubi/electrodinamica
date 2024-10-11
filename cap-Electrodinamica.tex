@@ -424,6 +424,102 @@ Poynting, $\vec{\pi}=\varepsilon\mu\,\vec{S}$, de modo que la dirección del
 momentum de campo coincide con la del flujo de energía de
 éste.
 
+\section{Conservación del momentum angular*}\label{sec:momentum_angular}
+Análogamante al caso del momentum lineal, buscamos una ecuación de balance/conservación del momento angular. El término análogo a la (densidad de) fuerza de Lorentz $f_i$ y que es determina (si no hay otras fuerzas involucradas) el cambio del momentum lineal de las cargas, es ahora la densidad de torque (torque que el campo realiza sobre las cargas, por unidad de volumen), ya está relacionado (si no hay torques no-electromagnéticos actuando) con el cambio del momento angular de las cargas.
+
+del
+campo electromagnetico en un medio lineal, isotropo y homogeneo, como
+\begin{equation}
+l_{i}^{\rm em}=\epsilon _{ijk}x_{j}\pi _{k}
+\end{equation}%
+donde $\pi _{j}$ es la densidad de momentum lineal del campo. Determine la
+densidad de flujo de momentum angular y la ecuacion de balance que estas
+cantidades satisfacen.
+
+
+Recordamos que el momento angular (con respecto al origen del sistema de coordenadas) de una partícula de momentum $\vec{p}$ ubicada en la posición $\vec{x}$ es
+\begin{equation}
+\vec{L}=\vec{x}\times \vec{p}.
+\end{equation}
+Su derivada está determinada por el torque actuando sobre la partícula, ya que
+\begin{equation}
+\frac{d\vec{L}}{dt}=\vec{x}\times \frac{d\vec{p}}{dt}=\vec{x}\times \vec{F},
+\end{equation}
+donde $\vec{F}$ es la fuerza neta sobre la partícula. Para un sistema con una distribución continua de materia, el momento angular neto de la materia en un volumen $V$ es dado por 
+\begin{equation}
+\vec{L}_{\rm mec}=\int_V\vec{x}\times d\vec{p},
+\end{equation}
+y, para materia no-relativista (con velocidades mucho menores que la de la luz), $d\vec{p}=\rho_{\rm m}\vec{v}\,dV$, donde $\rho_{\rm m}(\vec{x},t)$ es la densidad (volumétrica) de masa y $\vec{v}(\vec{x},t)$ es el campo de velocidades. En cualquier caso, podemos escribir $d\vec{p}=\vec{\pi}_{\rm mec}\,dV$ donde $\vec{\pi}_{\rm mec}(\vec{x},t)$ es la densidad (volumétrica) de momentum lineal de la materia. Su derivada temporal es entonces dada por
+\begin{equation}
+\frac{d\vec{L}_{\rm mec}}{dt} = \int_V\vec{x}\times \frac{\partial\vec{\pi}_{\rm mec}}{\partial t}dV = \int_V\vec{x}\times \vec{f}\,dV, = \int_V\vec{\tau}\,dV,
+\end{equation}
+donde $ \vec{f}=\partial\vec{\pi}_{\rm mec}/{\partial t}$ es la densidad de fuerza. La cantidad $\vec{\tau} := \vec{x}\times \vec{f}$ es la densidad de torque (e.d., torque por unidad de volumen respecto al origen del sistema coordenado).
+
+Usaremos la ley de balance de momentum lineal \eqref{lcm} para escribir la densidad de torque en función de las densidades de momentum lineal y su flujo:
+\begin{align}
+\tau_i &= \epsilon _{ijk}x_{j}f_{k} \\
+&=-\epsilon _{ijk}x_{j}\left( \partial _{m}T_{km}+\frac{\partial \pi _{k}}{%
+\partial t}\right)  \\
+&=-\epsilon _{ijk}x_{j}\left( \partial _{m}T_{km}\right) -\epsilon
+_{ijk}x_{j}\left( \partial _{t}\pi _{k}\right) 
+\end{align}%
+Completando derivadas, podemos escribir:
+\begin{equation}
+x_{j}\left( \partial _{m}T_{km}\right)  =\partial _{m}\left(
+x_{j}T_{km}\right) -(\partial _{m}x_{j})T_{km} = \partial _{m}\left(
+x_{j}T_{km}\right) -T_{kj}
+\end{equation}
+\begin{equation}
+x_{j}\left( \partial _{t}\pi _{k}\right)  =\partial _{t}\left( x_{j}\pi
+_{k}\right) -(\partial _{t}x_{j})\pi _{k} = \partial _{t}\left( x_{j}\pi
+_{k}\right).
+\end{equation}
+Luego,%
+\begin{align}
+\tau_i &= -\epsilon _{ijk}\partial _{m}\left(
+x_{j}T_{km}\right) +\epsilon _{ijk}T_{kj}-\epsilon
+_{ijk}\partial _{t}\left( x_{j}\pi _{k}\right)   \notag \\
+&= -\partial _{m}\left( \epsilon _{ijk}x_{j}T_{km}\right) +\epsilon
+_{ijk}T_{kj}-\partial _{t}\left( \epsilon _{ijk}x_{j}\pi _{k}\right) 
+\end{align}
+En el caso de un medio linear e isótropo el tensor de tensiones $T_{ij}$ es simétrico, y por lo tanto el término $\epsilon_{ijk}T_{kj}$ se anula. Entonces,
+\begin{equation}
+\tau_i =-\partial _{m}\left( \epsilon
+_{ijk}x_{j}T_{km}\right) -\partial _{t}\left( \epsilon _{ijk}x_{j}\pi
+_{k}\right) ,
+\end{equation}%
+es decir,
+\begin{equation}
+\partial _{t}\left( \epsilon _{ijk}x_{j}\pi_{k}\right) + \partial _{m}\left( \epsilon_{ijk}x_{j}T_{km}\right)+ \tau_i =0,
+\end{equation}%
+que es la ecuación de balance local de momento angular, similar a \eqref{lcm}. Interpretamos entonces a 
+\begin{equation}
+l_{i}^{\rm em}:=\epsilon _{ijk}x_{j}\pi_{k}
+\end{equation}
+o, en notación vectorial,
+\begin{equation}
+\vec{l}_{\rm em}:=\vec{x}\times\vec{\pi} =\vec{x}\times(\vec{D}\times\vec{B})
+\end{equation}
+como la \textbf{densidad (volumétrica) de momento angular del campo}, y a
+\begin{equation}
+\Xi_{im}^{\rm em}:=\epsilon _{ijk}x_{j}T_{km}
+\end{equation}
+como \textbf{la densidad de flujo del momentum angular}, de modo que
+\begin{equation}
+\partial _{t}l_{i}^{\rm em} + \partial _{j}\Xi_{ij}^{\rm em} + \tau_i =0.
+\end{equation}
+La versión integral del balance de momento angular en el sistema, suponiendo ausencia de torques no-electromagnéticos es entonces dada por
+\begin{equation}
+\frac{d}{dt}\left(L_i^{\rm mec,V}+L_i^{\rm em,V}\right) + \oint_{\partial V}\Xi_{ij}^{\rm em}\,dS_j = 0,
+\end{equation}
+donde 
+\begin{equation}
+L_i^{\rm em,V} := \int_V l_{i}^{\rm em}\,dV= \int_V \epsilon _{ijk}x_{j}\pi_{k}\,dV
+\end{equation}
+es el momento angular total del campo en el volumen $V$.
+
+% Ejemplo 8.4 de Griffiths. Ver pag. 358-361
+
 \section{Ondas Electromagnéticas}
 
 \subsection{Campos electromagnéticos y ecuación de la onda}
@@ -470,6 +566,15 @@ Consideremos una solución de \textbf{onda plana monocromática polarizada linea
 \begin{equation}
 E_i=E_i^0 \cos\left(\vec{k}\cdot\vec{x}-\omega t+\varphi_0\right)
 .\label{ecuc-max-solu1}%
+\end{equation}
+También podemos usar la forma compleja
+\begin{equation}
+\vec{E}=\Re\left[\vec{E}_{\rm c} e^{i(\vec{k}\cdot\vec{x}-\omega t)}\right],
+\label{opmc}%
+\end{equation}
+donde la amplitud compleja $\vec{E}_{\rm c}$ es dada, en términos de la amplitud real $\vec{E}^0$ y la fase $\varphi_0$, por
+\begin{equation}
+\vec{E}_{\rm c} = \vec{E}^0 e^{i\varphi_0}.
 \end{equation}
 Reemplazando (\ref{ecuc-max-solu1}) en (\ref{econdaE}) encontramos que%
 \begin{equation}
@@ -566,10 +671,113 @@ Para la onda periódica considerada, podemos calcular la densidad de energía pr
 \label{fig:EMS}
 \end{figure}
 
-\subsection{Ondas electromagnéticas en la materia}
-\subsection{índices de reflexión y refracción}
-\subsection{Guías de onda y cavidades resonantes}
+\subsection{Polarización elíptica y polarización circular*}
+Consideremos por simplicidad el caso en que la onda plana se propaga en la dirección $z$, es decir, $\vec{k}=k\hat{z}$, y la superposición de dos ondas planas monocromáticas con polarización lineal: la primera a lo largo del eje $x$ y la segunda paralela a al eje $y$. Esto es:
+\begin{equation}
+\vec{E}_1=\Re\left[E_{1\rm c} e^{i(kz-\omega t)}\right]\hat{x},
+\end{equation}
+\begin{equation}
+\vec{E}_2=\Re\left[E_{2\rm c} e^{i(kz-\omega t)}\right]\hat{y}.
+\end{equation}
+Las amplitudes complejas $E_{1\rm c}=E_{1}^0e^{i\varphi_1}$ y $E_{2\rm c}=E_{2}^0e^{i\varphi_2}$ tienen entonces la información de las amplitudes y fases de cada onda componente. Entonces
+\begin{align}
+\vec{E} &= \vec{E}_1+\vec{E}_2 \\
+&= \Re\left[\left(E_{1\rm c}\hat{x}+E_{2\rm c}\hat{y}\right) e^{i(kz-\omega t)}\right] \label{E12-2} \\
+&= E_{1}^0\cos(kz-\omega t+\varphi_1)\hat{x} + E_{2}^0\cos(kz-\omega t+\varphi_2)\hat{y}
+\end{align}
 
+\subsubsection{Ondas en fase}
+ Si $\varphi_1=\varphi_2$ entonces
+\begin{equation}
+\vec{E} = (E_{1}^0\hat{x}+E_{2}^0\hat{y})\cos(kz-\omega t+\varphi_1),
+\end{equation}
+que es una onda con polarización lineal con amplitud $\sqrt{(E_{1}^0)^2+(E_{2}^0)^2}$ y ángulo $\arctan(E_{2}^0/E_{1}^0)$ respecto al eje $x$.
+
+\subsubsection{Ondas de igual amplitud y diferencia de fase de $\pi/2$}
+ Si $\varphi_2=\varphi_1\pm\pi/2$ y $E_{2}^0=E_{1}^0$ entonces
+\begin{align}
+\vec{E} &= \Re\left[E_{1\rm c}\left(\hat{x}+ e^{\pm i\pi/2}\hat{y}\right) e^{i(kz-\omega t)}\right] \\
+&= \Re\left[E_{1\rm c}\left(\hat{x}\pm i\hat{y}\right) e^{i(kz-\omega t)}\right]\\
+&= E_{1}^0\left[\cos(kz-\omega t+\varphi_1)\hat{x} \mp \sin(kz-\omega t+\varphi_1)\hat{y}\right].
+\end{align}
+Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido horario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular derecha}. En el otro caso, el campo girará en sentido antihorario y diremos que la onda tiene \textbf{polarización circular izquierda}.
+
+Como vemos, el uso de amplitudes complejas es bastante útil en este caso, ya que permite escribir expresiones más compactas. Podemos introducir una nueva base de amplitudes completas $\hat\epsilon_\pm$, definidas por
+\begin{equation}
+\hat\epsilon_\pm := \frac{1}{\sqrt{2}}(\hat{x}\pm i\hat{y}).
+\end{equation}
+La relación inversa es dada entonces por
+\begin{equation}\label{xyeppm}
+\hat{x}=\frac{1}{\sqrt{2}}(\hat\epsilon_+ + \hat\epsilon_-), \qquad \hat{y}=\frac{-i}{\sqrt{2}}(\hat\epsilon_+ - \hat\epsilon_-).
+\end{equation}
+
+Puede comprobar que los vectores $\hat\epsilon_\pm$ satisfacen
+\begin{equation}
+\hat\epsilon_\pm^*\cdot\hat\epsilon_\pm = 1, \qquad
+\hat\epsilon_\pm^*\cdot\hat\epsilon_\mp = 0, \qquad 
+\hat\epsilon_\pm^*\cdot\vec{k} = 0.
+\end{equation}
+Usando \eqref{xyeppm} podemos rescribir una superposición general \eqref{E12-2} en términos de la base de vectores de polarización circular, obteniendo
+\begin{equation}
+\vec{E} = \Re\left[\left(E_{+\rm c}\hat\epsilon_+ + E_{-\rm c}\hat\epsilon_-\right)e^{i(kz-\omega t)}\right],
+\end{equation}
+con
+\begin{equation}
+E_{\pm\rm c} = \frac{1}{\sqrt{2}}\left(E_{1\rm c}\mp iE_{2\rm c}\right)
+\end{equation}
+
+
+\subsection{Superposición general de ondas planas monocromáticas*}
+Si suponemos que la energía de una configuración de campo electromagnético dado es finita, entonces (cada una de las componentes de) $\vec{E}(\vec{x},t)$ debe ser una función de clase $L^2$, es decir, cuadrado-integrable. Entonces la transformada de Fourier respecto a cada una de las coordenadas espaciales, y sus respectivas inversas, estarán bien definidas y podremos escribir
+\begin{equation}
+\vec{E}(\vec{x},t)=\int\vec{E}_k(\vec{x},t)e^{i\vec{k}\cdot\vec{x}}\,d^3k,
+\end{equation}
+con
+\begin{equation}
+\vec{E}_k(\vec{x},t)=\frac{1}{(2\pi)^3}\int\vec{E}(\vec{x},t)e^{-i\vec{k}\cdot\vec{x}}\,d^3x,
+\end{equation}
+y similar para $\vec{B}_k(\vec{x},t)$.
+
+En regiones libres de fuentes, $\vec{E}_k(\vec{x},t)$ satisface la ec. de la onda \eqref{econdaE}, lo que requiere que 
+\begin{equation}
+\int\left(\frac{1}{c^2}\ddot{\vec{E}}_k(\vec{k},t)-(i\vec{k})^2\vec{E}_k(\vec{k},t)\right)e^{i\vec{k}\cdot\vec{x}}\,d^3k=0
+\end{equation}
+y, por lo tanto,
+\begin{equation}
+\ddot{\vec{E}}_k(\vec{k},t)=\omega^2\vec{E}_k(\vec{k},t), \qquad \omega:=c|\vec{k}|.
+\end{equation}
+La solución de esta ecuación (oscilador armónico) es entonces de la forma
+\begin{equation}
+\vec{E}_k(\vec{k},t) = \vec{E}_{k+}(\vec{k})e^{i\omega t}+\vec{E}_{k-}(\vec{k})e^{-i\omega t}.
+\end{equation}
+Además, la condición que el campo $\vec{E}(\vec{x},t)$ sea real implica
+\begin{equation}
+\vec{E}^*_{k+}(\vec{k}) = \vec{E}_{k-}(\vec{-k}),
+\end{equation}
+lo que reduce el número de funciones (de $\vec{k}$) arbitrarias. Introduciendo la notación $\vec{E}_{k-}(\vec{k}) =: \vec{E}_{k}(\vec{k})/2$ podemos entonces escribir
+\begin{equation}
+\vec{E}_{k+}(\vec{k}) = \frac{1}{2}\vec{E}^*_{k}(-\vec{k}),   \qquad \vec{E}_{k-}(\vec{k})= \frac{1}{2}\vec{E}_{k}(\vec{k}),
+\end{equation}
+y entonces
+\begin{align}
+\vec{E}(\vec{x},t) &= \frac{1}{2}\int\vec{E}^*_{k}(-\vec{k})e^{i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
+&= \frac{1}{2}\int\vec{E}^*_{k}(\vec{k})e^{i\omega t}e^{-i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
+&= \Re\left[\int\vec{E}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right].
+\end{align}
+Esta forma es similar a aquella de una onda plana monocromática con polarización lineal. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$ y $\vec{k}+d\vec{k}$ ($\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
+
+Si expresamos el campo magnético de forma similar, e.d.,
+\begin{equation}
+\vec{B}(\vec{x},t) = \Re\left[\int\vec{B}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right],
+\end{equation}
+entonces las ecuaciones de Maxwell requieren que
+\begin{align}
+\vec{k}\cdot\vec{E}_k(\vec{k})=0, \\
+\vec{k}\cdot\vec{B}_k(\vec{k})=0, \\
+\vec{k}\times\vec{E}_k(\vec{k})=\omega\vec{B}_k(\vec{k}) , \\
+\vec{k}\times\vec{B}_k(\vec{k})=-\frac{\omega}{c^2}\vec{E}_k(\vec{k}),
+\end{align}
+que son las mismas relaciones obtenidas para las amplitudes (complejas) de una onda plana monocromática, pero válidas esta vez para cada modo con vector de onda $\vec{k}$.
 
 \section{Potenciales y transformaciones de gauge}
 
