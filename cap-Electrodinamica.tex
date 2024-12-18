@@ -947,3 +947,184 @@ es decir, que satisfaga la ecuación de onda inhomogénea:
 La existencia de soluciones de esta ecuación está garantizada. Análogamente al caso del gauge de Coulomb, la función buscada no es única, sino que existe una libertad remanente para realizar transformaciones de gauge ``dentro del gauge de Lorenz'', generadas por funciones $\tilde\chi$ que satisfagan la ecuación de onda, $\Box\tilde\chi=0$. 
 
 El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
+
+\section{Guías de onda}
+Supondremos que la guía de onda es un conductor perfecto, de modo que $\vec{E}=\vec{0}$ en el interior del conductor. De la ley de Faraday encontramos entonces que y $\partial_t\vec{B}=\vec{0}$. Si suponemos que el campo magnético inicial es nulo, entonces $\vec{B}=\vec{0}$ para todo tiempo posterior. Las condiciones de frontera en la pared interior son
+\begin{equation}\label{CdBGO}
+\vec{E}_\parallel=0, \qquad B_\perp=0
+\end{equation}
+o, equivalentemente, 
+\begin{equation}
+\vec{E}\times\hat{n}=\vec{0}, \qquad \vec{B}\cdot\hat{n}=0,
+\end{equation}
+donde $\hat{n}$ es el vector unitario normal a la superficie interna del conductor.
+Estas condiciones se derivan de las ecuaciones de Maxwell homogéneas: la primera a partir de la ley de Faraday y la segunda de la ley de divergencia nula del campo magnético.
+
+Nos interesan ondas monocromáticas que se propaguen a lo largo de la guía, que consideraremos a lo largo del eje $z$, con $-\infty<z<\infty$, por lo que $\vec{E}$ y $\vec{B}$ tienen la forma genérica:
+\begin{equation}
+\begin{aligned}
+    \vec{E}(x, y, z, t) &= \vec{E}_0(x, y)e^{i(kz-\omega t)}, \\
+    \vec{B}(x, y, z, t) &= \vec{B}_0(x, y)e^{i(kz-\omega t)}.
+\end{aligned}
+\label{eq:field_expressions}
+\end{equation}
+
+Como veremos, para satisfacer las condiciones de frontera y las ecuaciones de Maxwell, debemos incluir componentes longitudinales $E_z$ y $B_z$. 
+Las amplitudes complejas pueden expresarse como:
+\begin{equation}
+\vec{E}_0 = E^0_x \hat{x} + E^0_y \hat{y} + E^0_z \hat{z},
+\qquad
+\vec{B}_0 = B^0_x \hat{x} + B^0_y \hat{y} + B^0_z \hat{z}.
+\end{equation}
+
+Al reemplazar en las ecuaciones de Faraday y Ampère-Maxwell obtenemos
+
+
+\begin{equation}
+    \partial_y E^0_z - ik E^0_y = i\omega B^0_x, \quad
+    \partial_y B^0_z - ik B^0_y = -\frac{i\omega}{c^2} E^0_x,
+\end{equation}
+\begin{equation}
+    ik E^0_x - \partial_x E^0_z = i\omega B^0_y, \quad
+    ik B^0_x - \partial_x B^0_z = -\frac{i\omega}{c^2} E^0_y,
+\end{equation}
+\begin{equation}
+    \partial_x E^0_y - \partial_y E^0_x = i\omega B^0_z, \quad
+    \partial_x B^0_y - \partial_y B^0_x = -\frac{i\omega}{c^2} E^0_z.
+\end{equation}
+Podemos despejar las componentes transversales de los campos de estas ecuaciones, obteniendo expresiones en términos de las componentes longitudinales $E_z$ y $B_z$:
+\begin{align}
+    E^0_x &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_x E^0_z + \omega \partial_y B^0_z \right), \label{ExGO}\\
+    E^0_y &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_y E^0_z - \omega \partial_x B^0_z \right), \label{EyGO}\\
+    B^0_x &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_x B^0_z - \frac{\omega}{c^2} \partial_y E^0_z \right), \label{BxGO}\\
+    B^0_y &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_y B^0_z + \frac{\omega}{c^2} \partial_x E^0_z \right). \label{ByGO}
+\end{align}
+Por otro lado, como tanto $\vec{E}$ como $\vec{B}$ satisfacen la ecuación de la onda homogénea en el interior, tendremos que
+\begin{equation}
+\left[ \partial^2_x + \partial^2_y + \left( \frac{\omega^2}{c^2} - k^2 \right) \right] E^0_z = 0,
+\end{equation}
+\begin{equation}\label{EOBzGO}
+\left[ \partial^2_x + \partial^2_y + \left( \frac{\omega^2}{c^2} - k^2 \right) \right] B^0_z = 0.
+\end{equation}
+
+Si $E_z=0$ (campo eléctrico transversal a la dirección de propagación), pero $B_z\neq 0$, decimos que estamos en presencia de un \textbf{modo TE} (``transverse electric''). Similarmente, si $B_z=0$ y $E_z\neq 0$ decimos que el modo es tipo \textbf{TM} (``transverse magnetic''). Si $E_z=0$ y $B_z= 0$ tendremos un \textbf{modo TEM} (``transverse electromagnetic''). 
+
+
+\subsection{Guías de onda rectangulares}
+Supondremos que el ancho de la guía rectangular a lo largo de los ejes $x$ e $y$ son $a$ y $b$, respectivamente. Elegiremos el origen de las coordenadas de modo que $x\in [0,a]$, $y\in [0,b]$. Sin perder generalidad, consideraremos que $a>b$.
+
+\begin{center}
+\includegraphics[scale=0.4]{fig/fig-guia-onda-rectangular.png}
+\end{center}
+
+\subsubsection{Modos TE:} Analizaremos primero la propagación de modos TE. Entonces debemos encontrar soluciones no-triviales de la ecuación \eqref{EOBzGO} que satisfaga la condición de borde (\ref{CdBGO}b). Usando el método de separación de variables, buscamos soluciones separables de la forma
+\begin{equation}
+B_z^{0,\rm sep}(x, y) = X(x) Y(y),
+\end{equation}
+donde las funciones $X(x)$ e $Y(y)$ deben satisfacer
+\begin{equation}
+\frac{d^2 X}{dx^2} = -k_x^2\,X, \quad \frac{d^2 Y}{dy^2} = -k_y^2\,Y,
+\end{equation}
+con
+\begin{equation}\label{RelDispGOR}
+k_x^2 + k_y^2  +k^2 = \frac{\omega^2}{c^2}.
+\end{equation} 
+
+La condición de borde en $x=0$ y $x=a$ es $B_x=0$ y la relación \eqref{BxGO} implica entonces que necesariamente $(\partial_xB^0_z)=0$. Esto se traduce en las condiciones $X'(0)=X'(a)=0$. Con esto, las soluciones permitidas son de la forma
+\begin{equation}
+X(x) \propto \cos(k_x x), \qquad k_x = \frac{m\pi}{a}, \quad m=0,1,2,\dots.
+\end{equation}
+Similarmente, en los bordes $y=0$ e $y=b$ implican que $(\partial_yB_z)=0$, por lo que las funciones $Y$ deben satisfacer $Y'(0)=Y'(b)=0$. Por lo tanto
+\begin{equation}
+Y(y) \propto \cos(k_y y), \qquad k_y = \frac{n\pi}{a}, \quad n=0,1,2,\dots.
+\end{equation}
+Con esto, obtenemos que
+\begin{equation}
+B^0_z(x, y) = B_0 \cos\left(\frac{m \pi x}{a}\right) \cos\left(\frac{n \pi y}{b}\right).
+\end{equation}
+
+Reemplazando en las relaciones \eqref{ExGO}--\eqref{ByGO} obtenemos
+\begin{align}
+    E^0_x &= \frac{-i\omega}{\omega^2/c^2 - k^2}\left(\frac{n \pi}{b}\right)  B_0\cos\left(\frac{m \pi x}{a}\right) \sin\left(\frac{n \pi y}{b}\right), \label{ExGOTE}\\
+    E^0_y &= \frac{i\omega}{\omega^2/c^2 - k^2}\left(\frac{m \pi}{a}\right)  B_0\sin\left(\frac{m \pi x}{a}\right) \cos\left(\frac{n \pi y}{b}\right), \label{EyGOTE}\\
+    B^0_x &= -\frac{k}{\omega}E^0_y, \label{BxGOTE}\\
+    B^0_y &= \frac{k}{\omega}E^0_x. \label{ByGOTE}
+\end{align}
+%Podemos ver de aquí que el caso $n=m=0$ no suministra soluciones propagantes, sino 
+La relación de dispersión \eqref{RelDispGOR} permite entonces escribir
+\begin{equation}\label{kGOR}
+k = \sqrt{\frac{\omega^2}{c^2} - \left(\frac{m \pi}{a}\right)^2 - \left(\frac{n \pi}{b}\right)^2}.
+\end{equation}
+Cada modo TE posible es entonces caracterizado por los valores de $m$ y $n$, y son denotamos como modos TE$_{mn}$. A partir de \eqref{kGOR} vemos que existirá una frecuencia mínima (``cutoff frequency'') $\omega_{mn}$ para cada modo: existirán modos TE propagantes sólo si $\omega>\omega_{mn}$, con
+\begin{equation}
+\omega_{mn} = c \sqrt{\left(\frac{m \pi}{a}\right)^2 + \left(\frac{n \pi}{b}\right)^2}.
+\end{equation}
+Si $\omega<\omega_{mn}$ entonces $k$ sería imaginario y no tendríamos una onda propagante, sino un modo que se atenuará exponencialmente.
+
+La solución correspondiente a $m=n=0$ no es un modo propagante, puesto que en este caso $B_z=B_0=\text{cte.}$, $B_x=B_y=0$ y $\vec{E}=\vec{0}$, por lo que en este caso sólo tendremos un campo magnético constate y homogéneo a lo largo de la guía.
+
+ El modo con menor frecuencia de cutoff es el modo TE$_{10}$
+\begin{equation}
+\omega_{10} = \frac{c \pi}{a},
+\end{equation}
+que corresponde a una longitud de onda $\lambda_{10}=2\pi c/\omega_{10}=2a$.
+Si expresamos \eqref{kGOR} como
+\begin{equation}
+k = \sqrt{\omega^2 - \omega_{mn}^2},
+\end{equation}
+entonces podemos escribir la velocidades de fase y grupo de las ondas propagadas como
+\begin{equation}
+v_{\rm f} = \frac{\omega}{k} = \frac{c}{\sqrt{1 - \left(\frac{\omega_{mn}}{\omega}\right)^2}} > c,
+\end{equation}
+\begin{equation}
+v_{\rm g} = \frac{dk}{d\omega} = c \sqrt{1 - \left(\frac{\omega_{mn}}{\omega}\right)^2} < c.
+\end{equation}
+
+
+El modo TE fundamental, TE$_{10}$
+\begin{equation}
+E_x=E_z=0, \qquad E_y \propto \sin\left(\frac{\pi x}{a}\right) 
+\end{equation}
+
+Podemos reescribir $E_y$ como
+\begin{equation}
+E_y\propto e^{i(kz+\pi x/a-\omega t)}-e^{i(kz-\pi x/a-\omega t)}.
+\end{equation}
+Vemos de aquí que este modo puede considerarse como una superposición de dos ondas planas propagándose en diagonal dentro de la guía, con vectores de onda de la forma $\vec{k}_\pm = k\hat{z}\pm(\pi /a)\hat{x}$. El ángulo $\theta$ entre la normal 
+\begin{equation}
+\cos\theta=\pm\frac{\omega_{nm}}{\omega}
+\end{equation}
+
+
+\subsubsection{Modos TM:}  Si $B_z=0$ entonces buscamos soluciones no triviales para $E_z(x,y)$ que deben satisfacer las condiciones de borde $\vec{E}_z\times\hat{x}=\vec{0}$ en $x=0,a$ y $\vec{E}_z\times\hat{y}=\vec{0}$ en $y=0,b$. Las soluciones separables son entonces de la forma
+\begin{equation}
+E_z(x, y) = E_0 \sin\left(\frac{m \pi x}{a}\right) \sin\left(\frac{n \pi y}{b}\right)e^{i(kz-\omega t)}, \qquad n,m=1,2,3,\dots.
+\end{equation}
+La menor frecuencia permitida para los modos TM corresponde al caso en que $n=m=1$, es decir
+\begin{equation}
+\omega^{\rm TM}_{11}=c\sqrt{\frac{\pi^2}{a^2}+\frac{\pi^2}{b^2}}.
+\end{equation}
+
+\subsubsection{Modos TEM:} 
+
+Vemos de \eqref{ExGO}--\eqref{ByGO} que si $E_z=0$ y $B_z=0$ todo el campo se anula, de modo que no existen modos TEM no-triviales en una guía de onda rectangular.
+
+Es posible demostrar que en una guía de ondas completamente hueca, pero de sección transversal arbitratria, no pueden existir modos TEM. En efecto, si $E_z=0$ y $B_z= 0$ entonces la ecuación de Gauss implica que $\partial_xE_x+\partial_yE_y=0$ y la componente $z$ de la ecuación de Faraday implica $\partial_xE_y-\partial_yE_x=0$. Entonces podemos escribir $E_x=-\partial_x\phi$, $E_y=-\partial_y\phi$ con $\nabla^2\phi=0$. Sin embargo, las condiciones de borde (\ref{CdBGO}a) implican que $\phi$ debe ser constante en el borde, y entonces la única solución para $\phi$ es una constante, que implica $E_x=E_y=0$.
+
+\subsection{Guía de onda circular}
+
+Modos TE:
+\begin{equation}
+B_z^{0,mn}(\rho,\varphi)=B_0J_m(\frac{\beta_{mn}\rho}{R})e^{\pm im\varphi}.
+\end{equation}
+
+Modos TM:	
+\begin{equation}
+E_z^{0,mn}(\rho,\varphi)=E_0J_m(\frac{\alpha_{mn}\rho}{R})e^{\pm im\varphi}.
+\end{equation}
+Aquí $\alpha_{mn}$ y $\beta_{mn}$ denotan en $n$-ésimo cero de $J_m(x)$ y $J'_m(x)$, respectivamente.
+
+El modo TE$_{11}$ es el que posee la menor frecuencia de corte,
+\begin{equation}
+\omega_{11}=1.8412\frac{c}{R}.
+\end{equation}
