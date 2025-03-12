@@ -301,19 +301,21 @@ electromagnético}:
 \boxed{u:=\frac{1}{2}\left(\vec{D}\cdot\vec{E}+\vec{H}\cdot\vec{B}\right).}
 \end{equation}
 La versión integral de (\ref{econtEem}) es
-\begin{equation}
-\frac{d\ }{dt}\left(E_{\rm em}+E_{\rm mec}\right)+\oint_{\partial
-V}\vec{S}\cdot d\vec{S}=0 ,
+\begin{equation}\label{balanceEem}
+\boxed{\frac{d\ }{dt}\left(E^{\rm em}_V+E^{\rm mec}_V\right)+\oint_{\partial
+V}\vec{S}\cdot d\vec{S}=0 ,}
 \end{equation}
 donde
 \begin{equation}
-E_{\rm em}=\int_V u\,dV
+E^{\rm em}_V=\int_V u\,dV
 \end{equation}
 es la \textbf{energía electromagnética} y, de acuerdo al \textit{teorema de trabajo-energía} \textit{en el caso que no existan otras fuerzas que realicen trabajo sobre las cargas},
 \begin{equation}
- \frac{dE_{\rm mec}}{dt}=\int_V\vec{E}\cdot\vec{J}\,dV
+ \frac{d\ }{dt}E^{\rm mec}_V=\int_V\vec{E}\cdot\vec{J}\,dV
 \end{equation}
 es la variación de energía mecánica total de las cargas contenidas en $V$.
+
+De esta forma podemos interpretar \eqref{balanceEem} como una expresión de balance de energía. La energía total $E^{\rm em}_V+E^{\rm mec}_V$ en un volumen dado $V$, compuesta de la suma de la energía del campo electromagnético y de la energía mecánica de las cargas en $V$, es constante sólo si el flujo neto de energía transportada por el campo electromagnético en la superficie $\partial V$ es nula. Por otro lado si, por ejemplo, el campo electromagnético generado por las cargas en $V$ logra producir un flujo neto $\oint_{\partial V}\vec{S}\cdot d\vec{S}$ positivo a través de $\partial V$, entonces la energía total en $V$ necesariamente disminuirá.
 
 \section{Conservación del momentum lineal}\label{sec:momentum}
 La \textbf{fuerza total que el campo electromagnético ejerce sobre las cargas} contenidas en un volumen $V$ es dada por la fuerza de Lorentz:
@@ -564,21 +566,21 @@ campos eléctrico y magnético satisfacen la ecuación de onda inhomogénea}. Es
 \subsection{Ondas electromagnéticas planas monocromáticas}
 Consideremos una solución de \textbf{onda plana monocromática polarizada linealmente}:
 \begin{equation}
-E_i=E_i^0 \cos\left(\vec{k}\cdot\vec{x}-\omega t+\varphi_0\right)
-.\label{ecuc-max-solu1}%
+\vec{E}(\vec{x},t)=\vec{E}_0 \cos\left(\vec{k}\cdot\vec{x}-\omega t+\varphi_0\right),
+\label{ecuc-max-solu1}%
 \end{equation}
-También podemos usar la forma compleja
+donde $\vec{E}_0$, $\vec{k}$, $\omega$ y $\varphi_0$ son constantes. También podemos usar la forma compleja
 \begin{equation}
-\vec{E}=\Re\left[\vec{E}_{\rm c} e^{i(\vec{k}\cdot\vec{x}-\omega t)}\right],
+\vec{E}(\vec{x},t)=\Re\left[\vec{E}_{\rm c} e^{i(\vec{k}\cdot\vec{x}-\omega t)}\right],
 \label{opmc}%
 \end{equation}
-donde la amplitud compleja $\vec{E}_{\rm c}$ es dada, en términos de la amplitud real $\vec{E}^0$ y la fase $\varphi_0$, por
+donde la amplitud compleja $\vec{E}_{\rm c}$ es dada, en términos de la amplitud real $\vec{E}_0$ y la fase $\varphi_0$, por
 \begin{equation}
-\vec{E}_{\rm c} = \vec{E}^0 e^{i\varphi_0}.
+\vec{E}_{\rm c} = \vec{E}_0 e^{i\varphi_0}.
 \end{equation}
 Reemplazando (\ref{ecuc-max-solu1}) en (\ref{econdaE}) encontramos que%
 \begin{equation}
-\left(k^2-\varepsilon\mu\,\omega^2\right)  E_i=0, \qquad k:=|\vec{k}|,
+\left(k^2-\varepsilon\mu\,\omega^2\right)  \vec{E}=0, \qquad k:=|\vec{k}|,
 \end{equation}
 por lo que las soluciones no triviales requieren que se satisfaga la
 \textit{relación de dispersión}:
@@ -592,9 +594,9 @@ v_{\rm f}=\frac{1}{\sqrt{\varepsilon\mu}},
 \end{equation}
 que además, coincide con la \textbf{velocidad de grupo}, 
 \begin{equation}
-v_{\rm f}=v_{\rm g}=\frac{1}{\sqrt{\varepsilon\mu}}=:c,
+v_{\rm g} := \frac{\partial\omega}{\partial k}=\frac{1}{\sqrt{\varepsilon\mu}}=v_{\rm g}=:c.
 \end{equation}
-donde $v_{\rm g}:=\partial\omega/\partial k$. Esto implica que las ondas electromagnéticas se propagan de forma \textit{no-dispersiva} (en medios lineales, isótropos y homogéneos). 
+Esto implica que las ondas electromagnéticas se propagan de forma \textit{no-dispersiva} (en medios lineales, isótropos y homogéneos). 
 
 La \textbf{velocidad de la luz en el medio} ($c$) puede ser escrita en términos de la \textbf{velocidad de la luz en el vacío} ($c_0=1/\sqrt{\varepsilon_0\mu_0}$), la susceptibilidad eléctrica relativa ($\kappa$) y la permeabilidad magnética relativa ($\kappa_{\rm m}$), es decir, usando $\varepsilon=\kappa\varepsilon_0$ y $\mu=\kappa_{\rm m}\mu_0$:
 \begin{equation}
@@ -723,7 +725,7 @@ Usando \eqref{xyeppm} podemos rescribir una superposición general \eqref{E12-2}
 \end{equation}
 con
 \begin{equation}
-E_{\pm\rm c} = \frac{1}{\sqrt{2}}\left(E_{1\rm c}\mp iE_{2\rm c}\right)
+E_{\pm\rm c} = \frac{1}{\sqrt{2}}\left(E_{1\rm c}\mp iE_{2\rm c}\right).
 \end{equation}
 
 
