@@ -732,11 +732,11 @@ E_{\pm\rm c} = \frac{1}{\sqrt{2}}\left(E_{1\rm c}\mp iE_{2\rm c}\right).
 \subsection{Superposición general de ondas planas monocromáticas*}
 Si suponemos que la energía de una configuración de campo electromagnético dado es finita, entonces (cada una de las componentes de) $\vec{E}(\vec{x},t)$ debe ser una función de clase $L^2$, es decir, cuadrado-integrable. Entonces la transformada de Fourier respecto a cada una de las coordenadas espaciales, y sus respectivas inversas, estarán bien definidas y podremos escribir
 \begin{equation}
-\vec{E}(\vec{x},t)=\int\vec{E}_k(\vec{x},t)e^{i\vec{k}\cdot\vec{x}}\,d^3k,
+\vec{E}(\vec{x},t)=\int\vec{E}_k(\vec{k},t)e^{i\vec{k}\cdot\vec{x}}\,d^3k,
 \end{equation}
 con
 \begin{equation}
-\vec{E}_k(\vec{x},t)=\frac{1}{(2\pi)^3}\int\vec{E}(\vec{x},t)e^{-i\vec{k}\cdot\vec{x}}\,d^3x,
+\vec{E}_k(\vec{k},t)=\frac{1}{(2\pi)^3}\int\vec{E}(\vec{x},t)e^{-i\vec{k}\cdot\vec{x}}\,d^3x,
 \end{equation}
 y similar para $\vec{B}_k(\vec{x},t)$.
 
@@ -746,7 +746,7 @@ En regiones libres de fuentes, $\vec{E}_k(\vec{x},t)$ satisface la ec. de la ond
 \end{equation}
 y, por lo tanto,
 \begin{equation}
-\ddot{\vec{E}}_k(\vec{k},t)=\omega^2\vec{E}_k(\vec{k},t), \qquad \omega:=c|\vec{k}|.
+\ddot{\vec{E}}_k(\vec{k},t)=-\omega^2\vec{E}_k(\vec{k},t), \qquad \omega:=c|\vec{k}|.
 \end{equation}
 La solución de esta ecuación (oscilador armónico) es entonces de la forma
 \begin{equation}
@@ -766,7 +766,7 @@ y entonces
 &= \frac{1}{2}\int\vec{E}^*_{k}(\vec{k})e^{i\omega t}e^{-i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
 &= \Re\left[\int\vec{E}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right].
 \end{align}
-Esta forma es similar a aquella de una onda plana monocromática con polarización lineal. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$ y $\vec{k}+d\vec{k}$ ($\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
+Esta forma es similar a aquella de una onda plana monocromática con polarización lineal. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$'' y $\vec{k}+d\vec{k}$ ($\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
 
 Si expresamos el campo magnético de forma similar, e.d.,
 \begin{equation}
