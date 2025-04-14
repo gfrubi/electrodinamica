@@ -779,174 +779,6 @@ entonces las ecuaciones de Maxwell requieren que
 \end{align}
 que son las mismas relaciones obtenidas para las amplitudes (complejas) de una onda plana monocromática, pero válidas esta vez para cada modo con vector de onda $\vec{k}$.
 
-\section{Potenciales y transformaciones de gauge}
-
-Las ecuaciones de Maxwell conforman un conjunto de 8 ecuaciones diferenciales
-parciales para las 6 componentes del campo electromagnético. A menudo es
-\textit{conveniente} reducir el número de variables. Esto puede ser conseguido
-expresando los campos en términos de \textbf{potenciales electromagnéticos},
-de modo que \textit{las ecuaciones homogéneas de Maxwell sean satisfechas
-automáticamente} y el número de campos a determinar se reduce a 4. Estos
-potenciales se reducen en los casos estacionarios al conocido potencial
-electrostático y al potencial vectorial magnético.
-
-En el caso dinámico general, de (\ref{max2}) podemos concluir que $\vec{B}$
-puede ser derivado de un \textbf{potencial vectorial}:
-\begin{eqnarray}\label{defA2}
-\boxed{\vec{B}=\vec{\nabla}\times \vec{A}.}
-\end{eqnarray}
-Usando esto en (\ref{max4}), obtenemos:
-\begin{equation}
-\vec{\nabla}\times \vec{E} = -  \frac{\partial\ }{\partial
-t}(\vec{\nabla}\times\vec{A}) = -\vec{\nabla}\times
-\frac{\partial\vec{A}}{\partial t},
-\end{equation}
-es decir,
-\begin{eqnarray}
-\vec{\nabla}\times \left[ \vec{E} + \frac{\partial \vec{A}}{\partial t} \right]
-= \vec{0}.
-\end{eqnarray}
-De aquí vemos que el campo vectorial dado por la suma $\vec{E} + {\partial
-\vec{A}}/{\partial t}$ puede ser escrito como gradiente de un campo escalar, esto es:
-\begin{equation}
-\vec{E} + \frac{\partial \vec{A}}{\partial t}= - \vec{\nabla}\phi ,
-\end{equation}
-de donde
-\begin{equation}\label{defphi2}
-\boxed{\vec{E} =   - \vec{\nabla}\phi - \frac{\partial \vec{A}}{\partial t}.}
-\end{equation}
-Las ecuaciones (\ref{defA2}) y (\ref{defphi2}) muestran que el campo
-electromagnético puede ser escrito en términos de un potencial vectorial
-$\vec{A}$ y de un potencial escalar $\phi$. Sin embargo, estas funciones
-\textit{no son únicas} para $\vec{E}$ y $\vec{B}$ dados. Es fácil verificar
-que el campo electromagnético (y consecuentemente todas las predicciones de la
-teoría electromagética) permanece invariante (es decir, con igual valor) bajo las
-siguientes transformaciones de los potenciales,
-\begin{equation}\marginnote{Transformaciones de gauge}\label{tgg}
-\boxed{{\vec{A}}' = \vec{A} - \vec{\nabla}{\chi}, \qquad \phi' =\phi +
-\frac{\partial \chi}{\partial t},}
-\end{equation}
-conocidas como \textbf{transformaciones de gauge} y donde $\chi=\chi(\vec{x},t)$
-es una función escalar \textit{arbitraria} del espaciotiempo\footnote{La invariancia
-de la teoría electromagnética bajo transformaciones de gauge
-desempeña un rol muy importante. La generalización de esta propiedad de
-invariancia a \textbf{grupos de simetría interna} permitió formular
-teorías consistentes para las \textbf{interacciones débiles} unificadas con la electromagnética (\textbf{electrodébil}) y para la \textbf{interacción fuerte}
-(\textit{cromodinámica cuántica}). La \textbf{interacción gravitacional} también puede ser descrita, con algunas peculiaridades, como una \textit{teoría de gauge}.}.
-
-\subsubsection{Ecuaciones de Maxwell inhomogéneas en términos de los
-potenciales}
-Consideremos el caso de un medio lineal, isótropo y homogéneo. Usando (\ref{defA2}) y (\ref{defphi2}) en las ecuaciones inhomogéneas (\ref{max1}) y (\ref{max3}) encontramos:
-\begin{equation}\label{emiap1}
- \nabla^2\phi+\frac{\partial\ }{\partial t}\left(\vec{\nabla}\cdot\vec{A}\right)=-\frac{\rho}{\varepsilon},
-\end{equation}
-\begin{equation}\label{emiap2}
- \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}-\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}+\frac{1}{c^2}\frac{\partial\phi }{\partial t}\right)=-\mu\,\vec{J}.
-\end{equation}
-De esta forma, hemos reducido las ecuaciones de Maxwell a un conjunto de 4 ecuaciones diferenciales parciales para los 4 potenciales. Sin embargo, estas ecuaciones no determinan completamente los potenciales, puesto que las transformaciones de gauge \eqref{tgg} \textit{dejan invariantes} \eqref{emiap1} y \eqref{emiap2}. Esto es natural ya que estas ecuaciones dependen en realidad de los campos eléctrico y magnético, y como vimos las transformaciones de gauge no cambian los valores de estos campos. Además, las ecuaciones \eqref{emiap1} y \eqref{emiap2} están \textit{acopladas}, en el sentido que cada una de estas ecuaciones involucra ambos potenciales electromagnéticos.
-
-Es posible explotar la ``\textbf{libertad de gauge}'' de la electrodinámica (es decir, el hecho que los potenciales no son únicos) para \textit{simplificar algunos cálculos}. Una forma de hacer esto es trabajar con potenciales que satisfagan alguna condición extra o \textbf{gauge}. De hecho, el imponer condiciones extras a los potenciales no sólo es conveniente, sino también \textit{necesario}, ya que las ecuaciones \eqref{emiap1} y \eqref{emiap2} no determinan en forma única los campos $\phi$ y $\vec{A}$. Es posible imponer infinitos gauges diferentes para los potenciales (siempre que sean consistentes con las ecuaciones de Maxwell), pero existen algunos de especial utilidad y popularidad.
-
-\subsubsection{Gauge de Coulomb}
-Si el potencial vectorial satisface
-\begin{equation}\marginnote{Gauge de Coulomb}\label{gaugeC}
-\boxed{ \vec{\nabla}\cdot\vec{A}\stackrel{!}{=}0,}
-\end{equation}
-se dice que se satisface el \textbf{gauge de Coulomb}, \textbf{gauge de radiación} o \textbf{gauge transversal}. En este caso (\ref{emiap1}) y (\ref{emiap2}) se reducen a
-\begin{equation}\label{emiap1GC}
- \nabla^2\phi=-\frac{\rho}{\varepsilon},
-\end{equation}
-\begin{equation}\label{emiap2GC}
- \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J}+\frac{1}{c^2}\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right).
-\end{equation}
-
-Para probar que \textit{siempre es posible imponer la condición de gauge de Coulomb}, podemos considerar el caso en que inicialmente se trabaje con potenciales $\phi_0$ y $\vec{A}_0$ que no satisfacen la condición (\ref{gaugeC}), es decir, $\vec\nabla\cdot\vec{A}_0\neq 0$, y luego demostrar que es posible realizar una transformación de gauge (\ref{tgg}) con una función $\chi$ tal que los nuevos potenciales sí satisfagan (\ref{gaugeC}). Usando (\ref{tgg}b) requerimos entonces que el nuevo potencial vectorial satisfaga
-\begin{equation}
-\vec\nabla\cdot\vec{A}=\vec\nabla\cdot(\vec{A}_0-\vec\nabla\chi)\stackrel{!}{=}0.
-\end{equation}
-Esto implica, como condición necesaria y suficiente, que la función $\chi$ debe satisfacer 
-\begin{equation}\label{ePchi}
-\nabla^2\chi=\vec\nabla\cdot\vec{A}_0,
-\end{equation}
-es decir, la ecuación de Poisson con una ``fuente'' conocida ($\vec\nabla\cdot\vec{A}_0$, dados los potenciales originales). Ya que han sido demostrados \textbf{teoremas de existencia} para esta ecuación, es decir, que ella siempre tiene soluciones, queda demostrado que es \textit{posible} imponer el gauge de Coulomb. Note, sin embargo, que la función $\chi$ que determina los nuevos potenciales que satisfacen el gauge de Coulomb \textit{no es única}, ya que si $\chi_1$ es solución de (\ref{ePchi}) entonces $\chi_2=\chi_1+\tilde\chi$ también es solución, siempre que $\tilde\chi$ sea una solución de la ecuación de Laplace ($\nabla^2\tilde\chi=0$). Existe entonces una ``\textbf{libertad remanente}'' para seguir realizando transformaciones de gauge, generadas por funciones $\tilde\chi$ que satisfacen la ecuación de Laplace, y que permiten imponer algunas condiciones\footnote{Ojo: no \textit{cualquier} condición, sino aquellas que sean compatibles con el resto de las condiciones, y con las ecuaciones de Maxwell.} adicionales a los potenciales, siempre dentro de la ``familia de potenciales'' que satisface el gauge de Coulomb.
-
-Una de las conveniencias de este gauge es que \textit{la ecuación (\ref{emiap1GC}) tiene la misma forma que en el caso electrostático}\footnote{Se dice por esto que es ``\textit{coulombiano}'', de ahí uno de los nombres asociados a este gauge.}. Debido a esto, y usando la ``libertad remanente'' mencionada anteriormente, es posible elegir\footnote{!`Pruebe esta afirmación!.} el potencial escalar de la forma siguiente:
-\begin{equation}\label{phiGC}
-\boxed{ \phi(\vec{x},t)=\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'.}
-\end{equation}
-Esta solución para el potencial puede entonces ser reemplazada en el lado derecho de \eqref{emiap2GC}. 
-%Sin embargo, un cálculo sencillo muestra que este último término cancela la \textit{componente irrotacional} (``longitudinal'') de la corriente. En efecto, asumiendo que las fuentes son localizadas, podemos usar el resultado descrito en el apéndice \ref{Apcamps} y separar la densidad de corriente en una componente longitudinal,  $\vec{J}_{\rm l}$, (o irrotacional, con $\vec\nabla\times\vec{J}_{\rm l}=0$) y una transversal,  $\vec{J}_{\rm t}$, (o solenoidal, con $\vec\nabla\cdot\vec{J}_{\rm t}=0$):
-%\begin{equation}
-% \vec{J}=\vec{J}_{\rm l}+\vec{J}_{\rm t},
-%\end{equation}
-%con
-%\begin{equation}
-% \vec{J}_{\rm l} =-\frac{1}{4\pi}\vec\nabla\int\frac{(\vec\nabla\cdot\vec{J})(\vec{x}')}{|\vec{x}-\vec{x}'|}dV',
-%\end{equation}
-%\begin{equation}
-% \vec{J}_{\rm t} =\frac{1}{4\pi}\vec\nabla\times\int\frac{(\vec\nabla\times\vec{J})(\vec{x}')}{|\vec{x}-\vec{x}'|}dV'.
-%\end{equation}
-A partir de (\ref{phiGC}), y usando la ecuación de continuidad, podemos escribir el segundo término del lado derecho de \eqref{emiap2GC} sólo en términos de la densidad de corriente, ya que
-\begin{eqnarray}
-\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right)&=&  \vec{\nabla}\frac{\partial\ }{\partial t}\left(\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'\right) \\
-&=&  \frac{1}{4\pi\varepsilon}\vec{\nabla}\int\frac{\frac{\partial\rho }{\partial t}(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV' \\
-&=& - \frac{1}{4\pi\varepsilon} \vec{\nabla}\int\frac{(\vec{\nabla}'\cdot\vec{J}')}{\left|\vec{x}-\vec{x}'\right|}dV' .%\\
-%&=& \frac{1}{\varepsilon}\vec{J}_{\rm l}.
-\end{eqnarray}
-Con esto, la ecuación (\ref{emiap2GC}) se reduce a
-\begin{equation}\label{emiap3GC}
-\boxed{\nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J}_{\rm T},}
-\end{equation}
-donde hemos introducido la \textbf{componente transversal de la densidad de corriente}
-\begin{align}
-\vec{J}_{\rm T} &:= \vec{J}-\frac{1}{c^2\mu}\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right) \\
-&= \vec{J}+\frac{1}{4\pi} \vec{\nabla}\int\frac{(\vec{\nabla}'\cdot\vec{J}')}{\left|\vec{x}-\vec{x}'\right|}dV'.
-\end{align}
-Se dice que este campo es \textit{transversal} porque satisface
-\begin{equation}
-\vec\nabla\cdot\vec{J}_{\rm T}\equiv 0.
-\end{equation}
-
-En resumen, \textit{en el gauge de Coulomb el potencial vectorial satisface la  \textit{ecuación de onda inhomogénea}, con un término fuente determinado sólo por la componente transversal de la densidad de corriente}. Además, en este gauge  sólo el potencial vectorial contribuye a los \textbf{campos radiativos}\footnote{Como veremos en el capítulo \ref{caprad}, se dice que un campo electromagnético es radiativo si su contribución a la energía radiada muy lejos de las fuentes (``en el infinito'') es no nula.}. En cambio, el potencial escalar \eqref{phiGC} es no-radiativo como consecuencia de que su valor decae al menos tan rápido como $1/r$ a grandes distancias de la fuente.
-
-El gauge de Coulomb es a menudo usado en regiones donde no hay fuentes presentes. En este caso es posible elegir $\phi=0$, ver \eqref{phiGC}, de modo que toda la información del campo electromagnético está contenida en el potencial vectorial $\vec{A}$.
-
-
-\subsubsection{Gauge de Lorenz}
-Otro gauge común es el \textbf{gauge de Lorenz}\footnote{Nombrado en recuerdo de Ludvig Valentin Lorenz (1829-1891): Matemático y Físico Danés. Ver \url{http://es.wikipedia.org/wiki/Ludvig_Lorenz}, quien consideró esta elección en 1867.}, que usualmente es escrito como
-\begin{equation}\marginnote{Gauge de Lorenz}\label{gLorenz}
-\boxed{\frac{1}{c^2}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}\stackrel{!}{=}0,}
-\end{equation}
-y que \textit{permite desacoplar las ecuaciones} (\ref{emiap1}) y (\ref{emiap2}).
-En efecto, si (\ref{gLorenz}) es satisfecha entonces (\ref{emiap1}) y (\ref{emiap2}) se reducen a
-\begin{equation}\label{emiap1gL}
- \nabla^2\phi-\frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}=-\frac{\rho}{\varepsilon},
-\end{equation}
-\begin{equation}\label{emiap2gL}
- \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J},
-\end{equation}
-o, introduciendo el \textbf{operador de onda} (u operador de  d'\,Alembert\footnote{Jean Le Rond d'\,Alembert (1717-1783): matemático, filósofo y enciclopedista francés. Ver \url{http://es.wikipedia.org/wiki/Jean_le_Rond_d\%27Alembert}.}), 
-$\Box:= c^{-2}{\partial^2}/{\partial t^2}-\nabla^2$,
-\begin{equation}\label{emiap1gL2}
- \Box\phi=\frac{\rho}{\varepsilon},
-\end{equation}
-\begin{equation}\label{emiap2gL2}
- \Box\vec{A}=\mu\,\vec{J}.
-\end{equation}
-
-Análogamente al caso del gauge de Coulomb, puede probarse que \textit{el gauge de Lorenz siempre puede ser impuesto}, considerando que inicialmente se usen potenciales ($\phi_0$ y $\vec{A}_0$) que no lo satisfacen, y mostrando que puede encontrarse una función $\chi$ que genere la transformación de gauge apropiada para que los nuevos potenciales sí la satisfagan. En este caso, la condición sobre la función $\chi$ requerida es que
-\begin{eqnarray}
-0&\stackrel{!}{=}&\frac{1}{c^2}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A} \\
-&=&\frac{1}{c^2}\frac{\partial\ }{\partial t}\left(\phi_0+\frac{\partial\chi}{\partial t}\right)+\vec{\nabla}\cdot\left(\vec{A}_0-\vec\nabla\chi\right) \\
-&=&\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right) +\frac{1}{c^2}\frac{\partial^2\chi }{\partial t^2}-\nabla^2\chi,
-\end{eqnarray}
-es decir, que satisfaga la ecuación de onda inhomogénea:
-\begin{equation}
-\Box\chi=-\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right).
-\end{equation}
-La existencia de soluciones de esta ecuación está garantizada. Análogamente al caso del gauge de Coulomb, la función buscada no es única, sino que existe una libertad remanente para realizar transformaciones de gauge ``dentro del gauge de Lorenz'', generadas por funciones $\tilde\chi$ que satisfagan la ecuación de onda, $\Box\tilde\chi=0$. 
-
-El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
 
 \section{Guías de onda}
 Supondremos que la guía de onda es un conductor perfecto, de modo que $\vec{E}=\vec{0}$ en el interior del conductor. De la ley de Faraday encontramos entonces que y $\partial_t\vec{B}=\vec{0}$. Si suponemos que el campo magnético inicial es nulo, entonces $\vec{B}=\vec{0}$ para todo tiempo posterior. Las condiciones de frontera en la pared interior son
@@ -1128,3 +960,173 @@ El modo TE$_{11}$ es el que posee la menor frecuencia de corte,
 \begin{equation}
 \omega_{11}=1.8412\frac{c}{R}.
 \end{equation}
+
+
+\section{Potenciales y transformaciones de gauge}
+
+Las ecuaciones de Maxwell conforman un conjunto de 8 ecuaciones diferenciales
+parciales para las 6 componentes del campo electromagnético. A menudo es
+\textit{conveniente} reducir el número de variables. Esto puede ser conseguido
+expresando los campos en términos de \textbf{potenciales electromagnéticos},
+de modo que \textit{las ecuaciones homogéneas de Maxwell sean satisfechas
+automáticamente} y el número de campos a determinar se reduce a 4. Estos
+potenciales se reducen en los casos estacionarios al conocido potencial
+electrostático y al potencial vectorial magnético.
+
+En el caso dinámico general, de (\ref{max2}) podemos concluir que $\vec{B}$
+puede ser derivado de un \textbf{potencial vectorial}:
+\begin{eqnarray}\label{defA2}
+\boxed{\vec{B}=\vec{\nabla}\times \vec{A}.}
+\end{eqnarray}
+Usando esto en (\ref{max4}), obtenemos:
+\begin{equation}
+\vec{\nabla}\times \vec{E} = -  \frac{\partial\ }{\partial
+t}(\vec{\nabla}\times\vec{A}) = -\vec{\nabla}\times
+\frac{\partial\vec{A}}{\partial t},
+\end{equation}
+es decir,
+\begin{eqnarray}
+\vec{\nabla}\times \left[ \vec{E} + \frac{\partial \vec{A}}{\partial t} \right]
+= \vec{0}.
+\end{eqnarray}
+De aquí vemos que el campo vectorial dado por la suma $\vec{E} + {\partial
+\vec{A}}/{\partial t}$ puede ser escrito como gradiente de un campo escalar, esto es:
+\begin{equation}
+\vec{E} + \frac{\partial \vec{A}}{\partial t}= - \vec{\nabla}\phi ,
+\end{equation}
+de donde
+\begin{equation}\label{defphi2}
+\boxed{\vec{E} =   - \vec{\nabla}\phi - \frac{\partial \vec{A}}{\partial t}.}
+\end{equation}
+Las ecuaciones (\ref{defA2}) y (\ref{defphi2}) muestran que el campo
+electromagnético puede ser escrito en términos de un potencial vectorial
+$\vec{A}$ y de un potencial escalar $\phi$. Sin embargo, estas funciones
+\textit{no son únicas} para $\vec{E}$ y $\vec{B}$ dados. Es fácil verificar
+que el campo electromagnético (y consecuentemente todas las predicciones de la
+teoría electromagética) permanece invariante (es decir, con igual valor) bajo las
+siguientes transformaciones de los potenciales,
+\begin{equation}\marginnote{Transformaciones de gauge}\label{tgg}
+\boxed{{\vec{A}}' = \vec{A} - \vec{\nabla}{\chi}, \qquad \phi' =\phi +
+\frac{\partial \chi}{\partial t},}
+\end{equation}
+conocidas como \textbf{transformaciones de gauge} y donde $\chi=\chi(\vec{x},t)$
+es una función escalar \textit{arbitraria} del espaciotiempo\footnote{La invariancia
+de la teoría electromagnética bajo transformaciones de gauge
+desempeña un rol muy importante. La generalización de esta propiedad de
+invariancia a \textbf{grupos de simetría interna} permitió formular
+teorías consistentes para las \textbf{interacciones débiles} unificadas con la electromagnética (\textbf{electrodébil}) y para la \textbf{interacción fuerte}
+(\textit{cromodinámica cuántica}). La \textbf{interacción gravitacional} también puede ser descrita, con algunas peculiaridades, como una \textit{teoría de gauge}.}.
+
+\subsubsection{Ecuaciones de Maxwell inhomogéneas en términos de los
+potenciales}
+Consideremos el caso de un medio lineal, isótropo y homogéneo. Usando (\ref{defA2}) y (\ref{defphi2}) en las ecuaciones inhomogéneas (\ref{max1}) y (\ref{max3}) encontramos:
+\begin{equation}\label{emiap1}
+ \nabla^2\phi+\frac{\partial\ }{\partial t}\left(\vec{\nabla}\cdot\vec{A}\right)=-\frac{\rho}{\varepsilon},
+\end{equation}
+\begin{equation}\label{emiap2}
+ \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}-\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}+\frac{1}{c^2}\frac{\partial\phi }{\partial t}\right)=-\mu\,\vec{J}.
+\end{equation}
+De esta forma, hemos reducido las ecuaciones de Maxwell a un conjunto de 4 ecuaciones diferenciales parciales para los 4 potenciales. Sin embargo, estas ecuaciones no determinan completamente los potenciales, puesto que las transformaciones de gauge \eqref{tgg} \textit{dejan invariantes} \eqref{emiap1} y \eqref{emiap2}. Esto es natural ya que estas ecuaciones dependen en realidad de los campos eléctrico y magnético, y como vimos las transformaciones de gauge no cambian los valores de estos campos. Además, las ecuaciones \eqref{emiap1} y \eqref{emiap2} están \textit{acopladas}, en el sentido que cada una de estas ecuaciones involucra ambos potenciales electromagnéticos.
+
+Es posible explotar la ``\textbf{libertad de gauge}'' de la electrodinámica (es decir, el hecho que los potenciales no son únicos) para \textit{simplificar algunos cálculos}. Una forma de hacer esto es trabajar con potenciales que satisfagan alguna condición extra o \textbf{gauge}. De hecho, el imponer condiciones extras a los potenciales no sólo es conveniente, sino también \textit{necesario}, ya que las ecuaciones \eqref{emiap1} y \eqref{emiap2} no determinan en forma única los campos $\phi$ y $\vec{A}$. Es posible imponer infinitos gauges diferentes para los potenciales (siempre que sean consistentes con las ecuaciones de Maxwell), pero existen algunos de especial utilidad y popularidad.
+
+\subsubsection{Gauge de Coulomb}
+Si el potencial vectorial satisface
+\begin{equation}\marginnote{Gauge de Coulomb}\label{gaugeC}
+\boxed{ \vec{\nabla}\cdot\vec{A}\stackrel{!}{=}0,}
+\end{equation}
+se dice que se satisface el \textbf{gauge de Coulomb}, \textbf{gauge de radiación} o \textbf{gauge transversal}. En este caso (\ref{emiap1}) y (\ref{emiap2}) se reducen a
+\begin{equation}\label{emiap1GC}
+ \nabla^2\phi=-\frac{\rho}{\varepsilon},
+\end{equation}
+\begin{equation}\label{emiap2GC}
+ \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J}+\frac{1}{c^2}\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right).
+\end{equation}
+
+Para probar que \textit{siempre es posible imponer la condición de gauge de Coulomb}, podemos considerar el caso en que inicialmente se trabaje con potenciales $\phi_0$ y $\vec{A}_0$ que no satisfacen la condición (\ref{gaugeC}), es decir, $\vec\nabla\cdot\vec{A}_0\neq 0$, y luego demostrar que es posible realizar una transformación de gauge (\ref{tgg}) con una función $\chi$ tal que los nuevos potenciales sí satisfagan (\ref{gaugeC}). Usando (\ref{tgg}b) requerimos entonces que el nuevo potencial vectorial satisfaga
+\begin{equation}
+\vec\nabla\cdot\vec{A}=\vec\nabla\cdot(\vec{A}_0-\vec\nabla\chi)\stackrel{!}{=}0.
+\end{equation}
+Esto implica, como condición necesaria y suficiente, que la función $\chi$ debe satisfacer 
+\begin{equation}\label{ePchi}
+\nabla^2\chi=\vec\nabla\cdot\vec{A}_0,
+\end{equation}
+es decir, la ecuación de Poisson con una ``fuente'' conocida ($\vec\nabla\cdot\vec{A}_0$, dados los potenciales originales). Ya que han sido demostrados \textbf{teoremas de existencia} para esta ecuación, es decir, que ella siempre tiene soluciones, queda demostrado que es \textit{posible} imponer el gauge de Coulomb. Note, sin embargo, que la función $\chi$ que determina los nuevos potenciales que satisfacen el gauge de Coulomb \textit{no es única}, ya que si $\chi_1$ es solución de (\ref{ePchi}) entonces $\chi_2=\chi_1+\tilde\chi$ también es solución, siempre que $\tilde\chi$ sea una solución de la ecuación de Laplace ($\nabla^2\tilde\chi=0$). Existe entonces una ``\textbf{libertad remanente}'' para seguir realizando transformaciones de gauge, generadas por funciones $\tilde\chi$ que satisfacen la ecuación de Laplace, y que permiten imponer algunas condiciones\footnote{Ojo: no \textit{cualquier} condición, sino aquellas que sean compatibles con el resto de las condiciones, y con las ecuaciones de Maxwell.} adicionales a los potenciales, siempre dentro de la ``familia de potenciales'' que satisface el gauge de Coulomb.
+
+Una de las conveniencias de este gauge es que \textit{la ecuación (\ref{emiap1GC}) tiene la misma forma que en el caso electrostático}\footnote{Se dice por esto que es ``\textit{coulombiano}'', de ahí uno de los nombres asociados a este gauge.}. Debido a esto, y usando la ``libertad remanente'' mencionada anteriormente, es posible elegir\footnote{!`Pruebe esta afirmación!.} el potencial escalar de la forma siguiente:
+\begin{equation}\label{phiGC}
+\boxed{ \phi(\vec{x},t)=\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'.}
+\end{equation}
+Esta solución para el potencial puede entonces ser reemplazada en el lado derecho de \eqref{emiap2GC}. 
+%Sin embargo, un cálculo sencillo muestra que este último término cancela la \textit{componente irrotacional} (``longitudinal'') de la corriente. En efecto, asumiendo que las fuentes son localizadas, podemos usar el resultado descrito en el apéndice \ref{Apcamps} y separar la densidad de corriente en una componente longitudinal,  $\vec{J}_{\rm l}$, (o irrotacional, con $\vec\nabla\times\vec{J}_{\rm l}=0$) y una transversal,  $\vec{J}_{\rm t}$, (o solenoidal, con $\vec\nabla\cdot\vec{J}_{\rm t}=0$):
+%\begin{equation}
+% \vec{J}=\vec{J}_{\rm l}+\vec{J}_{\rm t},
+%\end{equation}
+%con
+%\begin{equation}
+% \vec{J}_{\rm l} =-\frac{1}{4\pi}\vec\nabla\int\frac{(\vec\nabla\cdot\vec{J})(\vec{x}')}{|\vec{x}-\vec{x}'|}dV',
+%\end{equation}
+%\begin{equation}
+% \vec{J}_{\rm t} =\frac{1}{4\pi}\vec\nabla\times\int\frac{(\vec\nabla\times\vec{J})(\vec{x}')}{|\vec{x}-\vec{x}'|}dV'.
+%\end{equation}
+A partir de (\ref{phiGC}), y usando la ecuación de continuidad, podemos escribir el segundo término del lado derecho de \eqref{emiap2GC} sólo en términos de la densidad de corriente, ya que
+\begin{eqnarray}
+\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right)&=&  \vec{\nabla}\frac{\partial\ }{\partial t}\left(\frac{1}{4\pi\varepsilon}\int\frac{\rho(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV'\right) \\
+&=&  \frac{1}{4\pi\varepsilon}\vec{\nabla}\int\frac{\frac{\partial\rho }{\partial t}(\vec{x}',t)}{\left|\vec{x}-\vec{x}'\right|}dV' \\
+&=& - \frac{1}{4\pi\varepsilon} \vec{\nabla}\int\frac{(\vec{\nabla}'\cdot\vec{J}')}{\left|\vec{x}-\vec{x}'\right|}dV' .%\\
+%&=& \frac{1}{\varepsilon}\vec{J}_{\rm l}.
+\end{eqnarray}
+Con esto, la ecuación (\ref{emiap2GC}) se reduce a
+\begin{equation}\label{emiap3GC}
+\boxed{\nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J}_{\rm T},}
+\end{equation}
+donde hemos introducido la \textbf{componente transversal de la densidad de corriente}
+\begin{align}
+\vec{J}_{\rm T} &:= \vec{J}-\frac{1}{c^2\mu}\vec{\nabla}\left(\frac{\partial\phi }{\partial t}\right) \\
+&= \vec{J}+\frac{1}{4\pi} \vec{\nabla}\int\frac{(\vec{\nabla}'\cdot\vec{J}')}{\left|\vec{x}-\vec{x}'\right|}dV'.
+\end{align}
+Se dice que este campo es \textit{transversal} porque satisface
+\begin{equation}
+\vec\nabla\cdot\vec{J}_{\rm T}\equiv 0.
+\end{equation}
+
+En resumen, \textit{en el gauge de Coulomb el potencial vectorial satisface la  \textit{ecuación de onda inhomogénea}, con un término fuente determinado sólo por la componente transversal de la densidad de corriente}. Además, en este gauge  sólo el potencial vectorial contribuye a los \textbf{campos radiativos}\footnote{Como veremos en el capítulo \ref{caprad}, se dice que un campo electromagnético es radiativo si su contribución a la energía radiada muy lejos de las fuentes (``en el infinito'') es no nula.}. En cambio, el potencial escalar \eqref{phiGC} es no-radiativo como consecuencia de que su valor decae al menos tan rápido como $1/r$ a grandes distancias de la fuente.
+
+El gauge de Coulomb es a menudo usado en regiones donde no hay fuentes presentes. En este caso es posible elegir $\phi=0$, ver \eqref{phiGC}, de modo que toda la información del campo electromagnético está contenida en el potencial vectorial $\vec{A}$.
+
+
+\subsubsection{Gauge de Lorenz}
+Otro gauge común es el \textbf{gauge de Lorenz}\footnote{Nombrado en recuerdo de Ludvig Valentin Lorenz (1829-1891): Matemático y Físico Danés. Ver \url{http://es.wikipedia.org/wiki/Ludvig_Lorenz}, quien consideró esta elección en 1867.}, que usualmente es escrito como
+\begin{equation}\marginnote{Gauge de Lorenz}\label{gLorenz}
+\boxed{\frac{1}{c^2}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}\stackrel{!}{=}0,}
+\end{equation}
+y que \textit{permite desacoplar las ecuaciones} (\ref{emiap1}) y (\ref{emiap2}).
+En efecto, si (\ref{gLorenz}) es satisfecha entonces (\ref{emiap1}) y (\ref{emiap2}) se reducen a
+\begin{equation}\label{emiap1gL}
+ \nabla^2\phi-\frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}=-\frac{\rho}{\varepsilon},
+\end{equation}
+\begin{equation}\label{emiap2gL}
+ \nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2\vec{A}}{\partial t^2}=-\mu\,\vec{J},
+\end{equation}
+o, introduciendo el \textbf{operador de onda} (u operador de  d'\,Alembert\footnote{Jean Le Rond d'\,Alembert (1717-1783): matemático, filósofo y enciclopedista francés. Ver \url{http://es.wikipedia.org/wiki/Jean_le_Rond_d\%27Alembert}.}), 
+$\Box:= c^{-2}{\partial^2}/{\partial t^2}-\nabla^2$,
+\begin{equation}\label{emiap1gL2}
+ \Box\phi=\frac{\rho}{\varepsilon},
+\end{equation}
+\begin{equation}\label{emiap2gL2}
+ \Box\vec{A}=\mu\,\vec{J}.
+\end{equation}
+
+Análogamente al caso del gauge de Coulomb, puede probarse que \textit{el gauge de Lorenz siempre puede ser impuesto}, considerando que inicialmente se usen potenciales ($\phi_0$ y $\vec{A}_0$) que no lo satisfacen, y mostrando que puede encontrarse una función $\chi$ que genere la transformación de gauge apropiada para que los nuevos potenciales sí la satisfagan. En este caso, la condición sobre la función $\chi$ requerida es que
+\begin{eqnarray}
+0&\stackrel{!}{=}&\frac{1}{c^2}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A} \\
+&=&\frac{1}{c^2}\frac{\partial\ }{\partial t}\left(\phi_0+\frac{\partial\chi}{\partial t}\right)+\vec{\nabla}\cdot\left(\vec{A}_0-\vec\nabla\chi\right) \\
+&=&\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right) +\frac{1}{c^2}\frac{\partial^2\chi }{\partial t^2}-\nabla^2\chi,
+\end{eqnarray}
+es decir, que satisfaga la ecuación de onda inhomogénea:
+\begin{equation}
+\Box\chi=-\left(\frac{1}{c^2}\frac{\partial\phi_0}{\partial t} +\vec{\nabla}\cdot\vec{A}_0\right).
+\end{equation}
+La existencia de soluciones de esta ecuación está garantizada. Análogamente al caso del gauge de Coulomb, la función buscada no es única, sino que existe una libertad remanente para realizar transformaciones de gauge ``dentro del gauge de Lorenz'', generadas por funciones $\tilde\chi$ que satisfagan la ecuación de onda, $\Box\tilde\chi=0$. 
+
+El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
