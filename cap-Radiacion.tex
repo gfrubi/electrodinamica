@@ -192,7 +192,7 @@ donde $\dot{f}(\vec{x},t)$ denota la derivada partial respecto a la variable tem
 
 \section{Potenciales de Liénard-Wiechert}
 
-Se conoce como \textbf{potenciales de Liénard}\footnote{\href{https://en.wikipedia.org/wiki/Alfred-Marie_Li\%C3\%A9nard}{Alfred Marie Liénard} (1869-1958): físico francés.}\textbf{-Wiechert}\footnote{\href{https://en.wikipedia.org/wiki/Emil_Wiechert}{Johann Emil Wiechert} (1861-1928): (geo)físico alemán.} a los potenciales retardados generados por una \textit{carga puntual} $q$ \textit{que se mueve en forma conocida, pero arbitraria, con trayectoria} $\vec{z}(t)$. Ver figura (\ref{fig:LW}).
+Se conoce como \textbf{potenciales de Liénard}\footnote{\href{https://en.wikipedia.org/wiki/Alfred-Marie_Li\%C3\%A9nard}{Alfred Marie Liénard} (1869-1958): físico francés.}\textbf{-Wiechert}\footnote{\href{https://en.wikipedia.org/wiki/Emil_Wiechert}{Johann Emil Wiechert} (1861-1928): (geo)físico alemán.} a los potenciales retardados generados por una \textit{carga puntual} $q$ \textit{que se mueve en forma conocida, pero arbitraria}. Denotaremos la trayectoria de la carga usando la función $\vec{z}(t)$. Ver figura (\ref{fig:LW}).
 \begin{figure}[ht]
 \centerline{\includegraphics[height=5.5cm]{fig/fig-cono-de-luz-02.pdf}}
 \caption{Trayectoria de una carga puntual y cono de luz asociado al evento $(ct,\vec{x})$.}
@@ -203,10 +203,10 @@ En este caso, la densidad de carga y de corriente están dadas por
 \rho(\vec{x},t)=q\delta^{(3)}(\vec{x}-\vec{z}(t)), \qquad
 \vec{J}(\vec{x},t)=q\vec{v}(t)\delta^{(3)}(\vec{x}-\vec{z}(t)),
 \end{equation}
-donde $\vec{v}(t)={d\vec{z}}/{dt}$. Por lo tanto, los potenciales retardados (\ref{potret}) se reducen a
+donde $\vec{v}(t)={d\vec{z}}/{dt}$ es la velocidad instantánea de la carga. Por lo tanto, los potenciales retardados (\ref{potret}) se reducen a
 \begin{equation}
 \phi_{\rm ret}(\vec{x},t)=\frac{q}{4\pi\varepsilon}\int_{V'}
-\frac{\delta^{(3)}(\vec{x}'-\vec{z}(t_{\rm ret}))}{|\vec{x}-\vec{x}'|}\,dV', \qquad
+\frac{\delta^{(3)}(\vec{x}'-\vec{z}(t_{\rm ret}))}{|\vec{x}-\vec{x}'|}\,dV', \quad
 \vec{A}_{\rm ret}(\vec{x},t)=\frac{q\mu}{4\pi}\int_{V'}
 \frac{\vec{v}(t_{\rm ret})\delta^{(3)}(\vec{x}'-\vec{z}(t_{\rm ret}))}{|\vec{x}-\vec{x}'|}\,dV'  \label{potretq1}
 \end{equation}
@@ -251,7 +251,9 @@ donde $g'$ es la función derivada de $g$ y $t'$ es la solución de la ecuación
 \begin{equation}
  t'=t-\frac{1}{c}|\vec{x}-\vec{z}(t')|. \label{t'}
 \end{equation}
-Esta relación define una ecuación algebraica para $t'$ cuya solución define, \textit{conocida la trayectoria de la carga}, un tiempo retardado $t'=t'(\vec{x},t)$. Además, usando la regla de la cadena, encontramos
+Esta relación define una \textit{ecuación algebraica} para $t'$ cuya solución define, \textit{conocida la trayectoria de la carga}, un tiempo retardado particular $t'=t'(\vec{x},t)$ para cada valor de $\vec{x}$ y $t$. 
+
+Usando la regla de la cadena, encontramos
 \begin{equation}
  g'(t')=1-\frac{1}{c}\frac{\vec{v}(t')\cdot\left(\vec{x}-\vec{z}(t')\right)}{\left|\vec{x}-\vec{z}(t')\right|}=1-\vec{\beta}(t')\cdot\hat{n}(t')>0 \label{gp},
 \end{equation}
@@ -274,7 +276,7 @@ Debe recordarse que en estas expresiones $t'$ es una función de $\vec{x}$ y $t$
  c^2(t-t')^2-|\vec{x}-\vec{z}(t')|^2=0.
 \end{equation}
 
-En otras palabras, el evento con coordenadas $(ct',\vec{z}(t'))$ es la \textit{intersección entre el cono de luz pasado asociado a $(ct,\vec{x})$ y la línea de mundo de la carga}. Ver figura \ref{fig:LW}. Los potenciales en un evento $(ct,\vec{x})$ dado dependen entonces sólo de las propiedades de la carga (posición y velocidad) en el evento $(ct',\vec{z}(t'))$.
+En otras palabras, el evento con coordenadas $(ct',\vec{z}(t'))$ es la \textit{intersección entre el cono de luz pasado asociado a $(ct,\vec{x})$ y la línea de mundo de la carga}. Ver figura \ref{fig:LW}. Los potenciales en un evento $(ct,\vec{x})$ dado dependen entonces sólo de las propiedades de la carga (posición y velocidad) en el tiempo retardado $t'(\vec{x},t)$.
 
 Usualmente, se simplifica la notación definiendo
 \begin{equation}
