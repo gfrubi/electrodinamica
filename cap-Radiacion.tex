@@ -388,7 +388,30 @@ o, en forma un poco más compacta,
 \vec{E}(\vec{x},t)=\frac{q}{4\pi\varepsilon}\frac{\gamma^{-2}\left(\vec{x}-\vec{v}t\right)}{\left[(x-vt)^2+ (y^2+z^2)\gamma^{-2}\right] ^{3/2}},  \qquad
 \vec{B}(\vec{x},t)=\frac{q\mu}{4\pi}\frac{\gamma^{-2}(\vec{v}\times\vec{x})}{\left[(x-vt)^2+\gamma^{-2}(y^2+z^2)\right]^{3/2}}.
 \end{equation}
-En la sección \ref{secEjEBvc} recobraremos este resultado usando transformaciones de Lorentz. Animaciones de estos campos pueden ser encontrados \href{http://web.mit.edu/viz/EM/visualizations/electrostatics/ElectricFieldConfigurations/MovingChargePosElec/movingChargePosElec.htm}{aquí} para el campo eléctrico y \href{http://web.mit.edu/viz/EM/visualizations/magnetostatics/MagneticFieldConfigurations/MovingChargePosMag/MovingChargePosMag.htm}{aquí} para el campo magnético \cite{MIT}.
+
+Si definimos el vector $\vec{r}$ desde la posición $\vec{z}(t)$ de la carga en el tiempo $t$ y el punto $\\vec{x}$ donde calculamos el campo, es decir,
+\begin{equation}
+\vec{r}:=\vec{x}-\vec{z}(t)=(x-vt)\hat{x}+y\hat{y}+z\hat{z},
+\end{equation}
+entonces podemos demostrar que el ángulo $\theta$ entre $\vec{r}$ y $\vec{v}$ satisface
+\begin{equation}
+\sin^2\theta = \frac{y^2+z^2}{(x-vt)^2+y^2+z^2}.
+\end{equation}
+Con esto, podemos escribir el campo eléctrico como
+
+\begin{equation}
+\vec{E}(\vec{x},t) = \frac{q}{4\pi\varepsilon}\frac{\vec{r}}{r^2}\frac{1-\beta^2}{(1-\beta^2\sin^2\theta)^{3/2}},
+\end{equation}
+con $\beta:=v/c$.
+
+Podemos ver de esta expresión que el campo eléctrico es similar al campo Coulombiano de una carga en reposo, pero ahora modulado por la función $(1-\beta^2)/{(1-\beta^2\sin^2\theta)^{3/2}}$ que depende tanto de la velocidad de la carga como de la orientación en espacio a través de su dependencia en $\theta$. Como consecuencia, la distribución esféricamente simétrica del campo eléctrico del caso electrostático (y/o sus líneas de campo) se ve ``comprimida'' en la dirección de movimiento por un factor $(1-\beta^2)<1$ y ``expandida'' en el plano perpendicular por un factor $(1-\beta^2)^{-1/2}>1$.
+
+Note además que el campo magnético es proporcional al campo eléctrico en cada punto, con la relación
+\begin{equation}
+\vec{B} = \frac{1}{c^2}\vec{v}\times\vec{E}.
+\end{equation}
+
+En la sección \ref{secEjEBvc} recobraremos estos resultados usando transformaciones de Lorentz. Animaciones de estos campos pueden ser encontrados \href{http://web.mit.edu/viz/EM/visualizations/electrostatics/ElectricFieldConfigurations/MovingChargePosElec/movingChargePosElec.htm}{aquí} para el campo eléctrico y \href{http://web.mit.edu/viz/EM/visualizations/magnetostatics/MagneticFieldConfigurations/MovingChargePosMag/MovingChargePosMag.htm}{aquí} para el campo magnético \cite{MIT}.
 
 
 \section{Campo electromagnético generado por cargas con movimiento acelerado}
