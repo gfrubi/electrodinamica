@@ -1626,9 +1626,9 @@ La resistencia de radiación en este caso es dada por
 \begin{equation}\label{Rradp}
 R_{\rm rad}=\frac{\mu}{6\pi c}{\omega^2d^2}
 =\frac{2\pi}{3}\mu c\left(\frac{d}{\lambda}\right)^2
-=\frac{2\pi}{3}Z_0\left(\frac{d}{\lambda}\right)^2,
+=\frac{2\pi}{3}Z\left(\frac{d}{\lambda}\right)^2,
 \end{equation}
-donde hemos introducido la constante $Z:=\mu c=1/\varepsilon c=\sqrt{\mu/\varepsilon}$, que en el vacío asume el valor $Z_0=119,9169832\pi\,[\Omega]\approx 377\,[\Omega]$. En este caso, $Z_0$ es llamada la \textit{impedancia del vacío}, o \textit{impedancia del espacio libre}.
+donde hemos introducido la constante $Z:=\mu c=1/\varepsilon c=\sqrt{\mu/\varepsilon}$, que en el vacío asume el valor $Z_0\approx 377\,\Omega$. En este caso, $Z_0$ es llamada la \textit{impedancia del vacío}, o \textit{impedancia del espacio libre}.
 
 \subsection{Resistencia de radiación de una pequeña espira}
 Consideramos una pequeña espira circular, de radio $a$, que es alimentada por una fuente que suministra una diferencia de potencial variable, de modo que la corriente que circula por la espira es dada por $I(t)$. En este caso, el momento magnético del sistema tiene módulo $\mu(t)=\pi a^2I(t)$. Suponiendo que la corriente que circula por la espira varía armónicamente en el tiempo, con frecuencia angular $\omega$, y que $a\ll c/\omega$, podemos modelar la radiación emitida como aquella producida por un dipolo magnético ideal. Bajo estas condiciones, la expresión (\ref{Pdipmag}) nos permite escribir
@@ -1655,6 +1655,116 @@ Consideremos finalmente que con una misma corriente se alimenta el condensador d
 \end{equation}
 Por lo tanto, como hemos supuesto que $a\ll\lambda/2\pi$, encontramos que  $R_{\rm rad}^{\vec\mu}\ll R_{\rm rad}^{\vec{p}}$. En este sentido un pequeño condensador radía más ``eficientemente'' que una espira de similar tamaño, alimentada con la misma corriente alterna.
 
+\section{Antenas lineales}
+
+Consideremos una \textit{antena lineal} de largo $d$, alimentada en su punto medio por una fuente alterna de frecuencia angular $\omega$, orientada a lo largo del eje $z$. Supondremos que el perfil de corriente en la antena es de la forma
+\begin{equation}
+ I(z,t)=I_0\sin\left(\frac{kd}{2}-k|z|\right)\cos(\omega t),
+\end{equation}
+que satisface la condición de ser nula en los extremos, es decir,
+\begin{equation}
+ I\left(\pm \frac{d}{2},t\right)=0.
+\end{equation}
+La corriente en el centro ($z=0$) es dada por
+\begin{equation}
+ I(0,t)=I_0\sin\left(\frac{kd}{2}\right)\cos(\omega t).
+\end{equation}
+% \begin{eqnarray}
+%  \vec{A}_{\rm rad}&=&\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
+% &=&\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}\cos(kz)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
+% &=&\Re\left[\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}\cos(kz)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
+% &=&\Re\left[\frac{\hat{z}}{cr}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\cos(kz)e^{ikz\cos\theta}\,dz \right]\\
+% \end{eqnarray}
+% \begin{eqnarray}
+%  2\int_{-d/2}^{d/2}\cos(kz)e^{ikz\cos\theta}\,dz &=&\int_{-d/2}^{d/2}e^{ikz}e^{ikz\cos\theta}\,dz+\int_{-d/2}^{d/2}e^{-ikz}e^{ikz\cos\theta}\,dz \\
+% &=&\left[\frac{e^{ikz}e^{ikz\cos\theta}}{ikz+ikz\cos\theta}+\frac{e^{-ikz}e^{ikz\cos\theta}}{-ikz+ikz\cos\theta}\right]_{-d/2}^{d/2}
+% \end{eqnarray}
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=0.4\textwidth]{fig/fig-antena.pdf}}
+ \caption{Esquema para antena lineal.}
+\label{fig:antena}
+\end{figure}
+
+Consideraremos el caso en que el largo $d$ de la antena \textit{no} es despreciable comparado con la longitud de onda $\lambda=2\pi c/\omega$ de la radiación emitida. En este caso no es posible utilizar la expansión multipolar de la sección \ref{sec:emr}. Por lo tanto, para determinar los campos radiativos debemos utilizar la expresiones  (\ref{phirad}) y (\ref{Arad}). En nuestro caso, donde la corriente que circula por el sistema es conocida, basta determinar el potencial vectorial usando (\ref{Arad}), puesto que a partir de él podemos calcular el campo magnético por medio del rotor. La componente radiativa del campo eléctrico puede luego determinarse usando $\vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r}$. Además, como en nuestro caso la distribución de corriente es lineal, (\ref{Arad}) se reduce a
+\begin{eqnarray}
+ \vec{A}_{\rm rad}&=&\frac{\mu}{4\pi}\frac{\hat{z}}{r}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
+&=&\frac{\mu}{4\pi}\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
+&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
+&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz \right] .
+\end{eqnarray}
+La integral involucrada puede ser calculada fácilmente reduciéndola a integrales de exponenciales, obteniendo:
+\begin{equation}
+ \int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz=\frac{2}{k\sin^2\theta}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] .
+\end{equation}
+Con esto, el potencial vectorial puede escribirse como
+\begin{eqnarray}
+ \vec{A}_{\rm rad}&=&
+\Re\left\lbrace\frac{\mu I_0}{2\pi rk\sin^2\theta}e^{i\omega(t-\frac{r}{c})}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] \right\rbrace\hat{z}\\
+&=&\frac{\mu cI_0}{2\pi r\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin^2\theta}\hat{z} \\
+&=&A_z\hat{z}.
+\end{eqnarray}
+Determinaremos ahora el campo magnético radiativo. Es conveniente calcular el rotor de $\vec{A}$ en coordenadas esféricas. Usando $\hat{z}=\hat{r}\cos\theta-\hat{\theta}\sin\theta$
+tenemos que $\vec{A}=A_r\hat{r}+A_\theta\hat{\theta}$, con $A_r=A_z\cos\theta$ y $A_\theta=-A_z\sin\theta$. Ya que las componentes de $\vec{A}$ sólo dependen de $r$ y $\theta$ y que además $A_\varphi=0$ tenemos que el rotor se reduce a
+\begin{equation}
+ \vec{\nabla}\times\vec{A}=\frac{\hat{\varphi}}{r}\left(\frac{\partial\ }{\partial r}\left(rA_\theta\right)-\frac{\partial A_r}{\partial\theta}\right). \label{rotaa}
+\end{equation}
+Además, ya que $A_r$ es proporcional a $1/r$, verificamos que el segundo término de (\ref{rotaa}) aportará con un término proporcional a $1/r^2$ al rotor, que no corresponde a una contribución radiativa al campo magnético. De esta forma, llegamos a que
+\begin{eqnarray}
+ \vec{B}_{\rm rad}&=&\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(rA_\theta\right) \\
+&=&-\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(\frac{\mu cI_0}{2\pi\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\right) \\
+&=&-\frac{\mu I_0}{2\pi r}\sin\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\,\hat{\varphi}.
+\end{eqnarray}
+La potencia instantánea radiada por unidad de ángulo sólido puede entonces calcularse como:
+\begin{eqnarray}
+ \frac{dP}{d\Omega}&=&\frac{c}{\mu}\left|\vec{B}_{\rm rad}\right|^2 r^2\\
+&=&\frac{\mu c I_0^2}{4\pi^2}\sin^2\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]^2}{\sin^2\theta}.
+\end{eqnarray}
+Ya que el movimiento es periódico es más útil considerar la potencia promedio radiada:
+\begin{equation}
+ \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu cI_0^2}{8\pi^2}\left[\frac{\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)}{\sin\theta}\right]^2.
+\end{equation}
+Para una \textit{antena de media onda}, es decir, tal que $d=\lambda/2$, tendremos que $kd=\pi$ y entonces
+\begin{equation}
+ \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu c I_0^2}{8\pi^2}\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}.
+\end{equation}
+%
+% Para la antena de una onda $kd=2\pi$:
+% \begin{eqnarray}
+%  \left\langle\frac{dP}{d\Omega}\right\rangle
+% &=&\frac{I_0^2}{2\pi c}\left[\frac{\cos\left(\pi\cos\theta\right)+1}{\sin\theta}\right]^2 \\
+% &=&\frac{I_0^2}{2\pi c}\left[\frac{2\cos^2\left(\frac{1}{2}\pi\cos\theta\right)}{\sin\theta}\right]^2 \\
+% &=&\frac{2I_0^2}{\pi c}\frac{\cos^4\left(\frac{1}{2}\pi\cos\theta\right)}{\sin^2\theta}
+% \end{eqnarray}
+\begin{figure}[H]
+\centerline{\includegraphics[width=0.5\textwidth]{fig/fig-antena-media-onda.pdf}}
+ \caption{Lóbulo de radiación para la antena de media onda en el plano $zx$.}
+\label{fig:lobulo_antena}
+\end{figure}
+
+
+En este caso, la potencia promedio total es dada por
+\begin{eqnarray}
+ \left\langle P\right\rangle
+&=&\frac{\mu c I_0^2}{8\pi^2}\int\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}\,d\Omega \\
+&=&\frac{\mu c I_0^2}{4\pi}\int_0^\pi\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin\theta}\,d\theta\\
+&=&\frac{\mu c I_0^2}{4\pi}\times 1.2188\cdots .
+\end{eqnarray}
+%En unidades S.I., este resultado se expresa como
+%\begin{equation}
+% \left\langle P\right\rangle
+%=\frac{I_0^2}{4\pi\epsilon_0c}\times 1.2188\cdots=\left(\frac{c\mu_0}{4\pi}\times 1.2188\cdots\right)I_0^2.
+%\end{equation}
+Finalmente evaluando con $c\mu_0/4\pi\approx 30\, {\rm Nm\,A^{-2}s^{-1}}$, obtenemos
+\begin{equation}
+ \left\langle P\right\rangle
+=36.564[\Omega]\,I_0^2.
+\end{equation}
+De aquí obtenemos que la \textit{la resistencia de radiación de una antena de media onda} es
+\begin{equation}
+ R_{\rm rad}\approx 73.13\,\Omega,
+\end{equation}
+ya que $\left\langle I^2\right\rangle=I_0^2/2$.
 
 \section{Campos radiativos de una distribución general de carga y corriente}
 
@@ -1808,113 +1918,3 @@ como es usual para un campo de radiación. De aquí obtenemos, finalmente, una e
 \end{equation}
 
 
-\section{Antenas lineales}
-
-Consideremos una \textit{antena lineal} de largo $d$, alimentada en su punto medio por una fuente alterna de frecuencia angular $\omega$, orientada a lo largo del eje $z$. Supondremos que el perfil de corriente en la antena es de la forma
-\begin{equation}
- I(z,t)=I_0\sin\left(\frac{kd}{2}-k|z|\right)\cos(\omega t),
-\end{equation}
-que satisface la condición de ser nula en los extremos, es decir,
-\begin{equation}
- I\left(\pm \frac{d}{2},t\right)=0.
-\end{equation}
-La corriente en el centro ($z=0$) es dada por
-\begin{equation}
- I(0,t)=I_0\sin\left(\frac{kd}{2}\right)\cos(\omega t).
-\end{equation}
-% \begin{eqnarray}
-%  \vec{A}_{\rm rad}&=&\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
-% &=&\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}\cos(kz)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
-% &=&\Re\left[\frac{\hat{z}}{cr}\int_{-d/2}^{d/2}\cos(kz)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
-% &=&\Re\left[\frac{\hat{z}}{cr}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\cos(kz)e^{ikz\cos\theta}\,dz \right]\\
-% \end{eqnarray}
-% \begin{eqnarray}
-%  2\int_{-d/2}^{d/2}\cos(kz)e^{ikz\cos\theta}\,dz &=&\int_{-d/2}^{d/2}e^{ikz}e^{ikz\cos\theta}\,dz+\int_{-d/2}^{d/2}e^{-ikz}e^{ikz\cos\theta}\,dz \\
-% &=&\left[\frac{e^{ikz}e^{ikz\cos\theta}}{ikz+ikz\cos\theta}+\frac{e^{-ikz}e^{ikz\cos\theta}}{-ikz+ikz\cos\theta}\right]_{-d/2}^{d/2}
-% \end{eqnarray}
-
-\begin{figure}[H]
-\centerline{\includegraphics[width=0.4\textwidth]{fig/fig-antena.pdf}}
- \caption{Esquema para antena lineal.}
-\label{fig:antena}
-\end{figure}
-
-Consideraremos el caso en que el largo $d$ de la antena \textit{no} es despreciable comparado con la longitud de onda $\lambda=2\pi c/\omega$ de la radiación emitida. En este caso no es posible utilizar la expansión multipolar de la sección \ref{sec:emr}. Por lo tanto, para determinar los campos radiativos debemos utilizar la expresiones  (\ref{phirad}) y (\ref{Arad}). En nuestro caso, donde la corriente que circula por el sistema es conocida, basta determinar el potencial vectorial usando (\ref{Arad}), puesto que a partir de él podemos calcular el campo magnético por medio del rotor. La componente radiativa del campo eléctrico puede luego determinarse usando $\vec{E}_{\rm rad}=c\vec{B}_{\rm rad}\times\hat{r}$. Además, como en nuestro caso la distribución de corriente es lineal, (\ref{Arad}) se reduce a
-\begin{eqnarray}
- \vec{A}_{\rm rad}&=&\frac{\mu}{4\pi}\frac{\hat{z}}{r}\int_{-d/2}^{d/2}I(z,t-\frac{r}{c}+\frac{z}{c}\cos\theta)\,dz \\
-&=&\frac{\mu}{4\pi}\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)\cos\left[\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)\right]\,dz \\
-&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{i\omega (t-\frac{r}{c}+\frac{z}{c}\cos\theta)}\,dz \right]\\
-&=&\frac{\mu}{4\pi}\Re\left[\frac{\hat{z}I_0}{r}e^{i\omega(t-\frac{r}{c})}\int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz \right] .
-\end{eqnarray}
-La integral involucrada puede ser calculada fácilmente reduciéndola a integrales de exponenciales, obteniendo:
-\begin{equation}
- \int_{-d/2}^{d/2}\sin\left(\frac{kd}{2}-k|z|\right)e^{ikz\cos\theta}\,dz=\frac{2}{k\sin^2\theta}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] .
-\end{equation}
-Con esto, el potencial vectorial puede escribirse como
-\begin{eqnarray}
- \vec{A}_{\rm rad}&=&
-\Re\left\lbrace\frac{\mu I_0}{2\pi rk\sin^2\theta}e^{i\omega(t-\frac{r}{c})}\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right] \right\rbrace\hat{z}\\
-&=&\frac{\mu cI_0}{2\pi r\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin^2\theta}\hat{z} \\
-&=&A_z\hat{z}.
-\end{eqnarray}
-Determinaremos ahora el campo magnético radiativo. Es conveniente calcular el rotor de $\vec{A}$ en coordenadas esféricas. Usando $\hat{z}=\hat{r}\cos\theta-\hat{\theta}\sin\theta$
-tenemos que $\vec{A}=A_r\hat{r}+A_\theta\hat{\theta}$, con $A_r=A_z\cos\theta$ y $A_\theta=-A_z\sin\theta$. Ya que las componentes de $\vec{A}$ sólo dependen de $r$ y $\theta$ y que además $A_\varphi=0$ tenemos que el rotor se reduce a
-\begin{equation}
- \vec{\nabla}\times\vec{A}=\frac{\hat{\varphi}}{r}\left(\frac{\partial\ }{\partial r}\left(rA_\theta\right)-\frac{\partial A_r}{\partial\theta}\right). \label{rotaa}
-\end{equation}
-Además, ya que $A_r$ es proporcional a $1/r$, verificamos que el segundo término de (\ref{rotaa}) aportará con un término proporcional a $1/r^2$ al rotor, que no corresponde a una contribución radiativa al campo magnético. De esta forma, llegamos a que
-\begin{eqnarray}
- \vec{B}_{\rm rad}&=&\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(rA_\theta\right) \\
-&=&-\frac{\hat{\varphi}}{r}\frac{\partial\ }{\partial r}\left(\frac{\mu cI_0}{2\pi\omega}\cos\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\right) \\
-&=&-\frac{\mu I_0}{2\pi r}\sin\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]}{\sin\theta}\,\hat{\varphi}.
-\end{eqnarray}
-La potencia instantánea radiada por unidad de ángulo sólido puede entonces calcularse como:
-\begin{eqnarray}
- \frac{dP}{d\Omega}&=&\frac{c}{\mu}\left|\vec{B}_{\rm rad}\right|^2 r^2\\
-&=&\frac{\mu c I_0^2}{4\pi^2}\sin^2\left[\omega\left(t-\frac{r}{c}\right)\right]\frac{\left[\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)\right]^2}{\sin^2\theta}.
-\end{eqnarray}
-Ya que el movimiento es periódico es más útil considerar la potencia promedio radiada:
-\begin{equation}
- \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu cI_0^2}{8\pi^2}\left[\frac{\cos\left(\frac{1}{2}kd\cos\theta\right)-\cos\left(\frac{1}{2}kd\right)}{\sin\theta}\right]^2.
-\end{equation}
-Para una \textit{antena de media onda}, es decir, tal que $d=\lambda/2$, tendremos que $kd=\pi$ y entonces
-\begin{equation}
- \left\langle\frac{dP}{d\Omega}\right\rangle=\frac{\mu c I_0^2}{8\pi^2}\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}.
-\end{equation}
-%
-% Para la antena de una onda $kd=2\pi$:
-% \begin{eqnarray}
-%  \left\langle\frac{dP}{d\Omega}\right\rangle
-% &=&\frac{I_0^2}{2\pi c}\left[\frac{\cos\left(\pi\cos\theta\right)+1}{\sin\theta}\right]^2 \\
-% &=&\frac{I_0^2}{2\pi c}\left[\frac{2\cos^2\left(\frac{1}{2}\pi\cos\theta\right)}{\sin\theta}\right]^2 \\
-% &=&\frac{2I_0^2}{\pi c}\frac{\cos^4\left(\frac{1}{2}\pi\cos\theta\right)}{\sin^2\theta}
-% \end{eqnarray}
-\begin{figure}[H]
-\centerline{\includegraphics[width=0.5\textwidth]{fig/fig-antena-media-onda.pdf}}
- \caption{Lóbulo de radiación para la antena de media onda en el plano $zx$.}
-\label{fig:lobulo_antena}
-\end{figure}
-
-
-En este caso, la potencia promedio total es dada por
-\begin{eqnarray}
- \left\langle P\right\rangle
-&=&\frac{\mu c I_0^2}{8\pi^2}\int\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}\,d\Omega \\
-&=&\frac{\mu c I_0^2}{4\pi}\int_0^\pi\frac{\cos^2\left(\frac{\pi}{2}\cos\theta\right)}{\sin\theta}\,d\theta\\
-&=&\frac{\mu c I_0^2}{4\pi}\times 1.2188\cdots .
-\end{eqnarray}
-%En unidades S.I., este resultado se expresa como
-%\begin{equation}
-% \left\langle P\right\rangle
-%=\frac{I_0^2}{4\pi\epsilon_0c}\times 1.2188\cdots=\left(\frac{c\mu_0}{4\pi}\times 1.2188\cdots\right)I_0^2.
-%\end{equation}
-Finalmente evaluando con $c\mu_0/4\pi\approx 30 [NmA^{-2}s^{-1}]$, obtenemos
-\begin{equation}
- \left\langle P\right\rangle
-=36,564[\Omega]\,I_0^2.
-\end{equation}
-De aquí obtenemos que la \textit{la resistencia de radiación de una antena de media onda} es
-\begin{equation}
- R_{\rm rad}\approx 73,13\,\Omega,
-\end{equation}
-ya que $\left\langle I^2\right\rangle=I_0^2/2$.
