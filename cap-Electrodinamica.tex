@@ -407,7 +407,7 @@ En casos en que los campos se anulan en $\partial V$, la relación
 permite interpretar (\ref{defpem}) como el \textbf{momentum lineal total del
 campo electromagnético en el volumen} $V$. En el caso general podemos entonces interpretar la integral $\oint_{\partial V}T_{ij}\,dS_j $ como el \textbf{flujo neto de momentum por unidad de tiempo
 a través de} $\partial S$. Consecuentemente, el tensor de Maxwell $T_{ij}$
-será interpretado el tensor \textbf{densidad de flujo de momentum lineal}, y en particular representa el momentum en la dirección $i$ que se transfiere en la dirección $j$, por unidad de tiempo y área. Equivalentemente, $-T_{ij}n_j$ ($dS_j=n_jdS$)
+será interpretado como el tensor \textbf{densidad de flujo de momentum lineal}, y en particular representa el momentum en la dirección $i$ que se transfiere en la dirección $j$, por unidad de tiempo y área. Equivalentemente, $-T_{ij}n_j$ ($dS_j=n_jdS$)
 representa la \textit{fuerza por unidad de área} (tensión) que actúa sobre el sistema
 de cargas y campos en $V$.
 
@@ -425,17 +425,7 @@ momentum de campo coincide con la del flujo de energía de
 éste.
 
 \section{Conservación del momentum angular*}\label{sec:momentum_angular}
-Análogamante al caso del momentum lineal, buscamos una ecuación de balance/conservación del momento angular. El término análogo a la (densidad de) fuerza de Lorentz $f_i$ y que es determina (si no hay otras fuerzas involucradas) el cambio del momentum lineal de las cargas, es ahora la densidad de torque (torque que el campo realiza sobre las cargas, por unidad de volumen), ya está relacionado (si no hay torques no-electromagnéticos actuando) con el cambio del momento angular de las cargas.
-
-del
-campo electromagnetico en un medio lineal, isotropo y homogeneo, como
-\begin{equation}
-l_{i}^{\rm em}=\epsilon _{ijk}x_{j}\pi _{k}
-\end{equation}%
-donde $\pi _{j}$ es la densidad de momentum lineal del campo. Determine la
-densidad de flujo de momentum angular y la ecuacion de balance que estas
-cantidades satisfacen.
-
+Análogamante al caso del momentum lineal, buscamos una ecuación de balance/conservación del momento angular. El término análogo a la (densidad de) fuerza de Lorentz $f_i$ y que determina (si no hay otras fuerzas involucradas) el cambio del momentum lineal de las cargas, es ahora la \textbf{densidad de torque} (torque que el campo realiza sobre las cargas, por unidad de volumen), y está relacionado (si no hay torques no-electromagnéticos actuando) con el cambio del momento angular de las cargas. 
 
 Recordamos que el momento angular (con respecto al origen del sistema de coordenadas) de una partícula de momentum $\vec{p}$ ubicada en la posición $\vec{x}$ es
 \begin{equation}
@@ -453,7 +443,7 @@ y, para materia no-relativista (con velocidades mucho menores que la de la luz),
 \begin{equation}
 \frac{d\vec{L}_{\rm mec}}{dt} = \int_V\vec{x}\times \frac{\partial\vec{\pi}_{\rm mec}}{\partial t}dV = \int_V\vec{x}\times \vec{f}\,dV, = \int_V\vec{\tau}\,dV,
 \end{equation}
-donde $ \vec{f}=\partial\vec{\pi}_{\rm mec}/{\partial t}$ es la densidad de fuerza. La cantidad $\vec{\tau} := \vec{x}\times \vec{f}$ es la densidad de torque (e.d., torque por unidad de volumen respecto al origen del sistema coordenado).
+donde $ \vec{f}=\partial\vec{\pi}_{\rm mec}/{\partial t}$ es la densidad (volumétrica) de fuerza. La cantidad $\vec{\tau} := \vec{x}\times \vec{f}$ es la densidad de torque (e.d., torque por unidad de volumen respecto al origen del sistema coordenado).
 
 Usaremos la ley de balance de momentum lineal \eqref{lcm} para escribir la densidad de torque en función de las densidades de momentum lineal y su flujo:
 \begin{align}
@@ -482,7 +472,7 @@ _{ijk}\partial _{t}\left( x_{j}\pi _{k}\right)   \notag \\
 &= -\partial _{m}\left( \epsilon _{ijk}x_{j}T_{km}\right) +\epsilon
 _{ijk}T_{kj}-\partial _{t}\left( \epsilon _{ijk}x_{j}\pi _{k}\right) 
 \end{align}
-En el caso de un medio linear e isótropo el tensor de tensiones $T_{ij}$ es simétrico, y por lo tanto el término $\epsilon_{ijk}T_{kj}$ se anula. Entonces,
+En el caso de un medio linear \textit{e isótropo} el tensor de tensiones $T_{ij}$ es simétrico, y por lo tanto el término $\epsilon_{ijk}T_{kj}$ se anula. Entonces,
 \begin{equation}
 \tau_i =-\partial _{m}\left( \epsilon
 _{ijk}x_{j}T_{km}\right) -\partial _{t}\left( \epsilon _{ijk}x_{j}\pi
@@ -492,7 +482,7 @@ es decir,
 \begin{equation}
 \partial _{t}\left( \epsilon _{ijk}x_{j}\pi_{k}\right) + \partial _{m}\left( \epsilon_{ijk}x_{j}T_{km}\right)+ \tau_i =0,
 \end{equation}%
-que es la ecuación de balance local de momento angular, similar a \eqref{lcm}. Interpretamos entonces a 
+que interpretamos como la ecuación de balance local de momento angular, similar a \eqref{lcm}. Interpretamos entonces a 
 \begin{equation}
 l_{i}^{\rm em}:=\epsilon _{ijk}x_{j}\pi_{k}
 \end{equation}
@@ -672,7 +662,7 @@ Para la onda periódica considerada, podemos calcular la densidad de energía pr
 \end{figure}
 
 \subsection{Polarización elíptica y polarización circular*}
-Consideremos por simplicidad el caso en que la onda plana se propaga en la dirección $z$, es decir, $\vec{k}=k\hat{z}$, y la superposición de dos ondas planas monocromáticas con polarización lineal: la primera a lo largo del eje $x$ y la segunda paralela a al eje $y$. Esto es:
+Consideremos por simplicidad el caso en que la onda plana se propaga en la dirección $z$, es decir, $\vec{k}=k\hat{z}$, y la superposición de dos ondas planas monocromáticas con polarización lineal: la primera a lo largo del eje $x$ y la segunda paralela al eje $y$. Esto es:
 \begin{equation}
 \vec{E}_1=\Re\left[E_{1\rm c} e^{i(kz-\omega t)}\right]\hat{x},
 \end{equation}
