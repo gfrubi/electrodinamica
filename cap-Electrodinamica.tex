@@ -559,7 +559,7 @@ Consideremos una solución de \textbf{onda plana monocromática polarizada linea
 \end{equation}
 donde $\vec{E}_0$, $\vec{k}$, $\omega$ y $\varphi_0$ son constantes. También podemos usar la forma compleja
 \begin{equation}
-\vec{E}(\vec{x},t)=\Re\left[\vec{E}_{\rm c} e^{i(\vec{k}\cdot\vec{x}-\omega t)}\right],
+\vec{E}(\vec{x},t)=\operatorname{Re}\left[\vec{E}_{\rm c} e^{i(\vec{k}\cdot\vec{x}-\omega t)}\right],
 \label{opmc}%
 \end{equation}
 donde la amplitud compleja $\vec{E}_{\rm c}$ es dada, en términos de la amplitud real $\vec{E}_0$ y la fase $\varphi_0$, por
@@ -664,15 +664,15 @@ Para la onda periódica considerada, podemos calcular la densidad de energía pr
 \subsection{Polarización elíptica y polarización circular*}
 Consideremos por simplicidad el caso en que la onda plana se propaga en la dirección $z$, es decir, $\vec{k}=k\hat{z}$, y la superposición de dos ondas planas monocromáticas con polarización lineal: la primera a lo largo del eje $x$ y la segunda paralela al eje $y$. Esto es:
 \begin{equation}
-\vec{E}_1=\Re\left[E_{1\rm c} e^{i(kz-\omega t)}\right]\hat{x},
+\vec{E}_1=\operatorname{Re}\left[E_{1\rm c} e^{i(kz-\omega t)}\right]\hat{x},
 \end{equation}
 \begin{equation}
-\vec{E}_2=\Re\left[E_{2\rm c} e^{i(kz-\omega t)}\right]\hat{y}.
+\vec{E}_2=\operatorname{Re}\left[E_{2\rm c} e^{i(kz-\omega t)}\right]\hat{y}.
 \end{equation}
 Las amplitudes complejas $E_{1\rm c}=E_{1}^0e^{i\varphi_1}$ y $E_{2\rm c}=E_{2}^0e^{i\varphi_2}$ tienen entonces la información de las amplitudes y fases de cada onda componente. Entonces
 \begin{align}
 \vec{E} &= \vec{E}_1+\vec{E}_2 \\
-&= \Re\left[\left(E_{1\rm c}\hat{x}+E_{2\rm c}\hat{y}\right) e^{i(kz-\omega t)}\right] \label{E12-2} \\
+&= \operatorname{Re}\left[\left(E_{1\rm c}\hat{x}+E_{2\rm c}\hat{y}\right) e^{i(kz-\omega t)}\right] \label{E12-2} \\
 &= E_{1}^0\cos(kz-\omega t+\varphi_1)\hat{x} + E_{2}^0\cos(kz-\omega t+\varphi_2)\hat{y}
 \end{align}
 
@@ -686,8 +686,8 @@ que es una onda con polarización lineal con amplitud $\sqrt{(E_{1}^0)^2+(E_{2}^
 \subsubsection{Ondas de igual amplitud y diferencia de fase de $\pi/2$}
  Si $\varphi_2=\varphi_1\pm\pi/2$ y $E_{2}^0=E_{1}^0$ entonces
 \begin{align}
-\vec{E} &= \Re\left[E_{1\rm c}\left(\hat{x}+ e^{\pm i\pi/2}\hat{y}\right) e^{i(kz-\omega t)}\right] \\
-&= \Re\left[E_{1\rm c}\left(\hat{x}\pm i\hat{y}\right) e^{i(kz-\omega t)}\right]\\
+\vec{E} &= \operatorname{Re}\left[E_{1\rm c}\left(\hat{x}+ e^{\pm i\pi/2}\hat{y}\right) e^{i(kz-\omega t)}\right] \\
+&= \operatorname{Re}\left[E_{1\rm c}\left(\hat{x}\pm i\hat{y}\right) e^{i(kz-\omega t)}\right]\\
 &= E_{1}^0\left[\cos(kz-\omega t+\varphi_1)\hat{x} \mp \sin(kz-\omega t+\varphi_1)\hat{y}\right].
 \end{align}
 Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido antihorario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular izquierda (LCP)}. En el otro caso, el campo girará en sentido horario y diremos que la onda tiene \textbf{polarización circular derecha (RCP)}\footnote{Warning!. No hay absoluto consenso sobre esta convención de nombres, por lo que es siempre recomendable verificar la orientación del giro del campo en cada caso. Aquí seguimos la convención descrita en \cite{Jackson}, que es la más empleada en óptica (pero opuesta, por ejemplo a la usada en \cite{Griffiths2013}!). Otra forma de refererse a ambos casos, más usada en el contexto de física de partículas, es decir que la onda tiene \textbf{helicidad positiva o negativa}, para los casos LCP y RCP respectivamente}.
@@ -709,7 +709,7 @@ Puede comprobar que los vectores $\hat\epsilon_\pm$ satisfacen
 \end{equation}
 Usando \eqref{xyeppm} podemos rescribir una superposición general \eqref{E12-2} en términos de la base de vectores de polarización circular, obteniendo
 \begin{equation}
-\vec{E} = \Re\left[\left(E_{+\rm c}\hat\epsilon_+ + E_{-\rm c}\hat\epsilon_-\right)e^{i(kz-\omega t)}\right],
+\vec{E} = \operatorname{Re}\left[\left(E_{+\rm c}\hat\epsilon_+ + E_{-\rm c}\hat\epsilon_-\right)e^{i(kz-\omega t)}\right],
 \end{equation}
 con
 \begin{equation}
@@ -752,13 +752,13 @@ y entonces
 \begin{align}
 \vec{E}(\vec{x},t) &= \frac{1}{2}\int\vec{E}^*_{k}(-\vec{k})e^{i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
 &= \frac{1}{2}\int\vec{E}^*_{k}(\vec{k})e^{i\omega t}e^{-i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
-&= \Re\left[\int\vec{E}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right].
+&= \operatorname{Re}\left[\int\vec{E}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right].
 \end{align}
 Esta forma es similar a aquella de una onda plana monocromática con polarización lineal. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$'' y $\vec{k}+d\vec{k}$ ($\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
 
 Si expresamos el campo magnético de forma similar, e.d.,
 \begin{equation}
-\vec{B}(\vec{x},t) = \Re\left[\int\vec{B}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right],
+\vec{B}(\vec{x},t) = \operatorname{Re}\left[\int\vec{B}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right],
 \end{equation}
 entonces las ecuaciones de Maxwell requieren que
 \begin{align}
