@@ -690,15 +690,15 @@ que es una onda con polarización lineal con amplitud $\sqrt{(E_{1}^0)^2+(E_{2}^
 &= \operatorname{Re}\left[E_{1\rm c}\left(\hat{x}\pm i\hat{y}\right) e^{i(kz-\omega t)}\right]\\
 &= E_{1}^0\left[\cos(kz-\omega t+\varphi_1)\hat{x} \mp \sin(kz-\omega t+\varphi_1)\hat{y}\right].
 \end{align}
-Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido antihorario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular izquierda (LCP)}. En el otro caso, el campo girará en sentido horario y diremos que la onda tiene \textbf{polarización circular derecha (RCP)}\footnote{Warning!. No hay absoluto consenso sobre esta convención de nombres, por lo que es siempre recomendable verificar la orientación del giro del campo en cada caso. Aquí seguimos la convención descrita en \cite{Jackson}, que es la más empleada en óptica (pero opuesta, por ejemplo a la usada en \cite{Griffiths2013}!). Otra forma de refererse a ambos casos, más usada en el contexto de física de partículas, es decir que la onda tiene \textbf{helicidad positiva o negativa}, para los casos LCP y RCP respectivamente}.
+Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido antihorario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular izquierda (LCP)}. En el otro caso, el campo girará en sentido horario y diremos que la onda tiene \textbf{polarización circular derecha (RCP)}\footnote{Warning!. No hay absoluto consenso sobre esta convención de nombres, por lo que es siempre recomendable verificar la orientación del giro del campo en cada caso. Aquí seguimos la convención descrita en \cite{Jackson}, que es la más empleada en óptica (pero opuesta, por ejemplo a la usada en \cite{Griffiths2013}!). Otra forma de refererse a ambos casos, más usada en el contexto de física de partículas, es decir que la onda tiene \textbf{helicidad positiva o negativa}, para los casos LCP y RCP respectivamente.}.
 
-Como vemos, el uso de amplitudes complejas es bastante útil en este caso, ya que permite escribir expresiones más compactas. Podemos introducir una nueva base de amplitudes completas $\hat\epsilon_\pm$, definidas por
+Como vemos, el uso de amplitudes complejas es bastante útil en este caso, ya que permite escribir expresiones más compactas. Podemos introducir una nueva base de amplitudes complejas $\hat\epsilon_\pm$, definidas por
 \begin{equation}
 \hat\epsilon_\pm := \frac{1}{\sqrt{2}}(\hat{x}\pm i\hat{y}).
 \end{equation}
 La relación inversa es dada entonces por
 \begin{equation}\label{xyeppm}
-\hat{x}=\frac{1}{\sqrt{2}}(\hat\epsilon_+ + \hat\epsilon_-), \qquad \hat{y}=\frac{-i}{\sqrt{2}}(\hat\epsilon_+ - \hat\epsilon_-).
+\hat{x}=\frac{1}{\sqrt{2}}(\hat\epsilon_+ + \hat\epsilon_-), \qquad \hat{y}=-\frac{i}{\sqrt{2}}(\hat\epsilon_+ - \hat\epsilon_-).
 \end{equation}
 
 Puede comprobar que los vectores $\hat\epsilon_\pm$ satisfacen
@@ -754,7 +754,7 @@ y entonces
 &= \frac{1}{2}\int\vec{E}^*_{k}(\vec{k})e^{i\omega t}e^{-i\vec{k}\cdot\vec{x}}\,d^3k + \frac{1}{2}\int\vec{E}_{k}(\vec{k})e^{-i\omega t}e^{i\vec{k}\cdot\vec{x}}\,d^3k \\
 &= \operatorname{Re}\left[\int\vec{E}_{k}(\vec{k})e^{i(\vec{k}\cdot\vec{x}-\omega t)}\,d^3k\right].
 \end{align}
-Esta forma es similar a aquella de una onda plana monocromática con polarización lineal. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$'' y $\vec{k}+d\vec{k}$ ($\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
+Esta forma es similar a aquella de una onda plana monocromática con polarización lineal, e.d. ec. \eqref{opmc}. De esta forma, hemos descompuesto una onda general (no plana, no monocromática, sin polarización lineal) en una superposición de ondas planas, monocromáticas y con polarización lineal. Podemos entonces interpretar $\vec{E}_{k}(\vec{k})\,d^3k$ como la ``amplitud de las ondas planas monocromáticas (de la descomposición de la onda general) con vector de onda entre $\vec{k}$'' y $\vec{k}+d\vec{k}$ (en otras palabras, $\vec{E}_{k}(\vec{k})$ sería la ``amplitud por unidad de volumen en el espacio de vectores de onda''). Note que $\vec{E}_{k}(\vec{k})\,d^3k$ tiene unidades de campo eléctrico ($\rm V/m$), mientras que $\vec{E}_{k}(\vec{k})$ tiene unidades de campo eléctrico por volumen ($\rm V m^2$).
 
 Si expresamos el campo magnético de forma similar, e.d.,
 \begin{equation}
