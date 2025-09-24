@@ -814,7 +814,7 @@ Al reemplazar en las ecuaciones de Faraday y Ampère-Maxwell obtenemos
     \partial_x E^0_y - \partial_y E^0_x = i\omega B^0_z, \quad
     \partial_x B^0_y - \partial_y B^0_x = -\frac{i\omega}{c^2} E^0_z.
 \end{equation}
-Podemos despejar las componentes transversales de los campos de estas ecuaciones, obteniendo expresiones en términos de las componentes longitudinales $E_z$ y $B_z$:
+Podemos despejar las componentes transversales de los campos de estas ecuaciones, obteniendo expresiones en términos de las componentes longitudinales $E^0_z$ y $B^0_z$:
 \begin{align}
     E^0_x &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_x E^0_z + \omega \partial_y B^0_z \right), \label{ExGO}\\
     E^0_y &= \frac{i}{\omega^2/c^2 - k^2} \left( k \partial_y E^0_z - \omega \partial_x B^0_z \right), \label{EyGO}\\
@@ -899,39 +899,36 @@ entonces podemos escribir la velocidades de fase y grupo de las ondas propagadas
 v_{\rm f} = \frac{\omega}{k} = \frac{c}{\sqrt{1 - \left(\frac{\omega_{mn}}{\omega}\right)^2}} > c,
 \end{equation}
 \begin{equation}
-v_{\rm g} = \frac{dk}{d\omega} = c \sqrt{1 - \left(\frac{\omega_{mn}}{\omega}\right)^2} < c.
+v_{\rm g} = \frac{d\omega}{dk} = c \sqrt{1 - \left(\frac{\omega_{mn}}{\omega}\right)^2} < c.
 \end{equation}
 
 
 El modo TE fundamental, TE$_{10}$
 \begin{equation}
-E_x=E_z=0, \qquad E_y \propto \sin\left(\frac{\pi x}{a}\right) 
+E_x=E_z=0, \qquad E_y \propto \sin\left(\frac{\pi x}{a}\right) .
 \end{equation}
 
 Podemos reescribir $E_y$ como
 \begin{equation}
 E_y\propto e^{i(kz+\pi x/a-\omega t)}-e^{i(kz-\pi x/a-\omega t)}.
 \end{equation}
-Vemos de aquí que este modo puede considerarse como una superposición de dos ondas planas propagándose en diagonal dentro de la guía, con vectores de onda de la forma $\vec{k}_\pm = k\hat{z}\pm(\pi /a)\hat{x}$. El ángulo $\theta$ entre la normal 
-\begin{equation}
-\cos\theta=\pm\frac{\omega_{nm}}{\omega}
-\end{equation}
+Vemos de aquí que este modo puede considerarse como una superposición de dos ondas planas propagándose en diagonal dentro de la guía, con vectores de onda de la forma $\vec{k}_\pm = k\hat{z}\pm(\pi /a)\hat{x}$. 
 
 
-\subsubsection{Modos TM:}  Si $B_z=0$ entonces buscamos soluciones no triviales para $E_z(x,y)$ que deben satisfacer las condiciones de borde $\vec{E}_z\times\hat{x}=\vec{0}$ en $x=0,a$ y $\vec{E}_z\times\hat{y}=\vec{0}$ en $y=0,b$. Las soluciones separables son entonces de la forma
+\subsubsection{Modos TM:}  Si $B_z=0$ entonces buscamos soluciones no triviales para $E^0_z(x,y)$ que deben satisfacer las condiciones de borde $\vec{E}_z\times\hat{x}=\vec{0}$ en $x=0$ y en $x=a$,   y además $\vec{E}_z\times\hat{y}=\vec{0}$ en $y=0$ y en $y=b$. Las soluciones separables son entonces de la forma
 \begin{equation}
-E_z(x, y) = E_0 \sin\left(\frac{m \pi x}{a}\right) \sin\left(\frac{n \pi y}{b}\right)e^{i(kz-\omega t)}, \qquad n,m=1,2,3,\dots.
+E^0_z(x, y) = E_0 \sin\left(\frac{m \pi x}{a}\right) \sin\left(\frac{n \pi y}{b}\right)e^{i(kz-\omega t)}, \qquad n,m=1,2,3,\dots.
 \end{equation}
 La menor frecuencia permitida para los modos TM corresponde al caso en que $n=m=1$, es decir
 \begin{equation}
-\omega^{\rm TM}_{11}=c\sqrt{\frac{\pi^2}{a^2}+\frac{\pi^2}{b^2}}.
+\omega_{11}=c\pi\sqrt{\frac{1}{a^2}+\frac{1}{b^2}}.
 \end{equation}
 
 \subsubsection{Modos TEM:} 
 
-Vemos de \eqref{ExGO}--\eqref{ByGO} que si $E_z=0$ y $B_z=0$ todo el campo se anula, de modo que no existen modos TEM no-triviales en una guía de onda rectangular.
+Vemos de \eqref{ExGO}--\eqref{ByGO} que si $E^0_z=0$ y $B^0_z=0$ todo el campo se anula, de modo que no existen modos TEM no-triviales en una guía de onda rectangular.
 
-Es posible demostrar que en una guía de ondas completamente hueca, pero de sección transversal arbitratria, no pueden existir modos TEM. En efecto, si $E_z=0$ y $B_z= 0$ entonces la ecuación de Gauss implica que $\partial_xE_x+\partial_yE_y=0$ y la componente $z$ de la ecuación de Faraday implica $\partial_xE_y-\partial_yE_x=0$. Entonces podemos escribir $E_x=-\partial_x\phi$, $E_y=-\partial_y\phi$ con $\nabla^2\phi=0$. Sin embargo, las condiciones de borde (\ref{CdBGO}a) implican que $\phi$ debe ser constante en el borde, y entonces la única solución para $\phi$ es una constante, que implica $E_x=E_y=0$.
+Es posible demostrar que \textit{en una guía de ondas completamente hueca, pero de sección transversal arbitratria, no pueden existir modos TEM}. En efecto, si $E_z=0$ y $B_z= 0$ entonces la ecuación de Gauss implica que $\partial_xE_x+\partial_yE_y=0$ y la componente $z$ de la ecuación de Faraday implica $\partial_xE_y-\partial_yE_x=0$. Entonces podemos escribir $E_x=-\partial_x\phi$, $E_y=-\partial_y\phi$ con $\nabla^2\phi=0$. Sin embargo, las condiciones de borde (\ref{CdBGO}a) implican que $\phi$ debe ser constante en el borde, y entonces la única solución para $\phi$ es una constante, que implica $E_x=E_y=0$.
 
 \subsection{Guía de onda circular}
 
