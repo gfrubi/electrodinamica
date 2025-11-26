@@ -998,8 +998,7 @@ La sección eficaz total de scattering de acuerdo a la fórmula de Klein-Nishina
 
 
 
-\section{Distribución de Energía en ángulo y Frecuencia radiada
-por cargas aceleradas}
+\section{Distribución de Energía en ángulo y Frecuencia radiada}
 
 Habíamos obtenido, ver \eqref{Pinf1} y \eqref{S2E}, que la potencia irradiada por unidad de ángulo sólido es dada en general por
 \begin{equation}\label{dp1}
@@ -1057,9 +1056,16 @@ Puesto que $\vec{E}(\vec{x},t)$ es real, tendremos que $\vec{E}_{m}^*=\vec{E}_{-
 Definimos la \textit{potencia promedio radiada por
 unidad de ángulo sólido en el m-ésimo armónico} como:
 \begin{equation}
-\left\langle\frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}) :=\frac{2}{\mu c}\lim_{r\to\infty}r^2\left|\vec{E}_{m}\right|^2, \qquad m=1,2,3,\cdots.
+\boxed{\left\langle\frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}) :=\frac{2}{\mu c}\lim_{r\to\infty}r^2\left|\vec{E}_{m}\right|^2, \qquad m=1,2,3,\cdots,}
 \end{equation}
-La expresión (\ref{defAm}) nos permite entonces escribir, para el caso de el campo producido por una carga puntual:
+de modo que
+\begin{equation}
+\boxed{\left\langle\frac{dP}{d\Omega}\right\rangle (\hat{n}) = \sum_{m=1}^{\infty}\left\langle\frac{dP_{m}}{d\Omega}\right\rangle (\hat{n}) .}
+\end{equation}
+La expresiones anteriores son válidas para cualquier fuente (compacta). Note además que la contribución correspondiente a $m=0$ será nula ya que corresponde a la parte del campo independiente del tiempo, que no tiene componente radiativa ya que decae al menos con una potencia $1/r^2$.
+
+\subsubsection{Caso carga puntual}
+Para el caso del campo producido por una carga puntual, la expresión (\ref{defAm}) nos permite entonces escribir:
 \begin{eqnarray}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle (\hat{n})&=&
 \frac{2}{\mu cT^2}\lim_{r\to\infty}r^2\left|\int_0^{T}\vec{E}(\vec{x},t)e^{-i\omega_{m}t}dt\right|^2\\
@@ -1070,23 +1076,23 @@ La expresión (\ref{defAm}) nos permite entonces escribir, para el caso de el ca
 Para simplificar la integral introducimos la nueva variable de integración
 $t':=t_{\rm ret}(t)=t-{R}/{c}$ y usamos (\ref{dtt'2}), de modo que podemos escribir
 \begin{align}
-\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt &= \int_{-R/c}^{T-R/c}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{t'}e^{-i\omega_m (t'+R(t')/c)}\left(1-\vec{\beta}\cdot\hat{n}\right) dt' \\
+\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt &= \int_{-R/c}^{T-R/c}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{t'}e^{-i\omega_m (t'+R(t')/c)}\left(1-\vec{\beta}\cdot\hat{n}\right) dt' \\
 &= \int_{-R/c}^{T-R/c}\left.\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left(1-\vec{\beta}\cdot\hat{n}\right)^2}
+\times{\vec{a}}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^2}
 \right|_{t'}e^{-i\omega_m (t'+R(t')/c)} dt' \\
 &= \int_{-R/c}^{T-R/c}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)
-\times{\vec{a}}\right] }{R\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
+\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
 e^{-i\omega_m(t+R(t)/c)} dt.
 \end{align}
 
 En el último paso hemos renombrado la variable de integración volviendo
 nuevamente a denotarla por $t$. Esta integral es evaluada ``en el infinito'', es decir, a grandes distancias de la carga ($r\rightarrow\infty$). Tomando en cuenta esto, podemos expandir $R$ en potencias de ${\vec{z}}/{r}$, obteniendo
 \begin{equation}
-R(t)  =r-\vec{z}(t) \cdot\hat{n}+O\left(\left[z/r\right]^2\right). \label{expR} %aqui cambie
+R(t)  =r-\vec{z}(t) \cdot\hat{n}+O\left(r^{-1}\right). \label{expR} %aqui cambie
 \end{equation}
 Usando esta expansión, podemos escribir:
 \begin{equation}
-\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt =\frac{e^{-i\frac{\omega_m r}{c}}}{r}\int_{-r/c}^{T-r/c}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
+\int_0^{T}\left.\frac{\hat{n}\times\left[\left(\hat{n}-\vec{\beta}\right)\times\vec{a}\right] }{\left(1-\vec{\beta}\cdot\hat{n}\right)^3}\right|_{\rm ret} e^{-i\omega_{m}t}dt =e^{-i\frac{\omega_m r}{c}}\int_{-r/c}^{T-r/c}\frac{\hat{n}\times\left[ \left( \hat{n}-\vec{\beta}\right)\times{\vec{a}}\right] }{\left( 1-\vec{\beta}\cdot\hat{n}\right)^2}
 e^{-i\omega_m(t-\vec{z}(t)\cdot\hat{n}/c)} dt,
 \end{equation}
 
@@ -1189,7 +1195,7 @@ de modo que
 \begin{align}
 \left\langle \frac{dP_{m}}{d\Omega}\right\rangle &=
 \frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
-\left| \int_0^{2\pi\omega_1}A\omega_1\sin\theta\sin\left(\omega_1t\right)
+\left| \int_0^{2\pi/\omega_1}A\omega_1\sin\theta\sin\left(\omega_1t\right)
 \hat{x}e^{-i\omega_1m\left(t-\frac{A\cos\left(\omega_1t\right)\cos\theta}{c}\right)}dt\right|^2\\
 &=\frac{q^2\mu}{4\pi c}\frac{m^2\omega_1^4}{\left(2\pi\right)^3}
 A^2\omega_1^2\sin^2\theta\left| \int_0^{2\pi/\omega_1}\sin\left(
@@ -1266,8 +1272,8 @@ m}{c}\cos\theta\right)  \right]^2.}
 \label{TER2}
 \end{figure}
 \begin{figure}[ht]
-\centerline{\includegraphics[height=6cm]{fig/fig-mas-potencia-total-comparacion.pdf}}
- \caption{Potencia promedio radiada para $m=1,\cdots,5$, con parámetros de velocidad $\beta=0.5$ y  $\beta=0.1$, normalizadas respecto a la potencia total.  Código Python \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-mas-potencia-total-comparacion.py}{aquí}.}
+\centerline{\includegraphics[height=5cm]{fig/fig-mas-potencia-total-comparacion.pdf}\includegraphics[height=5cm]{fig/fig-mas-potencia-total-comparacion-logy.pdf}}
+ \caption{Potencia promedio radiada para $m=1,\dots,5$, con parámetros de velocidad $\beta=0.5$ y  $\beta=0.1$, normalizadas respecto a la potencia total, $\left\langle P\right\rangle = \sum_m\left\langle P_m\right\rangle$.  Código Python \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-mas-potencia-total-comparacion.py}{aquí}.}
 \label{TER3}
 \end{figure}
 Podemos comprobar que \textit{la mayor cantidad de energía se irradia en la
