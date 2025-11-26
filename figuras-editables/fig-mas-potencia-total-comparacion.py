@@ -22,6 +22,7 @@ for b,c in zip(betas,colores):
 plt.legend()
 plt.xlim(0.8,5.2)
 plt.ylim(0,1.2)
+#plt.yscale('log')
 plt.grid(True)
 plt.minorticks_on()
 plt.xlabel('$m$', fontsize=15)
