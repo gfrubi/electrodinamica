@@ -1036,11 +1036,11 @@ T_\text{em}^{\mu\nu}=T_\text{em}^{\nu\mu}.
 \end{equation}
 
 
-Escribiendo las componentes del tensor simétrico $\Theta^{\mu\nu}$ en términos
+Escribiendo las componentes del tensor simétrico $T_{\rm em}^{\mu\nu}$ en términos
 de las componentes de $\vec{E}$ y $\vec{B}$, encontramos que:
 %En Gaussianas
 %\begin{align}
-%\Theta_0{}^0  & =\frac{1}{4\pi}\left(  F^{0\lambda}F_{\lambda0}+\frac
+%T_{\rm em}_0{}^0  & =\frac{1}{4\pi}\left(  F^{0\lambda}F_{\lambda0}+\frac
 %{1}{2}\left(  \vec{B}^2-\vec{E}^2\right)  \delta_0^0\right) \\
 %& =\frac{1}{4\pi}\left(  F^{0i}F_{i0}+\frac{1}{2}\left(
 %\vec{B}^2-\vec{E}^2\right)
@@ -1050,14 +1050,14 @@ de las componentes de $\vec{E}$ y $\vec{B}$, encontramos que:
 %& =\frac{1}{8\pi}\left(  \vec{E}^2+\vec{B}^2\right),
 %\end{align}%
 %\begin{align}
-%\Theta_0{}^i  & =\frac{1}{4\pi}\left(  F^{i\lambda}F_{\lambda0}+\frac
+%T_{\rm em}_0{}^i  & =\frac{1}{4\pi}\left(  F^{i\lambda}F_{\lambda0}+\frac
 %{1}{2}\left(  \vec{B}^2-\vec{E}^2\right)  \delta_0^i\right) \\
 %& =\frac{1}{4\pi}F^{ij}F_{j0}\\
 %& =\frac{1}{4\pi}(-\varepsilon^{ijk}B^k)  (-E^j) \\
 %& =\frac{1}{4\pi}\left(\vec{E}\times\vec{B}\right)^i,
 %\end{align}%
 %\begin{align}
-%\Theta_j{}^i  & =\frac{1}{4\pi}\left(  F^{i\lambda}F_{\lambda j}+\frac
+%T_{\rm em}_j{}^i  & =\frac{1}{4\pi}\left(  F^{i\lambda}F_{\lambda j}+\frac
 %{1}{2}\left( \vec{B}^2-\vec{E}^2\right)  \delta_j^i\right) \\
 %& =\frac{1}{4\pi}\left(  F^{i0}F_{0j}+F^{ik}F_{kj}+\frac{1}{2}\left(
 %\vec{B}^2-\vec{E}^2\right)  \delta_j^i\right) \\
@@ -1104,15 +1104,15 @@ T_\text{em}^{ij}  & =\frac{1}{\mu_0}\left[  F^{i\lambda}F_\lambda^{\ j}+\frac
 En resumen, podemos indentificar
 % Gaussianas
 %\begin{eqnarray}
-%u&:=&\Theta_0{}^0=\frac{1}{8\pi}\left( \vec{E}^2+\vec{B}^2\right),\\
-%S^i&:=&c\Theta_0{}^i=\frac{c}{4\pi}\left(\vec{E}\times\vec{B}\right)^i=c^2\pi^i,\\
-%T_j{}^i&:=&\Theta_j{}^i=\frac{1}{4\pi}\left(  E^i E^j +B^i B^j
+%u&:=&T_{\rm em}_0{}^0=\frac{1}{8\pi}\left( \vec{E}^2+\vec{B}^2\right),\\
+%S^i&:=&cT_{\rm em}_0{}^i=\frac{c}{4\pi}\left(\vec{E}\times\vec{B}\right)^i=c^2\pi^i,\\
+%T_j{}^i&:=&T_{\rm em}_j{}^i=\frac{1}{4\pi}\left(  E^i E^j +B^i B^j
 %-\frac{1}{2}\left(  \vec{E}^2+\vec{B}^2\right)\delta_j^i\right),
 %\end{eqnarray}
 \begin{align}
-u &:= \Theta^{00}=\frac{1}{2}\left(\varepsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right),\label{uTheta}\\
-S^i &:= c\Theta^{0i}=\frac{1}{\mu_0}\left(\vec{E}\times\vec{B}\right)^i=c^2\pi^i, \label{STheta}\\
-T^{ij} &:= \Theta^{ij}= \frac{1}{2}\left(\varepsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right)\delta^{ij}-\varepsilon_0 E^i E^j -\frac{1}{\mu_0}B^i B^j , \label{TTheta}
+u &:= T_{\rm em}^{00}=\frac{1}{2}\left(\varepsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right),\label{uTheta}\\
+S^i &:= cT_{\rm em}^{0i}=\frac{1}{\mu_0}\left(\vec{E}\times\vec{B}\right)^i=c^2\pi^i, \label{STheta}\\
+T^{ij} &:= T_{\rm em}^{ij}= \frac{1}{2}\left(\varepsilon_0\vec{E}^2+\frac{1}{\mu_0}\vec{B}^2\right)\delta^{ij}-\varepsilon_0 E^i E^j -\frac{1}{\mu_0}B^i B^j , \label{TTheta}
 \end{align}
 como la \textit{densidad de energía} $u$, la \textit{densidad de flujo de
 energía} $\vec{S}$ (vector de Poynting), \textit{densidad de moméntum}
@@ -1120,7 +1120,7 @@ $\vec{\pi}$ y el \textit{tensor de tensiones} $T^{ij}$ del campo
 electromagnético, respectivamente, ya discutidos en las secciones \ref{sec:energia} y \ref{sec:momentum}. En otras palabras, hemos verificado que estas densidades y sus respectivos flujos son componentes de un tensor de rango 2 bajo TL's.
 
 % \begin{equation}
-% \Theta^\mu_{\ \nu}
+% T_{\rm em}^\mu_{\ \nu}
 % = \left( \text{\small\begin{tabular}{c | c}
 %   Densidad & Flujo de Energía \\
 %   de energía & \\ \hline
@@ -1132,14 +1132,14 @@ electromagnético, respectivamente, ya discutidos en las secciones \ref{sec:ener
 
 Podemos verificar además que las leyes de balance de la energía y el momentum del campo pueden escribirse en forma covariante como
 \begin{equation}
-\boxed{\partial_\nu \Theta^{\mu\nu}+ F^\mu{}_\nu J^\nu=0.}
+\boxed{\partial_\nu T_{\rm em}^{\mu\nu}+ F^\mu{}_\nu J^\nu=0.}
 \label{clem}
 \end{equation}
 En efecto, para $\mu=0$ esta relación se reduce a
 \begin{equation}
-\partial_\nu \Theta^{0\nu}+F^0{}_\nu J^\nu=0
+\partial_\nu T_{\rm em}^{0\nu}+F^0{}_\nu J^\nu=0
 \end{equation}
-que, luego de identificar las componentes de $\Theta$ de acuerdo a \eqref{uTheta}-\eqref{TTheta}, es equivalente a \eqref{econtEem}, es decir,
+que, luego de identificar las componentes de $T_{\rm em}$ de acuerdo a \eqref{uTheta}-\eqref{TTheta}, es equivalente a \eqref{econtEem}, es decir,
 \begin{equation}
 \frac{\partial u}{\partial
 t}+\vec{\nabla}\cdot\vec{S}+\vec{E}\cdot\vec{J}  =0.
@@ -1251,24 +1251,24 @@ En el caso de que el sistema de cargas conste de una carga puntual de carga $q$,
 la 4-corriente es de la forma (\ref{Jcov}). En este caso, integrando la ley de
 conservación (\ref{clem}) en un volumen $V$, obtenemos
 \begin{eqnarray}
-0&=&\int_V \left[ \partial_\nu \Theta^{\mu\nu}+\frac{1}{c} F^\mu_{\
+0&=&\int_V \left[ \partial_\nu T_{\rm em}^{\mu\nu}+\frac{1}{c} F^\mu_{\
 \nu}J^\nu\right]  dV \\
-&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} \Theta^{\mu
-0}+\partial_i \Theta^{\mu i}+\frac{1}{c} F^\mu_{\ \nu}J^\nu\right]  dV \\
-&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} \Theta^{\mu
-0}+\partial_i \Theta^{\mu i}+q\int d\tau\,  F^\mu_{\
+&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} T_{\rm em}^{\mu
+0}+\partial_i T_{\rm em}^{\mu i}+\frac{1}{c} F^\mu_{\ \nu}J^\nu\right]  dV \\
+&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} T_{\rm em}^{\mu
+0}+\partial_i T_{\rm em}^{\mu i}+q\int d\tau\,  F^\mu_{\
 \nu}u^\nu\,\delta^{(4)}\left(x^\mu-z^\mu(\tau)\right)\right]  dV \\
-&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} \Theta^{\mu
-0}+\partial_i \Theta^{\mu i}+c\int d\tau\,
+&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} T_{\rm em}^{\mu
+0}+\partial_i T_{\rm em}^{\mu i}+c\int d\tau\,
 \frac{dp^\mu}{d\tau}\,\delta^{(4)}\left(x^\mu-z^\mu(\tau)\right)\right]  dV \\
-&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} \Theta^{\mu
-0}+\partial_i \Theta^{\mu i}+c\int dt\,
+&=&\int_V \left[\frac{1}{c} \frac{\partial}{\partial t} T_{\rm em}^{\mu
+0}+\partial_i T_{\rm em}^{\mu i}+c\int dt\,
 \frac{dp^\mu}{dt}\,\delta^{(4)}\left(x^\mu-z^\mu(\tau)\right)\right]  dV
 \\
-&=&\frac{d}{dt}\frac{1}{c}\int_V  \Theta^{\mu 0}\,dV+\oint_{\partial V}\Theta^{\mu
+&=&\frac{d}{dt}\frac{1}{c}\int_V  T_{\rm em}^{\mu 0}\,dV+\oint_{\partial V}T_{\rm em}^{\mu
 i}dS_i+\int \frac{dp^\mu}{dt}\,\delta^{(4)}\left(x^\mu-z^\mu(\tau)\right)  d^4x
 \\
-&=&\frac{dP^\mu_{\rm campo}}{dt}+\oint_{\partial V}\Theta^{\mu
+&=&\frac{dP^\mu_{\rm campo}}{dt}+\oint_{\partial V}T_{\rm em}^{\mu
 i}dS_i+\frac{dp^\mu_{\rm carga}}{dt}.
 \end{eqnarray}
 Integrando sobre todo el espacio y asumiendo que los campos se anulan
@@ -1283,7 +1283,7 @@ Existe una asimetría en la descripción de la energía y el moméntum del
 sistema campo-carga. Mientras la carga es descrita en términos de su 4-moméntum
 $p^\mu_{\rm carga}$, el contenido de energía-moméntum del campo
 electromagnético es descrito por su tensor de energía-moméntum
-$\Theta^{\mu\nu}$. Esto es debido al carácter puntual de la carga considerada.
+$T_{\rm em}^{\mu\nu}$. Esto es debido al carácter puntual de la carga considerada.
 
 Es posible definir un tensor energía-moméntum para la carga puntual de manera
 análoga a como definimos la 4-corriente (\ref{Jcov}). Buscamos un tensor de
@@ -1330,6 +1330,6 @@ d\tau  \delta^4(x-z(\tau)) \frac{dp^\mu}{d\tau}\\
 Con este resultado podemos expresar la conservación (\ref{clem}) del 4-moméntum
 total del sistema campo + carga como
 \begin{equation}
-\boxed{\partial_\nu \left( \Theta^{\mu\nu}+T_{\rm carga}^{\mu\nu}\right) =0.}
+\boxed{\partial_\nu \left( T_{\rm em}^{\mu\nu}+T_{\rm carga}^{\mu\nu}\right) =0.}
 \label{clem2}
 \end{equation}
