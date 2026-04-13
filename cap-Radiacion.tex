@@ -25,21 +25,21 @@ con una función ``fuente'' $g(\vec{x},t)$ dada.
 \subsubsection{Transformada de Fourier}
 Primero introduciremos la \textbf{transformada de Fourier temporal} de los campos involucrados (suponemos que estos campos son cuadrado-integrables),
 \begin{equation}
-\bar{\Psi}(\vec{x},\omega):=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty
+\tilde{\Psi}(\vec{x},\omega):=\int_{-\infty}^\infty
 \Psi(\vec{x},t)e^{-i\omega t}\,dt,
 \end{equation}
 \begin{equation}
-\bar{g}(\vec{x},\omega):=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty
+\tilde{g}(\vec{x},\omega):=\int_{-\infty}^\infty
 g(\vec{x},t)e^{-i\omega t}\,dt ,
 \end{equation}
 y entonces
 \begin{equation}
-g(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty
-\bar{g}(\vec{x},\omega)e^{+i\omega t}\,d\omega,
+g(\vec{x},t)=\frac{1}{2\pi}\int_{-\infty}^\infty
+\tilde{g}(\vec{x},\omega)e^{+i\omega t}\,d\omega,
 \end{equation}
 \begin{equation}
-\Psi(\vec{x},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty
-\bar{\Psi}(\vec{x},\omega)e^{+i\omega t}\,d\omega.
+\Psi(\vec{x},t)=\frac{1}{2\pi}\int_{-\infty}^\infty
+\tilde{\Psi}(\vec{x},\omega)e^{+i\omega t}\,d\omega.
 \end{equation}
 
 Usando estas transformaciones la ecuación (\ref{oih}) se reduce a la ecuación de
@@ -58,9 +58,9 @@ La función de Green asociada a nuestro problema es
 \end{equation}
 Si logramos resolver (\ref{ecGreen}) y encontrar una solución $G(\vec{x},\vec{x}')$ entonces una solución particular de (\ref{Hih}) es de la forma
 \begin{equation}
-\bar{\Psi}(\vec{x},\omega)=-\int G(\vec{x},\vec{x}')\bar{g}(\vec{x}',\omega)\,dV'.
+\tilde{\Psi}(\vec{x},\omega)=-\int G(\vec{x},\vec{x}')\tilde{g}(\vec{x}',\omega)\,dV'.
 \end{equation}
-La función de Green $G(\vec{x},\vec{x}')$ puede considerarse como un caso particular de solución de (\ref{Hih}) correspondiente a una función fuente $\bar{g}=\delta^{(3)}(\vec{x}-\vec{x}')$. En términos más físicos, la función de Green $G(\vec{x},\vec{x}')$ es proporcional al campo producido por una \textbf{fuente puntual}. En efecto, si $g(\vec{x},t)=f(t)\delta^{(3)}(\vec{x}-\vec{x}')$, entonces $\bar{g}(\vec{x},\omega)=\bar{f}(\omega)\delta^{(3)}(\vec{x}-\vec{x}')$, donde $\bar{f}(\omega)$ es la transformada de Fourier de $f(t)$. De lo anterior, vemos que en este caso la solución de (\ref{Hih}) es de la forma $-\bar{f}(\omega)G(\vec{x},\vec{x}')$.
+La función de Green $G(\vec{x},\vec{x}')$ puede considerarse como un caso particular de solución de (\ref{Hih}) correspondiente a una función fuente $\tilde{g}=\delta^{(3)}(\vec{x}-\vec{x}')$. En términos más físicos, la función de Green $G(\vec{x},\vec{x}')$ es proporcional al campo producido por una \textbf{fuente puntual}. En efecto, si $g(\vec{x},t)=f(t)\delta^{(3)}(\vec{x}-\vec{x}')$, entonces $\tilde{g}(\vec{x},\omega)=\tilde{f}(\omega)\delta^{(3)}(\vec{x}-\vec{x}')$, donde $\tilde{f}(\omega)$ es la transformada de Fourier de $f(t)$. De lo anterior, vemos que en este caso la solución de (\ref{Hih}) es de la forma $-\tilde{f}(\omega)G(\vec{x},\vec{x}')$.
 
 La función de Green que satisface (\ref{ecGreen}) \textit{no es única}, siempre es posible sumar una solución de la ecuación de Helmholtz homogénea. De entre las posibles soluciones, encontraremos aquella que satisfaga \textit{condiciones de simetría apropiadas a nuestro problema}. En particular, deseamos encontrar las soluciones particulares que describan los campos \textit{generados por una distribución de cargas y corrientes dada}, sin incluir los campos generados por \textit{fuentes externas al sistema} (y que satisfacen la ecuación homogénea en el dominio bajo consideración).
 
@@ -127,20 +127,20 @@ ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}, \qquad k:=\frac{\omega}{c}.} \label{
 
 \subsection{Potenciales retardados}
 Con la función de Green (\ref{GreenH}) obtenemos la solución particular para la
-transformada de Fourier $\bar{\Psi}(\vec{x},\omega)$:
+transformada de Fourier $\tilde{\Psi}(\vec{x},\omega)$:
 \begin{equation}
-\bar{\Psi}(\vec{x},\omega)=\frac{1}{4\pi}\int
-\bar{g}(\vec{x}',\omega)\frac{e^{\pm
+\tilde{\Psi}(\vec{x},\omega)=\frac{1}{4\pi}\int
+\tilde{g}(\vec{x}',\omega)\frac{e^{\pm
 ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}\,dV' .
 \end{equation}
 Con esto, podemos finalmente calcular la solución particular de la ecuación de
 onda inhomogénea (\ref{oih}):
 \begin{eqnarray}
-\Psi(\vec{x},t)&=&\frac{1}{\sqrt{2\pi}}\frac{1}{4\pi}\int_{V'}\int_{-\infty}
-^\infty \bar{g}(\vec{x}',\omega)\frac{e^{\pm
+\Psi(\vec{x},t)&=&\frac{1}{2\pi}\frac{1}{4\pi}\int_{V'}\int_{-\infty}
+^\infty \tilde{g}(\vec{x}',\omega)\frac{e^{\pm
 ik|\vec{x}-\vec{x}'|}}{|\vec{x}-\vec{x}'|}e^{i\omega t}\,d\omega\,dV'  \\
-&=&\frac{1}{\sqrt{2\pi}}\frac{1}{4\pi}\int_{V'}\frac{1}{|\vec{x}-\vec{x}'|}\int_
-{-\infty}^\infty \bar{g}(\vec{x}',\omega)e^{i\omega t_{\pm}}\,d\omega \,dV' \\
+&=&\frac{1}{2\pi}\frac{1}{4\pi}\int_{V'}\frac{1}{|\vec{x}-\vec{x}'|}\int_
+{-\infty}^\infty \tilde{g}(\vec{x}',\omega)e^{i\omega t_{\pm}}\,d\omega \,dV' \\
 &=&\frac{1}{4\pi}\int_{V'} \frac{g(\vec{x}',t_{\pm})}{|\vec{x}-\vec{x}'|}\,dV' .
 \end{eqnarray}
 En la expresión anterior hemos denotado
