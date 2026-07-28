@@ -690,7 +690,7 @@ que es una onda con polarización lineal con amplitud $\sqrt{(E_{1}^0)^2+(E_{2}^
 &= \operatorname{Re}\left[E_{1\rm c}\left(\hat{x}\pm i\hat{y}\right) e^{i(kz-\omega t)}\right]\\
 &= E_{1}^0\left[\cos(kz-\omega t+\varphi_1)\hat{x} \mp \sin(kz-\omega t+\varphi_1)\hat{y}\right].
 \end{align}
-Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido antihorario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular izquierda (LCP)}. En el otro caso, el campo girará en sentido horario y diremos que la onda tiene \textbf{polarización circular derecha (RCP)}\footnote{Warning!. No hay absoluto consenso sobre esta convención de nombres, por lo que es siempre recomendable verificar la orientación del giro del campo en cada caso. Aquí seguimos la convención descrita en \cite{Jackson}, que es la más empleada en óptica (pero opuesta, por ejemplo a la usada en \cite{Griffiths2013}!). Otra forma de refererse a ambos casos, más usada en el contexto de física de partículas, es decir que la onda tiene \textbf{helicidad positiva o negativa}, para los casos LCP y RCP respectivamente.}.
+Estas ondas tienen \textbf{polarización circular}. En el caso del signo $+$ tendremos que el vector $\vec{E}$ gira en \textit{sentido antihorario} al mirar la onda ``acercándose", y es llamada \textbf{polarización circular izquierda (LCP)}. En el otro caso, el campo girará en sentido horario y diremos que la onda tiene \textbf{polarización circular derecha (RCP)}\footnote{Warning!. No hay absoluto consenso sobre esta convención de nombres, por lo que es siempre recomendable verificar la orientación del giro del campo en cada caso. Aquí seguimos la convención descrita en \cite{Jackson}, que es la más empleada en óptica (pero opuesta, por ejemplo a la usada en \cite{Griffiths2013}!). Otra forma de referirse a ambos casos, más usada en el contexto de física de partículas, es decir que la onda tiene \textbf{helicidad positiva o negativa}, para los casos LCP y RCP respectivamente.}.
 
 Como vemos, el uso de amplitudes complejas es bastante útil en este caso, ya que permite escribir expresiones más compactas. Podemos introducir una nueva base de amplitudes complejas $\hat\epsilon_\pm$, definidas por
 \begin{equation}
@@ -707,7 +707,7 @@ Puede comprobar que los vectores $\hat\epsilon_\pm$ satisfacen
 \hat\epsilon_\pm^*\cdot\hat\epsilon_\mp = 0, \qquad 
 \hat\epsilon_\pm^*\cdot\vec{k} = 0.
 \end{equation}
-Usando \eqref{xyeppm} podemos rescribir una superposición general \eqref{E12-2} en términos de la base de vectores de polarización circular, obteniendo
+Usando \eqref{xyeppm} podemos reescribir una superposición general \eqref{E12-2} en términos de la base de vectores de polarización circular, obteniendo
 \begin{equation}
 \vec{E} = \operatorname{Re}\left[\left(E_{+\rm c}\hat\epsilon_+ + E_{-\rm c}\hat\epsilon_-\right)e^{i(kz-\omega t)}\right],
 \end{equation}
@@ -990,7 +990,7 @@ electromagnético puede ser escrito en términos de un potencial vectorial
 $\vec{A}$ y de un potencial escalar $\phi$. Sin embargo, estas funciones
 \textit{no son únicas} para $\vec{E}$ y $\vec{B}$ dados. Es fácil verificar
 que el campo electromagnético (y consecuentemente todas las predicciones de la
-teoría electromagética) permanece invariante (es decir, con igual valor) bajo las
+teoría electromagnética) permanece invariante (es decir, con igual valor) bajo las
 siguientes transformaciones de los potenciales,
 \begin{equation}\marginnote{Transformaciones de gauge}\label{tgg}
 \boxed{{\vec{A}}' = \vec{A} - \vec{\nabla}{\chi}, \qquad \phi' =\phi +
@@ -1116,4 +1116,4 @@ es decir, que satisfaga la ecuación de onda inhomogénea:
 \end{equation}
 La existencia de soluciones de esta ecuación está garantizada. Análogamente al caso del gauge de Coulomb, la función buscada no es única, sino que existe una libertad remanente para realizar transformaciones de gauge ``dentro del gauge de Lorenz'', generadas por funciones $\tilde\chi$ que satisfagan la ecuación de onda, $\Box\tilde\chi=0$. 
 
-El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.
+El gauge de Lorenz es usado comúnmente en el contexto de la teoría de Especial de la Relatividad, ya que en el vacío (cuando $\varepsilon=\varepsilon_0$ y $\mu=\mu_0$ y por lo tanto $c=c_0$) la condición (\ref{gLorenz}) así como (\ref{emiap1gL2}) y (\ref{emiap2gL2}), \textit{mantienen su forma inalterada en cualquier sistema de referencia inercial} (son \textit{covariantes} bajo transformaciones de Lorentz). Esto tiene como consecuencia que toda expresión que involucre a los potenciales electromagnéticos (que satisfagan el gauge de Lorenz) tendrá la \textit{misma forma en todo Sistema de Referencia Inercial}. Esto no ocurre, por ejemplo, si se usan potenciales que satisfagan el gauge de Coulomb.

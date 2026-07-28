@@ -73,7 +73,7 @@ donde $\rho_0:={\rho}/{\gamma}$ es un \textit{escalar} que describe la \textit{d
 
 \section{Ecuaciones de Maxwell inhomogéneas}
 
-Sabiendo que $J^\mu$ es un 4-vector, podemos analizar las propiedades de transformación de los campos eléctrico y magnético de modo que las ecuaciones de Maxwell inhomogeneas preserven su forma bajo TL's. Podemos escribir (\ref{inrho}) y (\ref{inj})  más explícitamente como:
+Sabiendo que $J^\mu$ es un 4-vector, podemos analizar las propiedades de transformación de los campos eléctrico y magnético de modo que las ecuaciones de Maxwell inhomogéneas preserven su forma bajo TL's. Podemos escribir (\ref{inrho}) y (\ref{inj})  más explícitamente como:
 \begin{eqnarray}
 \frac{1}{c}\frac{\partial E^x}{\partial x} + \frac{1}{c}\frac{\partial E^y}{\partial y} + \frac{1}{c}\frac{\partial E^z}{\partial z} &=& \mu_0\, J^0 , \\
 \frac{\partial B^z}{\partial y} - \frac{\partial B^y}{\partial z} - \frac{1}{c^2}\frac{\partial E^x}{\partial t} &=& \mu_0\,  J^1 , \\
@@ -172,7 +172,7 @@ En resumen, tenemos que las ecuaciones de Maxwell pueden escribirse como
 F_{\mu\nu}=0.} \label{homcov}
 \end{equation}
 
-\subsection{Ecuacion de Maxwell homogenea y tensor dual*}
+\subsection{Ecuacion de Maxwell homogénea y tensor dual*}
 La ecuación de Maxwell homogénea puede ser escrita, alternativamente, como
 \begin{equation}
 \boxed{\partial_\mu {\cal F}^{\mu\nu}=0,}
@@ -453,7 +453,7 @@ El potencial escalar $\phi$ y el potencial vectorial $\vec{A}$ (en cojunto ``los
 \begin{equation}\label{BrotA}
 \vec{B}=\vec{\nabla}\times \vec{A}.
 \end{equation}
-Los potenciales no son funciones definidas unívocamente dada una configuración de campo electromagético. Esto se manifiesta en la invariancia de los campos $\vec{E}$ y $\vec{B}$ bajo una transformación de gauge:
+Los potenciales no son funciones definidas unívocamente dada una configuración de campo electromagnético. Esto se manifiesta en la invariancia de los campos $\vec{E}$ y $\vec{B}$ bajo una transformación de gauge:
 \begin{equation}
 \phi' =\phi +\frac{\partial \chi}{\partial t}, \qquad
 {\vec{A}}' = \vec{A} - \vec{\nabla}{\chi},
@@ -499,12 +499,12 @@ es equivalente a
 \end{equation}
 Ya que el 4-potencial es un vector bajo TL's, vemos que la condición que define el gauge de Lorenz es una ecuación covariante (en particular, es una \textit{ecuación escalar}). Esto asegura que si el gauge de Lorenz se satisface en un SRI $K$ con los potenciales $\phi$ y $\vec{A}$ correspondientes, entonces será también satisfecho en todo SRI $K'$, con los potenciales $\phi'$ y $\vec{A}'$ transformados. Esta propiedad hace que el gauge de Lorenz sea ampliamente usado en el contexto de la teoría de relatividad especial, puesto que permite trabajar con los potenciales electromagnéticos, simplificar muchas ecuaciones al imponer el gauge de Lorenz, pero de forma tal que los resultados sean válidos en cualquier SRI. Esta útil propiedad no es válida, por ejemplo, usando el gauge de Coulomb.
 
-Si el 4-potencial satisface el gauge de Lorenz, la ecuación diferencial que éste debe satisfacer se reduce a la \textit{ecuación de onda inhomogenea}
+Si el 4-potencial satisface el gauge de Lorenz, la ecuación diferencial que éste debe satisfacer se reduce a la \textit{ecuación de onda inhomogénea}
 \begin{equation}
 \boxed{\square A^\mu=\mu_0 J^\mu .} \label{caj}
 \end{equation}
 
-En efecto, escribiendo las ecuaciones de Maxwell inhomogeneas (\ref{emihF}) en términos del 4-potencial, encontramos que
+En efecto, escribiendo las ecuaciones de Maxwell inhomogéneas (\ref{emihF}) en términos del 4-potencial, encontramos que
 \begin{align}
 \mu_0 J^\nu &=\partial_\mu F^{\mu\nu}  \\
 &=\partial_\mu \left(  \partial^\mu A^\nu -\partial^\nu A^\mu \right)  \\
@@ -581,7 +581,7 @@ De acuerdo a (\ref{LorRel}), y recordando la definición del 4-moméntum (\ref{d
 \frac{du^0}{d\tau}&=& \frac{qE}{mc} u^1, \label{mre1} \\
 \frac{du^1}{d\tau}&=&\frac{qE}{mc} u^0.\label{mre2}
 \end{eqnarray}
-Derivando (\ref{mre1}) y reeemplazando en (\ref{mre1}) obtenemos
+Derivando (\ref{mre1}) y reemplazando en (\ref{mre1}) obtenemos
 \begin{equation}
  \frac{d^2u^0}{d\tau^2}=\left( \frac{qE}{mc}\right)^2 u^0,
 \end{equation}
@@ -1018,7 +1018,7 @@ de modo que (\ref{EUF}) se reduce a
 \begin{equation}
 -J^\nu +\frac{1}{\mu_0}\partial_\mu F^{\mu\nu}=0,
 \end{equation}
-que es equivalente a las ecuaciones de Maxwell inhomogeneas \eqref{coninhom}.
+que es equivalente a las ecuaciones de Maxwell inhomogéneas \eqref{coninhom}.
 
 
 
@@ -1101,7 +1101,7 @@ T_\text{em}^{ij}  & =\frac{1}{\mu_0}\left[  F^{i\lambda}F_\lambda^{\ j}+\frac
 & =\frac{1}{\mu_0}\left[-\frac{1}{c^2}E^i E^j - B^i B^j +\delta^{ij}\vec{B}^2-\frac{1}{2}\left(\vec{B}^2-\frac{1}{c^2}\vec{E}^2\right)\delta^{ij}\right] \\
 & =\frac{1}{\mu_0}\left[\frac{1}{2}\left(\frac{1}{c^2}\vec{E}^2 +\vec{B}^2\right)\delta^{ij}-\frac{1}{c^2}E^i E^j -B^i B^j\right].
 \end{align}
-En resumen, podemos indentificar
+En resumen, podemos identificar
 % Gaussianas
 %\begin{eqnarray}
 %u&:=&T_{\rm em}_0{}^0=\frac{1}{8\pi}\left( \vec{E}^2+\vec{B}^2\right),\\
@@ -1273,7 +1273,7 @@ i}dS_i+\frac{dp^\mu_{\rm carga}}{dt}.
 \end{eqnarray}
 Integrando sobre todo el espacio y asumiendo que los campos se anulan
 suficientemente rápido de modo que la integral de superficie se anule,
-encotramos que el 4-moméntum total del campo y la carga es conservado
+encontramos que el 4-moméntum total del campo y la carga es conservado
 \begin{equation}
 \frac{d}{dt}\left( P^\mu_{\rm campo}+p^\mu_{\rm carga}\right) =0.
 \end{equation}

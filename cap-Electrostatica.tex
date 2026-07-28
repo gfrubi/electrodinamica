@@ -44,7 +44,7 @@ k=c^2\times 10^{-7}\ Nm^2C^{-2},
 \end{equation}
 en que $c$ es la \textit{velocidad de la luz en el vac\'{\i}o}. Su valor es $c=2.99792458\times 10^{8}\,ms^{-1}$. Con esto $k\approx 9.0\times
 10^{9}\,Nm^2C^{-2}$, $\varepsilon _0\approx 8.854\times 10^{-12}
-\,C^2N^{-1}m^{-2}$. Para una discusión de los distintos sistemas de unidades usados en la teoría elecromagnética, ver el apéndice \ref{appuni}.
+\,C^2N^{-1}m^{-2}$. Para una discusión de los distintos sistemas de unidades usados en la teoría electromagnética, ver el apéndice \ref{appuni}.
 
 La expresión \eqref{leycoulomb} es conocida como \textbf{ley de Coulomb}. Adicionalmente, se \textit{asume} que la fuerza que ejerce un conjunto de $N$ cargas puntuales $q^{(\alpha)}$, $\alpha=1,\cdots N$, en posiciones $x^{(\alpha)}_i$ sobre una carga $q$ con posición $x_i$ es
 \begin{equation}
@@ -123,7 +123,7 @@ Más explícitamente, la condición (\ref{dlc}) adopta, en coordenadas cartesian
 \frac{dy}{d\lambda}(\lambda) &= {E_y}(x(\lambda),y(\lambda),z(\lambda)),\\
 \frac{dz}{d\lambda}(\lambda) &= E_z(x(\lambda),y(\lambda),z(\lambda)),
 \end{align}
-de modo que define, dadas las componentes del campo $E_x(x,y,z)$, $E_y(x,y,z)$ y $E_y(x,y,z)$, un sistema de 3 ecuaciones diferenciales ordinarias acopladas, de primer orden, y en genreal no-lineal, para las incógnitas $x(\lambda),y(\lambda)$ y $z(\lambda)$.
+de modo que define, dadas las componentes del campo $E_x(x,y,z)$, $E_y(x,y,z)$ y $E_y(x,y,z)$, un sistema de 3 ecuaciones diferenciales ordinarias acopladas, de primer orden, y en general no-lineal, para las incógnitas $x(\lambda),y(\lambda)$ y $z(\lambda)$.
 
 Una línea de campo particular queda determinada por la solución del sistema de ecuaciones que satisface una determinada condición inicial, por ejemplo $\vec{x}(0)=\vec{x}_0$, donde $\vec{x}_0$ es un punto dado del espacio. La correspondiente solución $\vec{x}(\lambda;\vec{x}_0)$ describirá la línea de campo que pasa por el punto $\vec{x}_0$. Para algunos ejemplos, ver la figura\footnote{Figuras generadas usando VectorFieldPlot \cite{VFP}.} \ref{fig-E}.
 
@@ -354,7 +354,7 @@ De aquí encontramos que
 \end{equation}
 Ya que la dirección del vector $\hat{t}$ es arbitraria (pero siempre
 tangencial a la superficie $S$), la condición (\ref{Etconst}) implica que
- \textit{las componentes tangenciales (2 componentes linealmente idependientes) del campo eléctrico permanecen inalteradas
+ \textit{las componentes tangenciales (2 componentes linealmente independientes) del campo eléctrico permanecen inalteradas
 al cruzar la superficie} $S$.
 
 \subsection{Conductores}
@@ -437,7 +437,7 @@ por lo que el potencial en todo punto  fuera de la esfera se reduce a
 \sum_{l=0}^\infty\frac{b_l}{r^{l+1}}P_l(\cos\theta), \qquad r\ge R.
 \end{equation}
 
-Como el potencial es una función contínua, debemos tener que
+Como el potencial es una función continua, debemos tener que
 \begin{equation}
 \phi(R,\theta)=\alpha -E_0 R\cos\theta +
 \sum_{l=0}^\infty\frac{b_l}{R^{l+1}}P_l(\cos\theta)=0, \qquad \forall \theta.
@@ -522,7 +522,7 @@ Introduciendo el campo eléctrico en el segundo término del lado derecho podemo
 \end{equation}
 donde $E_n:=\vec{E}\cdot\hat{n}$ es la componente del campo eléctrico normal a la superficie $\partial V$ (con $\hat{n}$ orientado hacia el exterior del volumen $V$).
 
-Por otro lado, la función de Green no es única. Si $G_1(\vec{x},\vec{x}')$ es una función de Green entonces $G_2(\vec{x},\vec{x}')=G_1(\vec{x},\vec{x}')+H(\vec{x},\vec{x}')$ también lo será si $H$ es una solución del problema homogéneo: en nuestro caso de la ecuación de Laplace, $\nabla^2H(\vec{x},\vec{x}')=0$. Esta arbitrariedad en la definición de la función de Green es de hecho una ventaja, puesto que en general no se tiene información \textit{simultánea} del potencial y la componente normal del campo en la frontera $\partial V$. Por esto, es conveniente elegir una función de Green de modo que los términos del lado derecho de \eqref{solPoisson} puedan efectivamente ser evaluados. Por ejemplo, si se conoce el potencial\footnote{condición de borde tipo Dirichlet.} en $\partial V$ (típicamente, en situaciones donde $\partial V$ coincide con la superfice de conductores conectados a baterías suministrando una diferencia de potencial conocida) entonces es conveniente usar una \textit{función de Green que se anule en la frontera}, $G(\vec{x},\vec{x}')=0$, $\forall$ $\vec{x}'\in\partial V$. En este caso, la solución se reduce a
+Por otro lado, la función de Green no es única. Si $G_1(\vec{x},\vec{x}')$ es una función de Green entonces $G_2(\vec{x},\vec{x}')=G_1(\vec{x},\vec{x}')+H(\vec{x},\vec{x}')$ también lo será si $H$ es una solución del problema homogéneo: en nuestro caso de la ecuación de Laplace, $\nabla^2H(\vec{x},\vec{x}')=0$. Esta arbitrariedad en la definición de la función de Green es de hecho una ventaja, puesto que en general no se tiene información \textit{simultánea} del potencial y la componente normal del campo en la frontera $\partial V$. Por esto, es conveniente elegir una función de Green de modo que los términos del lado derecho de \eqref{solPoisson} puedan efectivamente ser evaluados. Por ejemplo, si se conoce el potencial\footnote{condición de borde tipo Dirichlet.} en $\partial V$ (típicamente, en situaciones donde $\partial V$ coincide con la superficie de conductores conectados a baterías suministrando una diferencia de potencial conocida) entonces es conveniente usar una \textit{función de Green que se anule en la frontera}, $G(\vec{x},\vec{x}')=0$, $\forall$ $\vec{x}'\in\partial V$. En este caso, la solución se reduce a
 \begin{equation}\label{solPoissonDirichlet}
 \phi(\vec{x})= -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV'+\oint_{\partial V}\phi(\vec{x}')\frac{\partial G}{\partial n'}(\vec{x},\vec{x}')dS',
 \end{equation}
@@ -593,7 +593,7 @@ $\partial V$ pueden ser los mismos (\underline{en $V$}) que los campos generados
 misma distribución de carga en $V$ \textit{y por otra distribución de carga
 diferente fuera de $V$}. Por esto, para solucionar el problema ``real'', en el
 que la distribución de carga en $V$ y los potenciales en $\partial V$ son conocidos, se
-puede considerar el problema ``ficticio'' de encontrar las cargas ``imagenes''
+puede considerar el problema ``ficticio'' de encontrar las cargas ``imágenes''
 fuera de $V$ tales que la distribución de cargas total (reales e imágenes)
 satisfaga las condiciones de contorno en $\partial V$. Los campos así encontrados son
 solución del problema original, dentro (pero \underline{no} fuera) de $V$. Como veremos, el método de las imágenes básicamente provee un método heurístico para encontrar la función de Green apropiada a las condiciones de borde de un cierto problema físico.
@@ -673,7 +673,7 @@ evaluado en la posición en que se ubica la carga $q$, es decir,
 Note que esta fuerza es la misma que ejerce(ría) la carga imagen sobre la carga real.
 
 \subsubsection{Función de Green asociada}
-En la sección anterior hemos situado el sistema coordenado de modo que la carga tenía posicion $d\hat{x}$. Podemos reescribir el resultado para una carga puntual ubicada en una posición arbitraria $\vec{x}'$ en $V$. Manteniendo el origen del sistema de coordenadas en algún punto del plano, podemos entonces escribir la posición \textit{de la carga imágen} como
+En la sección anterior hemos situado el sistema coordenado de modo que la carga tenía posición $d\hat{x}$. Podemos reescribir el resultado para una carga puntual ubicada en una posición arbitraria $\vec{x}'$ en $V$. Manteniendo el origen del sistema de coordenadas en algún punto del plano, podemos entonces escribir la posición \textit{de la carga imagen} como
 \begin{equation}
 \vec{x}'_{\rm i} = \vec{x}'-2(\vec{x}'\cdot\hat{n})\hat{n},
 \end{equation}
@@ -695,7 +695,7 @@ entonces esta función satisface todas las propiedades de una función de Green 
 \item $G(\vec{x},\vec{x}')=G(\vec{x}',\vec{x})$.
 \end{itemize}
 
-Como consecuencia, podemos usar esta función para encontrar una forma analítica para el potencial \textit{en una situación física más general}: el campo fuera de un conductor plano muy grande puesto a tierra, con una districión de carga arbitraria de densidad $\rho(\vec{x})$, en el mismo dominio $V$ (es decir, fuera del conductor). La solución en este caso, ver la expresión \ref{solPoissonDirichlet} en la sección \ref{Green}, es de la forma
+Como consecuencia, podemos usar esta función para encontrar una forma analítica para el potencial \textit{en una situación física más general}: el campo fuera de un conductor plano muy grande puesto a tierra, con una distribución de carga arbitraria de densidad $\rho(\vec{x})$, en el mismo dominio $V$ (es decir, fuera del conductor). La solución en este caso, ver la expresión \ref{solPoissonDirichlet} en la sección \ref{Green}, es de la forma
 \begin{equation}
 \phi(\vec{x}) = -\frac{1}{\varepsilon_0}\int_VG(\vec{x},\vec{x}') \rho(\vec{x}')dV',
 \end{equation}
@@ -759,7 +759,7 @@ Finalmente, la fuerza que la esfera ejerce sobre la carga es dada por
 
 \subsection{Conductor Cilíndrico}
 \begin{figure}[!h]
-\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-01.pdf}}
+\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imágenes-cilindros-01.pdf}}
 \caption{Conductor cilíndrico, líneas de densidad $\lambda$ y $-\lambda$.}
 \label{ci03}
 \end{figure}
@@ -790,7 +790,7 @@ equivalente a
 \begin{equation}
  \left[x-\frac{d(1+M^2)}{M^2-1}\right]^2+y^2=\frac{4M^2d^2}{(1-M^2)^2},
 \end{equation}
-que es la ecuación de un cilindro (una circunsferencia en el plano $xy$),
+que es la ecuación de un cilindro (una circunferencia en el plano $xy$),
 centrado en las coordenadas $(x_{\rm c},y_c)$ y con radio $R$, dados por
 \begin{equation}
  x_{\rm c}=\frac{d(1+M^2)}{M^2-1}, \qquad y_c=0, \qquad R=\frac{2Md}{|1-M^2|}.
@@ -822,10 +822,10 @@ $x_0$ y $R$. Considerando que $V>0$, es decir, el potencial sobre el cilindro es
 d=\frac{R(M^2-1)}{2M}, \qquad \lambda=\frac{2\pi\varepsilon_0V}{\ln M}.
 \end{equation}
 \begin{figure}[!h]
-\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-02.pdf}
+\centerline{\includegraphics[height=6cm]{fig/fig-metodo-imágenes-cilindros-02.pdf}
 \hspace{1cm}
-\includegraphics[height=6cm]{fig/fig-metodo-imagenes-cilindros-03.pdf}}
-\caption{Superficies equipotenciales y líneas de campo. Código Python de la figura de la derecha disponible \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-metodo-imagenes-cilindros-03.py}{aquí}.}
+\includegraphics[height=6cm]{fig/fig-metodo-imágenes-cilindros-03.pdf}}
+\caption{Superficies equipotenciales y líneas de campo. Código Python de la figura de la derecha disponible \href{https://github.com/gfrubi/electrodinamica/blob/master/figuras-editables/fig-metodo-imágenes-cilindros-03.py}{aquí}.}
 \label{ci04}
 \end{figure}
 
@@ -863,7 +863,7 @@ Como consecuencia, una partícula cargada de masa $m$ y carga $q$ moviéndose en
 E=\frac{1}{2}m\vec{v}^2+q\phi(x)=\text{cte.}
 \end{equation}
 
-Podemos generalizar la expresión \eqref{Uqphi} para el caso de una distribución contínua de cargas \textit{de prueba}, en un campo \textit{externo}. En otras palabras, \textit{despreciamos el campo que las mismas cargas producen}. Por simple superposición encontramos que la energía potencial de una distribución de cargas descritas por la densidad $\rho(\vec{x})$ en un campo \textit{externo} $\phi(\vec{x})$ es dado por
+Podemos generalizar la expresión \eqref{Uqphi} para el caso de una distribución continua de cargas \textit{de prueba}, en un campo \textit{externo}. En otras palabras, \textit{despreciamos el campo que las mismas cargas producen}. Por simple superposición encontramos que la energía potencial de una distribución de cargas descritas por la densidad $\rho(\vec{x})$ en un campo \textit{externo} $\phi(\vec{x})$ es dado por
 \begin{equation} \label{Urhophiext}
 U=\int \rho(\vec{x})\,\phi(\vec{x})\,dV.
 \end{equation}
@@ -896,7 +896,7 @@ Además,  $U^{(\alpha\beta)}\to 0$, cuando  $|\vec{x}^{(\alpha)}|\to\infty$
 ó $|\vec{x}^{(\beta)}|\to\infty$. Entonces, de acuerdo a \eqref{WABDU}, \textit{podemos interpretar $U^{(\alpha\beta)}$ como la energía (trabajo) que se necesita para traer la carga
 $q^{(\alpha)}$ desde el infinito hasta la posición $\vec{x}^{(\alpha)}$, en el campo
 eléctrico producido por la carga $q^{(\beta)}$, fija en $\vec{x}^{(\beta)}$}, o
-vicecersa.
+viceversa.
 
 Para calcular la energía potencial eléctrica total de un sistema de muchas cargas
 puntuales, ``construimos'' el sistema, carga por carga, trayéndolas desde el
@@ -1026,7 +1026,7 @@ El campo eléctrico entre las placas (que puede obtenerse fácilmente usando la 
 \begin{equation}
 \vec{E}=\frac{\sigma}{\varepsilon_0}\hat{x}=E\hat{x}, \qquad 0<x<d,
 \end{equation}
-donde $\sigma$ es la densidad total de carga por unidad de superficie (en cada placa ubicada en $x=0$). Con esto, podemos evaluar la energía \eqref{UuE} (el campo eléctrico sólo es no nulo entre las placas, que encierrar un volumen $V=Ad$):
+donde $\sigma$ es la densidad total de carga por unidad de superficie (en cada placa ubicada en $x=0$). Con esto, podemos evaluar la energía \eqref{UuE} (el campo eléctrico sólo es no nulo entre las placas, que encerrar un volumen $V=Ad$):
 \begin{equation} 
 U=\int u_E(\vec{x})\,dV=\frac{\varepsilon_0}{2}\,
 \vec{E}^2 V=\frac{\varepsilon_0}{2}\,
@@ -1192,7 +1192,7 @@ Observaciones:
 \begin{itemize} 
 \item El momento multipolar de orden $n$, $Q_{i_1\dots i_n}$ es un tensor simétrico de rango $n$ respecto a transformaciones ortogonales de coordenadas. Por eso, $Q_{i_1\dots i_n}$ tiene $(n+1)(n+2)/2$ componentes linealmente independientes.
 
-\item Los momentos multipolares son cantidades \textit{aditivas} (o extensivas). Esto quiere decir que si se divide un sistema en dos partes (el volumen donde están contenidas las cargas, en dos volumenes más pequeños o, equivalentemente, la densidad de carga en la suma de dos densidades) entonces cada momento multipolar (de un orden dado) es la suma de los momentos multipolares de cada subsistema.
+\item Los momentos multipolares son cantidades \textit{aditivas} (o extensivas). Esto quiere decir que si se divide un sistema en dos partes (el volumen donde están contenidas las cargas, en dos volúmenes más pequeños o, equivalentemente, la densidad de carga en la suma de dos densidades) entonces cada momento multipolar (de un orden dado) es la suma de los momentos multipolares de cada subsistema.
 
 \item Note que los momentos multipolares \textbf{dependen en general de la
 elección del origen}. Si se desplaza el origen del sistema coordenado de modo que el origen $O$ original tenga coordenadas $\vec{d}$ respecto al nuevo origen $O'$ entonces
@@ -1650,12 +1650,12 @@ general, $\vec{E}$ es un \textit{funcional}, una ``función de funciones''\, o
 una ``función no-local''\, de $\vec{P}$.} $\vec{P}(\vec{x}')$.
 En otras palabras, en general la polarización que se presentará en un medio es fruto de la  \textit{respuesta colectiva} del material a los campos externos.
 
- Vemos entonces que calcular $\vec{P}(\vec{x})$ desde ``primeros principios'' es en gerenal difícil y requiere conocer los detalles de la estructura del material en estudio.
+ Vemos entonces que calcular $\vec{P}(\vec{x})$ desde ``primeros principios'' es en general difícil y requiere conocer los detalles de la estructura del material en estudio.
 
 Existe una gran variedad de medios materiales con propiedades eléctricas
 diferentes e interesantes. Existen por ejemplo medios que tienen \textit{polarización
 no nula aún en ausencia de campos/cargas externas}. Estos medios son conocidos
-como \textit{electretos} (análogos eléctricos de los imánes permanentes), y 
+como \textit{electretos} (análogos eléctricos de los imanes permanentes), y 
 \textit{ferroeléctricos} (que presentan polarización no nula bajo una cierta
 temperatura crítica, de Curie, análogamente a los ferromagnetos). Un ejemplo
 de material ferroeléctrico es el $BaTiO_3$ (\href{https://en.wikipedia.org/wiki/Barium_titanate}{titanato de bario}), que exhibe un momento dipolar eléctrico no nulo a temperaturas bajo $120^{\rm o}\,C$. Un ejemplo de electreto es el cuarzo ($SiO_2$, \href{https://en.wikipedia.org/wiki/Silicon_dioxide}{dióxido de Silicio}), que presenta \href{https://es.wikipedia.org/wiki/Piezoelectricidad}{\textit{propiedades piezoeléctricas}}.
@@ -1709,7 +1709,7 @@ considerados como parámetros (a determinar). Con esto, podemos escribir
 \boxed{P_i(x)={\cal A}_i+{\cal A}_{ij}E_j+{\cal A}_{ijk}
 E_jE_k+\cdots.}
 \end{equation}
-En general, si el material es \textit{inhomogéneo} (por ejempo, si está formado por
+En general, si el material es \textit{inhomogéneo} (por ejemplo, si está formado por
 capas de distintos materiales), los tensores ${\cal A}_i$, ${\cal A}_{ij}$, ${\cal A}_{ijk}$, etc. dependerán de la posición. Para materiales no-ferroeléctricos (la gran mayoría) tenemos que ${\cal A}_i=0$.
 
 
@@ -1781,7 +1781,7 @@ de modo que
 \end{equation}
 Muchos materiales presentan propiedades de polarización independientes de
 la dirección del campo eléctrico, es decir, son isótropos. Por ejemplo, los
-gases, líquidos (excepto los, así llamados, \textit{cristales liquidos}), sólidos amorfos (plásticos, vidrio).
+gases, líquidos (excepto los, así llamados, \textit{cristales líquidos}), sólidos amorfos (plásticos, vidrio).
 Los medios no-lineales, pero isótropos, pueden ser descritos usando
 $\vec{P}=\varepsilon_0\chi(|\vec{E}|)\vec{E}$.
 
